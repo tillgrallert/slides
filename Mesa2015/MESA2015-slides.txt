@@ -6,7 +6,7 @@ date: 2015-11-22
 
 # Question
 
-- What was the semantic field for possible attempts to speak about *a* or even *the* public?
+- What was the semantic field for speaking about *a* or even *the* public?
 - What were the historical *a priori* and the archive to speak about society and crowds for speakers of Arabic during the last forty years of Ottoman rule in Damascus? 
 - In which terms did local newspapers refer to the population, the populace, or those gathered in open places? 
 - How did they perceive the social structure of an Ottoman, or rather Damascene public? 
@@ -15,7 +15,7 @@ date: 2015-11-22
 
 # Background
 
-- almost complete absence of *ʿumūm* / *ʿumūmī* from Ottoman and Arabic contemporaneous dictionaries but in compounds denoting technical terms
+- almost complete absence of *ʿumūm* / *ʿumūmī* from Ottoman and Arabic contemporaneous dictionaries but in compounds designating technical terms
 - Salīm Sarkīs' polemic against the *mektupçu*(s) of Beirut
 - absence of scholarly work on the semantics of *public* in Arabic despite the fetish of the public/private dichotomy
 
@@ -71,14 +71,14 @@ date: 2015-11-22
 
 </div>
 <div class="cWidth3">
-2. public as open to access
+2. public as open to access for all
 
 - *matrūk*
 - (*ʿumūmī*)
 
 </div>
 <div class="cWidth3">
-3. *a* and *the* public as the entirety of the population
+3. *a* and *the* public as the entirety of the population and abstract concept
 
 - *nās*
 - *ahl* / *ahālī*
@@ -110,4 +110,12 @@ date: 2015-11-22
 - *al-ādāb wa-l-akhlāq al-ʿumūmiyya*
 - al-ṣiḥḥa al-ʿumūmiyya*
 
-# 
+# Conclusion
+
+- the *ancien régime*'s three-tiered model of society prevailed until 1914: bureaucracy, local elites, the populace
+- *ʿumūm* and *ʿāmma* are rather uncommon terms, especially if compared to the almost ubiquitous *ʿumūmī*
+- "public" in the sense of state-sponsored and as generally accessible was an additional layer of meaning for *ʿumūmī*
+<!-- prevalence of a multitude of meanings for *ʿumūmī* as public, pertaining to the state, general, total, etc. -->
+- the modern Arabic usage of *al-ʿumūm* and *ʿumūmī* to designate all things public was heavily influenced by Ottoman semantic choices.
+
+Slides are available at [http://tinyurl.com/Mesa2015Grallert](http://tinyurl.com/Mesa2015Grallert)
