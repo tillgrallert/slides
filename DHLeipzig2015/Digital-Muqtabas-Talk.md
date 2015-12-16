@@ -111,7 +111,6 @@ Email: <grallert@orient-institut.org>
 - Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār* 
     + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
     + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
-- 
 
 # Summary
 
@@ -120,3 +119,6 @@ Email: <grallert@orient-institut.org>
     + plain text files
     + BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
+- within a framework (git and GitHub) that allows for
+    + collaborative, open, version-controlled improvements of the edition
+    + re-use of the text
