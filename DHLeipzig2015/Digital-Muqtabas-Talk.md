@@ -1,7 +1,8 @@
 ---
 title: "Digital *Muqtabas*"
 author: Till Grallert
-date: 2015-12-16 23:47:44
+date: December 17, 2015
+cover-image: images/digital-muqtabas-screenshot.png
 ---
 
 # The journal *al-Muqtabas* between Shamela.ws, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals—with almost no funds.
