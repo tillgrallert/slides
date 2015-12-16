@@ -6,7 +6,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
+  <meta name="author" content="Till Grallert" />
+  <title>Digital Muqtabas</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
@@ -71,6 +72,13 @@
     charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
+<div class="slide titlepage">
+  <h1 class="title">Digital <em>Muqtabas</em></h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2015-12-16 23:47:44</p>
+</div>
 <div id="the-journal-al-muqtabas-between-shamela.ws-hathitrust-and-github-producing-open-collaborative-and-fully-referencable-digital-editions-of-early-arabic-periodicalswith-almost-no-funds." class="slide section level1">
 <h1>The journal <em>al-Muqtabas</em> between Shamela.ws, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals—with almost no funds.</h1>
 <p><a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a></p>
@@ -82,8 +90,26 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 // -->
 </script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></p>
 </div>
-<div id="the-problem" class="slide section level1">
-<h1>The problem</h1>
+<div id="importance-of-mundane-texts-periodicals" class="slide section level1">
+<h1>Importance of mundane texts / periodicals</h1>
+<ul>
+<li>They are at the core of various discourses
+<ul>
+<li>Modernity / -ism at the end of empire</li>
+<li>Arabic renaissance</li>
+<li>Arab nationalism</li>
+<li>Islamic reform movement</li>
+</ul></li>
+<li>They form large corpora with an equal distribution along a temporal axis
+<ul>
+<li>linguistic analysis</li>
+<li>historical semantics</li>
+<li>data sets for social history</li>
+</ul></li>
+</ul>
+</div>
+<div id="a-two-fold-problem" class="slide section level1">
+<h1>A two-fold problem</h1>
 <ul>
 <li>Preservation:
 <ul>
@@ -100,38 +126,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Consequences: focus on “high” culture and canonical texts</li>
 </ul>
 </div>
-<div id="importance-of-mundane-texts-periodicals" class="slide section level1">
-<h1>Importance of mundane texts / periodicals</h1>
-<ul>
-<li>at the core of various discourses
-<ul>
-<li>Modernity / -ism at the end of empire</li>
-<li>Arabic renaissance</li>
-<li>Arab nationalism</li>
-<li>Islamic reform movement</li>
-</ul></li>
-<li>large corpora with an equal distribution along a temporal axis
-<ul>
-<li>liguistic analysis</li>
-<li>historical semantics</li>
-<li>data sets for social history</li>
-</ul></li>
-</ul>
-</div>
 <div id="state-of-digitisation" class="slide section level1">
 <h1>State of digitisation</h1>
 <ol style="list-style-type: decimal">
-<li>gray online libraries / “crowd”-sourced transcriptions
+<li>gray online libraries / “crowd”-sourced transcriptions, e.g. <a href="http://shamela.ws/index.php/book/26523">shamela.ws</a>
 <ul>
 <li>lack of metadata</li>
 <li>unknown editing principles</li>
-<li>unkown quality</li>
+<li>unknown quality</li>
 <li>cannot be reliably cited</li>
 </ul></li>
-<li>Digital imagery
+<li>Digital imagery, e.g. <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a>
 <ul>
 <li>lack of metadata</li>
-<li>licences</li>
+<li>limited licences, paywalls</li>
 <li>no text layer</li>
 </ul></li>
 </ol>
@@ -140,7 +148,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <h1>Suggested solution: unite the two</h1>
 <ul>
 <li>improve and validate the transcription with the facsimiles</li>
-<li>make it cite-able for scholars, referencable for machines</li>
+<li>make it citable for scholars, linkable for machines</li>
 <li>re-purpose available tools, technologies, and material
 <ul>
 <li>preference for open and simple formats and tools</li>
@@ -150,11 +158,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </div>
 <div id="test-case-digital-muqtabas" class="slide section level1">
 <h1>Test case: digital <em>Muqtabas</em></h1>
-<p><a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a></p>
 <ol style="list-style-type: decimal">
-<li>Basis: Generate and share the TEI edition of all 96 issues (c. 7000 pages)</li>
-<li>Core feature: gradually improve the digital edition</li>
-<li>Sugar on top: Static webview (doesn’t require a permanent internet connection)</li>
+<li>Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī’s <em>Majallat al-Muqtabas</em> with a CC BY-SA 4.0 licence</li>
+<li>Core feature: gradually improve the digital edition (text and mark-up)</li>
+<li>Sugar on top: Static web-view (doesn’t require a permanent internet connection)</li>
 </ol>
 </div>
 <div id="basis-generate-the-tei-edition" class="slide section level1">
@@ -174,8 +181,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </ul></li>
 </ul>
 </div>
-<div id="core-feature-continuously-improvement" class="slide section level1">
-<h1>2. Core feature: Continuously improvement</h1>
+<div id="core-feature-continuous-improvement" class="slide section level1">
+<h1>2. Core feature: Continuous improvement</h1>
 <ul>
 <li>correct the transcription</li>
 <li>provide reliable bibliographic metadata based on the facsimile</li>
@@ -183,12 +190,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>add semantic mark-up</li>
 </ul>
 </div>
-<div id="sugar-on-top-webview" class="slide section level1">
-<h1>3. Sugar on top: webview</h1>
+<div id="sugar-on-top-web-view" class="slide section level1">
+<h1>3. Sugar on top: web-view</h1>
 <p><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml" class="uri">https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml</a></p>
 <ul>
 <li>Adaptation of <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate XSLT stylesheets</a></li>
-<li>human-readable and static webview (either rawgit or gh-pages)
+<li>human-readable and static web-view (either rawgit or gh-pages)
 <ul>
 <li>can be run without a continuous internet connection and with local facsimiles</li>
 </ul></li>
@@ -202,9 +209,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <div id="to-do-ongoing-work" class="slide section level1">
 <h1>To do, ongoing work</h1>
 <ul>
-<li>Schema design</li>
+<li>Schema design
+<ul>
+<li>mark-up of some text features has not yet been decided</li>
+</ul></li>
 <li>mark-up of page breaks</li>
-<li>Webview needs some polishing</li>
+<li>Web-view needs some polishing</li>
 </ul>
 </div>
 <div id="experiences" class="slide section level1">
@@ -213,12 +223,23 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour</li>
 <li>Hosting with GitHub is free</li>
 <li>Core (but simple) features cannot be automated: page breaks must be manually tagged</li>
-<li>Code that can be repurposed
+<li>Code that can be re-purposed for—inter alia—Muḥammad Rashīd Riḍā’s journal <em>al-Manār</em>
 <ul>
-<li>TEI schema for Arabic periodicals</li>
-<li>customisation of TEI boilerplate for parallel display of Arabic texts and facsimiles</li>
-<li>conversion from EPub to TEI</li>
-<li>automatic extraction of metadata for every level of the text</li>
+<li><a href="http://shamela.ws/index.php/book/6947">full text from shamela</a>: 8605 views</li>
+<li><a href="http://catalog.hathitrust.org/Record/008882663">imagery from HathiTrust</a>,<a href="https://archive.org/details/almanaralmanar">imagery / PDFs from the Internet Archive</a>, which are linked from <a href="http://waqfeya.com/book.php?bid=7374"><em>al-Maktaba al-Waqfiyya</em></a></li>
+</ul></li>
+<li></li>
+</ul>
+</div>
+<div id="summary" class="slide section level1">
+<h1>Summary</h1>
+<ul>
+<li>open scholarly digital edition of <em>Majallat al-Muqtabas</em> providing
+<ul>
+<li>TEI XML files (transcription and links to facsimiles)</li>
+<li>plain text files</li>
+<li>BibTeX files for every article</li>
+<li>customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element</li>
 </ul></li>
 </ul>
 </div>
