@@ -7,11 +7,13 @@ cover-image: images/digital-muqtabas-screenshot.png
 
 # The journal *al-Muqtabas* between Shamela.ws, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals—with almost no funds.
 
-[https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-@tillgrallert
+Slides: [http://tillgrallert.github.io/Slides/DHLeipzig2015](http://tillgrallert.github.io/Slides/DHLeipzig2015)
 
-<grallert@orient-institut.org>
+Twitter: @tillgrallert
+
+Email: <grallert@orient-institut.org>
 
 # Importance of mundane texts / periodicals
 
@@ -70,7 +72,7 @@ cover-image: images/digital-muqtabas-screenshot.png
 - crawl the [digital text from *shamela.ws*](http://shamela.ws/index.php/book/26523)
 - automatically transform it into [TEI XML](http://www.tei-c.org)
     + documented URI design to reference all elements
-- link to digital facsimiles from the [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63) and [HathiTrust](http://catalog.hathitrust.org/Record/100658549) or produce your own imagery
+- link to digital facsimiles from the [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/database/overview_item.a4d?catId=809;r=12316) and [HathiTrust](http://catalog.hathitrust.org/Record/100658549) or produce your own imagery
 - host everything but images on [GitHub](https://www.github.com)
     + distributed version control
     + attribution of authorship
