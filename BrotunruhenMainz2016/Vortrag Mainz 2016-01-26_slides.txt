@@ -111,7 +111,7 @@ Sample: 10 Nahrungsmittelunruhen zwischen 1875 und 1920 in Aleppo, Beirut, Damas
     + konfisziert Getreide  
 9. Keine Berichte über fallende Nahrungsmittelpreise
 
-## Schlussbemerkungen
+# Schlussbemerkungen
 
 1. Es gibt es eine breite "Tradition" von "popular contentions" im allgemeinen und Nahrungsmittelunruhen im speziellen, sowie weiblicher Agency in politischen Auseinandersetzungen im öffentlichen Raum.
 2. Es gibt keinen direkten kausalen Zusammenhang von Nahrungsmittelunruhen und Nahrungsmittelpreisen
