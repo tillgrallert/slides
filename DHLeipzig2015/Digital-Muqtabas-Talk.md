@@ -5,6 +5,11 @@ date: December 17, 2015
 cover-image: images/digital-muqtabas-screenshot.png
 ---
 
+<!-- Mention Bassel Khartabil / Bāsil Kharṭabīl
+    + OA, CC in Syria
+    + detained by the regime since 2012
+    + moved to an unknown site and probably killed since Oct 2015 -->
+
 # The journal *al-Muqtabas* between Shamela.ws, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals—with almost no funds.
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
