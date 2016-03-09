@@ -20,7 +20,7 @@ Twitter: @tillgrallert
 
 Email: <grallert@orient-institut.org>
 
-# Importance of mundane texts / periodicals
+# 1.1 Importance of mundane texts / periodicals
 
 - They are at the core of various discourses
     + Modernity / -ism at the end of empire
@@ -32,10 +32,10 @@ Email: <grallert@orient-institut.org>
     + historical semantics
     + data sets for social history
 
-# A two-fold problem
+# 1.2 A two-fold problem
 
 - Preservation: 
-    + Active destruction of cultural artifacts: iconoclasm, neolibralism
+    + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + fragile materiality
 - Access:
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
@@ -44,7 +44,7 @@ Email: <grallert@orient-institut.org>
     + technical skills: lack of basic scripting skills
 - Consequences: focus on "high" culture and canonical texts
 
-# State of digitisation
+# 1.3 State of digitisation
 
 1. gray online libraries / "crowd"-sourced transcriptions, e.g. [shamela.ws](http://shamela.ws/index.php/book/26523)
     + lack of metadata
@@ -56,7 +56,7 @@ Email: <grallert@orient-institut.org>
     + limited licences, paywalls
     + no text layer
 
-# Suggested solution: unite the two
+# 2. Suggested solution: unite the two
 
 - improve and validate the transcription with the facsimiles
 - make it citable for scholars, linkable for machines
