@@ -20,7 +20,7 @@ body {
   color: black;
   background-color: white;
   overflow: hidden;
-  font-family: "American Typewriter", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
   font-size: 12px;
   /* line-height: 1.2; */
   word-wrap: break-word;
@@ -234,7 +234,7 @@ div.figure p.caption {
     text-align: right;
     top:2em;
     width:15%;
-    font-size:0.5em;
+    font-size:0.6em;
     font-weight:lighter;
 }
 div.figure img {
@@ -329,13 +329,31 @@ a {text-decoration: none}
 .toolbar a:active {color: red}
 .toolbar a:hover {color: red}
 
+/**********
+lists
+***********/
+
+ul, ol {
+  font-style: normal;
+}
+
 ul { list-style-type: circle; }
 ul ul { list-style-type: disc; }
 ul ul ul { list-style-type: circle; }
 ul ul ul ul { list-style-type: disc; }
-li { margin-left: 0.5em; margin-top: 0.5em; }
-li li { font-size: 85%; font-style: normal }
-li li li { font-size: 85%; font-style: normal }
+li { 
+  margin-left: 0.5em; 
+  margin-top: 0.5em; 
+  font-size: inherit; 
+  font-style: normal;
+}
+li li { 
+  font-size: inherit; 
+  font-style: normal;
+   }
+li li li { 
+  font-size: inherit; 
+  font-style: normal; }
 
 /*this is to accomodated the snipped highlight js*/
 pre ul li {
@@ -401,7 +419,7 @@ ol li {
 }
 
 li ul li { 
-  font-size: 85%; 
+  /*font-size: 85%; */
   font-style: normal;
   list-style-type: disc;
   background: transparent;
