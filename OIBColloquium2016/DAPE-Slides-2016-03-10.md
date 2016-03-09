@@ -18,7 +18,7 @@ Bassel Khartabil / باسل خرطبيل
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [http://tillgrallert.github.io/Slides/DAPE/OIBColloquium2016](http://tillgrallert.github.io/Slides/OIBColloquium2016)
+Slides: [https://tinyurl.com/oib-2016-03-10](https://tillgrallert.github.io/Slides/OIBColloquium2016)
 
 Twitter: @tillgrallert
 
@@ -221,7 +221,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 - Adaptation of [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/)
 - human-readable and static web-view (either rawgit or gh-pages)
-    + can be run without a continuous internet connection and with local facsimiles
+    + generated on-the-fly by the user's browser using XSLT to transform the TEI XML files.
+    + can be run without an internet connection and with local facsimiles.
 - parallel display of text and facsimile
     + simple changes to display different facsimiles
 - link to metadata on the article level (BibTeX)
