@@ -10,43 +10,6 @@
   <meta name="date" content="2016-03-16" />
   <title>Digital Arabic Periodical Editions: presentation at Dixit2</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-  </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
@@ -122,7 +85,7 @@ Till Grallert
 <p>Bassel Khartabil / باسل خرطبيل</p>
 <ul>
 <li>Syrian software engineer</li>
-<li>leading advocat for open access and Creative Commons (CC) in Syria</li>
+<li>leading advocate for open access and Creative Commons (CC) in Syria</li>
 <li>author of the Arabic CC licences</li>
 <li>detained by the regime since 15 March 2012</li>
 <li>moved to an unknown location and probably killed in Oct 2015</li>
@@ -259,13 +222,38 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </div>
 <div id="test-case-digital-muqtabas" class="slide section level1">
 <h1>3. Test case: digital <em>Muqtabas</em></h1>
+<p><em>al-Muqtabas</em> / المقتبس</p>
+<ul>
+<li>“monthly” journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+<ul>
+<li>9 volumes, 96 issues (at least 2 double issues), c. 7000 pages</li>
+</ul></li>
+<li>Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education.</li>
+<li>availability at c. 30 libraries (North America, Europe, Middle East):
+<ul>
+<li>original prints (mostly incomplete)</li>
+<li>some copies of a “gray” reprint</li>
+<li>a number of microfiche copies from the same source</li>
+</ul></li>
+</ul>
+<!--     + Palestine: 1 incomplete copy
+    + Lebanon: at least 2 complete physical copies
+    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
+    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
+</div>
+<div id="test-case-digital-muqtabas-1" class="slide section level1">
+<h1>3. Test case: digital <em>Muqtabas</em></h1>
 <ol style="list-style-type: decimal">
 <li>Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī’s <em>Majallat al-Muqtabas</em> with a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a></li>
 <li>Core feature: gradually improve the digital edition (text and mark-up)</li>
-<li>Sugar on top: Static web-view (doesn’t require a permanent internet connection)</li>
+<li>Sugar on top:
+<ul>
+<li>Static web-view (doesn’t require a permanent internet connection)</li>
+<li>access through bibliographic metadata in public Zotero group</li>
+</ul></li>
 </ol>
 </div>
-<div id="test-case-digital-muqtabas-1" class="slide section level1">
+<div id="test-case-digital-muqtabas-2" class="slide section level1">
 <h1>3. Test case: digital <em>Muqtabas</em></h1>
 <div class="figure">
 <img src="../images/dape/DAPE-organigramme_vertical.png" alt="Project scheme" />
@@ -294,46 +282,47 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </ul></li>
 <li>provide a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a> for all files: edition, tools, webview</li>
 </ul>
-</div>
-<div id="basis-tei-files" class="slide section level1">
-<h1>3.1 Basis: TEI files</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;text</span><span class="ot"> xml:id=</span><span class="st">&quot;text&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> type=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;i62&quot;</span><span class="kw">&gt;</span>
-    <span class="kw">&lt;pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> n=</span><span class="st">&quot;177&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_181&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_2.d1e1489&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;front</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;front_1.d1e1431&quot;</span><span class="kw">&gt;</span>
-         <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;masthead&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;bibl&gt;</span>
-               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;3&quot;</span><span class="kw">&gt;</span>الجزء 3<span class="kw">&lt;/tei:biblScope&gt;</span>
-               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> n=</span><span class="st">&quot;6&quot;</span><span class="kw">&gt;</span>المجلد 6<span class="kw">&lt;/tei:biblScope&gt;&lt;lb/&gt;</span>
-               <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span>
-            <span class="kw">&lt;/bibl&gt;</span>
-         <span class="kw">&lt;/div&gt;</span>
-    <span class="kw">&lt;/front&gt;</span>
-    <span class="kw">&lt;body</span><span class="ot"> xml:id=</span><span class="st">&quot;body_1.d1e1485&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P4092.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n62-p1&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_1.d1e1487&quot;</span><span class="kw">/&gt;</span>
-        <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1491&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_1.d1e1493&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الفتوى في الإسلام<span class="kw">&lt;/head&gt;</span>
-            <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_15.d1e1496&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>تابع ل <span class="kw">&lt;ref</span><span class="ot"> target=</span><span class="st">&quot;oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;ref_5.d1e1694&quot;</span><span class="kw">&gt;</span>ما في الجزء الماضي<span class="kw">&lt;/ref&gt;&lt;/p&gt;</span>
-            <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1499&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
-                <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_2.d1e1501&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>آداب المستفتي وصفته وأحكامه<span class="kw">&lt;/head&gt;</span>
-                <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1504&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
-                    <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_3.d1e1506&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الأول<span class="kw">&lt;/head&gt;</span>
-                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_16.d1e1509&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.<span class="kw">&lt;/p&gt;</span>
-                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_17.d1e1512&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.<span class="kw">&lt;/p&gt;</span>
-                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_18.d1e1515&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.<span class="kw">&lt;/p&gt;</span>
-                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_19.d1e1518&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.<span class="kw">&lt;/p&gt;</span>
-                <span class="kw">&lt;/div&gt;</span>
-            <span class="kw">&lt;/div&gt;</span>
-        <span class="kw">&lt;/div&gt;</span>
-        <span class="co">&lt;!-- ... --&gt;</span>
-    <span class="kw">&lt;/body&gt;</span>
-<span class="kw">&lt;/text&gt;</span></code></pre></div>
-</div>
-<div id="basis-tei-files-1" class="slide section level1">
-<h1>3.1 Basis: TEI files</h1>
-<div class="figure">
-<img src="../images/dape/oxygen_muqtabas-1.png" alt="TEI file of al-Muqtabas 6(2) in oXygen: author mode" />
-<p class="caption">TEI file of <em>al-Muqtabas</em> 6(2) in oXygen: author mode</p>
-</div>
+<!--
+# 3.1 Basis: TEI files
+
+~~~{.xml}
+<text xml:id="text" xml:lang="ar" type="issue" n="i62">
+    <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
+    <front xml:lang="ar" xml:id="front_1.d1e1431">
+         <div type="masthead">
+            <bibl>
+               <tei:biblScope unit="issue" n="3">الجزء 3</tei:biblScope>
+               <tei:biblScope unit="volume" n="6">المجلد 6</tei:biblScope><lb/>
+               <title level="j" xml:lang="ar">المقتبس</title>
+            </bibl>
+         </div>
+    </front>
+    <body xml:id="body_1.d1e1485" xml:lang="ar">
+        <pb corresp="file:../epub/26523/OEBPS/xhtml/P4092.xhtml" ed="shamela" n="n62-p1" xml:id="pb_1.d1e1487"/>
+        <div type="article" xml:id="div_2.d1e1491" xml:lang="ar">
+            <head xml:id="head_1.d1e1493" xml:lang="ar">الفتوى في الإسلام</head>
+            <p xml:id="p_15.d1e1496" xml:lang="ar">تابع ل <ref target="oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517" xml:id="ref_5.d1e1694">ما في الجزء الماضي</ref></p>
+            <div type="section" xml:id="div_2.d1e1499" xml:lang="ar">
+                <head xml:id="head_2.d1e1501" xml:lang="ar">آداب المستفتي وصفته وأحكامه</head>
+                <div type="section" xml:id="div_2.d1e1504" xml:lang="ar">
+                    <head xml:id="head_3.d1e1506" xml:lang="ar">الأول</head>
+                    <p xml:id="p_16.d1e1509" xml:lang="ar">المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.</p>
+                    <p xml:id="p_17.d1e1512" xml:lang="ar">والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.</p>
+                    <p xml:id="p_18.d1e1515" xml:lang="ar">ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.</p>
+                    <p xml:id="p_19.d1e1518" xml:lang="ar">فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</text>
+~~~
+-->
+<!--
+# 3.1 Basis: TEI files
+
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../images/dape/oxygen_muqtabas-1.png) 
+
+-->
 </div>
 <div id="basis-is-this-legal" class="slide section level1">
 <h1>3.1 Basis: Is this legal?</h1>

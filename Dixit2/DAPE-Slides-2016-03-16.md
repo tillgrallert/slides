@@ -9,7 +9,7 @@ date: 2016-03-16
 Bassel Khartabil / باسل خرطبيل
 
 + Syrian software engineer
-+ leading advocat for open access and Creative Commons (CC) in Syria
++ leading advocate for open access and Creative Commons (CC) in Syria
 + author of the Arabic CC licences 
 + detained by the regime since 15 March 2012
 + moved to an unknown location and probably killed in Oct 2015
@@ -109,9 +109,28 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
+*al-Muqtabas* / المقتبس
+
+- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
+- availability at c. 30 libraries (North America, Europe, Middle East): 
+    + original prints (mostly incomplete)
+    + some copies of a "gray" reprint
+    + a number of microfiche copies from the same source
+
+<!--     + Palestine: 1 incomplete copy
+    + Lebanon: at least 2 complete physical copies
+    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
+    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
+
+# 3. Test case: digital *Muqtabas*
+
 1. Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas* with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
 2. Core feature: gradually improve the digital edition (text and mark-up)
-3. Sugar on top: Static web-view (doesn't require a permanent internet connection)
+3. Sugar on top: 
+    - Static web-view (doesn't require a permanent internet connection)
+    - access through bibliographic metadata in public Zotero group
 
 # 3. Test case: digital *Muqtabas*
 
@@ -135,6 +154,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + attribution of authorship
 - provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
 
+<!--
 # 3.1 Basis: TEI files
 
 ~~~{.xml}
@@ -165,14 +185,17 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
                 </div>
             </div>
         </div>
-        <!-- ... -->
     </body>
 </text>
 ~~~
+-->
 
+<!--
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../images/dape/oxygen_muqtabas-1.png)
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../images/dape/oxygen_muqtabas-1.png) 
+
+-->
 
 # 3.1 Basis: Is this legal?
 
