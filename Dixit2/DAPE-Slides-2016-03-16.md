@@ -18,7 +18,7 @@ Bassel Khartabil / باسل خرطبيل
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tinyurl.com/dixit2-2016-03-17](https://tillgrallert.github.io/Slides/Dixit2)
+Slides: [https://tillgrallert.github.io/Slides/Dixit2](https://tillgrallert.github.io/Slides/Dixit2)
 
 Twitter: @tillgrallert
 
@@ -40,7 +40,7 @@ Email: <grallert@orient-institut.org>
 
 - Preservation: 
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
-    + Negelct: fragile materiality
+    + Neglect: fragile materiality
 - Access:
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
     + widely-dispersed collections
@@ -295,3 +295,13 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - within a framework (git and GitHub) that allows for
     + collaborative, open, version-controlled improvements of the edition
     + re-use of the text
+
+-----------------
+
+Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+
+Slides: [https://tillgrallert.github.io/Slides/Dixit2](https://tillgrallert.github.io/Slides/Dixit2)
+
+Twitter: @tillgrallert
+
+Email: <grallert@orient-institut.org>
