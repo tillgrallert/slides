@@ -68,9 +68,9 @@ gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shﾄ
 
 # 1.3.1 state of digitisation: text
 
-<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shﾄ［ila*](http://shamela.ws/index.php/book/26523)](../images/dape/shamela_muqtabas-1.png) -->
+<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shﾄ［ila*](http://shamela.ws/index.php/book/26523)](../assets/dape/shamela_muqtabas-1.png) -->
 
-![[*al-Muqtabas* on *al-Maktaba al-Shﾄ［ila*](http://shamela.ws/browse.php/book-26523#page-4046)](../images/dape/shamela_muqtabas-2.png)
+![[*al-Muqtabas* on *al-Maktaba al-Shﾄ［ila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/dape/shamela_muqtabas-2.png)
 
 # 1.3.2 state of digitisation: images
 
@@ -82,19 +82,19 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../images/dape/eap119-1-4-5-muqtabas.png)
+![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/dape/eap119-1-4-5-muqtabas.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../images/dape/hathi_muqtabas-1.png)
+![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-1.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../images/dape/hathi_muqtabas-2.png)
+![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-2.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../images/dape/hathi_muqtabas-ocr-2.png)
+![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-ocr-2.png)
 
 # 2. Suggested solution: unite facsimile and transcription
 
@@ -134,13 +134,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-![Project scheme](../images/dape/DAPE-organigramme_vertical.png)
+![Project scheme](../assets/dape/DAPE-organigramme_vertical.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../images/dape/DAPE-organigramme_vertical-input.png)
+![](../assets/dape/DAPE-organigramme_vertical-input.png)
 
-![](../images/dape/DAPE-organigramme_vertical-edition.png) -->
+![](../assets/dape/DAPE-organigramme_vertical-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -193,13 +193,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 <!--
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../images/dape/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/dape/oxygen_muqtabas-1.png) 
 
 -->
 
 # 3.1 Basis: Is this legal?
 
-![](../images/dape/DAPE-organigramme_vertical-input.png)
+![](../assets/dape/DAPE-organigramme_vertical-input.png)
 
 # 3.1 Basis: Is this legal?
 
@@ -216,7 +216,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.2 Core feature: Continuous improvement
 
-![](../images/dape/DAPE-organigramme_vertical-crowd.png)
+![](../assets/dape/DAPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 
@@ -238,7 +238,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../images/dape/boilerplate_muqtabas.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/dape/boilerplate_muqtabas.png)
 
 # 3.3 Sugar on top: web-view
 
@@ -253,11 +253,11 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../images/dape/zotero-group_digital-muqtabas-1.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/dape/zotero-group_digital-muqtabas-1.png)
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../images/dape/zotero-group_digital-muqtabas-2.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/dape/zotero-group_digital-muqtabas-2.png)
 
 
 # 4. To do, ongoing work
