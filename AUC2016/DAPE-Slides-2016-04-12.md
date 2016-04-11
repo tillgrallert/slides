@@ -114,10 +114,10 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
 - Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- availability at c. 30 libraries (North America, Europe, Middle East): 
+- available at c. 30 libraries (North America, Europe, Middle East): 
     + original prints (mostly incomplete)
     + some copies of a "gray" reprint
-    + a number of microfiche copies from the same source
+    + a number of microfiche copies from a single source
 
 <!--     + Palestine: 1 incomplete copy
     + Lebanon: at least 2 complete physical copies
@@ -143,9 +143,9 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/dape/DAPE-organigramme_vertical-input.png)
+![](../assets/dape/DAPE-organigramme_horizontal-input.png)
 
-![](../assets/dape/DAPE-organigramme_vertical-edition.png) -->
+![](../assets/dape/DAPE-organigramme_horizontal-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -204,24 +204,24 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3.1 Basis: Is this legal?
 
-![](../assets/dape/DAPE-organigramme_vertical-input.png)
+![External sources, external labour, and the question of copyright](../assets/dape/DAPE-organigramme_horizontal-input.png)
 
 # 3.1 Basis: Is this legal?
 
 Copyright depends on the jurisdiction of creators, distributors, etc.
 
 1. text of *al-Muqtabas*
-    + is in the public domain: transcription is *legal*
+    + is in the public domain: transcription and imaging is *legal*.^[even in the US as attested to by HathiTrust]
     + the transcribers do not / cannot claim copyright: copying is *legal*
 2. images of *al-Muqtabas*
     + digital files are protected by copyright: use is subject to licence, linking is *legal*
     + download and redistribution: almost certainly *illegal*
 3. digital edition of *al-Muqtabas*
-    + all our work is licenced as [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
+    + all our work is licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # 3.2 Core feature: Continuous improvement
 
-![](../assets/dape/DAPE-organigramme_vertical-crowd.png)
+![A social and GitHub-hosted digital edition](../assets/dape/DAPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 
@@ -241,9 +241,11 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - send us a *pull request*
 - changes will be reviewed and merged
 
+![Branches on GitHub](../assets/dape/github_branches-1.png)
+
 # 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/dape/boilerplate_muqtabas.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/dape/boilerplate_muqtabas-1.png)
 
 # 3.3 Sugar on top: web-view
 
