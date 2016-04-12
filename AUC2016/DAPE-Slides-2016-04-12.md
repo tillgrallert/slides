@@ -297,7 +297,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
-    + BibTeX files for every article
+    + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - within a framework (git and GitHub) that allows for
     + collaborative, open, version-controlled improvements of the edition
