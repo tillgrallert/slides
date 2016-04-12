@@ -159,7 +159,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + attribution of authorship
 - provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
 
-<!--
+
 # 3.1 Basis: TEI files
 
 ~~~{.xml}
@@ -193,14 +193,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     </body>
 </text>
 ~~~
--->
 
-<!--
+
+
 # 3.1 Basis: TEI files
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/dape/oxygen_muqtabas-1.png) 
 
--->
+
 
 # 3.1 Basis: Is this legal?
 
