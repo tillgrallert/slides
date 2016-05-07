@@ -68,6 +68,18 @@ The consequence is a focus on "high" culture and canonical texts
 
 # 3. Test case: digital *Muqtabas*
 
+![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/dape/boilerplate_muqtabas-1.png)
+
+# 3. Test case: digital *Muqtabas*
+
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/dape/oxygen_muqtabas-1.png)
+
+# 3. Test case: digital *Muqtabas* 
+
+![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/dape/oxygen_muqtabas-2.png) 
+
+# 3. Test case: digital *Muqtabas*
+
 *al-Muqtabas* / المقتبس
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
@@ -82,6 +94,7 @@ The consequence is a focus on "high" culture and canonical texts
     + Lebanon: at least 2 complete physical copies
     + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
     + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
+
 
 # 3. Test case: digital *Muqtabas*
 
