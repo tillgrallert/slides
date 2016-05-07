@@ -16,6 +16,23 @@ Twitter: @tillgrallert
 
 Email: <grallert@orient-institut.org>
 
+# 1. The journal of *al-Muqtabas*
+
+*al-Muqtabas* / المقتبس
+
+- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
+- available at c. 30 libraries (North America, Europe, Middle East): 
+    + original prints (mostly incomplete)
+    + some copies of a "gray" reprint
+    + a number of microfiche copies from a single source
+
+<!--     + Palestine: 1 incomplete copy
+    + Lebanon: at least 2 complete physical copies
+    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
+    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
+
 # 1.1 Importance of mundane texts / periodicals
 
 - They are at the core of various discourses
@@ -77,24 +94,6 @@ The consequence is a focus on "high" culture and canonical texts
 # 3. Test case: digital *Muqtabas* 
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/dape/oxygen_muqtabas-2.png) 
-
-# 3. Test case: digital *Muqtabas*
-
-*al-Muqtabas* / المقتبس
-
-- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
-    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
-    + original prints (mostly incomplete)
-    + some copies of a "gray" reprint
-    + a number of microfiche copies from a single source
-
-<!--     + Palestine: 1 incomplete copy
-    + Lebanon: at least 2 complete physical copies
-    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
-    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
-
 
 # 3. Test case: digital *Muqtabas*
 
