@@ -1,7 +1,7 @@
 ---
-title: "Digital Arabic Periodical Editions: presentation at Dixit2"
+title: "Digital Arabic Periodical Editions: presentation at AUC"
 author: Till Grallert
-date: 2016-03-16
+date: 2016-04-12
 ---
 
 # #freebassel
@@ -18,7 +18,7 @@ Bassel Khartabil / باسل خرطبيل
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/Dixit2](https://tillgrallert.github.io/Slides/Dixit2)
+Slides: [https://tillgrallert.github.io/slides/AUC2016](https://tillgrallert.github.io/slides/AUC2016)
 
 Twitter: @tillgrallert
 
@@ -68,9 +68,9 @@ gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Sh�
 
 # 1.3.1 state of digitisation: text
 
-<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/dape/shamela_muqtabas-1.png) -->
+<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/OpenAraPE/shamela_muqtabas-1.png) -->
 
-![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/dape/shamela_muqtabas-2.png)
+![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/OpenAraPE/shamela_muqtabas-2.png)
 
 # 1.3.2 state of digitisation: images
 
@@ -82,19 +82,19 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/dape/eap119-1-4-5-muqtabas.png)
+![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/OpenAraPE/eap119-1-4-5-muqtabas.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-1.png)
+![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-1.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-2.png)
+![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-2.png)
 
 # 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/dape/hathi_muqtabas-ocr-2.png)
+![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-ocr-2.png)
 
 # 2. Suggested solution: unite facsimile and transcription
 
@@ -114,10 +114,10 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
 - Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- availability at c. 30 libraries (North America, Europe, Middle East): 
+- available at c. 30 libraries (North America, Europe, Middle East): 
     + original prints (mostly incomplete)
     + some copies of a "gray" reprint
-    + a number of microfiche copies from the same source
+    + a number of microfiche copies from a single source
 
 <!--     + Palestine: 1 incomplete copy
     + Lebanon: at least 2 complete physical copies
@@ -126,21 +126,26 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-1. Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas* with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: gradually improve the digital edition (text and mark-up)
+1. Basis: 
+    - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
+    - The text links to open-access digital facsimiles
+    - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+2. Core feature: 
+    - social digital edition: gradually improve text and mark-up
 3. Sugar on top: 
     - Static web-view (doesn't require a permanent internet connection)
-    - access through bibliographic metadata in public Zotero group
+    - bibliographic metadata for all issues and articles (MODS, BibTeX)
+    - access to bibliographic metadata through a public Zotero group
 
 # 3. Test case: digital *Muqtabas*
 
-![Project scheme](../assets/dape/DAPE-organigramme_vertical.png)
+![Project scheme](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/dape/DAPE-organigramme_vertical-input.png)
+![](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-input.png)
 
-![](../assets/dape/DAPE-organigramme_vertical-edition.png) -->
+![](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -154,7 +159,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + attribution of authorship
 - provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
 
-<!--
+
 # 3.1 Basis: TEI files
 
 ~~~{.xml}
@@ -188,35 +193,35 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     </body>
 </text>
 ~~~
--->
 
-<!--
+
+
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/dape/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenAraPE/oxygen_muqtabas-1.png) 
 
--->
+
 
 # 3.1 Basis: Is this legal?
 
-![](../assets/dape/DAPE-organigramme_vertical-input.png)
+![External sources, external labour, and the question of copyright](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-input.png)
 
 # 3.1 Basis: Is this legal?
 
 Copyright depends on the jurisdiction of creators, distributors, etc.
 
 1. text of *al-Muqtabas*
-    + is in the public domain: transcription is *legal*
+    + is in the public domain: transcription and imaging is *legal*.^[even in the US as attested to by HathiTrust]
     + the transcribers do not / cannot claim copyright: copying is *legal*
 2. images of *al-Muqtabas*
     + digital files are protected by copyright: use is subject to licence, linking is *legal*
     + download and redistribution: almost certainly *illegal*
 3. digital edition of *al-Muqtabas*
-    + all our work is licenced as [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
+    + all our work is licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # 3.2 Core feature: Continuous improvement
 
-![](../assets/dape/DAPE-organigramme_vertical-crowd.png)
+![A social and GitHub-hosted digital edition](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 
@@ -231,14 +236,16 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 3.2 Core feature: how to contribute
 
 - go to [GitHub](https://www.github.com) and register a free account
-- *fork* the the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://tinyurl.com/muqtabas](https://tinyurl.com/muqtabas)
+- *fork* the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 - edit the text
 - send us a *pull request*
 - changes will be reviewed and merged
 
+![Branches on GitHub](../assets/OpenAraPE/github_branches-1.png)
+
 # 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/dape/boilerplate_muqtabas.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenAraPE/boilerplate_muqtabas-1.png)
 
 # 3.3 Sugar on top: web-view
 
@@ -248,16 +255,16 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + can be run without an internet connection and with local facsimiles.
 - parallel display of text and facsimile
     + simple changes to display different facsimiles
-- link to metadata on the article level (BibTeX)
+- link to metadata on the article level (MODS, BibTeX)
 - the code is shared with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/dape/zotero-group_digital-muqtabas-1.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/OpenAraPE/zotero-group_digital-muqtabas-1.png)
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/dape/zotero-group_digital-muqtabas-2.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/OpenAraPE/zotero-group_digital-muqtabas-2.png)
 
 
 # 4. To do, ongoing work
@@ -290,17 +297,17 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
-    + BibTeX files for every article
+    + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - within a framework (git and GitHub) that allows for
     + collaborative, open, version-controlled improvements of the edition
     + re-use of the text
 
------------------
+# Thank you !
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/Dixit2](https://tillgrallert.github.io/Slides/Dixit2)
+Slides: [https://tillgrallert.github.io/slides/AUC2016](https://tillgrallert.github.io/slides/AUC2016)
 
 Twitter: @tillgrallert
 
