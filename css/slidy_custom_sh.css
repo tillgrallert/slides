@@ -103,6 +103,7 @@ div.slidy_toc .toc_heading {
   border-bottom-width: 1px;
 }
 
+/* basic styling for all slides */
 div.slide {
   z-index: 20;
   margin: 0 0 0 0;
@@ -214,7 +215,7 @@ div.toc-heading {
 /****************
 images and figures
 *****************/
-img {
+img, iframe {
    /* image-rendering: optimize-quality; */
    /* width: 100%; */
     margin-top: 1em;
@@ -242,6 +243,19 @@ div.figure img {
     max-height: 80%;
     max-width:80%;
 }
+
+/* external content, including local html pages */
+iframe {
+  width: 90%;
+  height: 100%;
+  scrolling: auto;
+  scroll-behavior: auto;
+  /*border:none;*/
+}
+
+/*****************
+code
+******************/
 
 /*pre {
  font-size: 80%;
