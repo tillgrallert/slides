@@ -2,6 +2,8 @@
 title: "Workshop Dangerous Classes"
 author: Till Grallert
 date: 2017-01-26
+duration: 20
+copyright: "CC BY-SA 4.0"
 ---
 
 ## Women in the streets! Urban food riots in late Ottoman *Bilād al-Shām*
@@ -124,7 +126,7 @@ Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
 
 8. Intervention from the highest representative of the central authorities
 9. No reports on falling grain prices.
-10. Eventual prosecution of looters
+<!-- 10. Eventual prosecution of looters -->
 
 <!-- ## 4. Empiricial problems
 
