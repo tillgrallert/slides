@@ -7,6 +7,10 @@ copyright: "CC BY-SA 4.0"
 ---
 
 ## Women in the streets! Urban food riots in late Ottoman *Bilād al-Shām*
+### Till Grallert, Orient-Institut Beirut
+### 26 January 2017, Workshop "Dangerous Classes"
+
+Slides: [tillgrallert.github.io/Slides/2017-Oxford](https://tillgrallert.github.io/Slides/2017-Oxford)
 
 Twitter: @tillgrallert
 
@@ -21,23 +25,12 @@ Email: <grallert@orient-institut.org>
 2. Developing an argument
 3. Analysis
 
-## 1.1 Food riot in Damascus, 12-17 March 1878
-
-<!-- Map of Damascus  -->
-
-![Map of late Ottoman Damascus](../assets/food-riots/map-Damascus.jpg)
-
-## 1.1 Food riot in Damascus, 12-17 March 1878
-
-<!-- Photo of Marja Square -->
-
-![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/food-riots/photo-Damascus.jpg)
 
 ## 1.1 Food riot in Hama, 11 August 1910
 
 <!-- Map of Hama -->
 
-![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/food-riots/map-Hama.jpg)
+![Pentz, Peter. *The Medieval Citadel and Its Architecture.* Hama: fouilles et recherches de la fondation Carlsberg 1931-1938 IV/1. København: Nationalmuseet, 1998](../assets/food-riots/map-Hama-Pentz-1-marked-up.jpg)
 
 ## 1.1 Food riot in Hama, 11 August 1910
 
