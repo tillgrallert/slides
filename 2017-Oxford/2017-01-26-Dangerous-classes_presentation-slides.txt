@@ -12,7 +12,7 @@ copyright: "CC BY-SA 4.0"
 
 Slides: [tillgrallert.github.io/Slides/2017-Oxford](https://tillgrallert.github.io/Slides/2017-Oxford)
 
-Twitter: @tillgrallert
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
 
 Email: <grallert@orient-institut.org>
 
@@ -39,10 +39,10 @@ Email: <grallert@orient-institut.org>
 
 <!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-1.jpg) -->
 
-## 1.1 Food riot in Hama, 11 August 1910
+<!-- ## 1.1 Food riot in Hama, 11 August 1910 -->
 
 <!-- Photo of the Serail  -->
-![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/food-riots/photo-Hama-2.jpg)
+<!-- ![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/food-riots/photo-Hama-2.jpg) -->
 
 ## 1.1 Food riot in Hama, 11 August 1910
 
@@ -60,7 +60,8 @@ Email: <grallert@orient-institut.org>
 
 ## 2.1 Research question
 
-What is the function of food riots---immediate remedy for hunger, lower and stable bread prices in the long term, political change?
+1. What is the *function* of food riots---immediate remedy for hunger, lower and stable bread prices in the long term, political change?
+2. What are the *implications* of food riots for the study of Middle Eastern societies?
 
 <!-- ## 1.3 Research questions
 
@@ -142,11 +143,16 @@ Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
 
 ![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/food-riots/muqtabas-1837.jpg) -->
 
+# 5. Conclusion
 
-
-## 5. Summary / conclusion
+## 5.1 Summary
 
 - Contrary to common arguments and presumptions, we find a long "tradition" of popular contentions in general and food "riots" in particular as well as female agency in genuinely political struggles in public places / space.
 - There is no direct causal relation between food riots and food prices.
 - Food riots are a relatively stable "repertoire of contention".
 - Food riots are a *tactic* choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*
+
+## 5.2 Conclusion: open questions
+
+- What about *dangerous classes* and the *lumpenproletariat*?
+- What are the *implications* of food riots for the study of Middle Eastern societies?
