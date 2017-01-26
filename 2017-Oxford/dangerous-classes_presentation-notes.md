@@ -8,16 +8,11 @@ Almost thirty years ago Edmund Burke III made three claims in his attempt to app
 
 During these food riots, large groups of poor men and women gathered at central squares and in front of the authorities in demand for *equitable distribution* and *fair access* to *available bread*. Starting with an observable absence of direct causal relations between food prices and food riots and only rare instances of looting, which did not commonly target foodstores, I argue that food riots were neither particularly riotous nor predominantly concerned with food. Instead, the demand for *bread* had a symbolic value and was part of a relatively stable "repertoire of contention" that protestors could resort to in negotations over political legitimacy *within* the existing political order as based in the provision *just rule* and the *safety of life*.
 
-### definitions 
-
-- Following Charles Tilly's work, I define *food riots* as contentious collective action: a group of people assemble in a public place and raise the demand of lower food prices vis-à-vis another group of people. All case studies in this research project <!-- must --> conform to this basic definition of a specific *form* of action as well as a specific contentious *claim*. Based on empirical case studies I argue that such food riots form a *repertoire of contention* or "a limited set of routines that are learned, shared, and acted out through a relatively deliberate process of choice".
-- From this definition follows that food *riots* were neither particularly nor even necessarily riotous or violent. 
+ 
 
 ## 1.1 Outline of today's paper
 
 1. Introduction and story telling
-    1. Report on a food riot in Hama, 1910
-    2. first observations
 2. Research question(s) and methodology
 3. Empirical results and argument
 4. Food riots as a repertoire of contention
@@ -28,7 +23,28 @@ During these food riots, large groups of poor men and women gathered at central 
 
 Start with a *single* anecdote which shows the main changes must have been taken place in the nature of public space
 
-- 1910 Hama or Homs? Hama!
+### 1910, 11 Aug: Hama
+
+On 11 August 1910, a demonstration of poor people in front of the Serail in Hama against the high prices of bread escalated into a full-fledged and violent bread riot. All available reports {>>in *al-Muqtabas* (Damascus), *al-Bashīr*, *al-Iqbāl*, *al-Ittiḥād al-ʿUthmānī*, *Lisān al-Ḥāl* (Beirut), and *Lisān al-Sharq* (Hama)<<} blame greedy wholesale merchants and their attempts to profit from the unrest in the Ḥawran and consequently high grain prices in Damascus by exporting all available cereals to the provincial capital.
+
+On this Thursday gathered a large crowd of poor men, women, and children and marched to the Serail of the mutaṣarrif, Nāẓim Bey, where they peacefully demonstrated against the high profits from the trade of foodstuff and against all exports to Damascus. Nāẓim Bey convinced the crowd that the municipality should be the recipient of their anger and called upon the *baladiyya* to enforce sufficient measures of price control. Such measures were neither implemented nor announced due to the disagreement between mutaṣarrif and *baladiyya* concerning their respective responsibilities. {>>the mutaṣarrif and the baladiyya could not agree upon measures to pacify the protestors.<<} 
+
+Dissatisfied by the official response, the crowds began to attack stores at three different locations: 
+
+1.  In the city. When they did not manage to break into the store of al-Mashnūq, they resorted to pelting the house with stones. Then they turned onto Maḥmūd al-Farrā, whom they identified as the main culprit for their misery. They [finally] located al-Farrā at the slaughterhouse  and threatened him with murder. Yet, al-Farrā managed to lock himself inside and escaped. The crowds then split in two.
+2.  Large quantities of grain destined for export to Damascus were stored at the railway station and the surrounding warehouses. The protestors forced the gates open and looted some 600 bags of grain without touching any of the railway carriages full of wheat waiting on a side track. This was due to the station master, a certain Nabīh Efendi, having convinced the crowd that the station with its stores of lentils and onions and all coaches were property of the state and that the Ḥijāz Railway as such was pious Muslim endeavour. He also managed to take a photo of the protestors with their loot that was later used for identification purposes. After the successful apprehension of grain, the crowds again targeted Maḥmūd al-Farrā and broke into one of his warehouses at the station that held skins and empty bags, which they looted.
+3.  At the western square they looted the stores of Aḥmad al-Ṣamṣām and Ibn al-Habiyān  and of  al-Bārūdī and took all the rice, sugar, and coffee they could find. Finally, they looted the warehouse of Aswad and Sharrāḥ in the al-Jisr quarter and took all the grain stored inside.
+
+The crowd,  continuously referred to as mob (*al-raʿāʿ*) by *al-Muqtabas*, could roam the street for two and a half hours without any intervention of the authorities and were finally dispersed by motorised imperial troops (15 men only). *Al-Muqtabas* mentions the honourable but futile attempt of a single mounted policeman, Khudr Efendi, to disperse the crowd: He got a severe beating and narrowly escaped with bruises and bleeding. The newspaper also polemically mocks the commander of the gendarmerie as having said "Darling, what can we do?" (*canım ne yapalım*) upon his arrival on the scene, after which he retreated with his men.[^11] Altogether, it was estimated the rioters looted goods with a value of between £T 1500[^12] and £T 2000.[^13]
+
+In the aftermath of these events (called *ḥādithat Ḥamā*[^14] and *fitna*)[^15], the authorities set up an investigating committee to establish the reasons for the price hikes and to identify the looters. Both the mutaṣarrif and the vali of Syria issued orders against inflated prices and banning exports from Syria. But while the press riled for punishment of all monopolists, reports on falling prices are nowhere to be found.
+
+
+[^11]: {muqtabas 162-eap@2}
+[^12]: {jarmuq 452a}
+[^13]: {muqtabas 164-eap@3}
+[^14]: {muqtabas 162-eap}{iqbal 9-361}
+[^15]: {iqbal 9-360}
 
 
 
@@ -91,6 +107,8 @@ Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
     + as they have no impact on food prices they function as a "reminder" to the ruling classes concerning their obligations to the ruled
     + e.g. "food riots" occur in Beirut in October 1914 before any acts of war could have a real impact on people's lives  
 3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+    + Following Charles Tilly's work, I define *food riots* as contentious collective action: a group of people assemble in a public place and raise the demand of lower food prices vis-à-vis another group of people. All case studies in this research project <!-- must --> conform to this basic definition of a specific *form* of action as well as a specific contentious *claim*. Based on empirical case studies I argue that such food riots form a *repertoire of contention* or "a limited set of routines that are learned, shared, and acted out through a relatively deliberate process of choice".
+    + From this definition follows that food *riots* were neither particularly nor even necessarily riotous or violent.
 4. The target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
     + E.P. Thompson: moral economy
     + Amartya Sen: entitlement gap. Sen argues that famines are a function of  entitlement relationships
