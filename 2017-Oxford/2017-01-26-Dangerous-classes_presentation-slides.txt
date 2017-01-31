@@ -108,12 +108,12 @@ Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
 
 # 4. Repertoire of contention
 
-## 1 Repertoire of contention: prologue (weeks)
+## 4.1 Prologue (weeks)
 
 1. Period of **artificially** high prices
 2. Advantageous moment
 
-## 2 Repertoire of contention: the food "riot" (few hours, a day)
+## 4.2 the food "riot" (few hours, a day)
 
 3. A crowd of poor people---men, women and children---gathers
 4. The crowd marches onto the seat of the local government and peacefully raises its demand for affordable bread and grain
@@ -121,7 +121,7 @@ Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
 6. (optional) The crowds turn on merchants and loot warehouses, stores, and railway stations
 7. Successful intervention of the highest representative of the central authorities with the help of imperial troops
 
-## 3 Repertoire of contention: aftermath (weeks and months)
+## 4.3 Aftermath (weeks and months)
 
 8. Intervention from the highest representative of the central authorities
 9. No reports on falling grain prices.
