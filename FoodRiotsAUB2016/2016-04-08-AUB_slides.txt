@@ -4,7 +4,7 @@ author: Till Grallert
 date: 2016-04-08
 ---
 
-Slides: [http://tillgrallert.github.io/slides/FoodRiotsAUB2016](http://tillgrallert.github.io/slides/FoodRiotsAUB2016)
+Slides: [http://tillgrallert.github.io/Slides/FoodRiotsAUB2016](http://tillgrallert.github.io/Slides/FoodRiotsAUB2016)
 
 Twitter: @tillgrallert
 
