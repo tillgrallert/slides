@@ -189,7 +189,7 @@ There are multiple widely supported flavours of Markdown that try to overcome so
  Some *text* {:#id}{:.class}
 ~~~ 
 
-# Credits and links
+## Credits and links
 
 Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/Slides/2017-dhi-beirut](https://tillgrallert.github.io/Slides/2017-dhi-beirut) 
 
