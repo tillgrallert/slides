@@ -1,9 +1,8 @@
 ---
-title: "DHI Beirut 2017: plain text, slides"
-author: Till Grallert
-date: 2017-03-07 13:20:56 +0100
-tags:
-- teaching
+title: "Introduction to plain text and sustainable publishing"
+author: "Till Grallert (OIB)"
+date: 2017-03-10
+copyright: "CC BY-SA 4.0"
 ---
 
 # Introduction
@@ -12,7 +11,7 @@ tags:
 - academic mode of production: 
     + content and means of production and access are owned by a few large companies
     + work is provided for free
-- consequence:
+- consequences:
     -  producers and the public are charged multiple times over
     -  severely limited access to the public / those outside the global north
     -  obsolescence and incompatibility of tools and formats
