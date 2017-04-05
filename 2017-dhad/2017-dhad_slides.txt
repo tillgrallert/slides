@@ -107,6 +107,24 @@ Source: [Digital *Muqtabas*](https://rawgit.com/tillgrallert/digital-muqtabas/ma
     + lacking features: footnotes, tables ...
     + no further development
 
+## Markdown: basic syntax
+
+~~~{.mmd}
+# head level 1
+## head level 2
+
+Some plain paragraph with some *emphasis* ("italics") and **strong emphasis** ("bold"), 
+a [hyperlink](http://www.some-url.org) and an <email.address@some-url.org>.
+
+- unordered list
+    + second level
+
+1. ordered list
+4. second entry
+    1. second level
+
+~~~
+
 ## Markdown flavours
 
 There are multiple widely supported flavours of Markdown that try to overcome some of its limitations:
@@ -131,6 +149,25 @@ There are multiple widely supported flavours of Markdown that try to overcome so
     + still not a strict standard
     + (partial) incompatibility with other Markdown "flavours"
 
+## MultiMarkdown: syntax
+
+- tables:
+
+    ~~~{.mmd}
+    column 1 head | column 2 head
+    -|-
+    row | content
+    row | content
+    ~~~
+
+- footnotes:
+
+    ~~~{.mmd}
+    some text with a footnote[^1]
+
+    [^1]: footnote text
+    ~~~
+
 ## [CriticMarkup](http://criticmarkup.com/)
 
 - what: simple syntax to add some editing and commenting capabilities to Markdown and its flavours
@@ -138,8 +175,8 @@ There are multiple widely supported flavours of Markdown that try to overcome so
 - who: Gabe Weatherhead, Erik Hess
 - problems: limited support in major tools
 
-~~~{.mmd}
- {>>comment<<}
+~~~
+ {>>comment on<<}{--deletions--} or {++additions++}
 ~~~
 
 ## [kramdown](https://kramdown.gettalong.org/)
@@ -149,7 +186,7 @@ There are multiple widely supported flavours of Markdown that try to overcome so
     + additional features: support for attributes
 
 ~~~{.mmd}
- Some *text* {:#id}{:.class}
+Some *text* {:#id}{:.class}
 ~~~
 
 # Embedded metadata
@@ -161,6 +198,30 @@ There are multiple widely supported flavours of Markdown that try to overcome so
 - who: Clark Evans, Ingy döt Net and Oren Ben-Kiki
 - current version: YAML 1.2 ([spec](http://yaml.org/spec/1.2/spec.html))
 
+## Yaml: syntax
+
+~~~{.yml}
+key: value # comment
+key:
+- value 1
+- value 2
+~~~
+
+## Yaml: metadata block
+
+~~~{.yml}
+---
+title: "Some title"
+author: 
+- author 1
+- author 2
+date: ISO date or timestamp
+tags:
+- tag 1
+- tag 2
+---
+~~~
+
 # Document conversion
 ## [Pandoc](https://pandoc.org/)
 
@@ -171,7 +232,7 @@ There are multiple widely supported flavours of Markdown that try to overcome so
 - when: under active development since **2006**
 - who: John MacFarlane <!-- (UC Berkeley) -->
 - problems:
-    + still not a strict standard
+    + still not a strict standard, but **supports** [CommonMark](http://commonmark.org/)
     + (partial) incompatibility with other Markdown "flavours"
 
 ## Pandoc cheatsheet
@@ -190,9 +251,10 @@ all commands start with `pandoc`
         + pdf, latex
 - styling
     + typographic quotation marks etc.:  `-S` / `--smart`
+        * also converts `---` to em-dash, `--` to en-dash, `...` to ellipses
 - additional options:
     + generate table of content: `--toc`, `--table-of-contents`
-    + standalone (include a proper header and footer): `-s`, `--standalone` 
+    + standalone (include a proper header and footer generated from Yaml metadata block): `-s`, `--standalone` 
 
 ## Pandoc and PDF
 
@@ -244,6 +306,6 @@ all commands start with `pandoc`
 
 A short post outlining today's ideas is online at [tillgrallert.github.io/blog/2017/02/22/plain-text/](https://tillgrallert.github.io/blog/2017/02/22/plain-text/)
 
-Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/Slides/2017-dhi-beirut](https://tillgrallert.github.io/Slides/2017-dhi-beirut) 
+Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/Slides/2017-dhad](https://tillgrallert.github.io/Slides/2017-dhad/) 
 
 Slides were produced using [MultiMarkdown](http://fletcherpenney.net/multimarkdown/), [Pandoc](http://johnmacfarlane.net/pandoc/), and [Slidy JS](https://www.w3.org/Talks/Tools/Slidy/slidy.js).

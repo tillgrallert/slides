@@ -107,7 +107,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
- <!--  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+  <!-- <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script> -->
 </head>
 <body>
@@ -235,6 +235,20 @@ Till Grallert (OIB)
 <li>no further development</li>
 </ul></li>
 </ul>
+</div><div id="markdown-basic-syntax" class="slide section level2">
+<h1>Markdown: basic syntax</h1>
+<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown"><span class="fu"># head level 1</span>
+<span class="fu">## head level 2</span>
+
+Some plain paragraph with some *emphasis* (&quot;italics&quot;) and **strong emphasis** (&quot;bold&quot;), 
+a <span class="ot">[hyperlink](http://www.some-url.org)</span> and an <span class="ot">&lt;email.address@some-url.org&gt;</span>.
+
+- <span class="fl">unordered list</span>
+<span class="fl">    + second level</span>
+
+1. <span class="fl">ordered list</span>
+<span class="fl">4. second entry</span>
+<span class="fl">    1. second level</span></code></pre></div>
 </div><div id="markdown-flavours" class="slide section level2">
 <h1>Markdown flavours</h1>
 <p>There are multiple widely supported flavours of Markdown that try to overcome some of its limitations:</p>
@@ -264,6 +278,19 @@ Till Grallert (OIB)
 <li>(partial) incompatibility with other Markdown “flavours”</li>
 </ul></li>
 </ul>
+</div><div id="multimarkdown-syntax" class="slide section level2">
+<h1>MultiMarkdown: syntax</h1>
+<ul>
+<li><p>tables:</p>
+<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown">column 1 head | column 2 head
+-|-
+row | content
+row | content</code></pre></div></li>
+<li><p>footnotes:</p>
+<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown">some text with a footnote<span class="ot">[^1]</span>
+
+<span class="ot">[^1]</span>: footnote text</code></pre></div></li>
+</ul>
 </div><div id="criticmarkup" class="slide section level2">
 <h1><a href="http://criticmarkup.com/">CriticMarkup</a></h1>
 <ul>
@@ -272,7 +299,7 @@ Till Grallert (OIB)
 <li>who: Gabe Weatherhead, Erik Hess</li>
 <li>problems: limited support in major tools</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown"> {&gt;&gt;comment&lt;&lt;}</code></pre></div>
+<pre><code> {&gt;&gt;comment on&lt;&lt;}{--deletions--} or {++additions++}</code></pre>
 </div><div id="kramdown" class="slide section level2">
 <h1><a href="https://kramdown.gettalong.org/">kramdown</a></h1>
 <ul>
@@ -282,7 +309,7 @@ Till Grallert (OIB)
 <li>additional features: support for attributes</li>
 </ul></li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown"> Some *text* {:#id}{:.class}</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown">Some *text* {:#id}{:.class}{.mmd}</code></pre></div>
 </div>
 <div id="embedded-metadata" class="titleslide slide section level1"><h1>Embedded metadata</h1></div><div id="yaml-yaml-aint-markup-language" class="slide section level2">
 <h1><a href="http://yaml.org/">Yaml (Yaml ain’t markup language)</a></h1>
@@ -295,6 +322,24 @@ Till Grallert (OIB)
 <li>who: Clark Evans, Ingy döt Net and Oren Ben-Kiki</li>
 <li>current version: YAML 1.2 (<a href="http://yaml.org/spec/1.2/spec.html">spec</a>)</li>
 </ul>
+</div><div id="yaml-syntax" class="slide section level2">
+<h1>Yaml: syntax</h1>
+<div class="sourceCode"><pre class="sourceCode yml"><code class="sourceCode yaml"><span class="fu">key:</span><span class="at"> value </span><span class="co"># comment</span>
+<span class="fu">key:</span>
+<span class="kw">-</span> value 1
+<span class="kw">-</span> value 2</code></pre></div>
+</div><div id="yaml-metadata-block" class="slide section level2">
+<h1>Yaml: metadata block</h1>
+<div class="sourceCode"><pre class="sourceCode yml"><code class="sourceCode yaml"><span class="ot">---</span>
+<span class="fu">title:</span><span class="at"> </span><span class="st">&quot;Some title&quot;</span>
+<span class="fu">author:</span><span class="at"> </span>
+<span class="kw">-</span> author 1
+<span class="kw">-</span> author 2
+<span class="fu">date:</span><span class="at"> ISO date or timestamp</span>
+<span class="fu">tags:</span>
+<span class="kw">-</span> tag 1
+<span class="kw">-</span> tag 2
+<span class="ot">---</span></code></pre></div>
 </div>
 <div id="document-conversion" class="titleslide slide section level1"><h1>Document conversion</h1></div><div id="pandoc" class="slide section level2">
 <h1><a href="https://pandoc.org/">Pandoc</a></h1>
@@ -309,7 +354,7 @@ Till Grallert (OIB)
 <li>who: John MacFarlane <!-- (UC Berkeley) --></li>
 <li>problems:
 <ul>
-<li>still not a strict standard</li>
+<li>still not a strict standard, but <strong>supports</strong> <a href="http://commonmark.org/">CommonMark</a></li>
 <li>(partial) incompatibility with other Markdown “flavours”</li>
 </ul></li>
 </ul>
@@ -334,12 +379,15 @@ Till Grallert (OIB)
 </ul></li>
 <li>styling
 <ul>
-<li>typographic quotation marks etc.: <code>-S</code> / <code>--smart</code></li>
+<li>typographic quotation marks etc.: <code>-S</code> / <code>--smart</code>
+<ul>
+<li>also converts <code>---</code> to em-dash, <code>--</code> to en-dash, <code>...</code> to ellipses</li>
+</ul></li>
 </ul></li>
 <li>additional options:
 <ul>
 <li>generate table of content: <code>--toc</code>, <code>--table-of-contents</code></li>
-<li>standalone (include a proper header and footer): <code>-s</code>, <code>--standalone</code></li>
+<li>standalone (include a proper header and footer generated from Yaml metadata block): <code>-s</code>, <code>--standalone</code></li>
 </ul></li>
 </ul>
 </div><div id="pandoc-and-pdf" class="slide section level2">
@@ -389,7 +437,7 @@ Till Grallert (OIB)
 </div><div id="credits-and-links" class="slide section level2">
 <h1>Credits and links</h1>
 <p>A short post outlining today’s ideas is online at <a href="https://tillgrallert.github.io/blog/2017/02/22/plain-text/">tillgrallert.github.io/blog/2017/02/22/plain-text/</a></p>
-<p>Slides are made available under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license at <a href="https://tillgrallert.github.io/Slides/2017-dhi-beirut" class="uri">https://tillgrallert.github.io/Slides/2017-dhi-beirut</a></p>
+<p>Slides are made available under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license at <a href="https://tillgrallert.github.io/Slides/2017-dhad/">https://tillgrallert.github.io/Slides/2017-dhad</a></p>
 <p>Slides were produced using <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>, <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, and <a href="https://www.w3.org/Talks/Tools/Slidy/slidy.js">Slidy JS</a>.</p>
 </div>
 </body>
