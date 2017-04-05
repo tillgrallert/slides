@@ -7,8 +7,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Till Grallert (OIB)" />
-  <meta name="date" content="2017-03-10" />
-  <title>Introduction to plain text and sustainable publishing</title>
+  <meta name="date" content="2017-04-10" />
+  <title>Introduction to plain text, markdown and pandoc</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 div.sourceCode { overflow-x: auto; }
@@ -107,16 +107,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
-  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+ <!--  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Introduction to plain text and sustainable publishing</h1>
+  <h1 class="title">Introduction to plain text, markdown and pandoc</h1>
   <p class="author">
 Till Grallert (OIB)
   </p>
-  <p class="date">2017-03-10</p>
+  <p class="date">2017-04-10</p>
 </div>
 <div id="introduction" class="titleslide slide section level1"><h1>Introduction</h1></div><div id="problems" class="slide section level2">
 <h1>Problems</h1>
@@ -220,7 +220,8 @@ Till Grallert (OIB)
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;p</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;p_94.d1e1015&quot;</span><span class="kw">&gt;</span>قال سيايل<span class="kw">&lt;note</span><span class="ot"> n=</span><span class="st">&quot;1&quot;</span><span class="ot"> type=</span><span class="st">&quot;footnote&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;note_3.d1e1853&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;bibl</span><span class="ot"> xml:id=</span><span class="st">&quot;bibl_8.d1e1854&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;gap</span><span class="ot"> resp=</span><span class="st">&quot;#org_MS&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;gap_3.d1e1855&quot;</span><span class="kw">/&gt;&lt;author</span><span class="ot"> xml:id=</span><span class="st">&quot;author_6.d1e1856&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;viaf:76322694&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;persName_17.d1e1857&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;forename</span><span class="ot"> xml:id=</span><span class="st">&quot;forename_8.d1e1858&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Gabriel<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:id=</span><span class="st">&quot;surname_8.d1e1861&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Séailles<span class="kw">&lt;/surname&gt;&lt;/persName&gt;&lt;/author&gt;</span>: <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;m&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;title_20.d1e1864&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Éducation ou <span class="kw">&lt;choice</span><span class="ot"> xml:id=</span><span class="st">&quot;choice_1.d1e1866&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;sic</span><span class="ot"> xml:id=</span><span class="st">&quot;orig_1.d1e1868&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Rolution<span class="kw">&lt;/sic&gt;&lt;corr</span><span class="ot"> xml:id=</span><span class="st">&quot;corr_1.d1e1871&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> resp=</span><span class="st">&quot;#pers_TG&quot;</span><span class="kw">&gt;</span>Révolution<span class="kw">&lt;/corr&gt;&lt;/choice&gt;&lt;/title&gt;</span>, <span class="kw">&lt;publisher</span><span class="ot"> xml:id=</span><span class="st">&quot;publisher_2.d1e1874&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;orgName</span><span class="ot"> xml:id=</span><span class="st">&quot;orgName_4.d1e1875&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Librairie vie Arman Colin<span class="kw">&lt;/orgName&gt;&lt;/publisher&gt;</span> <span class="kw">&lt;sic</span><span class="ot"> xml:id=</span><span class="st">&quot;sic_1.d1e1878&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>paris<span class="kw">&lt;/sic&gt;&lt;/bibl&gt;&lt;/note&gt;</span>: لا غنية للديمقراطية عن خيرة رجال كما لا يسعها إلا أن تقدر الذكاء والعلم والفضيلة حق قدرها. ولا مشاحة في أن الديمقراطية تأتي على الحواجز التي كانت تحول بين الطبقة العالية وجمهور الأمة فتدكها من أساسها وذلك لأن المجتمع يختار كبار الرجال من جمهور أهل البلاد ممن ينشؤون أبداً بين ظهراني عامة الناس ولا يزالون ينمون ويتجددون بما يصدر إليهم من حوض القوة والنشاط وأعني بهذا الحوض العامة. فإذا اعتزل أولئك الرجال واقتصروا على الاجتماع بأبناء طبقتهم محتقرين ما عداها فإنهم يقضون على أنفسهم بالضعف وعلى أمرهم بالفشل. ليس الشعب هو الجمهور بل هو الأمة وهو الحاكم المتحكم. والفكر لا يكون إلا مجردات ونظريات إذا لم يكن له كيان وحقيقة تؤثر في عقول أبناء الأمة وإرادتهم. وعلى الطبقة الخاصة من الناس وهي في الأصل ممتزجة بجهلاء الأمة وأهل الوضاعة منهم أن يكون لها اتصال بالشعب وعليها أن تعمل على إقناعه لتنال ثقته تتصل به وتشركه في معرفة الحقيقة السامية التي تخضع لناموسها الإرادات مختارة وعلى مجموع من<span class="kw">&lt;pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> n=</span><span class="st">&quot;18&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_18&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_36.d1e1666&quot;</span><span class="kw">/&gt;</span> يتألف من هم المجتمع الديمقراطي أن يشتركوا في الحياة الوطنية. أهـ.<span class="kw">&lt;/p&gt;</span></code></pre></div>
 <p>Source: <a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_25.TEIP5.xml#p_94.d1e1015">Digital <em>Muqtabas</em></a></p>
 </div>
-<div id="formats-tools-implementations" class="titleslide slide section level1"><h1>Formats, tools, implementations</h1></div><div id="markdown-md" class="slide section level2">
+<div id="formats-tools-implementations" class="titleslide slide section level1"><h1>Formats, tools, implementations</h1></div>
+<div id="markdown-and-its-flavours" class="titleslide slide section level1"><h1>Markdown and its flavours</h1></div><div id="markdown-md" class="slide section level2">
 <h1><a href="http://daringfireball.net/projects/markdown">Markdown (md)</a></h1>
 <ul>
 <li>what: “lightweight markup language” (plain text <strong>syntax</strong>) and text-to-Html conversion <strong>tool</strong>. The syntax was inspired by plain text email.</li>
@@ -263,85 +264,6 @@ Till Grallert (OIB)
 <li>(partial) incompatibility with other Markdown “flavours”</li>
 </ul></li>
 </ul>
-</div><div id="pandoc" class="slide section level2">
-<h1><a href="https://pandoc.org/">Pandoc</a></h1>
-<ul>
-<li>what: conversion <strong>tool</strong> and plain text <strong>syntax</strong> based on Markdown
-<ul>
-<li>large number of export formats: HTML, Word processors, Ebooks, documentation formats (including <a href="https://github.com/TEIC/TEI-Simple">TEI Simple</a>), TeX formats, PDF, markdown flavours</li>
-<li>support for automatic citations and bibliographies</li>
-<li>large number of options to tweak the conversion</li>
-</ul></li>
-<li>when: under active development since <strong>2006</strong></li>
-<li>who: John MacFarlane <!-- (UC Berkeley) --></li>
-<li>problems:
-<ul>
-<li>still not a strict standard</li>
-<li>(partial) incompatibility with other Markdown “flavours”</li>
-</ul></li>
-</ul>
-</div><div id="yaml-yaml-aint-markup-language" class="slide section level2">
-<h1><a href="http://yaml.org/">Yaml (Yaml ain’t markup language)</a></h1>
-<ul>
-<li>what: “human friendly” <a href="https://en.wikipedia.org/wiki/Serialization">data serialization</a>; superset of <a href="">JSON</a>
-<ul>
-<li>provides a very simple means of adding metadata to the beginning of plain text files</li>
-</ul></li>
-<li>when: since <strong>2001</strong>; first working draft of YAML 1.1 in 2004</li>
-<li>who: Clark Evans, Ingy döt Net and Oren Ben-Kiki</li>
-<li>current version: YAML 1.2 (<a href="http://yaml.org/spec/1.2/spec.html">spec</a>)</li>
-</ul>
-</div><div id="git" class="slide section level2">
-<h1><a href="https://git-scm.com/">git</a></h1>
-<ul>
-<li>what: free and open version control system
-<ul>
-<li>included in Linux and OS X / macOS since v.10.9 (2013)</li>
-</ul></li>
-<li>when: under active development since <strong>2005</strong></li>
-<li>who: Linus Torvalds (Linux)</li>
-<li>current version: 2.12.0</li>
-</ul>
-</div><div id="github" class="slide section level2">
-<h1><a href="https://www.github.com">GitHub</a></h1>
-<ul>
-<li>what: distributed version control system and online code-sharing platform based on git
-<ul>
-<li>unlimited free public repositories</li>
-<li>issue tracking</li>
-<li>Wikis</li>
-<li>pull requests</li>
-<li>GitHub pages</li>
-</ul></li>
-<li>when: site launched in <strong>2008</strong></li>
-<li>who: Tom Preston-Werner, Chris Wanstrath, PJ Hyett</li>
-<li>problems: for-profit start-up company funded by venture capital</li>
-</ul>
-</div><div id="jekyll" class="slide section level2">
-<h1><a href="https://jekyllrb.com/">Jekyll</a></h1>
-<ul>
-<li>what: blog aware, static site generator, based on Markdown and Liquid
-<ul>
-<li>ruby gem</li>
-<li>powers <a href="https://pages.github.com/">GitHub Pages</a></li>
-</ul></li>
-<li>when: under active development since <strong>2008</strong></li>
-<li>who: Tom Preston-Werner (GitHub) et al.</li>
-<li>current version: 3.4.1</li>
-<li>problems: requires one to learn “liquid” templating language</li>
-</ul>
-</div><div id="zenodo" class="slide section level2">
-<h1><a href="https://zenodo.org/">Zenodo</a></h1>
-<ul>
-<li>what: open science / open data platform to publish and archive research data and results
-<ul>
-<li>provides <a href="https://www.doi.org/">DOI</a>s<br />
-</li>
-<li>hooks into GitHub</li>
-</ul></li>
-<li>when: launched in <strong>2013</strong></li>
-<li>who: CERN, OpenAIRE, EC</li>
-</ul>
 </div><div id="criticmarkup" class="slide section level2">
 <h1><a href="http://criticmarkup.com/">CriticMarkup</a></h1>
 <ul>
@@ -360,7 +282,110 @@ Till Grallert (OIB)
 <li>additional features: support for attributes</li>
 </ul></li>
 </ul>
-<pre class="{.}"><code> Some *text* {:#id}{:.class}</code></pre>
+<div class="sourceCode"><pre class="sourceCode mmd"><code class="sourceCode markdown"> Some *text* {:#id}{:.class}</code></pre></div>
+</div>
+<div id="embedded-metadata" class="titleslide slide section level1"><h1>Embedded metadata</h1></div><div id="yaml-yaml-aint-markup-language" class="slide section level2">
+<h1><a href="http://yaml.org/">Yaml (Yaml ain’t markup language)</a></h1>
+<ul>
+<li>what: “human friendly” <a href="https://en.wikipedia.org/wiki/Serialization">data serialization</a>; superset of <a href="">JSON</a>
+<ul>
+<li>provides a very simple means of adding metadata to the beginning of plain text files</li>
+</ul></li>
+<li>when: since <strong>2001</strong>; first working draft of YAML 1.1 in 2004</li>
+<li>who: Clark Evans, Ingy döt Net and Oren Ben-Kiki</li>
+<li>current version: YAML 1.2 (<a href="http://yaml.org/spec/1.2/spec.html">spec</a>)</li>
+</ul>
+</div>
+<div id="document-conversion" class="titleslide slide section level1"><h1>Document conversion</h1></div><div id="pandoc" class="slide section level2">
+<h1><a href="https://pandoc.org/">Pandoc</a></h1>
+<ul>
+<li>what: conversion <strong>tool</strong> and plain text <strong>syntax</strong> based on Markdown
+<ul>
+<li>large number of export formats: HTML, Word processors, Ebooks, documentation formats (including <a href="https://github.com/TEIC/TEI-Simple">TEI Simple</a>), TeX formats, PDF, markdown flavours</li>
+<li>support for automatic citations and bibliographies</li>
+<li>large number of options to tweak the conversion</li>
+</ul></li>
+<li>when: under active development since <strong>2006</strong></li>
+<li>who: John MacFarlane <!-- (UC Berkeley) --></li>
+<li>problems:
+<ul>
+<li>still not a strict standard</li>
+<li>(partial) incompatibility with other Markdown “flavours”</li>
+</ul></li>
+</ul>
+</div><div id="pandoc-cheatsheet" class="slide section level2">
+<h1>Pandoc cheatsheet</h1>
+<p>all commands start with <code>pandoc</code></p>
+<ul>
+<li>basic commands:
+<ul>
+<li>specify input file (can be an URL): <code>FILENAME</code></li>
+<li>specify input format (optional): <code>-f FORMAT</code>, <code>-r FORMAT</code> / <code>--from=FORMAT</code>, <code>--read=FORMAT</code></li>
+<li>specify output format (optional: <code>-t FORMAT</code>, <code>-w FORMAT</code> / <code>--to=FORMAT</code>, <code>--write=FORMAT</code></li>
+<li>specify output file: <code>-o FILENAME</code> / <code>--output=FILENAME</code><br />
+</li>
+<li>available formats:
+<ul>
+<li>markdown, markdown_strict, markdown_mmd, markdown_github, commonmark, textile</li>
+<li>html, html5, docbook, epub, epub3, asciidoc, tei</li>
+<li>docx, odt</li>
+<li>pdf, latex</li>
+</ul></li>
+</ul></li>
+<li>styling
+<ul>
+<li>typographic quotation marks etc.: <code>-S</code> / <code>--smart</code></li>
+</ul></li>
+<li>additional options:
+<ul>
+<li>generate table of content: <code>--toc</code>, <code>--table-of-contents</code></li>
+<li>standalone (include a proper header and footer): <code>-s</code>, <code>--standalone</code></li>
+</ul></li>
+</ul>
+</div><div id="pandoc-and-pdf" class="slide section level2">
+<h1>Pandoc and PDF</h1>
+<ul>
+<li>requires additional packages (pdflatex, context, etc.)</li>
+<li>does not work with Arabic out of the box</li>
+</ul>
+<!-- ## [git](https://git-scm.com/)
+
+- what: free and open version control system
+    + included in Linux and OS X / macOS since v.10.9 (2013)
+- when: under active development since **2005**
+- who: Linus Torvalds (Linux)
+- current version: 2.12.0
+
+
+## [GitHub](https://www.github.com)
+
+- what: distributed version control system and online code-sharing platform based on git
+    + unlimited free public repositories
+    + issue tracking
+    + Wikis
+    + pull requests
+    + GitHub pages
+- when: site launched in **2008**
+- who: Tom Preston-Werner, Chris Wanstrath, PJ Hyett 
+- problems: for-profit start-up company funded by venture capital
+
+## [Jekyll](https://jekyllrb.com/)
+
+- what: blog aware, static site generator, based on Markdown and Liquid
+    + ruby gem
+    + powers [GitHub Pages](https://pages.github.com/)
+- when: under active development since **2008**
+- who: Tom Preston-Werner (GitHub) et al.
+- current version: 3.4.1
+- problems: requires one to learn "liquid" templating language
+
+## [Zenodo](https://zenodo.org/)
+
+- what: open science / open data platform to publish and archive research data and results
+    + provides [DOI](https://www.doi.org/)s  
+    + hooks into GitHub
+- when: launched in **2013**
+- who: CERN, OpenAIRE, EC -->
 </div><div id="credits-and-links" class="slide section level2">
 <h1>Credits and links</h1>
 <p>A short post outlining today’s ideas is online at <a href="https://tillgrallert.github.io/blog/2017/02/22/plain-text/">tillgrallert.github.io/blog/2017/02/22/plain-text/</a></p>
