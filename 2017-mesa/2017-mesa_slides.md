@@ -1,10 +1,21 @@
 ---
 title: "Authoritarianism versus liberty of speech? The theory and practices of press censorship in *Bilād al-Shām* (1875--1914)"
-author: Till Grallert, Orient-Institut Beirut
+author: Till Grallert
 date: 2017-11-09 10:52:27 +0200
 copyright: "CC BY-SA 4.0"
 duration: 15
 ---
+
+## Authoritarianism versus liberty of speech? The theory and practices of press censorship in *Bilād al-Shām* (1875--1914)
+### Till Grallert, Orient-Institut Beirut
+### MESA 2017
+
+Slides: [tillgrallert.github.io/slides/2017-mesa](https://tillgrallert.github.io/slides/2017-mesa)
+
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>
+
 
 # Introduction
 ## Abstract
