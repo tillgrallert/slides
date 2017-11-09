@@ -9,7 +9,7 @@ copyright: "CC BY-SA 4.0"
 ## Problems
 
 - academic mode of production: 
-    + content and means of production and access are owned by a few large companies
+    + content, means of production, and access are owned by a few large companies
     + work is provided for free
 - consequences:
     -  producers and the public are charged multiple times over
@@ -144,10 +144,11 @@ There are multiple widely supported flavours of Markdown that try to overcome so
     + additional export formats
 - when: under active development since?
 - who: Fletcher T. Penny et al.
-- [current version](https://github.com/fletcher/MultiMarkdown-5/releases): 5.4.0 (Aug 2016), [v.6 alpha](https://github.com/fletcher/MultiMarkdown-6).
+- [current version](https://github.com/fletcher/MultiMarkdown-5/releases): 5.4.0 (Aug 2016), [v.6 beta](https://github.com/fletcher/MultiMarkdown-6).
 - problems:
     + still not a strict standard
     + (partial) incompatibility with other Markdown "flavours"
+    + command lind conversion is buggy and the output is far from usable
 
 ## MultiMarkdown: syntax
 
@@ -174,6 +175,7 @@ There are multiple widely supported flavours of Markdown that try to overcome so
 - when: **2013**
 - who: Gabe Weatherhead, Erik Hess
 - problems: limited support in major tools
+    + works with mmd, Academic Markdown, Marked
 
 ~~~
  {>>comment on<<}{--deletions--} or {++additions++}

@@ -122,10 +122,10 @@ There are multiple widely supported flavours of Markdown that try to overcome so
     + additional syntax features: footnotes, tables
     + integration of [CriticMarkup](http://criticmarkup.com/) for annotation
     + "smart" typography
-    + additional export formats
+    + additional export formats (but NOT docx)
 - when: under active development since?
 - who: Fletcher T. Penny et al.
-- [current version](https://github.com/fletcher/MultiMarkdown-5/releases): 5.4.0 (Aug 2016), [v.6 alpha](https://github.com/fletcher/MultiMarkdown-6).
+- [current version](https://github.com/fletcher/MultiMarkdown-5/releases): 5.4.0 (Aug 2016), [user's guide](http://fletcher.github.io/MultiMarkdown-5/), [v.6 alpha](https://github.com/fletcher/MultiMarkdown-6).
 - problems:
     + still not a strict standard
     + (partial) incompatibility with other Markdown "flavours"
