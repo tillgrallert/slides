@@ -654,21 +654,20 @@ div.initial_prompt { display: none; visibility: hidden }
 multi-column views
 *****/
 
-div.c_left {
+.c_left {
   display: block;
   float: left;
 }
-
-div.c_right {
+.c_right {
   display: block;
   float: right;
 }
-
-div.c_width-30 {
+.c_width-30 {
+  display: block;
   width: 30%;
 }
-
-div.c_width-60 {
+.c_width-60 {
+  display: block;
   width: 60%;
 }
 
