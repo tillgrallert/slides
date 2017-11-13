@@ -337,7 +337,7 @@ img, iframe {
    /* width: 100%; */
     margin-top: 1em;
     background-color: rgba(0,0,0,0.04);
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 2px 2px 5px #000;
     border:gray solid 1px;
 }
@@ -649,6 +649,32 @@ div.initial_prompt { display: none; visibility: hidden }
      border-top-width: thin;
      border-top-color: black;
   }
+
+/*****
+multi-column views
+*****/
+
+div.c_left {
+  display: block;
+  float: left;
+}
+
+div.c_right {
+  display: block;
+  float: right;
+}
+
+div.c_width-30 {
+  width: 30%;
+}
+
+div.c_width-60 {
+  width: 60%;
+}
+
+/*
+Different media
+*/
 
 @media screen {
   .hidden { display: none; visibility: visible }
