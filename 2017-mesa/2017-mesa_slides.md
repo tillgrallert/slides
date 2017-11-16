@@ -57,9 +57,7 @@ Email: <grallert@orient-institut.org>
 <div class="c_right c_width-50">
 ### core regulations
 
-- restrictions:
-    + permits required for printing presses and periodicals
-    + permissible content
+- restrictions: permits <!-- required --> for <!-- printing --> presses and periodicals, permissible content
 - surveillance: post publication
 - enforcement: mostly private litigation in the courts 
 </div>
@@ -93,12 +91,9 @@ Email: <grallert@orient-institut.org>
 <div class="c_right c_width-50">
 ### core regulations
 
-- restrictions: 
-    + pre-publication permits
-    + public announcements in the streets are limited to periodical titles
-- surveillance: 
-    + random inspections 
-    + all information must be supplied at least in Ottoman
+- abrogating earlier laws
+- new restrictions: pre-publication permits, public announcements in the streets are limited to periodical titles
+- surveillance: random inspections, all information must be supplied in Ottoman
 - liabilities: every part of the trade
 - enforcement: police, directorate of public instruction, judiciary
 
@@ -149,14 +144,7 @@ Email: <grallert@orient-institut.org>
 <div class="c_right c_width-50">
 ### core regulations
 
-- restrictions: 
-    + 1909: new permits for existing presses & periodicals
-    <!-- + pre-publication permits -->
-    + 1909: permissible content
-    + 1912: limited to Ottoman graduates of higher education
-- surveillance: 
-    + random inspections 
-    + all information must be supplied at least in Ottoman
+- new restrictions: new permits for existing presses & periodicals,<!-- pre-publication permits, --><!-- , permissible content --> limited to Ottoman graduates of higher education (1912)
 - liabilities: every part of the trade, including sellers
 - enforcement: Ministries of the Interior and Education, province, *mutaṣarriflik*, police, gendarmerie, judiciary
 </div>
