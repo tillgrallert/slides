@@ -674,6 +674,21 @@ multi-column views
   display: block;
   width: 48%;
 }
+/*******
+images in multi-column view
+*******/
+
+.c_left img,
+.c_right img,
+.c_left .caption,
+.c_right .caption {
+  float: right;
+  clear: both;
+  width: inherit !important;
+  max-width: inherit !important;
+  /*height: 100%;
+  max-height: 100%;*/
+}
 
 /*
 Different media
