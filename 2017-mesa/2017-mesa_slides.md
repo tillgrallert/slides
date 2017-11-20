@@ -18,22 +18,55 @@ Email: <grallert@orient-institut.org>
 
 
 # Introduction
+## Two opposing views and a cliché
+
+<div class="c_left c_width-50">
+![Press censorship: permissive actions](../assets/censorship/rplot_levant-permissive.png)
+</div>
+
+<div class="c_right c_width-50">
+![Press censorship: repressive actions](../assets/censorship/rplot_levant-restrictive.png)
+</div>
+
 ## Abstract
 
 - Case study: periodical press of Damascus and Beirut, 1875–1914
+- Sources: legal texts and periodicals 
 <!-- - Background: prevalence of strong views, but lack of empirical studies on the press in *Bilād al-Shām* -->
-- Argument:
-    + No dichotomy of Hamidian tyranny vs Young-Turk liberty of speech.
-    + Instead: ever-increasing will and capability to effectively control the periodical press as well as a shared belief in the project of modernity among authors, readers, and regulators.
+- Question: What were the legal norms,  institutional frameworks, and practices of censorship?
+<!-- - Argument:
+    1. Three instead of two phases
+    2. Reliance a shared belief in the project of modernity -->
+<!--     + No dichotomy of Hamidian tyranny vs Young-Turk liberty of speech.
+    + Instead: ever-increasing will and capability to effectively control the periodical press as well as a shared belief in the project of modernity among authors, readers, and regulators. -->
+
+## Argument 1
+
+Press censorship evolved in three steps:
+
+1. Establish and reiterate legal norms; 1850s, 1860s
+2. Gather information and build institutions capable of enforcing these norms; 1880s, 1890s
+3. Start enforcing them once legal norms have indeed become social normality; 1890s and especially 1909 onwards 
+
+## Argument 2
+
+Control of the press depended to a large extent on:
+
+1. A shared belief in the project of modernity that governed the focus of reporting.
+2. A tightly knit network of 
+
+
+## outline
+
+1. Legal/institutional framework
+2. Realities of press censorship
 
 # Power of the norm
 ## Three phases
 
 <!-- the three phases can be observed in theory and praxis -->
 
-1. Establish and reiterate legal norms; 1850s, 1860s
-2. Gather information and build institutions capable of enforcing these norms; 1880s, 1890s
-3. Start enforcing them once legal norms have indeed become social normality; 1890s and especially 1909 onwards 
+
 
 ## Pre-1876: establishing the norms
 
@@ -91,8 +124,8 @@ Email: <grallert@orient-institut.org>
 <div class="c_right c_width-50">
 ### core regulations
 
-- abrogating earlier laws
-- new restrictions: pre-publication permits, public announcements in the streets are limited to periodical titles
+<!-- - abrogating earlier laws -->
+- new restrictions: <!-- pre-publication permits for everything but periodicals,  -->public announcements in the streets are limited to periodical titles
 - surveillance: random inspections, all information must be supplied in Ottoman
 - liabilities: every part of the trade
 - enforcement: police, directorate of public instruction, judiciary
@@ -149,14 +182,43 @@ Email: <grallert@orient-institut.org>
 - enforcement: Ministries of the Interior and Education, province, *mutaṣarriflik*, police, gendarmerie, judiciary
 </div>
 
+## A priori censorship?
+
+- required for all non-periodical publications by 1894 and 1909 laws on printing presses
+- **not** required for periodical press by 1864 and 1909 laws on printed material
+- official attempts at *a priori* censorship are contested by the press in 1912
+
 # Practices of censorship
 ## Publication statistics: permissions
 
-![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication)](../assets/censorship/rplot_levant-permissive.png)
+![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication) [data](https://www.github.com/tillgrallert/censorship_data)](../assets/censorship/rplot_levant-permissive.png)
+
+
+## Post 1909: Quick succession of titles
+
+<div class="c_left c_width-50">
+1. *al-Muqtabas*, Damascus
+    + *al-Muqtabas*: 1908, Dec - 1909, Sep
+    + **suspended**
+    + *al-Umma*: 1910, Jan - 1910, Mar
+    + *al-Muqtabas*: 1910, Mar - 1912, Apr
+    + **suspended**
+    + *al-Muqtabas*: 1912, Aug - 1913, Sep
+    + *al-Qabas*: 1913, Sep - 1914, Jan
+    + *al-Muqtabas*: 1914, Jan -
+</div>
+<div class="c_right c_width-50">
+2. *al-Mufīd*, Beirut
+    + *al-Mufīd*: 1909, Feb
+    + *Ṣadā al-Mufīd*: 1912, May
+    + *Lisān al-ʿArab* (5 days): 1912, Sep
+    + *al-Fatā al-ʿArabī*: 1912, Sep - 1913, Nov
+    + *Fatā al-ʿArab*: 1913, Dec - 1914, Jul
+</div>
 
 ## Publication statistics: restrictions
 
-![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning)](../assets/censorship/rplot_levant-restrictive.png)
+![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning) [data](https://www.github.com/tillgrallert/censorship_data)](../assets/censorship/rplot_levant-restrictive.png)
 
 ## Publication statistics: suspensions
 
@@ -165,6 +227,22 @@ Email: <grallert@orient-institut.org>
 ## Publication statistics: implemented suspensions
 
 ![Press censorship: implemented suspensions](../assets/censorship/rplot_levant-suspensions-implemented.png)
+
+## What were the reasons for interventions?
+
+1. ignoring the censor's warning (1890s onwards)
+2. publication of false news (mainly 1880s)
+3. non-compliance with the press code(s) / principles of censorship (1900s)
+4. disturbing public tranquillity and causing anxieties (*takhdīsh al-adhhān*)
+
+<!-- ![Warning to the private *Bayrūt* over false news](/BachUni/BachSources/thamarat\ al-funun/1905-08/1590/DSCN0020_150dpi.jpg) -->
+
+## Permissible content
+
+- "surprising" level and frequency of *out-spoken criticism* 
+- critical articles were not limited to the private press
+- outright praise beyond the generic eulogies on important occasions was **less common** than criticism
+- "embarrassing" news remained unpublished
 
 ## Conclusion
 
@@ -175,3 +253,5 @@ Email: <grallert@orient-institut.org>
 - "re-"introduction of repressive legislation in 1909 and their effective implementation
 - continuous importance of limiting factors
 - continuous importance of the social consensus within the network of journalists-cum-officials-cum-entrepreneurs
+
+## Thank you 
