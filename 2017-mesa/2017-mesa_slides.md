@@ -18,7 +18,7 @@ Email: <grallert@orient-institut.org>
 
 
 # Introduction
-## Two opposing views and a cliché
+## Two opposing views on a cliché
 
 <div class="c_left c_width-50">
 ![Press censorship: permissive actions](../assets/censorship/rplot_levant-permissive.png)
@@ -34,11 +34,6 @@ Email: <grallert@orient-institut.org>
 - Sources: legal texts and periodicals 
 <!-- - Background: prevalence of strong views, but lack of empirical studies on the press in *Bilād al-Shām* -->
 - Question: What were the legal norms,  institutional frameworks, and practices of censorship?
-<!-- - Argument:
-    1. Three instead of two phases
-    2. Reliance a shared belief in the project of modernity -->
-<!--     + No dichotomy of Hamidian tyranny vs Young-Turk liberty of speech.
-    + Instead: ever-increasing will and capability to effectively control the periodical press as well as a shared belief in the project of modernity among authors, readers, and regulators. -->
 
 ## Argument 1
 
@@ -53,7 +48,7 @@ Press censorship evolved in three steps:
 Control of the press depended to a large extent on:
 
 1. A shared belief in the project of modernity that governed the focus of reporting.
-2. A tightly knit network of 
+2. A tightly knit network of journalists-cum-entrepreneurs-cum-officials.
 
 
 ## outline
@@ -61,13 +56,7 @@ Control of the press depended to a large extent on:
 1. Legal/institutional framework
 2. Realities of press censorship
 
-# Power of the norm
-## Three phases
-
-<!-- the three phases can be observed in theory and praxis -->
-
-
-
+# 1. Legal / institutional framework
 ## Pre-1876: establishing the norms
 
 <div class="c_left c_width-50">
@@ -177,7 +166,8 @@ Control of the press depended to a large extent on:
 <div class="c_right c_width-50">
 ### core regulations
 
-- new restrictions: new permits for existing presses & periodicals,<!-- pre-publication permits, --><!-- , permissible content --> limited to Ottoman graduates of higher education (1912)
+- new restrictions: permits for existing presses & periodicals<!--  unique titles, -->, unique titles,<!-- pre-publication permits, --><!-- , permissible content --> limited to Ottoman graduates of higher education (1912)
+- surveillance: post publication <!-- two copies at the day of printing -->
 - liabilities: every part of the trade, including sellers
 - enforcement: Ministries of the Interior and Education, province, *mutaṣarriflik*, police, gendarmerie, judiciary
 </div>
@@ -186,39 +176,41 @@ Control of the press depended to a large extent on:
 
 - required for all non-periodical publications by 1894 and 1909 laws on printing presses
 - **not** required for periodical press by 1864 and 1909 laws on printed material
-- official attempts at *a priori* censorship are contested by the press in 1912
+- attempts at *a priori* censorship are contested by the press in 1912
 
-# Practices of censorship
+# 2. Practices of censorship
 ## Publication statistics: permissions
 
-![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication) [data](https://www.github.com/tillgrallert/censorship_data)](../assets/censorship/rplot_levant-permissive.png)
+![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication)](../assets/censorship/rplot_levant-permissive.png)
 
 
 ## Post 1909: Quick succession of titles
 
 <div class="c_left c_width-50">
-1. *al-Muqtabas*, Damascus
-    + *al-Muqtabas*: 1908, Dec - 1909, Sep
-    + **suspended**
-    + *al-Umma*: 1910, Jan - 1910, Mar
-    + *al-Muqtabas*: 1910, Mar - 1912, Apr
-    + **suspended**
-    + *al-Muqtabas*: 1912, Aug - 1913, Sep
-    + *al-Qabas*: 1913, Sep - 1914, Jan
-    + *al-Muqtabas*: 1914, Jan -
+### *al-Muqtabas*, Damascus
+
++ *al-Muqtabas*: 1908, Dec - 1909, Sep
+<!-- + **suspended** -->
++ *al-Umma*: 1910, Jan - 1910, Mar
++ *al-Muqtabas*: 1910, Mar - 1912, Apr
+<!-- + **suspended** -->
++ *al-Muqtabas*: 1912, Aug - 1913, Sep
++ *al-Qabas*: 1913, Sep - 1914, Jan
++ *al-Muqtabas*: 1914, Feb -
 </div>
 <div class="c_right c_width-50">
-2. *al-Mufīd*, Beirut
-    + *al-Mufīd*: 1909, Feb
-    + *Ṣadā al-Mufīd*: 1912, May
-    + *Lisān al-ʿArab* (5 days): 1912, Sep
-    + *al-Fatā al-ʿArabī*: 1912, Sep - 1913, Nov
-    + *Fatā al-ʿArab*: 1913, Dec - 1914, Jul
+### *al-Mufīd*, Beirut
+
++ *al-Mufīd*: 1909, Feb
++ *Ṣadā al-Mufīd*: 1912, May
++ *Lisān al-ʿArab*: 1912, Sep (5 days)
++ *al-Fatā al-ʿArabī*: 1912, Sep - 1913, Nov
++ *Fatā al-ʿArab*: 1913, Dec - 1914, Jul
 </div>
 
 ## Publication statistics: restrictions
 
-![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning) [data](https://www.github.com/tillgrallert/censorship_data)](../assets/censorship/rplot_levant-restrictive.png)
+![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning)](../assets/censorship/rplot_levant-restrictive.png)
 
 ## Publication statistics: suspensions
 
@@ -230,12 +222,17 @@ Control of the press depended to a large extent on:
 
 ## What were the reasons for interventions?
 
+
+<div class="c_left c_width-60">
 1. ignoring the censor's warning (1890s onwards)
 2. publication of false news (mainly 1880s)
 3. non-compliance with the press code(s) / principles of censorship (1900s)
 4. disturbing public tranquillity and causing anxieties (*takhdīsh al-adhhān*)
+</div>
 
-<!-- ![Warning to the private *Bayrūt* over false news](/BachUni/BachSources/thamarat\ al-funun/1905-08/1590/DSCN0020_150dpi.jpg) -->
+<div class="c_right c_width-30">
+![Ban of *al-Miṣbāḥ* over violation of "the principles of censorship", Thamarāt al-Funūn 15 Aug. 1904 (#1493):5](../assets/censorship/ban_misbah.png)
+</div>
 
 ## Permissible content
 
@@ -255,3 +252,11 @@ Control of the press depended to a large extent on:
 - continuous importance of the social consensus within the network of journalists-cum-officials-cum-entrepreneurs
 
 ## Thank you 
+
+Slides: [tillgrallert.github.io/slides/2017-mesa](https://tillgrallert.github.io/slides/2017-mesa)
+
+Data: [![DOI](https://zenodo.org/badge/106953939.svg)](https://zenodo.org/badge/latestdoi/106953939)<!-- [github.com/tillgrallert/censorship_data](https://www.github.com/tillgrallert/censorship_data) --> ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>
