@@ -214,6 +214,6 @@ There are multiple widely supported flavours of Markdown that try to overcome so
 
 A short post outlining today's ideas is online at [tillgrallert.github.io/blog/2017/02/22/plain-text/](https://tillgrallert.github.io/blog/2017/02/22/plain-text/)
 
-Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/Slides/2017-dhi-beirut](https://tillgrallert.github.io/Slides/2017-dhi-beirut) 
+Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/slides/2017-dhi-beirut](https://tillgrallert.github.io/slides/2017-dhi-beirut) 
 
 Slides were produced using [MultiMarkdown](http://fletcherpenney.net/multimarkdown/), [Pandoc](http://johnmacfarlane.net/pandoc/), and [Slidy JS](https://www.w3.org/Talks/Tools/Slidy/slidy.js).

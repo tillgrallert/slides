@@ -10,7 +10,7 @@ date: January 26, 2016
 ## Till Grallert, Orient Institut Beirut
 ## Mainz, 26 Januar 2016
 
-Folien: [http://tillgrallert.github.io/Slides/BrotunruhenMainz2016](http://tillgrallert.github.io/Slides/BrotunruhenMainz2016)
+Folien: [http://tillgrallert.github.io/slides/BrotunruhenMainz2016](http://tillgrallert.github.io/slides/BrotunruhenMainz2016)
 
 Twitter: @tillgrallert
 

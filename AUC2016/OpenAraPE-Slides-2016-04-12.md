@@ -18,7 +18,7 @@ Bassel Khartabil / باسل خرطبيل
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
+Slides: [https://tillgrallert.github.io/slides/AUC2016](https://tillgrallert.github.io/slides/AUC2016)
 
 Twitter: @tillgrallert
 
@@ -307,7 +307,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
+Slides: [https://tillgrallert.github.io/slides/AUC2016](https://tillgrallert.github.io/slides/AUC2016)
 
 Twitter: @tillgrallert
 
