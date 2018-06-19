@@ -17,8 +17,8 @@ body {
   padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   overflow: hidden;
   /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
   font-size: 12px;*/
@@ -99,6 +99,9 @@ footer, div.c_footer {
   font-size: 60%;
 }
 
+/***************
+standard classes
+***************/
 div.toolbar {
   position: fixed; z-index: 200;
   top: auto; bottom: 0; left: 0; right: 0;
@@ -187,7 +190,8 @@ div.slide {
   /*line-height: 120%;*/
   background-color: transparent;
   /* width should be in em dashes*/
-  max-width: 40em;
+  /* why?*/
+  max-width: 90%;
   /*margin: auto;*/
 }
 
@@ -240,30 +244,35 @@ div.titleslide h1 {
   font-size: 2em;
 }
 
+div.level1 h1 {
+  margin-top: 4em;
+  font-size: 2em;
+}
+
 h1,h2,h3,h4 {
   text-align: center;
 }
 
- h1 {
+h1 {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.2;
   border-bottom: 1px solid #eee;
 }
 
- h2 {
+h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
   line-height: 1.225;
   border-bottom: 1px solid #eee;
 }
 
- h3 {
+h3 {
   font-size: 1.25em;
   line-height: 1.43;
 }
 
- h4 {
+h4 {
   font-size: 1em;
 }
 
@@ -334,7 +343,8 @@ images and figures
 *****************/
 img, iframe {
    /* image-rendering: optimize-quality; */
-   /* width: 100%; */
+    max-width: 100%; 
+    max-height: 100%;
     margin-top: 1em;
     background-color: rgba(0,0,0,0.04);
     border-radius: 5px;
@@ -364,8 +374,8 @@ div.figure img {
 /* external content, including local html pages */
 iframe {
   display: block;
-  width: 90%;
-  height: 100%;
+  /*width: 90%;*/
+  /*height: 100%;*/
   /* center the iframe */
   margin-left: auto;
   margin-right: auto;
@@ -458,6 +468,9 @@ lists
 
 ul, ol {
   font-style: normal;
+  text-align: left;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
 ul { list-style-type: circle; }
@@ -649,50 +662,6 @@ div.initial_prompt { display: none; visibility: hidden }
      border-top-width: thin;
      border-top-color: black;
   }
-
-/*****
-multi-column views
-*****/
-
-.c_left {
-  display: block;
-  float: left;
-}
-.c_right {
-  display: block;
-  float: right;
-}
-.c_width-30 {
-  display: block;
-  width: 33%;
-}
-.c_width-60 {
-  display:block;
-  width: 63%;
-}
-.c_width-50 {
-  display: block;
-  width: 48%;
-}
-/*******
-images in multi-column view
-*******/
-
-.c_left img,
-.c_right img,
-.c_left .caption,
-.c_right .caption {
-  float: right;
-  clear: both;
-  width: inherit !important;
-  max-width: inherit !important;
-  /*height: 100%;
-  max-height: 100%;*/
-}
-
-/*
-Different media
-*/
 
 @media screen {
   .hidden { display: none; visibility: visible }
