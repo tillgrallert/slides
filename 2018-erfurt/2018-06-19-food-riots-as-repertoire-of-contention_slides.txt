@@ -1,0 +1,265 @@
+---
+title: "Food riots as part of a repertoire of contention in late Ottoman Greater Syria"
+author: Till Grallert
+institute: Orient-Institut Beirut
+date: 2018-06-19
+duration: 45
+lang: en-GB
+copyright: "CC BY-SA 4.0"
+---
+
+## Food riots as part of a repertoire of contention in late Ottoman Greater Syria
+### Till Grallert, Orient-Institut Beirut
+### 19 June 2018, Max-Weber-Kolleg
+
+Slides: [tillgrallert.github.io/slides/2018-erfurt](https://tillgrallert.github.io/slides/2018-erfurt/index.html)
+
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>
+
+## Outline of today's talk
+
+1. Introduction and story telling
+2. Research question(s) and methodology
+3. Empirical results and argument
+4. Food riots as a repertoire of contention
+5. Implications for the field of Middle East Studies and beyond
+
+# 1. Introduction and story telling
+## 1.1 Food riots in Damascus, March 1878
+
+<div class="c_left c_width-60">
+
+![LoC LOT 3249-8 Bain, Robert Edward Mather. *Revolt in prison, Damascus.* Damascus, 1894. [http://hdl.loc.gov/loc.pnp/cph.3c12363 (accessed September 28, 2009)](http://hdl.loc.gov/loc.pnp/cph.3c12363)](../assets/food-riots/photo_Damascus-prison-revolt.jpg)
+
+</div>
+
+<div class="c_right c_width-30">
+<script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_damascus.geojson?height=600&width=200"></script>
+</div>
+
+## 1.1 Food riots in Damascus, March 1878
+
+<!-- Aerial photograph -->
+![LoC LC-M32- B-199[P&P] G. Eric and Edith Matson Photograph Collection. Unknown photographer. Jerusalem: American Colony, 1922. [http://hdl.loc.gov/loc.pnp/matpc.05599 (accessed September 28, 2009)](http://hdl.loc.gov/loc.pnp/matpc.05599)](../assets/food-riots/photo_Damascus-aerial-from-west.jpg)
+
+## 1.2 Food riot in Beirut, 11 August 1908
+
+<!-- Map of Beirut -->
+![Map: Wagner & Debes. "Beyrout: Vieille Ville et Bazar." *Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers.* 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912.](../assets/food-riots/map_Beirut-Baedeker-1912-annotated.jpg)
+
+## 1.2 Food riot in Beirut, 11 August 1908
+
+<script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_beirut.geojson?height=600&width=800"></script>
+
+## 1.2 Food riot in Beirut, 11 August 1908
+
+<!-- Aerial photograph -->
+![No. G130854. David, G. et al.. *Beyrouth.* N.Pl.: Établissement cinématographique et photographique des armées (France). Photographe, 1927. [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item (accessed January 23, 2017)](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item)](../assets/food-riots/photo_Beirut-aerial-from-east.jpg)
+
+## 1.3 First observations
+
++ shared belief in a paternalist economic model
+- there is no or at least no immediate looting
+- crowds address the political authorities, predominantly peacefully
+- crowds gather at central places, i.e. on the streets and in front of the seat of the political authorities
+- women are a (substantial) part of the protests
+- failure to achieve to stated objective
+
+# 2. Question and methodology
+## 2.1 Research question
+
+1. What is the **function** of food riots<!-- ---immediate remedy for hunger, lower and stable bread prices in the long term, political change? -->
+2. What are the **implications** of food riots for the study of Middle Eastern societies?
+
+## 2.2 Methodology
+
+- Capture and analysis of economic data on food prices
+- Detailed case studies on individual food riots
+- Systematic analysis of all food riots as part of a "repertoire of contention"
+
+## 2.3 Sources
+
+<!-- comment on the biasses and strengths of these sources -->
+- Local newspapers and periodicals
+- Consular reports
+- Ottoman archival documents
+- First person accounts
+
+## 2.4 Sample
+
+- c.600 price observations for cereals and bread
+- c.400 qualitative statements on food prices
+- 19 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem
+
+## 2.4 Sample
+
+![Distribution of my sample of food riots](../assets/food-riots/map_food-riots-1874-1916.png)
+
+
+# 3. First results and argument
+## 3.1 Empirical results
+
+1. There is no direct relation between food riots and food prices
+2. Food riots are a relatively stable "repertoire of contention" and take the form of a demonstration
+
+## 3.1 Food prices and food riots
+
+<!-- wheat prices -->
+![](../assets/food-riots/rplot_prices-wheat-1874-1916_box-plot.png)
+
+## 3.1 Food prices and food riots
+
+<!-- food prices: deviation from the mean -->
+![](../assets/food-riots/rplot_prices-food-1874-1916_deviation-from-mean.png)
+
+## 3.1 Food prices and food riots: qualitative statements
+
+<!-- qualitative statements on food prices -->
+![](../assets/food-riots/rplot_prices-food-1874-1916_trends.png)
+
+## 3.1 Food prices and food riots: qualitative statements
+
+![](../assets/food-riots/rplot_prices-wheat-1874-1916_box-plot-trends.png)
+
+## 3.1 Food prices and food riots: annual cycle
+
+<!-- wheat prices annual cycle -->
+![](../assets/food-riots/rplot_prices-wheat-1874-1916_annual-cycle-box.png)
+
+
+
+## 3.2 <!-- Hypotheses --> argument
+
+1. There is no direct causal relation between food prices and food riots
+2. Food riots are a **tactic** choice on behalf of the protestors and an **inherently political** act 
+3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+4. The main target of this conscious political **tactic** are the ruling authorities; protestors call for **equitable distribution** and **fair access** to **available bread**.
+5. Food riots are thus part of the negotiations over political legitimacy **within** the existing political order as based in **just rule**, **safety of life**, etc. The demands are conservative and principally recognised as legitimate
+
+# 4. Repertoire of contention
+
+## 4.1 Food riot in Hama, 11 August 1910
+
+<!-- Map of Hama -->
+
+![Map: Pentz, Peter. *The Medieval Citadel and Its Architecture.* Hama: fouilles et recherches de la fondation Carlsberg 1931-1938 IV/1. København: Nationalmuseet, 1998](../assets/food-riots/map-Hama-marked-up.jpg)
+
+## 4.1 Food riot in Hama, 11 August 1910
+
+<script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_hama.geojson?height=600&width=800"></script>
+
+## 4.1 Food riot in Hama, 11 August 1910
+
+<!-- Photo of the *baladiyya*  -->
+![*[Vues Aériennes de Syrie et du Liban] / 39e Régiment D'aviation [Armée du Levant].* Photography by G. David, Loquinaire and L. Piat. N.Pl.: Établissement cinématographique et photographique des armées (France). 1927, G130863 [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item)](../assets/food-riots/photo-Hama-G130863.png)
+
+## 4.1 Prologue (weeks)
+
+1. Period of **artificially** high prices
+2. Advantageous moment
+
+<!-- add plots again? -->
+
+## 4.2 the food "riot" (few hours, a day)
+
+3. A crowd of poor people---men, women and children---gathers
+4. The crowd marches onto the seat of the local government and peacefully raises its demand for affordable bread and grain
+5. The crowd is violently dispersed / a combination of promises and threats leads the crowd to dissolve. Original failure of the authorities leads to further escalation.
+6. (optional) The crowds turn on merchants and loot warehouses, stores, and railway stations
+7. Successful intervention of the highest representative of the central authorities with the help of imperial troops
+
+## 4.3 Aftermath (weeks and months)
+
+8. Intervention from the highest representative of the central authorities
+9. No reports on falling grain prices.
+<!-- 10. Eventual prosecution of looters -->
+
+<!-- ## 4. Empiricial problems
+
+![*al-Ittiḥād al-ʿUthmānī* #1890, 13 Nov 1914: reporting a "food riot" in Beirut?](../assets/food-riots/ittihad-1890.jpg) -->
+
+<!-- ## 4. Empiricial problems
+
+![*al-Ittiḥād al-ʿUthmānī* #1891, 14 Nov 1914: reporting a "food riot" in Beirut?](../assets/food-riots/ittihad-1891.jpg) -->
+
+
+
+# What are the implications of this repertoire?
+## The politics of notables?
+
+- Generally strong argument for a persistence of the three-tiered Ottoman *ancien régime* well into the 20th century
+
+<div class="c_width-30">
+(transregional) imperial bureaucracy
+</div>
+<div class="c_width-30">
+(local) notables
+</div>
+<div class="c_width-30">
+the populace
+</div>
+
+- But where are the notables?
+
+
+## What about the Islamic character of contentions?
+
+- All contention invariably starts at the Friday mosques (Burke)
+
+<div class="c_width-50 c_left">
+    
+<script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_damascus.geojson?height=600&width=350"></script>
+
+</div>
+
+<div class="c_width-50 c_right">
+    
+<script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_homs.geojson?height=600&width=350"></script>
+
+</div>
+
+## What about the public/private divide and gender segregation? 
+
+- the "Islamic City" paradigm is frequently invoked ouside the circles of specialists
+
+<!-- add images -->
+
+<!-- EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. *Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.* Beyrouth: Maison Bonfils (N.D.) -->
+
+<!-- EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. *Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]* Beyrouth: Maison Bonfils (N.D.) -->
+
+
+## What about the public/private divide and gender segregation? 
+
+<!-- c.1910: women at the departure of the maḥmal from the Mushīriyya -->
+![Musée Photographique de la Syrie - *al-Matḥaf al-Fūtūghrāfī al-Sūrī* Unknown photographer. *[The Maḥmal leaving the Mushīriyya].* Dimashq, 1910. [https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)](https://www.facebook.com/photo.php?fbid=424156920979581)](../assets/food-riots/photo_Damascus-mushiriyya-mahmal.jpg)
+
+## What about the public/private divide and gender segregation? 
+
+<!-- c.1887: women at the departure of the maḥmal through the Mīdān  -->
+![GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. *Damas, depart à la caravane par la Mecque.* Damas, 1887. [http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)](http://hdl.handle.net/10020/2008r3)](../assets/food-riots/photo_Damascus-midan-mahmal.png)
+
+## novelty of demonstrations?
+
+- Gelvin, Thompson et al.
+
+# 6. Conclusion
+
+## Conclusion
+
+- Contrary to common arguments and presumptions, we find a long "tradition" of popular contentions in general and food "riots" in particular as well as female agency in genuinely political struggles in public places / space.
+- There is no direct causal relation between food prices and food riots.
+- Food riots form a relatively stable "repertoire of contention".
+- Food riots are a **tactic** choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy **within** the existing political order as based in **just rule**, **safety of life**
+
+## Thank you 
+
+Slides: [tillgrallert.github.io/slides/2018-erfurt](https://tillgrallert.github.io/slides/2018-erfurt/index.html) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+
+Data: <!-- [![DOI](https://zenodo.org/badge/106953939.svg)](https://zenodo.org/badge/latestdoi/106953939) --> [github.com/tillgrallert/food-riots_data](https://www.github.com/tillgrallert/food-riots_data), [github.com/tillgrallert/food-riots_tools](https://www.github.com/tillgrallert/food-riots_tools) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>
