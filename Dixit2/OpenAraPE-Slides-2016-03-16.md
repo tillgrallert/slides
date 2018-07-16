@@ -4,7 +4,7 @@ author: Till Grallert
 date: 2016-03-16
 ---
 
-# #freebassel
+## #freebassel
 
 Bassel Khartabil / باسل خرطبيل
 
@@ -14,7 +14,7 @@ Bassel Khartabil / باسل خرطبيل
 + detained by the regime since 15 March 2012
 + moved to an unknown location and probably killed in Oct 2015
 
-# The journal *al-Muqtabas* between *Shamela.ws*, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals---with almost no funds
+## The journal *al-Muqtabas* between *Shamela.ws*, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals---with almost no funds
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
@@ -24,7 +24,8 @@ Twitter: @tillgrallert
 
 Email: <grallert@orient-institut.org>
 
-# 1.1 Importance of mundane texts / periodicals
+# 1. Introduction/ the problem
+## 1.1 Importance of mundane texts / periodicals
 
 - They are at the core of various discourses
     + Modernity / -ism at the end of empire
@@ -36,7 +37,7 @@ Email: <grallert@orient-institut.org>
     + historical semantics
     + data sets for social history
 
-# 1.2 A two-fold problem
+## 1.2 A two-fold problem
 
 - Preservation: 
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
@@ -49,14 +50,14 @@ Email: <grallert@orient-institut.org>
 
 The consequence is a focus on "high" culture and canonical texts
 
-# 1.3 State of digitisation
+## 1.3 State of digitisation
 <!-- This should be a demo session, otherwise one needs screenshots -->
 
 1. gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
 2. Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
 
 
-# 1.3.1 state of digitisation: text
+## 1.3.1 state of digitisation: text
 
 gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
     
@@ -66,13 +67,13 @@ gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Sh�
 + very limited structural mark-up
 + cannot be reliably cited 
 
-# 1.3.1 state of digitisation: text
+## 1.3.1 state of digitisation: text
 
-<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/OpenAraPE/shamela_muqtabas-1.png) -->
+<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/OpenArabicPE/shamela_muqtabas-1.png) -->
 
-![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/OpenAraPE/shamela_muqtabas-2.png)
+![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/OpenArabicPE/shamela_muqtabas-2.png)
 
-# 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: images
 
 Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
 
@@ -80,23 +81,25 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 + limited licences, paywalls
 + no or very bad text layers
 
-# 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/OpenAraPE/eap119-1-4-5-muqtabas.png)
+![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/OpenArabicPE/eap119-1-4-5-muqtabas.png)
 
-# 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-1.png)
+![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenArabicPE/hathi_muqtabas-1.png)
 
-# 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-2.png)
+![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenArabicPE/hathi_muqtabas-2.png)
 
-# 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenAraPE/hathi_muqtabas-ocr-2.png)
+![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/OpenArabicPE/hathi_muqtabas-ocr-2.png)
 
-# 2. Suggested solution: unite facsimile and transcription
+
+# 2. Proposed solution
+## unite facsimile and transcription
 
 1. aims
     + *validate* the transcription against the facsimiles
@@ -107,9 +110,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     - re-purpose *available* and *established* tools, technologies, and material
     - preference for *open* and *simple* formats and tools
 
-# 3. Test case: digital *Muqtabas*
-
-*al-Muqtabas* / المقتبس
+# 3. Test case
+## *al-Muqtabas* / المقتبس
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
@@ -124,7 +126,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
     + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
 
-# 3. Test case: digital *Muqtabas*
+## digital *Muqtabas*
 
 1. Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas* with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
 2. Core feature: gradually improve the digital edition (text and mark-up)
@@ -132,17 +134,17 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     - Static web-view (doesn't require a permanent internet connection)
     - access through bibliographic metadata in public Zotero group
 
-# 3. Test case: digital *Muqtabas*
+## digital *Muqtabas*
 
-![Project scheme](../assets/OpenAraPE/OpenAraPE-organigramme_vertical.png)
+![Project scheme](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-input.png)
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical-input.png)
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-edition.png) -->
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical-edition.png) -->
 
-# 3.1 Basis: Generate the TEI edition
+## 3.1 Basis: Generate the TEI edition
 
 - crawl the [digital text from *shamela.ws*](http://shamela.ws/index.php/book/26523)
 - transform it into [TEI XML](http://www.tei-c.org): semi-automatically (mostly XSLT)
@@ -193,15 +195,15 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 <!--
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenAraPE/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenArabicPE/oxygen_muqtabas-1.png) 
 
 -->
 
-# 3.1 Basis: Is this legal?
+## 3.1 Basis: Is this legal?
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-input.png)
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical-input.png)
 
-# 3.1 Basis: Is this legal?
+## 3.1 Basis: Is this legal?
 
 Copyright depends on the jurisdiction of creators, distributors, etc.
 
@@ -214,11 +216,11 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 3. digital edition of *al-Muqtabas*
     + all our work is licenced as [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
 
-# 3.2 Core feature: Continuous improvement
+## 3.2 Core feature: Continuous improvement
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-crowd.png)
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical-crowd.png)
 
-# 3.2 Core feature: Continuous improvement
+## 3.2 Core feature: Continuous improvement
 
 1. Improvements depending on human labour (probably a "crowd")
     - correct the transcription
@@ -228,7 +230,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     - provide reliable bibliographic metadata based on the facsimile
     - mark-up of natural entities with link to external reference files (e.g. personal names, toponyms)
 
-# 3.2 Core feature: how to contribute
+## 3.2 Core feature: how to contribute
 
 - go to [GitHub](https://www.github.com) and register a free account
 - *fork* the the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://tinyurl.com/muqtabas](https://tinyurl.com/muqtabas)
@@ -236,11 +238,11 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - send us a *pull request*
 - changes will be reviewed and merged
 
-# 3.3 Sugar on top: web-view
+## 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenAraPE/boilerplate_muqtabas.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenArabicPE/boilerplate_muqtabas.png)
 
-# 3.3 Sugar on top: web-view
+## 3.3 Sugar on top: web-view
 
 - Adaptation of [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/)
 - human-readable and static web-view (either rawgit or gh-pages)
@@ -251,16 +253,16 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - link to metadata on the article level (BibTeX)
 - the code is shared with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)
 
-# 3.3 Sugar on top: Zotero group
+## 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/OpenAraPE/zotero-group_digital-muqtabas-1.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/OpenArabicPE/zotero-group_digital-muqtabas-1.png)
 
-# 3.3 Sugar on top: Zotero group
+## 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/OpenAraPE/zotero-group_digital-muqtabas-2.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/OpenArabicPE/zotero-group_digital-muqtabas-2.png)
 
-
-# 4. To do, ongoing work
+# Conclusion
+## To do, ongoing work
 
 - Editorial decisions: TEI schema design
     + mark-up of some text features has not yet been decided
@@ -274,7 +276,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + needs some polishing
     + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
 
-# 5. Experiences: simple, fast, sustainable
+## Experiences: simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting with GitHub is free
@@ -285,7 +287,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
-# Summary
+## Summary
 
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
@@ -296,7 +298,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + collaborative, open, version-controlled improvements of the edition
     + re-use of the text
 
------------------
+## Thank you
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 

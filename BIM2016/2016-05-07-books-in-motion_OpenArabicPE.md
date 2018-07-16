@@ -85,15 +85,15 @@ The consequence is a focus on "high" culture and canonical texts
 
 # 3. Test case: digital *Muqtabas*
 
-![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenAraPE/boilerplate_muqtabas-1.png)
+![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenArabicPE/boilerplate_muqtabas-1.png)
 
 # 3. Test case: digital *Muqtabas*
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenAraPE/oxygen_muqtabas-1.png)
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenArabicPE/oxygen_muqtabas-1.png)
 
 # 3. Test case: digital *Muqtabas* 
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/OpenAraPE/oxygen_muqtabas-2.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/OpenArabicPE/oxygen_muqtabas-2.png) 
 
 # 3. Test case: digital *Muqtabas*
 
@@ -110,13 +110,13 @@ The consequence is a focus on "high" culture and canonical texts
 
 # 3. Test case: digital *Muqtabas*
 
-![Project scheme](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal.png)
+![Project scheme](../assets/OpenArabicPE/OpenAraPE-organigramme_horizontal.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-input.png)
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_horizontal-input.png)
 
-![](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-edition.png) -->
+![](../assets/OpenArabicPE/OpenAraPE-organigramme_horizontal-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -169,13 +169,13 @@ The consequence is a focus on "high" culture and canonical texts
 <!--
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenAraPE/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/OpenArabicPE/oxygen_muqtabas-1.png) 
 
 -->
 
 # 3.1 Basis: Is this legal?
 
-![External sources, external labour, and the question of copyright](../assets/OpenAraPE/OpenAraPE-organigramme_horizontal-input.png)
+![External sources, external labour, and the question of copyright](../assets/OpenArabicPE/OpenAraPE-organigramme_horizontal-input.png)
 
 # 3.1 Basis: Is this legal?
 
@@ -192,7 +192,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.2 Core feature: Continuous improvement
 
-![A social and GitHub-hosted digital edition](../assets/OpenAraPE/OpenAraPE-organigramme_vertical-crowd.png)
+![A social and GitHub-hosted digital edition](../assets/OpenArabicPE/OpenAraPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 
@@ -212,7 +212,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Send us a *pull request*
 - We will review and merge your changes
 
-![Branches on GitHub](../assets/OpenAraPE/github_branches-1.png)
+![Branches on GitHub](../assets/OpenArabicPE/github_branches-1.png)
 
 # 3.3 Sugar on top: web-view
 
@@ -227,19 +227,19 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenAraPE/boilerplate_muqtabas-1.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/OpenArabicPE/boilerplate_muqtabas-1.png)
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/OpenAraPE/zotero-group_digital-muqtabas-1.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": list view](../assets/OpenArabicPE/zotero-group_digital-muqtabas-1.png)
 
 # 3.3 Sugar on top: Zotero group
 
-![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/OpenAraPE/zotero-group_digital-muqtabas-2.png)
+![Zotero group "[digital-muqtabas](https://www.zotero.org/groups/digital-muqtabas/items/)": item view](../assets/OpenArabicPE/zotero-group_digital-muqtabas-2.png)
 
 # 3.4 Use cases: reviewed works
 
-<iframe width="100%" height="80%" frameborder="0" src="../assets/OpenAraPE/maps/map_simile-muqtabas.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width="100%" height="80%" frameborder="0" src="../assets/OpenArabicPE/maps/map_simile-muqtabas.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 <!-- # 3.4 Use cases: reviewed works
 
