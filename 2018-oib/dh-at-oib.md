@@ -5,7 +5,7 @@ date: 2018-10-18 09:26:35 +0300
 duration: 40
 ---
 
-![Components of a digital edition](../assets/dh/OpenArabicPE_components-layer-1-7.png)
+![Components and infrastructure of a digital edition](../assets/dh/OpenArabicPE_components-layer-1-7.png)
 
 ## Overview
 
