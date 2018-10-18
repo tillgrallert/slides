@@ -2,7 +2,7 @@
 title: "Digital Humanities at the OIB and in the region: challenges and chances outside the global north"
 author: Till Grallert
 date: 2018-10-18 09:26:35 +0300
-duration: 40
+duration: 60
 ---
 
 ![Components and infrastructure of a digital edition](../assets/dh/OpenArabicPE_components-layer-1-7.png)
