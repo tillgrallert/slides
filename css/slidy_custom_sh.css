@@ -455,7 +455,20 @@ pre code {
 
 li pre { margin-left: 0; }
 
-blockquote { font-style: italic }
+blockquote { 
+  padding-left: 1em;
+  /*font-style: italic;*/
+}
+blockquote > p:before {
+  content: "> "
+}
+cite {
+  display: inline-block;
+  font-style: normal;
+  text-align: right;
+  float:right;
+}
+
 
 p.copyright { font-size: smaller }
 
