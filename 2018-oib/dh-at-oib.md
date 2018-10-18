@@ -63,3 +63,53 @@ duration: 40
 <cite>Schreibmann, Siemens, and Unsworth, *A New Companion to Digital Humanities*, 2016[^1]</cite>
 
 [^1]: Schreibmann, Susan, Ray Siemens, and John Unsworth (eds.). *A New Companion to Digital Humanities.* Chichester: Wiley-Blackwell, 2016, p.xvii.
+
+## dh as methodological approaches
+
+>[...] there are central concerns among digital humanists which cross disciplinary boundaries. This is nowhere more evident than in the representation of knowledge-bearing artifacts. The process of such representation – especially so when done with the attention to detail and the consistency demanded by the computing environment – requires humanists to make explicit what they know about their material and to understand the ways in which that material exceeds or escapes representation. [...]
+
+>The process that one goes through in order to develop, apply, and compute these knowledge representations is unlike anything that humanities scholars, outside of philosophy, have ever been required to do. This method, or perhaps we should call it a heuristic, discovers a new horizon for humanities scholarship, a paradigm as powerful as any that has arisen in any humanities discipline in the past – and, indeed, maybe more powerful, because the rigor it requires will bring to our attention undocumented features of our own ideation. Coupled with enormous storage capacity and computational power, this heuristic presents us with patterns and connections in the human record that we would never otherwise have found or examined.
+
+<cite>Schreibmann, Siemens, and Unsworth, *A Companion to Digital Humanities*, 2004[^6]</cite>
+
+[^6]: Schreibmann, Susan, Ray Siemens, and John Unsworth (eds.). *A Companion to Digital Humanities.* Oxford: Blackwell, 2004.
+
+## dh as methodological approaches
+
+- digitisation of cultural artifacts
+    + scanning: 3D, radar, LIDAR, multispectral imaging
+    + modelling
+    + metadata
+- distant reading
+    + stylometry
+    + authorship attribution
+    + text re-use
+    + topic modelling
+- computational linguistics
+    + NLP
+- network analysis
+- visualisation
+- mapping: GIS
+- study of digital media
+- creation of digital artifacts: e-lit
+- study of algorithms and affordances
+
+## DH as a community
+
+>For us, digital humanities simply represents a community of scholars and teachers interested in using or studying technology. We use humanities techniques to study digital cultures, tools, and concepts, and we also use computational methods to explore the traditional objects of humanistic inquiry.
+
+<cite>Battershill and Ross, *Using Digital Humanities in the Classroom*, 2017[^4]</cite>
+
+[^4]: Battershill, Claire and Shawna Ross. *Using Digital Humanities in the Classroom : A Practical Introduction for Teachers, Lecturers and Students.* London: Bloomsbury, 2017, pp.3--4.
+
+## DH as a community
+
+![2500 Twitter users (Grandjean 2016)](https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/oaah20/2016/oaah20.v003.i01/23311983.2016.1171458/20170120/images/large/oaah_a_1171458_f0001_oc.jpeg)
+
+## DH as a community
+
+![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/dh/map_dhcenters.png)
+
+## DH as a community
+
+![ [Around DH in 80 Days](http://www.arounddh.org/), 2014](../assets/dh/map_arounddh.png)
