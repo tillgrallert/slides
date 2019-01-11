@@ -12,7 +12,7 @@ copyright: "CC BY-SA 4.0"
 ### Till Grallert, Orient-Institut Beirut
 ### Date, Context
 
-Slides: [tillgrallert.github.io/Slides/name](https://tillgrallert.github.io/Slides/name)
+Slides: [tillgrallert.github.io/slides/food-riots/name](https://tillgrallert.github.io/slides/food-riots/name/index.html)
 
 Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
 
