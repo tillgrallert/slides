@@ -92,9 +92,9 @@ In the aftermath of these events (called *ḥādithat Ḥamā*[^14] and *fitna*)
 # 3. First results and argument (4 min)
 ## 3.1 Empirical results
 
-Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../assets/food-riots/map_FoodRiots.html), [table](../assets/food-riots/Table-FoodRiots.html))
+Sample of 14 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](assets/map_FoodRiots.html), [table](assets/Table-FoodRiots.html))
 
-1. There is no direct causal relation between food riots and food prices ([graph](../assets/food-riots/timeplotGrainPricesDamascus.html))
+1. There is no direct causal relation between food riots and food prices ([graph](assets/timeplotGrainPricesDamascus.html))
     + food riots and food prices are only loosely related
 2. Food riots are a relatively stable "repertoire of contention" and take the form of a demonstration
 

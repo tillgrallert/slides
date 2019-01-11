@@ -24,31 +24,31 @@ Email: <grallert@orient-institut.org>
 
 <!-- Map of Damascus  -->
 
-![Map of late Ottoman Damascus](../assets/food-riots/map_Damascus.jpg)
+![Map of late Ottoman Damascus](../assets/map_Damascus.jpg)
 
 # 1.1 Food riot in Damascus, 12-17 March 1878
 
 <!-- Photo of Marja Square -->
 
-![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/food-riots/photo-Damascus.jpg)
+![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/photo-Damascus.jpg)
 
 # 1.1 Food riot in Hama, 11 August 1910
 
 <!-- Map of Hama -->
 
-![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/food-riots/map_Hama.jpg)
+![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/map_Hama.jpg)
 
 # 1.1 Food riot in Hama, 11 August 1910
 
 <!-- Photo of Serail and Baladiyya -->
-![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-3.jpg)
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-3.jpg)
 
 
-<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-1.jpg) -->
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-1.jpg) -->
 
 --------
 
-![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/food-riots/photo-Hama-2.jpg)
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/photo-Hama-2.jpg)
 
 # 1.2 First observations
 
@@ -97,9 +97,9 @@ Let's hypothesize and discuss Louise Tilly's article in relation to what we just
 
 # 3.3 First results
 
-Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../assets/food-riots/map_FoodRiots.html), [table](../assets/food-riots/Table-FoodRiots.html))
+Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../assets/map_FoodRiots.html), [table](../assets/Table-FoodRiots.html))
 
-1. There is no direct causal relation between food riots and food prices ([graph](../assets/food-riots/timeplotGrainPricesDamascus.html))
+1. There is no direct causal relation between food riots and food prices ([graph](../assets/timeplotGrainPricesDamascus.html))
 2. Food riots are a relatively stable "repertoire of contention"
 
 # 3.3.1 Repertoire of contention: prologue
