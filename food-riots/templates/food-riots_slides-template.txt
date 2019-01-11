@@ -1,7 +1,7 @@
 ---
 title: "Context"
 author: Till Grallert
-institute: orient-institut Beirut
+institution: Orient-Institut Beirut
 date: 
 duration: 20
 lang: en-GB
@@ -146,13 +146,16 @@ Email: <grallert@orient-institut.org>
 <!-- wheat prices -->
 ![](../assets/rplot_prices-wheat-1874-1916_box-plot.png)
 
+## 3.1 Food prices and food riots
+
 <!-- food prices: deviation from the mean -->
 ![](../assets/rplot_prices-food-1874-1916_deviation-from-mean.png)
-
 
 ## 3.1 Food prices and food riots: qualitative statements
 
 ![](../assets/rplot_prices-food-1874-1916_trends.png)
+
+## 3.1 Food prices and food riots: qualitative statements
 
 ![](../assets/rplot_prices-wheat-1874-1916_box-plot-trends.png)
 
