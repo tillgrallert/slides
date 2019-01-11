@@ -1,0 +1,219 @@
+---
+title: "Introduction to plain text and sustainable publishing"
+author: "Till Grallert (OIB)"
+date: 2017-03-10
+copyright: "CC BY-SA 4.0"
+---
+
+# Introduction
+## Problems
+
+- academic mode of production: 
+    + content and means of production and access are owned by a few large companies
+    + work is provided for free
+- consequences:
+    -  producers and the public are charged multiple times over
+    -  severely limited access to the public / those outside the global north
+    -  obsolescence and incompatibility of tools and formats
+
+## Possible solutions
+
+1. Change copyright laws
+2. (re)claim the means of (academic) production
+
+# Ideas
+## principles
+
+- accessibility
+- simplicity
+- sustainability
+- credibility
+
+## plain text
+
+- what: file format with a pure sequence of character codes
+    + nowadays preferably encoded as UTF-8 (Unicode)
+- advantages: simple, human readable, preservable.
+- problems: no information on the characters' appearance (styling, structure etc.)
+
+## markup
+
+- what: markup languages are the solution to the limitation of plain text files
+- advantages: combines human-readable text with structural, stylistic etc. information
+- problem: complex mark-up decreases human-readability and compatibility with software tools
+
+# Excursion: markup
+## Encoding of texts
+
+- A text is more than a sequence of encoded glyphs or lexical tokens
+    + It has a **structure** and a **communicative function** 
+    + It also has multiple possible **readings**
+- Encoding, or markup, is a way of making these things explicit
+- **Only that which is explicit can be reliably found again and displayed**
+
+## What is the point of markup?
+
+- To make **explicit** (to a machine) what is **implicit** (to a person) 
+- To add value by supplying **multiple annotations**
+- To facilitate **re-use** of the same material
+    + in different formats 
+    + in different contexts 
+    + by different users  
+- We don't have to be limited to the view of one editor or consumer
+
+## Styles of markup
+
+- In the beginning there was **procedural** markup: `RED INK ON; print balance; RED INK OFF`
+- which being generalised became **descriptive** or **semantic** markup: 
+
+    ~~~{.xml}
+    <balance type='overdrawn'>some numbers</balance>
+    ~~~
+
+- also known as **encoding** or **annotation**
+- **descriptive markup allows for easier re-use of data**
+
+## Some more definitions
+
+- Markup makes explicit the distinctions we want to make when processing a string of bytes
+- Markup is a way of naming and characterizing the parts of a text in a formalized way
+- It is (usually) more useful to markup what we think things **are** (a head) than what they **look** like (bold and larger font)
+
+## Separation of form and content
+
+- **Presentational** markup cares more about fonts and layout than meaning
+- **Descriptive** markup says what things are, and leaves the rendition of them for a separate step
+- Separating the form of something from its content makes its re-use more flexible
+- It also allows easy changes of presentation across a large number of documents
+
+## Problem
+
+~~~{.xml}
+<p xml:lang="ar" xml:id="p_94.d1e1015">قال سيايل<note n="1" type="footnote" xml:id="note_3.d1e1853" xml:lang="ar"><bibl xml:id="bibl_8.d1e1854" xml:lang="ar"><gap resp="#org_MS" xml:id="gap_3.d1e1855"/><author xml:id="author_6.d1e1856" xml:lang="ar"><persName ref="viaf:76322694" xml:id="persName_17.d1e1857" xml:lang="ar"><forename xml:id="forename_8.d1e1858" xml:lang="ar">Gabriel</forename> <surname xml:id="surname_8.d1e1861" xml:lang="ar">Séailles</surname></persName></author>: <title level="m" xml:id="title_20.d1e1864" xml:lang="ar">Éducation ou <choice xml:id="choice_1.d1e1866" xml:lang="ar"><sic xml:id="orig_1.d1e1868" xml:lang="ar">Rolution</sic><corr xml:id="corr_1.d1e1871" xml:lang="ar" resp="#pers_TG">Révolution</corr></choice></title>, <publisher xml:id="publisher_2.d1e1874" xml:lang="ar"><orgName xml:id="orgName_4.d1e1875" xml:lang="ar">Librairie vie Arman Colin</orgName></publisher> <sic xml:id="sic_1.d1e1878" xml:lang="ar">paris</sic></bibl></note>: لا غنية للديمقراطية عن خيرة رجال كما لا يسعها إلا أن تقدر الذكاء والعلم والفضيلة حق قدرها. ولا مشاحة في أن الديمقراطية تأتي على الحواجز التي كانت تحول بين الطبقة العالية وجمهور الأمة فتدكها من أساسها وذلك لأن المجتمع يختار كبار الرجال من جمهور أهل البلاد ممن ينشؤون أبداً بين ظهراني عامة الناس ولا يزالون ينمون ويتجددون بما يصدر إليهم من حوض القوة والنشاط وأعني بهذا الحوض العامة. فإذا اعتزل أولئك الرجال واقتصروا على الاجتماع بأبناء طبقتهم محتقرين ما عداها فإنهم يقضون على أنفسهم بالضعف وعلى أمرهم بالفشل. ليس الشعب هو الجمهور بل هو الأمة وهو الحاكم المتحكم. والفكر لا يكون إلا مجردات ونظريات إذا لم يكن له كيان وحقيقة تؤثر في عقول أبناء الأمة وإرادتهم. وعلى الطبقة الخاصة من الناس وهي في الأصل ممتزجة بجهلاء الأمة وأهل الوضاعة منهم أن يكون لها اتصال بالشعب وعليها أن تعمل على إقناعه لتنال ثقته تتصل به وتشركه في معرفة الحقيقة السامية التي تخضع لناموسها الإرادات مختارة وعلى مجموع من<pb ed="print" n="18" facs="#facs_18" xml:id="pb_36.d1e1666"/> يتألف من هم المجتمع الديمقراطي أن يشتركوا في الحياة الوطنية. أهـ.</p>
+~~~
+
+Source: [Digital *Muqtabas*](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_25.TEIP5.xml#p_94.d1e1015)
+
+# Formats, tools, implementations
+## [Markdown (md)](http://daringfireball.net/projects/markdown)
+
+- what: "lightweight markup language" (plain text **syntax**) and text-to-Html conversion **tool**. The syntax was inspired by plain text email.
+- when: **2004**
+- who: John Gruber (et al.)
+- current version: Markdown 1.0.1 (2004)
+- problems: 
+    + md is a **convention** with many ambiguities; no strict syntax or standard beyond the original implementation
+    + lacking features: footnotes, tables ...
+    + no further development
+
+## Markdown flavours
+
+There are multiple widely supported flavours of Markdown that try to overcome some of its limitations:
+
+- [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+- [Pandoc](https://pandoc.org/)
+- [CommonMark](http://commonmark.org/), strict syntax
+- Github flavored Markdown (GFM)
+- [kramdown](https://kramdown.gettalong.org/), strict syntax
+
+## [MultiMarkdown (mmd)](http://fletcherpenney.net/multimarkdown/)
+
+- what: plain text **syntax** and conversion **tool** based on Markdown
+    + additional syntax features: footnotes, tables
+    + integration of [CriticMarkup](http://criticmarkup.com/) for annotation
+    + "smart" typography
+    + additional export formats (but NOT docx)
+- when: under active development since?
+- who: Fletcher T. Penny et al.
+- [current version](https://github.com/fletcher/MultiMarkdown-5/releases): 5.4.0 (Aug 2016), [user's guide](http://fletcher.github.io/MultiMarkdown-5/), [v.6 alpha](https://github.com/fletcher/MultiMarkdown-6).
+- problems:
+    + still not a strict standard
+    + (partial) incompatibility with other Markdown "flavours"
+
+## [Pandoc](https://pandoc.org/)
+
+- what: conversion **tool** and plain text **syntax** based on Markdown
+    + large number of export formats: HTML, Word processors, Ebooks, documentation formats (including [TEI Simple](https://github.com/TEIC/TEI-Simple)), TeX formats, PDF, markdown flavours
+    + support for automatic citations and bibliographies
+    + large number of options to tweak the conversion
+- when: under active development since **2006**
+- who: John MacFarlane <!-- (UC Berkeley) -->
+- problems:
+    + still not a strict standard
+    + (partial) incompatibility with other Markdown "flavours"
+
+## [Yaml (Yaml ain't markup language)](http://yaml.org/)
+
+- what: "human friendly" [data serialization](https://en.wikipedia.org/wiki/Serialization); superset of [JSON]()
+    + provides a very simple means of adding metadata to the beginning of plain text files
+- when: since **2001**; first working draft of YAML 1.1 in 2004
+- who: Clark Evans, Ingy döt Net and Oren Ben-Kiki
+- current version: YAML 1.2 ([spec](http://yaml.org/spec/1.2/spec.html))
+
+## [git](https://git-scm.com/)
+
+- what: free and open version control system
+    + included in Linux and OS X / macOS since v.10.9 (2013)
+- when: under active development since **2005**
+- who: Linus Torvalds (Linux)
+- current version: 2.12.0
+
+
+## [GitHub](https://www.github.com)
+
+- what: distributed version control system and online code-sharing platform based on git
+    + unlimited free public repositories
+    + issue tracking
+    + Wikis
+    + pull requests
+    + GitHub pages
+- when: site launched in **2008**
+- who: Tom Preston-Werner, Chris Wanstrath, PJ Hyett 
+- problems: for-profit start-up company funded by venture capital
+
+## [Jekyll](https://jekyllrb.com/)
+
+- what: blog aware, static site generator, based on Markdown and Liquid
+    + ruby gem
+    + powers [GitHub Pages](https://pages.github.com/)
+- when: under active development since **2008**
+- who: Tom Preston-Werner (GitHub) et al.
+- current version: 3.4.1
+- problems: requires one to learn "liquid" templating language
+
+## [Zenodo](https://zenodo.org/)
+
+- what: open science / open data platform to publish and archive research data and results
+    + provides [DOI](https://www.doi.org/)s  
+    + hooks into GitHub
+- when: launched in **2013**
+- who: CERN, OpenAIRE, EC
+
+## [CriticMarkup](http://criticmarkup.com/)
+
+- what: simple syntax to add some editing and commenting capabilities to Markdown and its flavours
+- when: **2013**
+- who: Gabe Weatherhead, Erik Hess
+- problems: limited support in major tools
+
+~~~{.mmd}
+ {>>comment<<}
+~~~
+
+## [kramdown](https://kramdown.gettalong.org/)
+
+- what: strict plain text **syntax**
+    + tool of choice for Jekyll, GitLab and others
+    + additional features: support for attributes
+
+~~~{.}
+ Some *text* {:#id}{:.class}
+~~~ 
+
+## Credits and links
+
+A short post outlining today's ideas is online at [tillgrallert.github.io/blog/2017/02/22/plain-text/](https://tillgrallert.github.io/blog/2017/02/22/plain-text/)
+
+Slides are made available under a [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) license at [https://tillgrallert.github.io/slides/2017-dhi-beirut](https://tillgrallert.github.io/slides/2017-dhi-beirut) 
+
+Slides were produced using [MultiMarkdown](http://fletcherpenney.net/multimarkdown/), [Pandoc](http://johnmacfarlane.net/pandoc/), and [Slidy JS](https://www.w3.org/Talks/Tools/Slidy/slidy.js).

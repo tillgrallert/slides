@@ -1,0 +1,127 @@
+---
+title: "Publique, public, öffentlich? Historical semantics of *al-ʿumūm* in late Ottoman *Bilād al-Shām* (1875-1914)"
+author: Till Grallert
+date: 2015-11-22
+---
+
+# Question
+
+- What was the semantic field for speaking about *a* or even *the* public?
+- What were the historical *a priori* and the archive to speak about society and crowds for speakers of Arabic during the last forty years of Ottoman rule in Damascus? 
+- In which terms did local newspapers refer to the population, the populace, or those gathered in open places? 
+- How did they perceive the social structure of an Ottoman, or rather Damascene public? 
+
+<!-- And finally, can we observe a semantic change from the three-tiered social model of the *ancien régime* to a concept of general equality and homogeneous and exclusive identities, such as the nation, in the everyday language of the newspapers, as one would assume to have occurred with the constitutional revolution of July 1908. -->
+
+# Background
+
+- almost complete absence of *ʿumūm* / *ʿumūmī* from Ottoman and Arabic contemporaneous dictionaries but in compounds designating technical terms
+- Salīm Sarkīs' polemic against the *mektupçu*(s) of Beirut
+- absence of scholarly work on the semantics of *public* in Arabic despite the fetish of the public/private dichotomy
+
+# Methodology
+
+1. inductively establishing a semantic field of all things "public" (onomasiology)
+2. quantitative content analysis with a focus on the every-day language of news reports
+3. semasiology for the terms *ʿumūmī* and *ʿumūm*
+
+<!-- - semasiology: all meanings of single term
+- onomasiology: all terms for a single concept -->
+
+# Sources
+
+- 2 Damascene and 5 Beiruti newspapers; occasional recourse to various journals from Beirut, Cairo, Damascus, and Istanbul.
+- some 30 odd dictionaries of Ottoman and Arabic
+
+<!-- 
+- Beiruti newspapers: *Ḥadīqat al-Akhbār* (1881–88, semi-official weekly), *al-Bashīr* (1878–82, 1887–1910, weekly), *al-Janna* (1883–84, weekly), *Thamarāt al-Funūn* (1875–95, 1898–1900, and 1902–1908, weekly), and *Lisān al-Ḥāl* (1877–1914, bi-weekly, since 1894 daily)
+- Damascene newspapers: *Sūriye* (1882–88, 1899–1902, official gazette, weekly), *al-Muqtabas* (1908–14, daily, with changing titles). 
+- Journals: *al-Jinān*, *al-Maḥabba*, and *al-Ḥasnāʾ* from Beirut,  *al-Ḥaqāʾiq* from Damascus, *al-Muqtaṭaf* in Beirut and later Cairo, *al-Muqtabas* in Cairo and later Damascus,  and *Servet-i Fünūn*, *The Levant Herald*, and *Konstantinopler Handelsblatt* from Istanbul.
+-->
+
+# Argument / findings
+
+- the *ancien régime*'s three-tiered model of society prevailed until 1914: bureaucracy, local elites, the populace
+- *ʿumūm* and *ʿāmma* are rather uncommon terms, especially if compared to the almost ubiquitous *ʿumūmī*
+- "public" was an additional layer of meaning for *ʿumūmī*
+<!-- prevalence of a multitude of meanings for *ʿumūmī* as public, pertaining to the state, general, total, etc. -->
+- the modern Arabic usage of *al-ʿumūm* and *ʿumūmī* to designate all things public was heavily influenced by Ottoman semantic choices.
+<!-- - historical trajectory: re-Arabisation of an Ottomanised Arabic term to designate the French legal concept of *publique* -->
+
+<!-- 
+    1. *ʿumūmī* acquired the meaning of public as state-sponsored
+    2. shift from *ʿumūm al-ahālī* to *al-ʿumūm*
+- this was done through
+    + legal texts and their local Arabic translations by journalists-cum-officials
+    - establishment of new administrative bodies
+    - publication of minute descriptions of these offices
+-->
+
+# The semantic field of public
+
+<div class="c_width-30">
+1. public as pertaining to the state
+
+- *rasmī*
+- *ʿalanī*
+- *amīrī*
+- *ʿumūmī*: *al-manāfiʿ al-ʿumūmiyya*, *al-manāfiʿ al-ʿumūmiyya*
+- *ʿāmire*
+- *khāṣṣ*
+
+</div>
+<div class="c_width-30">
+2. public as open to access for all
+
+- *matrūk*
+- (*ʿumūmī*)
+
+</div>
+<div class="c_width-30">
+3. *a* and *the* public as the entirety of the population and abstract concept
+
+- *nās*
+- *ahl* / *ahālī*
+- *qawm*
+- *khalq*
+- *ʿāmma*
+- *shaʿb*
+- *jumhūr*
+- *ʿumūm*
+
+</div>
+
+# Legal texts and the shift from *ʿumūm al-ahālī* to *al-ʿumūm*
+
+- 1858 Land Code: *ṭarīḳ-i ʿāmm* as being a road open to the use of "all people" (*ʿumūm-i nās* and *ʿumūm-i ehālī*). (art. 5)
+- 1876 Constitution: right to petition the "General Assembly" (*meclis-i ʿumūmī*) in case of a violation of laws and regulations concerning the public (*ʿumūma*) (art. 14)
+- 1877 Law on Provincial Municipalities: municipal authority over places of public gatherings (*mecmaʿ-i nās olan her bir maḥalle*), such as streets, markets or gardens designated for the public (*ʿumūma meḫṣūs bāghçeleri*).(art. 3)
+- 1882 / 1891 Building Codes: "places for the benefit of the public" (*ʿumūma ʿāʾid meydānlar*) (art. 5).
+
+# *ʿumūmī* as "public"? 
+
+- *maḥallāt ʿumūmiyya*: publicly accessible places, official buildings, vulgar entertainment
+    + *ṭuruq ʿumūmiyya*, *ḥadāʾiq al-ʿumūmiyya*
+    + *buyūt ʿumūmiyya*: brothels
+- *al-majlis al-ʿumūmī*: the general assembly
+- *makātib ʿumūmiyya*: public schools
+- *manāfiʿ ʿumūmiyya*: public works, the common benefit
+- *al-rāḥa al-ʿumūmiyya* (*āsāyış-i ʿumūmī*): public order, general tranquility
+- *al-ādāb wa-l-akhlāq al-ʿumūmiyya*
+- al-ṣiḥḥa al-ʿumūmiyya*
+
+# Conclusion
+
+- the *ancien régime*'s three-tiered model of society prevailed until 1914: bureaucracy, local elites, the populace
+- *ʿumūm* and *ʿāmma* are rather uncommon terms, especially if compared to the almost ubiquitous *ʿumūmī*
+- "public" in the sense of state-sponsored and as generally accessible was an additional layer of meaning for *ʿumūmī*
+<!-- prevalence of a multitude of meanings for *ʿumūmī* as public, pertaining to the state, general, total, etc. -->
+- the modern Arabic usage of *al-ʿumūm* and *ʿumūmī* to designate all things public was heavily influenced by Ottoman semantic choices.
+
+## Thank you 
+
+Slides: [tillgrallert.github.io/slides/historical-semantics/2015-mesa/](https://tillgrallert.github.io/slides/historical-semantics/2015-mesa/index.html) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>

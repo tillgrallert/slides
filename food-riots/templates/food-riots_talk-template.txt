@@ -1,0 +1,378 @@
+---
+title: "Context"
+author: Till Grallert
+date: 
+---
+
+# Presentation (20 min)
+
+# 1. Introduction (5 min)
+## 1.1 summary of argument / definitions
+### abstract
+
+Almost thirty years ago Edmund Burke III made three claims in his attempt to apply C. Tilly's "repertoire of contenion" historical Middle Eastern societies: invariably contentions started at the chief mosque of a city, the crowds attacked foodstores, and food riots disappeared with the 19th century.[^1] Retaining Tilly's analytical framework, this paper proves all three claims wrong by presenting a first analysis of a <!-- growing --> sample of <!-- currently 14 --> food riots in Aleppo, Beirut, Damascus, Hama, Homs, Jafa, and Jerusalem at the end of Ottoman rule between 1878 and 1918. 
+
+During these food riots, large groups of poor men and women gathered at central squares and in front of the authorities in demand for *equitable distribution* and *fair access* to *available bread*. Starting with an observable absence of direct causal relations between food prices and food riots and only rare instances of looting, which did not commonly target foodstores, I argue that food riots were neither particularly riotous nor predominantly concerned with food. Instead, the demand for *bread* had a symbolic value and was part of a relatively stable "repertoire of contention" that protestors could resort to in negotations over political legitimacy *within* the existing political order as based in the provision *just rule* and the *safety of life*.
+
+ 
+
+## Outline of today's paper
+
+1. Introduction and story telling
+2. Research question(s) and methodology
+3. Empirical results and argument
+4. Food riots as a repertoire of contention
+5. Conclusion
+
+
+## 1.1 Case study / vignette (3 min) 
+
+Start with a *single* anecdote which shows the main changes must have been taken place in the nature of public space
+
+### 1.1 1908, 21 Aug: Beirut
+
+On 21 August 1908, less than four weeks after the restoration of the constitution in the Ottoman Empire, the daily newspaper *Lisān al-Ḥāl* from Beirut published the following article:
+
+>Large numbers of poor and destitute gathered the morning before yesterday [19. August] (*ijtamaʿa [...] jumhūr kabīr min al-fuqarāʾ wa arbāb al-ʿayyāl*) in front of the government Serail in Beirut. [There,] they cried for help and lamented the current situation and called for the lowering of prices of flour and bread to ease their suffering and those of all other poor; [...] most [wholesale] flour merchants, sellers of flour, owners of ovens and bakeries tyrannise them and profit from [the sale of] sunflower bread in a clear breach of all laws and legal prescriptions (*jamīʿ al-qawānīn wa al-sharāʾiʿ*) until the *raṭl*[^fn1] of bread was sold at more than Ps[^fn2] 7,5. This is contrary to justice (*al-ʿadāla*) and no one can [possibly] accept this. 
+
+>When their [yelling of] complaints grew and their shouting and screaming rose, the vigorous Anīs Efendi Ramaḍān, superintendent of the police, went out to meet them. He soothed their minds with a speech full of courtesy and refinement. He assured them that the authorities directed their zeal and efforts to the lowering of the prices of foodstuffs and thus they withdraw gratefully.
+
+>Their agreement lasted until they were met by a group of their likes, wretched and poor (*jamāʿat min amthālihim arbāb al-ʿayāl wa al-fuqarāʾ*). Together they went to the customs demonstrating in the same manner as before. They scattered the flour [found there] on the floor [in an attempt to] prevent its export from the province and chased away everyone who tried to stop them. Their threatening and menacing was not stopped until the director of the police [arrived] and assured them of the seriousness of the [government's efforts] to secure the necessary funds and reduce the price of food. He explained everything and how it would take less than ten days for the flour calamity (*qaḍiyyat al-ṭaḥīn*) to ease, as well as all other calamities that they complained of. Thus they were appeased.
+
+>Yesterday [20. August] they again gathered and decided amongst them to repeat their demonstrations (*muẓāharāt*) today. Thus they roamed the stores of wheat and all other places where flours is sold. They also demonstrated in expression of their dissatisfaction with the high prices of meat etc.[^cf1]
+
+Despite the officials' promises and explanations the "flour calamity" continued: grain prices in Beirut remained at a constant height at Ps 60 to 62 per *kile*[^fn3] for the best quality of wheat and Ps 35 to 42 for a *kile* of wheat from the Ḥawrān throughout the month of August.[^cf2] Some three weeks after the food riot unspecified "poor people" of Beirut approached the governor general Nāẓim Pasha---already the third in this post since the August incidents---on the occasion of Sultan ʿAbdülḥamīd II's birthday on 16 Shaʿbān 1326 (15 September) with a call to reign in on the merchants and to adopt sufficient measures against the high prices of flour and bread. The merchants responded by claiming that their suppliers in the neighbouring province of Syria were the ones to be held responsible. Thus, Nāẓim Pasha contented himself with establishing an inquiry and an appeal to the merchants to lower prices once the inquiry had come to a conclusion. The last thing we hear of this matter is that the governor general was still waiting for an answer from Damascus.[^cf3]
+
+
+[^11]: {muqtabas 162-eap@2}
+[^12]: {jarmuq 452a}
+[^13]: {muqtabas 164-eap@3}
+[^14]: {muqtabas 162-eap}{iqbal 9-361}
+[^15]: {iqbal 9-360}
+
+## Food riots in Damascus, March 1878
+
+Groups of poor women took to the streets and marched on the municipality of Damascus on 12 March 1878 to call for a subsidy of Ps 1 on every *raṭl* of dark bread currently sold at a price of Ps 3.[^cf3] {--Apparently unsuccessful,--} the next Friday, on the eve of *mawlid nabawī* (Prophet's birthday) on 12 Rabīʿ I 1295 aH (16 March 1878), and during the following days, the demonstrations escalated into a full-fledged food riot. Only days before newspapers in Beirut printed reports on the signing of the peace treaty of San Stefano between Russia and the Ottoman Empire that had been negotiated in early March[^cf4], starving women, chiefly the families of absent troops,[^cf5] marched to *Marja* square, the centre of Ottoman authority and location of the central prison and various barracks, the military schools, the post and telegraph offices, the site of the only hotel and some cafés.[^cf6] There they "invade[d] the precincts of the Serail daily crying before the wi[n]dows of the governor, 'Give us bread; give us bread!'" (Levant Herald 28 Mar. 1878)[^cf7] and presented a loaf of black and badly smelling bread to the governor.
+
+The British Vice-Consul Thomas Jago, further underlined the violent character of the protests:
+
+>This general feeling of discontent & disaffection against every thing Ottoman---proceeding out of recent events, showed itself forcibly on the 16.th instant & following days when owing to a rise in the already high price of bread, a mob of women, chiefly the families of departed Radifs, stormed the Seraïl of Damascus, the official residence of Djevdet Pasha, the newly appointed Gov.r Gen. of Syria.
+
+>Bitter curses upon the Sultan & his Gov.t for the evils which have lately fallen upon the land were liberally showered upon the Pasha, as well as allusions to the corruption of the administration in general and of Governors General in particular. Reproaches for the losses of their male relatives were interspersed with hopes from the more desperate that the Russians would take Syria & thus relieve them from the curse upon them."[^cf8]
+
+>(PRO FO 226/197 Damascus Political 5, *State of Affairs in Damascus*, Jago to Earl of Derby 27 Mar. 1878)
+
+Such grave a step was certainly facilitated by the fact that a new governor, Cevdet Pasha (March-December 1878), arrived only two weeks before and could not draw on reliable alliances within the city. Furthermore there was no one left for the protection of the palace. Most of the troops were absent on the killing fields---of the 28 battalions of the 5th Army Corps only one remained garrisoned in Damascus---[^cf9]and the badly, if at all, paid police force was equally hard hit by the bread prices.[^cf10] 
+
+Not much is known about the governor's reaction and nothing about the fate of the protestors.[^cf11] But newspapers in Beirut and Istanbul, printed articles in which the protests were displayed as being chiefly directed against hoarding and fraud amongst the grain merchants, which were then successfully battled by the governor and the authorities:
+
+>"In this situation he [the governor general] issued strict orders to the head of the municipality and to Ḥasan Āğā Būẓū [binbaşı of the police (*zabtiye*) and its deputy commander]. [...] Some houses of wheat hoarders (*buyūt muḥtakirī al-qamḥ*) were inspected with the help of Saʿīd Pasha and ʿUthmān Bey. They extracted an ample amount of wheat (*khinṭa*) that [then] was brought to the Serail. In addition, a number of bakers were paraded around in the streets in shackles."[^cf12]
+
+>(Thamarāt al-Funūn 21 Mar. 1878 (#151):4)
+
+{-->"Le Hadika-ul-Akhbar, journal official publié à Beyrouth, dit qu'une réunion d'indigents et de pauvres s'est tenue la semaine dernière devant le sérail du gouvernement à Damas, en faisant entendre des murmures et des plaintes contre la rareté du pain, la mauvaise qualité de celui livré à la consommation, jointe à l'excessive élévation du prix, et cela vu l'absence des céréales que des entrepreneurs avaient emmagasinées a qu'ils refusaient de livrer au marché. Le vali, Djevdet pacha, se rendit immédiatement au Conseil administratif et concerta les mesures nécessaires pour faire cesser cet état de choses. Les magasins du Méidan remplis de blé ont été ouverts au marché et les boulangers ont pu ainsi se fournier du blé qui leur était nécessaire et livrer à la consommation une bonne qualité de blé, à un prix relativement fort réduit."[^cf13]--}
+
+Neither *Lisān al-Ḥāl*, Beirut's leading private newspaper, nor *al-Bashīr* published any article on these protests and the asserted improvement in grain prices. Instead, one can find reports on further soaring prices, reaching Ps 70 per *kile* of wheat in mid-April before the new and abundant harvests brought relief in May and June.[^cf14]
+
+[^cf1]: {TheLevantHerald 1878c}:
+
+    >"La plus grande misère règne à Damas. Des troupes de femmes affamées envahissent chaque jour les alentours du palais du gouverneur en criant sous les fenêtres du vali: 'Donnez-nous du pain! Donnez-nous du pain!'"
+
+[^cf2]: {TheLevantHerald 1877i@2}
+
+[^cf3]: {thamarat 151a}
+
+[^cf4]: {bashir 393@3; TheLevantHerald 1878a@2 }
+
+[^cf5]: {thamarat 151a; Jago 1878l}
+
+[^cf6]: For the development of this particularly Ottoman area see {Weber 1998}.
+
+[^cf7]: {TheLevantHerald 1878b@2}
+
+[^cf8]: {Jago 1878l}
+
+[^cf9]: {Jago 1878l; Cooke 1968@14, 31, 57–8}
+
+[^cf10]: {Jago 1878d; lisan 41@4}; the police forces of the Gendarmerie and *zabtiye* were allotted a weekly payment of Ps 20 to 50, {lisan 111@4; Jago 1879o}.
+
+[^cf11]: {Gross 1979@249–250} recounts with the errant reference to {Jago 1878f} and a French archival source that Cevdet Pasha had to call in troops to disperse the angry women and that he undertook decisive and successful steps to lower the bread prices.
+
+[^cf12]: {thamarat 151a}
+
+[^cf13]: {TheLevantHerald 1878d}
+
+[^cf14]: {bashir 398@4; lisan 53@4, lisan 54@1}; the price fell to Ps 25 to 26 per bushel in late June, {lisan 67@3}.
+
+## 1.3 First observations (1 min)
+
++ shared belief in a paternalist economic model
++ people did not loot (immediately)
++ people did address the authorities in a mostly peaceful manner
++ people gathered in central locations outside their neighbourhoods
++ women were a substantial part of the crowds.
++ food riots fail
+
+### Text
+
+The incident is puzzling: Poor people, suffering from high prices of flour and bread, repeatedly take to the streets in demand for lower prices and in rather orderly fashion. They gather at the seat of the local authorities, complain about greedy merchants, and demonstrate for effective price controls. They do not initially resort to looting despite flour and wheat being readily available in the city. Even when breaking into warehouses (at the customs) they do not apprehend the food they claim to be unable to afford. They scatter it on the floor instead to prevent its export from the city, which they identified as one of the main reasons for its elevated price. Finally, they failed in achieving any immediate reduction in prices, which remained at an increased level despite the authorities' promises to the contrary. 
+
+
+# 2. Question and methodology (3 min)
+## 2.1 Research questions (2 min)
+
+1. what is the **function** of food riots for the protestors? 
+    + Why did the protestors opt for this particular form of contentious action even though it proved ultimately unsuccessful and why did they not violently take the food available in the market?
+    + immediate remedy for hunger, lower and stable bread prices in the long term, political change
+    + if they purpose is not the immediate satisfaction of a primal need?
+    + why did they not immediately loot / forcefully appropriate foodstuffs?
+2. what are the **implications** of food riots for the study of Middle Eastern societies?
+    + Islamicate nature of protests?
+    + gender relations?
+    + assumed public/private divide?
+    + where are the notables?
+
+
+## 2.2 Methodology
+
+- Capture and analysis of economic data on food prices
+    + problem: absence of studies, apart from Donald Quataert
+- Detailed case studies on individual food riots
+- Systematic analysis of all food riots as part of a "repertoire of contention"
+    + the specificities of individual locations and points in time are largely discarded without knowing them in full detail
+
+## 2.3 Sources
+
+- Local newspapers and periodicals
+    + from Beirut: *Lisān al-Ḥāl*, *al-Bashīr*, *Thamarāt al-Funūn*, *al-Iqbāl*, *al-Ittiḥād al-ʿUthmānī*
+    + from Damascus: *al-Muqtabas*
+    + from Hama: *Lisān al-Sharq*
+    + from Jerusalem: *al-Quds*
+- Consular reports
+    + British, US, German
+- Ottoman archival documents
+- First person accounts
+
+## 2.3 Sources: newspapers
+
+- state of collections:
+    + few periodicals are preserved in their entirety
+    + scattered across the globe
+    + usually via microfilm: increasing number of digital images
+    + no bibliographic metadata
+- mode of production
+    + question of print runs
+    + question of destribution
+    + question of censorship
+
+- two images on the slides
+    + ![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1813.jpg)
+        * the municipality announced that the reason for the long cues in front of the ovens and bakeries and the alarm among the populace is the lining up of those who had kept their wheat in their homes. People and the poor then began to crowd together in the hope to buy bread and the plenty of wheat became known to the public (al-ʿumūm).
+        * the municipality and the police do nothing [against] those who dare to harass the people and the poor in this manner
+        * and it remains to those who have hoarded wheat to use and eat it and not further keep it and the stores of those who do not do so should be ceased and shared with the poor
+    + ![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1837.jpg)
+        * yesterday, the baladiyya was crowded (*izduḥimat*) with poor women (*bi-l-faqīrāt min al-nisāʾ*).
+        * due to the generosity of Enver Pasha / Anwar Pasha money was distributed among them
+
+## ## 2.4 Sample
+
+- c.600 price observations for cereals and bread
+- c.400 qualitative statements on food prices
+- 19 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem <!-- ([Map](../assets/Map-FoodRiots.html), [table](../assets/Table-FoodRiots.html)) -->
+
+![Distribution of my sample of food riots](../assets/map_food-riots-1874-1916.png)
+
+# 3. First results and argument (4 min)
+## 3.1 Empirical results
+
+1. There is no direct relation between food riots and food prices
+2. Food riots are a relatively stable "repertoire of contention" and take the form of a demonstration
+
+## Food prices and food riots
+
+- short comment on the political economy of food supplies in *Bilād al-Shām*
+    + why wheat prices?
+    + wholesale price of wheat tied to the retail price of bread
+    + diet of poor majority based on cereals
+    + demand inelastic / increasing in times of high prices (all other food is removed from the diet)
+
+## 3.2 argument
+### argument: function and "nature" of food riots? 
+
+1. There is no direct causal link between food prices and food riots
+2. Food riots are a *tactic* choice on behalf of the protestors and an *inherently political* act. The are NOT an spontaneous erruption of popular anger.
+    + food riots do not aim at immediately lowering food prices
+    + as they have no impact on food prices they function as a "reminder" to the ruling classes concerning their obligations to the ruled
+    + e.g. "food riots" occur in Beirut in October 1914 before any acts of war could have a real impact on people's lives  
+3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+    + Following Charles Tilly's work, I define *food riots* as contentious collective action: a group of people assemble in a public place and raise the demand of lower food prices vis-à-vis another group of people. All case studies in this research project <!-- must --> conform to this basic definition of a specific *form* of action as well as a specific contentious *claim*. Based on empirical case studies I argue that such food riots form a *repertoire of contention* or "a limited set of routines that are learned, shared, and acted out through a relatively deliberate process of choice".
+    + From this definition as well as out observations follows that food *riots* were neither particularly nor even necessarily riotous or violent.
+4. The target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
+    + E.P. Thompson and Louise Tilly: moral economy
+    + Amartya Sen: entitlement gap. Sen argues that famines are a function of  entitlement relationships
+    + Eric Hobsbawm: people don't protest if they are too weak 
+5. Food riots are thus part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*, etc. The demands are conservative and principally recognised as legitimate
+    + they are genuinely conservative: return to just rule / governance -> again Thompson
+    + they make tactic choices bases on a repertoire of contention (and thus they are dependent on strategic choices of the more powerful strata)
+
+### argument: importance of food riots / why study food riots?
+
+The study of food riots provides insights into the development of
+
+- legitimacy of political rule beyond elitist discourses found
+- gender relations
+    + women gather and protest outside their domicile and in the company of male strangers
+    + contemporaneous sources, both local and consular, do not consider their participation exceptional
+    + this is similar to early modern Europe (Thompson: "an awful lot" of women participating in food riots)
+- notions of *public*
+
+### notes
+
+- als *inherent politische Handlungsweisen*, gewährt die Untersuchung von Nahrungsmittelunruhen einen Einblick in die Legitimität politischer Herrschaft und ihren Wandel über breite Gesellschaftschichten hinweg.
+
+- Nahrungsmittelunruhen sind außergewöhnliche Ereignisse, die häufig genug auftreten um Einblick in die Lebenswelten und -vorstellungen "gewöhnlicher" Menschen gewähren, die häufig außerhalb unserer Quellen liege
+
+- Mit der zunehmenden Etablierung einer Marktwirtschaft und institutionalisierter politischer Teilhabe (formal politics) verschwinden Brotunruhen aus dem "repertoire of contentions" (Tilly) in England und Frankreich im späten 18. und frühen 19. Jahrhundert (Louise and Charles Tilly, Thompson).
+    - mit der Beschränkung von "formal politics" auf (besitzende) Männer und die Verdrängung (bürgerlicher) Frauen in die häusliche Sphäre, tauchen weibliche Nahrunsmittelunruhen im 20. Jhd. wieder auf. Nun aber als einzige mögliche Sphäre der Partizipation von auf "Einkaufen" und "für die Familie Sorgen" beschränkten Frauen (Lynn Tailor; c.f. Khater "Godess of the house").    
+
+# 4. The repertoire (5 min)
+
+## 4.1 vignette
+### 1910, 11 Aug: Hama
+
+On 11 August 1910, a demonstration of poor people in front of the Serail in Hama against the high prices of bread escalated into a full-fledged and violent bread riot. All available reports {>>in *al-Muqtabas* (Damascus), *al-Bashīr*, *al-Iqbāl*, *al-Ittiḥād al-ʿUthmānī*, *Lisān al-Ḥāl* (Beirut), and *Lisān al-Sharq* (Hama)<<} blame greedy wholesale merchants and their attempts to profit from the unrest in the Ḥawran and consequently high grain prices in Damascus by exporting all available cereals to the provincial capital.
+
+On this Thursday gathered a large crowd of poor men, women, and children and marched to the Serail of the mutaṣarrif, Nāẓim Bey, where they peacefully demonstrated against the high profits from the trade of foodstuff and against all exports to Damascus. Nāẓim Bey convinced the crowd that the municipality should be the recipient of their anger and called upon the *baladiyya* to enforce sufficient measures of price control. However, such measures were neither implemented nor announced due to disagreement between mutaṣarrif and *baladiyya* concerning their respective responsibilities. {>>the mutaṣarrif and the baladiyya could not agree upon measures to pacify the protestors.<<} 
+
+Dissatisfied by the official response, the crowd began to attack stores at three different locations: 
+
+1. In the city. When they did not manage to break into the store of al-Mashnūq, they resorted to pelting the house with stones. Then they turned onto Maḥmūd al-Farrā, whom they identified as the main culprit for their misery. They [finally] located al-Farrā at the slaughterhouse  and threatened him with murder. Yet, al-Farrā managed to lock himself inside and escaped. The crowds then split in two.
+2. Large quantities of grain destined for export to Damascus were stored at the railway station and the surrounding warehouses. The protestors forced the gates open and looted some 600 bags of grain without touching any of the railway carriages full of wheat waiting on a side track. This was due to the station master, a certain Nabīh Efendi, having convinced the crowd that the station with its stores of lentils and onions and all coaches were property of the state and that the Ḥijāz Railway as such was pious Muslim endeavour. He also managed to take a photo of the protestors with their loot that was later used for identification purposes. After the successful apprehension of grain, the crowds again targeted Maḥmūd al-Farrā and broke into one of his warehouses at the station that held skins and empty bags, which they looted.
+3.  At the western square they looted the stores of Aḥmad al-Ṣamṣām and Ibn al-Habiyān  and of  al-Bārūdī and took all the rice, sugar, and coffee they could find. Finally, they looted the warehouse of Aswad and Sharrāḥ in the al-Jisr quarter and took all the grain stored inside.
+
+The crowd,  continuously referred to as mob (*al-raʿāʿ*) by *al-Muqtabas*, could roam the street for two and a half hours without any intervention of the authorities. They were finally dispersed by motorised imperial troops (15 men only). *Al-Muqtabas* mentions the honourable but futile attempt of a single mounted policeman, Khudr Efendi, to disperse the crowd: He got a severe beating and narrowly escaped with bruises and bleeding. The newspaper also polemically mocks the commander of the gendarmerie as having said "Darling, what can we do?" (*canım ne yapalım*) upon his arrival on the scene, after which he retreated with his men.[^11] Altogether, it was estimated the rioters looted goods with a value of between £T 1500[^12] and £T 2000.[^13]
+
+In the aftermath of these events (called *ḥādithat Ḥamā*[^14] and *fitna*)[^15], the authorities set up an investigating committee to establish the reasons for the price hikes and to identify the looters. Both the mutaṣarrif and the vali of Syria issued orders against inflated prices and banning exports from Syria. But while the press riled for punishment of all monopolists, reports on falling prices are nowhere to be found.
+
+## 1 Repertoire of contention: prologue (weeks)
+
+
+1. Period of *artificially* high prices
+    + there seems to be a rather stable threshold to the "just" price
+        * As numerous scholars have observed, direct control of prices or even price fixing is highly contentious within Islamic legal discourses and the practices of Muslim rulers. The concept of *ḥisba*, when it comes to *just* prices, focusses on enabling and protecting just relations of exchange so that sellers and buyers will be able to negotiate in a fair manner and thus arrive at a fair solution. In this system bread prices are closely tied to grain prices, which can vary widely.
+        * But the picture becomes more complex when one considers the numerous attempts by municipal councils at setting maximum prices for bread. On the one hand authorities argued falling grain prices should result in an equally falling price for bread. On the other hand, however, the price considered *fair* or *just* remained extremely stable at below Ps 3 for a *raṭl* of dark bread despite the fluctuation in grain prices.
+    + blamed on greedy wholesale merchants seeking undue profits from either exporting or hoarding (*iḥtikār*) cereals
+        * hoarding is not legally prohibited
+2. Advantageous moment: tactic decision to increase the potential embarassment for the authorities
+    + on Fridays
+    + in close temporal vicinity to important holidays / festivities with their mandatory affirmative public rituals: *ʿīd al-fitr*, *mawlid nabawī* anniversary of the Sultan's accession to the throne, anniversary of the Young Turk Revolution
+    + administrative changes: new Valis, absence of important officials, disbanded *baladiyyas*
+    + absence of troops
+
+## 2 Repertoire of contention: the food "riot" (few hours, a day)
+
+A common term for reporting food riots is the generic "incident" (*ḥāditha*). When food riots turned violent, witnesses referred to a battle *maʿraka* (battle), such as 1910 in Aleppo, or even *thawra* (rebellion, revolt) and *fitna* (strife), as in Hama and Homs the same year. Yet, *Lisān al-Ḥāl* acknowledged that the foot riot in Homs was "a rebellion of empty stomachs" (*thawrat al-buṭūn al-fāghira*).
+
+
+3. A crowd (*jumūʿ*, *jumhūr*, *khalq kathīr*) of poor people---men, women and children---gathers (*ijtamaʿ*)
+    + freedom of assembly is granted by the imperial decree (*ḫāṭṭ-i hümāyūn*) of 1. August 1908 restituting the constitution
+    + regulated by a 1909 law: 
+        * unarmed, 
+        * need official approval 2 days before, 
+        * only during daylight
+        * not in open places and on public streets (*al-ṭuruq al-ʿāmma*)
+        * no freedom of speech
+        * accompanied by government officials
+    + 1912 temporal law on assemblies (*tajammuʿ*)
+    + crowd: derivatives of the roots *j-m-ʿ* and *j-m-h-r*
+4. The crowd marches onto the seat of the local government and peacefully raises its demand for affordable bread and grain
+    + the people raise their discontent (*shakā*)
+5. The crowd is violently dispersed / a combination of promises and threats leads the crowd to dissolve. Original failure of the authorities leads to further escalation.
+    + the press publishes loathing critiques of incompetent and unwilling officials
+6. (optional) The crowds turn on merchants and loot (*nahaba*) warehouses, stores, and railway stations
+    + primarly looting goods other than foodstuffs
+    + generally considered illegitimate by the sources: 
+    + property is protected by law
+    + theft, including of grain, is prohibited
+    + the crowds are deligitimised as: *thāʾirūn* or *thuwwār* (rebels), *al-raʿāʿ* (mob) and *al-ghawghāʾ* (mob).
+7. Successful intervention of the highest representative of the central authorities with the help of imperial troops
+    + dispersing looters (often coming to late)
+    + Peace and tranquility as the defining basis of Ottoman political legitimacy---*asāyiş-i ʿumūmī* or *al-rāḥa al-ʿumūmiyya*---are finally reestablished
+
+## 3 Repertoire of contention: aftermath (weeks and months)
+
+8. Intervention from the highest representative of the central authorities
+    + establishes maximum prices;
+    + convenes an investigative committee;
+    + reprimands merchands for artificial price hikes;
+    + confiscates grain;
+    + has looters apprehended
+9. No reports on falling grain prices.
+<!-- 10. Eventual prosecution of looters -->
+
+# What are the implications of this repertoire?
+## The politics of notables?
+
+- Generally strong argument for a persistence of the three-tiered Ottoman *ancien régime* well into the 20th century
+- But where are the notables?
+    + They manned the *baladiyya*!
+    + Could have used food riots to improve their own negotiating power vis-a-vis the authorities
+
+## What about the Islamic character of contentions?
+
+- All contention invariably starts at the Friday mosques (Burke)
+    + this is certainly not true and *food riots* had no Islamicate overtones (the right to life is certainly more universal)
+
+## What about the public/private divide and gender segregation? 
+
+- the "Islamic City" paradigm is frequently invoked ouside the circles of specialists
+- historians of 20th century Middle East: 
+    + "gender marked the old public private divide and therefore it had to become the bounding principle in conflicts over control of new spaces." (Elizabeth Thompson)
+    + elite women were the first to transgress these boundaries
+- historians of pre-20th century Middle East, me
+    + public/private is part of the colonial / modernising project
+    + the exclusion from *public affairs* was relevant for men and women of the third tier of the Ottoman *ancien régime*
+    + poor majority of women could not afford the luxury of privacy
+
+## novelty of demonstrations?
+
+- Gelvin, Thompson et al.
+
+
+# 5. Conclusion
+## 5.1 Conclusion: summary (1 min)
+
+- Contrary to common arguments and presumptions, we find a long "tradition" of popular contentions in general and food "riots" in particular as well as female agency in genuinely political struggles in public places / space.
+- There is no direct causal relation between food riots and food prices.
+- Food riots are a relatively stable "repertoire of contention".
+- Food riots are a *tactic* choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*
+
+## 5.2 Conclusion: open questions
+
+- social background of protestors?
+    + unknown beyond the label "poor"
+    + *Dangerous classes* and *Lumpenproletariat* both refer to the urban poor in their quality as neither propertied nor engaged in any sort of production. (C.f. {Brace 1872;Bayat 2000})
+    + *Lumpenproletariat* and *dangerous classes* in the Marxian tradition might fit my case studies on food riots as the protestors came from the lower classes of society. They did not display any class consciousness and were reactionary in so far as they called for the restoration of the old order and just rule.
+    - As I have no information on the social composition of the protestors apart from generic references to them being poor and destitute, I would reject Brace's category of the *dangerous classes* as a meaningful analytical category.
+- what are the **implications** of the repertoire?
+    * Where are the notables? 
+        - Hourani's *politics of notables* 
+    * Where is the Islamic character of the contentions?
+        - Edmond Burke III: portest invariably started at the chief mosque of a city
+    * What are women doing in public places and voicing their anger in a public manner?
+        - discussion on private/public: beyond the scope of the paper/presentation
+        - this is certainly wrong: it was only in the twentieth century, argued Thompson, and solely elite families that left the domestic space of the internal courtyard and moved the private, such as picnics, into the public.[^2]
+        - requires a comparison with other forms of social action
+
+### notes
+    
+3. questions aiming at establishing whether food riots show exceptional / deviant behaviour: what is the **context** of these events?
+    * Is the street a public space---physically and socially accessible to all?
+        - what are the topographical conditions?
+    * Are people allowed / used to gather in a specific manner?
+        - what is the legal framework?
+        - what are the symbolic repertoires for public gatherings?
+    * To which extent do the crowds make tactic choices in regards to timing and location?
+    * beyond the scope of the paper/presentation
+
+[^2]: {Thompson 2000@175-183}. This chapter is tellingly titled "Remapping the Urban Landscape". She augments her claim to the novelty of women leaving the house during Mandate times with a photograph (Illustration 13) that was taken in October 1918, i.e. right after the Ottoman withdrawal from Damascus and two years before the French Mandate; {Thompson 2000@183; iwm-205230434}.

@@ -1,0 +1,121 @@
+---
+title: Projektvorstellung im Rahmen der Beiratssitzung
+date: 2015-10-09
+author: Till Grallert
+---
+
+# Women in the Streets! 
+## A genealogy of food riots in the Middle East from the mid-eighteenth to the mid-twentieth century
+<!-- - Links to tables, graphs, etc.
+    - [table: food riots](/BachUni/projekte/food%20riots/tables/Table%20Food%20Riots%20150317.html)
+    - [table: grain prices in Damascus, 1873-1913](/BachCloud/BTSync/FormerDropbox/PhD%20thesis/Tables%20Figures%20Frequency/%20general/table%20c%201873-1913%20Grain%20Prices%20Damascus.html)
+    - [graph: grain prices and food riots](/BachUni/projekte/XML/SIMILE%20Timeplot/timeplotGrainPricesDamascus.html) -->
+
+# background
+
+- gap in scholarly literature / attention: the phenomenon of contentious collective action in the Middle East has not received systematic attention
+- very few, generalising and evidently false claims as to the nature and history of contentious collection action in *bilād al-shām*
+- contrary to common arguments and presumptions, we find a long "tradition" of popular contentions in general and food "riots" in particular as well as female agency in genuinely political struggles in public places / space  
+
+# main claims / arguments
+
+- food riots are part of a "repertoire of contention" (C. Tilly)
+- food riots cannot be considered as "the spontaneous erruption of popular anger" 
+- they must be considered a *tactic* choice on behalf of the protestors and an inherently political act.
+- the target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
+- food riots are thus part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*, etc. 
+- food riots are an inherently *urban phenomenon*; foodstuffs are only accessible through some commodity exchange (market)
+
+# main questions
+
+- are food riots a contentious repertoir?
+- what are the components (participants, demands, locations, occasions) of this repertoire and how do they change?
+- what is the function / purpose of the demonstrators' *tactic* decisions---lower bread prices, political change?
+- what is the relation between food prices and food riots?
+- why do we encounter geographic clustering?
+
+
+# Sources 1: newspapers
+
+available at libraries in Lebanon, Jordan, Israel/ Palestine, Istanbul, increasingly as digital image files
+
++ value: detailed and dated information on events and prices
++ problem: yet unknown extent of censorship during WWI, holdings of other than the most important papers from Beirut and Damascus still need to be established
+
+# Sources 2: official records
+
+more or less easily accessible, mostly on site in the respective state archives
+
++ PA AA
+    * value: easily available, source from within the Ottoman armed forces, Fritz Grobba was Etappeninspekteur of the IV Army
++ BOA
+    * value: official records of the main party in the war, the local authorities on the ground
+    * problem: my limited knowledge of Ottoman, context of individual files unclear, 
++ NACP
+    * value: detailed accounts of economic developments, local consular archives did survive, local consular agents, US entered the war only in 1917
++ PRO (TNA) FO
+    * problems: British and French consulates were closed with the outbreak of hostilities, professional / career diplomats, local consular archives were seized by Ottoman Empire
+    * value: military intelligence 
+
+# Sources 3: ego documents
+
+available in large numbers as (gray) editions
+
++ value: detailed information on contexts and the experience of war, famine, hunger
++ problem: almost no dated, detailed information on collective action (beyond the war effort), focus on Cemal Pasha as the impersonated devil (i.e. *al-Saffāḥ*)
+
+# Secondary literature 1: WWI
+
+**most important finding**: scholars stick to very strict periodizations. Historians of WWI have frequently no or very limited knowledge of anything prior to 1914 or after 1918; e.g. Talha Çiçek, Zachary Foster, Aaron Tylor Brand (who also has very little data), Melanie Tanielian
+
+- on the war itself (battles, movement of troops, political event history)
+    + Talha Çiçek
+- on the famine: 
+    + Melanie Tanielian, Aaron Brand, al-Qattan, Linda Schatkowski-Schilcher, Birgit Schäbler
+- focus on ego documents: 
+    + Selim Deringil, Seven Ağır, Malek Sharif, Najwa al-Qattan, Zachary Foster, Salim Tamari, Talha Çiçek, Alia El Bakri, BTS 99, Khairiah Kasmieh, Geoffrey Lewis
+
+
+# Secondary literature 2: theoretical background
+
++ collective action
++ repertoir of contentions
++ weapons of the weak
+
+# Practical questions: when and where did food riots take place?
+
+1. [Map](file:///BachUni/projekte/XML/SIMILE%20Exhibit/Exhibit-food%20riots/simile_map%201-30-red_table.html)
+2. [Table](file:///Users/BachPrivat/BachCloud/BTSync/FormerDropbox/PostDoc%20Food%20Riots/tables/OIB%20Postdoc%20Table%20Food%20Riots%20140908.html):
+
+Place | No.
+-|-
+Acre    | 1
+Aleppo  | 7
+Baghdad | 2
+Beirut  | 4
+Damascus | 17
+Hama    | 2
+Homs    | 1
+Jaffa   | 1
+
+# Practical questions: retrieve bread prices
+
+How can we reliably retrieve information on bread prices etc. from a body of 15.000 + sources? Mark-up!
+
+~~~{.xml}
+<measureGrp>
+    <measure commodity="wheat" unit="kile" quantity="1">a kile of wheat</measure> is currently sold for
+    <measure commodity="currency" unit="ops" quantity="48">48 piaster in gold</measure>
+</measureGrp>
+~~~
+
+# Practical questions: plot the prices over time
+
+The normalised mark-up is used in conjunction with an XML database such as eXistDB, which can then be queried for all prices of a specifiec commodity using XQuery.
+
+- [live-query of wheat prices](http://localhost:8080/exist/rest/db/BachSources/xquery/measures.xql?commodity=wheat) 
+
+The prices can then be fed into a visualisation library such as a SIMILE:
+
+- [live-view of all marked-up wheat prices in Damascus](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB.html)
+- [pre-computed prices of wheat in Damascus](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotGrainPricesDamascus.html)

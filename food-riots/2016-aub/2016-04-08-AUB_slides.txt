@@ -1,0 +1,132 @@
+---
+title: "Genealogy of food riots in *Bilād al-Shām* as a 'repertoire of contention'"
+author: Till Grallert
+date: 2016-04-08
+---
+
+Slides: [http://tillgrallert.github.io/slides/FoodRiotsAUB2016](http://tillgrallert.github.io/slides/FoodRiotsAUB2016)
+
+Twitter: @tillgrallert
+
+Email: <grallert@orient-institut.org>
+
+# Outline of today's session
+
+1. Some story telling (me)
+    1. report on two food riots
+    2. first observations
+    3. research questions
+2. Developing hypotheses against the backdrop of this week's reading(s) (you/us)
+3. Analysis of the food riots. Testing some hypotheses against the historical data (me)
+4. Discussion (us)
+
+# 1.1 Food riot in Damascus, 12-17 March 1878
+
+<!-- Map of Damascus  -->
+
+![Map of late Ottoman Damascus](../assets/food-riots/map_Damascus.jpg)
+
+# 1.1 Food riot in Damascus, 12-17 March 1878
+
+<!-- Photo of Marja Square -->
+
+![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/food-riots/photo-Damascus.jpg)
+
+# 1.1 Food riot in Hama, 11 August 1910
+
+<!-- Map of Hama -->
+
+![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/food-riots/map_Hama.jpg)
+
+# 1.1 Food riot in Hama, 11 August 1910
+
+<!-- Photo of Serail and Baladiyya -->
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-3.jpg)
+
+
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-1.jpg) -->
+
+--------
+
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/food-riots/photo-Hama-2.jpg)
+
+# 1.2 First observations
+
+- there is no or at least no immediate looting
+- the crowds address the political authorities, predominantly peacefully
+- the crowds gather at central places, i.e. on the streets and in front of the seat of the political authorities
+- women are a (substantial) part of the protests
+
+# 1.3 Research questions
+
+- Primary questions:
+    - What is the function/purpose of food riots---lower bread prices, political change?
+    - What is the relevance of food riots for our established "knowledge" of urban societies in the Eastern Mediterranean?
+- Secondary questions:
+    - Are food riots (part of) a "repertoire of contention?
+    - What are the components (participants, demands, locations, occasions) of this repertoire and how do they change?
+    - What is the relation between food prices and food riots?
+    - Why do we encounter geographic clustering?
+
+# 2. Hypotheses
+
+Let's hypothesize and discuss Louise Tilly's article in relation to what we just heard! 
+
+# 2. Hypotheses
+
+1. There is no direct causal relation between food prices and food riots
+2. Food riots are a *tactic* choice on behalf of the protestors and an inherently political act 
+3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+4. The target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
+5. Food riots are thus part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*, etc. The demands are conservative and principally recognised as legitimate
+
+# 3. Analysis
+
+# 3.1 Methodology
+
+- Capture and analysis of economic data on food prices
+- Detailed case studies to individual food riots
+- Systematic analysis of all food riots as part of a "repertoire of contention"
+
+# 3.2 Sources
+
+- Local newspapers and periodicals
+- Consular reports
+- Ottoman archival documents
+- First person accounts
+
+# 3.3 First results
+
+Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../assets/food-riots/map_FoodRiots.html), [table](../assets/food-riots/Table-FoodRiots.html))
+
+1. There is no direct causal relation between food riots and food prices ([graph](../assets/food-riots/timeplotGrainPricesDamascus.html))
+2. Food riots are a relatively stable "repertoire of contention"
+
+# 3.3.1 Repertoire of contention: prologue
+
+1. Artificially high prices
+2. Advantageous moment
+
+# 3.3.2 Repertoire of contention: the food "riot"
+
+3. A crowd of poor people---men, women and children---gathers
+4. The crowd marches onto the seat of the local government and peacefully raises its demand for affordable bread and grain
+5. The crowd is violently dispersed / a combination of promises and threats leads the crowd to dissolve. Original failure of the authorities leads to further escalation.
+6. (optional) The crowds turns on merchants and loots warehouses, stores, and railway stations
+7. Successful intervention of the highest representative of the central authorities
+
+# 3.3.3 Repertoire of contention: aftermath
+
+8. The highest representative of the central authorities
+    + establishes maximum prices;
+    + convenes an investigative committee;
+    + reprimands merchands for artificial price hikes;
+    + confiscates grain.
+9. No reports on falling grain prices.
+
+# 4. Summary
+
+- Contrary to common arguments and presumptions, we find a long "tradition" of popular contentions in general and food "riots" in particular as well as female agency in genuinely political struggles in public places / space.
+- There is no direct causal relation between food riots and food prices.
+- Food riots are a relatively stable "repertoire of contention".
+- Food riots are a *tactic* choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*

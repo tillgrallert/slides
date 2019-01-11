@@ -1,0 +1,119 @@
+---
+title: "Wessen Strasse ist die Strasse? Brotunruhen und die Produktion öffentlicher Orte in Städten der *Bilād al-Shām* in spätosmanischer Zeit (1875-1920)"
+author: Till Grallert
+date: January 26, 2016
+---
+
+
+# Wessen Strasse ist die Strasse? Brotunruhen und die Produktion öffentlicher Orte in Städten der *Bilād al-Shām* in spätosmanischer Zeit (1875-1920)
+
+## Till Grallert, Orient Institut Beirut
+## Mainz, 26 Januar 2016
+
+Folien: [http://tillgrallert.github.io/slides/BrotunruhenMainz2016](http://tillgrallert.github.io/slides/BrotunruhenMainz2016)
+
+Twitter: @tillgrallert
+
+Email: <grallert@orient-institut.org>
+
+# 12-17 März 1878, Damaskus
+
+<!-- Karte von Damascus -->
+
+![Karte von Damaskus in spätosmanischer Zeit](../assets/food-riots/map_Damascus.jpg)
+
+# 12-17 März 1878, Damaskus
+
+<!-- Photo des Marja Platzes -->
+
+![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/food-riots/photo-Damascus.jpg)
+
+# 11 August 1910, Hama
+
+<!-- Karte von Hama -->
+
+![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/food-riots/map_Hama.jpg)
+
+# 11 August 1910, Hama
+
+<!-- Photo von Serail und Baladiyya -->
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-3.jpg)
+
+
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/food-riots/photo-Hama-1.jpg) -->
+
+--------
+
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/food-riots/photo-Hama-2.jpg)
+
+# Erste Beobachtungen
+
+- Es wurde zunächst nicht (oder nicht ausschließlich) geplündert
+- Die Menge adressiert (mehrheitlich friedlich) die politischen Autoritäten
+- Die Menge versammelt sich an zentralen Orten, d.h. in Strassen und vor dem Sitz der politischen Macht.
+- Frauen sind ein (erheblicher) Teil der Protestierenden
+
+# Fragen
+
+- Was ist die Funktion von Nahrungsmittelunruhen?
+- Was ist die Bedeutung von Nahrungsmittelunruhen für etabliertes "Wissen" über die städtischen Gesellschaften des Nahen Ostens?
+- Was sind die Bedingungen unter denen Nahrungsmittelunruhen stattfanden?
+
+# Thesen
+
+1. Es gibt keinen direkten Kausalzusammenhang zwischen Nahrungsmittelpreise und Nahrungsmittelunruhen.
+
+2. Nahrungsmittelunruhen sind ...
+
+    - inherent politische Handlungen und eine taktische Wahl der Protestierenden
+    - Teil eines relativ stabilen "repertoire of contention" und symbolischen Repertoires
+    - in ihren Forderungen konservativ und grundsätzlich legitim
+
+# Methode
+
+- Erfassung und Analyse von Nahrungsmittelpreisen
+- Detailstudien zu einzelnen Nahrungsmittelunruhen
+- Systematische Analyse aller Nahrunsmittelunruhen als Teil eines "repertoire of contention"
+
+# Quellen
+
+- Zeitungen und Zeitschriften
+- Konsulatsakten
+- Osmanische Akten
+- Egodokumente
+
+# Erste Ergebnisse
+
+Sample: 10 Nahrungsmittelunruhen zwischen 1875 und 1920 in Aleppo, Beirut, Damaskus, Hama, Homs und Jaffa ([Karte](../assets/food-riots/map_FoodRiots.html), [Tabelle](../assets/food-riots/Table-FoodRiots.html))
+
+1. Es gibt keinen eindimensionalen kausalen Zusammenhang zwischen Nahrungsmittelunruhen und Nahrungsmittelpreisen ([Graphik](../assets/food-riots/timeplotGrainPricesDamascus.html))
+2. Nahrungsmittelunruhen sind ein relativ stabiles "repertoir of contention"
+
+# Repertoire of contention: Prolog
+
+1. Künstlich hohe Preise
+2. Günstiger Zeitpunkt
+
+# Repertoire of contention: die Nahrungsmittelunruhe
+
+3. Eine große Menge von armen Menschen, Männder, Frauen und Kinder, versammelt sich
+4. Die Menge bewegt sich zum Sitz der lokalen Verwaltung und bringt ihre Forderungen vor
+5. Die Menge wird auseinander getrieben oder durch eine Kombination von Versprechen und Drohungen dazu bewegt, sich aufzulösen. Anfangsversagen der Autoritäten führt zu einer weiteren Eskalation
+6. (optional) Die Menge sich nun gegen Händler und plündert Lagerhäuser, Geschäfte, Bahnhöfe
+7. Erfolgreiche Intervention des höchsten Repräsentanten der Zentralmacht.  
+
+# Repertoire of contention: Nachwirkungen
+
+8. Der höchste Repräsentant der Zentralmacht 
+    + setz Höchstpreis fest; 
+    + beruft Untersuchungskommission ein; 
+    + rügt Großhändler; 
+    + konfisziert Getreide  
+9. Keine Berichte über fallende Nahrungsmittelpreise
+
+# Schlussbemerkungen
+
+1. Es gibt es eine breite "Tradition" von "popular contentions" im allgemeinen und Nahrungsmittelunruhen im speziellen, sowie weiblicher Agency in politischen Auseinandersetzungen im öffentlichen Raum.
+2. Es gibt keinen direkten kausalen Zusammenhang von Nahrungsmittelunruhen und Nahrungsmittelpreisen
+3. Nahrungsmittelunruhen sind eine *taktische* Wahl und *inherent politische Handlungen*, die der Aushandlung des Rechtes of "(gutes) Leben" und politische Legitimität dienen
+3. Nahrungsmittelunruhen sind ein relativ stabiles "repertoire of contentions"

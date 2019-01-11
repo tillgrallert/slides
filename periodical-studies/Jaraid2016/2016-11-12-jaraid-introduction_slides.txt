@@ -1,0 +1,59 @@
+---
+title: "Project Jarāʾid: a short introduction"
+author: Till Grallert
+date: 2016-11-12
+---
+
+# Purpose/ goals
+
+Online chronology of all 19th-century Arabic-speaking periodicals
+
+- including references/links to known holdings
+- including titles in scripts other than Arabic and multilingual titles
+
+# Form of presentation
+
+Static website: [zmo.de/jaraid](http://www.zmo.de/jaraid) / [development branch](http://www.sitzextase.de/ProjectJaraid/)
+
+- Core functions:
+    - Lists of periodicals (chronologically and alphabetically sorted)
+    - Cross-linked indexes of persons, organisations, locations, and holding institutions
+- Additional material:
+    + Bibliography of important secondary material
+    + Maps
+
+# Provided (bibliographic) data
+
+- Title
+- Dates of first and, if known, last publication
+- Names of publishers and editors
+- Place of publication
+- Language(s)
+- Holding institutions, including online repositories
+- Notes on publication history, etc.
+- Sources
+
+# Data structure
+
+- Data source: single XML file (TEI P5)
+- Data conversion for presentation: set of XSLT stylesheets
+    - This allows to automatically (re-)generate the website after edits to the data source
+
+# Constraints / Limitations
+
+- Constrains:
+    - Data originally provided as MS Word file
+    - Budget of 500 Euro
+    - Server space provided by ZMO
+- Input limitations:
+    + manual editing of the source file (including cross-references)
+    + no direct access to the server
+- Output:
+    + Human-readable website
+    + no machine-actionable, standards-compliant bibliographic metadata (such as MARC XML, MODS XML)[^1]
+
+# Persons involved
+
+Hala Auji, Philippe Chevrant, Lamia Eid, Till Grallert, Rana Issa, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Philip Sadgrove, Ola Seif, and Rogier Visser 
+
+[^1]: In preparation for this workshop I generated a [MODS file](https://rawgit.com/tillgrallert/ProjectJaraid/master/xml/JaraidMaster.MODS.xml).
