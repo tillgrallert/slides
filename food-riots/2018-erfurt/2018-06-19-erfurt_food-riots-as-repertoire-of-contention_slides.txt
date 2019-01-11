@@ -1,7 +1,7 @@
 ---
 title: "Food riots as part of a repertoire of contention in late Ottoman Greater Syria"
 author: Till Grallert
-institute: Orient-Institut Beirut
+institution: Orient-Institut Beirut
 date: 2018-06-19
 duration: 45
 lang: en-GB
@@ -12,7 +12,7 @@ copyright: "CC BY-SA 4.0"
 ### Till Grallert, Orient-Institut Beirut
 ### 19 June 2018, Max-Weber-Kolleg
 
-Slides: [tillgrallert.github.io/slides/2018-erfurt](https://tillgrallert.github.io/slides/2018-erfurt/index.html)
+Slides: [tillgrallert.github.io/slides/food-riots/2018-erfurt](https://tillgrallert.github.io/slides/food-riots/2018-erfurt/index.html)
 
 Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
 
@@ -256,7 +256,7 @@ the populace
 
 ## Thank you 
 
-Slides: [tillgrallert.github.io/slides/2018-erfurt](https://tillgrallert.github.io/slides/2018-erfurt/index.html) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+Slides: [tillgrallert.github.io/slides/food-riots/2018-erfurt](https://tillgrallert.github.io/slides/food-riots/2018-erfurt/index.html) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
 
 Data: <!-- [![DOI](https://zenodo.org/badge/106953939.svg)](https://zenodo.org/badge/latestdoi/106953939) --> [github.com/tillgrallert/food-riots_data](https://www.github.com/tillgrallert/food-riots_data), [github.com/tillgrallert/food-riots_tools](https://www.github.com/tillgrallert/food-riots_tools) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
 
