@@ -125,15 +125,29 @@ Email: <grallert@orient-institut.org>
 - due to the generosity of Enver Pasha / Anwar Pasha money was distributed among them -->
 
 
-## 2.4 Sample
+## 2.4 Sample: 1875--1916
 
 - c.600 price observations for cereals and bread
 - c.400 qualitative statements on food prices
-- 19 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem
+- 19 food riots between 1875 and 1916 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem
 
 ![Distribution of my sample of food riots](../assets/map_food-riots-1874-1916.png)
 
 <!-- there is this great map of Bilād al-Shām showing the routes of transportation/ communication: von Südenhorst, Julius Zwiedinek and Heinrich Kiepert. "Karte der See- und Land-Communication in Syrien Nach H. Kiepert." *Syrien und Seine Bedeutung Für den Welthandel.* N.Pl.: A.Hölder, 1873 -->
+
+## 2.4 Sample: 1855--1916 
+
+<!-- prices after 31 Dec 1916 are cut off -->
+<!-- - wheat: 399
+- barley: 121
+- bread: 62 -->
+- c.600 price observations for cereals and bread
+- c.400 qualitative statements on food prices
+- 23 food riots between 1855 and 1916 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem
+
+![Distribution of the sample of food riots](../assets/map_food-riots-1855-1916_levant.png)
+
+
 
 # 3. First results and argument
 ## 3.1 Empirical results
