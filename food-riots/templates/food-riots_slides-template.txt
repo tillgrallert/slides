@@ -192,7 +192,7 @@ Email: <grallert@orient-institut.org>
 
 <!-- Map of Hama -->
 
-![Map: Pentz, Peter. *The Medieval Citadel and Its Architecture.* Hama: fouilles et recherches de la fondation Carlsberg 1931-1938 IV/1. København: Nationalmuseet, 1998](../assets/map-Hama-marked-up.jpg)
+![Map: Pentz, Peter. *The Medieval Citadel and Its Architecture.* Hama: fouilles et recherches de la fondation Carlsberg 1931-1938 IV/1. København: Nationalmuseet, 1998](../assets/map_Hama-marked-up.jpg)
 
 ## 4.1 Food riot in Hama, 11 August 1910
 
@@ -201,25 +201,25 @@ Email: <grallert@orient-institut.org>
 ## 4.1 Food riot in Hama, 11 August 1910
 
 <!-- Photo of the Serail  -->
-![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-3.jpg)
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/photo_Hama-3.jpg)
 
 
-<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-1.jpg) -->
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/photo_Hama-1.jpg) -->
 
 <!-- ## 1.1 Food riot in Hama, 11 August 1910 -->
 
 <!-- Photo of the Serail  -->
-![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/photo-Hama-2.jpg)
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/photo_Hama-2.jpg)
 
 ## 4.1 Food riot in Hama, 11 August 1910
 
 <!-- Photo of the *baladiyya*  -->
-![*[Vues Aériennes de Syrie et du Liban] / 39e Régiment D'aviation [Armée du Levant].* Photography by G. David, Loquinaire and L. Piat. N.Pl.: Établissement cinématographique et photographique des armées (France). 1927, G130863 [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item)](../assets/photo-Hama-G130863.png)
+![*[Vues Aériennes de Syrie et du Liban] / 39e Régiment D'aviation [Armée du Levant].* Photography by G. David, Loquinaire and L. Piat. N.Pl.: Établissement cinématographique et photographique des armées (France). 1927, G130863 [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item)](../assets/photo_Hama-G130863.png)
 
 ## 4.1 Food riot in Hama, 11 August 1910
 
 <!-- Photo of the *baladiyya*  -->
-![*[Vues Aériennes de Syrie et du Liban] / 39e Régiment D'aviation [Armée du Levant].* Photography by G. David, Loquinaire and L. Piat. N.Pl.: Établissement cinématographique et photographique des armées (France). 1927, G130863 [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item)](../assets/photo-Hama-G130863.png)
+![*[Vues Aériennes de Syrie et du Liban] / 39e Régiment D'aviation [Armée du Levant].* Photography by G. David, Loquinaire and L. Piat. N.Pl.: Établissement cinématographique et photographique des armées (France). 1927, G130863 [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f14.item)](../assets/photo_Hama-G130863.png)
 
 ## 4.1 Prologue (weeks)
 
