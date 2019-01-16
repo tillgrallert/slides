@@ -54,11 +54,9 @@ Email: <grallert@orient-institut.org>
 # 2. Question and methodology
 ## 2.1 Research question(s)
 
-1. What is the **function** of food riots<!-- ---immediate remedy for hunger, lower and stable bread prices in the long term, political change? -->
+1. Why this specific **form** and **claim** of contentious gatherings?
+1. What is the **function** of food riots?<!-- ---immediate remedy for hunger, lower and stable bread prices in the long term, political change? -->
 2. What are the **implications** of food riots for the study of Middle Eastern societies?
-    - Centrality of religion
-    - Politics of notables
-    - Gender relations
 
 <!-- ## 1.3 Research questions
 
@@ -119,13 +117,18 @@ Email: <grallert@orient-institut.org>
 <!-- - wheat: 399
 - barley: 121
 - bread: 62 -->
+
+<div class="c_left c_width-30">
+
 - c.600 price observations for cereals and bread
 - c.400 qualitative statements on food prices
 - 23 food riots between 1855 and 1916 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem
 
+</div><div class="c_right c_width-60">
+
 ![Distribution of the sample of food riots](../assets/map_food-riots-1855-1916_levant.png)
 
-
+</div>
 
 # 3. First results and argument
 ## 3.1 Empirical results
@@ -157,7 +160,7 @@ Email: <grallert@orient-institut.org>
 
 1. There is no direct causal relation between food prices and food riots
 2. Food riots are a **tactic** choice on behalf of the protestors and an **inherently political** act 
-3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and make use of a symbolic repertoire
 4. The main target of this conscious political **tactic** are the ruling authorities; protestors call for **equitable distribution** and **fair access** to **available bread**.
 5. Food riots are thus part of the negotiations over political legitimacy **within** the existing political order as based in **just rule**, **safety of life**, etc. The demands are conservative and principally recognised as legitimate
 
@@ -199,57 +202,79 @@ Email: <grallert@orient-institut.org>
 
 ![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1837.jpg) -->
 
-# Implications of this repertoire?
-## Centrality of religion?
+# 5. Implications of this repertoire?
+## 5.1 Centrality of religion?
 
-- All contention invariably starts at the Friday mosques (Burke)
+All contentions invariably start at the main mosque (Burke)
 
 <div class="c_width-50">
     
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_damascus.geojson?height=600&width=400"></script>
 
-</div><div class="c_width-50">
+</div>
+<div class="c_width-50">
     
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_homs.geojson?height=600&width=400"></script>
 
 </div>
 
-## The politics of notables?
+## 5.2 The politics of notables?
 
-- Generally strong argument for a persistence of the three-tiered Ottoman *ancien régime* well into the 20th century
+Generally strong argument for a persistence of the three-tiered Ottoman *ancien régime* well into the 20th century
 
 <div class="c_width-30">
 (transregional) imperial bureaucracy
+
+- *arkān al-wilāya*
+- *arkān al-ḥarb*
+- *maʾmūrūn*
+- *umarāʾ ʿaskariyya*
+
 </div>
 <div class="c_width-30">
 (local) notables
+
+- *wujūh*
+- *aʿyān*
+- *dhawāt*
+- *kirām al-qawm*
+- *ʿulamāʾ*  
+
 </div>
 <div class="c_width-30">
 the populace
+
+- *ahl*, *ahālī*, *nās*
+- *qawm*
+- *ʿāmma*
+- *shaʿb*
+- *khalq*
+
 </div>
 
-- But where are the notables?
+## 5.3 Gender relations? 
 
-## Gender relations? 
+The "Islamic City" paradigm is frequently invoked ouside the circles of specialists
 
-- the "Islamic City" paradigm is frequently invoked ouside the circles of specialists
-
-<!-- add images -->
-
-<!-- EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. *Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.* Beyrouth: Maison Bonfils (N.D.) -->
-
-<!-- EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. *Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]* Beyrouth: Maison Bonfils (N.D.) -->
-
-
-## What about the public/private divide and gender segregation? 
+<!-- ## Gender relations?  -->
 
 <!-- c.1910: women at the departure of the maḥmal from the Mushīriyya -->
 ![Musée Photographique de la Syrie - *al-Matḥaf al-Fūtūghrāfī al-Sūrī* Unknown photographer. *[The Maḥmal leaving the Mushīriyya].* Dimashq, 1910. [https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)](https://www.facebook.com/photo.php?fbid=424156920979581)](../assets/photo_Damascus-mushiriyya-mahmal.jpg)
 
-## What about the public/private divide and gender segregation? 
+## 5.3 Gender relations?  
 
 <!-- c.1887: women at the departure of the maḥmal through the Mīdān  -->
 ![GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. *Damas, depart à la caravane par la Mecque.* Damas, 1887. [http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)](http://hdl.handle.net/10020/2008r3)](../assets/photo_Damascus-midan-mahmal.png)
+
+## 5.3 Gender relations?
+
+<!-- add images -->
+
+![EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. *Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.* Beyrouth: Maison Bonfils (N.D.)](../assets/EAP644-1-36-TFDC_403_092_1209.jpg)
+
+## 5.3 Gender relations?
+
+![EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. *Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]* Beyrouth: Maison Bonfils (N.D.)](../assets/EAP644-1-36-TFDC_403_212_0892.jpg)
 
 ## novelty of demonstrations?
 
