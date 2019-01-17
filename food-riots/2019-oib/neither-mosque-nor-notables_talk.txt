@@ -57,8 +57,9 @@ The incident is puzzling: Poor people, suffering from high prices of flour and b
 # 2. Question and methodology (3 min)
 ## 2.1 Research questions (2 min)
 
-1. what is the **function** of food riots for the protestors? 
+1. Why this specific **form** and **claim** of contentious gatherings?
     + Why did the protestors opt for this particular form of contentious action even though it proved ultimately unsuccessful and why did they not violently take the food available in the market?
+1. what is the **function** of food riots for the protestors? 
     + immediate remedy for hunger, lower and stable bread prices in the long term, political change
     + if they purpose is not the immediate satisfaction of a primal need?
     + why did they not immediately loot / forcefully appropriate foodstuffs?
@@ -110,11 +111,11 @@ The incident is puzzling: Poor people, suffering from high prices of flour and b
         * yesterday, the baladiyya was crowded (*izduḥimat*) with poor women (*bi-l-faqīrāt min al-nisāʾ*).
         * due to the generosity of Enver Pasha / Anwar Pasha money was distributed among them
 
-## ## 2.4 Sample
+## 2.4 Sample
 
 - c.600 price observations for cereals and bread
 - c.400 qualitative statements on food prices
-- 19 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem <!-- ([Map](../assets/Map-FoodRiots.html), [table](../assets/Table-FoodRiots.html)) -->
+- 23 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs, Jaffa, and Jerusalem <!-- ([Map](../assets/Map-FoodRiots.html), [table](../assets/Table-FoodRiots.html)) -->
 
 ![Distribution of my sample of food riots](../assets/map_food-riots-1874-1916.png)
 
@@ -140,7 +141,7 @@ The incident is puzzling: Poor people, suffering from high prices of flour and b
     + food riots do not aim at immediately lowering food prices
     + as they have no impact on food prices they function as a "reminder" to the ruling classes concerning their obligations to the ruled
     + e.g. "food riots" occur in Beirut in October 1914 before any acts of war could have a real impact on people's lives  
-3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
+3. Food riots are a "contentious performance" that makes use of a symbolic repertoire and is part of a relatively stable "repertoire of contention" (C. Tilly) 
     + Following Charles Tilly's work, I define *food riots* as contentious collective action: a group of people assemble in a public place and raise the demand of lower food prices vis-à-vis another group of people. All case studies in this research project <!-- must --> conform to this basic definition of a specific *form* of action as well as a specific contentious *claim*. Based on empirical case studies I argue that such food riots form a *repertoire of contention* or "a limited set of routines that are learned, shared, and acted out through a relatively deliberate process of choice".
     + From this definition as well as out observations follows that food *riots* were neither particularly nor even necessarily riotous or violent.
 4. The target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
@@ -232,6 +233,7 @@ A common term for reporting food riots is the generic "incident" (*ḥāditha*).
 ## The politics of notables?
 
 - Generally strong argument for a persistence of the three-tiered Ottoman *ancien régime* well into the 20th century
+- Dana Sajdi: aʿyānology
 - But where are the notables?
     + They manned the *baladiyya*!
     + Could have used food riots to improve their own negotiating power vis-a-vis the authorities
@@ -251,10 +253,6 @@ A common term for reporting food riots is the generic "incident" (*ḥāditha*).
     + public/private is part of the colonial / modernising project
     + the exclusion from *public affairs* was relevant for men and women of the third tier of the Ottoman *ancien régime*
     + poor majority of women could not afford the luxury of privacy
-
-## novelty of demonstrations?
-
-- Gelvin, Thompson et al.
 
 
 # 5. Conclusion
