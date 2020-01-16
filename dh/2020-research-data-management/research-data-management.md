@@ -6,15 +6,26 @@ ORCID: orcid.org/0000-0002-5739-8094
 duration: 30
 ---
 
-## Overview
+## Research data management
+### Till Grallert, Orient-Institut Beirut
+### 16 January 2020, DH brown bag meetings
 
-- today's topic: research data management
-    - what is it?
-    - why should we care?
-    - when should we think about it?
-    - how to do it?
+Slides: [tillgrallert.github.io/slides/dh/2020-research-data-management/](https://tillgrallert.github.io/slides/dh/2020-research-data-management/index.html)
 
-## Overview
+Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+
+Email: <grallert@orient-institut.org>
+
+## Outline
+
+... today's topic: research data management ...
+
+- what is it?
+- why should we care?
+- when should we think about it?
+- how to do it?
+
+## Outline
 
 1. (research) data
 2. (research) data management
@@ -255,9 +266,9 @@ duration: 30
 - Berry, David M and Anders Fagerjord. *Digital Humanities: Knowledge and Critique in a Digital Age.* Cambridge; Malden: Polity, 2017.
 - Tenen, Dennis. *Plain Text: The Poetics of Computation.* Stanford: Stanford University Press, 2017.
 
-# notes
+<!-- # notes
 ## images
 
 ![SangyaPundir: FAIR principles, CC BY-SA 4.0](../../assets/dh/FAIR_data_principles.jpg)
 ![Eliane Blumer, Pierre-Yves Burgi: [Data Life-Cycle](http://doi.org/10.16911/ethz-ib-1992-en), CC BY-SA 4.0](../../assets/dh/2015-09-08_data-life-cicle.jpg)
-![Helen Morgan, Nadine Davdson-Wall: [Research Data Life Cycle](http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png), CC BY-NC](../../assets/dh/Research_Life_Cycle.png)
+![Helen Morgan, Nadine Davdson-Wall: [Research Data Life Cycle](http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png), CC BY-NC](../../assets/dh/Research_Life_Cycle.png) -->

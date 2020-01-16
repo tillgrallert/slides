@@ -92,44 +92,56 @@
   	color:red;
   }
   </style>
-  <script type="text/javascript" src="../../js/slidy.js"></script>
-  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+  <script type="text/javascript" src="../../assets/slidy.js"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
   <meta name="duration" content="30" />
 </head>
 <body>
-<div class="slide titlepage">
+<!-- <div class="slide titlepage">
   <h1 class="title">Research data management</h1>
   <p class="author">
 Till Grallert
   </p>
   <p class="date">2020-01-15 22:35:25 +0200</p>
+</div> -->
+<div id="research-data-management" class="slide titlepage">
+<h1>Research data management</h1>
+<h3 id="till-grallert-orient-institut-beirut">Till Grallert, Orient-Institut Beirut</h3>
+<h3 id="january-2020-dh-brown-bag-meetings">16 January 2020, DH brown bag meetings</h3>
+<p>Slides: <a href="https://tillgrallert.github.io/slides/dh/2020-research-data-management/index.html">tillgrallert.github.io/slides/dh/2020-research-data-management/</a></p>
+<p>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
+<p>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></p>
 </div>
-<div id="overview" class="slide section level2">
-<h1>Overview</h1>
-<ul>
-<li>today’s topic: research data management
+<div id="outline" class="slide section level2">
+<h1>Outline</h1>
+<p>… today’s topic: research data management …</p>
 <ul>
 <li>what is it?</li>
 <li>why should we care?</li>
 <li>when should we think about it?</li>
 <li>how to do it?</li>
-</ul></li>
 </ul>
 </div>
-<div id="overview-1" class="slide section level2">
-<h1>Overview</h1>
+<div id="outline-1" class="slide section level2">
+<h1>Outline</h1>
 <ol style="list-style-type: decimal">
 <li>(research) data</li>
 <li>(research) data management</li>
 </ol>
 </div>
-<div id="research-data-management" class="title-slide slide section level1">
+<div id="research-data-management-1" class="title-slide slide section level1">
 <h1>Research data management</h1>
 
 </div>
 <div id="what-is-it" class="slide section level2">
 <h1>what is it?</h1>
+<p>… let’s postpone this for a moment …</p>
 </div>
 <div id="why-should-we-care" class="slide section level2">
 <h1>why should we care?</h1>
@@ -151,6 +163,7 @@ Till Grallert
 </div>
 <div id="when-should-think-about-it" class="slide section level2">
 <h1>when should think about it?</h1>
+<p>… always! …</p>
 <ul>
 <li>start right now!</li>
 <li>throughout a research project</li>
@@ -174,6 +187,10 @@ Till Grallert
 <p>Unter digitalen geistes- und kulturwissenschaftlichen Forschungsdaten werden […] all jene Quellen/Materialien und Ergebnisse verstanden, die im Kontext einer geistes-und kulturwissenschaftlichen Forschungsfrage gesammelt, erzeugt, beschrieben und/oder ausgewertet werden und in maschinenlesbarer Form zum Zwecke der Archivierung, Zitierbarkeit und zur weiteren Verarbeitung aufbewahrt werden können.</p>
 </blockquote>
 <p><cite>Puhl, Andorfer, et al., <em>Forschungsdaten</em>, 2015, p.14<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></cite></p>
+<blockquote>
+<p>In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.</p>
+</blockquote>
+<p><cite>My translation</cite></p>
 </div>
 <div id="data-are-always-mediated" class="slide section level2">
 <h1>data are always mediated</h1>
@@ -188,33 +205,41 @@ Till Grallert
 <li>all tools are subject to external decisions</li>
 </ul>
 </div>
+<div id="data-are-always-mediated-1" class="slide section level2">
+<h1>data are always mediated</h1>
+<p>… we (are made to) think of <!-- and interact --> with data in metaphors …</p>
+<blockquote>
+<p>Readers know how paragraphs, pages, files, and folders relate to paper and would like for their digital images to behave in a similar way. The principles of metaphor-driven design contain an implicit model of human-computer interaction, which suggests that humans prefer to manipulate digital information stored on computational media by the means of familiar mediating structures (paragraphs, pages, files, and folders) associated figuratively with the affordances of print media.</p>
+</blockquote>
+<blockquote>
+<p>We do not literally drag or drop bits, but we use metaphors of paper and trash cans to help us manipulate bits and bytes as though they were common household objects. The metaphor opens figurative possibilities. It also obscures actual physical contingencies of interacting with bits and bytes, logic gates and electromagnetic traces.</p>
+</blockquote>
+<p><cite>Tenen, <em>Plain Text: The Poetics of Computation</em>, 2017, p.36<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></cite></p>
+</div>
 <div id="data-are-created-different" class="slide section level2">
 <h1>data are created different</h1>
 <ul>
 <li>raw data</li>
 <li>processed data:
 <ul>
-<li>we filter</li>
-<li>normalise / correct</li>
-<li>annotate</li>
-<li>aggregate</li>
+<li>we filter,</li>
+<li>normalise, correct or <em>clean</em>,</li>
+<li>annotate, and</li>
+<li>aggregate raw data to make it <em>useful</em> for answering our research question</li>
 </ul></li>
 <li>results</li>
 </ul>
+<!-- ## data are created different {>>cut<<}
+
+-  Metadaten, bibliographische Daten, Kataloge
+-  Digitale und/oder digitalisierte Daten und/oder digitale Repräsentationen von analogen Daten
+-  Digitale Objekte
+-  Volltexte und Transkriptionen
+-  Angereicherte Volltexte
+-  Bilder, Filme, Musik, Noten
+-  Normdaten, kontrollierte Vokabularien, Ontologien -->
 </div>
 <div id="data-are-created-different-1" class="slide section level2">
-<h1>data are created different <!-- cut --></h1>
-<ul>
-<li>Metadaten, bibliographische Daten, Kataloge</li>
-<li>Digitale und/oder digitalisierte Daten und/oder digitale Repräsentationen von analogen Daten</li>
-<li>Digitale Objekte</li>
-<li>Volltexte und Transkriptionen</li>
-<li>Angereicherte Volltexte</li>
-<li>Bilder, Filme, Musik, Noten</li>
-<li>Normdaten, kontrollierte Vokabularien, Ontologien</li>
-</ul>
-</div>
-<div id="data-are-created-different-2" class="slide section level2">
 <h1>data are created different <!-- and for a purpose --></h1>
 <ul>
 <li>some are important or valuable to you (and other stakeholders)
@@ -238,7 +263,7 @@ Till Grallert
 </ul>
 </div>
 <div id="data-are-alive" class="slide section level2">
-<h1>data are alive</h1>
+<h1>data are alive?!</h1>
 <ul>
 <li>remember? data are always mediated</li>
 <li>we mostly think of data in metaphors, such as a “file” <!-- that we can store -->
@@ -254,23 +279,23 @@ Till Grallert
 </ul>
 </div>
 <div id="data-are-alive-1" class="slide section level2">
-<h1>data are alive</h1>
-<ul>
-<li><a href="https://de.dariah.eu/en/weiterfuhrende-informationen">research data life cycle</a>:
-<ul>
-<li>Planning and creation</li>
-<li>Selection</li>
-<li>Ingest/acquisition</li>
-<li>Storage/Infrastructure</li>
-<li>Conservation measures</li>
-<li>Access/use</li>
-</ul></li>
-</ul>
+<h1>data are alive?!</h1>
+<div class="figure">
+<img src="../../assets/dh/2015-09-08_data-life-cicle.jpg" alt="" />
+<p class="caption">Eliane Blumer, Pierre-Yves Burgi: <a href="http://doi.org/10.16911/ethz-ib-1992-en">Data Life-Cycle</a>, CC BY-SA 4.0</p>
+</div>
+</div>
+<div id="data-are-alive-2" class="slide section level2">
+<h1>data are alive?!</h1>
+<div class="figure">
+<img src="../../assets/dh/Research_Life_Cycle.png" alt="" />
+<p class="caption">Helen Morgan, Nadine Davdson-Wall: <a href="http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png">Research Data Life Cycle</a>, CC BY-NC</p>
+</div>
 </div>
 <div id="data-will-have-to-die" class="slide section level2">
 <h1>data will (have to) die</h1>
 <ul>
-<li>at end of a research project, data is either
+<li>at the end of a research project, data is either
 <ul>
 <li>archived</li>
 <li>published or</li>
@@ -279,7 +304,7 @@ Till Grallert
 </ul>
 </div>
 
-<div id="research-data-management-1" class="title-slide slide section level1">
+<div id="research-data-management-2" class="title-slide slide section level1">
 <h1>research data management</h1>
 
 </div>
@@ -289,6 +314,10 @@ Till Grallert
 <li>data management is done at all stages of the data life cycle</li>
 <li>each step in the process has its own best practices and standards</li>
 </ul>
+<div class="figure">
+<img src="../../assets/dh/2015-09-08_data-life-cicle.jpg" alt="" />
+<p class="caption">Eliane Blumer, Pierre-Yves Burgi: <a href="http://doi.org/10.16911/ethz-ib-1992-en">Data Life-Cycle</a>, CC BY-SA 4.0</p>
+</div>
 <!-- - all activities concerning the
     + saving
     + processing
@@ -397,6 +426,28 @@ Till Grallert
 </ul></li>
 </ul>
 </div>
+
+<div id="open-end" class="title-slide slide section level1">
+<h1>Open end</h1>
+
+</div>
+<div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Links:
+<ul>
+<li>Slides: <a href="https://tillgrallert.github.io/slides/dh/2020-research-data-management/index.html">tillgrallert.github.io/slides/dh/2020-research-data-management/</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></li>
+</ul></li>
+<li>Licence: The slides are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul>
+</div>
 <div id="links-bibliography" class="slide section level2">
 <h1>links, bibliography</h1>
 <ul>
@@ -408,19 +459,15 @@ Till Grallert
 <li><a href="http://www.forschungsinfrastrukturen.de/doku.php">Forschungsinfrastrukturen für die Geisteswissenschaften</a> im Rahmen der NFDI (National Forschungsdaten Initiative)</li>
 <li><a href="https://www.forschungsdaten.info/">forschungsdaten.info</a>: operated by various German universities, Leibniz and Helmholtz Centres</li>
 <li><a href="https://www.forschungsdaten.org/">forschungsdaten.org</a>: independent Wiki</li>
+<li>Berry, David M and Anders Fagerjord. <em>Digital Humanities: Knowledge and Critique in a Digital Age.</em> Cambridge; Malden: Polity, 2017.</li>
+<li>Tenen, Dennis. <em>Plain Text: The Poetics of Computation.</em> Stanford: Stanford University Press, 2017.</li>
 </ul>
-</div>
+<!-- # notes
+## images
 
-<div id="notes" class="title-slide slide section level1">
-<h1>notes</h1>
-
-</div>
-<div id="images" class="slide section level2">
-<h1>images</h1>
-<div class="figure">
-<img src="../../assets/dh/FAIR_data_principles.jpg" alt="" />
-<p class="caption">FAIR principles, SangyaPundir, CC BY-SA 4.0</p>
-</div>
+![SangyaPundir: FAIR principles, CC BY-SA 4.0](../../assets/dh/FAIR_data_principles.jpg)
+![Eliane Blumer, Pierre-Yves Burgi: [Data Life-Cycle](http://doi.org/10.16911/ethz-ib-1992-en), CC BY-SA 4.0](../../assets/dh/2015-09-08_data-life-cicle.jpg)
+![Helen Morgan, Nadine Davdson-Wall: [Research Data Life Cycle](http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png), CC BY-NC](../../assets/dh/Research_Life_Cycle.png) -->
 </div>
 
 <div class="footnotes slide">
@@ -428,6 +475,7 @@ Till Grallert
 <ol>
 <li id="fn1"><p>Berry, David M and Anders Fagerjord. <em>Digital Humanities: Knowledge and Critique in a Digital Age.</em> Cambridge; Malden: Polity, 2017.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>Puhl, Johanna, Peter Andorfer, et al. “Diskussion und Definition eines Research Data LifeCycle Für die Digitalen Geisteswissenschaften.” <em>DARIAH-DE Working Papers 11.</em> Göttingen: DARIAH-DE, 2015. <a href="http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2015-4-4">urn:nbn:de:gbv:7-dariah-2015-4-4</a>.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Tenen, Dennis. <em>Plain Text: The Poetics of Computation.</em> Stanford: Stanford University Press, 2017.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </body>
