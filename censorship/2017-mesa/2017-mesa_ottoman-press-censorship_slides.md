@@ -10,7 +10,7 @@ duration: 15
 ### Till Grallert, Orient-Institut Beirut
 ### MESA 2017
 
-Slides: [tillgrallert.github.io/slides/2017-mesa](https://tillgrallert.github.io/slides/2017-mesa)
+Slides: [tillgrallert.github.io/slides/censorship/2017-mesa](https://tillgrallert.github.io/slides/censorship/2017-mesa)
 
 Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
 
@@ -21,17 +21,17 @@ Email: <grallert@orient-institut.org>
 ## Two opposing views on a cliché
 
 <div class="c_left c_width-50">
-![Press censorship: permissive actions](../assets/censorship/rplot_levant-permissive.png)
+![Press censorship: permissive actions](../../assets/censorship/rplot_levant-permissive.png)
 </div>
 
 <div class="c_right c_width-50">
-![Press censorship: repressive actions](../assets/censorship/rplot_levant-restrictive.png)
+![Press censorship: repressive actions](../../assets/censorship/rplot_levant-restrictive.png)
 </div>
 
 ## Abstract
 
 - Case study: periodical press of Damascus and Beirut, 1875–1914
-- Sources: legal texts and periodicals 
+- Sources: legal texts and periodicals
 <!-- - Background: prevalence of strong views, but lack of empirical studies on the press in *Bilād al-Shām* -->
 - Question: What were the legal norms,  institutional frameworks, and practices of censorship?
 
@@ -41,7 +41,7 @@ Press censorship evolved in three steps:
 
 1. Establish and reiterate legal norms; 1850s, 1860s
 2. Gather information and build institutions capable of enforcing these norms; 1880s, 1890s
-3. Start enforcing them once legal norms have indeed become social normality; 1890s and especially 1909 onwards 
+3. Start enforcing them once legal norms have indeed become social normality; 1890s and especially 1909 onwards
 
 ## Argument 2
 
@@ -81,7 +81,7 @@ Control of the press depended to a large extent on:
 
 - restrictions: permits <!-- required --> for <!-- printing --> presses and periodicals, permissible content
 - surveillance: post publication
-- enforcement: mostly private litigation in the courts 
+- enforcement: mostly private litigation in the courts
 </div>
 
 ## First constitutional period
@@ -100,7 +100,7 @@ Control of the press depended to a large extent on:
     <!-- + abrogating the 1857 and 1888 laws
     + permits required for every part of the trade
         * permits continuously supervised by police and Directorate of Public Instruction
-    + pre-publication permits required for all publications 
+    + pre-publication permits required for all publications
     + every part of the trade is fully liable to prosecution in case of transgressions
         * Police and judiciary tasked with enforcement
     + surveillance and random inspection of presses
@@ -181,7 +181,7 @@ Control of the press depended to a large extent on:
 # 2. Practices of censorship
 ## Publication statistics: permissions
 
-![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication)](../assets/censorship/rplot_levant-permissive.png)
+![Press censorship: permissive actions (1 = first issue, P = permit, PI = permit for import, PR = permit to resume publication, RP = republication)](../../assets/censorship/rplot_levant-permissive.png)
 
 
 ## Post 1909: Quick succession of titles
@@ -210,15 +210,15 @@ Control of the press depended to a large extent on:
 
 ## Publication statistics: restrictions
 
-![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning)](../assets/censorship/rplot_levant-restrictive.png)
+![Press censorship: repressive actions (BI = ban on import, CP = ceased publication, S = suspension, W = warning)](../../assets/censorship/rplot_levant-restrictive.png)
 
 ## Publication statistics: suspensions
 
-![Press censorship: suspensions](../assets/censorship/rplot_levant-suspensions.png)
+![Press censorship: suspensions](../../assets/censorship/rplot_levant-suspensions.png)
 
 ## Publication statistics: implemented suspensions
 
-![Press censorship: implemented suspensions](../assets/censorship/rplot_levant-suspensions-implemented.png)
+![Press censorship: implemented suspensions](../../assets/censorship/rplot_levant-suspensions-implemented.png)
 
 ## What were the reasons for interventions?
 
@@ -231,12 +231,12 @@ Control of the press depended to a large extent on:
 </div>
 
 <div class="c_right c_width-30">
-![Ban of *al-Miṣbāḥ* over violation of "the principles of censorship", Thamarāt al-Funūn 15 Aug. 1904 (#1493):5](../assets/censorship/ban_misbah.png)
+![Ban of *al-Miṣbāḥ* over violation of "the principles of censorship", Thamarāt al-Funūn 15 Aug. 1904 (#1493):5](../../assets/censorship/ban_misbah.png)
 </div>
 
 ## Permissible content
 
-- "surprising" level and frequency of *out-spoken criticism* 
+- "surprising" level and frequency of *out-spoken criticism*
 - critical articles were not limited to the private press
 - outright praise beyond the generic eulogies on important occasions was **less common** than criticism
 - "embarrassing" news remained unpublished
@@ -251,9 +251,9 @@ Control of the press depended to a large extent on:
 - continuous importance of limiting factors
 - continuous importance of the social consensus within the network of journalists-cum-officials-cum-entrepreneurs
 
-## Thank you 
+## Thank you
 
-Slides: [tillgrallert.github.io/slides/2017-mesa](https://tillgrallert.github.io/slides/2017-mesa)
+Slides: [tillgrallert.github.io/slides/censorship/2017-mesa](https://tillgrallert.github.io/slides/censorship/2017-mesa)
 
 Data: [![DOI](https://zenodo.org/badge/106953939.svg)](https://zenodo.org/badge/latestdoi/106953939)<!-- [github.com/tillgrallert/censorship_data](https://www.github.com/tillgrallert/censorship_data) --> ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
 

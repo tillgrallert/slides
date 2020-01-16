@@ -23,31 +23,31 @@ Email: <grallert@orient-institut.org>
 
 <!-- Map of Damascus  -->
 
-![Map of late Ottoman Damascus](../assets/map_Damascus.jpg)
+![Map of late Ottoman Damascus](../../assets/food-riots/map_Damascus.jpg)
 
 # 1.1 Food riot in Damascus, 12-17 March 1878
 
 <!-- Photo of Marja Square -->
 
-![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/photo-Damascus.jpg)
+![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../../assets/food-riots/photo-Damascus.jpg)
 
 # 1.1 Food riot in Hama, 11 August 1910
 
 <!-- Map of Hama -->
 
-![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/map_Hama.jpg)
+![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../../assets/food-riots/map_Hama.jpg)
 
 # 1.1 Food riot in Hama, 11 August 1910
 
 <!-- Photo of Serail and Baladiyya -->
-![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-3.jpg)
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../../assets/food-riots/photo-Hama-3.jpg)
 
 
-<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-1.jpg) -->
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../../assets/food-riots/photo-Hama-1.jpg) -->
 
 --------
 
-![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/photo-Hama-2.jpg)
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../../assets/food-riots/photo-Hama-2.jpg)
 
 # 1.2 First observations
 
@@ -70,7 +70,7 @@ Email: <grallert@orient-institut.org>
 # 2. Hypotheses
 
 1. There is no direct causal relation between food prices and food riots
-2. Food riots are a *tactic* choice on behalf of the protestors and an inherently political act 
+2. Food riots are a *tactic* choice on behalf of the protestors and an inherently political act
 3. Food riots are part of a relatively stable "repertoire of contention" (C. Tilly) and a symbolic repertoire
 4. The target of this conscious political *tactic* are the ruling authorities; protestors call for *equitable distribution* and *fair access* to *available bread*.
 5. Food riots are thus part of the negotiations over political legitimacy *within* the existing political order as based in *just rule*, *safety of life*, etc. The demands are conservative and principally recognised as legitimate
@@ -92,9 +92,9 @@ Email: <grallert@orient-institut.org>
 
 # 3.3 First results
 
-Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../assets/map_FoodRiots.html), [table](../assets/Table-FoodRiots.html))
+Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama, Homs and Jaffa ([Map](../../assets/food-riots/map_FoodRiots.html), [table](../../assets/food-riots/Table-FoodRiots.html))
 
-1. There is no direct causal relation between food riots and food prices ([graph](../assets/timeplotGrainPricesDamascus.html))
+1. There is no direct causal relation between food riots and food prices ([graph](../../assets/food-riots/timeplotGrainPricesDamascus.html))
     - [live-query of wheat prices](http://localhost:8080/exist/rest/db/BachSources/xquery/prices-csv.xql?commodity=wheat&unit=kile); [graph](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB_wheat.html); [graph before 1915](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB_wheat-date_before-1915.html)
     - [live-query of flour prices](http://localhost:8080/exist/rest/db/BachSources/xquery/prices-csv.xql?commodity=flour&unit=wazana); [graph](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB_flour.html)
     - [live-query of bread prices](http://localhost:8080/exist/rest/db/BachSources/xquery/prices-csv.xql?commodity=bread&unit=ratl); [graph](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB_bread.html); [graph before 1915](file:///BachUni/projekte/XML/SIMILE%20Timeplot/timeplotExistDB_bread-date_before-1915.html)
@@ -125,19 +125,19 @@ Sample of 10 food riots between 1875 and 1920 in Aleppo, Beirut, Damascus, Hama,
 
 # 4. Empiricial problems
 
-![*al-Ittiḥād al-ʿUthmānī* #1890, 13 Nov 1914: reporting a "food riot" in Beirut?](../assets/ittihad-1890.jpg)
+![*al-Ittiḥād al-ʿUthmānī* #1890, 13 Nov 1914: reporting a "food riot" in Beirut?](../../assets/food-riots/ittihad-1890.jpg)
 
 # 4. Empiricial problems
 
-![*al-Ittiḥād al-ʿUthmānī* #1891, 14 Nov 1914: reporting a "food riot" in Beirut?](../assets/ittihad-1891.jpg)
+![*al-Ittiḥād al-ʿUthmānī* #1891, 14 Nov 1914: reporting a "food riot" in Beirut?](../../assets/food-riots/ittihad-1891.jpg)
 
 # 4. Empiricial problems
 
-![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1813.jpg)
+![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1813.jpg)
 
 # 4. Empiricial problems
 
-![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1837.jpg)
+![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1837.jpg)
 
 
 

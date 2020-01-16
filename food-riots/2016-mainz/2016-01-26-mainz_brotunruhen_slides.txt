@@ -20,31 +20,31 @@ Email: <grallert@orient-institut.org>
 
 <!-- Karte von Damascus -->
 
-![Karte von Damaskus in spätosmanischer Zeit](../assets/map_Damascus.jpg)
+![Karte von Damaskus in spätosmanischer Zeit](../../assets/food-riots/map_Damascus.jpg)
 
 # 12-17 März 1878, Damaskus
 
 <!-- Photo des Marja Platzes -->
 
-![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../assets/photo-Damascus.jpg)
+![LoC LOT 3249-8 Bain, Robert Edward Mather. Revolt in Prison, Damascus. Damascus, 1894.](../../assets/food-riots/photo-Damascus.jpg)
 
 # 11 August 1910, Hama
 
 <!-- Karte von Hama -->
 
-![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../assets/map_Hama.jpg)
+![Reilly, James A. A Small Town in Syria: Ottoman Hama in the Eighteenth and Nineteenth Centuries. Oxford: Peter Lang, 2002, p.10](../../assets/food-riots/map_Hama.jpg)
 
 # 11 August 1910, Hama
 
 <!-- Photo von Serail und Baladiyya -->
-![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-3.jpg)
+![Wattar Frères No. 58. Unknown photographer. Hama (Syrie) - Grand Pont du Fleuve El-Assi. Alep: Wattar Frères (N.D.).](../../assets/food-riots/photo-Hama-3.jpg)
 
 
-<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../assets/photo-Hama-1.jpg) -->
+<!-- ![Wattar Frères Unknown photographer. Hama (Syrie) - Vue Générale Avec le Sérail. Alep: Wattar Frères (N.D.).](../../assets/food-riots/photo-Hama-1.jpg) -->
 
 --------
 
-![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../assets/photo-Hama-2.jpg)
+![Wattar Frères No. 62. Unknown photographer. HAMA (Syrie) — Vue du Serail. Alep: Wattar Frères, 1922.](../../assets/food-riots/photo-Hama-2.jpg)
 
 # Erste Beobachtungen
 
@@ -84,9 +84,9 @@ Email: <grallert@orient-institut.org>
 
 # Erste Ergebnisse
 
-Sample: 10 Nahrungsmittelunruhen zwischen 1875 und 1920 in Aleppo, Beirut, Damaskus, Hama, Homs und Jaffa ([Karte](../assets/map_FoodRiots.html), [Tabelle](../assets/Table-FoodRiots.html))
+Sample: 10 Nahrungsmittelunruhen zwischen 1875 und 1920 in Aleppo, Beirut, Damaskus, Hama, Homs und Jaffa ([Karte](../../assets/food-riots/map_FoodRiots.html), [Tabelle](../../assets/food-riots/Table-FoodRiots.html))
 
-1. Es gibt keinen eindimensionalen kausalen Zusammenhang zwischen Nahrungsmittelunruhen und Nahrungsmittelpreisen ([Graphik](../assets/timeplotGrainPricesDamascus.html))
+1. Es gibt keinen eindimensionalen kausalen Zusammenhang zwischen Nahrungsmittelunruhen und Nahrungsmittelpreisen ([Graphik](../../assets/food-riots/timeplotGrainPricesDamascus.html))
 2. Nahrungsmittelunruhen sind ein relativ stabiles "repertoir of contention"
 
 # Repertoire of contention: Prolog
@@ -100,15 +100,15 @@ Sample: 10 Nahrungsmittelunruhen zwischen 1875 und 1920 in Aleppo, Beirut, Damas
 4. Die Menge bewegt sich zum Sitz der lokalen Verwaltung und bringt ihre Forderungen vor
 5. Die Menge wird auseinander getrieben oder durch eine Kombination von Versprechen und Drohungen dazu bewegt, sich aufzulösen. Anfangsversagen der Autoritäten führt zu einer weiteren Eskalation
 6. (optional) Die Menge sich nun gegen Händler und plündert Lagerhäuser, Geschäfte, Bahnhöfe
-7. Erfolgreiche Intervention des höchsten Repräsentanten der Zentralmacht.  
+7. Erfolgreiche Intervention des höchsten Repräsentanten der Zentralmacht.
 
 # Repertoire of contention: Nachwirkungen
 
-8. Der höchste Repräsentant der Zentralmacht 
-    + setz Höchstpreis fest; 
-    + beruft Untersuchungskommission ein; 
-    + rügt Großhändler; 
-    + konfisziert Getreide  
+8. Der höchste Repräsentant der Zentralmacht
+    + setz Höchstpreis fest;
+    + beruft Untersuchungskommission ein;
+    + rügt Großhändler;
+    + konfisziert Getreide
 9. Keine Berichte über fallende Nahrungsmittelpreise
 
 # Schlussbemerkungen

@@ -31,7 +31,7 @@ Email: <grallert@orient-institut.org>
 ## 1.1 Food riot in Beirut, 11 August 1908
 
 <!-- Map of Beirut -->
-![Map: Wagner & Debes. "Beyrout: Vieille Ville et Bazar." *Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers.* 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912.](../assets/map_Beirut-Baedeker-1912-annotated.jpg)
+![Map: Wagner & Debes. "Beyrout: Vieille Ville et Bazar." *Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers.* 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912.](../../assets/food-riots/map_Beirut-Baedeker-1912-annotated.jpg)
 
 ## 1.1 Food riot in Beirut, 11 August 1908
 
@@ -40,7 +40,7 @@ Email: <grallert@orient-institut.org>
 ## 1.1 Food riot in Beirut, 11 August 1908
 
 <!-- Aerial photograph -->
-![No. G130854. David, G. et al.. *Beyrouth.* N.Pl.: Établissement cinématographique et photographique des armées (France). Photographe, 1927. [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item (accessed January 23, 2017)](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item)](../assets/photo_Beirut-aerial-from-east.jpg)
+![No. G130854. David, G. et al.. *Beyrouth.* N.Pl.: Établissement cinématographique et photographique des armées (France). Photographe, 1927. [http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item (accessed January 23, 2017)](http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item)](../../assets/food-riots/photo_Beirut-aerial-from-east.jpg)
 
 ## 1.2 First observations
 
@@ -84,13 +84,13 @@ Email: <grallert@orient-institut.org>
 - First person accounts
 
 ## 2.3 Sources: newspapers
-<!-- 
+<!--
 - state of collections
 - mode of production -->
 
 <div class="c_left c_width-50">
 
-![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1813.jpg)
+![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1813.jpg)
 
 </div>
 
@@ -101,7 +101,7 @@ Email: <grallert@orient-institut.org>
 
 <div class="c_right c_width-50">
 
-![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1837.jpg)
+![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1837.jpg)
 
 </div>
 
@@ -111,7 +111,7 @@ Email: <grallert@orient-institut.org>
 
 <!-- there is this great map of Bilād al-Shām showing the routes of transportation/ communication: von Südenhorst, Julius Zwiedinek and Heinrich Kiepert. "Karte der See- und Land-Communication in Syrien Nach H. Kiepert." *Syrien und Seine Bedeutung Für den Welthandel.* N.Pl.: A.Hölder, 1873 -->
 
-## 2.4 Sample: 1855--1916 
+## 2.4 Sample: 1855--1916
 
 <!-- prices after 31 Dec 1916 are cut off -->
 <!-- - wheat: 399
@@ -126,7 +126,7 @@ Email: <grallert@orient-institut.org>
 
 </div><div class="c_right c_width-60">
 
-![Distribution of the sample of food riots](../assets/map_food-riots-1855-1916_levant.png)
+![Distribution of the sample of food riots](../../assets/food-riots/map_food-riots-1855-1916_levant.png)
 
 </div>
 
@@ -139,28 +139,28 @@ Email: <grallert@orient-institut.org>
 ## 3.1 Food prices and food riots
 
 <!-- wheat prices -->
-![](../assets/rplot_prices-wheat-1855-1916_box-plot.png)
+![](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot.png)
 
 ## 3.1 Food prices and food riots
 
 <!-- food prices: deviation from the mean -->
-![](../assets/plot_prices-food_deviation-from-mean.png)
+![](../../assets/food-riots/plot_prices-food_deviation-from-mean.png)
 
 ## 3.1 Food prices and food riots: qualitative statements
 
-![](../assets/rplot_prices-wheat-1855-1916_box-plot-trends.png)
+![](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot-trends.png)
 
 ## 3.1 Food prices and food riots: annual cycle
 
 <!-- wheat prices annual cycle -->
-![](../assets/rplot_prices-wheat-1855-1916_annual-cycle-box.png)
+![](../../assets/food-riots/rplot_prices-wheat-1855-1916_annual-cycle-box.png)
 
 
 ## 3.2 <!-- Hypotheses --> argument
 
 1. There is no direct causal relation between food prices and food riots
-2. Food riots are a **tactic** choice on behalf of the protestors and an **inherently political** act 
-3. Food riots are a "contentious performance" that makes use of a symbolic repertoire and is part of a relatively stable "repertoire of contention" (C. Tilly) 
+2. Food riots are a **tactic** choice on behalf of the protestors and an **inherently political** act
+3. Food riots are a "contentious performance" that makes use of a symbolic repertoire and is part of a relatively stable "repertoire of contention" (C. Tilly)
 4. The main target of this conscious political **tactic** are the ruling authorities; protestors call for **equitable distribution** and **fair access** to **available bread**.
 5. Food riots are thus part of the negotiations over political legitimacy **within** the existing political order as based in **just rule**, **safety of life**, etc. The demands are conservative and principally recognised as legitimate
 
@@ -188,19 +188,19 @@ Email: <grallert@orient-institut.org>
 
 <!-- ## 4. Empiricial problems
 
-![*al-Ittiḥād al-ʿUthmānī* #1890, 13 Nov 1914: reporting a "food riot" in Beirut?](../assets/ittihad-1890.jpg)
+![*al-Ittiḥād al-ʿUthmānī* #1890, 13 Nov 1914: reporting a "food riot" in Beirut?](../../assets/food-riots/ittihad-1890.jpg)
 
 ## 4. Empiricial problems
 
-![*al-Ittiḥād al-ʿUthmānī* #1891, 14 Nov 1914: reporting a "food riot" in Beirut?](../assets/ittihad-1891.jpg)
+![*al-Ittiḥād al-ʿUthmānī* #1891, 14 Nov 1914: reporting a "food riot" in Beirut?](../../assets/food-riots/ittihad-1891.jpg)
 
 ## 4. Empiricial problems
 
-![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1813.jpg)
+![*al-Muqtabas* #1813, 1 Feb 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1813.jpg)
 
 ## 4. Empiricial problems
 
-![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../assets/muqtabas-1837.jpg) -->
+![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1837.jpg) -->
 
 # 5. Implications of this repertoire?
 ## 5.1 Centrality of religion?
@@ -208,12 +208,12 @@ Email: <grallert@orient-institut.org>
 All contentions invariably start at the main mosque (Burke)
 
 <div class="c_width-50">
-    
+
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_damascus.geojson?height=600&width=400"></script>
 
 </div>
 <div class="c_width-50">
-    
+
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_homs.geojson?height=600&width=400"></script>
 
 </div>
@@ -238,7 +238,7 @@ Generally strong argument for a persistence of the three-tiered Ottoman *ancien 
 - *aʿyān*
 - *dhawāt*
 - *kirām al-qawm*
-- *ʿulamāʾ*  
+- *ʿulamāʾ*
 
 </div>
 <div class="c_width-30">
@@ -252,29 +252,29 @@ the populace
 
 </div>
 
-## 5.3 Gender relations? 
+## 5.3 Gender relations?
 
 The "Islamic City" paradigm is frequently invoked ouside the circles of specialists
 
 <!-- ## Gender relations?  -->
 
 <!-- c.1910: women at the departure of the maḥmal from the Mushīriyya -->
-![Musée Photographique de la Syrie - *al-Matḥaf al-Fūtūghrāfī al-Sūrī* Unknown photographer. *[The Maḥmal leaving the Mushīriyya].* Dimashq, 1910. [https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)](https://www.facebook.com/photo.php?fbid=424156920979581)](../assets/photo_Damascus-mushiriyya-mahmal.jpg)
+![Musée Photographique de la Syrie - *al-Matḥaf al-Fūtūghrāfī al-Sūrī* Unknown photographer. *[The Maḥmal leaving the Mushīriyya].* Dimashq, 1910. [https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)](https://www.facebook.com/photo.php?fbid=424156920979581)](../../assets/food-riots/photo_Damascus-mushiriyya-mahmal.jpg)
 
-## 5.3 Gender relations?  
+## 5.3 Gender relations?
 
 <!-- c.1887: women at the departure of the maḥmal through the Mīdān  -->
-![GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. *Damas, depart à la caravane par la Mecque.* Damas, 1887. [http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)](http://hdl.handle.net/10020/2008r3)](../assets/photo_Damascus-midan-mahmal.png)
+![GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. *Damas, depart à la caravane par la Mecque.* Damas, 1887. [http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)](http://hdl.handle.net/10020/2008r3)](../../assets/food-riots/photo_Damascus-midan-mahmal.png)
 
 ## 5.3 Gender relations?
 
 <!-- add images -->
 
-![EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. *Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.* Beyrouth: Maison Bonfils (N.D.)](../assets/EAP644-1-36-TFDC_403_092_1209.jpg)
+![EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. *Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.* Beyrouth: Maison Bonfils (N.D.)](../../assets/food-riots/EAP644-1-36-TFDC_403_092_1209.jpg)
 
 ## 5.3 Gender relations?
 
-![EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. *Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]* Beyrouth: Maison Bonfils (N.D.)](../assets/EAP644-1-36-TFDC_403_212_0892.jpg)
+![EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. *Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]* Beyrouth: Maison Bonfils (N.D.)](../../assets/food-riots/EAP644-1-36-TFDC_403_212_0892.jpg)
 
 # 6. Conclusion
 ## Conclusion
@@ -284,7 +284,7 @@ The "Islamic City" paradigm is frequently invoked ouside the circles of speciali
 - Food riots form a relatively stable "repertoire of contention".
 - Food riots are a **tactic** choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy **within** the existing political order as based in **just rule**, **safety of life**
 
-## Thank you 
+## Thank you
 
 Slides: [tillgrallert.github.io/slides/food-riots/2019-oib](https://tillgrallert.github.io/slides/food-riots/2019-oib/index.html) ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
 

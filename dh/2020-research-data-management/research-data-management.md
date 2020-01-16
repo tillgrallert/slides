@@ -131,6 +131,17 @@ let's postpone this for a moment ...
 + few are both
 + many are neither
 
+<!-- |              data              |                          measures / consequences                           |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| some are important or valuable | we want to protect them from loss                                          |
+|                                | *recreating* will be costly or nigh impossible                             |
+|                                | *loss* might create legal liabilities                                      |
+| some are sensitive             | we want to protect them from preying eyes                                  |
+|                                | *disclosure* will  endanger us or others and will create legal liabilities |
+|                                | *recording* / *preservation* might be illegal                              |
+| few are both                   |                                                                            |
+| many are neither               | we do not need to protect them                                             | -->
+
 ## data are alive?!
 
 ... all data is in constant flux ...

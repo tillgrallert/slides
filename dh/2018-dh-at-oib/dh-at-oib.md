@@ -5,7 +5,7 @@ date: 2018-10-18 09:26:35 +0300
 duration: 60
 ---
 
-![Components and infrastructure of a digital edition](../assets/dh/OpenArabicPE_components-layer-1-7.png)
+![Components and infrastructure of a digital edition](../../assets/dh/OpenArabicPE_components-layer-1-7.png)
 
 ## Overview
 
@@ -58,7 +58,7 @@ duration: 60
 
 ## dh as methodological approaches
 
-![The core of a digital edition](../assets/dh/OpenArabicPE_components-layer-1.png)
+![The core of a digital edition](../../assets/dh/OpenArabicPE_components-layer-1.png)
 
 ## dh as methodological approaches
 
@@ -104,7 +104,7 @@ duration: 60
 
 ## DH as a community
 
-![Making the edition available](../assets/dh/OpenArabicPE_components-layer-1-3.png)
+![Making the edition available](../../assets/dh/OpenArabicPE_components-layer-1-3.png)
 
 ## DH as a community
 
@@ -120,16 +120,16 @@ duration: 60
 
 ## DH as a community
 
-![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/dh/map_dhcenters.png)
+![Global [map of DH centers](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 ## DH as a community
 
-![ [Around DH in 80 Days](http://www.arounddh.org/), 2014](../assets/dh/map_arounddh.png)
+![ [Around DH in 80 Days](http://www.arounddh.org/), 2014](../../assets/dh/map_arounddh.png)
 
 # DH as a discipline
 ## DH as a discipline
 
-![The underlying infrastructure for a digital edition](../assets/dh/OpenArabicPE_components-layer-2-7.png)
+![The underlying infrastructure for a digital edition](../../assets/dh/OpenArabicPE_components-layer-2-7.png)
 
 ## DH as a discipline
 
@@ -160,7 +160,7 @@ Computing in the humanities / DH is **old**!
 
 ## DH as a discipline: chairs, centres, programmes
 
-![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/dh/map_dhcenters.png)
+![Global [map of DH centers](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 ## DH as a discipline: professional associations
 
