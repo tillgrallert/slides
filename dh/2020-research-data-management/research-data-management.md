@@ -21,6 +21,9 @@ duration: 30
 
 # Research data management
 ## what is it?
+
+... let's postpone this for a moment ...
+
 ## why should we care?
 
 1. extrinsic incentive:
@@ -34,6 +37,8 @@ duration: 30
     - we will need (and get) external help
 
 ## when should think about it?
+
+... always! ...
 
 + start right now!
 + throughout a research project
@@ -55,6 +60,11 @@ duration: 30
 
 [^1]: Puhl, Johanna, Peter Andorfer, et al. "Diskussion und Definition eines Research Data LifeCycle Für die Digitalen Geisteswissenschaften." *DARIAH-DE Working Papers 11.* Göttingen: DARIAH-DE, 2015. [urn:nbn:de:gbv:7-dariah-2015-4-4](http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2015-4-4).
 
+
+>In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.
+
+<cite>My translation</cite>
+
 ## data are always mediated
 
 + we access (generate, read) data through different levels
@@ -64,17 +74,29 @@ duration: 30
 + we need tools to do so
 + all tools are subject to external decisions
 
+## data are always mediated
+
+... we (are made to) think of <!-- and interact --> with data in metaphors ...
+
+>Readers know how paragraphs, pages, files, and folders relate to paper and would like for their digital images to behave in a similar way. The principles of metaphor-driven design contain an implicit model of human-computer interaction, which suggests that humans prefer to manipulate digital information stored on computational media by the means of familiar mediating structures (paragraphs, pages, files, and folders) associated figuratively with the affordances of print media.
+
+>We do not literally drag or drop bits, but we use metaphors of paper and trash cans to help us manipulate bits and bytes as though they were common household objects. The metaphor opens figurative possibilities. It also obscures actual physical contingencies of interacting with bits and bytes, logic gates and electromagnetic traces.
+
+<cite>Tenen, *Plain Text: The Poetics of Computation*, 2017, p.36[^3]</cite>
+
+[^3]: Tenen, Dennis. *Plain Text: The Poetics of Computation.* Stanford: Stanford University Press, 2017.
+
 ## data are created different
 
 - raw data
 - processed data:
-    + we filter
-    + normalise / correct
-    + annotate
-    + aggregate
+    + we filter,
+    + normalise, correct or *clean*,
+    + annotate, and
+    + aggregate raw data to make it *useful* for answering our research question
 - results
 
-## data are created different <!-- cut -->
+<!-- ## data are created different {>>cut<<}
 
 -  Metadaten, bibliographische Daten, Kataloge
 -  Digitale und/oder digitalisierte Daten und/oder digitale Repräsentationen von analogen Daten
@@ -82,7 +104,7 @@ duration: 30
 -  Volltexte und Transkriptionen
 -  Angereicherte Volltexte
 -  Bilder, Filme, Musik, Noten
--  Normdaten, kontrollierte Vokabularien, Ontologien
+-  Normdaten, kontrollierte Vokabularien, Ontologien -->
 
 ## data are created different <!-- and for a purpose -->
 
@@ -99,7 +121,7 @@ duration: 30
 + few are both
 + many are neither
 
-## data are alive
+## data are alive?!
 
 - remember? data are always mediated
 - we mostly think of data in metaphors, such as a "file" <!-- that we can store -->
@@ -110,19 +132,17 @@ duration: 30
 - all data is in constant flux
 
 
-## data are alive
+## data are alive?!
 
-+ [research data life cycle](https://de.dariah.eu/en/weiterfuhrende-informationen):
-    * Planning and creation
-    * Selection
-    * Ingest/acquisition
-    * Storage/Infrastructure
-    * Conservation measures
-    * Access/use
+![Eliane Blumer, Pierre-Yves Burgi: [Data Life-Cycle](http://doi.org/10.16911/ethz-ib-1992-en), CC BY-SA 4.0](../../assets/dh/2015-09-08_data-life-cicle.jpg)
+
+## data are alive?!
+
+![Helen Morgan, Nadine Davdson-Wall: [Research Data Life Cycle](http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png), CC BY-NC](../../assets/dh/Research_Life_Cycle.png)
 
 ## data will (have to) die
 
-- at end of a research project, data is either
+- at the end of a research project, data is either
     + archived
     + published or
     + **deleted**
@@ -132,6 +152,8 @@ duration: 30
 
 - data management is done at all stages of the data life cycle
 - each step in the process has its own best practices and standards
+
+![Eliane Blumer, Pierre-Yves Burgi: [Data Life-Cycle](http://doi.org/10.16911/ethz-ib-1992-en), CC BY-SA 4.0](../../assets/dh/2015-09-08_data-life-cicle.jpg)
 
 <!-- - all activities concerning the
     + saving
@@ -210,6 +232,16 @@ duration: 30
 - publicly funded repositories
     + Zenodo (EU, CERN)
 
+# Open end
+## Thank you!
+
+- Links:
+    + Slides: [tillgrallert.github.io/slides/dh/2020-research-data-management/](https://tillgrallert.github.io/slides/dh/2020-research-data-management/index.html)
+    + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+    + Email: <grallert@orient-institut.org>
+
+- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
 ## links, bibliography
 
 - DFG Leitlinien zu [guter wissenschaftlicher Praxis](https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf)
@@ -220,8 +252,12 @@ duration: 30
 - [Forschungsinfrastrukturen für die Geisteswissenschaften](http://www.forschungsinfrastrukturen.de/doku.php) im Rahmen der NFDI (National Forschungsdaten Initiative)
 - [forschungsdaten.info](https://www.forschungsdaten.info/): operated by various German universities, Leibniz and Helmholtz Centres
 - [forschungsdaten.org](https://www.forschungsdaten.org/): independent Wiki
+- Berry, David M and Anders Fagerjord. *Digital Humanities: Knowledge and Critique in a Digital Age.* Cambridge; Malden: Polity, 2017.
+- Tenen, Dennis. *Plain Text: The Poetics of Computation.* Stanford: Stanford University Press, 2017.
 
 # notes
 ## images
 
-![FAIR principles, SangyaPundir, CC BY-SA 4.0](../assets/dh//FAIR_data_principles.jpg)
+![SangyaPundir: FAIR principles, CC BY-SA 4.0](../../assets/dh/FAIR_data_principles.jpg)
+![Eliane Blumer, Pierre-Yves Burgi: [Data Life-Cycle](http://doi.org/10.16911/ethz-ib-1992-en), CC BY-SA 4.0](../../assets/dh/2015-09-08_data-life-cicle.jpg)
+![Helen Morgan, Nadine Davdson-Wall: [Research Data Life Cycle](http://s3.amazonaws.com/libapps/customers/137/images/Research_Life_Cycle.png), CC BY-NC](../../assets/dh/Research_Life_Cycle.png)
