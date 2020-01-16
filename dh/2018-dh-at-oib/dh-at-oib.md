@@ -37,7 +37,7 @@ duration: 60
 # What are digital humanities?
 ## dh are many things to many people
 
-[What is Digital Humanities?](https://whatisdigitalhumanities.com/) 
+[What is Digital Humanities?](https://whatisdigitalhumanities.com/)
 
 - presents a random selection from 791 definitions from the "Day of DH" between 2009--14
 
@@ -150,7 +150,7 @@ Computing in the humanities / DH is **old**!
     + availability of software packages: SPSS (1968), TU-STEP
 - 1970s: scholarly associations
     + formation of first independent discipline: comp.ling.
-- 1980s onwards: digital editing, corpus building 
+- 1980s onwards: digital editing, corpus building
     + databases, personal computers, word processors
     + TEI (1987)
 - 1990s: www, internet
@@ -237,7 +237,7 @@ Computing in the humanities / DH is **old**!
 
 ## DH with a focus on Islamicate societies
 
-- European funding / institutions: 
+- European funding / institutions:
     + corpus building at the basis
         + London: KITAB / ITI project
         + Berlin: Kalīla wa Dimna
@@ -273,7 +273,7 @@ Computing in the humanities / DH is **old**!
 
 ## DH at OIB: building of digital corpora
 
-+ databases: 
++ databases:
     - SCRIPT
 + editions / corpus building:
     * BI and BTS
@@ -291,7 +291,7 @@ Computing in the humanities / DH is **old**!
 
 ## DH at OIB: events and collaborations
 
-+ UB Halle: MENAdoc and MENAlib 
++ UB Halle: MENAdoc and MENAlib
 + Workshop on digital scholarly editing (2015)
 + DHIB 2015, 2017, 2019: AUB, AMICAL, UVic, Ifpo
     * DiXiT applications for ERC funding
@@ -347,7 +347,7 @@ Digital material and tools are fragile and subject to constant access to massive
 - Links:
     + Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
-    + Slides: [https://tillgrallert.github.io/slides/2018-oib/](https://tillgrallert.github.io/slides/2018-oib/index.html)
+    + Slides: [tillgrallert.github.io/slides/dh/2018-dh-at-oib/](https://tillgrallert.github.io/slides/dh/2018-dh-at-oib/index.html)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org>
 
