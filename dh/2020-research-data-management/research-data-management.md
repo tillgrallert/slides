@@ -18,7 +18,7 @@ Email: <grallert@orient-institut.org>
 
 ## Outline
 
-... today's topic: research data management ...
+today's topic: research data management ...
 
 - what is it?
 - why should we care?
@@ -33,7 +33,7 @@ Email: <grallert@orient-institut.org>
 # Research data management
 ## what is it?
 
-... let's postpone this for a moment ...
+let's postpone this for a moment ...
 
 ## why should we care?
 
@@ -49,7 +49,7 @@ Email: <grallert@orient-institut.org>
 
 ## when should think about it?
 
-... always! ...
+... always!
 
 + start right now!
 + throughout a research project
@@ -65,16 +65,15 @@ Email: <grallert@orient-institut.org>
 
 ## so what are research data?
 
+>In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.
+
+<cite>My translation of the following</cite>
+
 >Unter digitalen geistes- und kulturwissenschaftlichen Forschungsdaten werden [...] all jene Quellen/Materialien und Ergebnisse verstanden, die im Kontext einer geistes-und kulturwissenschaftlichen Forschungsfrage gesammelt, erzeugt, beschrieben und/oder ausgewertet werden und in maschinenlesbarer Form zum Zwecke der Archivierung, Zitierbarkeit  und zur weiteren Verarbeitung aufbewahrt werden können.
 
 <cite>Puhl, Andorfer, et al., *Forschungsdaten*, 2015, p.14[^1]</cite>
 
 [^1]: Puhl, Johanna, Peter Andorfer, et al. "Diskussion und Definition eines Research Data LifeCycle Für die Digitalen Geisteswissenschaften." *DARIAH-DE Working Papers 11.* Göttingen: DARIAH-DE, 2015. [urn:nbn:de:gbv:7-dariah-2015-4-4](http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2015-4-4).
-
-
->In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.
-
-<cite>My translation</cite>
 
 ## data are always mediated
 
@@ -134,13 +133,16 @@ Email: <grallert@orient-institut.org>
 
 ## data are alive?!
 
-- remember? data are always mediated
-- we mostly think of data in metaphors, such as a "file" <!-- that we can store -->
-    + hardware level: various bits distributed across local and remote physical locations
+... all data is in constant flux ...
+
+- remember?
+    - data are always mediated
+    - we mostly think of data in metaphors
+- example: a "file" <!-- that we can store -->
+    + hardware level: various electrical charges distributed across local and remote physical locations
     + software level
-        * OS: assembling the various bits into a "file" that lives in volatile memory
+        * operating system: assembling various bits into a "file" that lives in volatile memory
         * application software: creating a readable representation
-- all data is in constant flux
 
 
 ## data are alive?!
@@ -203,13 +205,16 @@ Email: <grallert@orient-institut.org>
 
 + what data to we expect?
     * which tools are needed?
-+ do we need to keep it?
++ are we allowed to keep them?
++ do we need to keep them?
     * for how long?
     * where?
     * in which format?
-+ do we need to protect it from others?
++ do we need to protect them from others?
     * from whom?
     * for how long?
+
+
 
 ## strategies
 
@@ -236,7 +241,7 @@ Email: <grallert@orient-institut.org>
 
 - too many to cover
 - data management plan
-    + [RDMO](https://rdmorganiser.github.io/en/project/)
+    + [RDMO (Research Data Management Organiser)](https://rdmorganiser.github.io/en/project/)
 - publicly funded infrastructures
     + CLARIAH (EU, merger of DARIAH and CLARIN)
     + NFDI (Germany): early planning phase

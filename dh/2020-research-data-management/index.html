@@ -16,8 +16,8 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="../../css/slidy_custom_sh.css" />
   <meta name="copyright" content="CC BY-SA 4.0" />
@@ -36,29 +36,29 @@
   }
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -89,12 +89,11 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
-  <script type="text/javascript" src="../../assets/slidy.js"></script>
-  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script> -->
+  <script type="text/javascript" src="../../js/slidy.js"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js" charset="utf-8" type="text/javascript"></script> -->
   <meta name="duration" content="30" />
 </head>
 <body>
@@ -120,7 +119,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </div>
 <div id="outline" class="slide section level2">
 <h1>Outline</h1>
-<p>… today’s topic: research data management …</p>
+<p>today’s topic: research data management …</p>
 <ul>
 <li>what is it?</li>
 <li>why should we care?</li>
@@ -141,7 +140,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </div>
 <div id="what-is-it" class="slide section level2">
 <h1>what is it?</h1>
-<p>… let’s postpone this for a moment …</p>
+<p>let’s postpone this for a moment …</p>
 </div>
 <div id="why-should-we-care" class="slide section level2">
 <h1>why should we care?</h1>
@@ -163,7 +162,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </div>
 <div id="when-should-think-about-it" class="slide section level2">
 <h1>when should think about it?</h1>
-<p>… always! …</p>
+<p>… always!</p>
 <ul>
 <li>start right now!</li>
 <li>throughout a research project</li>
@@ -184,13 +183,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <div id="so-what-are-research-data" class="slide section level2">
 <h1>so what are research data?</h1>
 <blockquote>
+<p>In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.</p>
+</blockquote>
+<p><cite>My translation of the following</cite></p>
+<blockquote>
 <p>Unter digitalen geistes- und kulturwissenschaftlichen Forschungsdaten werden […] all jene Quellen/Materialien und Ergebnisse verstanden, die im Kontext einer geistes-und kulturwissenschaftlichen Forschungsfrage gesammelt, erzeugt, beschrieben und/oder ausgewertet werden und in maschinenlesbarer Form zum Zwecke der Archivierung, Zitierbarkeit und zur weiteren Verarbeitung aufbewahrt werden können.</p>
 </blockquote>
 <p><cite>Puhl, Andorfer, et al., <em>Forschungsdaten</em>, 2015, p.14<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></cite></p>
-<blockquote>
-<p>In the context of the humanities and social sciences, digital research data shall be understood as all those sources/ materials and results that were collected, generated, annotated and/or analysed and that can be stored in machine-readable form for the purpose of archiving, referencing and further reuse.</p>
-</blockquote>
-<p><cite>My translation</cite></p>
 </div>
 <div id="data-are-always-mediated" class="slide section level2">
 <h1>data are always mediated</h1>
@@ -264,18 +263,22 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </div>
 <div id="data-are-alive" class="slide section level2">
 <h1>data are alive?!</h1>
+<p>… all data is in constant flux …</p>
 <ul>
-<li>remember? data are always mediated</li>
-<li>we mostly think of data in metaphors, such as a “file” <!-- that we can store -->
+<li>remember?
 <ul>
-<li>hardware level: various bits distributed across local and remote physical locations</li>
+<li>data are always mediated</li>
+<li>we mostly think of data in metaphors</li>
+</ul></li>
+<li>example: a “file” <!-- that we can store -->
+<ul>
+<li>hardware level: various electrical charges distributed across local and remote physical locations</li>
 <li>software level
 <ul>
-<li>OS: assembling the various bits into a “file” that lives in volatile memory</li>
+<li>operating system: assembling various bits into a “file” that lives in volatile memory</li>
 <li>application software: creating a readable representation</li>
 </ul></li>
 </ul></li>
-<li>all data is in constant flux</li>
 </ul>
 </div>
 <div id="data-are-alive-1" class="slide section level2">
@@ -361,13 +364,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <ul>
 <li>which tools are needed?</li>
 </ul></li>
-<li>do we need to keep it?
+<li>are we allowed to keep them?</li>
+<li>do we need to keep them?
 <ul>
 <li>for how long?</li>
 <li>where?</li>
 <li>in which format?</li>
 </ul></li>
-<li>do we need to protect it from others?
+<li>do we need to protect them from others?
 <ul>
 <li>from whom?</li>
 <li>for how long?</li>
@@ -413,7 +417,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <li>too many to cover</li>
 <li>data management plan
 <ul>
-<li><a href="https://rdmorganiser.github.io/en/project/">RDMO</a></li>
+<li><a href="https://rdmorganiser.github.io/en/project/">RDMO (Research Data Management Organiser)</a></li>
 </ul></li>
 <li>publicly funded infrastructures
 <ul>
