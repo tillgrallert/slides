@@ -40,6 +40,16 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 ![](../../assets/jaraid/jaraid_holdings_pie-3.png)
 :::
 
+:::{.c_width-50 .c_right}
+
+|                | number |   %   |
+|----------------|--------|-------|
+| periodicals    |   3269 |   100 |
+| known holdings |    747 |  4.44 |
+| digitised      |    145 | 22.85 |
+
+:::
+
 ## Open Arabic Periodical Editions (OpenArabicPE)
 ## OCR/HTR für arabische Periodika
 
