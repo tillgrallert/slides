@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="text/ecmascript"
+   width="3701.5278"
+   zoomAndPan="magnify"
+   contentStyleType="text/css"
+   viewBox="-780 -984 3701.5278 2063.8254"
+   height="2063.8254"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg1252"
+   sodipodi:docname="stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   inkscape:export-filename="/BachUni/publications/github/s3a6afa20/plots/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.png"
+   inkscape:export-xdpi="150.01268"
+   inkscape:export-ydpi="150.01268">
+  <metadata
+     id="metadata1258">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1256" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2420"
+     inkscape:window-height="1395"
+     id="namedview1254"
+     showgrid="false"
+     inkscape:zoom="0.33589188"
+     inkscape:cx="1856.9466"
+     inkscape:cy="1041.8157"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="nodes"
+     inkscape:document-rotation="0" />
+  <g
+     id="edges"
+     transform="translate(348.38727,-0.38790131)">
+    <path
+       fill="none"
+       stroke-width="11.2655"
+       d="M 33.975052,-27.645012 C 88.495834,-2.285526 132.23776,117.53487 106.87829,172.05563"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path635"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="12.0354"
+       d="M 33.975052,-27.645012 C -11.806053,-102.14087 31.266064,-282.55627 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path637"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 33.975052,-27.645012 C -119.11203,47.923592 -462.09558,-68.354103 -537.66418,-221.44118"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path639"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.33628"
+       d="M 33.975052,-27.645012 C 211.04187,-127.70883 626.73792,-12.20433 726.8017,164.86249"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path641"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.79646"
+       d="M 33.975052,-27.645012 C 129.20518,-127.92528 422.4707,-135.5005 522.75098,-40.270382"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path643"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="M 33.975052,-27.645012 C -37.665028,84.347275 -313.11359,144.87559 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path645"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m -688.46643,113.66578 c 70.44507,-247.24632 546.98204,-512.44822 794.22835,-442.00318"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path647"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="21.2743"
+       d="m -688.46643,113.66578 c 28.49377,33.90175 20.38177,127.49503 -13.51996,155.98879"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path649"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m -688.46643,113.66578 c -36.86096,-97.181844 53.62036,-298.24601 150.80225,-335.10696"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path651"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M -688.46643,113.66578 C -735.72034,76.729378 -751.19672,-49.556145 -714.26031,-96.810097"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path653"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="26.1504"
+       d="m -688.46643,113.66578 c 86.29987,-1.61369 218.17026,125.41558 219.78393,211.71548"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path655"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="M -688.46643,113.66578 C -643.88037,52.907619 -485.86408,28.649456 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path657"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="11.2655"
+       d="M -168.41698,161.64236 C -211.57715,8.810627 -47.06982,-285.17722 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path659"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m -168.41698,161.64236 c 27.74785,72.61216 -39.54866,223.15217 -112.16081,250.9"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path661"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M -168.41698,161.64236 C 17.579811,100.03471 388.98651,286.61838 450.59415,472.61517"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path663"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="17.1681"
+       d="m -168.41698,161.64236 c -150.46614,-2.76727 -372.01448,-232.617381 -369.2472,-383.08354"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path665"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.84956"
+       d="M -168.41698,161.64236 C -329.27612,219.12054 -656.78217,64.049057 -714.26031,-96.810097"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path667"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.59292"
+       d="m -168.41698,161.64236 c -27.30532,92.80088 -207.46464,191.04422 -300.26552,163.7389"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path669"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M -168.41698,161.64236 C 336.86749,-217.76785 1663.9095,-28.956421 2043.3198,476.32806"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path671"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.79646"
+       d="M -168.41698,161.64236 C -61.198502,147.78357 120.41739,287.82312 134.27617,395.04159"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path673"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M -168.41698,161.64236 C -237.43613,195.29878 -391.44949,142.25467 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path675"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="M 1095.5245,-372.03134 C 906.31079,-165.34001 312.45325,-139.12367 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path677"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="20.7611"
+       d="m 1095.5245,-372.03134 c 163.9901,-76.89414 525.3166,53.74985 602.2107,217.73997"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path679" />
+    <path
+       fill="none"
+       stroke-width="2.53982"
+       d="m 1095.5245,-372.03134 c 152.9978,-140.98575 593.9732,-122.96765 734.959,30.03018"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path681"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="m 1095.5245,-372.03134 c 206.2829,-116.98251 691.1811,16.96808 808.1636,223.25099"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path683"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.90265"
+       d="m 1095.5245,-372.03134 c 70.6394,-28.51584 219.3722,34.66949 247.8881,105.30887"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path685" />
+    <path
+       fill="none"
+       stroke-width="4.33628"
+       d="M 1095.5245,-372.03134 C 804.04749,-85.140076 -63.504944,-92.018707 -350.39621,-383.49573"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path687"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="16.6549"
+       d="m 1095.5245,-372.03134 c -55.5473,-19.49628 -109.62411,-132.0618 -90.1278,-187.60922"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213 id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path689" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 229.39911,-16.988865 C 242.70384,45.3242 169.19134,158.7509 106.87829,172.05563"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path691"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="11.2655"
+       d="M 229.39911,-16.988865 C 142.40198,-54.531136 68.219643,-241.34026 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path693"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.3717"
+       d="m 229.39911,-16.988865 c 80.18744,5.055679 192.88504,132.920355 187.82937,213.107775"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path695"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 229.39911,-16.988865 C 35.095985,95.533325 -425.142,-27.138062 -537.66418,-221.44118"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path697"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 229.39911,-16.988865 C 24.702976,155.77878 -541.49268,107.88604 -714.26031,-96.810097"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path699"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.53982"
+       d="M 229.39911,-16.988865 C 365.24991,-80.099113 663.69147,29.011696 726.8017,164.86249"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path701"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.41593"
+       d="m 229.39911,-16.988865 c 54.01407,-63.326679 230.02518,-77.295589 293.35187,-23.281517"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path703"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="9.9823"
+       d="m 2448.2551,996.21826 c -49.4675,9.82404 -138.4045,-49.64099 -148.2285,-99.10834"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path705"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 2448.2551,996.21826 c -28.8132,47.79894 -143.7312,76.27764 -191.5302,47.46444"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path707"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.13274"
+       d="m 2448.2551,996.21826 c -87.156,62.84154 -312.1518,26.37004 -374.9934,-60.78583"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path709"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.33628"
+       d="m 2448.2551,996.21826 c -27.2917,-40.35022 -7.7043,-141.81348 32.646,-169.10534"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path711"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="13.5752"
+       d="m 2448.2551,996.21826 c -89.654,-51.3894 -147.0512,-262.95489 -95.6618,-352.60907"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path713"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="M 2448.2551,996.21826 C 2334.3547,999.03113 2159.2852,832.40008 2156.4722,718.49982"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730 id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path715"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 106.87829,172.05563 C -46.627686,185.94229 -297.71664,-23.486671 -311.6033,-176.99264"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path717"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="25.8938"
+       d="M 106.87829,172.05563 C 6.576408,72.200302 5.906586,-228.03552 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path719"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 106.87829,172.05563 c 66.8827,-57.25738 253.09281,-42.81941 310.35019,24.06328"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path721"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="10.2389"
+       d="M 106.87829,172.05563 C 77.484413,297.6442 -154.98923,441.93622 -280.57779,412.54236"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path723"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.3717"
+       d="M 106.87829,172.05563 C 100.88986,247.78082 -21.680542,352.38599 -97.405731,346.39755"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path725"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 106.87829,172.05563 c 128.85508,-8.63125 335.0846,171.70447 343.71586,300.55954"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path727"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="12.0354"
+       d="M 106.87829,172.05563 C 109.2601,-74.1819 482.18915,-439.96545 728.4267,-437.58362"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path729" />
+    <path
+       fill="none"
+       stroke-width="12.0354"
+       d="M 106.87829,172.05563 C 147.58762,46.415886 397.11124,-80.979713 522.75098,-40.270382"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path731"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.90265"
+       d="m 106.87829,172.05563 c 50.07677,39.11762 66.51549,172.90918 27.39788,222.98596"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path733"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.6283"
+       d="M 106.87829,172.05563 C -19.282579,258.68845 -338.47308,199.39638 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path735"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.90265"
+       d="m 2300.0266,897.10992 c 20.6541,37.97492 -5.3269,125.91858 -43.3017,146.57278"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path737"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="13.8319"
+       d="m 2300.0266,897.10992 c -37.6885,53.01746 -173.7473,76.01099 -226.7649,38.32251"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path739"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="11.5221"
+       d="m 2300.0266,897.10992 c 22.1753,-50.17431 130.7002,-92.17254 180.8745,-69.997"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path741"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="18.9646"
+       d="m 2300.0266,897.10992 c -40.1868,-61.21344 -8.647,-213.3139 52.5667,-253.50073"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path743"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.15929"
+       d="m 2300.0266,897.10992 c -64.4328,-7.01117 -150.5654,-114.17718 -143.5544,-178.6101"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path745"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="18.4513"
+       d="M 2300.0266,897.10992 C 2164.5288,864.29492 2010.5048,611.82581 2043.3198,476.32806"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path747"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="16.9115"
+       d="m 2256.7249,1043.6827 c -58.3428,15.0426 -168.4207,-49.90755 -183.4632,-108.25027"
+       class="id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448 id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path749"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="10.4956"
+       d="m 2256.7249,1043.6827 c -60.8411,-99.18838 -3.3199,-339.23251 95.8684,-400.07351"
+       class="id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448 id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path751"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.36283"
+       d="m 2073.2617,935.43243 c 59.864,-103.19177 304.4478,-168.18353 407.6394,-108.31951"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path753"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="26.4071"
+       d="m 2073.2617,935.43243 c -2.4985,-114.23101 165.1006,-289.32489 279.3316,-291.82324"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path755"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m 2073.2617,935.43243 c -26.7444,-60.02862 23.1819,-190.18817 83.2105,-216.93261"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path757"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 2073.2617,935.43243 C 1656.1647,1167.4025 682.56421,889.71216 450.59415,472.61517"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path759"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 2073.2617,935.43243 C 1786.0729,998.40405 1260.8324,662.07825 1197.8608,374.8895"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path761"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m 2073.2617,935.43243 c -97.8092,-85.83245 -115.7745,-361.2951 -29.9419,-459.10437"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path763"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 2073.2617,935.43243 C 1883.6487,813.21375 1782.557,345.46619 1904.7758,155.85309"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path765"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="18.1947"
+       d="M 2480.9011,827.11292 C 2418.5388,816.07373 2341.5542,705.9715 2352.5933,643.60919"
+       class="id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409 id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path767"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.53982"
+       d="M 2480.9011,827.11292 C 2323.2278,844.47217 2060.6792,634.00128 2043.3198,476.32806"
+       class="id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path769"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="11.7788"
+       d="M -311.6033,-176.99264 C -258.3992,-290.73465 -7.98008,-381.5415 105.76192,-328.3374"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path771"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="9.21239"
+       d="m -311.6033,-176.99264 c -49.05921,-33.54204 -72.33496,-157.44388 -38.79291,-206.50309"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path773"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m -311.6033,-176.99264 c -54.1019,36.32246 -189.7384,9.65335 -226.06088,-44.44854"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path775"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m -311.6033,-176.99264 c -107.32117,61.98561 -361.28134,-6.0177 -423.26694,-113.33887"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path777"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m -311.6033,-176.99264 c 69.05896,131.89062 -25.18857,433.31494 -157.0792,502.3739"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path779"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="9.46903"
+       d="m -311.6033,-176.99264 c 27.34509,72.74615 -40.75644,222.88304 -113.5026,250.228152"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path781"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.56637"
+       d="M 105.76192,-328.3374 C 272.9465,-285.73944 459.82645,28.934334 417.22848,196.11891"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path783"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="20.7611"
+       d="m 105.76192,-328.3374 c 70.908,225.44389 -160.895816,669.97174 -386.33971,740.87976"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path785"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="8.95575"
+       d="M 105.76192,-328.3374 C 200.07538,-152.75688 78.174789,252.08409 -97.405731,346.39755"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path787"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 105.76192,-328.3374 C 63.810638,-47.189346 -420.83832,311.60584 -701.98639,269.65457"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path789"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="8.95575"
+       d="m 105.76192,-328.3374 c 229.15696,91.22407 436.05632,571.79561 344.83223,800.95257"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path791"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.9292"
+       d="M 105.76192,-328.3374 C 365.61505,-563.54456 1108.2054,-526.57562 1343.4126,-266.72247"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path793" />
+    <path
+       fill="none"
+       stroke-width="7.15929"
+       d="m 105.76192,-328.3374 c -102.263296,80.19995 -375.95818,47.10498 -456.15813,-55.15833"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path795"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 105.76192,-328.3374 c -160.52526,175.7276 -664.9045,198.53116 -840.63216,38.00589"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path797"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 105.76192,-328.3374 C -11.937073,-118.02747 -503.95038,20.888885 -714.26031,-96.810097"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path799"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.82301"
+       d="m 105.76192,-328.3374 c 15.85485,245.632604 -328.8118,637.8638 -574.44442,653.71866"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path801"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="M 105.76192,-328.3374 C 208.44563,-474.7196 582.04449,-540.26733 728.4267,-437.58362"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path803" />
+    <path
+       fill="none"
+       stroke-width="13.0619"
+       d="M 105.76192,-328.3374 C 239.42824,-554.52496 779.20911,-693.30688 1005.3967,-559.64056"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path805" />
+    <path
+       fill="none"
+       stroke-width="6.13274"
+       d="m 105.76192,-328.3374 c 246.71959,-163.96741 862.75016,-39.83902 1026.71758,206.88059"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path807"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.56637"
+       d="m 105.76192,-328.3374 c 222.84794,-25.568 595.47184,270.351934 621.03978,493.19989"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path809"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m 105.76192,-328.3374 c 141.01121,-25.78443 391.20463,147.05578 416.98906,288.067018"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path811"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.10619"
+       d="M 105.76192,-328.3374 C 428.33624,-456.58606 1104.5707,-165.09747 1232.8193,157.47687"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path813"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.38938"
+       d="M 105.76192,-328.3374 C 464.82709,-406.11179 1120.0864,15.824341 1197.8608,374.8895"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path815"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.3717"
+       d="m 105.76192,-328.3374 c 150.37864,138.97296 167.48723,573.00033 28.51425,723.37899"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path817"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="25.6372"
+       d="M 105.76192,-328.3374 C 79.902939,-141.84927 -238.61777,99.09449 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path819"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="M 2352.5933,643.60919 C 2169.249,487.05987 2129.0569,-22.780184 2285.6062,-206.12431"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path821"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.3717"
+       d="m 2352.5933,643.60919 c -24.2461,54.20239 -141.919,99.13672 -196.1211,74.89063"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path823"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="M 2352.5933,643.60919 C 2031.412,770.33752 1359.5477,478.65814 1232.8193,157.47687"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path825"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="M 2352.5933,643.60919 C 2067.9028,820.81171 1375.0635,659.57989 1197.8608,374.8895"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path827"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 2352.5933,643.60919 C 2188.0623,539.86859 2096.8767,137.46123 2200.6172,-27.069777"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path829"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="26.6637"
+       d="m 2352.5933,643.60919 c -95.3111,28.39844 -280.875,-71.97021 -309.2735,-167.28113"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path831"
+       style="stroke-width:26.664;stroke-miterlimit:4;stroke-dasharray:none;stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.64602"
+       d="M 2352.5933,643.60919 C 2165.4785,635.62146 1896.788,342.9678 1904.7758,155.85309"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path833"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.90265"
+       d="m 2285.6062,-206.12431 c -101.9998,-19.86255 -225.2058,-202.65615 -205.3433,-304.65596"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path835"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 2285.6062,-206.12431 c -118.1999,63.84916 -391.2736,-17.67696 -455.1227,-135.87685"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path837"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="12.5487"
+       d="m 2285.6062,-206.12431 c -178.1604,3.06019 -449.9911,-259.59008 -453.0513,-437.75038"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path839"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.33628"
+       d="m 2285.6062,-206.12431 c 18.813,52.8087 -32.1804,160.241429 -84.989,179.054533"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path841"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 2285.6062,-206.12431 c 88.0332,184.947754 -57.3386,594.41917 -242.2864,682.45237"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path843"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.10619"
+       d="m 2285.6062,-206.12431 c -3.7705,148.561573 -232.2688,365.748 -380.8304,361.9774"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path845"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 2285.6062,-206.12431 c -49.4968,18.83357 -151.9922,-27.1613 -170.8259,-76.65813"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path847"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m 2156.4722,718.49982 c -140.2848,-157.94294 -113.798,-605.28468 44.145,-745.569597"
+       class="id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path849"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.38938"
+       d="M 2156.4722,718.49982 C 2085.4075,692.69598 2017.5159,547.39288 2043.3198,476.32806"
+       class="id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path851"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 417.22848,196.11891 c 61.97239,48.62613 81.9918,214.52388 33.36567,276.49626"
+       class="id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640 id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path853"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.07965"
+       d="M 417.22848,196.11891 C 472.89185,127.95299 658.63574,109.19913 726.8017,164.86249"
+       class="id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path855"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="15.3717"
+       d="M 417.22848,196.11891 C 391.05511,127.73655 454.36862,-14.097019 522.75098,-40.270382"
+       class="id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path857"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.07965"
+       d="m 1697.7352,-154.29137 c 5.2078,-147.8033 234.7245,-361.69667 382.5277,-356.4889"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path859"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.64602"
+       d="m 1697.7352,-154.29137 c -10.9923,-64.09163 68.6566,-176.71748 132.7483,-187.70979"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path861"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.87611"
+       d="m 1697.7352,-154.29137 c 42.2928,-40.08836 165.8645,-36.78175 205.9529,5.51102"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path863"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="m 1697.7352,-154.29137 c -93.3507,48.37831 -305.9443,-19.08036 -354.3226,-112.4311"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path865" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m 1697.7352,-154.29137 c 195.2409,57.006969 402.5915,435.37862 345.5846,630.61943"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path867"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 1697.7352,-154.29137 c 103.437,20.62079 227.6614,206.707458 207.0406,310.14446"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path869"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="m 1697.7352,-154.29137 c 57.7108,-109.10722 307.9378,-186.20185 417.0451,-128.49107"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path871"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.38938"
+       d="m -280.57779,412.54236 c 23.40546,-49.86337 133.30869,-89.55023 183.172059,-66.14481"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096 id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path873"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m -280.57779,412.54236 c -55.05316,20.18872 -167.91598,-32.10794 -188.10471,-87.1611"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path875"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.79646"
+       d="M -280.57779,412.54236 C -377.34479,373.58658 -464.06165,170.00252 -425.1059,73.235512"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path877"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 2080.2629,-510.78027 c -16.2002,83.7117 -166.0676,184.97915 -249.7794,168.77911"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path879"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 2080.2629,-510.78027 c 37.085,107.71496 -68.8598,324.91491 -176.5748,361.99992"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path881"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="m 2080.2629,-510.78027 c -188.4041,39.90982 -530.8752,-182.83179 -570.785,-371.23597"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path883"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.38938"
+       d="m 2080.2629,-510.78027 c -138.478,43.31515 -411.1677,-99.42902 -454.4829,-237.90705"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path885"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.41593"
+       d="m 2080.2629,-510.78027 c -76.1605,22.9227 -224.7852,-56.9339 -247.708,-133.09442"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path887"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="14.3451"
+       d="m 2080.2629,-510.78027 c 120.813,72.67123 193.0257,362.89753 120.3543,483.710493"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path889"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="10.7522"
+       d="m 2080.2629,-510.78027 c 52.5032,38.6961 73.2134,175.49478 34.5174,227.99783"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path891"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="19.9911"
+       d="m 1830.4835,-342.00116 c 53.2851,24.00324 97.2079,139.93573 73.2046,193.22081"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path893"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 1830.4835,-342.00116 c -82.3584,112.46991 -374.6009,157.63715 -487.0709,75.27869"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path895" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m 1830.4835,-342.00116 c -208.5451,121.48947 -703.5973,-9.09415 -825.0868,-217.6394"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path897" />
+    <path
+       fill="none"
+       stroke-width="6.13274"
+       d="m 1830.4835,-342.00116 c 137.0131,-11.04047 359.0932,177.91837 370.1337,314.931383"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path899"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1830.4835,-342.00116 c 206.2332,121.09859 333.935,612.09613 212.8363,818.32922"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path901"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="16.1416"
+       d="m 1830.4835,-342.00116 c 114.4292,84.7124 159.0047,383.424946 74.2923,497.85425"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path903"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="30"
+       d="m 1830.4835,-342.00116 c 68.7031,-45.01559 239.2811,-9.48438 284.2968,59.21872"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path905"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 1903.6881,-148.78035 c -135.6434,88.466675 -471.8088,17.7014 -560.2755,-117.94212"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254 id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path907" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m 1903.6881,-148.78035 c 83.728,-35.0437 261.8854,37.98264 296.9291,121.710573"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path909"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.59292"
+       d="m 1903.6881,-148.78035 c 61.1442,60.709152 61.7968,243.489228 1.0877,304.63344"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path911"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="14.0885"
+       d="m 1903.6881,-148.78035 c 15.418,-69.01884 142.0733,-149.42012 211.0922,-134.00209"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path913"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="M -97.405731,346.39755 C -50.70797,145.03262 321.38605,-86.96814 522.75098,-40.270382"
+       class="id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path915"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="M -97.405731,346.39755 C -217.57819,357.30518 -414.19827,193.40796 -425.1059,73.235512"
+       class="id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path917"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="24.354"
+       d="m -701.98639,269.65457 c 57.80609,-35.51546 197.78845,-2.07944 233.30389,55.72669"
+       class="id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path919"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.61947"
+       d="M -701.98639,269.65457 C -685.8941,174.99466 -519.76581,57.143223 -425.1059,73.235512"
+       class="id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path921"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.90265"
+       d="M 450.59415,472.61517 C 237.29205,627.02368 -314.27396,538.68335 -468.6825,325.38126"
+       class="id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path923"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="13.5752"
+       d="M 450.59415,472.61517 C 444.28513,355.82312 610.00964,171.17151 726.8017,164.86249"
+       class="id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path925"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="M 450.59415,472.61517 C 580.50232,303.6167 1028.8623,244.98129 1197.8608,374.8895"
+       class="id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path927"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="M 1343.4126,-266.72247 C 1099.4143,214.11728 12.157257,569.37952 -468.6825,325.38126"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path929"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1343.4126,-266.72247 c -126.1868,9.01956 -328.9963,-166.7313 -338.0159,-292.91809"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path931" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="m 1343.4126,-266.72247 c -13.1335,71.23974 -139.6934,158.39914 -210.9331,145.26566"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path933"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.67257"
+       d="M 1343.4126,-266.72247 C 1306.4075,-57.083305 936.44092,201.86768 726.8017,164.86249"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path935"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m 1343.4126,-266.72247 c 62.7212,106.95852 -3.6348,361.478116 -110.5933,424.19934"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path937"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 1343.4126,-266.72247 c -39.9194,-152.86646 129.501,-442.04535 282.3674,-481.96485"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path939"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.02655"
+       d="m 1343.4126,-266.72247 c 22.3981,-173.25891 315.8834,-399.55023 489.1423,-377.15222"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path941"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 1343.4126,-266.72247 c 288.5916,8.62866 708.5359,454.45898 699.9072,743.05053"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081 id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       stroke-opacity="0.8"
+       stroke="#4c483d"
+       id="path943"
+       style="stroke:#70c93c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="9.21239"
+       d="m -350.39621,-383.49573 c -5.04266,69.8645 -117.40347,167.09725 -187.26797,162.05455"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033 id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path945"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="m -350.39621,-383.49573 c -58.26196,95.52765 -288.94644,151.42618 -384.47403,93.16422"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033 id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path947"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="13.0619"
+       d="m -350.39621,-383.49573 c -15.4357,130.10996 -233.75412,302.121317 -363.8641,286.685633"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path949"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m -350.39621,-383.49573 c 76.40433,106.28818 31.57849,380.326927 -74.70969,456.731242"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path951"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="24.354"
+       d="m -537.66418,-221.44118 c -53.2193,25.66317 -171.54291,-15.67103 -197.20606,-68.89033"
+       class="id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517 id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path953"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="30"
+       d="m -537.66418,-221.44118 c -10.39301,60.24546 -116.35071,135.024096 -176.59613,124.631083"
+       class="id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path955"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="4.33628"
+       d="m -537.66418,-221.44118 c 81.44699,36.42368 148.98196,213.229697 112.55828,294.676692"
+       class="id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path957"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="21.0177"
+       d="m -734.87024,-290.33151 c 42.8263,34.5823 55.1922,150.69516 20.60993,193.521413"
+       class="id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491 id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       stroke-opacity="0.8"
+       stroke="#fbe1b2"
+       id="path959"
+       style="stroke:#52b48c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m -734.87024,-290.33151 c 176.38013,69.905 336.09274,439.33267 266.18774,615.71277"
+       class="id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path961"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.56637"
+       d="m -734.87024,-290.33151 c 134.66626,10.76053 320.52487,228.900754 309.76434,363.567022"
+       class="id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path963"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m -714.26031,-96.810097 c 133.55383,35.322708 280.90054,288.637517 245.57781,422.191357"
+       class="id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810 id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#a0a495"
+       id="path965"
+       style="stroke:#ee8cf8;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m -714.26031,-96.810097 c 91.84002,-23.821763 265.33267,78.205597 289.15441,170.045609"
+       class="id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path967"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="9.9823"
+       d="m -468.6825,325.38126 c -41.7138,-59.1445 -15.56787,-210.43192 43.5766,-252.145748"
+       class="id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path969"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="12.292"
+       d="m 728.4267,-437.58362 c 30.9826,-79.80536 197.16461,-153.03955 276.97,-122.05694"
+       class="id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527 id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       stroke-opacity="0.8"
+       stroke="#dee0d8"
+       id="path971" />
+    <path
+       fill="none"
+       stroke-width="5.61947"
+       d="m 728.4267,-437.58362 c 38.32751,120.59778 -85.07795,358.985735 -205.67572,397.313238"
+       class="id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path973"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 728.4267,-437.58362 c 67.32373,-245.0968 535.9545,-511.75635 781.0512,-444.43262"
+       class="id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527 id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path975"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="6.38938"
+       d="m 1005.3967,-559.64056 c 113.0533,62.22018 189.3029,325.13043 127.0828,438.18375"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461 id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path977"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1005.3967,-559.64056 c 89.1815,200.61959 -77.97544,635.321438 -278.595,724.50305"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path979"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.56637"
+       d="m 1005.3967,-559.64056 c 7.3449,200.40316 -282.24253,512.02528 -482.64572,519.370178"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path981"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="m 1005.3967,-559.64056 c 36.3411,-165.29145 338.7898,-358.71674 504.0812,-322.37568"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461 id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path983"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.53982"
+       d="m 1005.3967,-559.64056 c 86.2674,-161.88599 458.4973,-275.31409 620.3833,-189.04676"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461 id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path985"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.30973"
+       d="m 1132.4795,-121.45681 c -23.8716,138.399422 -267.27839,310.191 -405.6778,286.3193"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path987"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1132.4795,-121.45681 c 44.3046,98.094622 -36.3806,311.69335 -134.47523,355.99787"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path989"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="10.2389"
+       d="m 1132.4795,-121.45681 c 75.8547,35.718765 136.0586,203.078972 100.3398,278.93368"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path991"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.36283"
+       d="m 1132.4795,-121.45681 c 112.3456,86.192986 151.5743,384.00079 65.3813,496.34631"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path993"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1132.4795,-121.45681 c -26.786,-224.10624 269.1942,-600.4445 493.3005,-627.23051"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path995"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="m 1132.4795,-121.45681 c 35.5315,-244.4987 455.5767,-557.94944 700.0754,-522.41788"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path997"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="30"
+       d="M 726.8017,164.86249 C 644.96503,164.64606 522.53455,41.566338 522.75098,-40.270382"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106 id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path999"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="23.5841"
+       d="m 726.8017,164.86249 c 68.17627,-40.3048 230.89776,1.50235 271.20257,69.67857"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106 id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1001"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="14.6018"
+       d="m 726.8017,164.86249 c 99.72644,-102.680659 403.337,-107.112025 506.0176,-7.38562"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1003"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m 726.8017,164.86249 c 136.21722,-52.20642 418.8527,73.80978 471.0591,210.02701"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1005"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="21.2743"
+       d="M 522.75098,-40.270382 C 672.76392,-80.358757 957.91589,84.528122 998.00427,234.54106"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910 id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1007"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.76991"
+       d="M 522.75098,-40.270382 C 704.31409,-142.7346 1130.3551,-24.086258 1232.8193,157.47687"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1009"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="M 522.75098,-40.270382 C 740.80493,-92.260376 1145.8709,156.83554 1197.8608,374.8895"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1011"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 522.75098,-40.270382 C 532.11841,124.48698 299.03354,385.67413 134.27617,395.04159"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910 id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path1013"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="8.18584"
+       d="M 998.00427,234.54106 C 1029.5544,172.16521 1170.4435,125.9267 1232.8193,157.47687"
+       class="id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085 id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1015"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.82301"
+       d="m 998.00427,234.54106 c 68.04103,-11.90163 187.95493,72.30745 199.85653,140.34844"
+       class="id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1017"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="23.5841"
+       d="m 1232.8193,157.47687 c 36.4909,50.47423 15.5158,180.92181 -34.9585,217.41263"
+       class="id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472 id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       stroke-opacity="0.8"
+       stroke="#d5e9c3"
+       id="path1019"
+       style="stroke:#ef7c3c;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.28319"
+       d="M 1232.8193,157.47687 C 1366.8859,22.760834 1770.0598,21.78656 1904.7758,155.85309"
+       class="id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1021"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.25664"
+       d="M 1197.8608,374.8895 C 1121.0469,44.197845 1501.8633,-567.06067 1832.5549,-643.87469"
+       class="id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1023"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1"
+       d="m 1197.8608,374.8895 c 97.5757,-185.19027 521.7248,-316.61211 706.915,-219.03641"
+       class="id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1025"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="27.4336"
+       d="m 1509.4779,-882.01624 c 49.9262,3.40534 119.7075,83.40272 116.3021,133.32892"
+       class="id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359 id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1027"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="8.69911"
+       d="m 1509.4779,-882.01624 c 112.2437,-16.98712 306.09,125.89783 323.077,238.14155"
+       class="id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1029"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="7.67257"
+       d="m 1509.4779,-882.01624 c 30.2174,-54.61505 157.4662,-91.21154 212.0813,-60.99407"
+       class="id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359 id_oape.741_oclc.4770057679_v.7_i.4_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1031"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="27.6903"
+       d="m 1625.78,-748.68732 c 62.3175,-20.39245 186.3825,42.49512 206.7749,104.81263"
+       class="id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119 id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1033"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="18.1947"
+       d="m 1625.78,-748.68732 c -19.7087,-58.02044 37.7587,-174.61419 95.7792,-194.32299"
+       class="id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119 id_oape.741_oclc.4770057679_v.7_i.4_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1035"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="16.9115"
+       d="m 1832.5549,-643.87469 c -82.0262,-37.628 -148.6237,-217.10932 -110.9957,-299.13562"
+       class="id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120 id_oape.741_oclc.4770057679_v.7_i.4_div_3.d1e696"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1037"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="3.0531"
+       d="m 1832.5549,-643.87469 c 196.9734,49.74859 417.8108,419.83148 368.0623,616.804913"
+       class="id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120 id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1039"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="28.4602"
+       d="M 2200.6172,-27.069777 C 2178.0334,68.68309 2000.5287,178.4368 1904.7758,155.85309"
+       class="id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1041"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="8.95575"
+       d="m 2200.6172,-27.069777 c -68.3101,-33.975149 -119.812,-187.402743 -85.8369,-255.712663"
+       class="id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1043"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.61947"
+       d="M 2043.3198,476.32806 C 1951.516,439.94186 1868.3896,247.65691 1904.7758,155.85309"
+       class="id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692 id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1045"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="2.53982"
+       d="m 1904.7758,155.85309 c -45.7262,-129.72801 80.2764,-392.90932 210.0045,-438.63553"
+       class="id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262 id_oape.878_oclc.4770057679_v.8_i.4_"
+       stroke-opacity="0.8"
+       stroke="#867d68"
+       id="path1047"
+       style="stroke:#6fa2e5;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="1.51327"
+       d="M 1904.7758,155.85309 C 1598.5134,557.79077 536.21381,701.30383 134.27617,395.04159"
+       class="id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262 id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path1049"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+    <path
+       fill="none"
+       stroke-width="5.61947"
+       d="M 134.27617,395.04159 C -41.961472,442.55676 -377.5907,249.47316 -425.1059,73.235512"
+       class="id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838 id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       stroke-opacity="0.8"
+       stroke="#c6b18d"
+       id="path1051"
+       style="stroke:#ed718f;stroke-opacity:0.80000001" />
+  </g>
+  <g
+     id="nodes"
+     transform="translate(348.38727,-0.38790131)">
+    <circle
+       fill-opacity="1"
+       fill="#a0a495"
+       r="44.427483"
+       cx="-701.98639"
+       class="id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187"
+       cy="269.65457"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1054" />
+    <circle
+       fill-opacity="1"
+       fill="#a0a495"
+       r="45.190842"
+       cx="-688.46643"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696"
+       cy="113.66578"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1056" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="70.763351"
+       cx="726.8017"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       cy="164.86249"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1058"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#a0a495"
+       r="58.295166"
+       cx="-468.6825"
+       class="id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       cy="325.38126"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1060" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="68.727737"
+       cx="522.75098"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       cy="-40.270382"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1062"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#fbe1b2"
+       r="39.211197"
+       cx="-168.41698"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696"
+       cy="161.64236"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1064"
+       style="fill:#52b48c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1509.4779"
+       class="id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359"
+       cy="-882.01624"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1066"
+       r="41.755726"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1625.78"
+       class="id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       cy="-748.68732"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1068"
+       r="60.330788"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="34.503819"
+       cx="33.975052"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699"
+       cy="-27.645012"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1070"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="46.844784"
+       cx="998.00427"
+       class="id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085"
+       cy="234.54106"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1072"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#dee0d8"
+       r="35.012722"
+       cx="728.4267"
+       class="id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527"
+       cy="-437.58362"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1074" />
+    <circle
+       fill-opacity="1"
+       fill="#dee0d8"
+       r="44.936386"
+       cx="1095.5245"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213"
+       cy="-372.03134"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1076" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="51.170486"
+       cx="2043.3198"
+       class="id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       cy="476.32806"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1078"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="60.712467"
+       cx="-425.1059"
+       class="id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       cy="73.235512"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1080"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="2200.6172"
+       class="id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       cy="-27.069777"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1082"
+       r="51.043259"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1904.7758"
+       class="id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       cy="155.85309"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1084"
+       r="54.351147"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#fbe1b2"
+       r="41.119591"
+       cx="-350.39621"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033"
+       cy="-383.49573"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1086"
+       style="fill:#52b48c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="51.67939"
+       cx="1232.8193"
+       class="id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       cy="157.47687"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1088"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="73.180664"
+       cx="106.87829"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398"
+       cy="172.05563"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1090"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="37.557251"
+       cx="229.39911"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389"
+       cy="-16.988865"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1092"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="36.030533"
+       cx="2448.2551"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730"
+       cy="996.21826"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1094"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#fbe1b2"
+       r="62.111961"
+       cx="-537.66418"
+       class="id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       cy="-221.44118"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1096"
+       style="fill:#52b48c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="38.956741"
+       cx="2480.9011"
+       class="id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409"
+       cy="827.11292"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1098"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#fbe1b2"
+       r="44.427483"
+       cx="-734.87024"
+       class="id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       cy="-290.33151"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1100"
+       style="fill:#52b48c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#fbe1b2"
+       r="53.842239"
+       cx="-714.26031"
+       class="id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       cy="-96.810097"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1102"
+       style="fill:#52b48c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#dee0d8"
+       r="46.590332"
+       cx="1005.3967"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       cy="-559.64056"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1104" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="35.267174"
+       cx="-311.6033"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188"
+       cy="-176.99265"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1106"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="120"
+       cx="105.76192"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       cy="-328.3374"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1108"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="85.903305"
+       cx="2352.5933"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       cy="643.60919"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1110"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="60.458015"
+       cx="2300.0266"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750"
+       cy="897.10992"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1112"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="36.030533"
+       cx="2256.7249"
+       class="id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448"
+       cy="1043.6827"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1114"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="54.096691"
+       cx="2073.2617"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537"
+       cy="935.43243"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1116"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="34.885494"
+       cx="1132.4795"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107"
+       cy="-121.45681"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1118"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1832.5549"
+       class="id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       cy="-643.87469"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1120"
+       r="56.768448"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1721.5592"
+       class="id_oape.741_oclc.4770057679_v.7_i.4_div_3.d1e696"
+       cy="-943.01031"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1122"
+       r="40.101784"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="34.503819"
+       cx="134.27617"
+       class="id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       cy="395.0416"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1124"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#4c483d"
+       r="34.75827"
+       cx="2156.4722"
+       class="id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       cy="718.49982"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1126"
+       style="fill:#70c93c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="41.501274"
+       cx="1197.8608"
+       class="id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       cy="374.8895"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1128"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="2285.6062"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808"
+       cy="-206.12431"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1130"
+       r="34.75827"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="34.75827"
+       cx="450.59415"
+       class="id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       cy="472.61517"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1132"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#d5e9c3"
+       r="38.956741"
+       cx="417.22849"
+       class="id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640"
+       cy="196.11891"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1134"
+       style="fill:#ef7c3c;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="2080.2629"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844"
+       cy="-510.78027"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1136"
+       r="44.809158"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="2114.7803"
+       class="id_oape.878_oclc.4770057679_v.8_i.4_"
+       cy="-282.78244"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1138"
+       r="51.933842"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#dee0d8"
+       r="36.157761"
+       cx="1343.4126"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       cy="-266.72247"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1140" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1830.4835"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       cy="-342.00116"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1142"
+       r="61.475826"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#867d68"
+       cx="1903.6881"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       cy="-148.78035"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1144"
+       r="42.264633"
+       style="fill:#6fa2e5;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#dee0d8"
+       r="40.483459"
+       cx="1697.7352"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818"
+       cy="-154.29137"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1146" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="39.847328"
+       cx="-280.57779"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096"
+       cy="412.54236"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1148"
+       style="fill:#ed718f;fill-opacity:1" />
+    <circle
+       fill-opacity="1"
+       fill="#c6b18d"
+       r="34.631042"
+       cx="-97.405731"
+       class="id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045"
+       cy="346.39755"
+       stroke="#000000"
+       stroke-opacity="1"
+       stroke-width="1"
+       id="circle1150"
+       style="fill:#ed718f;fill-opacity:1" />
+  </g>
+  <g
+     id="node-labels"
+     transform="translate(348.38727,-0.38790131)">
+    <text
+       font-size="71px"
+       x="-707.81787"
+       y="266.51035"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.185_oclc.4770057679_v.3_i.3_div_5.d1e2187"
+       id="text1153">Ibn al-Muqaffaʿ</text>
+    <text
+       font-size="72px"
+       x="-688.46643"
+       y="112.41647"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.3_i.4_div_3.d1e696"
+       id="text1155">NA</text>
+    <text
+       font-size="113px"
+       x="734.57697"
+       y="162.14706"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.707_oclc.4770057679_v.3_i.4_div_5.d1e1106"
+       id="text1157">Aḥmad Zakī</text>
+    <text
+       font-size="93px"
+       x="-560.04199"
+       y="333.88046"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.497_oclc.4770057679_v.3_i.5_div_3.d1e696"
+       id="text1159">ʿAbd al-Ḥamīd al-Kātib</text>
+    <text
+       font-size="110px"
+       x="526.63861"
+       y="-39.74855"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.707_oclc.4770057679_v.3_i.7_div_4.d1e910"
+       id="text1161">Aḥmad Zakī</text>
+    <text
+       font-size="63px"
+       x="-168.41698"
+       y="158.84837"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.3_i.9_div_3.d1e696"
+       id="text1163">NA</text>
+    <text
+       font-size="67px"
+       x="1509.4779"
+       y="-880.20612"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.741_oclc.4770057679_v.3_i.10_div_6.d1e2359"
+       id="text1165">Charles Seignobos</text>
+    <text
+       font-size="97px"
+       x="1625.78"
+       y="-739.97412"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.741_oclc.4770057679_v.3_i.11_div_5.d1e1119"
+       id="text1167">Charles Seignobos</text>
+    <text
+       font-size="55px"
+       x="33.975052"
+       y="-31.812046"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.3_i.12_div_3.d1e699"
+       id="text1169">NA</text>
+    <text
+       font-size="75px"
+       x="998.00427"
+       y="237.19409"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.707_oclc.4770057679_v.4_i.1_div_3.d1e1085"
+       id="text1171">Aḥmad Zakī</text>
+    <text
+       font-size="56px"
+       x="728.4267"
+       y="-438.34561"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.632_oclc.4770057679_v.4_i.5-6_div_6.d1e1527"
+       id="text1173">Jirjī Ḥaddād</text>
+    <text
+       font-size="72px"
+       x="1095.5245"
+       y="-373.28064"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.4_i.7_div_27.d1e4213"
+       id="text1175">NA</text>
+    <text
+       font-size="82px"
+       x="2043.3198"
+       y="480.49869"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.878_oclc.4770057679_v.4_i.8_div_3.d1e692"
+       id="text1177">Muḥammad Kurd ʿAlī</text>
+    <text
+       font-size="97px"
+       x="-425.1059"
+       y="76.300659"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_أبو_اليسر_ابراهيم_بن_محمد_بن_المدبر_oclc.4770057679_v.4_i.9_div_4.d1e1061"
+       id="text1179">Abū al-Yasar</text>
+    <text
+       font-size="82px"
+       x="2200.6172"
+       y="-22.899164"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.878_oclc.4770057679_v.4_i.12_div_7.d1e3096"
+       id="text1181">Muḥammad Kurd ʿAlī</text>
+    <text
+       font-size="87px"
+       x="1904.7758"
+       y="161.10768"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.878_oclc.4770057679_v.5_i.1_div_8.d1e3262"
+       id="text1183">Muḥammad Kurd ʿAlī</text>
+    <text
+       font-size="66px"
+       x="-350.39621"
+       y="-381.95596"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.482_oclc.4770057679_v.5_i.3_div_4.d1e2033"
+       id="text1185">Jamāl al-Dīn al-Qāsimī</text>
+    <text
+       font-size="83px"
+       x="1232.8193"
+       y="161.86427"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.707_oclc.4770057679_v.5_i.6_div_5.d1e4472"
+       id="text1187">Aḥmad Zakī</text>
+    <text
+       font-size="117px"
+       x="106.87829"
+       y="178.52971"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.5_i.9_div_2.d1e1398"
+       id="text1189">NA</text>
+    <text
+       font-size="60px"
+       x="229.39911"
+       y="-20.297745"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.5_i.10_div_2.d1e1389"
+       id="text1191">NA</text>
+    <text
+       font-size="58px"
+       x="2448.2551"
+       y="992.56616"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.5_i.11_div_6.d1e2730"
+       id="text1193">NA</text>
+    <text
+       font-size="99px"
+       x="-665.95624"
+       y="-227.87874"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.482_oclc.4770057679_v.6_i.2_div_2.d1e1517"
+       id="text1195">Jamāl al-Dīn al-Qāsimī</text>
+    <text
+       font-size="62px"
+       x="2480.9011"
+       y="824.14728"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.2_div_20.d1e2409"
+       id="text1197">NA</text>
+    <text
+       font-size="71px"
+       x="-734.87024"
+       y="-287.64429"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.482_oclc.4770057679_v.6_i.3_div_2.d1e1491"
+       id="text1199">Jamāl al-Dīn al-Qāsimī</text>
+    <text
+       font-size="86px"
+       x="-714.26031"
+       y="-90.680496"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.482_oclc.4770057679_v.6_i.4_div_7.d1e1810"
+       id="text1201">Jamāl al-Dīn al-Qāsimī</text>
+    <text
+       font-size="75px"
+       x="1005.3967"
+       y="-556.04456"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.632_oclc.4770057679_v.6_i.4_div_26.d1e2461"
+       id="text1203">Jirjī Ḥaddād</text>
+    <text
+       font-size="56px"
+       x="-311.6033"
+       y="-180.98805"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_2.d1e1188"
+       id="text1205">NA</text>
+    <text
+       font-size="192px"
+       x="105.76192"
+       y="-308.991"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.5_div_3.d1e2089"
+       id="text1207">NA</text>
+    <text
+       font-size="137px"
+       x="2352.5933"
+       y="653.51587"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.6_div_2.d1e1190"
+       id="text1209">NA</text>
+    <text
+       font-size="97px"
+       x="2300.0266"
+       y="900.15137"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.10_div_24.d1e1750"
+       id="text1211">NA</text>
+    <text
+       font-size="58px"
+       x="2256.7249"
+       y="1040.0306"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.11_div_3.d1e1448"
+       id="text1213">NA</text>
+    <text
+       font-size="87px"
+       x="2073.2617"
+       y="936.75757"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.6_i.12_div_3.d1e1537"
+       id="text1215">NA</text>
+    <text
+       font-size="56px"
+       x="1132.4795"
+       y="-122.21881"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.638_oclc.4770057679_v.7_i.2_div_4.d1e1107"
+       id="text1217">Ṭaha Ḥusayn</text>
+    <text
+       font-size="91px"
+       x="1832.5549"
+       y="-636.54211"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.741_oclc.4770057679_v.7_i.3_div_5.d1e1120"
+       id="text1219">Charles Seignobos</text>
+    <text
+       font-size="64px"
+       x="1721.5592"
+       y="-941.8905"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.741_oclc.4770057679_v.7_i.4_div_3.d1e696"
+       id="text1221">Charles Seignobos</text>
+    <text
+       font-size="55px"
+       x="134.27617"
+       y="393.3587"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.917_oclc.4770057679_v.7_i.5_div_6.d1e1838"
+       id="text1223">ʿAbdallah Mukhliṣ</text>
+    <text
+       font-size="56px"
+       x="2156.4722"
+       y="714.50439"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.7_i.7_div_4.d1e803"
+       id="text1225">NA</text>
+    <text
+       font-size="66px"
+       x="1197.8608"
+       y="375.59137"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.707_oclc.4770057679_v.7_i.8_div_6.d1e1132"
+       id="text1227">Aḥmad Zakī</text>
+    <text
+       font-size="56px"
+       x="2285.6062"
+       y="-210.11972"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.7_i.10_div_4.d1e808"
+       id="text1229">NA</text>
+    <text
+       font-size="56px"
+       x="450.59415"
+       y="471.14908"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.371_oclc.4770057679_v.7_i.12_div_5.d1e1681"
+       id="text1231">Muḥammad al-Khuḍrī</text>
+    <text
+       font-size="62px"
+       x="417.22849"
+       y="193.15329"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.1_div_5.d1e1640"
+       id="text1233">NA</text>
+    <text
+       font-size="72px"
+       x="2080.2629"
+       y="-512.0296"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.3_div_4.d1e844"
+       id="text1235">NA</text>
+    <text
+       font-size="83px"
+       x="2114.7803"
+       y="-278.39502"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.878_oclc.4770057679_v.8_i.4_"
+       id="text1237">Muḥammad Kurd ʿAlī</text>
+    <text
+       font-size="58px"
+       x="1343.4126"
+       y="-267.71249"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_oape.4065_oclc.4770057679_v.8_i.4_div_8.d1e2081"
+       id="text1239">Wāṣif Buṭrus Ghālī</text>
+    <text
+       font-size="98px"
+       x="1830.4835"
+       y="-338.78806"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.5_div_6.d1e1213"
+       id="text1241">NA</text>
+    <text
+       font-size="68px"
+       x="1903.6881"
+       y="-150.71619"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.7_div_7.d1e1254"
+       id="text1243">NA</text>
+    <text
+       font-size="65px"
+       x="1697.7352"
+       y="-156.7421"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_3.d1e818"
+       id="text1245">NA</text>
+    <text
+       font-size="64px"
+       x="-280.57779"
+       y="409.92001"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.4770057679_v.8_i.11-12_div_4.d1e1096"
+       id="text1247">NA</text>
+    <text
+       font-size="55px"
+       x="-97.405731"
+       y="342.23053"
+       fill="#000000"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
+       font-family="Baskerville"
+       class="id_NN_oclc.644997575_v.2_i.11-12_div_16.d2e2045"
+       id="text1249">NA</text>
+  </g>
+</svg>
