@@ -40,7 +40,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 ## Project Jarāʾid
 
 :::{.c_width-50 .c_right}
-![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png)
+![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats}
 :::
 
 :::{.c_width-50 .c.left}
