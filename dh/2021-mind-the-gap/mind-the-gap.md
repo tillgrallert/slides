@@ -8,9 +8,6 @@ date: 2021-03-04
 duration: 25
 ---
 
-<!-- To do -->
-<!-- - comments on collaborations -->
-
 
 ## Title slide
 
@@ -74,12 +71,21 @@ Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
 
 ## corpus building: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
+:::{.c_width-60 .c_left}
+
 1. Digitale Editionen: TEI XML.
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
 2. Soziale digitale Editionen, die auf [GitHub](https://github.com/openarabicpe) gehostet sind: <!-- gradually improve transcription and mark-up -->
 2. Veröffentlichungen werde auf [Zenodo](https://zenodo.org) archiviert: DOI für dauerhafte Referenzierbarkeit
-3. [Statische Webansichten](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.
+3. [Statische Webansichten](https://github.com/openarabicpe/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
+
+:::
+:::{.c_width-30 .c_right}
+
+![[Webansicht von *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png)
+
+:::
 
 ## OpenArabicPE's corpus
 
@@ -112,15 +118,18 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 - Auszeichnung aller Erwähnungen von Periodika im Text
     + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
 - Normdatensätze für die Disambiguierung und Anreicherung von Daten
-    + zumeist automisch erstellt und verknüpft
+    + zumeist automatisch erstellt und verknüpft
 
 :::
 :::{.c_width-50 .c_right}
+<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 
+<!-- ägyptische Zeitschrift -->
 ```xml
 والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644" xml:id="title_16.d2e2291">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
 ```
 
+<!-- irakische Zeitung -->
 ```xml
 وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
 ```
@@ -188,12 +197,11 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 :::{.c_width-30 .c_right}
 
-1. Nur wenige Knoten sind von relativer Bedeutung
+1. Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
 2. Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
-3. Kernnetzwerk: Viele Iraker
-4. Kernnetzwerk: Wenige Syrer
-5. Kernnetzwerk: Wenige Christen
-6. Kernnetzwerk: Viele Dichter
+3. Kernnetzwerk: Viele Iraker (6), wenige Syrer (2)
+5. Kernnetzwerk: Wenige Christen (2)
+6. Kernnetzwerk: Viele Dichter (7) und Journalisten (7)
 7. Kernnetzwerk: praktisch nicht in der Literatur abgebildet
 
 :::
