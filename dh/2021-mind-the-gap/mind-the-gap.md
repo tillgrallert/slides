@@ -26,6 +26,86 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 # 1. Digitalität als egalitäres Versprechen
 # 2. Digitalität als extreme Ungleichheit
+# Arabische Schrift und Sprache
+
+## Arabisch
+
+Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift -->
+
++ aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
++ Buchstaben werden mehrheitlich verbunden
++ Schriftrichtung von rechts nach links
+
+![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample.png){#fig:arabic-sample}
+
+## Arabisch in der Digitalität
+
+Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt
+
++ OCR ist nicht funktional
++ Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
+
+## Character encoding: es herrscht Chaos
+
+:::{.c_width-50 .c_left}
+
+- Vor Unicode lange Zeit gar nicht unterstützt
+- Unicode ist ein Industriekonsortium mit US-Dominanz
+- Encodings sind politische Entscheidungen und folgen Sprachen, nicht Schriften
+- OS, Browser etc. normalisieren die Varianz nicht.
+- Folge: Volltextsuchen sind nicht aussagekräftig
+
+:::
+:::{.c_width-50 .c_right}
+
+![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1}
+
+![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata.png){#fig:arabic-mecca-2}
+
+:::
+
+## Rendering: basale Standards werden nicht unterstützt
+
+### Beispiel 1: Werbung (Grafik- und Layout Programme)
+
+:::{.c_width-50 .c_left}
+
+<!-- Nicht verbunden und von rechts nach links -->
+
+!["Arabische" Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: <https://twitter.com/2awbi2atiye/status/1347351918268489728>](../../assets/dh/ErLBbWwVgAErjHy.jpg){#fig:arabic-fail-covid}
+
+:::
+:::{.c_width-50 .c_right}
+
+<!-- Korrektur -->
+
+![Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: <https://twitter.com/wcpublichealth/status/1347622725469130752>](../../assets/dh/ErO3qtUVkAEUAQ_.jpg){#fig:arabic-fail-covid-corrected}
+
+:::
+
+<!-- ![Die schwedischen Liberalen in ihrer Selbstbeschreibung (franz., arab.). Quelle: https://pbs.twimg.com/media/DmB222GXoAEyBux](../../assets/dh/DmB222GXoAEyBux.jpg)   -->
+
+## Rendering: basale Standards werden nicht unterstützt
+### Beispiel 2: Webbrowser und HTML 5
+
+Das browsereigene CSS ignoriert `@lang` und stellt Arabisch als linksbündig dar
+
+:::{lang="ar"}
+كانت أمريكا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.
+:::
+
+:::{.c_width-30}
+![Chrome](../../assets/dh/html5-lang_ar-chrome-2.png){#fig:arabic-fail-chrome}
+:::
+
+:::{.c_width-30}
+![Firefox](../../assets/dh/html5-lang_ar-firefox-2.png){#fig:arabic-fail-firefox}
+:::
+
+:::{.c_width-30}
+![Safari](../../assets/dh/html5-lang_ar-safari-2.png){#fig:arabic-fail-safari}
+:::
+
 # 3. Meine Ansätze um diese zu Addressieren
 # 3.1 Knowledge gap: Project Jarāʾid (2012--)
 ## [Project Jarāʾid](https://projectjaraid.github.io/)
@@ -71,7 +151,7 @@ Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
 
 ## corpus building: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
-:::{.c_width-60 .c_left}
+:::{.c_width-50 .c_left}
 
 1. Digitale Editionen: TEI XML.
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
@@ -81,13 +161,13 @@ Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-50 .c_right}
 
-![[Webansicht von *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png)
+![[Webansicht von *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png){#fig:webview-muqtabas}
 
 :::
 
-## OpenArabicPE's corpus
+## OpenArabicPE: Korpus
 
 | Periodikum                                                                        | DOI                                                              | Bände | Ausgaben | Artikel | Wörter   | Wörter/Artikel |
 | :--------                                                                         | :--                                                              | ----: | ----:    | ----:    | ----:   | ----:             |
@@ -103,10 +183,13 @@ Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
 Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 
-# 3.3 Tool gap: OCR/HTR für arabische Periodika (2018--)
+# 3.3 Tool gap: OCR/HTR für arabische Periodika (2019--)
+## OCR/HTR für Arabisch
 
-
-## OCR/HTR für arabische Periodika
+- Arabisch ist eine Ligatur: كانت أميركا مجهولة
+- Nicht alle Buchstaben werden in Schreibrichtung verbunden
+- Buchstaben liegen je nach Schrifttype nicht auf einer Zeile: ![](../../assets/dh/arabic-script_sample_short.png)
+- Traditionelle Ansätze basieren auf Segmentierung: ك ا ن ت  أ م ي ر ك ا  م ج ه و ل ة
 
 # 4. Meine analytischen Ansätze
 # 4.1 Netzwerkanalyse
@@ -145,12 +228,13 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 :::{.c_width-30 .c_right}
 
-1. Nur wenige Knoten sind von relativer Bedeutung <!-- (44 von 465) -->
+1. Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
+2. Alle Periodika sind hauptsächlich selbstreferentiell
 2. *al-Muqtabas* ist anders
-3. Alle Periodika sind hauptsächlich selbstreferentiell
-4. Überraschende Mitglieder des Kernnetzwerks
-6. Kernnetzwerk: Hochgradig geographisch konzentriert <!-- (10 Orte) -->
-7. Kernnetzwerk: Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut
+3. Kernnetzwerk:
+    - Überraschende Mitglieder
+    - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
+    - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut
 
 :::
 
@@ -199,10 +283,11 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 1. Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
 2. Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
-3. Kernnetzwerk: Viele Iraker (6), wenige Syrer (2)
-5. Kernnetzwerk: Wenige Christen (2)
-6. Kernnetzwerk: Viele Dichter (7) und Journalisten (7)
-7. Kernnetzwerk: praktisch nicht in der Literatur abgebildet
+3. Kernnetzwerk:
+    - Viele Iraker (6), wenige Syrer (2)
+    - Wenige Christen (2)
+    - Viele Dichter (7) und Journalisten (7)
+    - praktisch nicht in der Literatur abgebildet
 
 :::
 

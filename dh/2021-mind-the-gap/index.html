@@ -168,7 +168,7 @@
     color:red;
   }
   </style>
-  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script type="text/javascript" src="../../js/slidy.js"></script>
   <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
   <meta name="duration" content="25" />
@@ -207,6 +207,99 @@ Till Grallert
 
 </div>
 
+<div id="arabische-schrift-und-sprache" class="title-slide slide section level1">
+<h1>Arabische Schrift und Sprache</h1>
+
+</div>
+<div id="arabisch" class="slide section level2">
+<h1>Arabisch</h1>
+<p>Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift --></p>
+<ul>
+<li>aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.</li>
+<li>Buchstaben werden mehrheitlich verbunden</li>
+<li>Schriftrichtung von rechts nach links</li>
+</ul>
+<div class="figure">
+<img src="../../assets/dh/arabic-script_sample.png" id="fig:arabic-sample" alt="" />
+<p class="caption">Figure 1: Beispiel: “Amerika und die arabischen Gelehrten”. <a href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249"><em>al-Muqtabas</em> 2(1)</a></p>
+</div>
+</div>
+<div id="arabisch-in-der-digitalität" class="slide section level2">
+<h1>Arabisch in der Digitalität</h1>
+<p>Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt</p>
+<ul>
+<li>OCR ist nicht funktional</li>
+<li>Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten</li>
+</ul>
+</div>
+<div id="character-encoding-es-herrscht-chaos" class="slide section level2">
+<h1>Character encoding: es herrscht Chaos</h1>
+<div class="c_width-50 c_left">
+<ul>
+<li>Vor Unicode lange Zeit gar nicht unterstützt</li>
+<li>Unicode ist ein Industriekonsortium mit US-Dominanz</li>
+<li>Encodings sind politische Entscheidungen und folgen Sprachen, nicht Schriften</li>
+<li>OS, Browser etc. normalisieren die Varianz nicht.</li>
+<li>Folge: Volltextsuchen sind nicht aussagekräftig</li>
+</ul>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../../assets/dh/arabic-script_unicode-example-makkiyya.png" id="fig:arabic-mecca-1" alt="" />
+<p class="caption">Figure 2: 32 Varianten von “mekkanisch” (مكية). Quelle: Thomas Milo <em>Patterns of confusability</em> 2014.</p>
+</div>
+<div class="figure">
+<img src="../../assets/dh/arabic-script_unicode-example-wikidata.png" id="fig:arabic-mecca-2" alt="" />
+<p class="caption">Figure 3: Browsersuch nach “مك” im Wikidataeintrag für Mekka (<a href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</p>
+</div>
+</div>
+</div>
+<div id="rendering-basale-standards-werden-nicht-unterstützt" class="slide section level2">
+<h1>Rendering: basale Standards werden nicht unterstützt</h1>
+<h3 id="beispiel-1-werbung-grafik--und-layout-programme">Beispiel 1: Werbung (Grafik- und Layout Programme)</h3>
+<div class="c_width-50 c_left">
+<!-- Nicht verbunden und von rechts nach links -->
+<div class="figure">
+<img src="../../assets/dh/ErLBbWwVgAErjHy.jpg" id="fig:arabic-fail-covid" alt="" />
+<p class="caption">Figure 4: “Arabische” Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: <a href="https://twitter.com/2awbi2atiye/status/1347351918268489728" class="uri">https://twitter.com/2awbi2atiye/status/1347351918268489728</a></p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<!-- Korrektur -->
+<div class="figure">
+<img src="../../assets/dh/ErO3qtUVkAEUAQ_.jpg" id="fig:arabic-fail-covid-corrected" alt="" />
+<p class="caption">Figure 5: Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: <a href="https://twitter.com/wcpublichealth/status/1347622725469130752" class="uri">https://twitter.com/wcpublichealth/status/1347622725469130752</a></p>
+</div>
+</div>
+<!-- ![Die schwedischen Liberalen in ihrer Selbstbeschreibung (franz., arab.). Quelle: https://pbs.twimg.com/media/DmB222GXoAEyBux](../../assets/dh/DmB222GXoAEyBux.jpg)   -->
+</div>
+<div id="rendering-basale-standards-werden-nicht-unterstützt-1" class="slide section level2">
+<h1>Rendering: basale Standards werden nicht unterstützt</h1>
+<h3 id="beispiel-2-webbrowser-und-html-5">Beispiel 2: Webbrowser und HTML 5</h3>
+<p>Das browsereigene CSS ignoriert <code>@lang</code> und stellt Arabisch als linksbündig dar</p>
+<div lang="ar">
+<p>كانت أمريكا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.</p>
+</div>
+<div class="c_width-30">
+<div class="figure">
+<img src="../../assets/dh/html5-lang_ar-chrome-2.png" id="fig:arabic-fail-chrome" alt="" />
+<p class="caption">Figure 6: Chrome</p>
+</div>
+</div>
+<div class="c_width-30">
+<div class="figure">
+<img src="../../assets/dh/html5-lang_ar-firefox-2.png" id="fig:arabic-fail-firefox" alt="" />
+<p class="caption">Figure 7: Firefox</p>
+</div>
+</div>
+<div class="c_width-30">
+<div class="figure">
+<img src="../../assets/dh/html5-lang_ar-safari-2.png" id="fig:arabic-fail-safari" alt="" />
+<p class="caption">Figure 8: Safari</p>
+</div>
+</div>
+</div>
+
 <div id="meine-ansätze-um-diese-zu-addressieren" class="title-slide slide section level1">
 <h1>3. Meine Ansätze um diese zu Addressieren</h1>
 
@@ -233,7 +326,7 @@ Till Grallert
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/jaraid/jaraid_holdings_pie-3.png" id="fig:jaraid-stats" alt="" />
-<p class="caption">Figure 1: In Project Jarāʾid erfasste Periodika</p>
+<p class="caption">Figure 9: In Project Jarāʾid erfasste Periodika</p>
 </div>
 </div>
 <div class="c_width-50 c.left">
@@ -297,7 +390,7 @@ Till Grallert
 </div>
 <div id="corpus-building-open-arabic-periodical-editions-1" class="slide section level2">
 <h1>corpus building: <a href="https://openarabicpe.github.io">Open Arabic Periodical Editions</a></h1>
-<div class="c_width-60 c_left">
+<div class="c_width-50 c_left">
 <ol style="list-style-type: decimal">
 <li>Digitale Editionen: TEI XML.</li>
 <li>Offene Lizenzen: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)</li>
@@ -307,15 +400,15 @@ Till Grallert
 <li>Bibliographische Metadaten sind als öffentliche <a href="https://www.zotero.org/groups/openarabicpe">Zotero-Gruppe</a> gehostet</li>
 </ol>
 </div>
-<div class="c_width-30 c_right">
+<div class="c_width-50 c_right">
 <div class="figure">
-<img src="../../assets/OpenArabicPE/boilerplate_muqtabas.png" alt="" />
-<p class="caption"><a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
+<img src="../../assets/OpenArabicPE/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
+<p class="caption">Figure 10: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
 </div>
 </div>
-<div id="openarabicpes-corpus" class="slide section level2">
-<h1>OpenArabicPE’s corpus</h1>
+<div id="openarabicpe-korpus" class="slide section level2">
+<h1>OpenArabicPE: Korpus</h1>
 <div id="tbl:openarabicpe-corpus">
 <table>
 <caption>Table 2: Übersicht über das Periodikakorpus</caption>
@@ -408,12 +501,18 @@ Till Grallert
 </div>
 </div>
 
-<div id="tool-gap-ocrhtr-für-arabische-periodika-2018" class="title-slide slide section level1">
-<h1>3.3 Tool gap: OCR/HTR für arabische Periodika (2018–)</h1>
+<div id="tool-gap-ocrhtr-für-arabische-periodika-2019" class="title-slide slide section level1">
+<h1>3.3 Tool gap: OCR/HTR für arabische Periodika (2019–)</h1>
 
 </div>
-<div id="ocrhtr-für-arabische-periodika" class="slide section level2">
-<h1>OCR/HTR für arabische Periodika</h1>
+<div id="ocrhtr-für-arabisch" class="slide section level2">
+<h1>OCR/HTR für Arabisch</h1>
+<ul>
+<li>Arabisch ist eine Ligatur: كانت أميركا مجهولة</li>
+<li>Nicht alle Buchstaben werden in Schreibrichtung verbunden</li>
+<li>Buchstaben liegen je nach Schrifttype nicht auf einer Zeile: <img src="../../assets/dh/arabic-script_sample_short.png" /></li>
+<li>Traditionelle Ansätze basieren auf Segmentierung: ك ا ن ت أ م ي ر ك ا م ج ه و ل ة</li>
+</ul>
 </div>
 
 <div id="meine-analytischen-ansätze" class="title-slide slide section level1">
@@ -457,17 +556,20 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" id="fig:network-periodicals" alt="" />
-<p class="caption">Figure 2: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
+<p class="caption">Figure 11: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
-<li>Nur wenige Knoten sind von relativer Bedeutung <!-- (44 von 465) --></li>
-<li><em>al-Muqtabas</em> ist anders</li>
+<li>Nur wenige Knoten sind von relativer Bedeutung (44 von 465)</li>
 <li>Alle Periodika sind hauptsächlich selbstreferentiell</li>
-<li>Überraschende Mitglieder des Kernnetzwerks</li>
-<li>Kernnetzwerk: Hochgradig geographisch konzentriert <!-- (10 Orte) --></li>
-<li>Kernnetzwerk: Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut</li>
+<li><em>al-Muqtabas</em> ist anders</li>
+<li>Kernnetzwerk:
+<ul>
+<li>Überraschende Mitglieder</li>
+<li>Hochgradig geographisch konzentriert <!-- (10 Orte) --></li>
+<li>Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut</li>
+</ul></li>
 </ol>
 </div>
 </div>
@@ -514,17 +616,20 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" id="fig:network-authors" alt="" />
-<p class="caption">Figure 3: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
+<p class="caption">Figure 12: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
 <li>Nur wenige Knoten sind von relativer Bedeutung (14 von 319)</li>
 <li>Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt</li>
-<li>Kernnetzwerk: Viele Iraker (6), wenige Syrer (2)</li>
-<li>Kernnetzwerk: Wenige Christen (2)</li>
-<li>Kernnetzwerk: Viele Dichter (7) und Journalisten (7)</li>
-<li>Kernnetzwerk: praktisch nicht in der Literatur abgebildet</li>
+<li>Kernnetzwerk:
+<ul>
+<li>Viele Iraker (6), wenige Syrer (2)</li>
+<li>Wenige Christen (2)</li>
+<li>Viele Dichter (7) und Journalisten (7)</li>
+<li>praktisch nicht in der Literatur abgebildet</li>
+</ul></li>
 </ol>
 </div>
 </div>
@@ -538,25 +643,25 @@ Till Grallert
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas" alt="" />
-<p class="caption">Figure 4: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
+<p class="caption">Figure 13: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq" alt="" />
-<p class="caption">Figure 5: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
+<p class="caption">Figure 14: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
-<p class="caption">Figure 6: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
+<p class="caption">Figure 15: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png" id="fig:authors-lughat" alt="" />
-<p class="caption">Figure 7: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
+<p class="caption">Figure 16: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
 </div>
 </div>
 </div>
@@ -609,7 +714,7 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg" id="fig:stylometry-muqtabas-w5000" alt="" />
-<p class="caption">Figure 8: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
+<p class="caption">Figure 17: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
 </div>
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 </div>
