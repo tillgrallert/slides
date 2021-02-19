@@ -387,7 +387,8 @@ div.figure p.caption {
     font-weight:lighter;
 }
 div.figure img {
-    float:right;
+    display: block;
+    float: right;
     /*max-height: 80%;*/
     max-height: 700px;
     /*max-width:80%;*/
@@ -395,10 +396,17 @@ div.figure img {
     /*height: inherit;*/
 }
 
-img {
+/* inline images */
+p img,
+li img {
+  display: inline-block;
+  height: 1em;
+}
+
+/*img {
   max-height: 700px;
   max-width: 100%;
-}
+}*/
 
 /* external content, including local html pages */
 iframe {
@@ -413,18 +421,18 @@ iframe {
   /*border:none;*/
 }
 
-.size-80 {
+/*.size-80 {
   display: block;
-  /*width: 80%;*/
+  width: 80%;
   height: 80%;
-}
+}*/
 
 /*****************
 columns
 ******************/
 
 div.c_width-60 {
-    width:66%;
+    width:64%;
     position: relative;
     /*float: left;*/
 }
