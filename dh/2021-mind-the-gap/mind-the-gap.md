@@ -117,7 +117,7 @@ Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch l
 <!-- - Addressiert den **knowledge gap** mit einer Webseite und offenen Datensätzen (TEI XML). -->
 
 - Bibliographische Erfassung sämtlicher arabischer Periodika seit ihrer Entstehung um 1800 bis 1930.
-    + Webseite und offenen Datensätzen (TEI XML)
+    + Webseite und offene Datensätzen (TEI XML)
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke)
 
@@ -321,7 +321,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
 
-![](../../assets/clipart/iceberg-2070977_960_720.png)
+![ ](../../assets/clipart/iceberg-2070977_960_720.png)
 
 
 # Stilometrische Autorenschaftsbestimmung
