@@ -33,8 +33,8 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift -->
 
 + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
-+ Buchstaben werden mehrheitlich verbunden
 + Schriftrichtung von rechts nach links
++ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
 
 ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample.png){#fig:arabic-sample}
 
@@ -43,14 +43,18 @@ Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer
 Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt
 
 + OCR ist nicht funktional
++ Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
 + Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
++ Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
 
-## Character encoding: es herrscht Chaos
+
+## Arabisch schreiben?
 
 :::{.c_width-50 .c_left}
 
 - Vor Unicode lange Zeit gar nicht unterstützt
-- Unicode ist ein Industriekonsortium mit US-Dominanz
+- Unicode ist ein in Mountain View ansässiges Industriekonsortium <!-- mit US-Dominanz -->
+    + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, *Sultanat von Oman*
 - Encodings sind politische Entscheidungen und folgen Sprachen, nicht Schriften
 - OS, Browser etc. normalisieren die Varianz nicht.
 - Folge: Volltextsuchen sind nicht aussagekräftig
@@ -88,7 +92,7 @@ Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstütz
 ## Rendering: basale Standards werden nicht unterstützt
 ### Beispiel 2: Webbrowser und HTML 5
 
-Das browsereigene CSS ignoriert `@lang` und stellt Arabisch als linksbündig dar
+Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch linksbündig dar
 
 :::{lang="ar"}
 كانت أمريكا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.

@@ -216,8 +216,8 @@ Till Grallert
 <p>Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift --></p>
 <ul>
 <li>aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.</li>
-<li>Buchstaben werden mehrheitlich verbunden</li>
 <li>Schriftrichtung von rechts nach links</li>
+<li>Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form: <span class="c_rtl">ج جـ ـجـ ـج</span></li>
 </ul>
 <div class="figure">
 <img src="../../assets/dh/arabic-script_sample.png" id="fig:arabic-sample" alt="" />
@@ -229,15 +229,20 @@ Till Grallert
 <p>Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt</p>
 <ul>
 <li>OCR ist nicht funktional</li>
+<li>Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden</li>
 <li>Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten</li>
+<li>Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen</li>
 </ul>
 </div>
-<div id="character-encoding-es-herrscht-chaos" class="slide section level2">
-<h1>Character encoding: es herrscht Chaos</h1>
+<div id="arabisch-schreiben" class="slide section level2">
+<h1>Arabisch schreiben?</h1>
 <div class="c_width-50 c_left">
 <ul>
 <li>Vor Unicode lange Zeit gar nicht unterstützt</li>
-<li>Unicode ist ein Industriekonsortium mit US-Dominanz</li>
+<li>Unicode ist ein in Mountain View ansässiges Industriekonsortium <!-- mit US-Dominanz -->
+<ul>
+<li>Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, <em>Sultanat von Oman</em></li>
+</ul></li>
 <li>Encodings sind politische Entscheidungen und folgen Sprachen, nicht Schriften</li>
 <li>OS, Browser etc. normalisieren die Varianz nicht.</li>
 <li>Folge: Volltextsuchen sind nicht aussagekräftig</li>
@@ -250,7 +255,7 @@ Till Grallert
 </div>
 <div class="figure">
 <img src="../../assets/dh/arabic-script_unicode-example-wikidata.png" id="fig:arabic-mecca-2" alt="" />
-<p class="caption">Figure 3: Browsersuch nach “مك” im Wikidataeintrag für Mekka (<a href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</p>
+<p class="caption">Figure 3: Browsersuche nach “مك” im Wikidataeintrag für Mekka (<a href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</p>
 </div>
 </div>
 </div>
@@ -276,7 +281,7 @@ Till Grallert
 <div id="rendering-basale-standards-werden-nicht-unterstützt-1" class="slide section level2">
 <h1>Rendering: basale Standards werden nicht unterstützt</h1>
 <h3 id="beispiel-2-webbrowser-und-html-5">Beispiel 2: Webbrowser und HTML 5</h3>
-<p>Das browsereigene CSS ignoriert <code>@lang</code> und stellt Arabisch als linksbündig dar</p>
+<p>Das browsereigene CSS ignoriert das HTML5 Attribut <code>@lang</code> und stellt Arabisch linksbündig dar</p>
 <div lang="ar">
 <p>كانت أمريكا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.</p>
 </div>
