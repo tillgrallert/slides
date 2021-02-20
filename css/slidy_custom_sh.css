@@ -456,6 +456,20 @@ div.c_right {
 }
 
 /*****************
+writing direction
+******************/
+
+.c_rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.c_ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/*****************
 code
 ******************/
 
