@@ -1,8 +1,10 @@
 :root {
 --background-color: #191919;
+/*--background-color: #191919;*/
 --main-font: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
 --main-font-size: 16px;
 --main-color: #fff;
+/*--main-color: #fff;*/
 /*--block-margin: 20px;*/
 /*--heading-margin: 0 0 20px 0;*/
 --heading-font: "American Typewriter","Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
@@ -36,10 +38,6 @@ body.reveal-viewport {
   padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  /*color: white;*/
-  /*color: black;*/
-  /*background-color: black;*/
-  /*background-color: white;*/
   overflow: hidden;
   /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
   font-size: 12px;*/
@@ -47,18 +45,9 @@ body.reveal-viewport {
   word-wrap: break-word;
 }
 
-
-/* while on screen slides should be black on white, it should be the opposite on projectors */
-@media projector {
-  body {
-    background-color: black;
-    color:white;
-  }
-  pre {
-    background-color: white;
-    color: black;   
-  }
-}
+/******************
+colours: are set by themes
+******************/
 
 /******************
 set fonts and sizes
