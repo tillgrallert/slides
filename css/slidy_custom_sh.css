@@ -514,11 +514,20 @@ div.sourceCode {
   margin: 10px 5px;
 }
 
+/*font*/
+
+pre,
+code {
+  font-size: 0.8em;
+  line-height: 0.9;
+}
+
 pre {
   display: block;
   font-family: monospace;
   white-space: pre-wrap;
-  padding:3, 3, 3, 3;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: 0;
   background-color: rgba(0,0,0,0.04);
   border-radius: 5px;
@@ -530,7 +539,7 @@ pre > code.sourceCode {
   white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
   }
 
-h1>code{
+h1 > code{
   background: transparent;
   border: 0;
   font-size: inherit;
@@ -541,7 +550,7 @@ code {
   white-space: pre-wrap;
   /* color: #00428C; */
   color: #9C20EE;
-  font-size:0.9em;
+  /*font-size:0.9em;*/
 }
 
 pre code {
