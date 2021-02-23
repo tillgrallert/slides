@@ -3,6 +3,7 @@ title: "Mind the `<gap/>`!"
 subtitle: "Digital Humanities und das kulturelle Erbe des Globalen Südens"
 author: Till Grallert
 affiliation: Orient-Institut Beirut
+bibliography: /BachUni/applications/applications.csl.json
 lang: de
 date: 2021-03-04
 duration: 25
@@ -47,8 +48,9 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 :::{.c_width-50 .c_left}
 
 - Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
-- Englisch und andere Sprachen des Globalen Nordens sind der Hegemon der Interfaces
-- Englischkenntnisse sind für die Erstellung von Inhalten essentiell
+- Englisch <!-- und andere Sprachen des Globalen Nordens sind --> ist der Hegemon der Interfaces
+- Englischkenntnisse sind für die Teilhabe unabdingbar
+<!-- - Englischkenntnisse sind für die Erstellung von Inhalten essentiell -->
 
 :::
 :::{.c_width-50 .c_right}
@@ -62,22 +64,32 @@ body {
 
 ```R
 library(tidyverse)
-library(arabicStemR)
+setwd("/path/to/folder/")
+load("oape_stats.rda")
+المجلات <- c("4770057679", "644997575", "472450345", "792756327")
+المشار.اليها <- المشار.اليها %>%
+    filter(source.id.oclc %in% المجلات)
+write.table(المشار.اليها, file = "csv/oape_stats.csv", row.names = FALSE, quote = TRUE, sep = ",")
 ```
 
-```python
-```
+<!-- ![Arabisch in R](../../assets/dh/arabic-script_r.png){#fig:arabic-r} -->
 
 :::
 
 ## Arabisch
 
-Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift -->
+- Arabische **Schrift** ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift -->
+    + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
+    + Schriftrichtung von rechts nach links
+    + Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
+    + Präferenz für Ligaturen
 
-+ aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
-+ Schriftrichtung von rechts nach links
-+ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
-+ Präferenz für Ligaturen
+- Arabische **Sprache**
+    + eine von sechs Amtssprachen der UN
+    + fünfthäufigeste Sprache
+        + offizielle Amtssprache in 26 Ländern
+        * \>420 Mio. Sprechende
+    + liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen
 
 ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample}
 
@@ -85,13 +97,14 @@ Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer
 
 Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt
 
-+ OCR ist nicht funktional
 + Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
 + Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
 + Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
++ OCR ist nicht funktional
 
+<!-- add screenshot of tweet writing Arabic in Latin -->
 
-## Arabische Schrift
+## Arabische Schrift: Character encoding
 
 :::{.c_width-50 .c_left}
 
@@ -298,12 +311,61 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 
 # 3.3 Tool gap: OCR/HTR für arabische Periodika (2019--)
-## OCR/HTR für Arabisch
+## Traditionelle Ansätze
 
-- Arabisch ist eine Ligatur: كانت أميركا مجهولة
-- Nicht alle Buchstaben werden in Schreibrichtung verbunden
-- Buchstaben liegen je nach Schrifttype nicht auf einer Zeile: ![](../../assets/dh/arabic-script_sample_short.png)
-- Traditionelle Ansätze basieren auf Segmentierung: ك ا ن ت  أ م ي ر ك ا  م ج ه و ل ة
+- Ziel: Buchstaben- und Worterkennung
+- Ansatz: Segmentierung, Erkennung
+- Probleme:
+    + Buchstaben werden **mehrheitlich** in Schreibrichtung verbunden
+    + Positionsabhängige Buchstabenformen
+    + Ambivalente Buchstabenformen
+    + Präferenz für Ligaturen ![](../../assets/dh/arabic-script_sample_short.png)
+- Resultat:
+
+![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
+
+## Neue Ansätze mit maschinellem Lernen
+
+- Ansatz: Word spotting und Lernen
+- Vorteile:
+    + Segmentierung nicht notwendig
+    + Eingabe- und Ausgabeschrift müssen nicht die gleiche sein
+    + Offene Software
+- Nachteile
+    + Training benötigt potentiell sehr umfangreiches Ground Truth
+    + Training von Schrift- und Sprachmodellen für jeden Font
+    + Rechenintensiv
+
+## Experiment: OCR für arabische Periodika
+
+- Kollaboration mit Sinai Rusinek (Haifa)
+- Software: Transkribus, Tesseract 4
+- Ground Truth: OpenArabicPE Korpus
+- Probleme:
+    + Komplexes Layout
+    + Software nimmt Links-nach-rechts als Leserichtung an
+- Resultat:
+
+| ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation  |
+| ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------: |
+| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | 2.09            |
+| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | 8.40            |
+| 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19            |
+
+
+## Experiment: Transkribus
+
+:::{.c_width-50 .c_left}
+
+![Transkribus: Evaluation des Modells #13864](../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png)
+
+:::
+:::{.c_width-50 .c_right height="100%"}
+
+![Seite aus dem Validierungssample mit "komplexem Layout", *al-Muqtabas* 1(1), S.19](../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif)
+
+:::
+
 
 # 4. Meine analytischen Ansätze
 # 4.1 Netzwerkanalyse
