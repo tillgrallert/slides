@@ -95,9 +95,9 @@
       color: black;
   }
   /* provide a readible font-size */
-  .sourceCode * {
+  /*.sourceCode * {
       font-size: 16px;
-  }
+  }*/
   /* xml element names */
   .xml > code span.kw {
     /*color: #0F0F9C;*/
@@ -127,39 +127,39 @@
   </style>
   <style type="text/css">
   /* styles to split a slide into columns */
-  div.c_width-60 {
+  .c_width-60 {
       width:64%;
       position: relative;
       float: left;
   }
-  div.c_width-50 {
+  .c_width-50 {
       width:49%;
       position: relative;
       float: left;
   }
-  div.c_width-30 {
+  .c_width-30 {
       width:33%;
       position: relative;
       float: left;
   }
-  div.c_left {
+  .c_left {
       display: block;
       float:left;
   }
-  div.c_right {
+  .c_right {
       display: block;
       float: right;
   }
 
   /* styles to vertically stack divs */
-  div.c_height-50 {
+  .c_height-50 {
       /*height: 45%;*/
       height: 300px;
   }
-  div.c_top {
+  .c_top {
       vertical-align: top;
   }
-  div.c_bottom {
+  .c_bottom {
       vertical-align: bottom;
   }
   </style>
@@ -168,7 +168,7 @@
     color:red;
   }
   </style>
-  <script type="text/javascript" src="../../js/slidy.js"></script>
+  <script type="text/javascript" src="../js/slidy.js"></script>
   <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
   <meta name="duration" content="25" />
@@ -207,9 +207,56 @@ Till Grallert
 
 </div>
 
-<div id="arabische-schrift-und-sprache" class="title-slide slide section level1">
-<h1>Arabische Schrift und Sprache</h1>
+<div id="technische-infrastrukturen" class="title-slide slide section level1">
+<h1>Technische Infrastrukturen</h1>
 
+</div>
+<div id="basis-ungleicher-zugang-nach-geographie-gender-besitz" class="slide section level2">
+<h1>Basis: Ungleicher Zugang nach Geographie, Gender, Besitz</h1>
+<ul>
+<li>Computer Hardware<!--  im weitesten Sinne mit aktuellem OS -->
+<ul>
+<li>Gar keinen privaten Zugang</li>
+<li>Über ein Telefon</li>
+</ul></li>
+<li>Stromversorgung
+<ul>
+<li>2018: 89,6%</li>
+<li>Afrika: 20 Länder unter 43%</li>
+</ul></li>
+<li>Internetverbindung
+<ul>
+<li>2019: knapp 4 Mrd. Menschen (c.51,4 %)</li>
+</ul></li>
+<li>Software
+<ul>
+<li>Trend zu Abo-Modellen für die Erstellung von Inhalten</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="nicht-lateinische-schriften-und-sprachen-des-globalen-südens" class="title-slide slide section level1">
+<h1>Nicht-lateinische Schriften und Sprachen des Globalen Südens</h1>
+
+</div>
+<div id="ungleicher-zugang-nach-sprache" class="slide section level2">
+<h1>Ungleicher Zugang nach Sprache</h1>
+<div class="c_width-50 c_left">
+<ul>
+<li>Englisch ist die Lingua Franca und Basis der technischen Infrastruktur</li>
+<li>Englisch und andere Sprachen des Globalen Nordens sind der Hegemon der Interfaces</li>
+<li>Englischkenntnisse sind für die Erstellung von Inhalten essentiell</li>
+</ul>
+</div>
+<div class="c_width-50 c_right">
+<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>body {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">background</span>: <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="kw">color</span>: <span class="cn">black</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="kw">library</span>(arabicStemR)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
 </div>
 <div id="arabisch" class="slide section level2">
 <h1>Arabisch</h1>
@@ -218,9 +265,10 @@ Till Grallert
 <li>aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.</li>
 <li>Schriftrichtung von rechts nach links</li>
 <li>Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form: <span class="c_rtl">ج جـ ـجـ ـج</span></li>
+<li>Präferenz für Ligaturen</li>
 </ul>
 <div class="figure">
-<img src="../../assets/dh/arabic-script_sample.png" id="fig:arabic-sample" alt="" />
+<img src="../../assets/dh/arabic-script_sample-annotated.png" id="fig:arabic-sample" alt="" />
 <p class="caption">Figure 1: Beispiel: “Amerika und die arabischen Gelehrten”. <a href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249"><em>al-Muqtabas</em> 2(1)</a></p>
 </div>
 </div>
@@ -234,8 +282,8 @@ Till Grallert
 <li>Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen</li>
 </ul>
 </div>
-<div id="arabisch-schreiben" class="slide section level2">
-<h1>Arabisch schreiben?</h1>
+<div id="arabische-schrift" class="slide section level2">
+<h1>Arabische Schrift</h1>
 <div class="c_width-50 c_left">
 <ul>
 <li>Vor Unicode lange Zeit gar nicht unterstützt</li>
@@ -254,7 +302,7 @@ Till Grallert
 <p class="caption">Figure 2: 32 Varianten von “mekkanisch” (مكية). Quelle: Thomas Milo <em>Patterns of confusability</em> 2014.</p>
 </div>
 <div class="figure">
-<img src="../../assets/dh/arabic-script_unicode-example-wikidata.png" id="fig:arabic-mecca-2" alt="" />
+<img src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png" id="fig:arabic-mecca-2" height="300" alt="" />
 <p class="caption">Figure 3: Browsersuche nach “مك” im Wikidataeintrag für Mekka (<a href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</p>
 </div>
 </div>
@@ -305,6 +353,83 @@ Till Grallert
 </div>
 </div>
 
+<div id="digitalisierung-des-kulturerbes" class="title-slide slide section level1">
+<h1>Digitalisierung des Kulturerbes</h1>
+
+</div>
+<div id="digitalisierung-des-kulturerbes-1" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes</h1>
+<div id="erfassung" class="c_width-50 c_left">
+<h3>Erfassung</h3>
+<p>Digitalisierung ist <strong>teuer</strong>: public-private partnerships, private vendors</p>
+<ul>
+<li>Findet primär im Globalen Norden statt</li>
+<li>Kuratorische Entscheidungen
+<ul>
+<li>Sammlung</li>
+<li>Katalogisierung</li>
+<li>Digitalisierung</li>
+</ul></li>
+<li>Technische Entscheidungen
+<ul>
+<li>Workflows, Modelle, Ontologien des Nordens</li>
+</ul></li>
+<li>Wirtschaftliche Entscheidungen
+<ul>
+<li>Outsourcing</li>
+</ul></li>
+</ul>
+</div>
+<div id="bereitsstellung" class="c_width-50 c_right">
+<h3>Bereitsstellung</h3>
+<p>Platformen zur Maximierung des Gewinns</p>
+<ul>
+<li>Proprietäre Interfaces</li>
+<li>Datensilos ohne APIs</li>
+<li>Bezahlschranken</li>
+<li>geo-fencing</li>
+</ul>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-2" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes</h1>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-holdings_al-muqtabas-vol_1-9.png" id="fig:map-global-holdings" alt="" />
+<p class="caption">Figure 9: Karte von in Worldcat und ArUC erfassten Beständen der Zeitschrift <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-bezahlschranken-und-geo-fencing" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes: Bezahlschranken und Geo-fencing</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-1.png" id="fig:hathi-muqtabas-global" alt="" />
+<p class="caption">Figure 10: <em>al-Muqtabas</em> 6 auf <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> außerhalb der USA</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-2.png" id="fig:hathi-muqtabas-us" alt="" />
+<p class="caption">Figure 11: <em>al-Muqtabas</em> 6 auf <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> mit US IP</p>
+</div>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-ocr-schichten" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes: OCR Schichten</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png" alt="" />
+<p class="caption">OCR Schicht für <em>al-Muqtabas</em> 6 auf <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> (mit US IP)</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png" alt="" />
+<p class="caption">OCR Schicht für <em>al-Bashīr</em> 9 Jan. 1880 (#487), S.1 auf <a href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a></p>
+</div>
+</div>
+<!-- hier muss noch was zu den verscheidenen Gaps hin -->
+</div>
+
 <div id="meine-ansätze-um-diese-zu-addressieren" class="title-slide slide section level1">
 <h1>3. Meine Ansätze um diese zu Addressieren</h1>
 
@@ -320,7 +445,7 @@ Till Grallert
 <ul>
 <li>Bibliographische Erfassung sämtlicher arabischer Periodika seit ihrer Entstehung um 1800 bis 1930.
 <ul>
-<li>Webseite und offenen Datensätzen (TEI XML)</li>
+<li>Webseite und offene Datensätzen (TEI XML)</li>
 <li>Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.</li>
 </ul></li>
 <li>Kollaboration mit Adam Mestyan (Duke)</li>
@@ -331,7 +456,7 @@ Till Grallert
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/jaraid/jaraid_holdings_pie-3.png" id="fig:jaraid-stats" alt="" />
-<p class="caption">Figure 9: In Project Jarāʾid erfasste Periodika</p>
+<p class="caption">Figure 12: In Project Jarāʾid erfasste Periodika</p>
 </div>
 </div>
 <div class="c_width-50 c.left">
@@ -408,7 +533,7 @@ Till Grallert
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
-<p class="caption">Figure 10: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
+<p class="caption">Figure 13: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
 </div>
 </div>
@@ -529,10 +654,8 @@ Till Grallert
 <h1>4.1 Netzwerkanalyse</h1>
 
 </div>
-
-<div id="evaluierung-des-korpus-netzwerk-der-erwähnten-periodika" class="title-slide slide section level1">
+<div id="evaluierung-des-korpus-netzwerk-der-erwähnten-periodika" class="slide section level2">
 <h1>4.1.1 Evaluierung des Korpus: Netzwerk der erwähnten Periodika</h1>
-
 </div>
 <div id="netzwerk-der-erwähnten-periodika-datenquelle" class="slide section level2">
 <h1>Netzwerk der erwähnten Periodika: Datenquelle</h1>
@@ -551,9 +674,9 @@ Till Grallert
 <div class="c_width-50 c_right">
 <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 <!-- ägyptische Zeitschrift -->
-<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>والأصح الدرعية بلام التعريف (راجع <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;title_16.d2e2291&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;</span> المصرية  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>٢<span class="kw">&lt;/biblScope&gt;</span> :  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span><span class="kw">&gt;</span>٢٩٢<span class="kw">&lt;/biblScope&gt;&lt;/bibl&gt;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a>والأصح الدرعية بلام التعريف (راجع <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;title_16.d2e2291&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;</span> المصرية  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>٢<span class="kw">&lt;/biblScope&gt;</span> :  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span><span class="kw">&gt;</span>٢٩٢<span class="kw">&lt;/biblScope&gt;&lt;/bibl&gt;</span>)</span></code></pre></div>
 <!-- irakische Zeitung -->
-<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
 </div>
 </div>
 <div id="netzwerk-der-erwähnten-periodika" class="slide section level2">
@@ -561,7 +684,7 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" id="fig:network-periodicals" alt="" />
-<p class="caption">Figure 11: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
+<p class="caption">Figure 14: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -578,10 +701,8 @@ Till Grallert
 </ol>
 </div>
 </div>
-
-<div id="bibliometrics-netzwerk-der-autor_innen" class="title-slide slide section level1">
+<div id="bibliometrics-netzwerk-der-autor_innen" class="slide section level2">
 <h1>4.1.2 Bibliometrics: Netzwerk der Autor_innen</h1>
-
 </div>
 <div id="netzwerk-der-autor_innen-datenquellen" class="slide section level2">
 <h1>Netzwerk der Autor_innen: Datenquellen</h1>
@@ -601,19 +722,19 @@ Till Grallert
 </ul>
 </div>
 <div class="c_width-50 c_right">
-<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>ساتسنا<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>أمكح<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>فهر الجابري<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span><span class="kw">&gt;</span>الأب<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الألياوي<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>بطرس&lt;/forename&gt; <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span><span class="kw">&gt;</span>بن <span class="kw">&lt;forename&gt;</span>جبرائيل<span class="kw">&lt;/forename&gt;&lt;/addName&gt;</span> <span class="kw">&lt;forename&gt;</span>يوسف&lt;/forename&gt; <span class="kw">&lt;surname&gt;</span>عواد<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>39370998<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>227<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q4751824<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true"></a>    <span class="kw">&lt;birth&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span><span class="kw">&gt;</span>1866-08-05<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/birth&gt;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true"></a>    <span class="kw">&lt;death&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span><span class="kw">&gt;</span>1947-01-07<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/death&gt;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>ساتسنا<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>أمكح<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>فهر الجابري<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span><span class="kw">&gt;</span>الأب<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الألياوي<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>بطرس&lt;/forename&gt; <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span><span class="kw">&gt;</span>بن <span class="kw">&lt;forename&gt;</span>جبرائيل<span class="kw">&lt;/forename&gt;&lt;/addName&gt;</span> <span class="kw">&lt;forename&gt;</span>يوسف&lt;/forename&gt; <span class="kw">&lt;surname&gt;</span>عواد<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>39370998<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>227<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q4751824<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a>    <span class="kw">&lt;birth&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span><span class="kw">&gt;</span>1866-08-05<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/birth&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true"></a>    <span class="kw">&lt;death&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span><span class="kw">&gt;</span>1947-01-07<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/death&gt;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
 </div>
 </div>
 <div id="netzwerk-der-autor_innen" class="slide section level2">
@@ -621,7 +742,7 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" id="fig:network-authors" alt="" />
-<p class="caption">Figure 12: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
+<p class="caption">Figure 15: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -648,25 +769,25 @@ Till Grallert
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas" alt="" />
-<p class="caption">Figure 13: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
+<p class="caption">Figure 16: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq" alt="" />
-<p class="caption">Figure 14: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
+<p class="caption">Figure 17: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
-<p class="caption">Figure 15: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
+<p class="caption">Figure 18: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png" id="fig:authors-lughat" alt="" />
-<p class="caption">Figure 16: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
+<p class="caption">Figure 19: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
 </div>
 </div>
 </div>
@@ -719,7 +840,7 @@ Till Grallert
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg" id="fig:stylometry-muqtabas-w5000" alt="" />
-<p class="caption">Figure 17: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
+<p class="caption">Figure 20: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
 </div>
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 </div>

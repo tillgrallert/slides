@@ -26,7 +26,49 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 # 1. Digitalität als egalitäres Versprechen
 # 2. Digitalität als extreme Ungleichheit
-# Arabische Schrift und Sprache
+# Technische Infrastrukturen
+## Basis: Ungleicher Zugang nach Geographie, Gender, Besitz
+
+- Computer Hardware<!--  im weitesten Sinne mit aktuellem OS -->
+    + Gar keinen privaten Zugang
+    + Über ein Telefon
+- Stromversorgung
+    + 2018: 89,6%
+    + Afrika: 20 Länder unter 43%
+- Internetverbindung
+    + 2019: knapp 4 Mrd. Menschen (c.51,4 %)
+- Software
+    + Trend zu Abo-Modellen für die Erstellung von Inhalten
+
+# Nicht-lateinische Schriften und Sprachen des Globalen Südens
+## Ungleicher Zugang nach Sprache
+
+
+:::{.c_width-50 .c_left}
+
+- Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
+- Englisch und andere Sprachen des Globalen Nordens sind der Hegemon der Interfaces
+- Englischkenntnisse sind für die Erstellung von Inhalten essentiell
+
+:::
+:::{.c_width-50 .c_right}
+
+```css
+body {
+    background: white;
+    color: black;
+}
+```
+
+```R
+library(tidyverse)
+library(arabicStemR)
+```
+
+```python
+```
+
+:::
 
 ## Arabisch
 
@@ -35,8 +77,9 @@ Arabische Schrift ist die welweit zweithäufigste Schrift <!-- nach lateinischer
 + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
 + Schriftrichtung von rechts nach links
 + Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
++ Präferenz für Ligaturen
 
-![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample.png){#fig:arabic-sample}
+![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample}
 
 ## Arabisch in der Digitalität
 
@@ -48,7 +91,7 @@ Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstütz
 + Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
 
 
-## Arabisch schreiben?
+## Arabische Schrift
 
 :::{.c_width-50 .c_left}
 
@@ -64,7 +107,7 @@ Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstütz
 
 ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1}
 
-![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata.png){#fig:arabic-mecca-2}
+![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
 
 :::
 
@@ -109,6 +152,73 @@ Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch l
 :::{.c_width-30}
 ![Safari](../../assets/dh/html5-lang_ar-safari-2.png){#fig:arabic-fail-safari}
 :::
+
+# Digitalisierung des Kulturerbes
+## Digitalisierung des Kulturerbes
+
+:::{.c_width-50 .c_left}
+
+### Erfassung
+
+Digitalisierung ist **teuer**: public-private partnerships, private vendors
+
++ Findet primär im Globalen Norden statt
++ Kuratorische Entscheidungen
+    + Sammlung
+    + Katalogisierung
+    + Digitalisierung
++ Technische Entscheidungen
+    * Workflows, Modelle, Ontologien des Nordens
++ Wirtschaftliche Entscheidungen
+    * Outsourcing
+
+:::
+:::{.c_width-50 .c_right}
+
+### Bereitsstellung
+
+Platformen zur Maximierung des Gewinns
+
++ Proprietäre Interfaces
++ Datensilos ohne APIs
++ Bezahlschranken
++ geo-fencing
+
+:::
+
+## Digitalisierung des Kulturerbes
+
+![Karte von in Worldcat und ArUC erfassten Beständen der Zeitschrift *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-holdings_al-muqtabas-vol_1-9.png){#fig:map-global-holdings}
+
+## Digitalisierung des Kulturerbes: Bezahlschranken und Geo-fencing
+
+:::{.c_width-50 .c_left}
+
+![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) außerhalb der USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
+
+:::
+:::{.c_width-50 .c_right}
+
+![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) mit US IP](../../assets/OpenArabicPE/hathi_muqtabas-2.png){#fig:hathi-muqtabas-us}
+
+:::
+
+## Digitalisierung des Kulturerbes: OCR Schichten
+
+:::{.c_width-50 .c_left}
+
+![OCR Schicht für *al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (mit US IP)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png)
+
+:::
+:::{.c_width-50 .c_right}
+
+![OCR Schicht für *al-Bashīr* 9 Jan. 1880 (#487), S.1 auf [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1)](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png)
+
+:::
+
+
+
+<!-- hier muss noch was zu den verscheidenen Gaps hin -->
 
 # 3. Meine Ansätze um diese zu Addressieren
 # 3.1 Knowledge gap: Project Jarāʾid (2012--)
@@ -197,7 +307,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 # 4. Meine analytischen Ansätze
 # 4.1 Netzwerkanalyse
-# 4.1.1 Evaluierung des Korpus: Netzwerk der erwähnten Periodika
+## 4.1.1 Evaluierung des Korpus: Netzwerk der erwähnten Periodika
 ## Netzwerk der erwähnten Periodika: Datenquelle
 
 :::{.c_width-50 .c_left}
@@ -242,7 +352,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 :::
 
-# 4.1.2 Bibliometrics: Netzwerk der Autor_innen
+## 4.1.2 Bibliometrics: Netzwerk der Autor_innen
 ## Netzwerk der Autor_innen: Datenquellen
 
 :::{.c_width-50 .c_left}
