@@ -27,8 +27,8 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 # 1. Digitalität als egalitäres Versprechen
 # 2. Digitalität als extreme Ungleichheit
-# Technische Infrastrukturen
-## Basis: Ungleicher Zugang nach Geographie, Gender, Besitz
+# Basis: Technische Infrastrukturen
+## Ungleicher Zugang nach Geographie, Gender, Besitz
 
 - Computer Hardware<!--  im weitesten Sinne mit aktuellem OS -->
     + Gar keinen privaten Zugang
@@ -44,16 +44,13 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 # Nicht-lateinische Schriften und Sprachen des Globalen Südens
 ## Ungleicher Zugang nach Sprache
 
+Englischkenntnisse sind für die Teilhabe unabdingbar
 
 :::{.c_width-50 .c_left}
 
-- Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
-- Englisch <!-- und andere Sprachen des Globalen Nordens sind --> ist der Hegemon der Interfaces
-- Englischkenntnisse sind für die Teilhabe unabdingbar
-<!-- - Englischkenntnisse sind für die Erstellung von Inhalten essentiell -->
+Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
 
-:::
-:::{.c_width-50 .c_right}
+- Beispiel: CSS
 
 ```css
 body {
@@ -61,6 +58,8 @@ body {
     color: black;
 }
 ```
+
+- Beispiel: R
 
 ```R
 library(tidyverse)
@@ -72,24 +71,39 @@ load("oape_stats.rda")
 write.table(المشار.اليها, file = "csv/oape_stats.csv", row.names = FALSE, quote = TRUE, sep = ",")
 ```
 
-<!-- ![Arabisch in R](../../assets/dh/arabic-script_r.png){#fig:arabic-r} -->
+:::
+:::{.c_width-50 .c_right}
+
+Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
+
+![[Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en): Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün).](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
 
 :::
 
 ## Arabisch
 
-- Arabische **Schrift** ist die welweit zweithäufigste Schrift <!-- nach lateinischer Schrift -->
-    + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
-    + Schriftrichtung von rechts nach links
-    + Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
-    + Präferenz für Ligaturen
+:::{.c_width-50 .c_left}
 
-- Arabische **Sprache**
-    + eine von sechs Amtssprachen der UN
-    + fünfthäufigeste Sprache
-        + offizielle Amtssprache in 26 Ländern
-        * \>420 Mio. Sprechende
-    + liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen
+### Schrift
+
+- zweithäufigste Schrift <!-- nach lateinischer Schrift -->
++ aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
++ Schriftrichtung von rechts nach links
++ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
++ Präferenz für Ligaturen
+
+:::
+:::{.c_width-50 .c_right}
+
+### Sprache
+
++ fünfthäufigeste Sprache
+    * eine von sechs Amtssprachen der UN
+    + <!-- offizielle --> Amtssprache in 26 Ländern
+    * \>420 Mio. Sprechende
++ liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen
+
+:::
 
 ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample}
 
@@ -283,7 +297,7 @@ Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
 1. Digitale Editionen: TEI XML.
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
 2. Soziale digitale Editionen, die auf [GitHub](https://github.com/openarabicpe) gehostet sind: <!-- gradually improve transcription and mark-up -->
-2. Veröffentlichungen werde auf [Zenodo](https://zenodo.org) archiviert: DOI für dauerhafte Referenzierbarkeit
+2. Veröffentlichungen werden auf [Zenodo](https://zenodo.org) archiviert: DOI für dauerhafte Referenzierbarkeit
 3. [Statische Webansichten](https://github.com/openarabicpe/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
 
@@ -357,12 +371,12 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 :::{.c_width-50 .c_left}
 
-![Transkribus: Evaluation des Modells #13864](../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png)
+![Transkribus: Evaluation des Modells #13864](../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png){#fig:transkribus-evaluation}
 
 :::
 :::{.c_width-50 .c_right height="100%"}
 
-![Seite aus dem Validierungssample mit "komplexem Layout", *al-Muqtabas* 1(1), S.19](../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif)
+![Seite aus dem Validierungssample mit "komplexem" Layout, *al-Muqtabas* 1(1), S.19](../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif){#fig:muqtabas-1-1-19}
 
 :::
 
