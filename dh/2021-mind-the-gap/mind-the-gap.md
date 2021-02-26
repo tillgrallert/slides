@@ -128,25 +128,27 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample}
 
 ## Arabisch in der Digitalität
-
-Arabisch wird zum großen Teil von der digitalen Infrastruktur nicht unterstützt
+### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
 + Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
 + Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
-+ Die notwendigen Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
++ Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
 + OCR ist nicht funktional
 
+<!-- hello Java, I am looking at you! -->
 <!-- add screenshot of tweet writing Arabic in Latin -->
 
 ## Arabische Schrift: Character encoding
+### Unicode is awesome but ...
 
 :::{.c_width-50 .c_left}
 
-- Vor Unicode lange Zeit gar nicht unterstützt
-- Unicode ist ein in Mountain View ansässiges Industriekonsortium <!-- mit US-Dominanz -->
-    + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, *Sultanat von Oman*
-- Encodings sind politische Entscheidungen und folgen Sprachen, nicht Schriften
+<!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
+- Unicode ist ein <!-- in Mountain View ansässiges --> Industriekonsortium <!-- mit US-Dominanz -->
+    + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman**
+- Encodings <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
 - OS, Browser etc. normalisieren die Varianz nicht.
+<!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
 - Folge: Volltextsuchen sind nicht aussagekräftig
 
 :::
