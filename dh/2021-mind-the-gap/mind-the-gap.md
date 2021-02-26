@@ -28,23 +28,43 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 # 1. Digitalität als egalitäres Versprechen
 # 2. Digitalität als extreme Ungleichheit
 # Basis: Technische Infrastrukturen
-## Ungleicher Zugang nach Geographie, Gender, Besitz
+## Technische Infrastrukturen
+### Ungleicher Zugang nach Geographie, Gender, Besitz
 
-- Computer Hardware<!--  im weitesten Sinne mit aktuellem OS -->
+<!-- - Computer Hardware: aktuell?
     + Gar keinen privaten Zugang
     + Über ein Telefon
-- Stromversorgung
+- Stromversorgung: stabil?
     + 2018: 89,6%
     + Afrika: 20 Länder unter 43%
-- Internetverbindung
+- Internetverbindung: stabil und schnell?
     + 2019: knapp 4 Mrd. Menschen (c.51,4 %)
 - Software
-    + Trend zu Abo-Modellen für die Erstellung von Inhalten
+    + Trend zu Abo-Modellen für die Erstellung von Inhalten -->
+
++--------------------+------------------------------------------+--------------------------------+
+|                    |                 Weltweit                 |            Libanon             |
++====================+==========================================+================================+
+| Computer Hardware  | - Internetcafé                           |                                |
+|                    | - Telefon                                |                                |
++--------------------+------------------------------------------+--------------------------------+
+| Stomversorgung     | + 2018: 89,6%                            | - 3h/ Tag reg. Stromausfall    |
+|                    | + Afrika: 20 Länder unter 43%            | - teure Generatorenabonnements |
++--------------------+------------------------------------------+--------------------------------+
+| Internetverbindung | + 2019: knapp 4 Mrd. Menschen (c.51,4 %) | - 15 Mbps für ein Institut     |
+|                    |                                          | - mobil: 60 USD für 20 GB      |
++--------------------+------------------------------------------+--------------------------------+
+| Software           | + Trend zu Abo-Modellen                  |                                |
++--------------------+------------------------------------------+--------------------------------+
+
+
+<!-- 40 MB für einen Scan dauern mit 15 Mbps rechnerisch 21,33 Sek für den Download. Aber über VPN oder vor Ort teilen sich diese Leitung 20-40 Leute -->
+<!-- außerdem fliege ich alle 200-300 MB aus dem SharePoint Volume -->
 
 # Nicht-lateinische Schriften und Sprachen des Globalen Südens
 ## Ungleicher Zugang nach Sprache
 
-Englischkenntnisse sind für die Teilhabe unabdingbar
+### Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
 :::{.c_width-50 .c_left}
 
@@ -247,24 +267,34 @@ Platformen zur Maximierung des Gewinns
 
 <!-- hier muss noch was zu den verscheidenen Gaps hin -->
 
-# 3. Meine Ansätze um diese zu Addressieren
-# 3.1 Knowledge gap: Project Jarāʾid (2012--)
+# 3. Closing the `<gap/>`: mein Beitrag zu den *digital commons*
+# 3.1 Wissenslücke/ knowledge gap: Project Jarāʾid (2012--)
 ## [Project Jarāʾid](https://projectjaraid.github.io/)
 
 <!-- - Addressiert den **knowledge gap** mit einer Webseite und offenen Datensätzen (TEI XML). -->
+
+:::{.c_width-50 .c_left}
 
 - Bibliographische Erfassung sämtlicher arabischer Periodika seit ihrer Entstehung um 1800 bis 1930.
     + Webseite und offene Datensätzen (TEI XML)
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke)
 
-## Project Jarāʾid
+:::
+:::{.c_width-50 .c_right}
+
+![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
+
+:::
+
+## [Project Jarāʾid](https://projectjaraid.github.io/)
+### Wissenslücke -> Digitalisierungslücke
 
 :::{.c_width-50 .c_right}
 ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats}
 :::
 
-:::{.c_width-50 .c.left}
+:::{.c_width-50 .c_left}
 
 |                  | number  | %     |
 | ---------------- | ------: | ----: |
@@ -272,7 +302,7 @@ Platformen zur Maximierung des Gewinns
 | in Bibliotheken  | 747     | 22.85 |
 | digitalisiert    | 145     | 4.44  |
 
-Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats}
+<!-- Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats} -->
 :::
 
 # 3.2 Infrastructural gap: Open Arabic Periodical Editions (OpenArabicPE, 2015--) <!-- digitisation bias  -->
@@ -381,10 +411,16 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 
 
-# 4. Meine analytischen Ansätze
+# 4. Closing the `<gap/>`: digitale Methoden
+# SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
+## SIHAFA
+
+- Fragen
+- Methoden
+
 # 4.1 Netzwerkanalyse
-## 4.1.1 Evaluierung des Korpus: Netzwerk der erwähnten Periodika
-## Netzwerk der erwähnten Periodika: Datenquelle
+## Netzwerk der erwähnten Periodika
+### Datenquelle
 
 :::{.c_width-50 .c_left}
 
@@ -543,6 +579,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
     + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse
 
 ## Stilometrie: erste Versuche
+### Falsifizierung der Hypothese
 
 :::{.c_width-60 .c_left}
 
@@ -554,12 +591,12 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::{.c_width-30 .c_right}
 
 - Stilometrie funktioniert für arabische Periodika
-- Erfolgreich identifizierte Signale für
+- <!-- Erfolgreich identifizierte  -->Signale für
     + Autorenschaft
     + Herausgeberschaft
     + Übersetzung
 - Zusätzliches (Sub)-signal: Genre
-- Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist
+<!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist -->
 
 :::
 

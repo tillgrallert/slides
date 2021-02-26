@@ -431,26 +431,27 @@ iframe {
 columns
 ******************/
 
-div.c_width-60 {
+.c_width-60 {
     width:64%;
     position: relative;
-    /*float: left;*/
+    float: left;
 }
-div.c_width-50 {
+.c_width-50 {
     width:50%;
     position: relative;
-    /*float: left;*/
+    float: left;
 }
-div.c_width-30 {
+.c_width-30 {
     width:33%;
     position: relative;
-    /*float: left;*/
+    float: left;
 }
-div.c_left {
+.c_left {
     display: block;
     float:left;
 }
-div.c_right {
+
+.c_right {
     display: block;
     float: right;
 }

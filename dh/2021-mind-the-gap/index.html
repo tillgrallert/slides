@@ -130,17 +130,17 @@
   .c_width-60 {
       width:64%;
       position: relative;
-      float: left;
+      /*float: left;*/
   }
   .c_width-50 {
       width:49%;
       position: relative;
-      float: left;
+      /*float: left;*/
   }
   .c_width-30 {
       width:33%;
       position: relative;
-      float: left;
+      /*float: left;*/
   }
   .c_left {
       display: block;
@@ -213,26 +213,70 @@ Till Grallert
 </div>
 <div id="ungleicher-zugang-nach-geographie-gender-besitz" class="slide section level2">
 <h1>Ungleicher Zugang nach Geographie, Gender, Besitz</h1>
-<ul>
-<li>Computer Hardware<!--  im weitesten Sinne mit aktuellem OS -->
-<ul>
-<li>Gar keinen privaten Zugang</li>
-<li>Über ein Telefon</li>
-</ul></li>
-<li>Stromversorgung
-<ul>
+<!-- - Computer Hardware: aktuell?
+    + Gar keinen privaten Zugang
+    + Über ein Telefon
+- Stromversorgung: stabil?
+    + 2018: 89,6%
+    + Afrika: 20 Länder unter 43%
+- Internetverbindung: stabil und schnell?
+    + 2019: knapp 4 Mrd. Menschen (c.51,4 %)
+- Software
+    + Trend zu Abo-Modellen für die Erstellung von Inhalten -->
+<table>
+<colgroup>
+<col width="21%" />
+<col width="44%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Weltweit</th>
+<th>Libanon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Computer Hardware</td>
+<td><ul>
+<li>Internetcafé</li>
+<li>Telefon</li>
+</ul></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Stomversorgung</td>
+<td><ul>
 <li>2018: 89,6%</li>
 <li>Afrika: 20 Länder unter 43%</li>
-</ul></li>
-<li>Internetverbindung
-<ul>
+</ul></td>
+<td><ul>
+<li>3h/ Tag reg. Stromausfall</li>
+<li>teure Generatorenabonnements</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Internetverbindung</td>
+<td><ul>
 <li>2019: knapp 4 Mrd. Menschen (c.51,4 %)</li>
-</ul></li>
-<li>Software
-<ul>
-<li>Trend zu Abo-Modellen für die Erstellung von Inhalten</li>
-</ul></li>
-</ul>
+</ul></td>
+<td><ul>
+<li>15 Mbps für ein Institut</li>
+<li>mobil: 60 USD für 20 GB</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Software</td>
+<td><ul>
+<li>Trend zu Abo-Modellen</li>
+</ul></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- 40 MB für einen Scan dauern mit 15 Mbps rechnerisch 21,33 Sek für den Download. Aber über VPN oder vor Ort teilen sich diese Leitung 20-40 Leute -->
+<!-- außerdem fliege ich alle 200-300 MB aus dem SharePoint Volume -->
 </div>
 
 <div id="nicht-lateinische-schriften-und-sprachen-des-globalen-südens" class="title-slide slide section level1">
@@ -241,7 +285,7 @@ Till Grallert
 </div>
 <div id="ungleicher-zugang-nach-sprache" class="slide section level2">
 <h1>Ungleicher Zugang nach Sprache</h1>
-<p>Englischkenntnisse sind für die Teilhabe unabdingbar</p>
+<h3 id="englischkenntnisse-sind-unabdingbar">Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar</h3>
 <div class="c_width-50 c_left">
 <p>Englisch ist die Lingua Franca und Basis der technischen Infrastruktur</p>
 <ul>
@@ -459,18 +503,19 @@ Amtssprache in 26 Ländern</li>
 <!-- hier muss noch was zu den verscheidenen Gaps hin -->
 </div>
 
-<div id="meine-ansätze-um-diese-zu-addressieren" class="title-slide slide section level1">
-<h1>3. Meine Ansätze um diese zu Addressieren</h1>
+<div id="closing-the-gap-mein-beitrag-zu-den-digital-commons" class="title-slide slide section level1">
+<h1>3. Closing the <code>&lt;gap/&gt;</code>: mein Beitrag zu den <em>digital commons</em></h1>
 
 </div>
 
-<div id="knowledge-gap-project-jarāʾid-2012" class="title-slide slide section level1">
-<h1>3.1 Knowledge gap: Project Jarāʾid (2012–)</h1>
+<div id="wissenslücke-knowledge-gap-project-jarāʾid-2012" class="title-slide slide section level1">
+<h1>3.1 Wissenslücke/ knowledge gap: Project Jarāʾid (2012–)</h1>
 
 </div>
 <div id="project-jarāʾid" class="slide section level2">
 <h1><a href="https://projectjaraid.github.io/">Project Jarāʾid</a></h1>
 <!-- - Addressiert den **knowledge gap** mit einer Webseite und offenen Datensätzen (TEI XML). -->
+<div class="c_width-50 c_left">
 <ul>
 <li>Bibliographische Erfassung sämtlicher arabischer Periodika seit ihrer Entstehung um 1800 bis 1930.
 <ul>
@@ -480,15 +525,23 @@ Amtssprache in 26 Ländern</li>
 <li>Kollaboration mit Adam Mestyan (Duke)</li>
 </ul>
 </div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../../assets/jaraid/map-jaraid.gif" id="fig:map-jaraid" alt="" />
+<p class="caption">Figure 13: Neu gegründete arabisch-sprachige Periodika, 1799–1929</p>
+</div>
+</div>
+</div>
 <div id="project-jarāʾid-1" class="slide section level2">
-<h1>Project Jarāʾid</h1>
+<h1><a href="https://projectjaraid.github.io/">Project Jarāʾid</a></h1>
+<h3 id="wissenslücke---digitalisierungslücke">Wissenslücke -&gt; Digitalisierungslücke</h3>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/jaraid/jaraid_holdings_pie-3.png" id="fig:jaraid-stats" alt="" />
-<p class="caption">Figure 13: In Project Jarāʾid erfasste Periodika</p>
+<p class="caption">Figure 14: In Project Jarāʾid erfasste Periodika</p>
 </div>
 </div>
-<div class="c_width-50 c.left">
+<div class="c_width-50 c_left">
 <div id="tbl:jaraid-stats">
 <table>
 <caption>Table 1: In Project Jarāʾid erfasste Periodika</caption>
@@ -562,7 +615,7 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
-<p class="caption">Figure 14: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
+<p class="caption">Figure 15: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
 </div>
 </div>
@@ -680,7 +733,7 @@ Amtssprache in 26 Ländern</li>
 </ul>
 <div class="figure">
 <img src="../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png" id="fig:alghamdi-2018-table-4" alt="" />
-<p class="caption">Figure 15: Evaluierung von OCR Software für Arabisch, <span class="citation">(Alghamdi und Teahan, table IV)</span></p>
+<p class="caption">Figure 16: Evaluierung von OCR Software für Arabisch, <span class="citation">(Alghamdi und Teahan, table IV)</span></p>
 </div>
 </div>
 <div id="neue-ansätze-mit-maschinellem-lernen" class="slide section level2">
@@ -766,31 +819,41 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png" id="fig:transkribus-evaluation" alt="" />
-<p class="caption">Figure 16: Transkribus: Evaluation des Modells #13864</p>
+<p class="caption">Figure 17: Transkribus: Evaluation des Modells #13864</p>
 </div>
 </div>
 <div class="c_width-50 c_right" height="100%">
 <div class="figure">
 <img src="../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif" id="fig:muqtabas-1-1-19" alt="" />
-<p class="caption">Figure 17: Seite aus dem Validierungssample mit “komplexem” Layout, <em>al-Muqtabas</em> 1(1), S.19</p>
+<p class="caption">Figure 18: Seite aus dem Validierungssample mit “komplexem” Layout, <em>al-Muqtabas</em> 1(1), S.19</p>
 </div>
 </div>
 </div>
 
-<div id="meine-analytischen-ansätze" class="title-slide slide section level1">
-<h1>4. Meine analytischen Ansätze</h1>
+<div id="closing-the-gap-digitale-methoden" class="title-slide slide section level1">
+<h1>4. Closing the <code>&lt;gap/&gt;</code>: digitale Methoden</h1>
 
+</div>
+
+<div id="sihafa-mapping-the-late-ottoman-ideosphere-of-the-eastern-mediterranean-through-computational-approaches-to-its-periodical-press-2021" class="title-slide slide section level1">
+<h1>SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?–)</h1>
+
+</div>
+<div id="sihafa" class="slide section level2">
+<h1>SIHAFA</h1>
+<ul>
+<li>Fragen</li>
+<li>Methoden</li>
+</ul>
 </div>
 
 <div id="netzwerkanalyse" class="title-slide slide section level1">
 <h1>4.1 Netzwerkanalyse</h1>
 
 </div>
-<div id="evaluierung-des-korpus-netzwerk-der-erwähnten-periodika" class="slide section level2">
-<h1>4.1.1 Evaluierung des Korpus: Netzwerk der erwähnten Periodika</h1>
-</div>
-<div id="netzwerk-der-erwähnten-periodika-datenquelle" class="slide section level2">
-<h1>Netzwerk der erwähnten Periodika: Datenquelle</h1>
+<div id="netzwerk-der-erwähnten-periodika" class="slide section level2">
+<h1>Netzwerk der erwähnten Periodika</h1>
+<h3 id="datenquelle">Datenquelle</h3>
 <div class="c_width-50 c_left">
 <ul>
 <li>Auszeichnung aller Erwähnungen von Periodika im Text
@@ -811,12 +874,12 @@ Amtssprache in 26 Ländern</li>
 <div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
 </div>
 </div>
-<div id="netzwerk-der-erwähnten-periodika" class="slide section level2">
+<div id="netzwerk-der-erwähnten-periodika-1" class="slide section level2">
 <h1>Netzwerk der erwähnten Periodika</h1>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" id="fig:network-periodicals" alt="" />
-<p class="caption">Figure 18: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
+<p class="caption">Figure 19: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -874,7 +937,7 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" id="fig:network-authors" alt="" />
-<p class="caption">Figure 19: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
+<p class="caption">Figure 20: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -901,25 +964,25 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas" alt="" />
-<p class="caption">Figure 20: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
+<p class="caption">Figure 21: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq" alt="" />
-<p class="caption">Figure 21: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
+<p class="caption">Figure 22: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
 </div>
 </div>
 <div class="c_width-50 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
-<p class="caption">Figure 22: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
+<p class="caption">Figure 23: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png" id="fig:authors-lughat" alt="" />
-<p class="caption">Figure 23: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
+<p class="caption">Figure 24: Karte der in den Autorenzeilen erwähnten Orte für <em>Lughat al-ʿArab</em> (Baghdad)</p>
 </div>
 </div>
 </div>
@@ -972,7 +1035,7 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg" id="fig:stylometry-muqtabas-w5000" alt="" />
-<p class="caption">Figure 24: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
+<p class="caption">Figure 25: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
 </div>
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 </div>
