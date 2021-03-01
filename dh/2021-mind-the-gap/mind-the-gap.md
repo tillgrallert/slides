@@ -20,27 +20,104 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 ## Übersicht des Probevortrages
 
-1. Digitalität als egalitäres Versprechen
-2. Digitalität als extreme Ungleichheit
-3. Meine Ansätze um diese zu Addressieren
-4. Meine analytischen Ansätze
+1. Mind the `<gap/>`!
+2. Closing the `<gap/>` one step at the time
 
-# 1. Digitalität als egalitäres Versprechen
-# 2. Digitalität als extreme Ungleichheit
-# Basis: Technische Infrastrukturen
-## Technische Infrastrukturen
-### Ungleicher Zugang nach Geographie, Gender, Besitz
+# 1. Mind the `<gap/>`! Zwischen Heilsversprechen und Realität
+## Zwischen Heilsversprechen und Realität
 
-<!-- - Computer Hardware: aktuell?
-    + Gar keinen privaten Zugang
-    + Über ein Telefon
-- Stromversorgung: stabil?
-    + 2018: 89,6%
-    + Afrika: 20 Länder unter 43%
-- Internetverbindung: stabil und schnell?
-    + 2019: knapp 4 Mrd. Menschen (c.51,4 %)
-- Software
-    + Trend zu Abo-Modellen für die Erstellung von Inhalten -->
+::: {.c_width-50 .c_left}
+
+### egalitäres Heilsversprechen
+
+- jede kann ohne Unterschied teilhaben
+- uneingescheränkter Zugang zum Wissen der Welt
+
+### Normative Grundlagen
+
+- Wissen = Daten = Verständnis
+- mehr Wissen = besseres Verständnis
+- Solutionism, Technokratie
+
+:::
+::: {.c_width-50 .c_right}
+
+### ernüchternde Realtität
+
+- universale, wenn auch unterschiedliche Ausschlußerfahrungen
+
+### Elefant in the room
+
+- Digitalität wird als **voraussetzungslos** verstanden
+
+:::
+
+## Metaphermaschinen
+
+::: {.c_width-50 .c_left}
+
+- Digitalität **simuliert** Vertrautheit und Stasis
+    + Metaphern
+    + semantische Modelle
+- Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
+
+:::
+::: {.c_width-50 .c_right}
+
+![Google docs](../..//assets/dh/google-docs.png){#fig:google-docs}
+
+:::
+
+## Mind the `<gap/>`! Zugangsvorraussetzungen
+
+...  müssen explizit gemacht werden!
+
+::: {.c_width-50 .c_left}
+
+### technisch
+
++ Hardware: aktuell
++ Strom: kontinuierlich
++ Internet: schnell und stabil
++ Software
+
+:::
+::: {.c_width-50 .c_right}
+
+### kulturell
+
++ Sprach- und Schriftkenntnisse
++ Vertrautheit mit den Metaphern
++ Vertrautheit mit semantischen Modellen
+
+:::
+
+## Mind the `<gap/>`! Zwischen Globalem Norden und Globalem Süden
+
+::: {.c_width-50 .c_left}
+
+### Globaler Norden
+
+- Hegemon
+- Autor der technischen und kulturellen Standards der Digitalität
+
+:::
+::: {.c_width-50 .c_right}
+
+### Globaler Süden
+
+- nicht homogen, kein universeller "Anderer"
+- Vielzahl heterogener Regionalitäten
+- gemeinsame Erfahrung der konstanten Auseinandersetzung mit dem Hegemon
+
+:::
+
+## Digital Humanities als Teil des Globalen Nordens
+
+![Globale Verteilung von [DH Zentren](http://dhcenternet.org/centers)](../../assets/maps/map_dhcenters.png)
+
+## technische Zugangsvorraussetzungen
+
 
 +--------------------+------------------------------------------+--------------------------------+
 |                    |                 Weltweit                 |            Libanon             |
@@ -269,8 +346,14 @@ Platformen zur Maximierung des Gewinns
 
 <!-- hier muss noch was zu den verscheidenen Gaps hin -->
 
+## Mind the `<gap/>`
+
+- Infrastruktur
+- Werkzeuge
+- Wissen
+
 # 3. Closing the `<gap/>`: mein Beitrag zu den *digital commons*
-# 3.1 Wissenslücke/ knowledge gap: Project Jarāʾid (2012--)
+# 3.1 <!-- Wissenslücke/  -->Knowledge gap: Project Jarāʾid (2012--)
 ## [Project Jarāʾid](https://projectjaraid.github.io/)
 
 <!-- - Addressiert den **knowledge gap** mit einer Webseite und offenen Datensätzen (TEI XML). -->
@@ -392,11 +475,11 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
     + Software nimmt Links-nach-rechts als Leserichtung an
 - Resultat:
 
-| ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation  |
-| ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------: |
-| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | 2.09            |
-| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | 8.40            |
-| 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19            |
+| ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation        |
+| ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------:       |
+| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [2.09]{style="color:green;"} |
+| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | 8.40                  |
+| 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19                  |
 
 
 ## Experiment: Transkribus
@@ -415,18 +498,49 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 # 4. Closing the `<gap/>`: digitale Methoden
 # SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
+
 ## SIHAFA
 
-- Fragen
-- Methoden
+:::{.c_width-30}
+
+### Ziele:
+
++ systematische Erforschung der spätosmanischen arabischen Presse *at scale*
++ Entwicklung/Evaluation von digitalen Methoden
++ Hinterfragung etablierter Forschungsnarrative
++ Etablierung von "Arab Periodical Studies"
+
+:::
+:::{.c_width-30}
+
+### Fragen
+
++ Wer sind die zentralen Akteure (Personen, Periodika) in diesem diskursiven Feld?
++ Wie sind Periodika produziert worden? Wie ist Autorenschaft zu denken?
++ Welche Rolle spielt *text reuse*? Wie reisten Texte, Themen, Genres?
++ Wie hat sich die Sprache der Moderne im multilingualen, imperialen Raum etabliert?
+
+:::
+:::{.c_width-30}
+
+### Methoden
+
++ Netzwerkanalyse
++ stilometrische Autorenschaftbestimmung
++ historische GIS
++ layout analyse
++ Topic modelling
++ Word embeddings
+
+:::
 
 # 4.1 Netzwerkanalyse
 ## Netzwerk der erwähnten Periodika
-### Datenquelle
+### Datenquellen: OpenArabicPE, Project Jarāʾid +
 
 :::{.c_width-50 .c_left}
 
-- Auszeichnung aller Erwähnungen von Periodika im Text
+- Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
     + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
 - Normdatensätze für die Disambiguierung und Anreicherung von Daten
     + zumeist automatisch erstellt und verknüpft
@@ -545,7 +659,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
 
-![ ](../../assets/clipart/iceberg-2070977_960_720.png)
+![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
 
 
 # Stilometrische Autorenschaftsbestimmung
@@ -603,3 +717,6 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 
 ## Layoutanalyse
+
+# Conclusio
+## take home messages
