@@ -303,12 +303,12 @@ Platformen zur Maximierung des Gewinns
 
 <!-- hier muss noch was zu den verschiedenen Gaps hin -->
 
-## Mind the `<gap/>`
+<!-- ## Mind the `<gap/>`
 
 - Infrastruktur
 - Werkzeuge
 - Wissen
-
+ -->
 # 2. Closing the `<gap/>`
 ## 2. Closing the `<gap/>`
 
@@ -462,7 +462,7 @@ Platformen zur Maximierung des Gewinns
 :::
 
 
-# 4. Closing the `<gap/>`: digitale Methoden
+# Closing the `<gap/>`: Erforschung dieses Kulturerbes mit Methoden der DH
 # SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
 
 ## SIHAFA
@@ -494,15 +494,14 @@ Platformen zur Maximierung des Gewinns
 + Netzwerkanalyse
 + stilometrische Autorenschaftbestimmung
 + historische GIS
-+ layout analyse
++ Layoutanalyse
 + Topic modelling
 + Word embeddings
 
 :::
 
-# 4.1 Netzwerkanalyse
 ## Netzwerk der erwähnten Periodika
-### Datenquellen: OpenArabicPE, Project Jarāʾid +
+### Datenquellen: OpenArabicPE, Project Jarāʾid, OCR +
 
 :::{.c_width-50}
 
@@ -536,18 +535,43 @@ Platformen zur Maximierung des Gewinns
 :::
 :::{.c_width-30}
 
-1. Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
-2. Alle Periodika sind hauptsächlich selbstreferentiell
-2. *al-Muqtabas* ist anders
-3. Kernnetzwerk:
-    - Überraschende Mitglieder
+* Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
+* Alle Periodika sind hauptsächlich selbstreferentiell
+* Typologie von Periodika? *al-Muqtabas* ist anders
+* Kernnetzwerk:
+    * Überraschende Mitglieder
     - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
-    - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut
+<!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut -->
 
 :::
 
-## 4.1.2 Bibliometrics: Netzwerk der Autor_innen
-## Netzwerk der Autor_innen: Datenquellen
+## Historisches GIS <!-- CUT -->
+
+:::{.c_width-50 .c_left}
+
+### trans-regional
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
+
+:::
+:::{.c_width-50 .c_right}
+
+### regional
+
+:::{.c_height-50}
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
+
+:::
+:::{.c_height-50}
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
+
+:::
+:::
+
+## Netzwerk der Autor_innen
+### Datenquellen: OpenArabicPE, Project Jarāʾid +
 
 :::{.c_width-50}
 
@@ -589,37 +613,11 @@ Platformen zur Maximierung des Gewinns
 :::
 :::{.c_width-30}
 
-1. Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
-2. Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
-3. Kernnetzwerk:
-    - Viele Iraker (6), wenige Syrer (2)
-    - Wenige Christen (2)
-    - Viele Dichter (7) und Journalisten (7)
+* Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
+* Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
+* Kernnetzwerk:
+    - Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)
     - praktisch nicht in der Literatur abgebildet
-
-:::
-
-# Geographische Netzwerke
-## Netzwerk der Autor_innen: Geographie
-
-:::{.c_width-50}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
-
-:::
-:::{.c_width-50}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
-
-:::
-:::{.c_width-50}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
-
-:::
-:::{.c_width-50}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *Lughat al-ʿArab* (Baghdad)](../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png){#fig:authors-lughat}
 
 :::
 
@@ -649,18 +647,18 @@ Platformen zur Maximierung des Gewinns
 
 :::
 
-## Computer-gestützte Autorenschaftsbestimmung: Stylometrie
+## Computer-gestützte Autorenschaftsbestimmung: Stilometrie
 
 - Ist bis jetzt nicht auf arabische Texte angewendet worden
 - **komparative** Methode:
     + Vergleich **stylistischer Merkmale**: nummerisches Abstandsmaß (Verschiedenheit)
     + nummerisches Abstandsmaß ist abhängig von der Zusammensetzung des Korpus
 - stylistische Merkmale: *most frequent words* (MFWs)
-- chunking/sampling beeinflusst die Ergebnisse
+<!-- - chunking/sampling beeinflusst die Ergebnisse
     + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
-    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse
+    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 
-## Stilometrie: erste Versuche
+## Stilometrie: erste Experimente
 ### Falsifizierung der Hypothese
 
 :::{.c_width-60 .c_left}
@@ -682,7 +680,11 @@ Platformen zur Maximierung des Gewinns
 
 :::
 
-## Layoutanalyse
 
 # Conclusio
 ## take home messages
+## Danke!
+
+- Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
+- Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Beiträger_innen zu OCR: Adam Mestyan, Sinai Rusinek

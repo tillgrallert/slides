@@ -112,6 +112,17 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 :::
 
+|                 |   Globaler Norden    |    Globaler Süden    |
++-----------------+----------------------+----------------------+
+| Hardware        | Designer             | Benutzer             |
+| Software        | Designer             | Benutzer             |
+| Standards       | Designer             | Benutzer             |
+| Schrift/Sprache | lokal                | fremd                |
+| Finanzierung    | reichlich, lokal     | eingeschränkt, fremd |
+| Instituionen    | reichlich            | eingeschränkt        |
+| Internet        | schnell, verlässlich | langsam, unbeständig |
+| Elektrizität    | verlässlich          | unbeständig          |
+
 ## Digital Humanities als Teil des Globalen Nordens
 
 ![Globale Verteilung von [DH Zentren](http://dhcenternet.org/centers)](../../assets/maps/map_dhcenters.png)
