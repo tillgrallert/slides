@@ -26,7 +26,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 # 1. Mind the `<gap/>`! Zwischen Heilsversprechen und Realität
 ## Zwischen Heilsversprechen und Realität
 
-::: {.c_width-50 .c_left}
+::: {.c_width-50}
 
 ### egalitäres Heilsversprechen
 
@@ -40,7 +40,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 - Solutionism, Technokratie
 
 :::
-::: {.c_width-50 .c_right}
+::: {.c_width-50}
 
 ### ernüchternde Realtität
 
@@ -54,7 +54,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 ## Metaphermaschinen
 
-::: {.c_width-50 .c_left}
+::: {.c_width-50}
 
 - Digitalität **simuliert** Vertrautheit und Stasis
     + Metaphern
@@ -62,7 +62,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 - Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
 
 :::
-::: {.c_width-50 .c_right}
+::: {.c_width-50}
 
 ![Google docs](../..//assets/dh/google-docs.png){#fig:google-docs}
 
@@ -72,7 +72,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 ...  müssen explizit gemacht werden!
 
-::: {.c_width-50 .c_left}
+::: {.c_width-50}
 
 ### technisch
 
@@ -82,7 +82,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 + Software
 
 :::
-::: {.c_width-50 .c_right}
+::: {.c_width-50}
 
 ### kulturell
 
@@ -94,7 +94,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 ## Mind the `<gap/>`! Zwischen Globalem Norden und Globalem Süden
 
-::: {.c_width-50 .c_left}
+::: {.c_width-50}
 
 ### Globaler Norden
 
@@ -102,7 +102,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 - Autor der technischen und kulturellen Standards der Digitalität
 
 :::
-::: {.c_width-50 .c_right}
+::: {.c_width-50}
 
 ### Globaler Süden
 
@@ -120,7 +120,7 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 # Mind the `<gap/>`! Nicht-lateinische Schriften und Sprachen des Globalen Südens
 ## Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
 
@@ -146,7 +146,7 @@ write.table(المشار.اليها, file = "csv/oape_stats.csv", row.names = FA
 ```
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
@@ -156,7 +156,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 ## Arabisch
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ### Schrift
 
@@ -167,7 +167,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 + Präferenz für Ligaturen
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ### Sprache
 
@@ -195,7 +195,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Erfassung: Buchstaben, Grapheme, Character encoding
 ### Unicode ist nicht die Lösung aller Probleme
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 <!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
 - Unicode ist ein <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz -->
@@ -209,7 +209,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 - Folge: Volltextsuchen sind nicht aussagekräftig
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 <!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
 
@@ -222,14 +222,14 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Darstellung: basale Standards werden nicht unterstützt
 ### Beispiel 1: Werbung (Grafik- und Layout Programme)
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 <!-- Nicht verbunden und von rechts nach links -->
 
 !["Arabische" Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: <https://twitter.com/2awbi2atiye/status/1347351918268489728>](../../assets/dh/ErLBbWwVgAErjHy.jpg){#fig:arabic-fail-covid}
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 <!-- Korrektur -->
 
@@ -254,7 +254,7 @@ Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch l
 # Mind the `<gap/>`! Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ### Erfassung
 
@@ -271,7 +271,7 @@ Digitalisierung ist **teuer**: public-private partnerships, private vendors
     * Outsourcing
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ### Bereitsstellung
 
@@ -290,12 +290,12 @@ Platformen zur Maximierung des Gewinns
 
 ## Digitalisierung des Kulturerbes: Bezahlschranken und Geo-fencing
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) außerhalb der USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) mit US IP](../../assets/OpenArabicPE/hathi_muqtabas-2.png){#fig:hathi-muqtabas-us}
 
@@ -339,12 +339,12 @@ Platformen zur Maximierung des Gewinns
 ## [Project Jarāʾid](https://projectjaraid.github.io/)
 ### Wissenslücke -> Digitalisierungslücke
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"}
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 |                  | Anzahl  | %     |
 | ---------------- | ------: | ----: |
@@ -358,7 +358,7 @@ Platformen zur Maximierung des Gewinns
 
 ## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
-::: {.c_width-30 .c_left}
+::: {.c_width-30}
 
 ### Ansatz
 
@@ -366,7 +366,7 @@ Platformen zur Maximierung des Gewinns
 - Scraping, Erzeugung, Validierung und Teilen von offenen bibliographischen Metadaten
 
 :::
-::: {.c_width-30 .c_left}
+::: {.c_width-30}
 
 ### Ziele
 
@@ -375,7 +375,7 @@ Platformen zur Maximierung des Gewinns
 - Unter den Bedingungen des Globalen Südens
 
 :::
-::: {.c_width-30 .c_left}
+::: {.c_width-30}
 
 ### Prinzipien
 
@@ -388,7 +388,7 @@ Platformen zur Maximierung des Gewinns
 ## [OpenArabicPE](https://openarabicpe.github.io)
 ### Infrastruktur
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 1. Digitale Editionen: TEI XML.
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
@@ -398,7 +398,7 @@ Platformen zur Maximierung des Gewinns
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ![[Webansicht von *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png){#fig:webview-muqtabas}
 
@@ -450,12 +450,12 @@ Platformen zur Maximierung des Gewinns
 
 ## Experiment: Transkribus
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ![Transkribus: Evaluation des Modells #13864](../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png){#fig:transkribus-evaluation}
 
 :::
-:::{.c_width-50 .c_right height="100%"}
+:::{.c_width-50 height="100%"}
 
 ![Seite aus dem Validierungssample mit "komplexem" Layout, *al-Muqtabas* 1(1), S.19](../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif){#fig:muqtabas-1-1-19}
 
@@ -504,7 +504,7 @@ Platformen zur Maximierung des Gewinns
 ## Netzwerk der erwähnten Periodika
 ### Datenquellen: OpenArabicPE, Project Jarāʾid +
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 - Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
     + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
@@ -512,7 +512,7 @@ Platformen zur Maximierung des Gewinns
     + zumeist automatisch erstellt und verknüpft
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 
 <!-- ägyptische Zeitschrift -->
@@ -534,7 +534,7 @@ Platformen zur Maximierung des Gewinns
 ![Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicals}
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-30}
 
 1. Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
 2. Alle Periodika sind hauptsächlich selbstreferentiell
@@ -549,7 +549,7 @@ Platformen zur Maximierung des Gewinns
 ## 4.1.2 Bibliometrics: Netzwerk der Autor_innen
 ## Netzwerk der Autor_innen: Datenquellen
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 - Strukturierte bibliographische Daten auf Basis der Editionen
     + semi-automatisch
@@ -560,7 +560,7 @@ Platformen zur Maximierung des Gewinns
     + Georeferenzierte Orte
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ```xml
 <person>
@@ -587,7 +587,7 @@ Platformen zur Maximierung des Gewinns
 ![Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg){#fig:network-authors}
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-30}
 
 1. Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
 2. Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
@@ -602,22 +602,22 @@ Platformen zur Maximierung des Gewinns
 # Geographische Netzwerke
 ## Netzwerk der Autor_innen: Geographie
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
 
 :::
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *Lughat al-ʿArab* (Baghdad)](../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png){#fig:authors-lughat}
 
@@ -631,7 +631,7 @@ Platformen zur Maximierung des Gewinns
 # Stilometrische Autorenschaftsbestimmung
 ## Autorenschaftsbestimmung
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ### Forschungsstand
 
@@ -639,7 +639,7 @@ Platformen zur Maximierung des Gewinns
 - Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ### Probleme
 
@@ -670,7 +670,7 @@ Platformen zur Maximierung des Gewinns
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-30}
 
 - Stilometrie funktioniert für arabische Periodika
 - <!-- Erfolgreich identifizierte  -->Signale für
