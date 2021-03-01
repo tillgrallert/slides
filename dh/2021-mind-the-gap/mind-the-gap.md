@@ -112,36 +112,13 @@ Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 :::
 
-## Digital Humanities als Teil des Globalen Nordens
+## Mind the `<gap/>`! Digital Humanities als Teil des Globalen Nordens
 
-![Globale Verteilung von [DH Zentren](http://dhcenternet.org/centers)](../../assets/maps/map_dhcenters.png)
-
-## technische Zugangsvorraussetzungen
+![Globale Verteilung von DH Zentren. Quelle: [DH centerNet](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 
-+--------------------+------------------------------------------+--------------------------------+
-|                    |                 Weltweit                 |            Libanon             |
-+====================+==========================================+================================+
-| Computer Hardware  | - Internetcafé                           |                                |
-|                    | - Telefon                                |                                |
-+--------------------+------------------------------------------+--------------------------------+
-| Stomversorgung     | + 2018: 89,6%                            | - 3h/ Tag reg. Stromausfall    |
-|                    | + Afrika: 20 Länder unter 43%            | - teure Generatorenabonnements |
-+--------------------+------------------------------------------+--------------------------------+
-| Internetverbindung | + 2019: knapp 4 Mrd. Menschen (c.51,4 %) | - 15 Mbps für ein Institut     |
-|                    |                                          | - mobil: 60 USD für 20 GB      |
-+--------------------+------------------------------------------+--------------------------------+
-| Software           | + Trend zu Abo-Modellen                  |                                |
-+--------------------+------------------------------------------+--------------------------------+
-
-
-<!-- 40 MB für einen Scan dauern mit 15 Mbps rechnerisch 21,33 Sek für den Download. Aber über VPN oder vor Ort teilen sich diese Leitung 20-40 Leute -->
-<!-- außerdem fliege ich alle 200-300 MB aus dem SharePoint Volume -->
-
-# Nicht-lateinische Schriften und Sprachen des Globalen Südens
-## Ungleicher Zugang nach Sprache
-
-### Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
+# Mind the `<gap/>`! Nicht-lateinische Schriften und Sprachen des Globalen Südens
+## Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
 :::{.c_width-50 .c_left}
 
@@ -184,7 +161,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ### Schrift
 
 - zweithäufigste Schrift <!-- nach lateinischer Schrift -->
-+ aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
+    + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
 + Schriftrichtung von rechts nach links
 + Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
 + Präferenz für Ligaturen
@@ -207,23 +184,26 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Arabisch in der Digitalität
 ### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
-+ Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
 + Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
++ Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
 + Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
 + OCR ist nicht funktional
 
 <!-- hello Java, I am looking at you! -->
 <!-- add screenshot of tweet writing Arabic in Latin -->
 
-## Arabische Schrift: Character encoding
-### Unicode is awesome but ...
+## Erfassung: Buchstaben, Grapheme, Character encoding
+### Unicode ist nicht die Lösung aller Probleme
 
 :::{.c_width-50 .c_left}
 
 <!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
-- Unicode ist ein <!-- in Mountain View ansässiges --> Industriekonsortium <!-- mit US-Dominanz -->
-    + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman**
-- Encodings <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
+- Unicode ist ein <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz -->
+    <!-- + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman** -->
+- Idee: Trennung von Bedeutung und Form
+- Probleme:
+    - Encodings <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
+    - inkonsistent
 - OS, Browser etc. normalisieren die Varianz nicht.
 <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
 - Folge: Volltextsuchen sind nicht aussagekräftig
@@ -231,14 +211,15 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 :::
 :::{.c_width-50 .c_right}
 
-![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1}
+<!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
+
+32 Arten "mekkanisch" (مكية) zu schreiben
 
 ![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
 
 :::
 
-## Rendering: basale Standards werden nicht unterstützt
-
+## Darstellung: basale Standards werden nicht unterstützt
 ### Beispiel 1: Werbung (Grafik- und Layout Programme)
 
 :::{.c_width-50 .c_left}
@@ -256,16 +237,11 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 :::
 
-<!-- ![Die schwedischen Liberalen in ihrer Selbstbeschreibung (franz., arab.). Quelle: https://pbs.twimg.com/media/DmB222GXoAEyBux](../../assets/dh/DmB222GXoAEyBux.jpg)   -->
-
-## Rendering: basale Standards werden nicht unterstützt
+## Darstellung: basale Standards werden nicht unterstützt
 ### Beispiel 2: Webbrowser und HTML 5
 
 Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch linksbündig dar
 
-:::{lang="ar"}
-كانت أمريكا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.
-:::
 
 :::{.c_width-30}
 ![Chrome](../../assets/dh/html5-lang_ar-chrome-2.png){#fig:arabic-fail-chrome}
@@ -275,11 +251,7 @@ Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch l
 ![Firefox](../../assets/dh/html5-lang_ar-firefox-2.png){#fig:arabic-fail-firefox}
 :::
 
-:::{.c_width-30}
-![Safari](../../assets/dh/html5-lang_ar-safari-2.png){#fig:arabic-fail-safari}
-:::
-
-# Digitalisierung des Kulturerbes
+# Mind the `<gap/>`! Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes
 
 :::{.c_width-50 .c_left}
@@ -329,22 +301,7 @@ Platformen zur Maximierung des Gewinns
 
 :::
 
-## Digitalisierung des Kulturerbes: OCR Schichten
-
-:::{.c_width-50 .c_left}
-
-![OCR Schicht für *al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (mit US IP)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png)
-
-:::
-:::{.c_width-50 .c_right}
-
-![OCR Schicht für *al-Bashīr* 9 Jan. 1880 (#487), S.1 auf [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1)](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png)
-
-:::
-
-
-
-<!-- hier muss noch was zu den verscheidenen Gaps hin -->
+<!-- hier muss noch was zu den verschiedenen Gaps hin -->
 
 ## Mind the `<gap/>`
 
@@ -352,16 +309,27 @@ Platformen zur Maximierung des Gewinns
 - Werkzeuge
 - Wissen
 
-# 3. Closing the `<gap/>`: mein Beitrag zu den *digital commons*
-# 3.1 <!-- Wissenslücke/  -->Knowledge gap: Project Jarāʾid (2012--)
-## [Project Jarāʾid](https://projectjaraid.github.io/)
+# 2. Closing the `<gap/>`
+## 2. Closing the `<gap/>`
 
-<!-- - Addressiert den **knowledge gap** mit einer Webseite und offenen Datensätzen (TEI XML). -->
+### Ziele/ Anliegen
+
+- Digitale Erschließung von Kulturerbe des Globalen Südens
+- Erforschung dieses Kulturerbes mit Methoden der DH
+
+### Gegenstand
+
+- primär arabisch-sprachige Presse des spätosmanischen östlichen Mittelmeerraumes (c.1800 -- c.1920)
+- warum?
+- probleme?
+
+
+## Closing the knowledge `<gap/>`: [Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
 
 :::{.c_width-50 .c_left}
 
-- Bibliographische Erfassung sämtlicher arabischer Periodika seit ihrer Entstehung um 1800 bis 1930.
-    + Webseite und offene Datensätzen (TEI XML)
+- Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1930.
+    + Webseite und offene Datensätze (TEI XML)
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke)
 
