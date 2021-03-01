@@ -324,32 +324,29 @@ Platformen zur Maximierung des Gewinns
 - probleme?
 
 
-## Closing the knowledge `<gap/>`: [Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
+# Digitale Erschließung von Kulturerbe des Globalen Südens
 
-:::{.c_width-50 .c_left}
+## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
 - Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1930.
     + Webseite und offene Datensätze (TEI XML)
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
-- Kollaboration mit Adam Mestyan (Duke)
-
-:::
-:::{.c_width-50 .c_right}
+- Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
 
 ![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
 
-:::
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/)
 ### Wissenslücke -> Digitalisierungslücke
 
-:::{.c_width-50 .c_right}
-![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats}
-:::
-
 :::{.c_width-50 .c_left}
 
-|                  | number  | %     |
+![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"}
+
+:::
+:::{.c_width-50 .c_right}
+
+|                  | Anzahl  | %     |
 | ---------------- | ------: | ----: |
 | Periodika        | 3269    |       |
 | in Bibliotheken  | 747     | 22.85 |
@@ -358,22 +355,38 @@ Platformen zur Maximierung des Gewinns
 <!-- Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats} -->
 :::
 
-# 3.2 Infrastructural gap: Open Arabic Periodical Editions (OpenArabicPE, 2015--) <!-- digitisation bias  -->
-## corpus building: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
-1. Ideen:
-    - Verbindung **vorhandener** Faksimiles und Transkriptionen in einem standardkonformen, offenen Format
-    - Scraping, Erzeugung, Validierung und Teilen von offenen bibliographischen Metadaten
-2. Ziele
-    + **Validierung** der Transkriptionen
-    + Iterative und kollaborative **Verbesserungen** der Editionen
-    + Alles soll dauerhaft **zitierbar** und **verlinkbar** sein
-    + Verbesserte Zugänglichkeit und Nachnutzung durch **offene Lizenzen**
-3. Prinzipien
-    - Weiternutzung **vorhandener** und **etablierter** Werkzeuge und Technologien
-    - Präferenz für **offene** und **einfache** Formate und Werkzeuge
+## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
-## corpus building: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
+::: {.c_width-30 .c_left}
+
+### Ansatz
+
+- Verbindung **vorhandener** Faksimiles und Transkriptionen in einem standardkonformen, offenen Format
+- Scraping, Erzeugung, Validierung und Teilen von offenen bibliographischen Metadaten
+
+:::
+::: {.c_width-30 .c_left}
+
+### Ziele
+
+- Validierung und Nutzbarmachung vorhandener Transkriptionen
+- Aufbau einer offenen Infrastruktur von Modellen, Workflows, Normdatensätzen
+- Unter den Bedingungen des Globalen Südens
+
+:::
+::: {.c_width-30 .c_left}
+
+### Prinzipien
+
+- **Etablierte** Werkzeuge und Technologien
+- **wenige**, **offene** und **einfache** Formate und Werkzeuge
+- **kostenfreie** Platformen hne lock-in
+
+:::
+
+## [OpenArabicPE](https://openarabicpe.github.io)
+### Infrastruktur
 
 :::{.c_width-50 .c_left}
 
@@ -391,7 +404,8 @@ Platformen zur Maximierung des Gewinns
 
 :::
 
-## OpenArabicPE: Korpus
+## OpenArabicPE
+### Korpus
 
 | Periodikum                                                                        | DOI                                                              | Bände | Ausgaben | Artikel | Wörter   | Wörter/Artikel |
 | :--------                                                                         | :--                                                              | ----: | ----:    | ----:    | ----:   | ----:             |
@@ -404,50 +418,34 @@ Platformen zur Maximierung des Gewinns
 | [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | 3     | 34       | 939      | 373832  | 485.21            |
 | **total**                                                                         |                                                                  | 56    | 795      | 9664     | 9311376 |                   |
 
-Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
+<!-- Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus} -->
 
 
-# 3.3 Tool gap: OCR/HTR für arabische Periodika (2019--)
-## Traditionelle Ansätze
-
-- Ziel: Buchstaben- und Worterkennung
-- Ansatz: Segmentierung, Erkennung
-- Probleme:
-    + Buchstaben werden **mehrheitlich** in Schreibrichtung verbunden
-    + Positionsabhängige Buchstabenformen
-    + Ambivalente Buchstabenformen
-    + Präferenz für Ligaturen ![](../../assets/dh/arabic-script_sample_short.png)
-- Resultat:
-
-![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
-
-## Neue Ansätze mit maschinellem Lernen
-
-- Ansatz: Word spotting und Lernen
-- Vorteile:
-    + Segmentierung nicht notwendig
-    + Eingabe- und Ausgabeschrift müssen nicht die gleiche sein
-    + Offene Software
-- Nachteile
-    + Training benötigt potentiell sehr umfangreiches Ground Truth
-    + Training von Schrift- und Sprachmodellen für jeden Font
-    + Rechenintensiv
-
-## Experiment: OCR für arabische Periodika
+## OCR/HTR für arabische Periodika (2019--) <br/> Closing the tool `<gap/>`
 
 - Kollaboration mit Sinai Rusinek (Haifa)
+- Ansatz:
+    + Maschinelles Lernen
+    + OpenArabicPE Korpus als Ground Truth
 - Software: Transkribus, Tesseract 4
-- Ground Truth: OpenArabicPE Korpus
 - Probleme:
-    + Komplexes Layout
+    + Komplexes Layout von Periodikaseiten
     + Software nimmt Links-nach-rechts als Leserichtung an
-- Resultat:
+    + Rechenintensiv
+
+## OCR/HTR für arabische Periodika
+### Ergebnisse mit Transkribus
 
 | ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation        |
 | ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------:       |
-| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [2.09]{style="color:green;"} |
-| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | 8.40                  |
-| 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19                  |
+| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{style="color:green;"} |
+| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{style="color:red;"}                  |
+
+<!-- | 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19                  | -->
+
+### Klassisches / kommerzielles OCR
+
+![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
 
 
 ## Experiment: Transkribus
