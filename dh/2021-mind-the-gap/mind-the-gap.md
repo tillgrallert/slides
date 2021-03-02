@@ -471,19 +471,6 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 ![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
 
 
-## Experiment: Transkribus
-
-:::{.c_width-50}
-
-![Transkribus: Evaluation des Modells #13864](../../assets/dh/transkribus/evaluation-modell_OpenArabic1.png){#fig:transkribus-evaluation}
-
-:::
-:::{.c_width-50 height="100%"}
-
-![Seite aus dem Validierungssample mit "komplexem" Layout, *al-Muqtabas* 1(1), S.19](../../assets/dh/transkribus/oclc_4770057679-v_1-img_019.tif){#fig:muqtabas-1-1-19}
-
-:::
-
 
 # Closing the `<gap/>`: Erforschung dieses Kulturerbes mit Methoden der DH
 # SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
