@@ -343,7 +343,7 @@ Platformen zur Maximierung des Gewinns
 ## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
 - Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
-    + Webseite und offene Datensätze (TEI XML)
+    + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/))
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
 
@@ -412,10 +412,10 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 
 :::{.c_width-50}
 
-1. Digitale Editionen: TEI XML.
+1. Digitale Editionen, Normdatensätze: [TEI XML](https://tei-c.org/).
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
 2. Soziale digitale Editionen, die auf [GitHub](https://github.com/openarabicpe) gehostet sind: <!-- gradually improve transcription and mark-up -->
-2. Veröffentlichungen werden auf [Zenodo](https://zenodo.org) archiviert: DOI für dauerhafte Referenzierbarkeit
+2. Archivierung auf [Zenodo](https://zenodo.org): DOI für dauerhafte Referenzierbarkeit
 3. [Statische Webansichten](https://github.com/openarabicpe/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
 
@@ -553,30 +553,33 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 
 :::
 
-## Historisches GIS <!-- CUT -->
+## Historisches GIS: Typologie der Periodika <!-- CUT -->
 
-:::{.c_width-50 .c_left}
+:::{.c_width-30}
 
 ### trans-regional
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
 
 :::
-:::{.c_width-50 .c_right}
+<!-- :::{.c_width-50 .c_right} -->
+
+:::{.c_width-30}
 
 ### regional
-
-:::{.c_height-50}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
-
-:::
-:::{.c_height-50}
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
 
 :::
+:::{.c_width-30}
+
+### lokal
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
+
 :::
+
+<!-- ::: -->
 
 ## Netzwerk der Autor_innen
 ### Datenquellen: OpenArabicPE, Project Jarāʾid +
