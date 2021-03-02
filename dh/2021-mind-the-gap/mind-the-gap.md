@@ -312,23 +312,33 @@ Platformen zur Maximierung des Gewinns
 # 2. Closing the `<gap/>`
 ## 2. Closing the `<gap/>`
 
-### Ziele/ Anliegen
+:::{.c_width-50}
+
+### Anliegen
 
 - Digitale Erschließung von Kulturerbe des Globalen Südens
 - Erforschung dieses Kulturerbes mit Methoden der DH
 
+:::
+:::{.c_width-50}
+
 ### Gegenstand
 
-- primär arabisch-sprachige Presse des spätosmanischen östlichen Mittelmeerraumes (c.1800 -- c.1920)
-- warum?
-- probleme?
+- Primär arabisch-sprachige Presse des spätosmanischen östlichen Mittelmeerraumes (c.1800 -- c.1920)
+- Presse ist zentraler Agent des Wandels in der Moderne
+- Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
+- Forschung wird dominiert von
+    + national(istisch)en Narrativen
+    + Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel
+    + impliziten Hypothesen
 
+:::
 
 # Digitale Erschließung von Kulturerbe des Globalen Südens
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
-- Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1930.
+- Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
     + Webseite und offene Datensätze (TEI XML)
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
@@ -336,25 +346,38 @@ Platformen zur Maximierung des Gewinns
 ![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
 
 
-## [Project Jarāʾid](https://projectjaraid.github.io/)
+## [Project Jarāʾid](https://projectjaraid.github.io/): mind the `<gap/>`
 ### Wissenslücke -> Digitalisierungslücke
 
+:::{.c_width-60}
+
+Arabische Periodika bis 1929 weltweit
+
+:::{.c_width-50}
+
+- Arabisch: 420 Mio Sprechende
+- 3269 Zeitungen und Zeitschriften
+- davon knapp 1/4 (747) in Sammlungen lokalisiert
+- davon wiederum knapp 1/5 (145) digitalisiert
+- Bezahlschranken, geo-fencing
+
+:::
 :::{.c_width-50}
 
 ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"}
 
 :::
-:::{.c_width-50}
-
-|                  | Anzahl  | %     |
-| ---------------- | ------: | ----: |
-| Periodika        | 3269    |       |
-| in Bibliotheken  | 747     | 22.85 |
-| digitalisiert    | 145     | 4.44  |
-
-<!-- Table: In Project Jarāʾid erfasste Periodika {#tbl:jaraid-stats} -->
 :::
+:::{.c_width-30}
 
+Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de)"
+
+- Hessen: 6,2 Mio. Einwohner_innen
+- 125 Zeitungen mit mehr als ½ Mio. Seiten
+- Digitalisat: Faksimile und Volltext
+- Offen zugänglich
+
+:::
 
 ## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
