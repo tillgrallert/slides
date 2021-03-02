@@ -349,11 +349,9 @@ Platformen zur Maximierung des Gewinns
 ## [Project Jarāʾid](https://projectjaraid.github.io/): mind the `<gap/>`
 ### Wissenslücke -> Digitalisierungslücke
 
-:::{.c_width-60}
+:::{.c_width-50}
 
 Arabische Periodika bis 1929 weltweit
-
-:::{.c_width-50}
 
 - Arabisch: 420 Mio Sprechende
 - 3269 Zeitungen und Zeitschriften
@@ -361,14 +359,11 @@ Arabische Periodika bis 1929 weltweit
 - davon wiederum knapp 1/5 (145) digitalisiert
 - Bezahlschranken, geo-fencing
 
+
+<!-- ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"} -->
+
 :::
 :::{.c_width-50}
-
-![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"}
-
-:::
-:::
-:::{.c_width-30}
 
 Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de)"
 
@@ -469,7 +464,6 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 ### Klassisches / kommerzielles OCR
 
 ![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
-
 
 
 # Closing the `<gap/>`: Erforschung dieses Kulturerbes mit Methoden der DH
