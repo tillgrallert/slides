@@ -312,7 +312,7 @@ Platformen zur Maximierung des Gewinns
 # 2. Closing the `<gap/>`
 ## 2. Closing the `<gap/>`
 
-:::{.c_width-50}
+:::{.c_width-30}
 
 ### Anliegen
 
@@ -320,12 +320,12 @@ Platformen zur Maximierung des Gewinns
 - Erforschung dieses Kulturerbes mit Methoden der DH
 
 :::
-:::{.c_width-50}
+:::{.c_width-60}
 
 ### Gegenstand
 
 - Primär arabisch-sprachige Presse des spätosmanischen östlichen Mittelmeerraumes (c.1800 -- c.1920)
-- Presse ist zentraler Agent des Wandels in der Moderne
+<!-- - Presse ist zentraler Agent des Wandels in der Moderne -->
 - Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
 - Forschung wird dominiert von
     + national(istisch)en Narrativen
@@ -333,6 +333,10 @@ Platformen zur Maximierung des Gewinns
     + impliziten Hypothesen
 
 :::
+
+<!-- ![*al-Muqtabas*: Faksimile, TEI XML, Webview](../../assets/OpenArabicPE/muqtabas-v_6-i_2-facsimile-xml-boilerplate.png){#fig:muqtabas-cover} -->
+
+![Titelseiten](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
 
 # Digitale Erschließung von Kulturerbe des Globalen Südens
 
@@ -346,8 +350,8 @@ Platformen zur Maximierung des Gewinns
 ![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
 
 
-## [Project Jarāʾid](https://projectjaraid.github.io/): mind the `<gap/>`
-### Wissenslücke -> Digitalisierungslücke
+## [Project Jarāʾid](https://projectjaraid.github.io/)
+### Mind the `<gap/>`! Wissenslücke -> Digitalisierungslücke
 
 :::{.c_width-50}
 
@@ -399,7 +403,7 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 
 - **Etablierte** Werkzeuge und Technologien
 - **wenige**, **offene** und **einfache** Formate und Werkzeuge
-- **kostenfreie** Platformen hne lock-in
+- **kostenfreie** Platformen ohne lock-in
 
 :::
 
