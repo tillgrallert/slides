@@ -10,13 +10,13 @@ duration: 25
 ---
 
 
-## Title slide
+## Mind the `<gap/>`! <br/>Digital Humanities und das kulturelle Erbe des Globalen Südens
 
 Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
 Probevortrag
 
-Slides: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html)
+Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html)
 
 ## Übersicht des Probevortrages
 
