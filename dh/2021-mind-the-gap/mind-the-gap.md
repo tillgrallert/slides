@@ -18,13 +18,13 @@ Probevortrag
 
 Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html)
 
-## Übersicht des Probevortrages
+<!-- ## Übersicht des Probevortrages
 
 1. Mind the `<gap/>`!
-2. Closing the `<gap/>` one step at the time
+2. Closing the `<gap/>` one step at the time -->
 
-# 1. Mind the `<gap/>`! <br/>Zwischen Heilsversprechen und Realität
-## Zwischen Heilsversprechen und Realität
+# 1. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
+## Digitalität zwischen Heilsversprechen und Realität
 
 ::: {.c_width-50}
 
@@ -52,7 +52,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 :::
 
-## Metaphermaschinen
+## Digitalität als vorausetzungslos?
+### Metaphermaschinen
 
 ::: {.c_width-50}
 
@@ -184,8 +185,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Arabisch in der Digitalität
 ### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
-+ Abstraktion in Buchstaben / Gleichsetzung von Graphemen mit Buchstaben ist zumindest umstritten
 + Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
++ Abstraktion in Buchstaben <!-- / Gleichsetzung von Graphemen mit Buchstaben --> ist zumindest umstritten
 + Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
 + OCR ist nicht funktional
 
