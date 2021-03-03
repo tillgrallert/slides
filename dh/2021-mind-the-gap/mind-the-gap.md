@@ -42,6 +42,19 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 :::
 ::: {.c_width-50}
 
+![Vannevar Bushs *Memex*, 1945](../../assets/dh/memex-1945.jpg){#fig:memex}
+
+:::
+
+## Digitalität zwischen Heilsversprechen und Realität
+
+::: {.c_width-50}
+
+![Versuch einen Impftermin online zu buchen](../../assets/dh/covid-19-vaccination-fail.png){#fig:vaccination}
+
+:::
+::: {.c_width-50}
+
 ### ernüchternde Realtität
 
 - universale, wenn auch unterschiedliche Ausschlußerfahrungen
@@ -55,7 +68,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 ## Digitalität als vorausetzungslos?
 ### Metaphermaschinen
 
-::: {.c_width-50}
+::: {.c_width-50 .c_right}
 
 - Digitalität **simuliert** Stasis und Vertrautheit
     + Metaphern
@@ -63,7 +76,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 - Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
 
 :::
-::: {.c_width-50}
+::: {.c_width-50 .c_left}
 
 ![Google docs](../..//assets/dh/google-docs.png){#fig:google-docs}
 
@@ -706,7 +719,19 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 # Schlußbemerkungen <br/>Mind the `<gap/>`!
 ## Mind the `<gap/>`!
 
+:::{.c_width-50}
+
+- bei der Forschung zu Digitalität
+- bei der digitalen Forschung
+- beim Aufbau von Infrastrukturen
+- beim Forschungsdatenmanagement
+- ...
+
+:::
+:::{.c_width-50}
+
 ![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
+:::
 
 ## Danke!
 
