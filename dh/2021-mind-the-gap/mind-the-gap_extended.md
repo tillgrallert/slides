@@ -539,25 +539,122 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 + Netzwerkanalyse
 + stilometrische Autorenschaftbestimmung
 + historische GIS
-+ layout analyse
++ Layoutanalyse
 + Topic modelling
 + Word embeddings
 
 :::
 
-# 4.1 Netzwerkanalyse
-## Netzwerk der erwähnten Periodika
-### Datenquellen: OpenArabicPE, Project Jarāʾid +
+## 1. Historisches GIS: Typologie der Periodika <!-- CUT -->
 
-:::{.c_width-50 .c_left}
+Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rückschlüsse über seine Bedeutung
 
-- Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
-    + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
-- Normdatensätze für die Disambiguierung und Anreicherung von Daten
-    + zumeist automatisch erstellt und verknüpft
+:::{.c_width-30}
+
+### trans-regional
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
 
 :::
-:::{.c_width-50 .c_right}
+
+:::{.c_width-30}
+
+### regional
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
+
+:::
+:::{.c_width-30}
+
+### lokal
+
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
+
+:::
+
+
+## Historisches GIS
+### Voraussetzungen: Daten
+
+:::{.c_width-50}
+
+- Erste Quellen: OpenArabicPE
+- Auszeichnung von Orten im modellierten Volltext
+    + Autor_innenzeilen
+    + Rezensionen
+    + Probleme: kein funktionales arabisches NER
+- Normdatensätze für die Disambiguierung und Anreicherung von Daten
+    + Georeferenzierte Orte
+    + Probleme: Mangel an historischen Ortsverzeichnissen (gazetteer)
+
+:::
+:::{.c_width-50}
+
+```xml
+ <byline>
+    <placeName ref="oape:place:9 geon:268064">صيدا</placeName>
+    <persName ref="oape:pers:2845">مريم زكا</persName>
+</byline>
+```
+
+```xml
+<place type="town" xml:id="place_9">
+    <placeName type="simple">Saida</placeName>
+    <placeName xml:lang="ar-Latn-x-ijmes">Ṣaydā</placeName>
+    <placeName xml:lang="en">Sidon</placeName>
+    <placeName xml:lang="ar">صيدا</placeName>
+    <location>
+        <geo>33.55751, 35.37148</geo>
+    </location>
+    <idno type="url">http://en.wikipedia.org/wiki/Sidon</idno>
+    <idno type="geon">268064</idno>
+    <idno type="oape">9</idno>
+</place>
+```
+
+:::
+
+## 2. Netzwerkanalyse: erwähnte Periodika
+
+:::{.c_width-60 .c_left}
+
+![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicals}
+
+:::
+:::{.c_width-30}
+
+### Ziel
+
+- empirische Überprüfung von Hypothesen
+- Entscheidungshilfe für Digitalisierung
+
+### Erste Ergebnisse
+
+* hauptsächlich selbstreferentiell
+* Typologie: Grad der Weltzugewandtheit
+* Kernnetzwerk:
+    * Überraschende Mitglieder
+    - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
+<!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut -->
+
+:::
+
+
+## Netzwerkanalyse: erwähnten Periodika
+### Voraussetzungen: Daten
+
+:::{.c_width-50}
+
+- Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR
+- Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
+    + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
+    + Probleme: kein funktionales arabisches NER
+- Normdatensätze für die Disambiguierung und Anreicherung von Daten
+    + Bibliographie
+    + Probleme: geringe Quote in vorhandenen Normdatensätzen
+
+:::
+:::{.c_width-50}
 <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 
 <!-- ägyptische Zeitschrift -->
@@ -572,40 +669,47 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 :::
 
-## Netzwerk der erwähnten Periodika
+## 2. Netzwerkanalyse: Autor_innen
 
-:::{.c_width-60 .c_left}
+:::{.c_width-50}
 
-![Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicals}
-
-:::
-:::{.c_width-30 .c_right}
-
-1. Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
-2. Alle Periodika sind hauptsächlich selbstreferentiell
-2. *al-Muqtabas* ist anders
-3. Kernnetzwerk:
-    - Überraschende Mitglieder
-    - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
-    - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut
+![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
 
 :::
+:::{.c_width-50}
 
-## 4.1.2 Bibliometrics: Netzwerk der Autor_innen
-## Netzwerk der Autor_innen: Datenquellen
+### Ziel
 
-:::{.c_width-50 .c_left}
+- empirische überprüfung von Hypothesen
+- Forschungsleitend für *close reading*
 
-- Strukturierte bibliographische Daten auf Basis der Editionen
-    + semi-automatisch
+### Erste Ergebnisse
+
+<!-- * Nur wenige Knoten sind von relativer Bedeutung (14 von 319) -->
+* Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
+* Kernnetzwerk:
+    - praktisch nicht in der Forschung abgebildet
+    - Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)
+
+:::
+
+## Netzwerkanalyse: Autor_innen
+### Voraussetzungen: Daten
+
+:::{.c_width-50}
+
+- Erste Quellen: OpenArabicPE, Project Jarāʾid
+- Strukturierte bibliographische Daten
+    + semi-automatisch auf Basis der Editionen
+    + manuelle Erfassung
     + Probleme: viele Abkürzungen, vielfältige Namensformen
 - Normdatensätze für die Disambiguierung und Anreicherung von Daten
     + Lebensdaten
     + Werke in Bibliothekskatalogen
-    + Georeferenzierte Orte
+    + Probleme: geringe Quote in vorhandenen Normdatensätzen
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ```xml
 <person>
@@ -625,58 +729,13 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 
 :::
 
-## Netzwerk der Autor_innen
-
-:::{.c_width-60 .c_left}
-
-![Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg){#fig:network-authors}
-
-:::
-:::{.c_width-30 .c_right}
-
-1. Nur wenige Knoten sind von relativer Bedeutung (14 von 319)
-2. Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt
-3. Kernnetzwerk:
-    - Viele Iraker (6), wenige Syrer (2)
-    - Wenige Christen (2)
-    - Viele Dichter (7) und Journalisten (7)
-    - praktisch nicht in der Literatur abgebildet
-
-:::
-
-# Geographische Netzwerke
-## Netzwerk der Autor_innen: Geographie
-
-:::{.c_width-50 .c_left}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
-
-:::
-:::{.c_width-50 .c_right}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
-
-:::
-:::{.c_width-50 .c_left}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
-
-:::
-:::{.c_width-50 .c_right}
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *Lughat al-ʿArab* (Baghdad)](../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-middle-east.png){#fig:authors-lughat}
-
-:::
-
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
 
 ![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
 
-
-# Stilometrische Autorenschaftsbestimmung
 ## Autorenschaftsbestimmung
 
-:::{.c_width-50 .c_left}
+:::{.c_width-50}
 
 ### Forschungsstand
 
@@ -684,48 +743,52 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 - Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-50}
 
 ### Probleme
 
 - Hypothese ist nicht überprüft
-- Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen (siehe Project Jarāʾid)
+- Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen <!-- (siehe Project Jarāʾid) -->
 - Es ist sehr unwahrscheinlich, dass alles von einer Person verfasst wurde <!-- Autor als Funktion, nicht als Person zu denken -->
 
 :::
 
-## Computer-gestützte Autorenschaftsbestimmung: Stylometrie
+## 3. Stilometrie zur Autorenschaftsbestimmung
 
-- Ist bis jetzt nicht auf arabische Texte angewendet worden
 - **komparative** Methode:
-    + Vergleich **stylistischer Merkmale**: nummerisches Abstandsmaß (Verschiedenheit)
-    + nummerisches Abstandsmaß ist abhängig von der Zusammensetzung des Korpus
-- stylistische Merkmale: *most frequent words* (MFWs)
-- chunking/sampling beeinflusst die Ergebnisse
-    + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
-    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse
+    + Vergleich **stylistischer Merkmale** (*most frequent words* MFWs) liefert ein nummerisches Abstandsmaß (Verschiedenheit)
+    + Selbstvalidierung: Abstimmung der Ergebnisse mehrerer Iterationen mit verschiedenen Anzahlen von MFWs
+- Ist bis jetzt nicht auf arabische Texte angewendet worden
+- Herausvorderungen:
+    + abhängig von der Zusammensetzung des Korpus
+    + Texte müssen eine Mindestlänge haben
 
-## Stilometrie: erste Versuche
+## Stilometrie: erste Experimente
 ### Falsifizierung der Hypothese
 
 :::{.c_width-60 .c_left}
 
-![Figure: bootstrap consensus network von Artikeln in *al-Muqtabas* (Länge >= 5000 Wörter, 100--1000 MFWs). Farben korrespondieren mit *modularity group*](../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg){#fig:stylometry-muqtabas-w5000}
+![Figure: *bootstrap consensus network* von Artikeln in *al-Muqtabas* (Länge >= 5000 Wörter, 100--1000 MFWs). Farbe:  *modularity group*](../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg){#fig:stylometry-muqtabas-w5000}
 
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-30}
 
 - Stilometrie funktioniert für arabische Periodika
 - <!-- Erfolgreich identifizierte  -->Signale für
     + Autorenschaft
     + Herausgeberschaft
     + Übersetzung
-- Zusätzliches (Sub)-signal: Genre
+- Zusätzliches (Sub)-signal
+    + Genre
 <!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist -->
 
 :::
+
+<!-- - chunking/sampling beeinflusst die Ergebnisse
+    + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
+    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 
 ## Layoutanalyse
 

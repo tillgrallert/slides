@@ -811,42 +811,87 @@ Amtssprache in 26 Ländern</li>
 </ul>
 </div>
 </div>
-<div id="netzwerk-der-erwähnten-periodika" class="slide section level2">
-<h1>Netzwerk der erwähnten Periodika</h1>
-<h3 id="datenquellen-openarabicpe-project-jarāʾid-ocr">Datenquellen: OpenArabicPE, Project Jarāʾid, OCR +</h3>
+<div id="historisches-gis-typologie-der-periodika" class="slide section level2">
+<h1>1. Historisches GIS: Typologie der Periodika <!-- CUT --></h1>
+<p>Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rückschlüsse über seine Bedeutung</p>
+<div id="trans-regional" class="c_width-30">
+<h3>trans-regional</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas" alt="" />
+<p class="caption">Figure 16: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
+</div>
+</div>
+<div id="regional" class="c_width-30">
+<h3>regional</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
+<p class="caption">Figure 17: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
+</div>
+</div>
+<div id="lokal" class="c_width-30">
+<h3>lokal</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq" alt="" />
+<p class="caption">Figure 18: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
+</div>
+</div>
+</div>
+<div id="historisches-gis" class="slide section level2">
+<h1>Historisches GIS</h1>
+<h3 id="voraussetzungen-daten">Voraussetzungen: Daten</h3>
 <div class="c_width-50">
 <ul>
-<li>Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
+<li>Erste Quellen: OpenArabicPE</li>
+<li>Auszeichnung von Orten im modellierten Volltext
 <ul>
-<li>semi-automatisch (regex): folgt dem Muster “Zeitung ABC”, “Zeitschrift DEF”</li>
+<li>Autor_innenzeilen</li>
+<li>Rezensionen</li>
+<li>Probleme: kein funktionales arabisches NER</li>
 </ul></li>
 <li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
 <ul>
-<li>zumeist automatisch erstellt und verknüpft</li>
+<li>Georeferenzierte Orte</li>
+<li>Probleme: Mangel an historischen Ortsverzeichnissen (gazetteer)</li>
 </ul></li>
 </ul>
 </div>
 <div class="c_width-50">
-<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
-<!-- ägyptische Zeitschrift -->
-<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a>والأصح الدرعية بلام التعريف (راجع <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;title_16.d2e2291&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;</span> المصرية  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>٢<span class="kw">&lt;/biblScope&gt;</span> :  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span><span class="kw">&gt;</span>٢٩٢<span class="kw">&lt;/biblScope&gt;&lt;/bibl&gt;</span>)</span></code></pre></div>
-<!-- irakische Zeitung -->
-<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a> <span class="kw">&lt;byline&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:9 geon:268064&quot;</span><span class="kw">&gt;</span>صيدا<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2845&quot;</span><span class="kw">&gt;</span>مريم زكا<span class="kw">&lt;/persName&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="kw">&lt;/byline&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="kw">&lt;place</span><span class="ot"> type=</span><span class="st">&quot;town&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;place_9&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> type=</span><span class="st">&quot;simple&quot;</span><span class="kw">&gt;</span>Saida<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>Ṣaydā<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>Sidon<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>صيدا<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true"></a>    <span class="kw">&lt;location&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true"></a>        <span class="kw">&lt;geo&gt;</span>33.55751, 35.37148<span class="kw">&lt;/geo&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true"></a>    <span class="kw">&lt;/location&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>http://en.wikipedia.org/wiki/Sidon<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;geon&quot;</span><span class="kw">&gt;</span>268064<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>9<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true"></a><span class="kw">&lt;/place&gt;</span></span></code></pre></div>
 </div>
 </div>
-<div id="netzwerk-der-erwähnten-periodika-1" class="slide section level2">
-<h1>Netzwerk der erwähnten Periodika</h1>
+<div id="netzwerkanalyse-erwähnte-periodika" class="slide section level2">
+<h1>2. Netzwerkanalyse: erwähnte Periodika</h1>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" id="fig:network-periodicals" alt="" />
-<p class="caption">Figure 16: Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet</p>
+<p class="caption">Figure 19: Gerichtetes Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.</p>
 </div>
 </div>
 <div class="c_width-30">
+<h3 id="ziel">Ziel</h3>
 <ul>
-<li>Nur wenige Knoten sind von relativer Bedeutung (44 von 465)</li>
-<li>Alle Periodika sind hauptsächlich selbstreferentiell</li>
-<li>Typologie von Periodika? <em>al-Muqtabas</em> ist anders</li>
+<li>empirische Überprüfung von Hypothesen</li>
+<li>Entscheidungshilfe für Digitalisierung</li>
+</ul>
+<h3 id="erste-ergebnisse">Erste Ergebnisse</h3>
+<ul>
+<li>hauptsächlich selbstreferentiell</li>
+<li>Typologie: Grad der Weltzugewandtheit</li>
 <li>Kernnetzwerk:
 <ul>
 <li>Überraschende Mitglieder</li>
@@ -855,94 +900,97 @@ Amtssprache in 26 Ländern</li>
 </ul>
 </div>
 </div>
-<div id="historisches-gis-typologie-der-periodika" class="slide section level2">
-<h1>Historisches GIS: Typologie der Periodika <!-- CUT --></h1>
-<div id="trans-regional" class="c_width-30">
-<h3>trans-regional</h3>
-<div class="figure">
-<img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas" alt="" />
-<p class="caption">Figure 17: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
-</div>
-</div>
-<!-- :::{.c_width-50 .c_right} -->
-<div id="regional" class="c_width-30">
-<h3>regional</h3>
-<div class="figure">
-<img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
-<p class="caption">Figure 18: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
-</div>
-</div>
-<div id="lokal" class="c_width-30">
-<h3>lokal</h3>
-<div class="figure">
-<img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq" alt="" />
-<p class="caption">Figure 19: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
-</div>
-</div>
-<!-- ::: -->
-</div>
-<div id="netzwerk-der-autor_innen" class="slide section level2">
-<h1>Netzwerk der Autor_innen</h1>
-<h3 id="datenquellen-openarabicpe-project-jarāʾid">Datenquellen: OpenArabicPE, Project Jarāʾid +</h3>
+<div id="netzwerkanalyse-erwähnten-periodika" class="slide section level2">
+<h1>Netzwerkanalyse: erwähnten Periodika</h1>
+<h3 id="voraussetzungen-daten-1">Voraussetzungen: Daten</h3>
 <div class="c_width-50">
 <ul>
-<li>Strukturierte bibliographische Daten auf Basis der Editionen
+<li>Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR</li>
+<li>Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
 <ul>
-<li>semi-automatisch</li>
+<li>semi-automatisch (regex): folgt dem Muster “Zeitung ABC”, “Zeitschrift DEF”</li>
+<li>Probleme: kein funktionales arabisches NER</li>
+</ul></li>
+<li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
+<ul>
+<li>Bibliographie</li>
+<li>Probleme: geringe Quote in vorhandenen Normdatensätzen</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
+<!-- ägyptische Zeitschrift -->
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>والأصح الدرعية بلام التعريف (راجع <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;title_16.d2e2291&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;</span> المصرية  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>٢<span class="kw">&lt;/biblScope&gt;</span> :  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span><span class="kw">&gt;</span>٢٩٢<span class="kw">&lt;/biblScope&gt;&lt;/bibl&gt;</span>)</span></code></pre></div>
+<!-- irakische Zeitung -->
+<div class="sourceCode" id="cb6"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
+</div>
+</div>
+<div id="netzwerkanalyse-autor_innen" class="slide section level2">
+<h1>2. Netzwerkanalyse: Autor_innen</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png" id="fig:network-authors" alt="" />
+<p class="caption">Figure 20: Ungerichtetes Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.</p>
+</div>
+</div>
+<div class="c_width-50">
+<h3 id="ziel-1">Ziel</h3>
+<ul>
+<li>empirische überprüfung von Hypothesen</li>
+<li>Forschungsleitend für <em>close reading</em></li>
+</ul>
+<h3 id="erste-ergebnisse-1">Erste Ergebnisse</h3>
+<!-- * Nur wenige Knoten sind von relativer Bedeutung (14 von 319) -->
+<ul>
+<li>Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt</li>
+<li>Kernnetzwerk:
+<ul>
+<li>praktisch nicht in der Forschung abgebildet</li>
+<li>Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="netzwerkanalyse-autor_innen-1" class="slide section level2">
+<h1>Netzwerkanalyse: Autor_innen</h1>
+<h3 id="voraussetzungen-daten-2">Voraussetzungen: Daten</h3>
+<div class="c_width-50">
+<ul>
+<li>Erste Quellen: OpenArabicPE, Project Jarāʾid</li>
+<li>Strukturierte bibliographische Daten
+<ul>
+<li>semi-automatisch auf Basis der Editionen</li>
+<li>manuelle Erfassung</li>
 <li>Probleme: viele Abkürzungen, vielfältige Namensformen</li>
 </ul></li>
 <li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
 <ul>
 <li>Lebensdaten</li>
 <li>Werke in Bibliothekskatalogen</li>
-<li>Georeferenzierte Orte</li>
+<li>Probleme: geringe Quote in vorhandenen Normdatensätzen</li>
 </ul></li>
 </ul>
 </div>
 <div class="c_width-50">
-<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>ساتسنا<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>أمكح<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>فهر الجابري<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span><span class="kw">&gt;</span>الأب<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الألياوي<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>بطرس&lt;/forename&gt; <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span><span class="kw">&gt;</span>بن <span class="kw">&lt;forename&gt;</span>جبرائيل<span class="kw">&lt;/forename&gt;&lt;/addName&gt;</span> <span class="kw">&lt;forename&gt;</span>يوسف&lt;/forename&gt; <span class="kw">&lt;surname&gt;</span>عواد<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>39370998<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>227<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q4751824<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true"></a>    <span class="kw">&lt;birth&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span><span class="kw">&gt;</span>1866-08-05<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/birth&gt;</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true"></a>    <span class="kw">&lt;death&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span><span class="kw">&gt;</span>1947-01-07<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/death&gt;</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
-</div>
-</div>
-<div id="netzwerk-der-autor_innen-1" class="slide section level2">
-<h1>Netzwerk der Autor_innen</h1>
-<div class="c_width-60 c_left">
-<div class="figure">
-<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" id="fig:network-authors" alt="" />
-<p class="caption">Figure 20: Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Größe und Farbe der Knoten entspricht der Anzahl der Periodika. Breite der Kanten entspricht der Anzahl der Artikel.</p>
-</div>
-</div>
-<div class="c_width-30">
-<ul>
-<li>Nur wenige Knoten sind von relativer Bedeutung (14 von 319)</li>
-<li>Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt</li>
-<li>Kernnetzwerk:
-<ul>
-<li>Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)</li>
-<li>praktisch nicht in der Literatur abgebildet</li>
-</ul></li>
-</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>ساتسنا<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>أمكح<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>فهر الجابري<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span><span class="kw">&gt;</span>الأب<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الألياوي<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>بطرس&lt;/forename&gt; <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span><span class="kw">&gt;</span>بن <span class="kw">&lt;forename&gt;</span>جبرائيل<span class="kw">&lt;/forename&gt;&lt;/addName&gt;</span> <span class="kw">&lt;forename&gt;</span>يوسف&lt;/forename&gt; <span class="kw">&lt;surname&gt;</span>عواد<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>39370998<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>227<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q4751824<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true"></a>    <span class="kw">&lt;birth&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span><span class="kw">&gt;</span>1866-08-05<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/birth&gt;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true"></a>    <span class="kw">&lt;death&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span><span class="kw">&gt;</span>1947-01-07<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/death&gt;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
 </div>
 </div>
 <div id="problem-das-netzwerk-der-autor_innen-umfasst-nur-17-aller-artikel" class="slide section level2">
 <h1>Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel</h1>
 <p><img src="../../assets/clipart/iceberg-2070977_960_720.png" style="width:100.0%;height:100.0%" /></p>
-</div>
-
-<div id="stilometrische-autorenschaftsbestimmung" class="title-slide slide section level1">
-<h1>Stilometrische Autorenschaftsbestimmung</h1>
-
 </div>
 <div id="autorenschaftsbestimmung" class="slide section level2">
 <h1>Autorenschaftsbestimmung</h1>
@@ -957,23 +1005,25 @@ Amtssprache in 26 Ländern</li>
 <h3>Probleme</h3>
 <ul>
 <li>Hypothese ist nicht überprüft</li>
-<li>Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen (siehe Project Jarāʾid)</li>
+<li>Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen <!-- (siehe Project Jarāʾid) --></li>
 <li>Es ist sehr unwahrscheinlich, dass alles von einer Person verfasst wurde <!-- Autor als Funktion, nicht als Person zu denken --></li>
 </ul>
 </div>
 </div>
-<div id="computer-gestützte-autorenschaftsbestimmung-stilometrie" class="slide section level2">
-<h1>Computer-gestützte Autorenschaftsbestimmung: Stilometrie</h1>
+<div id="stilometrie-zur-autorenschaftsbestimmung" class="slide section level2">
+<h1>3. Stilometrie zur Autorenschaftsbestimmung</h1>
 <ul>
-<li>Ist bis jetzt nicht auf arabische Texte angewendet worden</li>
 <li><strong>komparative</strong> Methode:
 <ul>
-<li>Vergleich <strong>stylistischer Merkmale</strong>: nummerisches Abstandsmaß (Verschiedenheit)</li>
-<li>nummerisches Abstandsmaß ist abhängig von der Zusammensetzung des Korpus</li>
+<li>Vergleich <strong>stylistischer Merkmale</strong> (<em>most frequent words</em> MFWs) liefert ein nummerisches Abstandsmaß (Verschiedenheit)</li>
+<li>Selbstvalidierung: Abstimmung der Ergebnisse mehrerer Iterationen mit verschiedenen Anzahlen von MFWs</li>
 </ul></li>
-<li>stylistische Merkmale: <em>most frequent words</em> (MFWs) <!-- - chunking/sampling beeinflusst die Ergebnisse
-    + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
-    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse --></li>
+<li>Ist bis jetzt nicht auf arabische Texte angewendet worden</li>
+<li>Herausvorderungen:
+<ul>
+<li>abhängig von der Zusammensetzung des Korpus</li>
+<li>Texte müssen eine Mindestlänge haben</li>
+</ul></li>
 </ul>
 </div>
 <div id="stilometrie-erste-experimente" class="slide section level2">
@@ -982,7 +1032,7 @@ Amtssprache in 26 Ländern</li>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg" id="fig:stylometry-muqtabas-w5000" alt="" />
-<p class="caption">Figure 21: Figure: bootstrap consensus network von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farben korrespondieren mit <em>modularity group</em></p>
+<p class="caption">Figure 21: Figure: <em>bootstrap consensus network</em> von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farbe: <em>modularity group</em></p>
 </div>
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 </div>
@@ -996,21 +1046,27 @@ Signale für
 <li>Herausgeberschaft</li>
 <li>Übersetzung</li>
 </ul></li>
-<li>Zusätzliches (Sub)-signal: Genre <!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist --></li>
+<li>Zusätzliches (Sub)-signal
+<ul>
+<li>Genre <!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist --></li>
+</ul></li>
 </ul>
 </div>
+<!-- - chunking/sampling beeinflusst die Ergebnisse
+    + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
+    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 </div>
 
-<div id="conclusio" class="title-slide slide section level1">
-<h1>Conclusio</h1>
+<div id="schlußbemerkungen-mind-the-gap" class="title-slide slide section level1">
+<h1>Schlußbemerkungen: Mind the <code>&lt;gap/&gt;</code>!</h1>
 
 </div>
-<div id="take-home-messages" class="slide section level2">
-<h1>take home messages</h1>
+<div id="mind-the-gap" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>!</h1>
+<p>[Graffiti “Du bist so schön, wie eine zusätzliche Stunde Strom”, Gaza. Quelle: <a href="https://twitter.com/j_zabaneh/status/1366628891817828360">Twitter</a>]</p>
 </div>
 <div id="danke" class="slide section level2">
 <h1>Danke!</h1>
-<p>[Graffiti “Du bist so schön, wie eine zusätzliche Stunde Strom”, Gaza. Quelle: <a href="https://twitter.com/j_zabaneh/status/1366628891817828360">Twitter</a>]</p>
 <ul>
 <li>Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser</li>
 <li>Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef</li>
