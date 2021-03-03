@@ -23,7 +23,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 1. Mind the `<gap/>`!
 2. Closing the `<gap/>` one step at the time
 
-# 1. Mind the `<gap/>`! Zwischen Heilsversprechen und Realität
+# 1. Mind the `<gap/>`! <br/>Zwischen Heilsversprechen und Realität
 ## Zwischen Heilsversprechen und Realität
 
 ::: {.c_width-50}
@@ -117,7 +117,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 ![Globale Verteilung von DH Zentren. Quelle: [DH centerNet](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 
-# Mind the `<gap/>`! Nicht-lateinische Schriften und Sprachen des Globalen Südens
+# 1.1 Mind the `<gap/>`! <br/>Nicht-lateinische Schriften und Sprachen des Globalen Südens
 ## Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
 :::{.c_width-50}
@@ -240,18 +240,18 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Darstellung: basale Standards werden nicht unterstützt
 ### Beispiel 2: Webbrowser und HTML 5
 
-Das browsereigene CSS ignoriert das HTML5 Attribut `@lang` und stellt Arabisch linksbündig dar
+Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig dar
 
 
-:::{.c_width-30}
+:::{.c_width-50}
 ![Chrome](../../assets/dh/html5-lang_ar-chrome-2.png){#fig:arabic-fail-chrome}
 :::
 
-:::{.c_width-30}
+:::{.c_width-50}
 ![Firefox](../../assets/dh/html5-lang_ar-firefox-2.png){#fig:arabic-fail-firefox}
 :::
 
-# Mind the `<gap/>`! Digitalisierung des Kulturerbes
+# 1.2 Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes
 
 :::{.c_width-50}
@@ -338,7 +338,7 @@ Platformen zur Maximierung des Gewinns
 
 ![Titelseiten](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
 
-# Digitale Erschließung von Kulturerbe des Globalen Südens
+# 2.1 Closing the `<gap/>` <br/>Digitale Erschließung von Kulturerbe des Globalen Südens
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
@@ -470,7 +470,7 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 ![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
 
 
-# Closing the `<gap/>`: Erforschung dieses Kulturerbes mit Methoden der DH
+# 2.2 Closing the `<gap/>` <br/>Erforschung dieses Kulturerbes mit Methoden der DH
 # SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
 
 ## SIHAFA
@@ -603,7 +603,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 :::
 
 
-## Netzwerkanalyse: erwähnten Periodika
+## Netzwerkanalyse: erwähnte Periodika
 ### Voraussetzungen: Daten
 
 :::{.c_width-50}
@@ -693,12 +693,12 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 :::
 
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
+:::{.c_width-30}
 
 ![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
 
-## Autorenschaftsbestimmung
-
-:::{.c_width-50}
+:::
+:::{.c_width-30}
 
 ### Forschungsstand
 
@@ -706,7 +706,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben
 
 :::
-:::{.c_width-50}
+:::{.c_width-30}
 
 ### Probleme
 
@@ -754,10 +754,10 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 
 
-# Schlußbemerkungen: Mind the `<gap/>`!
+# Schlußbemerkungen <br/>Mind the `<gap/>`!
 ## Mind the `<gap/>`!
 
-![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)]
+![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
 
 ## Danke!
 
