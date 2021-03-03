@@ -17,7 +17,10 @@
    version="1.1"
    id="svg4089"
    sodipodi:docname="network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg"
-   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   inkscape:export-filename="/BachUni/publications/github/s3a6afa20/plots/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
   <metadata
      id="metadata4095">
     <rdf:RDF>
@@ -45,12 +48,13 @@
      id="namedview4091"
      showgrid="false"
      inkscape:zoom="0.43942712"
-     inkscape:cx="2276.7813"
+     inkscape:cx="2264.265"
      inkscape:cy="1325.3633"
-     inkscape:window-x="2605"
+     inkscape:window-x="125"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="node-labels" />
+     inkscape:current-layer="node-labels"
+     inkscape:document-rotation="0" />
   <g
      id="edges"
      transform="translate(17.78125,-225.63672)">
@@ -9385,10 +9389,10 @@
        x="-2511.6538"
        y="1965.042"
        fill="#000000"
-       style="dominant-baseline:central;text-anchor:middle;-inkscape-font-specification:'Baskerville Italic';font-family:Baskerville;font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal;"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Baskerville;-inkscape-font-specification:'Baskerville Italic';dominant-baseline:central;text-anchor:middle"
        font-family="Baskerville"
        class="id_alkwUr"
-       id="text3244">alkwUr</text>
+       id="text3244">al-Kawthir</text>
     <text
        font-size="8px"
        x="-1257.3876"
