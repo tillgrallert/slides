@@ -37,7 +37,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 - Wissen = Daten = Verständnis
 - mehr Wissen = besseres Verständnis
-- Solutionism, Technokratie
+- Solutionism/Technokratie
 
 :::
 ::: {.c_width-50}
@@ -57,7 +57,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 ::: {.c_width-50}
 
-- Digitalität **simuliert** Vertrautheit und Stasis
+- Digitalität **simuliert** Stasis und Vertrautheit
     + Metaphern
     + semantische Modelle
 - Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
@@ -185,25 +185,28 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ## Arabisch in der Digitalität
 ### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
-+ Character encoding kann die kulturelle Praxis der Schreibenden nicht abbilden
++ Zeichenkodierung lange Zeit nicht unterstützt
++ <!-- Notwendige --> Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
+    * Microsoft Office for Mac: 2015
+    * ggplot(Plots in R): 2021
 + Abstraktion in Buchstaben <!-- / Gleichsetzung von Graphemen mit Buchstaben --> ist zumindest umstritten
-+ Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
+    + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden
 + OCR ist nicht funktional
 
 <!-- hello Java, I am looking at you! -->
 <!-- add screenshot of tweet writing Arabic in Latin -->
 
-## Erfassung: Buchstaben, Grapheme, Character encoding
+## Erfassung: Buchstaben, Grapheme, Zeichkodierung
 ### Unicode ist nicht die Lösung aller Probleme
 
 :::{.c_width-50}
 
 <!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
-- Unicode ist ein <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz -->
+- Unicode: <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz -->
     <!-- + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman** -->
 - Idee: Trennung von Bedeutung und Form
 - Probleme:
-    - Encodings <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
+    - Kodierungung <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
     - inkonsistent
 - OS, Browser etc. normalisieren die Varianz nicht.
 <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
