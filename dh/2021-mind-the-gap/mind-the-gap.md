@@ -6,7 +6,6 @@ affiliation: Orient-Institut Beirut
 bibliography: /BachUni/applications/applications.csl.json
 lang: de
 date: 2021-03-04
-duration: 25
 ---
 
 
@@ -14,7 +13,9 @@ duration: 25
 
 Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
-Probevortrag
+Probevortrag für "Qualifikationsprofessur für Digital Humanities (Akademieprofessur)"
+
+4 März 2021
 
 Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html)
 
@@ -106,7 +107,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 
 :::
 
-## Mind the `<gap/>`! Zwischen Globalem Norden und Globalem Süden
+## Mind the `<gap/>`! <br/>Zwischen Globalem Norden und Globalem Süden
 
 ::: {.c_width-50}
 
@@ -125,6 +126,21 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 - gemeinsame Erfahrung der konstanten Auseinandersetzung mit dem Hegemon
 
 :::
+
+## Mind the `<gap/>`! <br/>Zwischen Globalem Norden und Globalem Süden
+### Beispiel Libanon
+
+
+- Hardware
+    + Internetcafé
+    + Telefon
+- Stromversorgung
+    + mind. 3h/ Tag reg. Stromausfall
+    + Generatorenabonnements
+- Internetverbindung
+    + 15 Mbps für ein Institut mit 20-40 Nutzer_innen
+    + mobil: 60 USD für 20 GB
+
 
 ## Mind the `<gap/>`! Digital Humanities als Teil des Globalen Nordens
 
@@ -224,13 +240,12 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 - OS, Browser etc. normalisieren die Varianz nicht.
 <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
 - Folge: Volltextsuchen sind nicht aussagekräftig
+    + 32 Arten "mekkanisch" (مكية) zu schreiben
 
 :::
 :::{.c_width-50}
 
 <!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
-
-32 Arten "mekkanisch" (مكية) zu schreiben
 
 ![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
 
@@ -243,14 +258,14 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 <!-- Nicht verbunden und von rechts nach links -->
 
-!["Arabische" Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: <https://twitter.com/2awbi2atiye/status/1347351918268489728>](../../assets/dh/ErLBbWwVgAErjHy.jpg){#fig:arabic-fail-covid}
+!["Arabische" Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: [Twitter](https://twitter.com/2awbi2atiye/status/1347351918268489728)](../../assets/dh/ErLBbWwVgAErjHy.jpg){#fig:arabic-fail-covid}
 
 :::
 :::{.c_width-50}
 
 <!-- Korrektur -->
 
-![Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: <https://twitter.com/wcpublichealth/status/1347622725469130752>](../../assets/dh/ErO3qtUVkAEUAQ_.jpg){#fig:arabic-fail-covid-corrected}
+![Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: [Twitter](https://twitter.com/wcpublichealth/status/1347622725469130752)](../../assets/dh/ErO3qtUVkAEUAQ_.jpg){#fig:arabic-fail-covid-corrected}
 
 :::
 
@@ -359,16 +374,22 @@ Platformen zur Maximierung des Gewinns
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
+:::{.c_width-50}
+
 - Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
     + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/))
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
 
+:::
+:::{.c_width-50}
+
 ![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
 
+:::
 
-## [Project Jarāʾid](https://projectjaraid.github.io/)
-### Mind the `<gap/>`! Wissenslücke -> Digitalisierungslücke
+## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>Mind the `<gap/>`!
+### Wissenslücke -> Digitalisierungslücke
 
 :::{.c_width-50}
 
@@ -721,8 +742,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::{.c_width-50}
 
-- bei der Forschung zu Digitalität
-- bei der digitalen Forschung
+- bei Forschung/Lehre zu Digitalität
+- bei digitaler Forschung/Lehre
 - beim Aufbau von Infrastrukturen
 - beim Forschungsdatenmanagement
 - ...
