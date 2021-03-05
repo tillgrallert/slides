@@ -615,6 +615,61 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::
 
+## 2. Netzwerkanalyse: erwähnte Periodika
+
+:::{.c_width-60 .c_left}
+
+![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicals}
+
+:::
+:::{.c_width-30}
+
+### Ziel
+
+- empirische Überprüfung von Hypothesen
+- Entscheidungshilfe für Digitalisierung
+
+### Erste Ergebnisse
+
+* hauptsächlich selbstreferentiell
+* Typologie: Grad der Weltzugewandtheit
+* Kernnetzwerk:
+    * Überraschende Mitglieder
+    - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
+<!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut -->
+
+:::
+
+
+## Netzwerkanalyse: erwähnte Periodika
+### Voraussetzungen: Daten
+
+:::{.c_width-50}
+
+- Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR
+- Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
+    + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
+    + Probleme: kein funktionales arabisches NER
+- Normdatensätze für die Disambiguierung und Anreicherung von Daten
+    + Bibliographie
+    + Probleme: geringe Quote in vorhandenen Normdatensätzen
+
+:::
+:::{.c_width-50}
+<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
+
+<!-- ägyptische Zeitschrift -->
+```xml
+والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644" xml:id="title_16.d2e2291">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
+```
+
+<!-- irakische Zeitung -->
+```xml
+وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
+```
+
+:::
+
 ## 2. Netzwerkanalyse: Autor_innen
 
 :::{.c_width-50}
