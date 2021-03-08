@@ -384,7 +384,7 @@ Platformen zur Maximierung des Gewinns
 :::
 :::{.c_width-50}
 
-![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid.gif){#fig:map-jaraid}
+![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid_1850-1929.gif){#fig:map-jaraid}
 
 :::
 
