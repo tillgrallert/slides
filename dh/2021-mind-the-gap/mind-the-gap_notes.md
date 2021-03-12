@@ -8,6 +8,9 @@ ORCID: orcid.org/0000-0002-5739-8094
 
 Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html)
 
+https://webconf.hrz.uni-marburg.de/b/mel-qau-fzk-sdd
+
+https://webconf.hrz.uni-marburg.de/b/mal-c2p-cdm-mfl
 
 # 1. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
 
@@ -78,6 +81,10 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
         - mehrheitlich arabisch-sprachige, islamisch geprägte Gesellschaften des östliche Mittelmeerraum
         - daher stammen die Beispiele für diesen Vortrag aus diesem Kontext
         - d.h. nicht, dass mein Forschungsgegenstand nur Beispiel ist. Es ist ein Forschungsgegenstand mit spezifischen Fragestellugnen, Traditionen, Methoden.
+
+## Mind the `<gap/>!`
+
+Beispiel Libanon
 
 ## Mind the `<gap/>`! Digital Humanities als Teil des Globalen Nordens
 
