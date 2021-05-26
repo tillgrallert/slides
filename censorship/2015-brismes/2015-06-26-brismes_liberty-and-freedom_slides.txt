@@ -4,7 +4,7 @@ author: Till Grallert, Orient-Institut Beirut
 date: BRISMES 2015, 26 June 2015
 ---
 
-# Abstract
+## Abstract
 
 - Case study: the periodical press of Damascus and Beirut, 1875–1914
 - Background: prevalence of strong views, but lack of empirical studies on the press in *Bilād al-Shām*
@@ -14,7 +14,7 @@ date: BRISMES 2015, 26 June 2015
     2. privately owned, officially subsidised: self-censorship
     3. private press: reliance on social consensus and censorship proper
 
-# Sources
+## Sources
 
 2 Damascene and 5 Beiruti newspapers; occasional recourse to various journals from Beirut, Cairo, Damascus, and Istanbul. 
 
@@ -22,7 +22,7 @@ date: BRISMES 2015, 26 June 2015
 - Damascene newspapers: *Sūriye* (1882–88, 1899–1902, official gazette, weekly), *al-Muqtabas* (1908–14, daily, with changing titles). 
 - Journals: *al-Jinān*, *al-Maḥabba*, and *al-Ḥasnāʾ* from Beirut,  *al-Ḥaqāʾiq* from Damascus, *al-Muqtaṭaf* in Beirut and later Cairo, *al-Muqtabas* in Cairo and later Damascus,  and *Servet-i Fünūn*, *The Levant Herald*, and *Konstantinopler Handelsblatt* from Istanbul.
 
-# Outline
+## Outline
 
 1. legal framework
 2. post-1908 developments
@@ -30,7 +30,7 @@ date: BRISMES 2015, 26 June 2015
 
 # 1. Legal framework
 
-# Relevant legislation
+## Relevant legislation
 
 - laws on printing presses (*maṭbaʿa niẓāmnāmesi*s and *ḳānūnu*): 1864, 1888, 1894, 1909
 - laws on printed material (*maṭbūʿāt niẓāmnāmesi* and *ḳānūnu*): 1857, 1909, 1912
@@ -38,7 +38,7 @@ date: BRISMES 2015, 26 June 2015
 - constitution (*ḳānūn-i esāsī*): 1876, 1908
 - executive orders (*irāde*s, *teẕkere*s)
 
-# Power of the norm
+## Power of the norm
 
 Common strategy in Ottoman modernisation efforts:
 
@@ -47,7 +47,7 @@ Common strategy in Ottoman modernisation efforts:
 3. Start enforcing them once legal norms have indeed become social normality; 1890s and especially 1909 onwards  
 
 
-# Pre-1876: establishing the norms
+## Pre-1876: establishing the norms
 
 - 1857, Jan: Law on Printing Presses (*maṭbaʿa niẓāmnāmesi*)
     + permits required for publishers
@@ -63,13 +63,13 @@ Common strategy in Ottoman modernisation efforts:
 <!-- - 1876, 12 Apr: decree published in the press; {Boyar 2006@421-422} without source
     + pre-publication censorship of the press -->
 
-# First constitutional period
+## First constitutional period
 
 - 1876, 23 Dec: first Ottoman constitution; abolished on Dec 11, 1879
     + art 12: "the press is free within the confines of the law" (*maṭbūʿāt ḳānūn dāʿiresinde serbesttir*)
 <!-- - 1880, 19 December -->
 
-# Hamidian period: setting-up the infrastructure
+## Hamidian period: setting-up the infrastructure
 
 - 1888, 22 Jan: Law on Printing Presses
 - **1894, 20 Nov: Law on Printing Presses**
@@ -88,14 +88,14 @@ Common strategy in Ottoman modernisation efforts:
 
 # 2. Second constitutional period
 
-# 1908, the year of liberty?!
+## 1908, the year of liberty?!
 
 - 1908, 23 Jul: restoration of the constitution
 - 1908, 30 Jul: *ḫaṭṭ-ı hümāyūn* to the Grand Vezier
     + art 7: Henceforth, newspapers are not subjected to censorship. They can circulate freely. Claims against newspapers can only be decided by courts
 - no publisher failed to obtain permits
 
-# Renewed censorship
+## Renewed censorship
 - 1909, Mar: *teẕkere* from Ministry of Justice
     + reminder that the various press laws had not been abolished
 - 1909, 29 Jul: Law on Printing Presses (*maṭbaʿalar ḳānūnu*)
@@ -112,14 +112,14 @@ Common strategy in Ottoman modernisation efforts:
 - 1909, 21 Aug: ammendment to art 12 of the constitution
     + periodcials cannot in any way be subject to control *before* (!) publication
 
-# Initially organised resistance
+## Initially organised resistance
 
 - demonstrations in Istanbul
 - crisis meetings in Beirut, drawing up petitions and open letters
 - new section in *Lisān al-Ḥāl*: *qaḍiyyat al-ṣiḥāfa* reporting any violation of press freedom
     + explicitly claiming that prior to the restoration of the constitution, press laws were just and fair, whereas now dictorial censorship has been introduced
 
-# Quick succession of titles
+## Quick succession of titles
 
 1. *al-Muqtabas*, Damascus
     + 1908, Dec - 1909, Sep: *al-Muqtabas*
@@ -136,13 +136,13 @@ Common strategy in Ottoman modernisation efforts:
 
 # 3. Realities of censorship
 
-# A priori censorship?
+## A priori censorship?
 
 - required for all non-periodical publications by 1894 and 1909 laws on printing presses
 - not-required for periodical press by 1864 and 1909 laws on printed material
 - official attempts at *a priori* censorship are contested by the press in 1912
 
-# Distribution of warnings and suspensions
+## Distribution of warnings and suspensions
 
 - c.70 [warnings (*ikhṭār*)](../../PhD thesis/Tables Figures Frequency/chapter 1 press/drafts/table 1.3.1 frequency W yg 140303 all.html) and [suspensions (*taʿṭīl*)](../../PhD thesis/Tables Figures Frequency/chapter 1 press/drafts/table 1.4.1 frequency S yg 140303 all.html) each, 1878–1914
 - uneven distribution
@@ -154,7 +154,7 @@ Common strategy in Ottoman modernisation efforts:
 
 <iframe name="if_1" style="width:300px;height:90%;position:absolute; top:2.5em;right:0px;border:none " src="../../PhD thesis/Tables Figures Frequency/chapter 1 press/drafts/table 1.3.1 frequency W yg 140303 all.html"></iframe>
 
-# Were bans and suspensions actually implemented?
+## Were bans and suspensions actually implemented?
 
 - many suspensions were followed by a corresponding [gap in publication](../../PhD thesis/Tables Figures Frequency/chapter 1 press/drafts/table 1.2 Censorship 140304.html) 
 - not every gap in publication can be attributed to censorship:
@@ -162,7 +162,7 @@ Common strategy in Ottoman modernisation efforts:
     + The *Adabiyya* press of Khalīl Sarkīs burned down in September 1895, causing a suspension of *Lisān al-Ḥāl* for one month
     + *Thamarāt al-Funūn* ceases publication for 2 months in summer 1892 without any comment 
 
-# What were the reasons?
+## What were the reasons?
 
 1. ignoring the censor's warning (1890s onwards)
 2. publication of false news (mainly 1880s)
@@ -173,7 +173,7 @@ Common strategy in Ottoman modernisation efforts:
 
 ![Ban of *al-Miṣbāḥ* over violation of "the principles of censorship"](../images/ban1.png)
 
-# Was there a cannonical list of prohibited terms?
+## Was there a cannonical list of prohibited terms?
 
 - There was no list of banned words (neither "nose" nor "republic")
 - Surprising publications:
@@ -181,7 +181,7 @@ Common strategy in Ottoman modernisation efforts:
     + 1892: *Salname-yi vilayet-i suriye* includes text of the constitution and imperial decree to Grand Vezier Midḥat Pasha
     + 1908, 27 July: *al-Iqbāl* will not print Arabic translations of the constitution because numerous editions are readily available in Beirut
 
-# Who was the censor in Beirut?
+## Who was the censor in Beirut?
 
 - until 1888: Director of foreign affairs and printed materials (*mudīr al-umūr al-ajnabiyya wa-l-maṭbūʿāt*)
     + Khalīl Efendi al-Khūrī
@@ -196,7 +196,7 @@ Common strategy in Ottoman modernisation efforts:
     + educational council (*majlis-i maʿārif*)  made claims to be responsible
     + public prosecutors and the courts
 
-# Who was the censor in Damascus?
+## Who was the censor in Damascus?
 
 - no private press until 1908
 - Director of foreign affairs and printed materials
@@ -208,14 +208,14 @@ Common strategy in Ottoman modernisation efforts:
     + editor-in-chief: Muḥammad Kurd ʿAlī (1897–1900)
     + ban: Oct 1902–Feb 1903
 
-# Permissible content
+## Permissible content
 
 - "surprising" level and frequency of *out-spoken criticism* 
 - critical articles were not limited to the private press
 - outright praise beyond the generic eulogies on important occasions was *less common* than criticism
 - "embarrassing" news remained unpublished
 
-# Permissible content: criticism & praise
+## Permissible content: criticism & praise
 
 - targets of criticism: 
     + main target: the municipalities at the intersection between imperial bureaucracy and urban societies
@@ -232,7 +232,7 @@ Common strategy in Ottoman modernisation efforts:
 
 <iframe name="if_2" style="width:300px;height:90%;position:absolute; top:2.5em;right:0px;border:none " src="../../PhD thesis/Tables Figures Frequency/chapter 1 press/drafts/table 1.6.1 frequency critique, authorities yg 140303 all.html"></iframe>
 
-# Permissible content: events not reported on
+## Permissible content: events not reported on
 
 - "embarrassing" events: e.g. 1893 conflagration of the Umayyad Mosque
 - violent events challenging the state's legitimacy as providing public tranquility (*rāḥa*)
@@ -242,7 +242,7 @@ Common strategy in Ottoman modernisation efforts:
 
 <!-- # The network of journalists-cum-entrepreneurs-cum-officials -->
 
-# conclusion
+## conclusion
 
 - no dichotomy of Hamidian tyranny vs Young Turk liberty
 - gradual convergence towards effective censorship with the expansion of a modern(ising) state and its institutions.
