@@ -731,17 +731,18 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 :::
 
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
-:::{.c_width-30}
 
-![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
-
-:::
 :::{.c_width-30}
 
 ### Forschungsstand
 
 - Die Frage der Autorenschaftsbestimmung ist weitgehend ignoriert worden  <!-- standard accounts don't even mention the issue -->
 - Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben
+
+:::
+:::{.c_width-30}
+
+![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
 
 :::
 :::{.c_width-30}
