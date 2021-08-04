@@ -139,21 +139,21 @@ Email: <grallert@orient-institut.org>
 ## 3.1 Food prices and food riots
 
 <!-- wheat prices -->
-![](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot.png)
+![Wheat prices in *Bilād al-Shām*, 1855--1916, showing average prices aggregated by year](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot.png)
 
 ## 3.1 Food prices and food riots
 
 <!-- food prices: deviation from the mean -->
-![](../../assets/food-riots/plot_prices-food_deviation-from-mean.png)
+![Prices of food (wheat, barley, bread) in *Bilād al-Shām* as deviation from the mean, 1855--1916](../../assets/food-riots/plot_prices-food_deviation-from-mean.png)
 
 ## 3.1 Food prices and food riots: qualitative statements
 
-![](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot-trends.png)
+![Wheat prices in *Bilād al-Shām*, 1855--1916, showing average prices aggregated by year and the distribution of qualitative price information](../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot-trends.png)
 
 ## 3.1 Food prices and food riots: annual cycle
 
 <!-- wheat prices annual cycle -->
-![](../../assets/food-riots/rplot_prices-wheat-1855-1916_annual-cycle-box.png)
+![Annual cycle of food prices and food riots in *Bilād al-Shām*, 1855--1916](../../assets/food-riots/rplot_prices-wheat-1855-1916_annual-cycle-box.png)
 
 
 ## 3.2 <!-- Hypotheses --> argument

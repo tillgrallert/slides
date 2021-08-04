@@ -10,14 +10,19 @@
   <meta name="date" content="2019-01-11" />
   <title>Neither mosques nor notables: Urban food riots across late Ottoman Bilād al-Shām</title>
   <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="../../css/slidy_custom_sh.css" />
-  <meta name="copyright" content="CC BY-SA 4.0" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
   <style type="text/css">
   /* these styles mirror oXygen's highlight colours for XML */
   pre.sourceCode {
@@ -25,27 +30,32 @@
   }
   code.sourceCode {
       font-weight:normal;
+      color: black;
   }
   /* provide a readible font-size */
-  .sourceCode * {
+  /*.sourceCode * {
       font-size: 16px;
-  }
+  }*/
   /* xml element names */
-  .xml > code > span.kw {
-  	color: #0F0F9C;
+  .xml > code span.kw {
+  	/*color: #0F0F9C;*/
+  	color: #000096;
   	font-weight: bold;
   }
   /* xml attribute names */
-  .xml > code > span.ot {
-  	color:#FF8041;
+  .xml > code span.ot {
+  	/*color:#FF8041;*/
+  	color: #FF9159;
   }
   /* xml attribute values */
-  .xml > code > span.st {
-  	color:#993300;
+  .xml > code span.st {
+  	/*color:#993300;*/
+  	color: #993300;
   }
   /* xml comments */
-  .xml > code > span.co {
-  	color:#167116;
+  .xml > code span.co {
+  	/*color:#167116;*/
+  	color: #2F8132;
   	font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
@@ -55,28 +65,41 @@
   </style>
   <style type="text/css">
   /* styles to split a slide into columns */
-  div.c_width-60 {
-      width:66%;
+  .c_width-60 {
+      width:64%;
       position: relative;
       float: left;
   }
-  div.c_width-50 {
-      width:50%;
+  .c_width-50 {
+      width:49%;
       position: relative;
       float: left;
   }
-  div.c_width-30 {
+  .c_width-30 {
       width:33%;
       position: relative;
       float: left;
   }
-  div.c_left {
+  .c_left {
       display: block;
       float:left;
   }
-  div.c_right {
+  .c_right {
       display: block;
       float: right;
+  }
+
+  /* styles to vertically stack divs */
+  .c_height-50 {
+      display: block;
+      height: 500px;
+      max-height: 500px;
+  }
+  .c_top {
+      vertical-align: top;
+  }
+  .c_bottom {
+      vertical-align: bottom;
   }
   </style>
   <style type="text/css">
@@ -85,9 +108,18 @@
   }
   </style>
   <script type="text/javascript" src="../../js/slidy.js"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
   <meta name="duration" content="30" />
 </head>
 <body>
+<!-- <div class="slide titlepage">
+  <h1 class="title">Neither mosques nor notables: Urban food riots across late Ottoman <em>Bilād al-Shām</em></h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2019-01-11</p>
+</div> -->
 <div id="neither-mosques-nor-notables-urban-food-riots-across-late-ottoman-bilād-al-shām" class="slide titlepage">
 <h1>Neither mosques nor notables: Urban food riots across late Ottoman <em>Bilād al-Shām</em></h1>
 <h3 id="till-grallert-orient-institut-beirut">Till Grallert, Orient-Institut Beirut</h3>
@@ -97,7 +129,7 @@
 <p>Email: <script type="text/javascript">
 <!--
 h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></p>
 </div>
@@ -112,24 +144,31 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Conclusion</li>
 </ol>
 </div>
-<div id="introduction-and-story-telling" class="title-slide slide section level1"><h1>1. Introduction and story telling</h1></div><div id="food-riot-in-beirut-11-august-1908" class="slide section level2">
+<div id="introduction-and-story-telling" class="title-slide slide section level1">
+<h1>1. Introduction and story telling</h1>
+
+</div>
+<div id="food-riot-in-beirut-11-august-1908" class="slide section level2">
 <h1>1.1 Food riot in Beirut, 11 August 1908</h1>
 <!-- Map of Beirut -->
 <div class="figure">
-<img src="../../assets/food-riots/map_Beirut-Baedeker-1912-annotated.jpg" alt="Map: Wagner &amp; Debes. “Beyrout: Vieille Ville et Bazar.” Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers. 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912." />
-<p class="caption">Map: Wagner &amp; Debes. “Beyrout: Vieille Ville et Bazar.” <em>Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers.</em> 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912.</p>
+<img src="../../assets/food-riots/map_Beirut-Baedeker-1912-annotated.jpg" alt="" />
+<p class="caption">Map: Wagner &amp; Debes. “Beyrout: Vieille Ville et Bazar.” <em>Palestine and Syria with Routes Through Mesopotamia and Babylonia and the Island of Cyrus: Handbook for Travellers.</em> 1:25000. 5. ed. Leipzig: Karl Baedeker, 1912.</p>
 </div>
-</div><div id="food-riot-in-beirut-11-august-1908-1" class="slide section level2">
+</div>
+<div id="food-riot-in-beirut-11-august-1908-1" class="slide section level2">
 <h1>1.1 Food riot in Beirut, 11 August 1908</h1>
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_beirut.geojson?height=600&width=800"></script>
-</div><div id="food-riot-in-beirut-11-august-1908-2" class="slide section level2">
+</div>
+<div id="food-riot-in-beirut-11-august-1908-2" class="slide section level2">
 <h1>1.1 Food riot in Beirut, 11 August 1908</h1>
 <!-- Aerial photograph -->
 <div class="figure">
-<img src="../../assets/food-riots/photo_Beirut-aerial-from-east.jpg" alt="No. G130854. David, G. et al.. Beyrouth. N.Pl.: Établissement cinématographique et photographique des armées (France). Photographe, 1927. http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item (accessed January 23, 2017)" />
+<img src="../../assets/food-riots/photo_Beirut-aerial-from-east.jpg" alt="" />
 <p class="caption">No. G130854. David, G. et al.. <em>Beyrouth.</em> N.Pl.: Établissement cinématographique et photographique des armées (France). Photographe, 1927. <a href="http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item">http://gallica.bnf.fr/ark:/12148/btv1b8443060c/f5.item (accessed January 23, 2017)</a></p>
 </div>
-</div><div id="first-observations" class="slide section level2">
+</div>
+<div id="first-observations" class="slide section level2">
 <h1>1.2 First observations</h1>
 <ul>
 <li>shared belief in a paternalist economic model</li>
@@ -140,7 +179,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>failure to achieve to stated objective</li>
 </ul>
 </div>
-<div id="question-and-methodology" class="title-slide slide section level1"><h1>2. Question and methodology</h1></div><div id="research-questions" class="slide section level2">
+
+<div id="question-and-methodology" class="title-slide slide section level1">
+<h1>2. Question and methodology</h1>
+
+</div>
+<div id="research-questions" class="slide section level2">
 <h1>2.1 Research question(s)</h1>
 <ol style="list-style-type: decimal">
 <li>Why this specific <strong>form</strong> and <strong>claim</strong> of contentious gatherings?</li>
@@ -157,14 +201,16 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     - What are the components (participants, demands, locations, occasions) of this repertoire and how do they change?
     - What is the relation between food prices and food riots?
     - Why do we encounter geographic clustering? -->
-</div><div id="methodology" class="slide section level2">
+</div>
+<div id="methodology" class="slide section level2">
 <h1>2.2 Methodology</h1>
 <ul>
 <li>Capture and analysis of economic data on food prices</li>
 <li>Detailed case studies on individual food riots</li>
 <li>Systematic analysis of all food riots as part of a “repertoire of contention”</li>
 </ul>
-</div><div id="sources" class="slide section level2">
+</div>
+<div id="sources" class="slide section level2">
 <h1>2.3 Sources</h1>
 <!-- comment on the biasses and strengths of these sources -->
 <ul>
@@ -173,14 +219,15 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Ottoman archival documents</li>
 <li>First person accounts</li>
 </ul>
-</div><div id="sources-newspapers" class="slide section level2">
+</div>
+<div id="sources-newspapers" class="slide section level2">
 <h1>2.3 Sources: newspapers</h1>
-<!-- 
+<!--
 - state of collections
 - mode of production -->
 <div class="c_left c_width-50">
 <div class="figure">
-<img src="../../assets/food-riots/muqtabas-1813.jpg" alt="al-Muqtabas #1813, 1 Feb 1916: reporting a “food riot” in Damascus?" />
+<img src="../../assets/food-riots/muqtabas-1813.jpg" alt="" />
 <p class="caption"><em>al-Muqtabas</em> #1813, 1 Feb 1916: reporting a “food riot” in Damascus?</p>
 </div>
 </div>
@@ -190,14 +237,15 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 - and it remains to those who have hoarded wheat to use and eat it and not further keep it and the stores of those who do not do so should be ceased and shared with the poor -->
 <div class="c_right c_width-50">
 <div class="figure">
-<img src="../../assets/food-riots/muqtabas-1837.jpg" alt="al-Muqtabas #1837, 1 Mar 1916: reporting a “food riot” in Damascus?" />
+<img src="../../assets/food-riots/muqtabas-1837.jpg" alt="" />
 <p class="caption"><em>al-Muqtabas</em> #1837, 1 Mar 1916: reporting a “food riot” in Damascus?</p>
 </div>
 </div>
 <!-- - yesterday, the baladiyya was crowded (*izduḥimat*) with poor women (*bi-l-faqīrāt min al-nisāʾ*).
 - due to the generosity of Enver Pasha / Anwar Pasha money was distributed among them -->
 <!-- there is this great map of Bilād al-Shām showing the routes of transportation/ communication: von Südenhorst, Julius Zwiedinek and Heinrich Kiepert. "Karte der See- und Land-Communication in Syrien Nach H. Kiepert." *Syrien und Seine Bedeutung Für den Welthandel.* N.Pl.: A.Hölder, 1873 -->
-</div><div id="sample-18551916" class="slide section level2">
+</div>
+<div id="sample-18551916" class="slide section level2">
 <h1>2.4 Sample: 1855–1916</h1>
 <!-- prices after 31 Dec 1916 are cut off -->
 <!-- - wheat: 399
@@ -212,32 +260,54 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </div>
 <div class="c_right c_width-60">
 <div class="figure">
-<img src="../../assets/food-riots/map_food-riots-1855-1916_levant.png" alt="Distribution of the sample of food riots" />
+<img src="../../assets/food-riots/map_food-riots-1855-1916_levant.png" alt="" />
 <p class="caption">Distribution of the sample of food riots</p>
 </div>
 </div>
 </div>
-<div id="first-results-and-argument" class="title-slide slide section level1"><h1>3. First results and argument</h1></div><div id="empirical-results" class="slide section level2">
+
+<div id="first-results-and-argument" class="title-slide slide section level1">
+<h1>3. First results and argument</h1>
+
+</div>
+<div id="empirical-results" class="slide section level2">
 <h1>3.1 Empirical results</h1>
 <ol style="list-style-type: decimal">
 <li>There is no direct relation between food riots and food prices <!-- 2. Food riots are a relatively stable "repertoire of contention" and take the form of a demonstration --></li>
 </ol>
-</div><div id="food-prices-and-food-riots" class="slide section level2">
+</div>
+<div id="food-prices-and-food-riots" class="slide section level2">
 <h1>3.1 Food prices and food riots</h1>
 <!-- wheat prices -->
-<p><img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot.png" /></p>
-</div><div id="food-prices-and-food-riots-1" class="slide section level2">
+<div class="figure">
+<img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot.png" alt="" />
+<p class="caption">Wheat prices in <em>Bilād al-Shām</em>, 1855–1916, showing average prices aggregated by year</p>
+</div>
+</div>
+<div id="food-prices-and-food-riots-1" class="slide section level2">
 <h1>3.1 Food prices and food riots</h1>
 <!-- food prices: deviation from the mean -->
-<p><img src="../../assets/food-riots/plot_prices-food_deviation-from-mean.png" /></p>
-</div><div id="food-prices-and-food-riots-qualitative-statements" class="slide section level2">
+<div class="figure">
+<img src="../../assets/food-riots/plot_prices-food_deviation-from-mean.png" alt="" />
+<p class="caption">Prices of food (wheat, barley, bread) in <em>Bilād al-Shām</em> as deviation from the mean, 1855–1916</p>
+</div>
+</div>
+<div id="food-prices-and-food-riots-qualitative-statements" class="slide section level2">
 <h1>3.1 Food prices and food riots: qualitative statements</h1>
-<p><img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot-trends.png" /></p>
-</div><div id="food-prices-and-food-riots-annual-cycle" class="slide section level2">
+<div class="figure">
+<img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_box-plot-trends.png" alt="" />
+<p class="caption">Wheat prices in <em>Bilād al-Shām</em>, 1855–1916, showing average prices aggregated by year and the distribution of qualitative price information</p>
+</div>
+</div>
+<div id="food-prices-and-food-riots-annual-cycle" class="slide section level2">
 <h1>3.1 Food prices and food riots: annual cycle</h1>
 <!-- wheat prices annual cycle -->
-<p><img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_annual-cycle-box.png" /></p>
-</div><div id="argument" class="slide section level2">
+<div class="figure">
+<img src="../../assets/food-riots/rplot_prices-wheat-1855-1916_annual-cycle-box.png" alt="" />
+<p class="caption">Annual cycle of food prices and food riots in <em>Bilād al-Shām</em>, 1855–1916</p>
+</div>
+</div>
+<div id="argument" class="slide section level2">
 <h1>3.2 <!-- Hypotheses --> argument</h1>
 <ol style="list-style-type: decimal">
 <li>There is no direct causal relation between food prices and food riots</li>
@@ -247,14 +317,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Food riots are thus part of the negotiations over political legitimacy <strong>within</strong> the existing political order as based in <strong>just rule</strong>, <strong>safety of life</strong>, etc. The demands are conservative and principally recognised as legitimate</li>
 </ol>
 </div>
-<div id="repertoire-of-contention" class="title-slide slide section level1"><h1>4. Repertoire of contention</h1></div><div id="prologue-weeks" class="slide section level2">
+
+<div id="repertoire-of-contention" class="title-slide slide section level1">
+<h1>4. Repertoire of contention</h1>
+
+</div>
+<div id="prologue-weeks" class="slide section level2">
 <h1>4.1 Prologue (weeks)</h1>
 <ol style="list-style-type: decimal">
 <li>Period of <strong>artificially</strong> high prices</li>
 <li>Advantageous moment</li>
 </ol>
 <!-- add plots again? -->
-</div><div id="the-food-riot-few-hours-a-day" class="slide section level2">
+</div>
+<div id="the-food-riot-few-hours-a-day" class="slide section level2">
 <h1>4.2 the food “riot” (few hours, a day)</h1>
 <ol start="3" style="list-style-type: decimal">
 <li>A crowd of poor people—men, women and children—gathers</li>
@@ -263,7 +339,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>(optional) The crowds turn on merchants and loot warehouses, stores, and railway stations</li>
 <li>Successful intervention of the highest representative of the central authorities with the help of imperial troops</li>
 </ol>
-</div><div id="aftermath-weeks-and-months" class="slide section level2">
+</div>
+<div id="aftermath-weeks-and-months" class="slide section level2">
 <h1>4.3 Aftermath (weeks and months)</h1>
 <ol start="8" style="list-style-type: decimal">
 <li>Intervention from the highest representative of the central authorities</li>
@@ -285,7 +362,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 
 ![*al-Muqtabas* #1837, 1 Mar 1916: reporting a "food riot" in Damascus?](../../assets/food-riots/muqtabas-1837.jpg) -->
 </div>
-<div id="implications-of-this-repertoire" class="title-slide slide section level1"><h1>5. Implications of this repertoire?</h1></div><div id="centrality-of-religion" class="slide section level2">
+
+<div id="implications-of-this-repertoire" class="title-slide slide section level1">
+<h1>5. Implications of this repertoire?</h1>
+
+</div>
+<div id="centrality-of-religion" class="slide section level2">
 <h1>5.1 Centrality of religion?</h1>
 <p>All contentions invariably start at the main mosque (Burke)</p>
 <div class="c_width-50">
@@ -294,7 +376,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <div class="c_width-50">
 <script src="https://embed.github.com/view/geojson/tillgrallert/food-riots_data/master/maps/map_homs.geojson?height=600&width=400"></script>
 </div>
-</div><div id="the-politics-of-notables" class="slide section level2">
+</div>
+<div id="the-politics-of-notables" class="slide section level2">
 <h1>5.2 The politics of notables?</h1>
 <p>Generally strong argument for a persistence of the three-tiered Ottoman <em>ancien régime</em> well into the 20th century</p>
 <div class="c_width-30">
@@ -326,37 +409,46 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><em>khalq</em></li>
 </ul>
 </div>
-</div><div id="gender-relations" class="slide section level2">
+</div>
+<div id="gender-relations" class="slide section level2">
 <h1>5.3 Gender relations?</h1>
 <p>The “Islamic City” paradigm is frequently invoked ouside the circles of specialists</p>
 <!-- ## Gender relations?  -->
 <!-- c.1910: women at the departure of the maḥmal from the Mushīriyya -->
 <div class="figure">
-<img src="../../assets/food-riots/photo_Damascus-mushiriyya-mahmal.jpg" alt="Musée Photographique de la Syrie - al-Matḥaf al-Fūtūghrāfī al-Sūrī Unknown photographer. [The Maḥmal leaving the Mushīriyya]. Dimashq, 1910. https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)" />
+<img src="../../assets/food-riots/photo_Damascus-mushiriyya-mahmal.jpg" alt="" />
 <p class="caption">Musée Photographique de la Syrie - <em>al-Matḥaf al-Fūtūghrāfī al-Sūrī</em> Unknown photographer. <em>[The Maḥmal leaving the Mushīriyya].</em> Dimashq, 1910. <a href="https://www.facebook.com/photo.php?fbid=424156920979581">https://www.facebook.com/photo.php?fbid=424156920979581 (accessed February 10, 2014)</a></p>
 </div>
-</div><div id="gender-relations-1" class="slide section level2">
+</div>
+<div id="gender-relations-1" class="slide section level2">
 <h1>5.3 Gender relations?</h1>
 <!-- c.1887: women at the departure of the maḥmal through the Mīdān  -->
 <div class="figure">
-<img src="../../assets/food-riots/photo_Damascus-midan-mahmal.png" alt="GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. Damas, depart à la caravane par la Mecque. Damas, 1887. http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)" />
+<img src="../../assets/food-riots/photo_Damascus-midan-mahmal.png" alt="" />
 <p class="caption">GRI Box T56 Ken and Jenny Jacobson Orientalist Photography Collection No. gri_2008_r_3_1972. Ḥakīm, Sulaymān. <em>Damas, depart à la caravane par la Mecque.</em> Damas, 1887. <a href="http://hdl.handle.net/10020/2008r3">http://hdl.handle.net/10020/2008r3 (accessed September 24, 2013)</a></p>
 </div>
-</div><div id="gender-relations-2" class="slide section level2">
+</div>
+<div id="gender-relations-2" class="slide section level2">
 <h1>5.3 Gender relations?</h1>
 <!-- add images -->
 <div class="figure">
-<img src="../../assets/food-riots/EAP644-1-36-TFDC_403_092_1209.jpg" alt="EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre. Beyrouth: Maison Bonfils (N.D.)" />
+<img src="../../assets/food-riots/EAP644-1-36-TFDC_403_092_1209.jpg" alt="" />
 <p class="caption">EAP EAP644/1/36 TFDC_403_092_1209 The Fouad Debbas Collection No. 1209. Bonfils. <em>Image 61: Cérémonie de lavement des pieds chez les Grecs, devant le St Sépulcre. - Greek ceremony of washing the feet in outside - coat of the holy Sepulchre.</em> Beyrouth: Maison Bonfils (N.D.)</p>
 </div>
-</div><div id="gender-relations-3" class="slide section level2">
+</div>
+<div id="gender-relations-3" class="slide section level2">
 <h1>5.3 Gender relations?</h1>
 <div class="figure">
-<img src="../../assets/food-riots/EAP644-1-36-TFDC_403_212_0892.jpg" alt="EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël] Beyrouth: Maison Bonfils (N.D.)" />
+<img src="../../assets/food-riots/EAP644-1-36-TFDC_403_212_0892.jpg" alt="" />
 <p class="caption">EAP EAP644/1/36 TFDC_403_212_0892 The Fouad Debbas Collection No. 892. Bonfils. <em>Image 161: non visible: [Entrée des pélerins à Bethléhem, le jour de Noël]</em> Beyrouth: Maison Bonfils (N.D.)</p>
 </div>
 </div>
-<div id="conclusion" class="title-slide slide section level1"><h1>6. Conclusion</h1></div><div id="conclusion-1" class="slide section level2">
+
+<div id="conclusion" class="title-slide slide section level1">
+<h1>6. Conclusion</h1>
+
+</div>
+<div id="conclusion-1" class="slide section level2">
 <h1>Conclusion</h1>
 <ul>
 <li>Contrary to common arguments and presumptions, we find a long “tradition” of popular contentions in general and food “riots” in particular as well as female agency in genuinely political struggles in public places / space.</li>
@@ -364,7 +456,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Food riots form a relatively stable “repertoire of contention”.</li>
 <li>Food riots are a <strong>tactic</strong> choice on behalf of the protestors and an inherently political act. They are part of the negotiations over political legitimacy <strong>within</strong> the existing political order as based in <strong>just rule</strong>, <strong>safety of life</strong></li>
 </ul>
-</div><div id="thank-you" class="slide section level2">
+</div>
+<div id="thank-you" class="slide section level2">
 <h1>Thank you</h1>
 <p>Slides: <a href="https://tillgrallert.github.io/slides/food-riots/2019-oib/index.html">tillgrallert.github.io/slides/food-riots/2019-oib</a> (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
 <p>Data: <!-- [![DOI](https://zenodo.org/badge/106953939.svg)](https://zenodo.org/badge/latestdoi/106953939) --> <a href="https://www.github.com/tillgrallert/food-riots_data">github.com/tillgrallert/food-riots_data</a>, <a href="https://www.github.com/tillgrallert/food-riots_tools">github.com/tillgrallert/food-riots_tools</a> (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>)</p>
@@ -372,7 +465,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p>Email: <script type="text/javascript">
 <!--
 h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></p>
 </div>
