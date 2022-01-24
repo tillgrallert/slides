@@ -41,6 +41,12 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 ## Arabische Zeitungen und Zeitschriften
 
 - Warum sind die wichtig?
+- Presse ist zentraler Agent des Wandels in der Moderne
+- Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
+- Forschung wird dominiert von
+    + national(istisch)en Narrativen
+    + Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel
+    + impliziten Hypothesen
 
 ![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
 
@@ -80,7 +86,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + z.B. "*Sātisnā* schickte uns diesen Artikel aus *al-Shahbāʾ*"
 + (halb)automatische Extraktion basiert auf
     * Anwesenheit der Information im materiellen Artefakt
-    * ein modelliertes digitales Surrogat
+    * einem modellierten digitalen Surrogat
 + Probleme
     * Vielfalt von Namensformen
 
@@ -264,9 +270,6 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 - zweithäufigste Schrift <!-- nach lateinischer Schrift -->
     + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
-+ Schriftrichtung von rechts nach links
-+ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
-+ Präferenz für Ligaturen
 
 :::
 :::{.c_width-50}
@@ -281,23 +284,51 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 :::
 
-![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample}
+![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
+
+## Arabisch
+
+### Schrift
+
++ Schriftrichtung von rechts nach links
++ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
++ "Buchstaben" bestehen aus Basisformen (*rasm*) und diakritischen Zeichen (*iʿjām*)
+    * Gebrauch unterliegt historischem Wandel und regionalen Präferenzen
+* Vokalisierung (*tashkīl*) **kann** hinzugefügt werden und hat Einfluss auf Bedeutung
++ Präferenz für Ligaturen
+
+![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2}
 
 ## Arabisch in der Digitalität
 ### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
+:::{.c_width-60}
+
 + Zeichenkodierung lange Zeit nicht unterstützt
+    * Konsequenz aus dem Buchdruck, Schreibmaschinen etc.: Latinisierte Umschriften
+    * "gelehrte" Umschrift vs Praxis des Arabisi
 + <!-- Notwendige --> Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
     * Microsoft Office for Mac: 2015
     * ggplot(Plots in R): 2021
-+ Abstraktion in Buchstaben <!-- / Gleichsetzung von Graphemen mit Buchstaben --> ist zumindest umstritten
-    + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden
+    * Gephi: 2020
 + OCR ist nicht funktional
+
+<!-- + Abstraktion in Buchstaben ist zumindest umstritten
+    + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden -->
+
+:::
+:::{.c_width-30}
+
+- Arabisch: [كانت أميركا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن]{.c_rtl}
+- reduziert auf den *rasm*: [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl}
+- Umschrift (IJMES), fügt die im Original nicht vorhandene Vokalisierung hinzu: *Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn*
+
+:::
 
 <!-- hello Java, I am looking at you! -->
 <!-- add screenshot of tweet writing Arabic in Latin -->
 
-## Erfassung: Buchstaben, Grapheme, Zeichkodierung
+## Erfassung: Buchstaben, Grapheme, Zeichenkodierung
 ### Unicode ist nicht die Lösung aller Probleme
 
 :::{.c_width-50}
@@ -307,7 +338,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
     <!-- + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman** -->
 - Idee: Trennung von Bedeutung und Form
 - Probleme:
-    - Kodierungung <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
+    - Kodierungen <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften
     - inkonsistent
 - OS, Browser etc. normalisieren die Varianz nicht.
 <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
@@ -323,7 +354,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 :::
 
-## Darstellung: basale Standards werden nicht unterstützt
+## Darstellung <br/>basale Standards werden nicht unterstützt
 ### Beispiel 1: Werbung (Grafik- und Layout Programme)
 
 :::{.c_width-50}
@@ -341,7 +372,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 :::
 
-## Darstellung: basale Standards werden nicht unterstützt
+## Darstellung <br/>basale Standards werden nicht unterstützt
 ### Beispiel 2: Webbrowser und HTML 5
 
 Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig dar
@@ -354,6 +385,10 @@ Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig 
 :::{.c_width-50}
 ![Firefox](../../assets/dh/html5-lang_ar-firefox-2.png){#fig:arabic-fail-firefox}
 :::
+
+## Darstellung <br/>Arabische Inhalte in LTR-Standards
+
+![Bidirektionales XML vom Anfang von [@oclc_1034545644-i_15-div_1.d2e634]. Die farbigen Pfeile zeigen die Leserichtung an. Die Zahlen unter den Pfeilen zeigen die Lesesequenz an.](../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
 
 # 1.2 Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes
@@ -432,16 +467,18 @@ Platformen zur Maximierung des Gewinns
 :::
 
 
-## Digitalisierung des Kulturerbes <br/>Katalogisierung
+## Digitalisierung des Kulturerbes <br/>Was können wir überhaupt sehen?
+
+Welche Verzerrungen bildet die Karte ab: Sammlung, Katalogiesierung, Digitalisierung der Wissensinfrastruktur?
 
 ![Karte von in Worldcat und ArUC erfassten Beständen der Zeitschrift *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-holdings_al-muqtabas-vol_1-9.png){#fig:map-global-holdings}
 
-## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
+## Closing the knowledge `<gap/>` <br/>[Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
 
 :::{.c_width-50}
 
 - Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
-    + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/))
+    + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/)) für mehr als 3700 Periodika
     + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
 - Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
 - Seit 2021/22: Integration von Bibliothekskatalogen, ZDB, HathiTrust
@@ -479,7 +516,11 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 
 :::
 
-## Digitalisierung des Kulturerbes: <br/>Bezahlschranken und Geo-fencing
+## Digitalisierung des Kulturerbes <br/>Copyrightregime, Bezahlschranken und Geo-fencing
+
+Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzugänglichkeiten
+
+<!-- Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird korrekt als 19uu katalogisiert und dann Copyrightstatus sicherheitshalber als 1999 angenommen. -->
 
 :::{.c_width-50}
 
@@ -494,88 +535,70 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 
 <!-- hier muss noch was zu den verschiedenen Gaps hin -->
 
-<!-- ## Mind the `<gap/>`
+<!-- OCR layer -->
+<!-- Level 4: der Artefakt selbst -->
 
-- Infrastruktur
-- Werkzeuge
-- Wissen
- -->
-# 2. Closing the `<gap/>`
-## 2. Closing the `<gap/>`
+## Digitalisierung des Kulturerbes <br/>Klassisches / kommerzielles OCR
 
-:::{.c_width-30}
+- basiert auf Segmentierung in Buchstaben
 
-### Anliegen
+![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
 
-- Digitale Erschließung von Kulturerbe des Globalen Südens
-- Erforschung dieses Kulturerbes mit Methoden der DH
+## Digitalisierung des Kulturerbes <br/>Die resultierenden Textschichten
+
+- Anbieter halten Algorithmen und Evaluierung unter Verschluss: unbekannte Anzahl von *false negatives*
+- Keine Strukturierung, keine APIs, proprietäre Interfaces
+
+:::{.c_width-50 .c_left}
+
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), Qualität der OCR-Schicht (nur mit US IP zugänglich)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png)
 
 :::
-:::{.c_width-60}
+:::{.c_width-50 .c_right}
 
-### Gegenstand
-
-- Primär arabisch-sprachige Presse des spätosmanischen östlichen Mittelmeerraumes (c.1800 -- c.1920)
-<!-- - Presse ist zentraler Agent des Wandels in der Moderne -->
-- Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
-- Forschung wird dominiert von
-    + national(istisch)en Narrativen
-    + Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel
-    + impliziten Hypothesen
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), Qualität der OCR-Schicht](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png)
 
 :::
 
-<!-- ![*al-Muqtabas*: Faksimile, TEI XML, Webview](../../assets/OpenArabicPE/muqtabas-v_6-i_2-facsimile-xml-boilerplate.png){#fig:muqtabas-cover} -->
-
-![Titelseiten](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages-2}
-
-# 2.1 Closing the `<gap/>` <br/>Digitale Erschließung von Kulturerbe des Globalen Südens
-
-## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
+## Closing the tool `<gap/>` <br/>OCR/HTR für arabische Periodika (2019--)
 
 :::{.c_width-50}
 
-- Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
-    + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/))
-    + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
-- Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
+### State of the art
+
+- Maschinelles Lernen ohne Segmentierung in Buchstaben
+- Es gibt gut finanzierte Projekte zu arabischen Schriften
+    + OpenITI (Mellon, ECR, Harvard)
+- Probleme
+    + Projekte halten ihre Modelle und Infrastrukturen mehrheitlich unter Verschluss
+    + keine GUI
+    + GUI sind nicht auf Arabisch ausgelegt
+    + teuer: Rechenzeit, Upload von 100.000den Bildern
 
 :::
 :::{.c_width-50}
 
-![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid_1850-1929_world.gif){#fig:map-jaraid-2}
+- Kollaboration mit Sinai Rusinek (Haifa)
+- Ansatz:
+    + Maschinelles Lernen ohne Segmentierung in Buchstaben
+- Software: Transkribus, Tesseract 4
+- Probleme:
+    + Benötigt vielfältige *Ground Truth*
+    + Komplexes Layout von Periodikaseiten
+    + Software nimmt Links-nach-rechts als Leserichtung an
 
 :::
 
-## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>Mind the `<gap/>`!
-### Wissenslücke -> Digitalisierungslücke
+## OCR/HTR für arabische Periodika
+### Ergebnisse mit Transkribus
 
-:::{.c_width-50}
-
-Arabische Periodika bis 1929 weltweit
-
-- Arabisch: 420 Mio Sprechende
-- 3269 Zeitungen und Zeitschriften
-- davon knapp 1/4 (747) in Sammlungen lokalisiert
-- davon wiederum knapp 1/5 (145) digitalisiert
-- Bezahlschranken, geo-fencing
+| ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation        |
+| ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------:       |
+| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{style="color:green;"} |
+| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{style="color:red;"}                  |
 
 
-<!-- ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"} -->
-
-:::
-:::{.c_width-50}
-
-Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de)"
-
-- Hessen: 6,2 Mio. Einwohner_innen
-- 125 Zeitungen mit mehr als ½ Mio. Seiten
-- Digitalisat: Faksimile und Volltext
-- Offen zugänglich
-
-:::
-
-## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
+## Closing the infrastructural `<gap/>` <br/>Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--)
 
 ::: {.c_width-30}
 
@@ -640,34 +663,8 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 <!-- Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus} -->
 
 
-## OCR/HTR für arabische Periodika (2019--) <br/> Closing the tool `<gap/>`
-
-- Kollaboration mit Sinai Rusinek (Haifa)
-- Ansatz:
-    + Maschinelles Lernen
-    + OpenArabicPE Korpus als Ground Truth
-- Software: Transkribus, Tesseract 4
-- Probleme:
-    + Komplexes Layout von Periodikaseiten
-    + Software nimmt Links-nach-rechts als Leserichtung an
-    + Rechenintensiv
-
-## OCR/HTR für arabische Periodika
-### Ergebnisse mit Transkribus
-
-| ID      | based on   | ground truth    | words   | lines  | epochs  | CER train  | CER validation        |
-| ------- | ---------- | --------------- | ------: | -----: | ------: | ---------: | --------------:       |
-| 15946   |            | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{style="color:green;"} |
-| 13864   |            | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{style="color:red;"}                  |
-
-<!-- | 25211   | 15946      |                 | 5987    | 604    | 100     | 0.09       | 6.19                  | -->
-
-### Klassisches / kommerzielles OCR
-
-![Evaluierung von OCR Software für Arabisch, [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]](../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png){#fig:alghamdi-2018-table-4}
 
 
-# 2.2 Closing the `<gap/>` <br/>Erforschung dieses Kulturerbes mit Methoden der DH
 # SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
 
 ## SIHAFA
