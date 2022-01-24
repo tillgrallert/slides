@@ -3,7 +3,9 @@ title: "Zur Erschließung arabischer Periodika aus spätosmanischer Zeit"
 subtitle: "Herausforderungen einer multilingualen und multiskriptoralen Digital History"
 author: Till Grallert
 affiliation: Digital History Berlin
-bibliography: /BachUni/applications/applications.csl.json
+bibliography: 
+    - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /BachUni/applications/applications.csl.json
 lang: de
 date: 2022-01-26
 duration: 30
@@ -26,8 +28,76 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 2. Mind the `<gap/>`!
 3. Closing the `<gap/>` one step at the time
 
-# Arabische Zeitungen und Zeitschriften
+# Einführung
+## Spätosmanischer östlicher Mittelmeerraum
 
+![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893.jpg){#fig:map-oem}
+
+## Arabische Zeitungen und Zeitschriften
+
+![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif){#fig:map-jaraid}
+
+
+## Arabische Zeitungen und Zeitschriften
+
+- Warum sind die wichtig?
+
+![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
+
+## Computationelle Periodikastudien
+
+:::{.c_width-50}
+
+![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness.png){#fig:network-authors}
+
+:::
+:::{.c_width-50}
+
+![Orte in Autorenzeilen in *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east-na_mapped.png){#fig:authors-haqaiq .c_height-50}
+
+![Erscheinungsorte der in *al-Muqtabas* (Kairo und Damaskus) erwähnten Periodika](../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-med-na_mapped.png){#fig:referenced-periodicals-muqtabas .c_height-50}
+
+:::
+
+## Notwendige Datenbasis
+
+:::{.c_width-30}
+
+### Modellierten Volltext mit Auszeichnung von *Named Entities*
+
++ z.B. "In ihrer letzten Ausgabe berichtete die Zeitung *al-ʿAṣr al-Jadīd* aus Damaskus, dass ..."
++ (halb)automatische Extraktion basiert auf
+    * named entity recognition (NER)
++ Probleme
+    * Zustand von OCR und Layout-Erkennung
+    * Zustand von NER
+
+:::
+:::{.c_width-30}
+
+### Strukturierte bibliographische (Meta)daten auf der Artikelebene
+
++ z.B. "*Sātisnā* schickte uns diesen Artikel aus *al-Shahbāʾ*"
++ (halb)automatische Extraktion basiert auf
+    * Anwesenheit der Information im materiellen Artefakt
+    * ein modelliertes digitales Surrogat
++ Probleme
+    * Vielfalt von Namensformen
+
+:::
+:::{.c_width-30}
+
+### Normdatensätze <!-- zur Disambiguierung und Anreicherung der Daten -->
+
+- *Sātisnā*
+    + Pseudonym und Anagram für *Anastās al-Karmilī*, den Herausgeber von *Lughat al-ʿArab* in Bagdad
+- *al-Shahbāʾ*, "die Graue"
+    + ein Beiname von Aleppo
+    + Geokoordinaten: `36.20124, 37.16117`
+- Probleme
+    + enormes Bias auf den Globalen Norden
+
+:::
 
 
 # 1. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
@@ -95,6 +165,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ::: {.c_width-50}
 
+
 ### technisch
 
 + Hardware: aktuell
@@ -113,7 +184,13 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 :::
 
+
+## Mind the `<gap/>`! <br/>Zugangsvorraussetzungen
+
+### Du bist so schön, wie eine zusätzliche Stunde Strom
+
 ![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
+
 
 ## Mind the `<gap/>`! <br/>Zwischen Globalem Norden und Globalem Süden
 
@@ -311,9 +388,96 @@ Platformen zur Maximierung des Gewinns
 
 :::
 
-## Digitalisierung des Kulturerbes
+## Digitalisierung des Kulturerbes <br/>Katalogisierung
+
+- Digitale Kataloge sind **digitalisierte** Kataloge
+- Katalogisierungsregeln sind historisch kontingent
+    + nutzen lateinische Umschriften (plural!!)
+    + unterscheiden nicht konsequent zwischen Schrift und Sprache
+    + Kalender sind häufig falsch
+- Kataloge sind lokal, Aggregierung zumeist auf nationaler Basis
+- Nutzung zumeist über Webinterfaces
+    + Worldcat und Arabic Union Catalogue (ArUC) haben keine kostenlose API
+
+## Digitalisierung des Kulturerbes <br/>Katalogisierung
+
+### Suche in der ansonsten großartigen [ZDB](https://zdb-katalog.de)
+
+<!-- - nur in Umschrift 
+- Umschrift wird in unbekanntem Umfang "normalisiert"
+- aber der bestimmte Artikel "al-" muss manuell entfernt werden -->
+
+:::{.c_width-30}
+
+- kein Arabisch
+
+![ZDB Suche nach "الجنة"](../../assets/jaraid/zdb_janna-ar.png)
+
+:::
+:::{.c_width-30}
+
+- keine volle Umschrift (*dmg* al-Ǧanna, *ijmes* al-Janna)
+
+![ZDB Suche nach "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png)
+
+:::
+:::{.c_width-30}
+
+- defektive Umschrift ohne "al-"
+- Umfang der Normalisierung unklar (`ʿ` wird komplet herausgefiltert, `'` und `ʾ` nicht)
+
+
+![ZDB Suche nach "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png)
+
+:::
+
+
+## Digitalisierung des Kulturerbes <br/>Katalogisierung
 
 ![Karte von in Worldcat und ArUC erfassten Beständen der Zeitschrift *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-holdings_al-muqtabas-vol_1-9.png){#fig:map-global-holdings}
+
+## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
+
+:::{.c_width-50}
+
+- Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
+    + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/))
+    + Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.
+- Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
+- Seit 2021/22: Integration von Bibliothekskatalogen, ZDB, HathiTrust
+
+:::
+:::{.c_width-50}
+
+![In Project Jarāʾid erfasste Periodika. Größe der Kreise korrespondiert mit Anzahl der Periodikatitel. Farben zeigen den Status an: bekannte Sammlung (grün), davon digitalisiert (blau), Rest (rot).](../../assets/jaraid/map-example_sf_mena_en-status_scatterpie.png){#fig:holding-stats}
+
+:::
+
+## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>Mind the `<gap/>`!
+### Wissenslücke -> Digitalisierungslücke
+
+:::{.c_width-50}
+
+Arabische Periodika bis 1929 weltweit
+
+- Arabisch: 420 Mio Sprechende
+- 3269 Zeitungen und Zeitschriften
+- davon knapp 1/4 (747) in Sammlungen lokalisiert
+- davon wiederum knapp 1/5 (145) digitalisiert
+- Bezahlschranken, geo-fencing
+
+
+:::
+:::{.c_width-50}
+
+Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de)"
+
+- Hessen: 6,2 Mio. Einwohner_innen
+- 125 Zeitungen mit mehr als ½ Mio. Seiten
+- Digitalisat: Faksimile und Volltext
+- Offen zugänglich
+
+:::
 
 ## Digitalisierung des Kulturerbes: <br/>Bezahlschranken und Geo-fencing
 
@@ -363,7 +527,7 @@ Platformen zur Maximierung des Gewinns
 
 <!-- ![*al-Muqtabas*: Faksimile, TEI XML, Webview](../../assets/OpenArabicPE/muqtabas-v_6-i_2-facsimile-xml-boilerplate.png){#fig:muqtabas-cover} -->
 
-![Titelseiten](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
+![Titelseiten](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages-2}
 
 # 2.1 Closing the `<gap/>` <br/>Digitale Erschließung von Kulturerbe des Globalen Südens
 
@@ -379,7 +543,7 @@ Platformen zur Maximierung des Gewinns
 :::
 :::{.c_width-50}
 
-![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid_1850-1929_world.gif){#fig:map-jaraid}
+![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-jaraid_1850-1929_world.gif){#fig:map-jaraid-2}
 
 :::
 
@@ -549,7 +713,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 ### trans-regional
 
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas}
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas-2}
 
 :::
 
@@ -564,7 +728,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 ### lokal
 
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq}
+![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq-2}
 
 :::
 
@@ -669,7 +833,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::{.c_width-50}
 
-![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
+![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors-2}
 
 :::
 :::{.c_width-50}
