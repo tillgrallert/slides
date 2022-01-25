@@ -308,7 +308,18 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 ![Globale Verteilung von DH Zentren. Quelle: [DH centerNet](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 
-# 1.1 Mind the `<gap/>`! <br/>Nicht-lateinische Schriften und Sprachen des Globalen Südens
+# 1.1 Mind the `<gap/>`! <br/>*Linguistic imperialism*
+## Linguistic imperialism
+
+>'Linguistic imperialism' is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political
+
+<cite>[@Phillipson1997RealitiesAndMyths, 239]</cite>
+
+>The basis for the codes, languages, methodologies, and technical instruments of the digital humanities is English; the written and spoken language of all the main conferences, the most prestigious journals, the institutions that control the discipline, the organizations and international consortia, and the central authorities of knowledge is, with few exceptions, some dialect of British or American English.
+
+<cite>[@Fiormonte+2021+TaxationagainstOverrepresentation, 334-335]</cite>
+
+
 ## Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
 :::{.c_width-50}
@@ -380,31 +391,59 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 * Vokalisierung (*tashkīl*) **kann** hinzugefügt werden und hat Einfluss auf Bedeutung
 <!-- + Präferenz für Ligaturen -->
 
-![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2}
+<!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
+
+:::{.c_width-50 .c_rtl}
+
+### أميركا وعلماء العرب
+
+[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+
+<cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
+
+:::
+:::{.c_width-50 .c_rtl}
+
+### امىرکا وعلماء العرٮ
+
+[کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
+
+:::
 
 ## Arabisch in der Digitalität
 ### Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt
 
-:::{.c_width-60}
+
 
 + Zeichenkodierung lange Zeit nicht unterstützt
-    * Konsequenz aus dem Buchdruck, Schreibmaschinen etc.: Latinisierte Umschriften
+    * <!-- Konsequenz aus dem Buchdruck, Schreibmaschinen etc.:  -->Latinisierte Umschriften
+        - Arabisch: [تصوير الافكار]{.c_rtl} -> *taṣwīr al-afkār* (IJMES)
+        - Osmanisch: [تصوير افكار]{.c_rtl} -> *teṣvīr-i efkār* (IJMES)
     * "gelehrte" Umschrift vs Praxis des Arabisi
-+ <!-- Notwendige --> Verbindungsformen der Buchstaben werden der Rendering Engine überlassen
++ <!-- Notwendige --> Allographen (Verbindungsformen) werden der Rendering Engine überlassen
     * Microsoft Office for Mac: 2015
     * ggplot(Plots in R): 2021
     * Gephi: 2020
-+ OCR ist nicht funktional
++ OCR ist nicht funktional*
 
 <!-- + Abstraktion in Buchstaben ist zumindest umstritten
     + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden -->
 
-:::
-:::{.c_width-30}
 
-- Arabisch: [كانت أميركا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
-- reduziert auf den *rasm*: [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
-- Umschrift (IJMES), fügt die im Original nicht vorhandene Vokalisierung hinzu: *Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn*
+:::{.c_width-50 .c_rtl}
+
+### أميركا وعلماء العرب
+
+[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+
+<cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
+
+:::
+:::{.c_width-50 .c_ltr}
+
+### Amīrkā wa ʿulamāʾ al-ʿarab
+
+*Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn*
 
 :::
 
@@ -474,7 +513,7 @@ Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig 
 ![Bidirektionales XML vom Anfang von [@oclc_1034545644-i_15-div_1.d2e634]. Die farbigen Pfeile zeigen die Leserichtung an. Die Zahlen unter den Pfeilen zeigen die Lesesequenz an.](../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
 
 # 1.2 Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
-## Digitalisierung des Kulturerbes
+## Digitalisierung des Kulturerbes <br/>neo-koloniale Unsichtbarkeit des Globalen Südens
 
 :::{.c_width-50}
 
