@@ -436,6 +436,7 @@ columns
 writing direction
 ******************/
 .c_rtl {
+    display: inline-block;
     direction: rtl;
     text-align: right;
     font-family: AmiriWeb;
