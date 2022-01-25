@@ -12,7 +12,7 @@ duration: 30
 ---
 
 
-## Zur Erschließung arabischer Periodika aus spätosmanischer Zeit <br/>Herausforderungen einer multilingualen und multiskriptoralen Digital History
+## Zur Erschließung arabischer Periodika aus spätosmanischer Zeit (c.1800--c.1920) <br/>Herausforderungen einer multilingualen und multiskriptoralen Digital History
 
 Till Grallert, @[tillgrallert](https://twitter.com/tillgrallert)
 
@@ -31,7 +31,64 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 # Einführung
 ## Spätosmanischer östlicher Mittelmeerraum
 
-![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893.jpg){#fig:map-oem}
+:::{.c_width-60}
+
+![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893_annotated.jpg){#fig:map-oem}
+
+:::
+:::{.c_width-30}
+
+- Norden: Rumelien und Anatolien
+    + ab 14. Jhd. osmanisch
+- Süden: *Mashriq* und Ägypten
+    + ab 16. Jhd. osmanisch
+- Modernisierendes Reich
+    + *Tanzimat*: 1838--76
+    + 1. Konstitutionelle Monarchie: 1876--78
+    + Jungtürkische Revolution: 24. Juli 1908
+    + 2. Konstitutionelle Monarchie: 1908--18 
+- Sezessionen, Einfluss europ. Kolonialmächte
+    + Muslimisierung
+    + Arabisierung
+
+:::
+
+## Spätosmanischer östlicher Mittelmeerraum
+
+:::{.c_width-30}
+
+### Multilingual
+
++ Verwaltungssprachen: Osmanisch, Arabisch, Persisch
++ Alltagssprachen: Turksprachen, Arabisch, Griechisch, slawische Sprachen ...
++ Liturgische Sprachen: Arabisch, Griechisch, Armenisch, Koptisch, Russisch
++ Bildungssprachen: Osmanisch, Arabisch, Französisch, Englisch, Russisch ...
+
+:::
+:::{.c_width-30}
+
+### Multiskriptoral
+
++ Arabisch: Osmanisch, Arabisch, Hebräisch
++ Griechisch
++ Armenisch
++ Lateinisch: Französisch, Englisch ...
++ Kyrillisch
++ Hebräisch: Hebräisch, Arabisch, Jiddisch
++ Assyrisch
++ Koptisch
+
+:::
+:::{.c_width-30}
+
+### Multireligiös
+
++ muslimisch: sunnitisch, schiitisch
++ christlich: div. orthodox, katholisch, assyrisch, uniert, protestantisch
++ jüdisch: sephardisch, ashkenasisch
++ zoroastrisch
+
+:::
 
 ## Arabische Zeitungen und Zeitschriften
 
@@ -40,13 +97,24 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ## Arabische Zeitungen und Zeitschriften
 
-- Warum sind die wichtig?
-- Presse ist zentraler Agent des Wandels in der Moderne
+:::{.c_width-50}
+
+- Presse als zentraler Agent des Wandels in der Moderne
+    + erstes Massenmedium
+    + zentrales Medium der literarischen und kulturellen arabischen Renaissance (*nahḍa*)
+    + Medium des Sprachwandels
+    + zentrale Foren für Verhandlung von Moderne, Nationalismen, Islamismus etc.
+
+:::
+:::{.c_width-50}
+
 - Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
 - Forschung wird dominiert von
     + national(istisch)en Narrativen
     + Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel
     + impliziten Hypothesen
+
+:::
 
 ![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
 
@@ -59,9 +127,24 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 :::
 :::{.c_width-50}
 
-![Orte in Autorenzeilen in *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east-na_mapped.png){#fig:authors-haqaiq .c_height-50}
+<!-- ![Orte in Autorenzeilen in *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east-na_mapped.png){#fig:authors-haqaiq .c_height-50}
 
-![Erscheinungsorte der in *al-Muqtabas* (Kairo und Damaskus) erwähnten Periodika](../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-med-na_mapped.png){#fig:referenced-periodicals-muqtabas .c_height-50}
+![Erscheinungsorte der in *al-Muqtabas* (Kairo und Damaskus) erwähnten Periodika](../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-med-na_mapped.png){#fig:referenced-periodicals-muqtabas .c_height-50} -->
+
+![Karte der in Autor_innenzeilen erwähnten Orte in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-data-set-bylines-middle-east-na_mapped-bar.png){#fig:map-bylines}
+
+:::
+
+## Computationelle Periodikastudien
+
+:::{.c_width-50}
+
+![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png){#fig:network-periodicals}
+
+:::
+:::{.c_width-50}
+
+![Karte der in Autor_innenzeilen erwähnten Orte in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png){#fig:map-referenced}
 
 :::
 
@@ -291,11 +374,11 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ### Schrift
 
 + Schriftrichtung von rechts nach links
-+ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
-+ "Buchstaben" bestehen aus Basisformen (*rasm*) und diakritischen Zeichen (*iʿjām*)
++ Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen):  [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
++ Grapheme bestehen aus Basisformen (Archigraphem, *rasm*) und diakritischen Zeichen (*iʿjām*)
     * Gebrauch unterliegt historischem Wandel und regionalen Präferenzen
 * Vokalisierung (*tashkīl*) **kann** hinzugefügt werden und hat Einfluss auf Bedeutung
-+ Präferenz für Ligaturen
+<!-- + Präferenz für Ligaturen -->
 
 ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2}
 
@@ -319,8 +402,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 :::
 :::{.c_width-30}
 
-- Arabisch: [كانت أميركا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن]{.c_rtl}
-- reduziert auf den *rasm*: [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl}
+- Arabisch: [كانت أميركا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+- reduziert auf den *rasm*: [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
 - Umschrift (IJMES), fügt die im Original nicht vorhandene Vokalisierung hinzu: *Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn*
 
 :::
@@ -747,12 +830,16 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 :::
 :::{.c_width-50}
 
+- Autor_innenzeile: Maryam Zakā aus Saida
+
 ```xml
  <byline>
     <placeName ref="oape:place:9 geon:268064">صيدا</placeName>
     <persName ref="oape:pers:2845">مريم زكا</persName>
 </byline>
 ```
+
+- Gazetteer-Eintrag für Saida
 
 ```xml
 <place type="town" xml:id="place_9">
@@ -775,7 +862,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::{.c_width-60 .c_left}
 
-![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicals}
+![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicalsß2}
 
 :::
 :::{.c_width-30}
@@ -814,10 +901,15 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 :::{.c_width-50}
 <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 
+
++ Das Magazin *al-Zuhūr* aus Kairo 
+
 <!-- ägyptische Zeitschrift -->
 ```xml
-والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644" xml:id="title_16.d2e2291">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
+والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
 ```
+
++ Die Zeitung *al-Zuhūr* aus Baghdad
 
 <!-- irakische Zeitung -->
 ```xml
@@ -867,6 +959,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::
 :::{.c_width-50}
+
+- Personographie-Eintrag für Père Anastase-Marie de Saint-Elie (Normdatensatz), der sich in den Quellen vornehmlich als *Sātisnā* findet.
 
 ```xml
 <person>
@@ -975,6 +1069,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - Links:
     + Slides: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium](https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium/index.html)
     + Publikationen: 
+        * [@Grallert+2020]
+        * [@Grallert2022DHQ]
     + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://openarabicpe.github.io](https://openarabicpe.github.io), 
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <till.grallert@fu-berlin.de>
