@@ -354,7 +354,7 @@ iframe {
 div.figure {
     width: 100%;
     padding: 0;
-    height: inherit;
+    /*height: inherit;*/
 }
 div.figure p.caption {
     position: relative;
@@ -660,8 +660,8 @@ div dd {
 }
 p,
 pre,
-ul,
-ol,
+/*ul,*/
+/*ol,*/
 blockquote,
 h2,
 h3,
