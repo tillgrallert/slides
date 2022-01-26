@@ -8,7 +8,7 @@ bibliography:
     - /BachUni/applications/applications.csl.json
 lang: de
 date: 2022-01-26
-duration: 30
+# duration: 30
 ---
 
 
@@ -81,7 +81,10 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Assyrisch
 + Koptisch -->
 
-+ Arabisch, Griechisch, Armenisch, Lateinisch, Kyrillisch, Hebräisch, Assyrisch, Koptisch
++ Von rechts nach links:
+    * Arabisch, Hebräisch, Assyrisch
++ Von links nach rechts:
+    - Griechisch, Armenisch, Lateinisch, Kyrillisch, Koptisch
 
 :::
 :::{.c_width-30}
@@ -98,13 +101,13 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ### Kalender
 
-- Islamisch (*hijri*): beobachteter Mondkalender; beginnt mit Muḥammads Flucht aus Mekka
-- Reformierter Julianischer Kalender: Sonnenkalender; beginnt mit Christi Geburt; Jahresanfang am 1. Januar. 
-- Osmanischer Fiskalkalender (*mālī*): Kombination von altem jul. Kalender und *hijrī*. Jahresanfang am 1. März.
-- Gregorianischer Kalender: Sonnenkalender; beginnt mit Christi Geburt; Jahresanfang am 1. Januar.
-- Jüdischer Kalender: Mondkalender; beginnt mit Erschaffung der Welt.
+- Islamischer K. (*hijri*): **lunar**, beobachet; beginnt mit Muḥammads Flucht aus Mekka
+- Reformierter Julianischer K.: **solar**; beginnt mit Christi Geburt; Jahresanfang am 1. Januar. 
+- Osmanischer Fiskalkalender (*mālī*): **lunosolar**; beginnt mit Muḥammads Flucht aus Mekka; Jahresanfang am 1. März.
+- Gregorianischer K.: **solar**; beginnt mit Christi Geburt; Jahresanfang am 1. Januar.
+- Jüdischer K.: **lunar**; beginnt mit Erschaffung der Welt.
 
-### Tageszeiten, Stunden
+### Tages, Stunden
 
 - *alla turca*: Tagesbeginn mit Sonnenuntergang. je 12 Stunden für Nacht und Tag.
 - *alle franca*: Tagesbeginn um Mitternacht. 24 gleichlange Stunden.
@@ -153,7 +156,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 :::
 
-![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-50}
+![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-30}
 
 ## Computationelle Periodikastudien
 
@@ -310,12 +313,28 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 :::
 
-
 ## Mind the `<gap/>`! <br/>Zugangsvorraussetzungen
 
-### Du bist so schön, wie eine zusätzliche Stunde Strom
+### Du bist so schön wie eine zusätzliche Stunde Strom
 
-![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
+:::{.c_width-30}
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
+
+:::
+:::{.c_width-30}
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote>
+
+:::
+:::{.c_width-30}
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a></blockquote>
+
+:::
+
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Mind the `<gap/>`! <br/>Zwischen Globalem Norden und Globalem Süden
@@ -415,7 +434,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 :::
 
-![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
+![Beispiel: [@oclc_4770057679-i_13-div_8.d1e1249]](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
 
 ## Arabisch
 
@@ -444,6 +463,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ### امىرکا وعلماء العرٮ
 
 [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
+
+*rasm*
 
 :::
 
@@ -482,12 +503,14 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 *Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn*
 
+Umschrift (IJMES)
+
 :::
 
 <!-- hello Java, I am looking at you! -->
 <!-- add screenshot of tweet writing Arabic in Latin -->
 
-## Erfassung: Buchstaben, Grapheme, Zeichenkodierung
+## Erfassung <br/> Grapheme und Zeichenkodierung
 ### Unicode ist nicht die Lösung aller Probleme
 
 :::{.c_width-50}
@@ -726,6 +749,7 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 ### State of the art
 
 - Maschinelles Lernen ohne Segmentierung in Buchstaben
+    + Tesseract, Kraken / Ocropus, Transkribus
 - Es gibt gut finanzierte Projekte zu arabischen Schriften
     + OpenITI (Mellon, ECR, Harvard)
 - Probleme
@@ -736,6 +760,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 :::
 :::{.c_width-50}
+
+### Unser Experiment
 
 - Kollaboration mit Sinai Rusinek (Haifa)
 - Ansatz:
@@ -1090,6 +1116,24 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - Herausvorderungen:
     + abhängig von der Zusammensetzung des Korpus
     + Texte müssen eine Mindestlänge haben
+
+:::{.c_width-30}
+
+![PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von *al-Ḥaqāʾiq*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
+
+:::
+:::{.c_width-30}
+
+- *Lughat al-ʿArab* and *al-Muqtabas* are indistinguishable
+- *al-Ḥaqāʾiq* is different
+- some issues of *al-Muqtabas* are very different
+
+:::
+:::{.c_width-30}
+
+![PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von *al-Ḥaqāʾiq*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
+
+:::
 
 ## Stilometrie: erste Experimente
 ### Falsifizierung der Hypothese
