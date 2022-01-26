@@ -33,7 +33,9 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 :::{.c_width-60}
 
-![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893_annotated.jpg){#fig:map-oem}
+<!-- ![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893_annotated.jpg){#fig:map-oem} -->
+
+![Die administrative Struktur des Osmanischen Reiches, ca. 1899. AbdurRahman AbdulMoneim, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ottoman_Empire_Administrative_Divisions.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ottoman_Empire_Administrative_Divisions.png/2048px-Ottoman_Empire_Administrative_Divisions.png){#fig:map-oem}
 
 :::
 :::{.c_width-30}
@@ -44,51 +46,67 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     + ab 16. Jhd. osmanisch
 - Modernisierendes Reich
     + *Tanzimat*: 1838--76
-    + 1. Konstitutionelle Monarchie: 1876--78
+    + Erste konstitutionelle Phase: 1876--78
     + Jungtürkische Revolution: 24. Juli 1908
-    + 2. Konstitutionelle Monarchie: 1908--18 
+    + Zweite konstitutionelle Phase: 1908--18 
 - Sezessionen, Einfluss europ. Kolonialmächte
     + Muslimisierung
     + Arabisierung
 
 :::
 
-## Spätosmanischer östlicher Mittelmeerraum
+## Spätosmanischer östlicher Mittelmeerraum <br/>Ein Raum der Vielfalt
 
 :::{.c_width-30}
 
-### Multilingual
+### Sprachen
 
 + Verwaltungssprachen: Osmanisch, Arabisch, Persisch
-+ Alltagssprachen: Turksprachen, Arabisch, Griechisch, slawische Sprachen ...
++ Alltagssprachen: Turksprachen, Arabisch, Griechisch, slawische Sprachen, Armenisch, Ladino ...
 + Liturgische Sprachen: Arabisch, Griechisch, Armenisch, Koptisch, Russisch
 + Bildungssprachen: Osmanisch, Arabisch, Französisch, Englisch, Russisch ...
 
-:::
-:::{.c_width-30}
+### Schriften
 
-### Multiskriptoral
-
-+ Arabisch: Osmanisch, Arabisch, Hebräisch
+<!-- + Arabisch: Osmanisch, Arabisch, Hebräisch
 + Griechisch
 + Armenisch
 + Lateinisch: Französisch, Englisch ...
 + Kyrillisch
-+ Hebräisch: Hebräisch, Arabisch, Jiddisch
++ Hebräisch: Hebräisch, Ladino, Arabisch, Jiddisch
 + Assyrisch
-+ Koptisch
++ Koptisch -->
+
++ Arabisch, Griechisch, Armenisch, Lateinisch, Kyrillisch, Hebräisch, Assyrisch, Koptisch
 
 :::
 :::{.c_width-30}
 
-### Multireligiös
+### Religionen
 
-+ muslimisch: sunnitisch, schiitisch
-+ christlich: div. orthodox, katholisch, assyrisch, uniert, protestantisch
-+ jüdisch: sephardisch, ashkenasisch
-+ zoroastrisch
++ Muslime: sunnitisch, schiitisch
++ Christen: div. orthodox, katholisch, assyrisch, uniert, protestantisch
++ Juden: sephardisch, aschkenasisch
++ Zoroastrier
 
 :::
+:::{.c_width-30}
+
+### Kalender
+
+- Islamisch (*hijri*): beobachteter Mondkalender; beginnt mit Muḥammads Flucht aus Mekka
+- Reformierter Julianischer Kalender: Sonnenkalender; beginnt mit Geburt Christi; Jahresanfang am 1. Januar. 
+- Osmanischer Fiskalkalender (*mālī*): Kombination von altem jul. Kalender und *hijrī*. Jahresanfang am 1. März.
+- Gregorianischer Kalender: Sonnenkalender
+- Jüdischer Kalender: Mondkalender; beginnt mit Erschaffung der Welt.
+
+### Tageszeiten, Stunden
+
+- *alla turca*: Tagesbeginn mit Sonnenuntergang. je 12 Stunden für Nacht und Tag.
+- *alle franca*: Tagesbeginn um Mitternacht. 24 gleichlange Stunden.
+
+:::
+
 
 ## Arabische Zeitungen und Zeitschriften
 
@@ -343,7 +361,7 @@ setwd("/path/to/folder/")
 load("oape_stats.rda")
 المجلات <- c("4770057679", "644997575", "472450345", "792756327")
 المشار.اليها <- المشار.اليها %>%
-    filter(source.id.oclc %in% المجلات)
+    filter(رقم.فهرس %in% المجلات)
 write.table(المشار.اليها, file = "csv/oape_stats.csv", row.names = FALSE, quote = TRUE, sep = ",")
 ```
 
@@ -393,7 +411,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 <!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
 
-:::{.c_width-50 .c_rtl}
+:::{.c_width-50}
 
 ### أميركا وعلماء العرب
 
@@ -430,7 +448,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
     + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden -->
 
 
-:::{.c_width-50 .c_rtl}
+:::{.c_width-50}
 
 ### أميركا وعلماء العرب
 
