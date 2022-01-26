@@ -24,11 +24,15 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ## Übersicht des Vortrages
 
-1. Einführung: Arabische Periodika
-2. Mind the `<gap/>`!
-3. Closing the `<gap/>` one step at the time
+1. Einführung
+2. Mind the `<gap/>`! Digitalität zwischen Heilsversprechen und Realität
+3. Mind the `<gap/>`! *Linguistic imperialism*
+4. Mind the `<gap/>`! Digitalisierung des Kulturerbes
+5. Versuche einer Digital History 
+6. Schlussbemerkungen
+<!-- 3. Closing the `<gap/>` one step at the time -->
 
-# Einführung
+# 1. Einführung
 ## Spätosmanischer östlicher Mittelmeerraum
 
 :::{.c_width-60}
@@ -95,9 +99,9 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 ### Kalender
 
 - Islamisch (*hijri*): beobachteter Mondkalender; beginnt mit Muḥammads Flucht aus Mekka
-- Reformierter Julianischer Kalender: Sonnenkalender; beginnt mit Geburt Christi; Jahresanfang am 1. Januar. 
+- Reformierter Julianischer Kalender: Sonnenkalender; beginnt mit Christi Geburt; Jahresanfang am 1. Januar. 
 - Osmanischer Fiskalkalender (*mālī*): Kombination von altem jul. Kalender und *hijrī*. Jahresanfang am 1. März.
-- Gregorianischer Kalender: Sonnenkalender
+- Gregorianischer Kalender: Sonnenkalender; beginnt mit Christi Geburt; Jahresanfang am 1. Januar.
 - Jüdischer Kalender: Mondkalender; beginnt mit Erschaffung der Welt.
 
 ### Tageszeiten, Stunden
@@ -106,11 +110,6 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 - *alle franca*: Tagesbeginn um Mitternacht. 24 gleichlange Stunden.
 
 :::
-
-
-## Arabische Zeitungen und Zeitschriften
-
-![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif){#fig:map-jaraid}
 
 
 ## Arabische Zeitungen und Zeitschriften
@@ -134,7 +133,27 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 :::
 
-![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages}
+![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif){#fig:map-jaraid}
+
+## Arabische Zeitungen und Zeitschriften
+
+:::{.c_width-50}
+
+![Titelseite von *al-Quds* #331, 10 Januar 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds}
+
+:::
+:::{.c_width-50}
+
+- Grün: Osmanischer Halbmond mit drei Sternen und Slogan der jungtürkischen Revolution von 1908 "Freiheit, Gleichheit, Brüderlichkeit"
+- Blau: Französischer Titel
+- Rot: Datumszeile mit drei Kalendern
+    + Reformierter julianischer K.: 28. Dezember 1912
+    + Gregorianischer K.: 10 Januar 1913
+    + Islamischer K.: 2 Ṣafar 1331
+
+:::
+
+![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-50}
 
 ## Computationelle Periodikastudien
 
@@ -207,7 +226,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 :::
 
 
-# 1. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
+# 2. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
 ## Digitalität zwischen Heilsversprechen und Realität
 
 ::: {.c_width-50}
@@ -326,7 +345,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 ![Globale Verteilung von DH Zentren. Quelle: [DH centerNet](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png)
 
 
-# 1.1 Mind the `<gap/>`! <br/>*Linguistic imperialism*
+# 3. Mind the `<gap/>`! <br/>*Linguistic imperialism*
 ## Linguistic imperialism
 
 >'Linguistic imperialism' is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political
@@ -530,7 +549,7 @@ Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig 
 
 ![Bidirektionales XML vom Anfang von [@oclc_1034545644-i_15-div_1.d2e634]. Die farbigen Pfeile zeigen die Leserichtung an. Die Zahlen unter den Pfeilen zeigen die Lesesequenz an.](../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
 
-# 1.2 Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
+# 4. Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes <br/>neo-koloniale Unsichtbarkeit des Globalen Südens
 
 :::{.c_width-50}
@@ -805,7 +824,7 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 
 
-# SIHAFA: Mapping the late Ottoman Ideosphere of the Eastern Mediterranean through Computational Approaches to its Periodical Press (2021?--)
+# 5. Versuche einer Digital History
 
 ## SIHAFA
 
@@ -1100,7 +1119,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 
 
-# Schlußbemerkungen <br/>Mind the `<gap/>`!
+# 6. Schlußbemerkungen <br/>Mind the `<gap/>`!
 ## Mind the `<gap/>`!
 
 :::{.c_width-50}
