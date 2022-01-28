@@ -525,14 +525,14 @@ Umschrift (IJMES)
 - OS, Browser etc. normalisieren die Varianz nicht.
 <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen -->
 - Folge: Volltextsuchen sind nicht aussagekräftig
-    + 32 Arten "mekkanisch" (مكية) zu schreiben
+    + 32 Arten "mekkanisch" ([مكية]{lang="ar"}) zu schreiben
 
 :::
 :::{.c_width-50}
 
 <!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
 
-![Browsersuche nach "مك" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
+![Browsersuche nach "[مك]{lang="ar"}" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
 
 :::
 
