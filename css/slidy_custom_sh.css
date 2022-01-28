@@ -7,6 +7,35 @@
    http://www.w3.org/Consortium/Legal/copyright-documents
    http://www.w3.org/Consortium/Legal/copyright-software
 */
+/* Arabic fonts*/
+@import "fonts_amiri.css";
+
+/* render Arabic as rtl */
+[lang = "ar"],
+[lang = "ota"],
+[lang = "fa"],
+[lang = "he"],
+[lang *= "-Arab-AR"] {
+    direction: rtl;
+    text-align: right;
+    font-family: AmiriWeb, Helvetica, Arial, sans-serif;
+    /*keep in mind that relative sizes (%, em) 
+    accumulate for nested elements and must thus be avoided. 
+    At the moment almost everything is tailored to 18px */
+/*    font-size: 18px;*/
+}
+/* display latin scripts in a smaller font */
+[lang = "en"],
+[lang = "fr"],
+[lang = "de"],
+[lang = "it"],
+[lang *= "ar-Latn-"],
+[lang *= "ota-Latn-"] {
+    direction: ltr;
+    text-align: left;
+/*    font-size: 14px;*/
+}
+
 html,
 div.slide {
     height: 100%;
