@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="date" content="2022-01-26" />
+  <title>Zur Erschließung arabischer Periodika aus spätosmanischer Zeit</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  /*.sourceCode * {
+      font-size: 16px;
+  }*/
+  /* xml element names */
+  .xml > code span.kw {
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+    /*color:#FF8041;*/
+    color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+    /*color:#993300;*/
+    color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+    color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  .c_width-60 {
+      width:64%;
+      position: relative;
+      float: left;
+  }
+  .c_width-50 {
+      width:49%;
+      position: relative;
+      float: left;
+  }
+  .c_width-30 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  .c_left {
+      display: block;
+      float:left;
+  }
+  .c_right {
+      display: block;
+      float: right;
+  }
+
+  /* styles to vertically stack divs */
+  .c_height-50 {
+      display: block;
+      height: 400px;
+      max-height: 500px;
+  }
+  .c_height-30 {
+      display: block;
+      height: 250px;
+      max-height: 400px;
+  }
+  .c_top {
+      vertical-align: top;
+  }
+  .c_bottom {
+      vertical-align: bottom;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+    color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../../js/slidy.js"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
+</head>
+<body>
+<div id="zur-erschließung-arabischer-periodika-aus-spätosmanischer-zeit-c.1800c.1920-herausforderungen-einer-multilingualen-und-multiskriptoralen-digital-history" class="slide titlepage">
+<h1 class="title">Zur Erschließung arabischer Periodika aus spätosmanischer Zeit (c.1800–c.1920)</h1>
+<h2 class="subtitle">Herausforderungen einer multilingualen und multiskriptoralen Digital History</h2>
+<p class="author">Till Grallert, @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
+<p><em>Digital History</em> – Offenes Forschungskolloquium</p>
+<p>26 Januar 2022</p>
+<p>Folien: <a href="https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium/index.html">https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium</a></p>
+</div>
+<div id="übersicht-des-vortrages" class="slide section level2">
+<h1>Übersicht des Vortrages</h1>
+<ol style="list-style-type: decimal">
+<li>Einführung</li>
+<li>Mind the <code>&lt;gap/&gt;</code>! Digitalität zwischen Heilsversprechen und Realität</li>
+<li>Mind the <code>&lt;gap/&gt;</code>! <em>Linguistic imperialism</em></li>
+<li>Mind the <code>&lt;gap/&gt;</code>! Digitalisierung des Kulturerbes</li>
+<li>Versuche einer Digital History</li>
+<li>Schlussbemerkungen <!-- 3. Closing the `<gap/>` one step at the time --></li>
+</ol>
+</div>
+<div id="einführung" class="title-slide slide section level1">
+<h1>1. Einführung</h1>
+
+</div>
+<div id="spätosmanischer-östlicher-mittelmeerraum" class="slide section level2">
+<h1>Spätosmanischer östlicher Mittelmeerraum</h1>
+<div class="c_width-60">
+<!-- ![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893_annotated.jpg){#fig:map-oem} -->
+<div class="figure">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ottoman_Empire_Administrative_Divisions.png/2048px-Ottoman_Empire_Administrative_Divisions.png" id="fig:map-oem" alt="" />
+<p class="caption">Figure 1: Die administrative Struktur des Osmanischen Reiches, ca. 1899. AbdurRahman AbdulMoneim, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Ottoman_Empire_Administrative_Divisions.png">Wikimedia Commons</a></p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li>Norden: Rumelien und Anatolien
+<ul>
+<li>ab 14. Jhd. osmanisch</li>
+</ul></li>
+<li>Süden: <em>Mashriq</em> und Ägypten
+<ul>
+<li>ab 16. Jhd. osmanisch</li>
+</ul></li>
+<li>Modernisierendes Reich
+<ul>
+<li><em>Tanzimat</em>: 1838–76</li>
+<li>Erste konstitutionelle Phase: 1876–78</li>
+<li>Jungtürkische Revolution: 24. Juli 1908</li>
+<li>Zweite konstitutionelle Phase: 1908–18</li>
+</ul></li>
+<li>Sezessionen, Einfluss europ. Kolonialmächte
+<ul>
+<li>Muslimisierung</li>
+<li>Arabisierung</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="spätosmanischer-östlicher-mittelmeerraum-ein-raum-der-vielfalt" class="slide section level2">
+<h1>Spätosmanischer östlicher Mittelmeerraum <br/>Ein Raum der Vielfalt</h1>
+<div class="c_width-30">
+<h3 id="sprachen">Sprachen</h3>
+<ul>
+<li>Verwaltungssprachen: Osmanisch, Arabisch, Persisch</li>
+<li>Alltagssprachen: Turksprachen, Arabisch, Griechisch, slawische Sprachen, Armenisch, Ladino …</li>
+<li>Liturgische Sprachen: Arabisch, Griechisch, Armenisch, Koptisch, Russisch</li>
+<li>Bildungssprachen: Osmanisch, Arabisch, Französisch, Englisch, Russisch …</li>
+</ul>
+<h3 id="schriften">Schriften</h3>
+<!-- + Arabisch: Osmanisch, Arabisch, Hebräisch
++ Griechisch
++ Armenisch
++ Lateinisch: Französisch, Englisch ...
++ Kyrillisch
++ Hebräisch: Hebräisch, Ladino, Arabisch, Jiddisch
++ Assyrisch
++ Koptisch -->
+<ul>
+<li>Von rechts nach links:
+<ul>
+<li>Arabisch, Hebräisch, Assyrisch</li>
+</ul></li>
+<li>Von links nach rechts:
+<ul>
+<li>Griechisch, Armenisch, Lateinisch, Kyrillisch, Koptisch</li>
+</ul></li>
+</ul>
+</div>
+<div id="religionen" class="c_width-30">
+<h3>Religionen</h3>
+<ul>
+<li>Muslime: sunnitisch, schiitisch</li>
+<li>Christen: div. orthodox, katholisch, assyrisch, uniert, protestantisch</li>
+<li>Juden: sephardisch, aschkenasisch</li>
+<li>Zoroastrier</li>
+</ul>
+</div>
+<div class="c_width-30">
+<h3 id="kalender">Kalender</h3>
+<ul>
+<li>Islamischer K. (<em>hijri</em>): <strong>lunar</strong>, beobachet; beginnt mit Muḥammads Flucht aus Mekka</li>
+<li>Reformierter Julianischer K.: <strong>solar</strong>; beginnt mit Christi Geburt; Jahresanfang am 1. Januar.</li>
+<li>Osmanischer Fiskalkalender (<em>mālī</em>): <strong>lunosolar</strong>; beginnt mit Muḥammads Flucht aus Mekka; Jahresanfang am 1. März.</li>
+<li>Gregorianischer K.: <strong>solar</strong>; beginnt mit Christi Geburt; Jahresanfang am 1. Januar.</li>
+<li>Jüdischer K.: <strong>lunar</strong>; beginnt mit Erschaffung der Welt.</li>
+</ul>
+<h3 id="tages-stunden">Tages, Stunden</h3>
+<ul>
+<li><em>alla turca</em>: Tagesbeginn mit Sonnenuntergang. je 12 Stunden für Nacht und Tag.</li>
+<li><em>alle franca</em>: Tagesbeginn um Mitternacht. 24 gleichlange Stunden.</li>
+</ul>
+</div>
+</div>
+<div id="arabische-zeitungen-und-zeitschriften" class="slide section level2">
+<h1>Arabische Zeitungen und Zeitschriften</h1>
+<div class="c_width-50">
+<ul>
+<li>Presse als zentraler Agent des Wandels in der Moderne
+<ul>
+<li>erstes Massenmedium</li>
+<li>zentrales Medium der literarischen und kulturellen arabischen Renaissance (<em>nahḍa</em>)</li>
+<li>Medium des Sprachwandels</li>
+<li>zentrale Foren für Verhandlung von Moderne, Nationalismen, Islamismus etc.</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<ul>
+<li>Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht</li>
+<li>Forschung wird dominiert von
+<ul>
+<li>national(istisch)en Narrativen</li>
+<li>Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel</li>
+<li>impliziten Hypothesen</li>
+</ul></li>
+</ul>
+</div>
+<div class="figure">
+<img src="../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif" id="fig:map-jaraid" alt="" />
+<p class="caption">Figure 2: Neu gegründete arabisch-sprachige Periodika, 1799–1929</p>
+</div>
+</div>
+<div id="arabische-zeitungen-und-zeitschriften-1" class="slide section level2">
+<h1>Arabische Zeitungen und Zeitschriften</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg" id="fig:al-quds" alt="" />
+<p class="caption">Figure 3: Titelseite von <em>al-Quds</em> #331, 10 Januar 1913</p>
+</div>
+</div>
+<div class="c_width-50">
+<ul>
+<li>Grün: Osmanischer Halbmond mit drei Sternen und Slogan der jungtürkischen Revolution von 1908 “Freiheit, Gleichheit, Brüderlichkeit”</li>
+<li>Blau: Französischer Titel</li>
+<li>Rot: Datumszeile mit drei Kalendern
+<ul>
+<li>Reformierter julianischer K.: 28. Dezember 1912</li>
+<li>Gregorianischer K.: 10 Januar 1913</li>
+<li>Islamischer K.: 2 Ṣafar 1331</li>
+</ul></li>
+</ul>
+</div>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/front-pages_strip.png" id="fig:front-pages" class="c_height-30" alt="" />
+<p class="caption">Figure 4: Titelseiten von <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>al-Iqbāl</em>, <em>al-Maḥabba</em>, <em>al-Ahrām</em>, <em>al-Muqtaṭaf</em> und <em>al-ʿAṣr al-Jadīd</em></p>
+</div>
+</div>
+<div id="computationelle-periodikastudien" class="slide section level2">
+<h1>Computationelle Periodikastudien</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness.png" id="fig:network-authors" alt="" />
+<p class="caption">Figure 5: Ungerichtetes Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.</p>
+</div>
+</div>
+<div class="c_width-50">
+<!-- ![Orte in Autorenzeilen in *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east-na_mapped.png){#fig:authors-haqaiq .c_height-50}
+
+![Erscheinungsorte der in *al-Muqtabas* (Kairo und Damaskus) erwähnten Periodika](../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-med-na_mapped.png){#fig:referenced-periodicals-muqtabas .c_height-50} -->
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-data-set-bylines-middle-east-na_mapped-bar.png" id="fig:map-bylines" alt="" />
+<p class="caption">Figure 6: Karte der in Autor_innenzeilen erwähnten Orte in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em></p>
+</div>
+</div>
+</div>
+<div id="computationelle-periodikastudien-1" class="slide section level2">
+<h1>Computationelle Periodikastudien</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png" id="fig:network-periodicals" alt="" />
+<p class="caption">Figure 7: Gerichtetes Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.</p>
+</div>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png" id="fig:map-referenced" alt="" />
+<p class="caption">Figure 8: Karte der in Autor_innenzeilen erwähnten Orte in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em></p>
+</div>
+</div>
+</div>
+<div id="notwendige-datenbasis" class="slide section level2">
+<h1>Notwendige Datenbasis</h1>
+<div id="modellierten-volltext-mit-auszeichnung-von-named-entities" class="c_width-30">
+<h3>Modellierten Volltext mit Auszeichnung von <em>Named Entities</em></h3>
+<ul>
+<li>z.B. “In ihrer letzten Ausgabe berichtete die Zeitung <em>al-ʿAṣr al-Jadīd</em> aus Damaskus, dass …”</li>
+<li>(halb)automatische Extraktion basiert auf
+<ul>
+<li>named entity recognition (NER)</li>
+</ul></li>
+<li>Probleme
+<ul>
+<li>Zustand von OCR und Layout-Erkennung</li>
+<li>Zustand von NER</li>
+</ul></li>
+</ul>
+</div>
+<div id="strukturierte-bibliographische-metadaten-auf-der-artikelebene" class="c_width-30">
+<h3>Strukturierte bibliographische (Meta)daten auf der Artikelebene</h3>
+<ul>
+<li>z.B. “<em>Sātisnā</em> schickte uns diesen Artikel aus <em>al-Shahbāʾ</em>”</li>
+<li>(halb)automatische Extraktion basiert auf
+<ul>
+<li>Anwesenheit der Information im materiellen Artefakt</li>
+<li>einem modellierten digitalen Surrogat</li>
+</ul></li>
+<li>Probleme
+<ul>
+<li>Vielfalt von Namensformen</li>
+</ul></li>
+</ul>
+</div>
+<div id="normdatensätze" class="c_width-30">
+<h3>Normdatensätze <!-- zur Disambiguierung und Anreicherung der Daten --></h3>
+<ul>
+<li><em>Sātisnā</em>
+<ul>
+<li>Pseudonym und Anagram für <em>Anastās al-Karmilī</em>, den Herausgeber von <em>Lughat al-ʿArab</em> in Bagdad</li>
+</ul></li>
+<li><em>al-Shahbāʾ</em>, “die Graue”
+<ul>
+<li>ein Beiname von Aleppo</li>
+<li>Geokoordinaten: <code>36.20124, 37.16117</code></li>
+</ul></li>
+<li>Probleme
+<ul>
+<li>enormes Bias auf den Globalen Norden</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="mind-the-gap-digitalität-zwischen-heilsversprechen-und-realität" class="title-slide slide section level1">
+<h1>2. Mind the <code>&lt;gap/&gt;</code>! <br/>Digitalität zwischen Heilsversprechen und Realität</h1>
+
+</div>
+<div id="digitalität-zwischen-heilsversprechen-und-realität" class="slide section level2">
+<h1>Digitalität zwischen Heilsversprechen und Realität</h1>
+<div class="c_width-50">
+<h3 id="egalitäres-heilsversprechen">egalitäres Heilsversprechen</h3>
+<ul>
+<li>jede kann ohne Unterschied teilhaben</li>
+<li>uneingescheränkter Zugang zum Wissen der Welt</li>
+</ul>
+<h3 id="normative-grundlagen">Normative Grundlagen</h3>
+<ul>
+<li>Wissen = Daten = Verständnis</li>
+<li>mehr Wissen = besseres Verständnis</li>
+<li>Solutionism/Technokratie</li>
+</ul>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/dh/memex-1945.jpg" id="fig:memex" alt="" />
+<p class="caption">Figure 9: Vannevar Bushs <em>Memex</em>, 1945</p>
+</div>
+</div>
+</div>
+<div id="digitalität-zwischen-heilsversprechen-und-realität-1" class="slide section level2">
+<h1>Digitalität zwischen Heilsversprechen und Realität</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/dh/covid-19-vaccination-fail.png" id="fig:vaccination" alt="" />
+<p class="caption">Figure 10: Versuch einen Impftermin online zu buchen</p>
+</div>
+</div>
+<div class="c_width-50">
+<h3 id="ernüchternde-realtität">ernüchternde Realtität</h3>
+<ul>
+<li>universale, wenn auch unterschiedliche Ausschlußerfahrungen</li>
+</ul>
+<h3 id="elefant-in-the-room">Elefant in the room</h3>
+<ul>
+<li>Digitalität wird als <strong>voraussetzungslos</strong> verstanden</li>
+</ul>
+</div>
+</div>
+<div id="digitalität-als-vorausetzungslos" class="slide section level2">
+<h1>Digitalität als vorausetzungslos?</h1>
+<h3 id="metaphermaschinen">Metaphermaschinen</h3>
+<div class="c_width-50 c_right">
+<ul>
+<li>Digitalität <strong>simuliert</strong> Stasis und Vertrautheit
+<ul>
+<li>Metaphern</li>
+<li>semantische Modelle</li>
+</ul></li>
+<li>Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert</li>
+</ul>
+</div>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../..//assets/dh/google-docs.png" id="fig:google-docs" alt="" />
+<p class="caption">Figure 11: Google docs</p>
+</div>
+</div>
+</div>
+<div id="mind-the-gap-zugangsvorraussetzungen" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>! <br/>Zugangsvorraussetzungen</h1>
+<p>… müssen explizit gemacht werden!</p>
+<div id="technisch" class="c_width-50">
+<h3>technisch</h3>
+<ul>
+<li>Hardware: aktuell</li>
+<li>Strom: kontinuierlich</li>
+<li>Internet: schnell und stabil</li>
+<li>Software</li>
+</ul>
+</div>
+<div id="kulturell" class="c_width-50">
+<h3>kulturell</h3>
+<ul>
+<li>Sprach- und Schriftkenntnisse</li>
+<li>Vertrautheit mit den Metaphern</li>
+<li>Vertrautheit mit semantischen Modellen</li>
+</ul>
+</div>
+</div>
+<div id="mind-the-gap-zugangsvorraussetzungen-1" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>! <br/>Zugangsvorraussetzungen</h1>
+<h3 id="du-bist-so-schön-wie-eine-zusätzliche-stunde-strom">Du bist so schön wie eine zusätzliche Stunde Strom</h3>
+<div class="c_width-30">
+<blockquote class="twitter-tweet" data-partner="tweetdeck">
+<p lang="ar" dir="rtl">
+“حبيبتي، انت جميلة، كساعة اضافية من الكهرباء”<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a>
+</p>
+— aya mansour (@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a>
+</blockquote>
+</div>
+<div class="c_width-30">
+<blockquote class="twitter-tweet" data-partner="tweetdeck">
+<p lang="ar" dir="rtl">
+مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a>
+</p>
+— Jawdat Alsaleh (@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a>
+</blockquote>
+</div>
+<div class="c_width-30">
+<blockquote class="twitter-tweet" data-partner="tweetdeck">
+<p lang="ar" dir="rtl">
+<a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a>
+</p>
+— A - M .. Syria (@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a>
+</blockquote>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="mind-the-gap-zwischen-globalem-norden-und-globalem-süden" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>! <br/>Zwischen Globalem Norden und Globalem Süden</h1>
+<div id="globaler-norden" class="c_width-50">
+<h3>Globaler Norden</h3>
+<ul>
+<li>Hegemon</li>
+<li>Autor der technischen und kulturellen Standards der Digitalität</li>
+</ul>
+</div>
+<div id="globaler-süden" class="c_width-50">
+<h3>Globaler Süden</h3>
+<ul>
+<li>nicht homogen, kein universeller “Anderer”</li>
+<li>Vielzahl heterogener Regionalitäten</li>
+<li>gemeinsame Erfahrung der konstanten Auseinandersetzung mit dem Hegemon</li>
+</ul>
+</div>
+</div>
+<div id="mind-the-gap-digital-humanities-als-teil-des-globalen-nordens" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>! <br/>Digital Humanities als Teil des Globalen Nordens</h1>
+<div class="figure">
+<img src="../../assets/dh/map_dhcenters.png" alt="" />
+<p class="caption">Globale Verteilung von DH Zentren. Quelle: <a href="http://dhcenternet.org/centers">DH centerNet</a></p>
+</div>
+</div>
+
+<div id="mind-the-gap-linguistic-imperialism" class="title-slide slide section level1">
+<h1>3. Mind the <code>&lt;gap/&gt;</code>! <br/><em>Linguistic imperialism</em></h1>
+
+</div>
+<div id="linguistic-imperialism" class="slide section level2">
+<h1>Linguistic imperialism</h1>
+<blockquote>
+<p>‘Linguistic imperialism’ is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political</p>
+</blockquote>
+<p><cite><span class="citation">Robert Phillipson, „Realities and Myths of Linguistic Imperialism“, <em>Journal of Multilingual and Multicultural Development</em> 18, Nr. 3 (1997): 239, <a href="https://doi.org/10/db3cnb" role="doc-biblioref">https://doi.org/10/db3cnb</a>.</span></cite></p>
+<blockquote>
+<p>The basis for the codes, languages, methodologies, and technical instruments of the digital humanities is English; the written and spoken language of all the main conferences, the most prestigious journals, the institutions that control the discipline, the organizations and international consortia, and the central authorities of knowledge is, with few exceptions, some dialect of British or American English.</p>
+</blockquote>
+<p><cite><span class="citation">Domenico Fiormonte, „Taxation Against Overrepresentation? The Consequences of Monolingualism for Digital Humanities“, in <em>Alternative Historiographies of the Digital Humanities</em>, hg. von Dorothy Kim und Adeline Koh (Earth: punctum books, 2021), 334–35, <a href="https://doi.org/10.53288/0274.1.00" role="doc-biblioref">https://doi.org/10.53288/0274.1.00</a>.</span></cite></p>
+</div>
+<div id="englischkenntnisse-sind-unabdingbar" class="slide section level2">
+<h1>Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar</h1>
+<div class="c_width-50">
+<p>Englisch ist die Lingua Franca und Basis der technischen Infrastruktur</p>
+<ul>
+<li>Beispiel: CSS</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>body {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">background</span>: <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="kw">color</span>: <span class="cn">black</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>}</span></code></pre></div>
+<ul>
+<li>Beispiel: R</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="kw">setwd</span>(<span class="st">&quot;/path/to/folder/&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="kw">load</span>(<span class="st">&quot;oape_stats.rda&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>المجلات &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;4770057679&quot;</span>, <span class="st">&quot;644997575&quot;</span>, <span class="st">&quot;472450345&quot;</span>, <span class="st">&quot;792756327&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>المشار.اليها &lt;-<span class="st"> </span>المشار.اليها <span class="op">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="st">    </span><span class="kw">filter</span>(رقم.فهرس <span class="op">%in%</span><span class="st"> </span>المجلات)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a><span class="kw">write.table</span>(المشار.اليها, <span class="dt">file =</span> <span class="st">&quot;csv/oape_stats.csv&quot;</span>, <span class="dt">row.names =</span> <span class="ot">FALSE</span>, <span class="dt">quote =</span> <span class="ot">TRUE</span>, <span class="dt">sep =</span> <span class="st">&quot;,&quot;</span>)</span></code></pre></div>
+</div>
+<div class="c_width-50">
+<p>Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces</p>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png" id="fig:translatio-interface" alt="" />
+<p class="caption">Figure 12: <a href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio Bonn</a>: Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün).</p>
+</div>
+</div>
+</div>
+<div id="arabisch" class="slide section level2">
+<h1>Arabisch</h1>
+<div id="schrift" class="c_width-50">
+<h3>Schrift</h3>
+<ul>
+<li>zweithäufigste Schrift <!-- nach lateinischer Schrift -->
+<ul>
+<li>aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.</li>
+</ul></li>
+</ul>
+</div>
+<div id="sprache" class="c_width-50">
+<h3>Sprache</h3>
+<ul>
+<li>fünfthäufigste Sprache
+<ul>
+<li>eine von sechs Amtssprachen der UN</li>
+<li><!-- offizielle -->
+Amtssprache in 26 Ländern</li>
+<li>&gt;420 Mio. Sprechende</li>
+</ul></li>
+<li>liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen</li>
+</ul>
+</div>
+<div class="figure">
+<img src="../../assets/dh/arabic-script_sample-annotated.png" id="fig:arabic-sample-1" alt="" />
+<p class="caption">Figure 13: Beispiel: <span class="citation">Yūsuf Zakham, „Amīrkā wa-ʿulamāʾ al-ʿArab“, <em>al-Muqtabas</em>, 2, Nr. 1 (Cairo, 14. Februar 1907), <a href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249" role="doc-biblioref">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.</span></p>
+</div>
+</div>
+<div id="arabisch-1" class="slide section level2">
+<h1>Arabisch</h1>
+<h3 id="schrift-1">Schrift</h3>
+<ul>
+<li>Schriftrichtung von rechts nach links</li>
+<li>Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen): <span class="c_rtl" lang="ar">ج جـ ـجـ ـج</span></li>
+<li>Grapheme bestehen aus Basisformen (Archigraphem, <em>rasm</em>) und diakritischen Zeichen (<em>iʿjām</em>)
+<ul>
+<li>Gebrauch unterliegt historischem Wandel und regionalen Präferenzen</li>
+</ul></li>
+<li>Vokalisierung (<em>tashkīl</em>) <strong>kann</strong> hinzugefügt werden und hat Einfluss auf Bedeutung <!-- + Präferenz für Ligaturen --></li>
+</ul>
+<!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
+<div id="أميركا-وعلماء-العرب" class="c_width-50">
+<h3>أميركا وعلماء العرب</h3>
+<p><span class="c_rtl" lang="ar">كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن</span></p>
+<p><cite><span class="citation">Zakham, „Amīrkā wa-ʿulamāʾ al-ʿArab“.</span></cite></p>
+</div>
+<div id="امىرکا-وعلماء-العرٮ" class="c_width-50 c_rtl">
+<h3>امىرکا وعلماء العرٮ</h3>
+<p><span class="c_rtl" lang="ar">کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں</span></p>
+<p><em>rasm</em></p>
+</div>
+</div>
+<div id="arabisch-in-der-digitalität" class="slide section level2">
+<h1>Arabisch in der Digitalität</h1>
+<h3 id="zum-großen-teil-nicht-unterstützt">Zum großen Teil <!-- von der digitalen Infrastruktur --> nicht unterstützt</h3>
+<ul>
+<li>Zeichenkodierung lange Zeit nicht unterstützt
+<ul>
+<li><!-- Konsequenz aus dem Buchdruck, Schreibmaschinen etc.:  -->
+Latinisierte Umschriften
+<ul>
+<li>Arabisch: <span class="c_rtl">تصوير الافكار</span> -&gt; <em>taṣwīr al-afkār</em> (IJMES)</li>
+<li>Osmanisch: <span class="c_rtl">تصوير افكار</span> -&gt; <em>teṣvīr-i efkār</em> (IJMES)</li>
+</ul></li>
+<li>“gelehrte” Umschrift vs Praxis des Arabisi</li>
+</ul></li>
+<li><!-- Notwendige -->
+Allographen (Verbindungsformen) werden der Rendering Engine überlassen
+<ul>
+<li>Microsoft Office for Mac: 2015</li>
+<li>ggplot(Plots in R): 2021</li>
+<li>Gephi: 2020</li>
+</ul></li>
+<li>OCR ist nicht funktional*</li>
+</ul>
+<!-- + Abstraktion in Buchstaben ist zumindest umstritten
+    + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden -->
+<div id="أميركا-وعلماء-العرب-1" class="c_width-50">
+<h3>أميركا وعلماء العرب</h3>
+<p><span class="c_rtl" lang="ar">كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن</span></p>
+<p><cite><span class="citation">Zakham, „Amīrkā wa-ʿulamāʾ al-ʿArab“.</span></cite></p>
+</div>
+<div id="amīrkā-wa-ʿulamāʾ-al-ʿarab" class="c_width-50 c_ltr">
+<h3>Amīrkā wa ʿulamāʾ al-ʿarab</h3>
+<p><em>Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn</em></p>
+<p>Umschrift (IJMES)</p>
+</div>
+<!-- hello Java, I am looking at you! -->
+<!-- add screenshot of tweet writing Arabic in Latin -->
+</div>
+<div id="erfassung-grapheme-und-zeichenkodierung" class="slide section level2">
+<h1>Erfassung <br/> Grapheme und Zeichenkodierung</h1>
+<h3 id="unicode-ist-nicht-die-lösung-aller-probleme">Unicode ist nicht die Lösung aller Probleme</h3>
+<div class="c_width-50">
+<!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
+<ul>
+<li>Unicode: <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz --> <!-- + Full members: Adobe, Apple, Facebook, Google, IBM, Microsoft, Netflix, SAP, Salesforce, **Sultanat von Oman** --></li>
+<li>Idee: Trennung von Bedeutung und Form</li>
+<li>Probleme:
+<ul>
+<li>Kodierungen <!-- sind politische Entscheidungen und --> folgen Sprachen, nicht Schriften</li>
+<li>inkonsistent</li>
+</ul></li>
+<li>OS, Browser etc. normalisieren die Varianz nicht. <!-- - Notwendige Verbindungsformen der Buchstaben werden der Rendering Engine überlassen --></li>
+<li>Folge: Volltextsuchen sind nicht aussagekräftig
+<ul>
+<li>32 Arten “mekkanisch” (<span lang="ar">مكية</span>) zu schreiben</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
+<div class="figure">
+<img src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png" id="fig:arabic-mecca-2" height="300" alt="" />
+<p class="caption">Figure 14: Browsersuche nach “<span lang="ar">مك</span>” im Wikidataeintrag für Mekka (<a href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</p>
+</div>
+</div>
+</div>
+<div id="darstellung-basale-standards-werden-nicht-unterstützt" class="slide section level2">
+<h1>Darstellung <br/>basale Standards werden nicht unterstützt</h1>
+<h3 id="beispiel-1-werbung-grafik--und-layout-programme">Beispiel 1: Werbung (Grafik- und Layout Programme)</h3>
+<div class="c_width-50">
+<!-- Nicht verbunden und von rechts nach links -->
+<div class="figure">
+<img src="../../assets/dh/ErLBbWwVgAErjHy.jpg" id="fig:arabic-fail-covid" alt="" />
+<p class="caption">Figure 15: “Arabische” Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: <a href="https://twitter.com/2awbi2atiye/status/1347351918268489728">Twitter</a></p>
+</div>
+</div>
+<div class="c_width-50">
+<!-- Korrektur -->
+<div class="figure">
+<img src="../../assets/dh/ErO3qtUVkAEUAQ_.jpg" id="fig:arabic-fail-covid-corrected" alt="" />
+<p class="caption">Figure 16: Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: <a href="https://twitter.com/wcpublichealth/status/1347622725469130752">Twitter</a></p>
+</div>
+</div>
+</div>
+<div id="darstellung-basale-standards-werden-nicht-unterstützt-1" class="slide section level2">
+<h1>Darstellung <br/>basale Standards werden nicht unterstützt</h1>
+<h3 id="beispiel-2-webbrowser-und-html-5">Beispiel 2: Webbrowser und HTML 5</h3>
+<p>Browser ignorieren das HTML5 Attribut <code>@lang</code> und stellen Arabisch linksbündig dar</p>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/dh/html5-lang_ar-chrome-2.png" id="fig:arabic-fail-chrome" alt="" />
+<p class="caption">Figure 17: Chrome</p>
+</div>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/dh/html5-lang_ar-firefox-2.png" id="fig:arabic-fail-firefox" alt="" />
+<p class="caption">Figure 18: Firefox</p>
+</div>
+</div>
+</div>
+<div id="darstellung-arabische-inhalte-in-ltr-standards" class="slide section level2">
+<h1>Darstellung <br/>Arabische Inhalte in LTR-Standards</h1>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png" id="fig:bidi-xml" alt="" />
+<p class="caption">Figure 19: Bidirektionales XML vom Anfang von <span class="citation">Ḥalīm Ibrāhīm Dammūs, „Ṣiḥāfat Sūriyya wa-Lubnān“, <em>al-Zuhūr</em>, 2, Nr. 4 (Cairo, 1. Juni 1911), <a href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634" role="doc-biblioref">https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634</a>.</span> Die farbigen Pfeile zeigen die Leserichtung an. Die Zahlen unter den Pfeilen zeigen die Lesesequenz an.</p>
+</div>
+</div>
+
+<div id="mind-the-gap-digitalisierung-des-kulturerbes" class="title-slide slide section level1">
+<h1>4. Mind the <code>&lt;gap/&gt;</code>! <br/>Digitalisierung des Kulturerbes</h1>
+
+</div>
+<div id="digitalisierung-des-kulturerbes-neo-koloniale-unsichtbarkeit-des-globalen-südens" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>neo-koloniale Unsichtbarkeit des Globalen Südens</h1>
+<div id="erfassung" class="c_width-50">
+<h3>Erfassung</h3>
+<p>Digitalisierung ist <strong>teuer</strong>: public-private partnerships, private vendors</p>
+<ul>
+<li>Findet primär im Globalen Norden statt</li>
+<li>Kuratorische Entscheidungen
+<ul>
+<li>Sammlung</li>
+<li>Katalogisierung</li>
+<li>Digitalisierung</li>
+</ul></li>
+<li>Technische Entscheidungen
+<ul>
+<li>Workflows, Modelle, Ontologien des Nordens</li>
+</ul></li>
+<li>Wirtschaftliche Entscheidungen
+<ul>
+<li>Outsourcing</li>
+</ul></li>
+</ul>
+</div>
+<div id="bereitsstellung" class="c_width-50">
+<h3>Bereitsstellung</h3>
+<p>Platformen zur Maximierung des Gewinns</p>
+<ul>
+<li>Proprietäre Interfaces</li>
+<li>Datensilos ohne APIs</li>
+<li>Bezahlschranken</li>
+<li>geo-fencing</li>
+</ul>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-katalogisierung" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Katalogisierung</h1>
+<ul>
+<li>Digitale Kataloge sind <strong>digitalisierte</strong> Kataloge</li>
+<li>Katalogisierungsregeln sind historisch kontingent
+<ul>
+<li>nutzen lateinische Umschriften (plural!!)</li>
+<li>unterscheiden nicht konsequent zwischen Schrift und Sprache</li>
+<li>Kalender sind häufig falsch</li>
+</ul></li>
+<li>Kataloge sind lokal, Aggregierung zumeist auf nationaler Basis</li>
+<li>Nutzung zumeist über Webinterfaces
+<ul>
+<li>Worldcat und Arabic Union Catalogue (ArUC) haben keine kostenlose API</li>
+</ul></li>
+</ul>
+</div>
+<div id="digitalisierung-des-kulturerbes-katalogisierung-1" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Katalogisierung</h1>
+<h3 id="suche-in-der-ansonsten-großartigen-zdb">Suche in der ansonsten großartigen <a href="https://zdb-katalog.de">ZDB</a></h3>
+<!-- - nur in Umschrift 
+- Umschrift wird in unbekanntem Umfang "normalisiert"
+- aber der bestimmte Artikel "al-" muss manuell entfernt werden -->
+<div class="c_width-30">
+<ul>
+<li>kein Arabisch</li>
+</ul>
+<div class="figure">
+<img src="../../assets/jaraid/zdb_janna-ar.png" alt="" />
+<p class="caption">ZDB Suche nach “الجنة”</p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li>keine volle Umschrift (<em>dmg</em> al-Ǧanna, <em>ijmes</em> al-Janna)</li>
+</ul>
+<div class="figure">
+<img src="../../assets/jaraid/zdb_janna-ar-Latn.png" alt="" />
+<p class="caption">ZDB Suche nach “al-Ǧanna”</p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li>defektive Umschrift ohne “al-”</li>
+<li>Umfang der Normalisierung unklar (<code>ʿ</code> wird komplet herausgefiltert, <code>'</code> und <code>ʾ</code> nicht)</li>
+</ul>
+<div class="figure">
+<img src="../../assets/jaraid/zdb_janna-ar-Latn-no-al.png" alt="" />
+<p class="caption">ZDB Suche nach “Ganna”</p>
+</div>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-was-können-wir-überhaupt-sehen" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Was können wir überhaupt sehen?</h1>
+<p>Welche Verzerrungen bildet die Karte ab: Sammlung, Katalogiesierung, Digitalisierung der Wissensinfrastruktur?</p>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-holdings_al-muqtabas-vol_1-9.png" id="fig:map-global-holdings" alt="" />
+<p class="caption">Figure 20: Karte von in Worldcat und ArUC erfassten Beständen der Zeitschrift <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="closing-the-knowledge-gap-project-jarāʾid-2012" class="slide section level2">
+<h1>Closing the knowledge <code>&lt;gap/&gt;</code> <br/><a href="https://projectjaraid.github.io/">Project Jarāʾid</a> (2012–)</h1>
+<div class="c_width-50">
+<ul>
+<li>Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
+<ul>
+<li>Webseite und offene Datensätze (<a href="https://tei-c.org/">TEI XML</a>) für mehr als 3700 Periodika</li>
+<li>Normdatensätze für c.2700 Personen, 220 Orte, 180 Bibliotheken u.ä.</li>
+</ul></li>
+<li>Kollaboration mit Adam Mestyan (Duke), “Crowd”-Sourcing</li>
+<li>Seit 2021/22: Integration von Bibliothekskatalogen, ZDB, HathiTrust</li>
+</ul>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/jaraid/map-example_sf_mena_en-status_scatterpie.png" id="fig:holding-stats" alt="" />
+<p class="caption">Figure 21: In Project Jarāʾid erfasste Periodika. Größe der Kreise korrespondiert mit Anzahl der Periodikatitel. Farben zeigen den Status an: bekannte Sammlung (grün), davon digitalisiert (blau), Rest (rot).</p>
+</div>
+</div>
+</div>
+<div id="project-jarāʾid-mind-the-gap" class="slide section level2">
+<h1><a href="https://projectjaraid.github.io/">Project Jarāʾid</a> <br/>Mind the <code>&lt;gap/&gt;</code>!</h1>
+<h3 id="wissenslücke---digitalisierungslücke">Wissenslücke -&gt; Digitalisierungslücke</h3>
+<div class="c_width-50">
+<p>Arabische Periodika bis 1929 weltweit</p>
+<ul>
+<li>Arabisch: 420 Mio Sprechende</li>
+<li>3269 Zeitungen und Zeitschriften</li>
+<li>davon knapp 1/4 (747) in Sammlungen lokalisiert</li>
+<li>davon wiederum knapp 1/5 (145) digitalisiert</li>
+<li>Bezahlschranken, geo-fencing</li>
+</ul>
+</div>
+<div class="c_width-50">
+<p>Zum Vergleich: “<a href="https://hwk1.hebis.de">Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen</a>”</p>
+<ul>
+<li>Hessen: 6,2 Mio. Einwohner_innen</li>
+<li>125 Zeitungen mit mehr als ½ Mio. Seiten</li>
+<li>Digitalisat: Faksimile und Volltext</li>
+<li>Offen zugänglich</li>
+</ul>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-copyrightregime-bezahlschranken-und-geo-fencing" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Copyrightregime, Bezahlschranken und Geo-fencing</h1>
+<p>Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzugänglichkeiten</p>
+<!-- Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird korrekt als 19uu katalogisiert und dann Copyrightstatus sicherheitshalber als 1999 angenommen. -->
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-1.png" id="fig:hathi-muqtabas-global" alt="" />
+<p class="caption">Figure 22: <em>al-Muqtabas</em> 6 auf <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> außerhalb der USA</p>
+</div>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-2.png" id="fig:hathi-muqtabas-us" alt="" />
+<p class="caption">Figure 23: <em>al-Muqtabas</em> 6 auf <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> mit US IP</p>
+</div>
+</div>
+<!-- hier muss noch was zu den verschiedenen Gaps hin -->
+<!-- OCR layer -->
+<!-- Level 4: der Artefakt selbst -->
+</div>
+<div id="digitalisierung-des-kulturerbes-klassisches-kommerzielles-ocr" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Klassisches / kommerzielles OCR</h1>
+<ul>
+<li>basiert auf Segmentierung in Buchstaben</li>
+</ul>
+<div class="figure">
+<img src="../../assets/dh/arabic-ocr_alghamdi-2017-table-iv_annotated.png" id="fig:alghamdi-2018-table-4" alt="" />
+<p class="caption">Figure 24: Evaluierung von OCR Software für Arabisch, <span class="citation">Mansoor Alghamdi und William Teahan, „Experimental evaluation of Arabic OCR systems“, <em>PSU Research Review</em> 1, Nr. 3 (2017): 229–41, <a href="https://doi.org/10/gh4457" role="doc-biblioref">https://doi.org/10/gh4457</a>, table IV.</span></p>
+</div>
+</div>
+<div id="digitalisierung-des-kulturerbes-die-resultierenden-textschichten" class="slide section level2">
+<h1>Digitalisierung des Kulturerbes <br/>Die resultierenden Textschichten</h1>
+<ul>
+<li>Anbieter halten Algorithmen und Evaluierung unter Verschluss: unbekannte Anzahl von <em>false negatives</em></li>
+<li>Keine Strukturierung, keine APIs, proprietäre Interfaces</li>
+</ul>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png" alt="" />
+<p class="caption"><em>al-Muqtabas</em> 6 on <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>, Qualität der OCR-Schicht (nur mit US IP zugänglich)</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png" alt="" />
+<p class="caption"><em>al-Bashīr</em> 9 Jan. 1880 (#487), p.1 on <a href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>, Qualität der OCR-Schicht</p>
+</div>
+</div>
+</div>
+<div id="closing-the-tool-gap-ocrhtr-für-arabische-periodika-2019" class="slide section level2">
+<h1>Closing the tool <code>&lt;gap/&gt;</code> <br/>OCR/HTR für arabische Periodika (2019–)</h1>
+<div id="state-of-the-art" class="c_width-50">
+<h3>State of the art</h3>
+<ul>
+<li>Maschinelles Lernen ohne Segmentierung in Buchstaben
+<ul>
+<li>Tesseract, Kraken / Ocropus, Transkribus</li>
+</ul></li>
+<li>Es gibt gut finanzierte Projekte zu arabischen Schriften
+<ul>
+<li>OpenITI (Mellon, ECR, Harvard)</li>
+</ul></li>
+<li>Probleme
+<ul>
+<li>Projekte halten ihre Modelle und Infrastrukturen mehrheitlich unter Verschluss</li>
+<li>keine GUI</li>
+<li>GUI sind nicht auf Arabisch ausgelegt</li>
+<li>teuer: Rechenzeit, Upload von 100.000den Bildern</li>
+</ul></li>
+</ul>
+</div>
+<div id="unser-experiment" class="c_width-50">
+<h3>Unser Experiment</h3>
+<ul>
+<li>Kollaboration mit Sinai Rusinek (Haifa)</li>
+<li>Ansatz:
+<ul>
+<li>Maschinelles Lernen ohne Segmentierung in Buchstaben</li>
+</ul></li>
+<li>Software: Transkribus, Tesseract 4</li>
+<li>Probleme:
+<ul>
+<li>Benötigt vielfältige <em>Ground Truth</em></li>
+<li>Komplexes Layout von Periodikaseiten</li>
+<li>Software nimmt Links-nach-rechts als Leserichtung an</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="ocrhtr-für-arabische-periodika" class="slide section level2">
+<h1>OCR/HTR für arabische Periodika</h1>
+<h3 id="ergebnisse-mit-transkribus">Ergebnisse mit Transkribus</h3>
+<table>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>based on</th>
+<th>ground truth</th>
+<th align="right">words</th>
+<th align="right">lines</th>
+<th align="right">epochs</th>
+<th align="right">CER train</th>
+<th align="right">CER validation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15946</td>
+<td></td>
+<td><em>al-Ustādh</em></td>
+<td align="right">192829</td>
+<td align="right">18732</td>
+<td align="right">200</td>
+<td align="right">2.01</td>
+<td align="right"><span style="color:green;"><strong>2.09</strong></span></td>
+</tr>
+<tr class="even">
+<td>13864</td>
+<td></td>
+<td><em>al-Muqtabas</em></td>
+<td align="right">11116</td>
+<td align="right">1013</td>
+<td align="right">200</td>
+<td align="right">0.07</td>
+<td align="right"><span style="color:red;"><strong>8.40</strong></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="closing-the-infrastructural-gap-open-arabic-periodical-editions-openarabicpe-2015" class="slide section level2">
+<h1>Closing the infrastructural <code>&lt;gap/&gt;</code> <br/>Open Arabic Periodical Editions (<a href="https://openarabicpe.github.io">OpenArabicPE</a>, 2015–)</h1>
+<div id="ansatz" class="c_width-30">
+<h3>Ansatz</h3>
+<ul>
+<li>Verbindung <strong>vorhandener</strong> Faksimiles und Transkriptionen in einem standardkonformen, offenen Format</li>
+<li>Scraping, Erzeugung, Validierung und Teilen von offenen bibliographischen Metadaten</li>
+</ul>
+</div>
+<div id="ziele" class="c_width-30">
+<h3>Ziele</h3>
+<ul>
+<li>Validierung und Nutzbarmachung vorhandener Transkriptionen</li>
+<li>Aufbau einer offenen Infrastruktur von Modellen, Workflows, Normdatensätzen</li>
+<li>Unter den Bedingungen des Globalen Südens</li>
+</ul>
+</div>
+<div id="prinzipien" class="c_width-30">
+<h3>Prinzipien</h3>
+<ul>
+<li><strong>Etablierte</strong> Werkzeuge und Technologien</li>
+<li><strong>wenige</strong>, <strong>offene</strong> und <strong>einfache</strong> Formate und Werkzeuge</li>
+<li><strong>kostenfreie</strong> Platformen ohne lock-in</li>
+</ul>
+</div>
+</div>
+<div id="openarabicpe" class="slide section level2">
+<h1><a href="https://openarabicpe.github.io">OpenArabicPE</a></h1>
+<h3 id="infrastruktur">Infrastruktur</h3>
+<div class="c_width-50">
+<ol style="list-style-type: decimal">
+<li>Digitale Editionen, Normdatensätze: <a href="https://tei-c.org/">TEI XML</a>.</li>
+<li>Offene Lizenzen: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)</li>
+<li>Soziale digitale Editionen, die auf <a href="https://github.com/openarabicpe">GitHub</a> gehostet sind: <!-- gradually improve transcription and mark-up --></li>
+<li>Archivierung auf <a href="https://zenodo.org">Zenodo</a>: DOI für dauerhafte Referenzierbarkeit</li>
+<li><a href="https://github.com/openarabicpe/tei-boilerplate-arabic-editions">Statische Webansichten</a><!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.</li>
+<li>Bibliographische Metadaten sind als öffentliche <a href="https://www.zotero.org/groups/openarabicpe">Zotero-Gruppe</a> gehostet</li>
+</ol>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
+<p class="caption">Figure 25: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
+</div>
+</div>
+<div id="openarabicpe-1" class="slide section level2">
+<h1>OpenArabicPE</h1>
+<h3 id="korpus">Korpus</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Periodikum</th>
+<th align="left">DOI</th>
+<th align="right">Bände</th>
+<th align="right">Ausgaben</th>
+<th align="right">Artikel</th>
+<th align="right">Wörter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td align="right">3</td>
+<td align="right">35</td>
+<td align="right">389</td>
+<td align="right">298090</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">201</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+<td align="left"></td>
+<td align="right">35</td>
+<td align="right">537</td>
+<td align="right">4300</td>
+<td align="right">6144593</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td align="right">9</td>
+<td align="right">96</td>
+<td align="right">2964</td>
+<td align="right">1981081</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td align="right">1</td>
+<td align="right">42</td>
+<td align="right">435</td>
+<td align="right">221447</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td align="right">4</td>
+<td align="right">39</td>
+<td align="right">436</td>
+<td align="right">292333</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat al-ʿArab</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td align="right">3</td>
+<td align="right">34</td>
+<td align="right">939</td>
+<td align="right">373832</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>total</strong></td>
+<td align="left"></td>
+<td align="right">56</td>
+<td align="right">795</td>
+<td align="right">9664</td>
+<td align="right">9311376</td>
+</tr>
+</tbody>
+</table>
+<!-- Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus} -->
+</div>
+
+<div id="versuche-einer-digital-history" class="title-slide slide section level1">
+<h1>5. Versuche einer Digital History</h1>
+
+</div>
+<div id="sihafa" class="slide section level2">
+<h1>SIHAFA</h1>
+<div id="ziele-1" class="c_width-30">
+<h3>Ziele:</h3>
+<ul>
+<li>systematische Erforschung der spätosmanischen arabischen Presse <em>at scale</em></li>
+<li>Entwicklung/Evaluation von digitalen Methoden</li>
+<li>Hinterfragung etablierter Forschungsnarrative</li>
+<li>Etablierung von “Arab Periodical Studies”</li>
+</ul>
+</div>
+<div id="fragen" class="c_width-30">
+<h3>Fragen</h3>
+<ul>
+<li>Wer sind die zentralen Akteure (Personen, Periodika) in diesem diskursiven Feld?</li>
+<li>Wie sind Periodika produziert worden? Wie ist Autorenschaft zu denken?</li>
+<li>Welche Rolle spielt <em>text reuse</em>? Wie reisten Texte, Themen, Genres?</li>
+<li>Wie hat sich die Sprache der Moderne im multilingualen, imperialen Raum etabliert?</li>
+</ul>
+</div>
+<div id="methoden" class="c_width-30">
+<h3>Methoden</h3>
+<ul>
+<li>Netzwerkanalyse</li>
+<li>stilometrische Autorenschaftbestimmung</li>
+<li>historische GIS</li>
+<li>Layoutanalyse</li>
+<li>Topic modelling</li>
+<li>Word embeddings</li>
+</ul>
+</div>
+</div>
+<div id="historisches-gis-typologie-der-periodika" class="slide section level2">
+<h1>1. Historisches GIS: Typologie der Periodika <!-- CUT --></h1>
+<p>Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rückschlüsse über seine Bedeutung</p>
+<div id="trans-regional" class="c_width-30">
+<h3>trans-regional</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png" id="fig:authors-muqtabas-2" alt="" />
+<p class="caption">Figure 26: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Muqtabas</em> (Kairo und Damaskus)</p>
+</div>
+</div>
+<div id="regional" class="c_width-30">
+<h3>regional</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png" id="fig:authors-hasna" alt="" />
+<p class="caption">Figure 27: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥasnāʾ</em> (Beirut)</p>
+</div>
+</div>
+<div id="lokal" class="c_width-30">
+<h3>lokal</h3>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png" id="fig:authors-haqaiq-2" alt="" />
+<p class="caption">Figure 28: Karte der in den Autorenzeilen erwähnten Orte für <em>al-Ḥaqāʾiq</em> (Damaskus)</p>
+</div>
+</div>
+</div>
+<div id="historisches-gis" class="slide section level2">
+<h1>Historisches GIS</h1>
+<h3 id="voraussetzungen-daten">Voraussetzungen: Daten</h3>
+<div class="c_width-50">
+<ul>
+<li>Erste Quellen: OpenArabicPE</li>
+<li>Auszeichnung von Orten im modellierten Volltext
+<ul>
+<li>Autor_innenzeilen</li>
+<li>Rezensionen</li>
+<li>Probleme: kein funktionales arabisches NER</li>
+</ul></li>
+<li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
+<ul>
+<li>Georeferenzierte Orte</li>
+<li>Probleme: Mangel an historischen Ortsverzeichnissen (gazetteer)</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<ul>
+<li>Autor_innenzeile: Maryam Zakā aus Saida</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a> <span class="kw">&lt;byline&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:9 geon:268064&quot;</span><span class="kw">&gt;</span>صيدا<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2845&quot;</span><span class="kw">&gt;</span>مريم زكا<span class="kw">&lt;/persName&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="kw">&lt;/byline&gt;</span></span></code></pre></div>
+<ul>
+<li>Gazetteer-Eintrag für Saida</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="kw">&lt;place</span><span class="ot"> type=</span><span class="st">&quot;town&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;place_9&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> type=</span><span class="st">&quot;simple&quot;</span><span class="kw">&gt;</span>Saida<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>Ṣaydā<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>Sidon<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>صيدا<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true"></a>    <span class="kw">&lt;location&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true"></a>        <span class="kw">&lt;geo&gt;</span>33.55751, 35.37148<span class="kw">&lt;/geo&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true"></a>    <span class="kw">&lt;/location&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>http://en.wikipedia.org/wiki/Sidon<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;geon&quot;</span><span class="kw">&gt;</span>268064<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>9<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true"></a><span class="kw">&lt;/place&gt;</span></span></code></pre></div>
+</div>
+</div>
+<div id="netzwerkanalyse-erwähnte-periodika" class="slide section level2">
+<h1>2. Netzwerkanalyse: erwähnte Periodika</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" id="fig:network-periodicalsß2" alt="" />
+<p class="caption">Figure 29: Gerichtetes Netzwerk der in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em> erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.</p>
+</div>
+</div>
+<div class="c_width-30">
+<h3 id="ziel">Ziel</h3>
+<ul>
+<li>empirische Überprüfung von Hypothesen</li>
+<li>Entscheidungshilfe für Digitalisierung</li>
+</ul>
+<h3 id="erste-ergebnisse">Erste Ergebnisse</h3>
+<ul>
+<li>hauptsächlich selbstreferentiell</li>
+<li>Typologie: Grad der Weltzugewandtheit</li>
+<li>Kernnetzwerk:
+<ul>
+<li>Überraschende Mitglieder</li>
+<li>Hochgradig geographisch konzentriert <!-- (10 Orte) --> <!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut --></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="netzwerkanalyse-erwähnte-periodika-1" class="slide section level2">
+<h1>Netzwerkanalyse: erwähnte Periodika</h1>
+<h3 id="voraussetzungen-daten-1">Voraussetzungen: Daten</h3>
+<div class="c_width-50">
+<ul>
+<li>Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR</li>
+<li>Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
+<ul>
+<li>semi-automatisch (regex): folgt dem Muster “Zeitung ABC”, “Zeitschrift DEF”</li>
+<li>Probleme: kein funktionales arabisches NER</li>
+</ul></li>
+<li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
+<ul>
+<li>Bibliographie</li>
+<li>Probleme: geringe Quote in vorhandenen Normdatensätzen</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
+<ul>
+<li>Das Magazin <em>al-Zuhūr</em> aus Kairo</li>
+</ul>
+<!-- ägyptische Zeitschrift -->
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>والأصح الدرعية بلام التعريف (راجع <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;</span> المصرية  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span><span class="kw">&gt;</span>٢<span class="kw">&lt;/biblScope&gt;</span> :  <span class="kw">&lt;biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span><span class="kw">&gt;</span>٢٩٢<span class="kw">&lt;/biblScope&gt;&lt;/bibl&gt;</span>)</span></code></pre></div>
+<ul>
+<li>Die Zeitung <em>al-Zuhūr</em> aus Baghdad</li>
+</ul>
+<!-- irakische Zeitung -->
+<div class="sourceCode" id="cb6"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>وانتخب <span class="kw">&lt;persName&gt;</span>فؤاد أفندي الدفتري البغدادي<span class="kw">&lt;/persName&gt;</span> و<span class="kw">&lt;bibl&gt;&lt;editor&gt;&lt;persName&gt;</span>نوري أفندي<span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span> راس كتاب <span class="kw">&lt;textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>القسم التركي<span class="kw">&lt;/textLang&gt;</span> في <span class="kw">&lt;bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span><span class="kw">&gt;</span>جريدة <span class="kw">&lt;title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span><span class="kw">&gt;</span>الزهور<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> البغدادية<span class="kw">&lt;/bibl&gt;</span> نائبين عن <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span><span class="kw">&gt;</span>كربلاء<span class="kw">&lt;/placeName&gt;</span>.</span></code></pre></div>
+</div>
+</div>
+<div id="netzwerkanalyse-autor_innen" class="slide section level2">
+<h1>2. Netzwerkanalyse: Autor_innen</h1>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png" id="fig:network-authors-2" alt="" />
+<p class="caption">Figure 30: Ungerichtetes Netzwerk der Autor_innen in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em>. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.</p>
+</div>
+</div>
+<div class="c_width-50">
+<h3 id="ziel-1">Ziel</h3>
+<ul>
+<li>empirische überprüfung von Hypothesen</li>
+<li>Forschungsleitend für <em>close reading</em></li>
+</ul>
+<h3 id="erste-ergebnisse-1">Erste Ergebnisse</h3>
+<!-- * Nur wenige Knoten sind von relativer Bedeutung (14 von 319) -->
+<ul>
+<li>Sehr begrenzte Überschneidung zwischen Periodika aus der gleichen Stadt</li>
+<li>Kernnetzwerk:
+<ul>
+<li>praktisch nicht in der Forschung abgebildet</li>
+<li>Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="netzwerkanalyse-autor_innen-1" class="slide section level2">
+<h1>Netzwerkanalyse: Autor_innen</h1>
+<h3 id="voraussetzungen-daten-2">Voraussetzungen: Daten</h3>
+<div class="c_width-50">
+<ul>
+<li>Erste Quellen: OpenArabicPE, Project Jarāʾid</li>
+<li>Strukturierte bibliographische Daten
+<ul>
+<li>semi-automatisch auf Basis der Editionen</li>
+<li>manuelle Erfassung</li>
+<li>Probleme: viele Abkürzungen, vielfältige Namensformen</li>
+</ul></li>
+<li>Normdatensätze für die Disambiguierung und Anreicherung von Daten
+<ul>
+<li>Lebensdaten</li>
+<li>Werke in Bibliothekskatalogen</li>
+<li>Probleme: geringe Quote in vorhandenen Normdatensätzen</li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<ul>
+<li>Personographie-Eintrag für Père Anastase-Marie de Saint-Elie (Normdatensatz), der sich in den Quellen vornehmlich als <em>Sātisnā</em> findet.</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>ساتسنا<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>أمكح<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span><span class="kw">&gt;</span>فهر الجابري<span class="kw">&lt;/roleName&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span><span class="kw">&gt;</span>الأب<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>أنستاس&lt;/forename&gt; <span class="kw">&lt;forename&gt;</span>ماري<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الألياوي<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الكرملي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>بطرس&lt;/forename&gt; <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span><span class="kw">&gt;</span>بن <span class="kw">&lt;forename&gt;</span>جبرائيل<span class="kw">&lt;/forename&gt;&lt;/addName&gt;</span> <span class="kw">&lt;forename&gt;</span>يوسف&lt;/forename&gt; <span class="kw">&lt;surname&gt;</span>عواد<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>39370998<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>227<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q4751824<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true"></a>    <span class="kw">&lt;birth&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span><span class="kw">&gt;</span>1866-08-05<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/birth&gt;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true"></a>    <span class="kw">&lt;death&gt;&lt;date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span><span class="kw">&gt;</span>1947-01-07<span class="kw">&lt;/date&gt;</span> in <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span><span class="kw">&gt;</span>Baghdad<span class="kw">&lt;/placeName&gt;&lt;/death&gt;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+</div>
+</div>
+<div id="problem-das-netzwerk-der-autor_innen-umfasst-nur-17-aller-artikel" class="slide section level2">
+<h1>Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel</h1>
+<div id="forschungsstand" class="c_width-30">
+<h3>Forschungsstand</h3>
+<ul>
+<li>Die Frage der Autorenschaftsbestimmung ist weitgehend ignoriert worden <!-- standard accounts don't even mention the issue --></li>
+<li>Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben</li>
+</ul>
+</div>
+<div class="c_width-30">
+<p><img src="../../assets/clipart/iceberg-2070977_960_720.png" style="width:100.0%;height:100.0%" /></p>
+</div>
+<div id="probleme" class="c_width-30">
+<h3>Probleme</h3>
+<ul>
+<li>Hypothese ist nicht überprüft</li>
+<li>Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen <!-- (siehe Project Jarāʾid) --></li>
+<li>Es ist sehr unwahrscheinlich, dass alles von einer Person verfasst wurde <!-- Autor als Funktion, nicht als Person zu denken --></li>
+</ul>
+</div>
+</div>
+<div id="stilometrie-zur-autorenschaftsbestimmung" class="slide section level2">
+<h1>3. Stilometrie zur Autorenschaftsbestimmung</h1>
+<ul>
+<li><strong>komparative</strong> Methode:
+<ul>
+<li>Vergleich <strong>stylistischer Merkmale</strong> (<em>most frequent words</em> MFWs) liefert ein nummerisches Abstandsmaß (Verschiedenheit)</li>
+<li>Selbstvalidierung: Abstimmung der Ergebnisse mehrerer Iterationen mit verschiedenen Anzahlen von MFWs</li>
+</ul></li>
+<li>Ist bis jetzt nicht auf arabische Texte angewendet worden</li>
+<li>Herausvorderungen:
+<ul>
+<li>abhängig von der Zusammensetzung des Korpus</li>
+<li>Texte müssen eine Mindestlänge haben</li>
+</ul></li>
+</ul>
+<div class="c_width-30">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png" id="fig:pca-halumu-100" alt="" />
+<p class="caption">Figure 31: PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li><em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em> are indistinguishable</li>
+<li><em>al-Ḥaqāʾiq</em> is different</li>
+<li>some issues of <em>al-Muqtabas</em> are very different</li>
+</ul>
+</div>
+<div class="c_width-30">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png" id="fig:pca-halumu-900" alt="" />
+<p class="caption">Figure 32: PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em> und <em>al-Muqtabas</em></p>
+</div>
+</div>
+</div>
+<div id="stilometrie-erste-experimente" class="slide section level2">
+<h1>Stilometrie: erste Experimente</h1>
+<h3 id="falsifizierung-der-hypothese">Falsifizierung der Hypothese</h3>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg" id="fig:stylometry-muqtabas-w5000" alt="" />
+<p class="caption">Figure 33: Figure: <em>bootstrap consensus network</em> von Artikeln in <em>al-Muqtabas</em> (Länge &gt;= 5000 Wörter, 100–1000 MFWs). Farbe: <em>modularity group</em></p>
+</div>
+<!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
+</div>
+<div class="c_width-30">
+<ul>
+<li>Stilometrie funktioniert für arabische Periodika</li>
+<li><!-- Erfolgreich identifizierte  -->
+Signale für
+<ul>
+<li>Autorenschaft</li>
+<li>Herausgeberschaft</li>
+<li>Übersetzung</li>
+</ul></li>
+<li>Zusätzliches (Sub)-signal
+<ul>
+<li>Genre <!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist --></li>
+</ul></li>
+</ul>
+</div>
+<!-- - chunking/sampling beeinflusst die Ergebnisse
+    + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
+    + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
+</div>
+
+<div id="schlußbemerkungen-mind-the-gap" class="title-slide slide section level1">
+<h1>6. Schlußbemerkungen <br/>Mind the <code>&lt;gap/&gt;</code>!</h1>
+
+</div>
+<div id="mind-the-gap" class="slide section level2">
+<h1>Mind the <code>&lt;gap/&gt;</code>!</h1>
+<div class="c_width-50">
+<ul>
+<li>bei Forschung/Lehre zu Digitalität</li>
+<li>bei digitaler Forschung/Lehre</li>
+<li>beim Aufbau von Infrastrukturen</li>
+<li>beim Forschungsdatenmanagement</li>
+<li>…</li>
+</ul>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../../assets/dh/Evc9uxzXEAE8GFw.jpg" alt="" />
+<p class="caption">Graffiti “Du bist so schön, wie eine zusätzliche Stunde Strom”, Gaza. Quelle: <a href="https://twitter.com/j_zabaneh/status/1366628891817828360">Twitter</a></p>
+</div>
+</div>
+</div>
+<div id="danke" class="slide section level2">
+<h1>Danke!</h1>
+<ul>
+<li><p>Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser</p></li>
+<li><p>Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef</p></li>
+<li><p>Beiträger_innen zu OCR: Adam Mestyan, Sinai Rusinek</p></li>
+<li><p>Links:</p>
+<ul>
+<li>Slides: <a href="https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium/index.html">https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium</a></li>
+<li>Publikationen:
+<ul>
+<li><span class="citation">Till Grallert, „Catch Me If You Can! Approaching the Arabic Press of the Late Ottoman Eastern Mediterranean Through Digital History“, hg. von Simone Lässig, <em>Geschichte Und Gesellschaft</em> 47, Nr. 1 (10. Juni 2021): 58–89, <a href="https://doi.org/10/gkhrjr" role="doc-biblioref">https://doi.org/10/gkhrjr</a>.</span></li>
+<li><span class="citation">Till Grallert, „Open Arabic Periodical Editions: A Framework for Bootstrapped Scholarly Editions Outside the Global North“, hg. von Alex Gil und Roopika Risam, <em>Digital Humanities Quarterly</em> Special Issue „Minimal Computing“ (2022).</span></li>
+</ul></li>
+<li>Project URLs: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a>, <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a>,</li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+</ul></li>
+<li><p>Licence: slides and plots are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p></li>
+</ul>
+<div id="refs" class="references hanging-indent">
+<div id="ref-oclc_4770057679-i_13-div_8.d1e1249">
+<p>Zakham, Yūsuf. „Amīrkā wa-ʿulamāʾ al-ʿArab“. <em>al-Muqtabas</em>. Cairo, 14. Februar 1907. <a href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.</p>
+</div>
+<div id="ref-oclc_1034545644-i_15-div_1.d2e634">
+<p>Dammūs, Ḥalīm Ibrāhīm. „Ṣiḥāfat Sūriyya wa-Lubnān“. <em>al-Zuhūr</em>. Cairo, 1. Juni 1911. <a href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634</a>.</p>
+</div>
+<div id="ref-Alghamdi.Teahan+2017+ExperimentalEvaluationArabic">
+<p>Alghamdi, Mansoor, und William Teahan. „Experimental evaluation of Arabic OCR systems“. <em>PSU Research Review</em> 1, Nr. 3 (2017): 229–41. <a href="https://doi.org/10/gh4457">https://doi.org/10/gh4457</a>.</p>
+</div>
+<div id="ref-Fiormonte+2021+TaxationagainstOverrepresentation">
+<p>Fiormonte, Domenico. „Taxation Against Overrepresentation? The Consequences of Monolingualism for Digital Humanities“. In <em>Alternative Historiographies of the Digital Humanities</em>, herausgegeben von Dorothy Kim und Adeline Koh, 333–76. Earth: punctum books, 2021. <a href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.</p>
+</div>
+<div id="ref-Grallert2022DHQ">
+<p>Grallert, Till. „Open Arabic Periodical Editions: A Framework for Bootstrapped Scholarly Editions Outside the Global North“. Herausgegeben von Alex Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> Special Issue „Minimal Computing“ (2022).</p>
+</div>
+<div id="ref-Grallert+2020">
+<p>———. „Catch Me If You Can! Approaching the Arabic Press of the Late Ottoman Eastern Mediterranean Through Digital History“. Herausgegeben von Simone Lässig. <em>Geschichte Und Gesellschaft</em> 47, Nr. 1 (10. Juni 2021): 58–89. <a href="https://doi.org/10/gkhrjr">https://doi.org/10/gkhrjr</a>.</p>
+</div>
+<div id="ref-Phillipson1997RealitiesAndMyths">
+<p>Phillipson, Robert. „Realities and Myths of Linguistic Imperialism“. <em>Journal of Multilingual and Multicultural Development</em> 18, Nr. 3 (1997): 238–48. <a href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
