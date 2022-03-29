@@ -1,36 +1,24 @@
 ---
-title: "Zur Erschließung arabischer Periodika aus spätosmanischer Zeit"
-subtitle: "Herausforderungen einer multilingualen und multiskriptoralen Digital History"
+title: "Projektvorstellung"
+subtitle: ""
 author: Till Grallert
 affiliation: Digital History Berlin
 bibliography: 
     - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /BachUni/applications/applications.csl.json
 lang: de
-date: 2022-01-26
+date: 2022-03-29
 # duration: 30
 ---
 
 
-## Zur Erschließung arabischer Periodika aus spätosmanischer Zeit (c.1800--c.1920) <br/>Herausforderungen einer multilingualen und multiskriptoralen Digital History
+## Projektvorstellung
 
-Till Grallert, @[tillgrallert](https://twitter.com/tillgrallert)
+Till Grallert, [\@tillgrallert](https://twitter.com/tillgrallert)
 
-*Digital History* – Offenes Forschungskolloquium  
+29 März 2022
 
-26 Januar 2022
-
-Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium](https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium/index.html)
-
-## Übersicht
-
-1. Einführung
-2. Mind the `<gap/>`! Digitalität zwischen Heilsversprechen und Realität
-3. Mind the `<gap/>`! *Linguistic imperialism*
-4. Mind the `<gap/>`! Digitalisierung des Kulturerbes
-5. Versuche einer Digital History 
-6. Schlussbemerkungen
-<!-- 3. Closing the `<gap/>` one step at the time -->
+Folien: [https://tillgrallert.github.io/slides/dh/2022-ibi-dh](https://tillgrallert.github.io/slides/dh/2022-ibi-dh/index.html)
 
 # 1. Einführung
 ## Spätosmanischer östlicher Mittelmeerraum
@@ -204,7 +192,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 :::{.c_width-50 .c_right}
 :::{.c_rtl}
 
-### أميركا وعلماء العرب
+### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
 
 [كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
 
@@ -242,7 +230,8 @@ Umschrift (IJMES)
 :::
 
 # Projekte
-## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>
+## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--)
+### A framework for bootstrapped scholarly editions outside the global north
 
 ::: {.c_width-30}
 
@@ -342,140 +331,8 @@ Umschrift (IJMES)
 
 :::
 
-## 1. Historisches GIS: Typologie der Periodika <!-- CUT -->
 
-Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rückschlüsse über seine Bedeutung
-
-:::{.c_width-30}
-
-### trans-regional
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas-2}
-
-:::
-
-:::{.c_width-30}
-
-### regional
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
-
-:::
-:::{.c_width-30}
-
-### lokal
-
-![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq-2}
-
-:::
-
-
-## Historisches GIS
-### Voraussetzungen: Daten
-
-:::{.c_width-50}
-
-- Erste Quellen: OpenArabicPE
-- Auszeichnung von Orten im modellierten Volltext
-    + Autor_innenzeilen
-    + Rezensionen
-    + Probleme: kein funktionales arabisches NER
-- Normdatensätze für die Disambiguierung und Anreicherung von Daten
-    + Georeferenzierte Orte
-    + Probleme: Mangel an historischen Ortsverzeichnissen (gazetteer)
-
-:::
-:::{.c_width-50}
-
-- Autor_innenzeile: Maryam Zakā aus Saida
-
-```xml
- <byline>
-    <placeName ref="oape:place:9 geon:268064">صيدا</placeName>
-    <persName ref="oape:pers:2845">مريم زكا</persName>
-</byline>
-```
-
-- Gazetteer-Eintrag für Saida
-
-```xml
-<place type="town" xml:id="place_9">
-    <placeName type="simple">Saida</placeName>
-    <placeName xml:lang="ar-Latn-x-ijmes">Ṣaydā</placeName>
-    <placeName xml:lang="en">Sidon</placeName>
-    <placeName xml:lang="ar">صيدا</placeName>
-    <location>
-        <geo>33.55751, 35.37148</geo>
-    </location>
-    <idno type="url">http://en.wikipedia.org/wiki/Sidon</idno>
-    <idno type="geon">268064</idno>
-    <idno type="oape">9</idno>
-</place>
-```
-
-:::
-
-## 2. Netzwerkanalyse: erwähnte Periodika
-
-:::{.c_width-60 .c_left}
-
-![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicalsß2}
-
-:::
-:::{.c_width-30}
-
-### Ziel
-
-- empirische Überprüfung von Hypothesen
-- Entscheidungshilfe für Digitalisierung
-
-### Erste Ergebnisse
-
-* hauptsächlich selbstreferentiell
-* Typologie: Grad der Weltzugewandtheit
-* Kernnetzwerk:
-    * Überraschende Mitglieder
-    - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
-<!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut -->
-
-:::
-
-
-## Netzwerkanalyse: erwähnte Periodika
-### Voraussetzungen: Daten
-
-:::{.c_width-50}
-
-- Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR
-- Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
-    + semi-automatisch (regex): folgt dem Muster "Zeitung ABC", "Zeitschrift DEF"
-    + Probleme: kein funktionales arabisches NER
-- Normdatensätze für die Disambiguierung und Anreicherung von Daten
-    + Bibliographie
-    + Probleme: geringe Quote in vorhandenen Normdatensätzen
-
-:::
-:::{.c_width-50}
-<!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
-
-
-+ Das Magazin *al-Zuhūr* aus Kairo 
-
-<!-- ägyptische Zeitschrift -->
-```xml
-والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
-```
-
-+ Die Zeitung *al-Zuhūr* aus Baghdad
-
-<!-- irakische Zeitung -->
-```xml
-وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
-```
-
-:::
-
-## 2. Netzwerkanalyse: Autor_innen
+## Netzwerkanalyse: Autor_innen
 
 :::{.c_width-50}
 
@@ -562,15 +419,29 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 
 :::
 
-## 3. Stilometrie zur Autorenschaftsbestimmung
+## Stilometrie zur Autorenschaftsbestimmung
+
+:::{.c_width-50}
 
 - **komparative** Methode:
     + Vergleich **stylistischer Merkmale** (*most frequent words* MFWs) liefert ein nummerisches Abstandsmaß (Verschiedenheit)
     + Selbstvalidierung: Abstimmung der Ergebnisse mehrerer Iterationen mit verschiedenen Anzahlen von MFWs
-- Ist bis jetzt nicht auf arabische Texte angewendet worden
 - Herausvorderungen:
     + abhängig von der Zusammensetzung des Korpus
     + Texte müssen eine Mindestlänge haben
+- Ist bis jetzt nicht auf arabische Texte angewendet worden
+
+:::
+:::{.c_width-50}
+
+- DH2022: "Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodical"
+    + mit Maxim Romanov (Hamburg)
+
+:::
+
+<!-- add work with Maxim on automated parameter testing -->
+
+## Stilometrie erste Experimente
 
 :::{.c_width-30}
 
@@ -617,24 +488,6 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Anzahl der stylistische Merkmale: mehrere Iterationen stimmen ab
     + Textlänge: Minimum von 4000-5000 Wörtern für signifikante Ergebnisse -->
 
-
-# 6. Schlußbemerkungen <br/>Mind the `<gap/>`!
-## Mind the `<gap/>`!
-
-:::{.c_width-50}
-
-- bei Forschung/Lehre zu Digitalität
-- bei digitaler Forschung/Lehre
-- beim Aufbau von Infrastrukturen
-- beim Forschungsdatenmanagement
-- ...
-
-:::
-:::{.c_width-50}
-
-![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
-:::
-
 ## Danke!
 
 - Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
@@ -642,11 +495,11 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - Beiträger_innen zu OCR: Adam Mestyan, Sinai Rusinek
 
 - Links:
-    + Slides: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium](https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquium/index.html)
+    + Slides: [https://tillgrallert.github.io/slides/dh/2022-ibi-dh](https://tillgrallert.github.io/slides/dh/2022-ibi-dh/index.html)
     + Publikationen: 
         * [@Grallert+2020]
         * [@Grallert2022DHQ]
     + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://openarabicpe.github.io](https://openarabicpe.github.io), 
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
-    + Email: <till.grallert@fu-berlin.de>
+    + Email: <till.grallert@hu-berlin.de>
 - Licence: slides and plots are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
