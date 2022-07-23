@@ -60,6 +60,33 @@ bibliography:
 
 ![Title pages of *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf*, and *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-30}
 
+## Research focus: intellectual networks
+
+::: columns
+:::: column
+
+![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors-2}
+
+::::
+:::: column
+
+### Aims
+
+- empirical testing of hypotheses
+- evaluate existing literature
+
+### Observations
+
+<!-- * Nur wenige Knoten sind von relativer Bedeutung (14 von 319) -->
+- very limited overlap between periodicals from the same place
+- core network (14 nodes):
+    - absent from the literature
+    - suprising set up: many Iraqis (6), few Syrians (2), few Christians (2)
+
+::::
+:::
+
+
 # Arabic as an under-resourced language
 ## Linguistic imperialism
 
@@ -109,7 +136,7 @@ bibliography:
 ::: columns
 :::: column
 
-### أميركا وعلماء العرب
+### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
 
 [كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
 
@@ -118,7 +145,7 @@ bibliography:
 ::::
 :::: column
 
-### امىرکا وعلماء العرٮ
+### [امىرکا وعلماء العرٮ]{.c_rtl lang="ar"}
 
 [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
 
