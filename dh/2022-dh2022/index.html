@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Maxim Romanov" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="date" content="2022-07-23" />
+  <title>Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  /*.sourceCode * {
+      font-size: 16px;
+  }*/
+  /* xml element names */
+  .xml > code span.kw {
+  	/*color: #0F0F9C;*/
+  	color: #000096;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+  	/*color:#FF8041;*/
+  	color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+  	/*color:#993300;*/
+  	color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+  	/*color:#167116;*/
+  	color: #2F8132;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  .c_width-60 {
+      width:64%;
+      position: relative;
+      float: left;
+  }
+  .c_width-50 {
+      width:49%;
+      position: relative;
+      float: left;
+  }
+  .c_width-30 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  .c_left {
+      display: block;
+      float:left;
+  }
+  .c_right {
+      display: block;
+      float: right;
+  }
+
+  /* styles to vertically stack divs */
+  .c_height-50 {
+      display: block;
+      height: 400px;
+      max-height: 500px;
+  }
+  .c_height-30 {
+      display: block;
+      height: 250px;
+      max-height: 400px;
+  }
+  .c_top {
+      vertical-align: top;
+  }
+  .c_bottom {
+      vertical-align: bottom;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Establishing parameters for stylometric authorship
+attribution of 19th-century Arabic books and periodicals</h1>
+  <p class="author">
+Maxim Romanov<br/>Till Grallert
+  </p>
+  <p class="date">2022-07-23</p>
+</div>
+<div id="arabic-periodicals" class="slide section level2">
+<h1>Arabic periodicals</h1>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Periodical press as agent of change
+<ul>
+<li>first mass medium</li>
+<li>central medium of the literary and cultural Arabic renaissance
+(<em>nahḍa</em>)</li>
+<li>medium of linguistic change</li>
+<li>central forum for negotiations over modernity, nationalism, Islamism
+etc.</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Periodicals as <em>source</em> but not a <em>subject</em></li>
+<li>Research is dominated by
+<ul>
+<li>national(ist) narratives</li>
+<li>bias on two places and small no. of titles</li>
+<li>implicit hypotheses</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="figure">
+<img
+src="../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif"
+id="fig:map-jaraid" alt="" />
+<p class="caption">Distribution of new Arabic periodical titles,
+1799–1929</p>
+</div>
+</div>
+<div id="arabic-periodicals-1" class="slide section level2">
+<h1>Arabic periodicals</h1>
+<div class="columns">
+<div class="column">
+<div class="figure">
+<img
+src="../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg"
+id="fig:al-quds" alt="" />
+<p class="caption">Title page of <em>al-Quds</em> #331, 10 Jan. 1913</p>
+</div>
+</div><div class="column">
+<ul>
+<li>Green: Ottoman crescent with 3 stars and slogan of the Young Turk
+Revolution of 1908: “Liberty, Equality, Fraternity”</li>
+<li>Blue: French title</li>
+<li>Red: Date line according to 3 calendars
+<ul>
+<li>reformed Julian: 28 Dec. 1912</li>
+<li>Gregorian: 10 Jan. 1913</li>
+<li>Islamic: 2 Ṣafar 1331</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="figure">
+<img src="../../assets/OpenArabicPE/front-pages_strip.png"
+id="fig:front-pages" class="c_height-30" alt="" />
+<p class="caption">Title pages of <em>al-Ḥaqāʾiq</em>,
+<em>al-Ḥasnāʾ</em>, <em>al-Iqbāl</em>, <em>al-Maḥabba</em>,
+<em>al-Ahrām</em>, <em>al-Muqtaṭaf</em>, and <em>al-ʿAṣr
+al-Jadīd</em></p>
+</div>
+</div>
+<div id="linguistic-imperialism" class="slide section level2">
+<h1>Linguistic imperialism</h1>
+<blockquote>
+<p>‘Linguistic imperialism’ is shorthand for a multitude of activities,
+ideologies, and structural relationships. Linguistic imperialism takes
+place within an overarching structure of asymmetrical North/ South
+relations, where language interlocks with other dimensions, cultural
+(particularly in education, science, and the media), economic and
+political</p>
+</blockquote>
+<p><cite><span class="citation">(Phillipson <span>‘Realities and Myths
+of Linguistic Imperialism’</span> 1997, 239)</span></cite></p>
+<blockquote>
+<p>The basis for the codes, languages, methodologies, and technical
+instruments of the digital humanities is English; the written and spoken
+language of all the main conferences, the most prestigious journals, the
+institutions that control the discipline, the organizations and
+international consortia, and the central authorities of knowledge is,
+with few exceptions, some dialect of British or American English.</p>
+</blockquote>
+<p><cite><span class="citation">(Fiormonte <span>‘Taxation Against
+Overrepresentation?’</span> 2021, 334–35)</span></cite></p>
+</div>
+<div id="arabic" class="slide section level2">
+<h1>Arabic</h1>
+<div class="columns">
+<div class="column">
+<h3 id="schrift">Schrift</h3>
+<ul>
+<li>zweithäufigste Schrift <!-- nach lateinischer Schrift -->
+<ul>
+<li>aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu,
+Pashtu.</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<h3 id="sprache">Sprache</h3>
+<ul>
+<li>fünfthäufigste Sprache
+<ul>
+<li>eine von sechs Amtssprachen der UN</li>
+<li><!-- offizielle -->
+Amtssprache in 26 Ländern</li>
+<li>&gt;420 Mio. Sprechende</li>
+</ul></li>
+<li>liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen</li>
+</ul>
+</div>
+</div>
+<div class="figure">
+<img src="../../assets/dh/arabic-script_sample-annotated.png"
+id="fig:arabic-sample-1" alt="" />
+<p class="caption">Beispiel: <span class="citation">(Zakham
+<span>‘Amīrkā wa-ʿulamāʾ al-ʿArab’</span> 1907)</span></p>
+</div>
+</div>
+<div id="arabisch" class="slide section level2">
+<h1>Arabisch</h1>
+<h3 id="schrift-1">Schrift</h3>
+<ul>
+<li>Schriftrichtung von rechts nach links</li>
+<li>Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung
+verbunden und ändern dabei ihre Form (Allographen): <span class="c_rtl"
+lang="ar">ج جـ ـجـ ـج</span></li>
+<li>Grapheme bestehen aus Basisformen (Archigraphem, <em>rasm</em>) und
+diakritischen Zeichen (<em>iʿjām</em>)
+<ul>
+<li>Gebrauch unterliegt historischem Wandel und regionalen
+Präferenzen</li>
+</ul></li>
+<li>Vokalisierung (<em>tashkīl</em>) <strong>kann</strong> hinzugefügt
+werden und hat Einfluss auf Bedeutung
+<!-- + Präferenz für Ligaturen --></li>
+</ul>
+<!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
+<div class="columns">
+<div class="column">
+<h3 id="أميركا-وعلماء-العرب">أميركا وعلماء العرب</h3>
+<p><span class="c_rtl" lang="ar">كانت أميركا مجهولة عند ابنآء القرن
+الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار
+اكتشافها في أواخر ذلك القرن</span></p>
+<p><cite><span class="citation">(Zakham <span>‘Amīrkā wa-ʿulamāʾ
+al-ʿArab’</span> 1907)</span></cite></p>
+</div><div class="column">
+<h3 id="امىرکا-وعلماء-العرٮ">امىرکا وعلماء العرٮ</h3>
+<p><span class="c_rtl" lang="ar">کاںٮ امىرکا محهوله عںد اٮںا الٯرں
+الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار
+اکٮساڡها ڡى اواحر دلک الٯرں</span></p>
+<p><em>rasm</em></p>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Fiormonte+2021+TaxationagainstOverrepresentation"
+class="csl-entry">
+Fiormonte, Domenico. 2021. <span>‘Taxation Against Overrepresentation?
+The Consequences of Monolingualism for Digital Humanities’</span>. In
+<em>Alternative Historiographies of the Digital Humanities</em>, edited
+by Dorothy Kim and Adeline Koh, 333–76. Earth: punctum books. <a
+href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+</div>
+<div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry">
+Phillipson, Robert. 1997. <span>‘Realities and Myths of Linguistic
+Imperialism’</span>. <em>Journal of Multilingual and Multicultural
+Development</em> 18 (3): 238–48. <a
+href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+</div>
+<div id="ref-oclc_4770057679-i_13-div_8.d1e1249" class="csl-entry">
+Zakham, Yūsuf. 1907. <span>‘Amīrkā wa-ʿulamāʾ al-ʿArab’</span> [America
+and Arab Scholars;
+https://web.archive.org/web/20220125154711/https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml].
+<em>al-Muqtabas</em> 2 (1), 14 February 1907. <a
+href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
+</div>
+</div>
+</div>
+</body>
+</html>
