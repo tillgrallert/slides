@@ -86,6 +86,23 @@ bibliography:
 ::::
 :::
 
+## Problem: missing bylines
+
+::: columns
+:::: column
+
+![](../../assets/clipart/iceberg-2070977_960_720.png)
+
+::::
+:::: column
+
+- About 4/5 of all articles or 2/3 of all words carry no byline
+* Commonly ignored in scholarship 
+* Implicit hypothesis is implausible and untested
+* Stylometric authorship attribution is untested for this material
+
+::::
+:::
 
 # Arabic as an under-resourced language
 ## Linguistic imperialism
@@ -176,6 +193,59 @@ Table: Our corpus from "Open Arabic Periodical Editions" {#tbl:openarabicpe-corp
 [ustadh_git]: https://github.com/OpenArabicPE/journal_al-ustadh
 [zuhur_git]: https://www.github.com/openarabicpe/journal_al-zuhur
 
+## Corpus
+
+Plain text files of >2500 words
+
+::: columns
+:::: column
+
+- corpus 1: 246 full issues
+- corpus 2: sections of anonymous articles
+
+::::
+:::: column
+
+- corpus 3: 303 individual articles
+- corpus 4: 6 books by Muḥammad Kurd ʿAlī
+
+::::
+:::
+
 ## Stylometry
+
+Based on parameter settings established in our tests
+
+::: columns
+:::: column
+
+### `stylo()` settings
+
+- Tokens: words
+- Sampling: 2500 tokens
+- MFF: 200--500 tokens, incremented by 100
+- Culling: 0
+- distance measure: Eder's simple delta
+
+::::
+:::: column
+
+### Analysis
+
+- edges (and nodes) tables from `stylo()`
+- computing network measures with `tidygraph()` and `igraph()`
+    + centrality
+    + community detection
+- plotting results with `ggpragh()` and `ggplot2()`
+
+
+::::
+:::
+
+# Results
+## Periodicals
+
+
+
 # Thank you!
 ## References
