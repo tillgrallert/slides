@@ -243,9 +243,55 @@ Based on parameter settings established in our tests
 :::
 
 # Results
-## Periodicals
+## stylistic differences between journals
+### Auctorial voices?
 
+:::{.c_width-60 .c_left}
 
+![Issues of 5 periodicals from Cairo, Damascus, and Baghad](../../assets/OpenArabicPE/stylometry/stylo_network-issues-size_degree-colour_publication.png)
+
+:::
+:::{.c_width-30 .c_right}
+
+- periodicals show distinct stylistic features
+- some similarity between *al-Muqtabas* and *al-Zuhūr*
+
+:::
+
+## stylistic differences between journals
+### *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas*
+
+:::{.c_width-30}
+
+![PCA covariance matrix for the 100 MFWs in a corpus of ... issues of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
+
+:::
+:::{.c_width-30}
+
+- *Lughat al-ʿArab* and *al-Muqtabas* are indistinguishable
+- *al-Ḥaqāʾiq* is different
+- some issues of *al-Muqtabas* are very different
+
+:::
+:::{.c_width-30}
+
+![PCA covariance matrix for the 900 MFWs in a corpus of ... issues of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
+
+:::
+
+## stylistic differences between journals
+### Importance of genre
+
+:::{.c_width-60 .c_left}
+
+![The same 5 periodicals + 6 works by one of the editors](../../assets/OpenArabicPE/stylometry/stylo_network-issues-authors-size_degree-colour_publication.png)
+
+:::
+:::{.c_width-30 .c_right}
+
+- very limited similarity between *al-Muqtabas* and its editor Muḥammad Kurd ʿAlī
+
+:::
 
 # Thank you!
 ## References
