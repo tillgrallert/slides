@@ -200,13 +200,15 @@ Plain text files of >2500 words
 ::: columns
 :::: column
 
-- corpus 1: 246 full issues
-- corpus 2: sections of anonymous articles
+- corpus 1: 246 full issues from 5 journals
+- corpus 2: 88 sections of anonymous articles from 2 journals
 
 ::::
 :::: column
 
 - corpus 3: 303 individual articles
+    + 76 unique authors
+    + 190 anonymous articles
 - corpus 4: 6 books by Muḥammad Kurd ʿAlī
 
 ::::
@@ -275,7 +277,7 @@ A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Mu�
 ::: columns
 :::: column
 
-![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png)
+![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png)
 
 ::::
 :::: column
@@ -292,7 +294,7 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 ::: columns
 :::: column
 
-![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
+![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
 
 ::::
 :::: column
@@ -322,7 +324,7 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 
 :::{.c_width-30}
 
-![PCA covariance matrix for the 100 MFWs in a corpus of ... issues of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
+![PCA covariance matrix for the 100 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
 
 :::
 :::{.c_width-30}
@@ -334,7 +336,27 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 :::
 :::{.c_width-30}
 
-![PCA covariance matrix for the 900 MFWs in a corpus of ... issues of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
+![PCA covariance matrix for the 900 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
+
+:::
+
+## stylistic differences between journals
+### *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*
+
+:::{.c_width-30}
+
+![PCA covariance matrix for the 100 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-100}
+
+:::
+:::{.c_width-30}
+
+- Strong stylistic similarities between all three periodicals
+- some issues of *al-Muqtabas* are very different
+
+:::
+:::{.c_width-30}
+
+![PCA covariance matrix for the 900 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-900}
 
 :::
 
