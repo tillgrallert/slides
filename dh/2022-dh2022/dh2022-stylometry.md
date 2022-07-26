@@ -243,6 +243,65 @@ Based on parameter settings established in our tests
 :::
 
 # Results
+## articles
+
+![](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author.png)
+
+## articles
+
+![](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain.png)
+
+## Kāẓim al-Dujaylī
+
+Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
+
+::: columns
+:::: column
+
+![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
+
+::::
+:::: column
+
+![Radar plot for the unattributed article in the upper right, ["Riḥla ilá Shufāthā", *Lughat al-ʿArab* 3(1), Aug. 1913](https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png)
+
+::::
+:::
+
+## Muḥammad al-Qāsimī?
+
+A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Muḥammad al-Qāsimī
+
+::: columns
+:::: column
+
+![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png)
+
+::::
+:::: column
+
+![Radar plot for the unattributed article in the upper left, ["Ajwābat al-ʿulamāʾ ʿan al-tamthīl", *al-Ḥaqāʾiq* 2(3), Sep. 1911](https://OpenArabicPE.github.io/journal_al-haqaiq/tei/oclc_644997575-i_15.TEIP5.xml#div_3.d1e562)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.644997575_v.2_i.3_div_3.d1e562_lollipop.png)
+
+::::
+:::
+
+## William Shakespeare
+
+Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
+
+::: columns
+:::: column
+
+![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
+
+::::
+:::: column
+
+![Radar plot for the attributed article in the lower right](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png)
+
+::::
+:::
+
 ## stylistic differences between journals
 ### Auctorial voices?
 
