@@ -188,15 +188,17 @@ Plain text files of >2500 words
 ::: columns
 :::: column
 
-- corpus 1: 246 full issues from 5 journals
-- corpus 2: 88 sections of anonymous articles from 2 journals
+- corpus 1: 303 individual articles
+    + 76 unique authors
+    + 190 anonymous articles
+
+-> **very different from the test corpus**
 
 ::::
 :::: column
 
-- corpus 3: 303 individual articles
-    + 76 unique authors
-    + 190 anonymous articles
+- corpus 2: 88 sections of anonymous articles from 2 journals
+- corpus 3: 246 full issues from 5 journals
 - corpus 4: 6 books by Muḥammad Kurd ʿAlī
 
 ::::
@@ -205,9 +207,11 @@ Plain text files of >2500 words
 # Results
 ## articles
 
-![](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain.png)
+We found the spaghetti monster!
 
-## Kāẓim al-Dujaylī
+![Bootstrap consensus network, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author.png)
+
+## Zooming in: Kāẓim al-Dujaylī
 
 Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
 
@@ -224,7 +228,7 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 ::::
 :::
 
-## Muḥammad al-Qāsimī?
+## Zooming in: Muḥammad al-Qāsimī?
 
 A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Muḥammad al-Qāsimī
 
@@ -241,7 +245,7 @@ A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Mu�
 ::::
 :::
 
-## William Shakespeare
+## Zooming in: William Shakespeare
 
 Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 
