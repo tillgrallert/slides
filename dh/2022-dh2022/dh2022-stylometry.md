@@ -265,30 +265,58 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
+:::{.c_width-30 .c_right}
+
 Muḥammad Kurd ʿAlī most likely not the author
 
+:::
+:::{.c_width-60 .c_left}
+
 ![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
+
+:::
 
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
+:::{.c_width-30 .c_right}
+
 Multiple anonymous candidates?
+
+:::
+:::{.c_width-60 .c_left}
 
 ![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
 
+:::
+
 ## owners-cum-editors as authors?
 ### *Lughat al-ʿArab*
 
+:::{.c_width-30 .c_right}
+
 Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
+
+:::
+:::{.c_width-60 .c_left}
 
 ![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
 
+:::
+
 ## owners-cum-editors as authors?
 ### *Lughat al-ʿArab*
 
+:::{.c_width-30 .c_right}
+
 Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 
+:::
+:::{.c_width-60 .c_left}
+
 ![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png)
+
+:::
 
 ## stylistic differences between journals
 ### Auctorial voices?
