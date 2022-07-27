@@ -12,6 +12,31 @@ bibliography:
     - /BachUni/applications/applications.csl.json
 ---
 
+## Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals
+
+::: columns
+:::: column
+
+Maxim Romanov
+
+Universität Hamburg
+
+<maxim.romanov@uni-hamburg.de>
+
+::::
+:::: column
+
+Till Grallert
+
+Humboldt-Universität zu Berlin
+
+<till.grallert@hu-berlin.de>
+
+::::
+:::
+
+#DH2022, 27 July 2022
+
 # Arabic periodicals
 ## Arabic periodicals
 
@@ -104,74 +129,37 @@ bibliography:
 ::::
 :::
 
-# Arabic as an under-resourced language
-## Linguistic imperialism
-
->'Linguistic imperialism' is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political
-
-<cite>[@Phillipson1997RealitiesAndMyths, 239]</cite>
-
->The basis for the codes, languages, methodologies, and technical instruments of the digital humanities is English; the written and spoken language of all the main conferences, the most prestigious journals, the institutions that control the discipline, the organizations and international consortia, and the central authorities of knowledge is, with few exceptions, some dialect of British or American English.
-
-<cite>[@Fiormonte+2021+TaxationagainstOverrepresentation, 334-335]</cite>
-
-## Arabic
-
-::: columns
-:::: column
-
-### Script
-
-- Second most common script
-    + 14 languages, among them Arabic, Persian, Urdu, Pashtu
-
-::::
-:::: column
-
-### Language
-
-+ Fifth most common language
-    * 1 of 6 official languages at the UN
-    * official language in 26 countries
-    * \>420M speakers
-- Liturgic language of 1.6B Muslims
-
-::::
-:::
-
-![Example: [@oclc_4770057679-i_13-div_8.d1e1249]](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
-
-## Arabic
-### Script
-
-+ Writing direction: from right to left
-+ Letters (graphemes) are mostly connected in the writing direction and change their shape (allographs):  [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
-+ Graphemes combine basic shapes (archigrapheme, *rasm*) and diacritic marks (*iʿjām*)
-    * usage subject to change and regional preferences
-* Vocalisation (*tashkīl*) fixes meaning and **can** be added
-
-::: columns
-:::: column
-
-### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
-
-[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
-
-<cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
-
-::::
-:::: column
-
-### [امىرکا وعلماء العرٮ]{.c_rtl lang="ar"}
-
-[کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
-
-*rasm*
-
-::::
-:::
-
 # Method
+## Stylometry
+
+Based on parameter settings established in our tests
+
+::: columns
+:::: column
+
+### `stylo()` settings
+
+- Tokens: words
+- Sampling: 2500 tokens
+- MFF: 200--500 tokens, incremented by 100
+- Culling: 0
+- distance measure: Eder's simple delta
+
+::::
+:::: column
+
+### Analysis
+
+- edges (and nodes) tables from `stylo()`
+- computing network measures with `tidygraph()` and `igraph()`
+    + centrality
+    + community detection
+- plotting results with `ggpragh()` and `ggplot2()`
+
+
+::::
+:::
+
 ## Corpus
 
 | Periodical                      | Place             | Dates[^tb1]   | Vol.s   | No.s    | Words       | Articles | with author | 2500+ words | words/articles | Authors | DOI                                                              |
@@ -181,7 +169,7 @@ bibliography:
 | [al-Ustādh][ustadh_git]         | Cairo             | 1892--93      | 1       | 42      | 221447      | 435      | 5.52        | 13          | 582.21         | 8       | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) |
 | [al-Zuhūr][zuhur_git]           | Cairo             | 1910--13      | 4       | 39      | 292333      | 436      | **41.51**   | 6           | 695.09         | 112     | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) |
 | [Lughat al-ʿArab][lughat_git]   | Baghdad           | 1911--14      | 3       | 34      | 373832      | 939      | 16.19       | 21          | 485.21         | 53      | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
-| **total**                       |                   |               | 20      | 246     | c.3000000   |          |             | 303         |                |         |                                                                  |
+| **total**                       |                   |               | 20      | 246     | 3166783     | 5163     |             | 303         | 613.36         |         |                                                                  |
 
 Table: Our corpus from "Open Arabic Periodical Editions" {#tbl:openarabicpe-corpus}
 
@@ -214,41 +202,7 @@ Plain text files of >2500 words
 ::::
 :::
 
-## Stylometry
-
-Based on parameter settings established in our tests
-
-::: columns
-:::: column
-
-### `stylo()` settings
-
-- Tokens: words
-- Sampling: 2500 tokens
-- MFF: 200--500 tokens, incremented by 100
-- Culling: 0
-- distance measure: Eder's simple delta
-
-::::
-:::: column
-
-### Analysis
-
-- edges (and nodes) tables from `stylo()`
-- computing network measures with `tidygraph()` and `igraph()`
-    + centrality
-    + community detection
-- plotting results with `ggpragh()` and `ggplot2()`
-
-
-::::
-:::
-
 # Results
-## articles
-
-![](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author.png)
-
 ## articles
 
 ![](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain.png)
@@ -303,6 +257,34 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 
 ::::
 :::
+
+## owners-cum-editors as authors?
+### *al-Muqtabas*
+
+Muḥammad Kurd ʿAlī most likely not the author
+
+![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
+
+## owners-cum-editors as authors?
+### *al-Muqtabas*
+
+Multiple anonymous candidates?
+
+![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
+
+## owners-cum-editors as authors?
+### *Lughat al-ʿArab*
+
+Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
+
+![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
+
+## owners-cum-editors as authors?
+### *Lughat al-ʿArab*
+
+Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
+
+![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png)
 
 ## stylistic differences between journals
 ### Auctorial voices?
@@ -375,4 +357,16 @@ Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
 :::
 
 # Thank you!
+## Thank you!
+
+- Maxim Romanov
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Links:
+    + Slides: [https://tinyurl.com/lp-7-03-grallert](https://tillgrallert.github.io/slides/dh/2022-dh2022/index.html)
+    + Paper: <https://doi.org/10/gkhrjr>
+    + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
+    + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
+    + Email: <till.grallert@fu-berlin.de>
+- Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
 ## References
