@@ -395,8 +395,8 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
     + Slides: [https://tinyurl.com/lp-7-03-grallert](https://tillgrallert.github.io/slides/dh/2022-dh2022/index.html)
-    + Paper: <https://doi.org/10/gkhrjr>
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
+    + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <till.grallert@fu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
