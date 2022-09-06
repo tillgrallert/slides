@@ -4,8 +4,8 @@ subtitle: "Herausforderungen einer multilingualen und multiskriptoralen Digital 
 author: Till Grallert
 affiliation: Digital History Berlin
 bibliography: 
-    - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /BachUni/applications/applications.csl.json
+    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/applications/applications.csl.json
 lang: de
 date: 2022-01-26
 # duration: 30
@@ -706,7 +706,7 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 :::{.c_width-50}
 
-![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) außerhalb der USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
+![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (Original in Princeton) außerhalb der USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
 
 :::
 :::{.c_width-50}

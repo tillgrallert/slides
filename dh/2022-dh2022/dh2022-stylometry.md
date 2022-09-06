@@ -8,8 +8,8 @@ date: 2022-07-23
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
 bibliography: 
-    - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /BachUni/applications/applications.csl.json
+    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/applications/applications.csl.json
 ---
 
 ## Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals
