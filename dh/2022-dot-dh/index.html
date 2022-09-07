@@ -22,6 +22,25 @@
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
       ul.task-list{list-style: none;}
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }
     </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
@@ -138,7 +157,7 @@
           z-index: 30;
           display: block;
           position: fixed;
-          height: 3.8em;
+          height: 2.5em;
           width: 100%;
         }
         footer.reveal {
@@ -172,7 +191,7 @@
         }
         div.c_frame {
         /*padding: 1em;*/
-        margin-top: 1em;
+        margin-top: 0.6em;
         margin-left: 3em;
         margin-right: 3em;
         }
@@ -494,14 +513,15 @@
         div.slide img {
             /* image-rendering: optimize-quality; */
             background-color: white; /*rgba(0,0,0,0.04);*/
-            border-radius: 5px;
             display: block;
-            max-height: 600px;
+            /* max height is relative to the slide height, which is currently set to 700 px */
+            max-height: 550px;
             max-width: 95%;
             /* center images */
             margin-left: auto;
             margin-right: auto;
             /*box-shadow: 2px 2px 5px #000;*/
+            /*border-radius: 5px;*/
             /*border: gray solid 1px;*/
         }
         div.figure {
@@ -696,6 +716,8 @@
             font-style: normal;
             margin-top: 0.1em;
             margin-bottom: 0.5em;
+            margin-left: 0.5em;
+            list-style-position: outside;
             /* all lists should be centered */
             /*text-align: left;*/
             /*margin-left: auto;
@@ -1203,16 +1225,58 @@ zu Berlin</p>
         <h1>Method</h1>
 
         </section>
+        <section id="stylometric-authorship-attribution"
+        class="slide level2">
+        <h2>Stylometric authorship attribution</h2>
+        <p>Authorship signal is prevalent in most frequent words,
+        i.e. function words</p>
+        <div class="columns">
+        <div class="column">
+        <h3 id="comparative-method">comparative method</h3>
+        <ul>
+        <li>steps:
+        <ol type="1">
+        <li>compute frequencies for every text</li>
+        <li>compare every text with every text</li>
+        <li>validate through voting (<em>consensus</em>) of multiple
+        iterations</li>
+        </ol></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="challenges">challenges</h3>
+        <ul>
+        <li>novel application to Arabic and this genre</li>
+        <li>comparison depends on input</li>
+        <li>reliability depends on a minimal length of texts</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>stylometry is old, compution has supercharged it</li>
+        <li>Computational Stylometry Group
+        <ul>
+        <li>Maciej Eder</li>
+        <li>Mike Kestemont</li>
+        <li>Jan Rybicki</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
         <section id="stylometry" class="slide level2">
         <h2>Stylometry</h2>
-        <p>Based on parameter settings established in our tests</p>
+        <p>Based on parameter settings established in our tests <span
+        class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        2022)</span></p>
         <div class="columns">
         <div class="column">
         <h3 id="stylo-settings"><code>stylo()</code> settings</h3>
         <ul>
         <li>Tokens: words</li>
         <li>Sampling: 2500 tokens</li>
-        <li>MFF: 200–500 tokens, incremented by 100</li>
+        <li>Most Frequent Features: 200–500 tokens, incremented by
+        100</li>
         <li>Culling: 0</li>
         <li>distance measure: Eder’s simple delta</li>
         </ul>
@@ -1231,6 +1295,14 @@ zu Berlin</p>
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <ul>
+        <li>Maxim designed and ran parameter test on a corpus of 300
+        nineteenth-century books</li>
+        <li>I confirmed the viability of these settings in my work on
+        periodicals</li>
+        </ul>
+        </aside>
         </section>
         <section id="corpus" class="slide level2">
         <h2>Corpus</h2>
@@ -1436,6 +1508,36 @@ zu Berlin</p>
         </div>
         </div>
         </section>
+        <section id="zooming-in-kāẓim-al-dujaylī-1"
+        class="slide level2">
+        <h2>Zooming in: Kāẓim al-Dujaylī</h2>
+        <p>Anonymous travellogue in <em>Lughat al-ʿArab</em> most likely
+        written by the magazine’s editor Kāẓim al-Dujaylī</p>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png"
+        id="fig:network-detail-dujayli"
+        alt="Figure 4: Detail from the previous network plot" />
+        <figcaption aria-hidden="true">Figure 4: Detail from the
+        previous network plot</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png"
+        id="fig:lollipop-dujayli"
+        alt="Figure 5: Radar plot for the unattributed article (20) in fig. 4, “Riḥla ilá Shufāthā”, Lughat al-ʿArab 3(1), Aug. 1913" />
+        <figcaption aria-hidden="true">Figure 5: Radar plot for the
+        unattributed article (20) in fig. 4, <a
+        href="https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438">“Riḥla
+        ilá Shufāthā”, <em>Lughat al-ʿArab</em> 3(1),
+        Aug. 1913</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
         <section id="zooming-in-muḥammad-al-qāsimī"
         class="slide level2">
         <h2>Zooming in: Muḥammad al-Qāsimī?</h2>
@@ -1446,23 +1548,60 @@ zu Berlin</p>
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png"
-        alt="Detail from the larger network plot" />
-        <figcaption aria-hidden="true">Detail from the larger network
-        plot</figcaption>
+        id="fig:network-detail-qasimi"
+        alt="Figure 6: Detail from the larger network plot" />
+        <figcaption aria-hidden="true">Figure 6: Detail from the larger
+        network plot</figcaption>
         </figure>
         </div><div class="column">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.644997575_v.2_i.3_div_3.d1e562_lollipop.png"
-        alt="Radar plot for the unattributed article in the upper left, “Ajwābat al-ʿulamāʾ ʿan al-tamthīl”, al-Ḥaqāʾiq 2(3), Sep. 1911" />
-        <figcaption aria-hidden="true">Radar plot for the unattributed
-        article in the upper left, <a
+        id="fig:lollipop-qasimi"
+        alt="Figure 7: Radar plot for the unattributed article (186) in fig. 6, “Ajwābat al-ʿulamāʾ ʿan al-tamthīl”, al-Ḥaqāʾiq 2(3), Sep. 1911" />
+        <figcaption aria-hidden="true">Figure 7: Radar plot for the
+        unattributed article (186) in fig. 6, <a
         href="https://OpenArabicPE.github.io/journal_al-haqaiq/tei/oclc_644997575-i_15.TEIP5.xml#div_3.d1e562">“Ajwābat
         al-ʿulamāʾ ʿan al-tamthīl”, <em>al-Ḥaqāʾiq</em> 2(3),
         Sep. 1911</a></figcaption>
         </figure>
         </div>
         </div>
+        </section>
+        <section id="zooming-in-ibn-al-muqaffaʿ" class="slide level2">
+        <h2>Zooming in: Ibn al-Muqaffaʿ?</h2>
+        <p>A cluster of texts potentially written by Ibn al-Muqaffaʿ
+        (d. 759) and edited by Ṭāhir al-Jazāʾirī</p>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png"
+        id="fig:network-detail-muqaffa"
+        alt="Figure 8: Detail from the larger network plot" />
+        <figcaption aria-hidden="true">Figure 8: Detail from the larger
+        network plot</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png"
+        id="fig:lollipop-muqaffa"
+        alt="Figure 9: Radar plot for the unattributed article (34) in fig. 8, “al-Adab al-ṣaghīr”, al-Muqtabas 3(1), Sep. 1911" />
+        <figcaption aria-hidden="true">Figure 9: Radar plot for the
+        unattributed article (34) in fig. 8, <a
+        href="https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733">“al-Adab
+        al-ṣaghīr”, <em>al-Muqtabas</em> 3(1),
+        Sep. 1911</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>this is a case where the algorithm for extracting
+        bibliographic information did not work as expected</li>
+        </ul>
+        </aside>
         </section>
         <section id="zooming-in-william-shakespeare"
         class="slide level2">
@@ -1591,8 +1730,8 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-halumu-100"
-        alt="Figure 4: PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption aria-hidden="true">Figure 4: PCA covariance matrix
+        alt="Figure 10: PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 10: PCA covariance matrix
         for the 100 MFWs in a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -1610,8 +1749,8 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-halumu-900"
-        alt="Figure 5: PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption aria-hidden="true">Figure 5: PCA covariance matrix
+        alt="Figure 11: PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 11: PCA covariance matrix
         for the 900 MFWs in a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -1627,8 +1766,8 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-lumuzu-100"
-        alt="Figure 6: PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption aria-hidden="true">Figure 6: PCA covariance matrix
+        alt="Figure 12: PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 12: PCA covariance matrix
         for the 100 MFWs in a corpus of <em>Lughat al-ʿArab</em>,
         <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
@@ -1645,8 +1784,8 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-lumuzu-900"
-        alt="Figure 7: PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption aria-hidden="true">Figure 7: PCA covariance matrix
+        alt="Figure 13: PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 13: PCA covariance matrix
         for the 900 MFWs in a corpus of <em>Lughat al-ʿArab</em>,
         <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
@@ -1718,8 +1857,18 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         4.0</a></li>
         </ul>
         </section>
-        <section id="refs" class="slide level2">
-        <h2>References</h2>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">References</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="doc-bibliography">
+        <div id="ref-RomanovGrallert2022Stylometry" class="csl-entry"
+        role="doc-biblioentry">
+        Romanov, Maxim, and Till Grallert. 2022. <span>‘Establishing
+        Parameters for Stylometric Authorship Attribution of
+        19th-Century Arabic Books and Periodicals’</span>. In. Tokyo. <a
+        href="https://dh-abstracts.library.virginia.edu/works/11858">https://dh-abstracts.library.virginia.edu/works/11858</a>.
+        </div>
+        </div>
         </section></section>
         <section class="footnotes footnotes-end-of-document"
         role="doc-endnotes">

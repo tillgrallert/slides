@@ -9,6 +9,7 @@ ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
 ---
 
@@ -115,9 +116,45 @@ There will be a [paper](https://tillgrallert.github.io/slides/dh/2022-dot-period
 :::
 
 # Method
+## Stylometric authorship attribution
+
+Authorship signal is prevalent in most frequent words, i.e. function words
+
+::: columns
+:::: column
+
+### comparative method
+
+- steps:
+	1. compute frequencies for every text
+	2. compare every text with every text
+	3. validate through voting (*consensus*) of multiple iterations
+
+::::
+:::: column
+
+### challenges
+
+- novel application to Arabic and this genre
+- comparison depends on input
+- reliability depends on a minimal length of texts
+
+::::
+:::
+
+::: notes
+
+- stylometry is old, compution has supercharged it
+- Computational Stylometry Group
+	+ Maciej Eder
+	+ Mike Kestemont
+	+ Jan Rybicki
+
+:::
+
 ## Stylometry
 
-Based on parameter settings established in our tests
+Based on parameter settings established in our tests [@RomanovGrallert2022Stylometry]
 
 ::: columns
 :::: column
@@ -126,7 +163,7 @@ Based on parameter settings established in our tests
 
 - Tokens: words
 - Sampling: 2500 tokens
-- MFF: 200--500 tokens, incremented by 100
+- Most Frequent Features: 200--500 tokens, incremented by 100
 - Culling: 0
 - distance measure: Eder's simple delta
 
@@ -143,6 +180,13 @@ Based on parameter settings established in our tests
 
 
 ::::
+:::
+
+::: notes
+
+- Maxim designed and ran parameter test on a corpus of 300 nineteenth-century books
+- I confirmed the viability of these settings in my work on periodicals
+
 :::
 
 ## Corpus
@@ -213,6 +257,23 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 ::::
 :::
 
+## Zooming in: Kāẓim al-Dujaylī
+
+Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
+
+::: columns
+:::: column
+
+![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png){#fig:network-detail-dujayli}
+
+::::
+:::: column
+
+![Radar plot for the unattributed article (20) in @fig:network-detail-dujayli, ["Riḥla ilá Shufāthā", *Lughat al-ʿArab* 3(1), Aug. 1913](https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png){#fig:lollipop-dujayli}
+
+::::
+:::
+
 ## Zooming in: Muḥammad al-Qāsimī?
 
 A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Muḥammad al-Qāsimī
@@ -220,14 +281,37 @@ A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Mu�
 ::: columns
 :::: column
 
-![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png)
+![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png){#fig:network-detail-qasimi}
 
 ::::
 :::: column
 
-![Radar plot for the unattributed article in the upper left, ["Ajwābat al-ʿulamāʾ ʿan al-tamthīl", *al-Ḥaqāʾiq* 2(3), Sep. 1911](https://OpenArabicPE.github.io/journal_al-haqaiq/tei/oclc_644997575-i_15.TEIP5.xml#div_3.d1e562)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.644997575_v.2_i.3_div_3.d1e562_lollipop.png)
+![Radar plot for the unattributed article (186) in @fig:network-detail-qasimi, ["Ajwābat al-ʿulamāʾ ʿan al-tamthīl", *al-Ḥaqāʾiq* 2(3), Sep. 1911](https://OpenArabicPE.github.io/journal_al-haqaiq/tei/oclc_644997575-i_15.TEIP5.xml#div_3.d1e562)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.644997575_v.2_i.3_div_3.d1e562_lollipop.png){#fig:lollipop-qasimi}
 
 ::::
+:::
+
+## Zooming in: Ibn al-Muqaffaʿ?
+
+A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited by Ṭāhir al-Jazāʾirī
+
+::: columns
+:::: column
+
+![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png){#fig:network-detail-muqaffa}
+
+::::
+:::: column
+
+![Radar plot for the unattributed article (34) in @fig:network-detail-muqaffa, ["al-Adab al-ṣaghīr", *al-Muqtabas* 3(1), Sep. 1911](https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png){#fig:lollipop-muqaffa}
+
+::::
+:::
+
+::: notes
+
+- this is a case where the algorithm for extracting bibliographic information did not work as expected
+
 :::
 
 ## Zooming in: William Shakespeare
