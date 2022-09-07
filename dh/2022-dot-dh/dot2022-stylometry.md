@@ -1,10 +1,10 @@
 ---
-title: "Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals"
-subtitle: ""
+title: "Looking at the iceberg from below the waterline"
+subtitle: "Stylometric authorship attribution for anonymous periodical articles"
 author: 
-	- Maxim Romanov
 	- Till Grallert
-date: 2022-07-23 
+institute: Humboldt-Universität zu Berlin
+date: 2022-09-12 
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
 bibliography: 
@@ -12,32 +12,13 @@ bibliography:
     - /Users/Shared/BachUni/applications/applications.csl.json
 ---
 
-## Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals
+## outline
 
-::: columns
-:::: column
+1. Background
+2. Method and corpus
+3. Results
 
-Maxim Romanov
-
-Universität Hamburg
-
-<maxim.romanov@uni-hamburg.de>
-
-::::
-:::: column
-
-Till Grallert
-
-Humboldt-Universität zu Berlin
-
-<till.grallert@hu-berlin.de>
-
-::::
-:::
-
-#DH2022, 27 July 2022
-
-# Arabic periodicals
+# Background {data-background-image="../../assets/OpenArabicPE/front-pages_strip.png" data-background-size="90%"}
 ## Arabic periodicals
 
 ::: columns
@@ -83,9 +64,9 @@ Humboldt-Universität zu Berlin
 ::::
 :::
 
-![Title pages of *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf*, and *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-30}
+## Research interest: intellectual networks
 
-## Research focus: intellectual networks
+There will be a [paper](https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html) on Wednesday
 
 ::: columns
 :::: column
@@ -109,6 +90,10 @@ Humboldt-Universität zu Berlin
     - suprising set up: many Iraqis (6), few Syrians (2), few Christians (2)
 
 ::::
+:::
+
+::: notes
+- of the 14, Ayalon mentions only ʿIsā Iskandar al-Maʿlūf 
 :::
 
 ## Problem: missing bylines
@@ -391,14 +376,14 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 # Thank you!
 ## Thank you!
 
-- Maxim Romanov
+- Maxim Romanov for his work on parameter testing
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
-    + Slides: [https://tinyurl.com/lp-7-03-grallert](https://tillgrallert.github.io/slides/dh/2022-dh2022/index.html)
+    + Slides: [https://tinyurl.com/dot2022-grallert-dh](https://tillgrallert.github.io/slides/dh/2022-dot-dh/index.html)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
-    + Email: <till.grallert@fu-berlin.de>
+    + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
-## References
+## References {#refs}

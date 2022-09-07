@@ -3,7 +3,7 @@ title: "Mind the `<gap/>`!"
 subtitle: "Digital Humanities und das kulturelle Erbe des Globalen Südens"
 author: Till Grallert
 affiliation: Orient-Institut Beirut
-bibliography: /BachUni/applications/applications.csl.json
+bibliography: /Users/Shared/BachUni/applications/applications.csl.json
 lang: de
 date: 2021-03-04
 duration: 25

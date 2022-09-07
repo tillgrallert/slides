@@ -4,8 +4,8 @@ subtitle: "Herausforderungen einer multilingualen und multiskriptoralen Digital 
 author: Till Grallert
 affiliation: Digital History Berlin
 bibliography: 
-    - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /BachUni/applications/applications.csl.json
+    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/applications/applications.csl.json
 lang: de
 date: 2022-01-26
 # duration: 30

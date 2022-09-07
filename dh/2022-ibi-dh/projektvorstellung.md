@@ -4,8 +4,8 @@ subtitle: ""
 author: Till Grallert
 affiliation: Digital History Berlin
 bibliography: 
-    - /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /BachUni/applications/applications.csl.json
+    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/applications/applications.csl.json
 lang: de
 date: 2022-03-29
 # duration: 30
