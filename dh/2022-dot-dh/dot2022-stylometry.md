@@ -201,7 +201,7 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 | [Lughat al-ʿArab][lughat_git]   | Baghdad           | 1911--14      | 3       | 34      | 373832      | 939      | 16.19       | 21          | 485.21         | 53      | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
 | **total**                       |                   |               | 20      | 246     | 3166783     | 5163     |             | 303         | 613.36         |         |                                                                  |
 
-Table: Our corpus from "Open Arabic Periodical Editions" {#tbl:openarabicpe-corpus}
+Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.github.io/)" {#tbl:openarabicpe-corpus}
 
 [^tb1]: The current cut-off date is 1918.
 
