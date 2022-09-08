@@ -154,7 +154,8 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 
 ## Stylometry
 
-Based on parameter settings established in our tests [@RomanovGrallert2022Stylometry]
+- In R with the `stylo()` package [@Eder+2016b]
+- Based on parameter settings established in our tests [@RomanovGrallert2022Stylometry]
 
 ::: columns
 :::: column
