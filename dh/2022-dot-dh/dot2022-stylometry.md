@@ -275,22 +275,6 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 ::::
 :::
 
-## Zooming in: Muḥammad al-Qāsimī?
-
-A cluster of texts <!-- from al-Ḥaqāʾiq and? --> potentially written by Muḥammad al-Qāsimī
-
-::: columns
-:::: column
-
-![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_louvain-details_1.png){#fig:network-detail-qasimi}
-
-::::
-:::: column
-
-![Radar plot for the unattributed article (186) in @fig:network-detail-qasimi, ["Ajwābat al-ʿulamāʾ ʿan al-tamthīl", *al-Ḥaqāʾiq* 2(3), Sep. 1911](https://OpenArabicPE.github.io/journal_al-haqaiq/tei/oclc_644997575-i_15.TEIP5.xml#div_3.d1e562)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.644997575_v.2_i.3_div_3.d1e562_lollipop.png){#fig:lollipop-qasimi}
-
-::::
-:::
 
 ## Zooming in: Ibn al-Muqaffaʿ?
 
