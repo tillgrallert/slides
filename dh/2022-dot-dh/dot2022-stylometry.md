@@ -239,23 +239,18 @@ Plain text files of >2500 words
 
 We found the spaghetti monster!
 
-![Bootstrap consensus network, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author.png)
+![Bootstrap consensus network, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
 
-## Zooming in: Kāẓim al-Dujaylī
+::: notes
 
-Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
-
-::: columns
-:::: column
-
-![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
-
-::::
-:::: column
-
-![Radar plot for the unattributed article in the upper right, ["Riḥla ilá Shufāthā", *Lughat al-ʿArab* 3(1), Aug. 1913](https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png)
-
-::::
+- centrality measure
+	+ degree: 
+		* number of connections
+		* local measure
+- authorship
+	+ 116 attributed texts
+	+ 112 unattributed
+	+ 75 authors
 :::
 
 ## Zooming in: Kāẓim al-Dujaylī
@@ -265,12 +260,12 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 ::: columns
 :::: column
 
-![Detail from the previous network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png){#fig:network-detail-dujayli}
+![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png){#fig:network-detail-dujayli}
 
 ::::
 :::: column
 
-![Radar plot for the unattributed article (20) in @fig:network-detail-dujayli, ["Riḥla ilá Shufāthā", *Lughat al-ʿArab* 3(1), Aug. 1913](https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png){#fig:lollipop-dujayli}
+![Radar plot for the unattributed article (20) in @fig:network-detail-dujayli, ["Riḥla ilá Shufāthā", *Lughat al-ʿArab* 3(1), Aug. 1913](https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png){#fig:radar-dujayli}
 
 ::::
 :::
@@ -283,12 +278,12 @@ A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited b
 ::: columns
 :::: column
 
-![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png){#fig:network-detail-muqaffa}
+![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png){#fig:network-detail-muqaffa}
 
 ::::
 :::: column
 
-![Radar plot for the unattributed article (34) in @fig:network-detail-muqaffa, ["al-Adab al-ṣaghīr", *al-Muqtabas* 3(1), Sep. 1911](https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png){#fig:lollipop-muqaffa}
+![Radar plot for the unattributed article (34) in @fig:network-detail-muqaffa, ["al-Adab al-ṣaghīr", *al-Muqtabas* 3(1), Sep. 1911](https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png){#fig:radar-muqaffa}
 
 ::::
 :::
@@ -296,24 +291,31 @@ A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited b
 ::: notes
 
 - this is a case where the algorithm for extracting bibliographic information did not work as expected
+	+ the title clearly mentions Ibn al-Muqaffaʿ as the author
 
 :::
 
 ## Zooming in: William Shakespeare
 
-Unmarked translations of Shakespeare's Julius Caesar in *al-Zuhūr*
+Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 
 ::: columns
 :::: column
 
-![Detail from the larger network plot](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-details.png)
+![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_760.png){#fig:network-detail-shakespeare}
 
 ::::
 :::: column
 
-![Radar plot for the attributed article in the lower right](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png)
+![Radar plot for the attributed article in the @fig:network-detail-shakespeare](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png){#fig:radar-shakespeare}
 
 ::::
+:::
+
+::: notes
+
+- one case of faulty transcription by al-Maktaba al-Shamela: *būlūs qayṣar*
+
 :::
 
 ## owners-cum-editors as authors?
