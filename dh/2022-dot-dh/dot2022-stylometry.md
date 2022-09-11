@@ -222,7 +222,7 @@ Plain text files of >2500 words
     + 76 unique authors
     + 190 anonymous articles
 
--> **very different from the test corpus**
+-> **very different from Maxim Romanov's test corpus**
 
 ::::
 :::: column
