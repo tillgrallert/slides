@@ -307,7 +307,7 @@ Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 ::::
 :::: column
 
-![Radar plot for the attributed article in the @fig:network-detail-shakespeare](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png){#fig:radar-shakespeare}
+![Radar plot for the attributed article in @fig:network-detail-shakespeare, [Shakespear, "Yūliyūs Qayṣar", *al-Zuhūr* 3(4), Oct. 1912](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_27.TEIP5.xml#div_1.d2e1819)](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png){#fig:radar-shakespeare}
 
 ::::
 :::
@@ -315,6 +315,9 @@ Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 ::: notes
 
 - one case of faulty transcription by al-Maktaba al-Shamela: *būlūs qayṣar*
+- the fourth installment of the play was too short to make it into the corpus
+- #3 is also a play featuring Antonius, Casius, Brutus -> https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_30.TEIP5.xml#div_1.d2e2328
+	+ but kept under the title of "Fukaha ilá madāris al-banāt" and a brief introductory scene
 
 :::
 

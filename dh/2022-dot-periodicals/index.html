@@ -5,7 +5,7 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
               <meta name="dcterms.date" content="2022-09-12">
-                <title>Looking at the iceberg from below the waterline</title>
+                <title>Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -138,7 +138,7 @@
           z-index: 30;
           display: block;
           position: fixed;
-          height: 3.8em;
+          height: 2.5em;
           width: 100%;
         }
         footer.reveal {
@@ -172,7 +172,7 @@
         }
         div.c_frame {
         /*padding: 1em;*/
-        margin-top: 1em;
+        margin-top: 0.6em;
         margin-left: 3em;
         margin-right: 3em;
         }
@@ -494,14 +494,15 @@
         div.slide img {
             /* image-rendering: optimize-quality; */
             background-color: white; /*rgba(0,0,0,0.04);*/
-            border-radius: 5px;
             display: block;
-            max-height: 600px;
+            /* max height is relative to the slide height, which is currently set to 700 px */
+            max-height: 550px;
             max-width: 95%;
             /* center images */
             margin-left: auto;
             margin-right: auto;
             /*box-shadow: 2px 2px 5px #000;*/
+            /*border-radius: 5px;*/
             /*border: gray solid 1px;*/
         }
         div.figure {
@@ -696,6 +697,8 @@
             font-style: normal;
             margin-top: 0.1em;
             margin-bottom: 0.5em;
+            margin-left: 0.5em;
+            list-style-position: outside;
             /* all lists should be centered */
             /*text-align: left;*/
             /*margin-left: auto;
@@ -1044,18 +1047,423 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Looking at the iceberg from below the
-waterline</h1>
-                    <p class="subtitle">Stylometric authorship
-attribution for anonymous periodical articles</p>
+          <h1 class="title">Historische Netzwerkanalyse als Zugang zu
+einer systematischen Periodikaforschung</h1>
                               <p class="author">Till Grallert</p>
                               <p class="institute">Humboldt-Universität
 zu Berlin</p>
                               <p class="date">2022-09-12</p>
                   </section>
                 
-        <section class="slide level6">
+        <section id="outline" class="slide level2">
+        <h2>outline</h2>
+        </section>
+        <section id="netzwerkanalyse" class="slide level2">
+        <h2>Netzwerkanalyse</h2>
+        <aside class="notes">
+        <ul>
+        <li>Knoten und Kanten</li>
+        <li>Unimodal:
+        <ul>
+        <li>nur eine Art von Knoten</li>
+        <li>verschiedenste Arten von Kanten</li>
+        </ul></li>
+        <li>statistische Aussagen über Dichte, Clustering, Wichtigkeit
+        von Knoten</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="wichtigkeit-von-orten-jenseits-von-kairo-und-beirut"
+        class="slide level2">
+        <h2>Wichtigkeit von Orten jenseits von Kairo und Beirut</h2>
+        <div class="columns">
+        <div class="c_width-30">
+        <div id="tbl:locations">
+        <table>
+        <caption>Table 1: Publikationsorte arabischer Periodika bis
+        1918, nach Häufigkeit</caption>
+        <thead>
+        <tr class="header">
+        <th>rank</th>
+        <th>location</th>
+        <th>titles</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>Cairo</td>
+        <td>734</td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>Beirut</td>
+        <td>199</td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>Alexandria</td>
+        <td>155</td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>Tunis</td>
+        <td>99</td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>Baghdad</td>
+        <td>62</td>
+        </tr>
+        <tr class="even">
+        <td>6</td>
+        <td>Damascus</td>
+        <td>55</td>
+        </tr>
+        <tr class="odd">
+        <td>7</td>
+        <td>Istanbul</td>
+        <td>51</td>
+        </tr>
+        <tr class="even">
+        <td>8</td>
+        <td>New York City</td>
+        <td>48</td>
+        </tr>
+        <tr class="odd">
+        <td>9</td>
+        <td>Paris</td>
+        <td>48</td>
+        </tr>
+        <tr class="even">
+        <td>10</td>
+        <td>Sao Paolo</td>
+        <td>34</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div><div class="c_width-60">
 
+        </div>
+        </div>
+        </section>
+        <section id="problem" class="slide level2">
+        <h2>Problem</h2>
+        <h3 id="unzugänglichkeit">Unzugänglichkeit</h3>
+        <div class="columns">
+        <div class="c_width-60">
+        <figure>
+        <img
+        data-src="../../assets/jaraid/map-example_sf_mena_en-status_scatterpie.png"
+        id="fig:map-holdings-summary"
+        alt="Figure 1: Bekannte Sammlungen und Digitalisate arabischer Periodika bis 1929 nach Publikationsort" />
+        <figcaption aria-hidden="true">Figure 1: Bekannte Sammlungen und
+        Digitalisate arabischer Periodika bis 1929 nach
+        Publikationsort</figcaption>
+        </figure>
+        </div><div class="c_width-30">
+        <figure>
+        <img
+        data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.svg"
+        id="fig:map-holdings-catalogues"
+        alt="Figure 2: In Katalogen dokumentierte Sammlungen arabischer Periodika bis 1929" />
+        <figcaption aria-hidden="true">Figure 2: In Katalogen
+        dokumentierte Sammlungen arabischer Periodika bis
+        1929</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="corpus" class="slide level2">
+        <h2>Corpus</h2>
+        <div id="tbl:openarabicpe-corpus">
+        <table style="width:100%;">
+        <caption>Table 2: Our corpus from “<a
+        href="https://openarabicpe.github.io/">Open Arabic Periodical
+        Editions</a>”</caption>
+        <colgroup>
+        <col style="width: 30%" />
+        <col style="width: 8%" />
+        <col style="width: 7%" />
+        <col style="width: 6%" />
+        <col style="width: 4%" />
+        <col style="width: 4%" />
+        <col style="width: 6%" />
+        <col style="width: 6%" />
+        <col style="width: 6%" />
+        <col style="width: 13%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Periodical</th>
+        <th>Place</th>
+        <th>Dates<a href="#/fn1" class="footnote-ref" id="fnref1"
+        role="doc-noteref"><sup>1</sup></a></th>
+        <th style="text-align: right;">Vol.s</th>
+        <th style="text-align: right;">No.s</th>
+        <th style="text-align: right;">Words</th>
+        <th style="text-align: right;">Articles</th>
+        <th style="text-align: right;">with author</th>
+        <th style="text-align: right;">Authors</th>
+        <th>DOI</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><a
+        href="https://github.com/OpenArabicPE/journal_al-haqaiq">al-Ḥaqāʾiq</a></td>
+        <td>Damascus</td>
+        <td>1910–13</td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">35</td>
+        <td style="text-align: right;">298090</td>
+        <td style="text-align: right;">389</td>
+        <td style="text-align: right;"><strong>41.90</strong></td>
+        <td style="text-align: right;">104</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+        <td>Beirut</td>
+        <td>1909–11</td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">12</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">201</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><a
+        href="https://github.com/OpenArabicPE/journal_al-muqtabas">al-Muqtabas</a></td>
+        <td>Cairo, Damascus</td>
+        <td>1906–18</td>
+        <td style="text-align: right;"><strong>9</strong></td>
+        <td style="text-align: right;"><strong>96</strong></td>
+        <td style="text-align: right;"><strong>1981081</strong></td>
+        <td style="text-align: right;"><strong>2964</strong></td>
+        <td style="text-align: right;">12.72</td>
+        <td style="text-align: right;">140</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://github.com/OpenArabicPE/journal_al-ustadh">al-Ustādh</a></td>
+        <td>Cairo</td>
+        <td>1892–93</td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">42</td>
+        <td style="text-align: right;">221447</td>
+        <td style="text-align: right;">435</td>
+        <td style="text-align: right;">5.52</td>
+        <td style="text-align: right;">8</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+        </tr>
+        <tr class="odd">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+        <td>Cairo</td>
+        <td>1910–13</td>
+        <td style="text-align: right;">4</td>
+        <td style="text-align: right;">39</td>
+        <td style="text-align: right;">292333</td>
+        <td style="text-align: right;">436</td>
+        <td style="text-align: right;"><strong>41.51</strong></td>
+        <td style="text-align: right;">112</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://github.com/OpenArabicPE/journal_lughat-al-arab">Lughat
+        al-ʿArab</a></td>
+        <td>Baghdad</td>
+        <td>1911–14</td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">34</td>
+        <td style="text-align: right;">373832</td>
+        <td style="text-align: right;">939</td>
+        <td style="text-align: right;">16.19</td>
+        <td style="text-align: right;">53</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>total</strong></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: right;">21</td>
+        <td style="text-align: right;">258</td>
+        <td style="text-align: right;">3166783</td>
+        <td style="text-align: right;">5163</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </section>
+        <section>
+        <section id="geographische-netzwerke"
+        class="title-slide slide level1">
+        <h1>Geographische Netzwerke</h1>
+
+        </section>
+        <section id="autor_innenzeilen" class="slide level2">
+        <h2>Autor_innenzeilen</h2>
+        <h3 id="lokale-und-regionale-zeitschriften">Lokale und regionale
+        Zeitschriften</h3>
+        <div class="columns">
+        <div class="column">
+        <!-- ![Orte in Autor_innenzeilen, *Lughat al-ʿArab*](../../assets/OpenArabicPE/maps/map-oclc_472450345-bylines-all-source-na_mapped.png){#fig:map-bylines-lughat} -->
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-all-source-na_mapped.png"
+        id="fig:map-bylines-haqaiq"
+        alt="Figure 3: Orte in Autor_innenzeilen, al-Ḥaqāʾiq" />
+        <figcaption aria-hidden="true">Figure 3: Orte in
+        Autor_innenzeilen, <em>al-Ḥaqāʾiq</em></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-all-source-na_mapped.png"
+        id="fig:map-bylines-hasna"
+        alt="Figure 4: Orte in Autor_innenzeilen, al-Ḥasnāʾ" />
+        <figcaption aria-hidden="true">Figure 4: Orte in
+        Autor_innenzeilen, <em>al-Ḥasnāʾ</em></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="erwähnte-periodka" class="slide level2">
+        <h2>Erwähnte Periodka</h2>
+        <h3 id="internationale-zeitschriften">Internationale
+        Zeitschriften</h3>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-all-source-na_mapped.png"
+        id="fig:map-periodicals-muqtabas"
+        alt="Figure 5: 1462 in al-Muqtabas erwähnte Periodka" />
+        <figcaption aria-hidden="true">Figure 5: 1462 in
+        <em>al-Muqtabas</em> erwähnte Periodka</figcaption>
+        </figure>
+        </section>
+        <section id="erwähnte-periodka-1" class="slide level2">
+        <h2>Erwähnte Periodka</h2>
+        <h3 id="lokale-und-regionale-zeitschriften-1">Lokale und
+        regionale Zeitschriften</h3>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_1036721166-referenced-periodicals-all-source-na_mapped.png"
+        id="fig:map-periodicals-ustadh"
+        alt="Figure 6: 100 in al-Ustādh erwähnte Periodka" />
+        <figcaption aria-hidden="true">Figure 6: 100 in
+        <em>al-Ustādh</em> erwähnte Periodka</figcaption>
+        </figure>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_472450345-referenced-periodicals-all-source-na_mapped.png"
+        id="fig:map-bylines-lughat"
+        alt="Figure 7: 187 in Lughat al-ʿArab erwähnte Periodka" />
+        <figcaption aria-hidden="true">Figure 7: 187 in <em>Lughat
+        al-ʿArab</em> erwähnte Periodka</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_644997575-referenced-periodicals-all-source-na_mapped.png"
+        id="fig:map-periodicals-haqaiq"
+        alt="Figure 8: 85 in al-Ḥaqāʾiq erwähnte Periodka" />
+        <figcaption aria-hidden="true">Figure 8: 85 in
+        <em>al-Ḥaqāʾiq</em> erwähnte Periodka</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="autor_innenzeilen-1" class="slide level2">
+        <h2>Autor_innenzeilen</h2>
+        <h3 id="internationale-zeitschriften-1">Internationale
+        Zeitschriften</h3>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-all-source-na_mapped.png"
+        id="fig:map-bylines-muqtabas"
+        alt="Figure 9: Orte in Autor_innenzeilen, al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 9: Orte in
+        Autor_innenzeilen, <em>al-Muqtabas</em></figcaption>
+        </figure>
+        </section></section>
+        <section>
+        <section id="danke" class="title-slide slide level1">
+        <h1>Danke!</h1>
+
+        </section>
+        <section id="danke-1" class="slide level2">
+        <h2>Danke!</h2>
+        <ul>
+        <li>Links:
+        <ul>
+        <li>Folien: <a
+        href="https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html">https://tinyurl.com/dot2022-grallert-periodicals</a></li>
+        <li>Projektblog: <a
+        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+        <li>Papers: <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html"
+        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>,
+        <a href="https://doi.org/10/gkhrjr"
+        class="uri">https://doi.org/10/gkhrjr</a></li>
+        <li>Twitter: @<a
+        href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+        <li>Email: <script
+        type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript>,
+        <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        </ul></li>
+        <li>Licence: slides and images are licenced as <a
+        href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+        4.0</a></li>
+        </ul>
+        </section>
+        <section id="ideen" class="slide level2">
+        <h2>Ideen</h2>
+        <ul>
+        <li>Zeigen, dass Periodika nur als Netzwerk zu denken und
+        verstehen sind</li>
+        <li>Zeige die Wichtigkeit von anderen Orten als Beirut und Kairo
+        <ul>
+        <li>Tabellen aus meinem Tutorial zum Mapping</li>
+        </ul></li>
+        </ul>
+        </section></section>
+        <section class="footnotes footnotes-end-of-document"
+        role="doc-endnotes">
+        <hr />
+        <ol>
+        <li id="fn1" role="doc-endnote"><p>The current cut-off date is
+        1918.<a href="#/fnref1" class="footnote-back"
+        role="doc-backlink">↩︎</a></p></li>
+        </ol>
         </section>
       </div>
     </div>
@@ -1211,7 +1619,12 @@ zu Berlin</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                                                                              
+                                                      // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
