@@ -1,6 +1,8 @@
 ---
 title: "Looking at the iceberg from below the waterline"
 subtitle: "Stylometric authorship attribution for anonymous periodical articles"
+panel: "Computational contributions to the Social and Cultural History of the Islamicate World"
+event: "#DOT2022"
 author: 
 	- Till Grallert
 institute: Humboldt-Universität zu Berlin
@@ -11,6 +13,8 @@ bibliography:
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
+nocite: |
+	@Grallert2022DHQ; @Grallert+2020
 ---
 
 ## outline
