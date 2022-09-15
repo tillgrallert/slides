@@ -173,8 +173,8 @@ Kombinationen von *survival*, *collection* und *digitisation biases*
 
 ## Vorhandene Daten!
 
-- [Open Arabic Periodical Editions](https://openarabicpe.github.io/): Modellierter Volltext ([TEI XML](http://www.tei-c.org)), Normdaten ([TEI XML](http://www.tei-c.org))
-- [Project Jarāʾid](https://projectjaraid.github.io/) (mit Adam Mestyan): bibliographische Metadaten für 3300+ Periodika ([MODS](http://www.loc.gov/standards/mods/), [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), [BibTeX](http://www.bibtex.org/Format/))
+- [Open Arabic Periodical Editions][openarabicpe_website]: Modellierter Volltext ([TEI XML](http://www.tei-c.org)), Normdaten ([TEI XML](http://www.tei-c.org))
+- [Project Jarāʾid][jaraid_website] (mit Adam Mestyan): bibliographische Metadaten für 3300+ Periodika ([MODS](http://www.loc.gov/standards/mods/), [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), [BibTeX](http://www.bibtex.org/Format/))
 
 | Periodical                                                        | Place           | Dates[^tb1] | Vol.s   | No.s   | Words       | Articles | with author | Authors | DOI                                                              |
 | -------------------------------                                   | ---------       | --------    | ------: | ----:  | ----:       | ------:  | ------:     | ------: | --------------                                                   |
@@ -186,7 +186,7 @@ Kombinationen von *survival*, *collection* und *digitisation biases*
 | [Lughat al-ʿArab][lughat_git]                                     | Baghdad         | 1911--14    | 3       | 34     | 373832      | 939      | 16.19       | 53      | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
 | **total**                                                         |                 |             | 21      | 258    | 3166783     | 5163     |             |         |                                                                  |
 
-Table: Das verwendete "[Open Arabic Periodical Editions](https://openarabicpe.github.io/)" Corpus  {#tbl:openarabicpe-corpus}
+Table: Das verwendete "[Open Arabic Periodical Editions][openarabicpe_website]" Corpus  {#tbl:openarabicpe-corpus}
 
 [^tb1]: The current cut-off date is 1918.
 
@@ -375,11 +375,11 @@ What I actually do
 
 ## Danke!
 
-- Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
-- Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
+- Beiträger_innen zu [OpenArabicPE][openarabicpe_website]: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel, Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Beiträger_innen zu [Project Jarāʾid][jaraid_website]: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
 - Links:
     + Folien: [https://tinyurl.com/dot2022-grallert-periodicals](https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html)
-    + Projektblog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
+    + Projektblog: <https://openarabicpe.github.io>
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
@@ -407,3 +407,7 @@ What I actually do
 ### Internationale Zeitschriften
 
 ![Orte in Autor_innenzeilen, *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-all-source-na_mapped.png){#fig:map-bylines-muqtabas}
+
+
+[openarabicpe_website]: https://openarabicpe.github.io
+[jaraid_website]: https://projectjaraid.github.io
