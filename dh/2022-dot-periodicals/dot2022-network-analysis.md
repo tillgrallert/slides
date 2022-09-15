@@ -1,5 +1,7 @@
 ---
 title: "Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung"
+panel: "Arab Periodical Studies: Neue Ansätze zu Einer Kulturwissenschaftlichen Zeitschriftenforschung"
+event: "#DOT2022"
 author: 
 	- Till Grallert
 institute: Humboldt-Universität zu Berlin
@@ -53,7 +55,7 @@ slide-level: 2
 
 ## Netzwerkanalyse
 
-- Was: Statistische Analyse der Beziehungen (**Knoten**) zwischen Entitäten (**Kanten**)
+- Was: Statistische Analyse der Beziehungen (**Kanten**) zwischen Entitäten (**Knoten**)
 
 ::: columns
 :::: column
