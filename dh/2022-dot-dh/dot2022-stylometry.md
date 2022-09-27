@@ -3,9 +3,9 @@ title: "Looking at the iceberg from below the waterline"
 subtitle: "Stylometric authorship attribution for anonymous periodical articles"
 panel: "Computational contributions to the Social and Cultural History of the Islamicate World"
 event: "#DOT2022"
-author: 
-	- Till Grallert
+author: Till Grallert
 institute: Humboldt-Universität zu Berlin
+email: till.grallert@hu-berlin.de
 date: 2022-09-12 
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
@@ -322,6 +322,32 @@ Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 - the fourth installment of the play was too short to make it into the corpus
 - #3 is also a play featuring Antonius, Casius, Brutus -> https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_30.TEIP5.xml#div_1.d2e2328
 	+ but kept under the title of "Fukaha ilá madāris al-banāt" and a brief introductory scene
+
+:::
+
+## Zooming in: Charles Seignobos
+
+Historical texts by Charles Seignobos translated by Muḥammad Kurd ʿAlī. 
+
+When does the distance measure become unrealiable?
+
+::: columns
+:::: column 
+
+![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png){#fig:network-detail-seignobos}
+
+::::
+:::: column
+
+![Radar plot for the attributed article (201) in @fig:network-detail-seignobos, [Seignobos, "al-Yūnān", *al-Muqtabas* 2(5), June 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_17.TEIP5.xml#div_9.d1e1431)](../../assets/OpenArabicPE/stylometry/stylo_oape.741_oclc.4770057679_v.2_i.5_div_9.d1e1431_lollipop.png){#fig:radar-seignobos}
+
+::::
+:::
+
+::: notes
+
+- Which values of the distance measure are close enough to be considered?
+- The text of Jibrāʾīl Madīnā is closer than other texts by Seignobos
 
 :::
 

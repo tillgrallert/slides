@@ -58,29 +58,29 @@
                     }*/
                     /* xml element names */
                     .xml > code span.kw {
-                        /*color: #0F0F9C;*/
-                        color: #000096;
-                        font-weight: bold;
+                    	/*color: #0F0F9C;*/
+                    	color: #000096;
+                    	font-weight: bold;
                     }
                     /* xml attribute names */
                     .xml > code span.ot {
-                        /*color:#FF8041;*/
-                        color: #FF9159;
+                    	/*color:#FF8041;*/
+                    	color: #FF9159;
                     }
                     /* xml attribute values */
                     .xml > code span.st {
-                        /*color:#993300;*/
-                        color: #993300;
+                    	/*color:#993300;*/
+                    	color: #993300;
                     }
                     /* xml comments */
                     .xml > code span.co {
-                        /*color:#167116;*/
-                        color: #2F8132;
-                        font-style: italic;
+                    	/*color:#167116;*/
+                    	color: #2F8132;
+                    	font-style: italic;
                     }
                     /* xml computing instructions: not implemented in Pandoc syntax highlighting */
                     /* .xml > code > span {
-                        color:#9132CC;
+                    	color:#9132CC;
                     } */
                     </style>
         <style type="text/css">
@@ -1081,10 +1081,14 @@
 waterline</h1>
                     <h2 class="subtitle">Stylometric authorship
 attribution for anonymous periodical articles</h2>
-                              <p class="author">Till Grallert</p>
-                              <p class="institute">Humboldt-Universität
-zu Berlin</p>
-                              <p class="event">
+                    <p>
+                        <span class="author">Till Grallert</span>
+                                    , <span class="institute">Humboldt-Universität
+zu Berlin</span>
+                        <!--             <span class="email"><a href="mailto:till.grallert@hu-berlin.de">till.grallert@hu-berlin.de</a></span>
+             -->
+          </p>
+                    <p class="event">
                         <span>Panel "Computational contributions to the
 Social and Cultural History of the Islamicate World"</span>
                         <span>at #DOT2022</span>
@@ -1634,6 +1638,44 @@ Social and Cultural History of the Islamicate World"</span>
         </ul>
         </aside>
         </section>
+        <section id="zooming-in-charles-seignobos" class="slide level2">
+        <h2>Zooming in: Charles Seignobos</h2>
+        <p>Historical texts by Charles Seignobos translated by Muḥammad
+        Kurd ʿAlī.</p>
+        <p>When does the distance measure become unrealiable?</p>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png"
+        id="fig:network-detail-seignobos"
+        alt="Figure 11: Detail from fig. 4" />
+        <figcaption aria-hidden="true">Figure 11: Detail from
+        fig. 4</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.741_oclc.4770057679_v.2_i.5_div_9.d1e1431_lollipop.png"
+        id="fig:radar-seignobos"
+        alt="Figure 12: Radar plot for the attributed article (201) in fig. 11, Seignobos, “al-Yūnān”, al-Muqtabas 2(5), June 1907" />
+        <figcaption aria-hidden="true">Figure 12: Radar plot for the
+        attributed article (201) in fig. 11, <a
+        href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_17.TEIP5.xml#div_9.d1e1431">Seignobos,
+        “al-Yūnān”, <em>al-Muqtabas</em> 2(5), June
+        1907</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Which values of the distance measure are close enough to be
+        considered?</li>
+        <li>The text of Jibrāʾīl Madīnā is closer than other texts by
+        Seignobos</li>
+        </ul>
+        </aside>
+        </section>
         <section id="owners-cum-editors-as-authors"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
@@ -1736,8 +1778,8 @@ Social and Cultural History of the Islamicate World"</span>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-halumu-100"
-        alt="Figure 11: PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption aria-hidden="true">Figure 11: PCA covariance matrix
+        alt="Figure 13: PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 13: PCA covariance matrix
         for the 100 MFWs in a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -1755,8 +1797,8 @@ Social and Cultural History of the Islamicate World"</span>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-halumu-900"
-        alt="Figure 12: PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption aria-hidden="true">Figure 12: PCA covariance matrix
+        alt="Figure 14: PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 14: PCA covariance matrix
         for the 900 MFWs in a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -1772,8 +1814,8 @@ Social and Cultural History of the Islamicate World"</span>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-lumuzu-100"
-        alt="Figure 13: PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption aria-hidden="true">Figure 13: PCA covariance matrix
+        alt="Figure 15: PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 15: PCA covariance matrix
         for the 100 MFWs in a corpus of <em>Lughat al-ʿArab</em>,
         <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
@@ -1790,8 +1832,8 @@ Social and Cultural History of the Islamicate World"</span>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png"
         id="fig:pca-lumuzu-900"
-        alt="Figure 14: PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption aria-hidden="true">Figure 14: PCA covariance matrix
+        alt="Figure 16: PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 16: PCA covariance matrix
         for the 900 MFWs in a corpus of <em>Lughat al-ʿArab</em>,
         <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
