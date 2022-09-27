@@ -257,7 +257,8 @@ We found the spaghetti monster!
 	+ 75 authors
 :::
 
-## Zooming in: Kāẓim al-Dujaylī
+# Zooming in: <br/>Individual authors
+## Kāẓim al-Dujaylī
 
 Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
 
@@ -275,7 +276,7 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 :::
 
 
-## Zooming in: Ibn al-Muqaffaʿ?
+## Ibn al-Muqaffaʿ?
 
 A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited by Ṭāhir al-Jazāʾirī
 
@@ -299,7 +300,7 @@ A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited b
 
 :::
 
-## Zooming in: William Shakespeare
+## William Shakespeare
 
 Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 
@@ -325,7 +326,31 @@ Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
 
 :::
 
-## Zooming in: Charles Seignobos
+## Shukrī al-ʿAsalī: resolving acronyms
+
+Texts by Shukrī al-ʿAsalī, later MP for Damascus and co-editor of one of Muḥammad Kurd ʿAlī's newspapers
+
+::: columns
+:::: column 
+
+![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png){#fig:network-detail-asali}
+
+::::
+:::: column
+
+![Radar plot for the attributed article (164) in @fig:network-detail-asali, [al-ʿAsalī, "al-Jabāya fī al-Islām", *al-Muqtabas* 4(2, 3), Feb., Mar. 1909](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_38.TEIP5.xml#div_4.d1e2328)](../../assets/OpenArabicPE/stylometry/stylo_oape.460_oclc.4770057679_v.4_i.2_div_4.d1e2328_lollipop.png){#fig:radar-asali}
+
+::::
+:::
+
+::: notes
+
+- Which values of the distance measure are close enough to be considered?
+- The text of Jibrāʾīl Madīnā is closer than other texts by Seignobos
+
+:::
+
+## Charles Seignobos: threshold for distance measures?
 
 Historical texts by Charles Seignobos translated by Muḥammad Kurd ʿAlī. 
 
@@ -351,6 +376,8 @@ When does the distance measure become unrealiable?
 
 :::
 
+
+# owners-cum-editors as authors?
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
@@ -407,6 +434,7 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 
 :::
 
+# Do periodicals speak with a single voice?
 ## stylistic differences between journals
 ### Auctorial voices?
 
