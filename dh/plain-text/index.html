@@ -1416,7 +1416,7 @@ Schreiben</h1>
                                       </div>
         <div class="column c_right c_right-align">
                               <p class="date">2022-12-02</p>
-                              <p class="url"><a href="https://tillgrallert.github.io/slides/plain-text/">https://tillgrallert.github.io/slides/plain-text/</a></p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/plain-text/">https://tillgrallert.github.io/slides/dh/plain-text/</a></p>
                   </div>
       </div>
         </section>
@@ -1597,6 +1597,11 @@ Schreiben</h1>
         <p>Nur explizites Wissen kann verlässlich wiedergefunden und
         angezeigt werden</p>
         </div>
+        </section></section>
+        <section>
+        <section id="glossar" class="title-slide slide level1">
+        <h1>Glossar</h1>
+
         </section>
         <section id="markdown-md" class="slide level2">
         <h2><a
@@ -1683,6 +1688,47 @@ Schreiben</h1>
         </div>
         </div>
         </section>
+        <section id="pandoc-spickzettel" class="slide level2">
+        <h2>Pandoc Spickzettel</h2>
+        <ul>
+        <li>Basis:
+        <ul>
+        <li>specify input file (can be an URL):
+        <code>FILENAME</code></li>
+        <li>specify input format (optional): <code>-f FORMAT</code>,
+        <code>-r FORMAT</code> / <code>--from=FORMAT</code>,
+        <code>--read=FORMAT</code></li>
+        <li>specify output format (optional: <code>-t FORMAT</code>,
+        <code>-w FORMAT</code> / <code>--to=FORMAT</code>,
+        <code>--write=FORMAT</code></li>
+        <li>specify output file: <code>-o FILENAME</code> /
+        <code>--output=FILENAME</code><br />
+        </li>
+        <li>available formats:
+        <ul>
+        <li>markdown, markdown_strict, markdown_mmd, commonmark,
+        textile</li>
+        <li>html, html5, docbook, epub, epub3, asciidoc, tei</li>
+        <li>mediawiki</li>
+        <li>docx, odt</li>
+        <li>pdf, latex</li>
+        </ul></li>
+        </ul></li>
+        <li>styling
+        <ul>
+        <li>typographic quotation marks etc.: <code>-S</code> /
+        <code>--smart</code></li>
+        <li>use a template file: <code>--template=FILE|URL</code></li>
+        </ul></li>
+        <li>additional options:
+        <ul>
+        <li>generate table of content: <code>--toc</code>,
+        <code>--table-of-contents</code></li>
+        <li>standalone (include a proper header and footer):
+        <code>-s</code>, <code>--standalone</code></li>
+        </ul></li>
+        </ul>
+        </section>
         <section id="yaml-yaml-aint-markup-language"
         class="slide level2">
         <h2><a href="http://yaml.org/">Yaml (Yaml ain’t markup
@@ -1690,9 +1736,9 @@ Schreiben</h1>
         <div class="columns">
         <div class="wide">
         <ul>
-        <li>Was: “human friendly” <a
-        href="https://en.wikipedia.org/wiki/Serialization">data
-        serialization</a>; superset von <a href="">JSON</a>
+        <li>Was: “menschenfreundliche” <a
+        href="https://en.wikipedia.org/wiki/Serialization">Datenserialisierung</a>;
+        superset von <a href="">JSON</a>
         <ul>
         <li>provides a very simple means of adding metadata to the
         beginning of plain text files</li>
@@ -1712,6 +1758,47 @@ Schreiben</h1>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Samantha Tirtohusodo</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">date</span><span class="kw">:</span><span class="at"> 2022-11-29</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+        </div>
+        </div>
+        </section>
+        <section id="bibtex" class="slide level2">
+        <h2><a href="http://www.bibtex.org/Format/">BibTeX</a></h2>
+        <div class="columns">
+        <div class="wide">
+        <ul>
+        <li>Was: ein strukturiertes <strong>Format</strong> für
+        bibliographische Daten (und ein Programm zur Erstellung von
+        Literaturverzeichnissen in TeX/ LaTeX)</li>
+        <li>Wann: seit <strong>1985</strong></li>
+        <li>Wer: Oren Patashnik, Leslie Lamport</li>
+        <li>Aktuelle Version: 0.99c (1988), 0.99d (2010)</li>
+        </ul>
+        </div><div class="narrow">
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="va">@book</span>{<span class="ot">JannidisEtAl2017DigitalHumanities</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span> = {{Digital Humanities}},</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">editor</span> = {Jannidis, Fotis and Kohle, Hubertus and Rehbein, Malte},</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span> = {2017},</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publisher</span> = {{J.B. Metzler}},</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span> = {{Stuttgart}},</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span> = {10.1007/978-3-476-05446-3},</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">isbn</span> = {978-3-476-02622-4 978-3-476-05446-3},</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">langid</span> = {ngerman}</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="column">
+        <h3 id="pros-2">Pros</h3>
+        <ul>
+        <li>von allen relevanten Anwendungen unterstüzt</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="cons-2">Cons:</h3>
+        <ul>
+        <li>praktisch keine Entwicklung seit 1988</li>
+        <li>kein strikter Standard</li>
+        </ul>
         </div>
         </div>
         </section></section>

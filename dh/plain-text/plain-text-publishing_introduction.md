@@ -6,7 +6,7 @@ author:
 Institution: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
 date: 2022-12-02
 status: published
-url: https://tillgrallert.github.io/slides/plain-text/
+url: https://tillgrallert.github.io/slides/dh/plain-text/
 lang: de
 bibliography: 
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
@@ -98,6 +98,7 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 
 :::
 
+# Glossar
 ## [Markdown (md)](http://daringfireball.net/projects/markdown)
 
 ::: columns
@@ -178,13 +179,33 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 ::::
 :::
 
+## Pandoc Spickzettel
+
+- Basis: 
+    - specify input file (can be an URL): `FILENAME`
+    - specify input format (optional): `-f FORMAT`, `-r FORMAT`  / `--from=FORMAT`, `--read=FORMAT`
+    - specify output format (optional: `-t FORMAT`, `-w FORMAT` /  `--to=FORMAT`, `--write=FORMAT`
+    - specify output file: `-o FILENAME` / `--output=FILENAME`  
+    - available formats: 
+        + markdown, markdown_strict, markdown_mmd, commonmark, textile
+        + html, html5, docbook, epub, epub3, asciidoc, tei
+        + mediawiki
+        + docx, odt
+        + pdf, latex
+- styling
+    + typographic quotation marks etc.:  `-S` / `--smart`
+    + use a template file: `--template=FILE|URL`
+- additional options:
+    + generate table of content: `--toc`, `--table-of-contents`
+    + standalone (include a proper header and footer): `-s`, `--standalone` 
+
 ## [Yaml (Yaml ain't markup language)](http://yaml.org/)
 
 
 ::: columns
 :::: wide
 
-- Was: "human friendly" [data serialization](https://en.wikipedia.org/wiki/Serialization); superset von [JSON]()
+- Was: "menschenfreundliche" [Datenserialisierung](https://en.wikipedia.org/wiki/Serialization); superset von [JSON]()
     + provides a very simple means of adding metadata to the beginning of plain text files
 - Wann: seit **2001** <!--; first working draft of YAML 1.1 in 2004-->
 - Wer: Clark Evans, Ingy döt Net and Oren Ben-Kiki
@@ -204,6 +225,54 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 - date: 2022-11-29
 ---
 ```
+
+::::
+:::
+
+## [BibTeX](http://www.bibtex.org/Format/)
+
+
+::: columns
+:::: wide
+
+- Was: ein strukturiertes **Format** für bibliographische Daten (und ein Programm zur Erstellung von Literaturverzeichnissen in TeX/ LaTeX)
+- Wann: seit **1985** 
+- Wer: Oren Patashnik, Leslie Lamport
+- Aktuelle Version: 0.99c (1988), 0.99d (2010)
+
+::::
+:::: narrow
+
+```bibtex
+@book{JannidisEtAl2017DigitalHumanities,
+  title = {{Digital Humanities}},
+  editor = {Jannidis, Fotis and Kohle, Hubertus and Rehbein, Malte},
+  year = {2017},
+  publisher = {{J.B. Metzler}},
+  address = {{Stuttgart}},
+  doi = {10.1007/978-3-476-05446-3},
+  isbn = {978-3-476-02622-4 978-3-476-05446-3},
+  langid = {ngerman}
+}
+```
+
+::::
+:::
+
+::: columns
+:::: column
+
+### Pros
+
++ von allen relevanten Anwendungen unterstüzt
+
+::::
+:::: column
+
+### Cons:
+
++ praktisch keine Entwicklung seit 1988
++ kein strikter Standard
 
 ::::
 :::
