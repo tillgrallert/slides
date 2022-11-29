@@ -345,8 +345,9 @@ Texts by Shukrī al-ʿAsalī, later MP for Damascus and co-editor of one of Mu�
 
 ::: notes
 
-- Which values of the distance measure are close enough to be considered?
-- The text of Jibrāʾīl Madīnā is closer than other texts by Seignobos
+- This information could also be gathered from close reading
+	+ based on the title
+	+ the text in *al-Muqtabas* 4(2) mentions the one in 2(4) in a footnote, which, however, is not part of the transcription from Shamela
 
 :::
 
