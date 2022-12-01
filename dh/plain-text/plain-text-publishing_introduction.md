@@ -61,7 +61,7 @@ tags:
 | Annotation            |                             | - Werbewirtschaft       |
 +-----------------------+-----------------------------+-------------------------+
 
-
+# Eine Lösung?!
 ## Unser Wunsch
 
 ![Mal wieder eine Blackbox](https://furesh.github.io/slides/assets/images/operationalisierung/plain-text_blackbox.jpg)
@@ -69,6 +69,72 @@ tags:
 ## Pandox to the rescue
 
 ![Pandoc](https://furesh.github.io/slides/assets/images/operationalisierung/plain-text_pandoc.jpg)
+
+## Pandox to the rescue
+
+::: columns
+:::: column
+
+```md
+---
+title: "Ankündigung Scholarly Makerspace"
+subtitle: "Status: Draft"
+author: Till Grallert
+date: 2022-03-25
+lang: de
+ORCID: orcid.org/0000-0002-5739-8094
+bibliography: ../assets/bibliography/FuReSH.csl.json
+---
+
+Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts "Future e-Research Support in the Humanities II" in Zusammenarbeit mit den Lehrstühlen für [Digital History](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history) am Institut für Geschichte und für [Information Processing and Analytics](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa) am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende "Machen" mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.
+
+![Eine geschlossene "Blackbox"](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png){#fig:box-closed}
+```
+
+::::
+:::: column
+
+![als `DOCX`](https://furesh.github.io/slides/assets/images/pandoc_result-docx.png)
+
+![als `PDF`](https://furesh.github.io/slides/assets/images/pandoc_result-pdf.png)
+
+::::
+:::
+
+## Pandox to the rescue
+
+Diese Folien sind selber mit Pandoc aus Markdown generiert worden. Die Quelle der letzten Folie sieht so aus:
+
+~~~md
+::: columns
+:::: column
+
+```md
+---
+title: "Ankündigung Scholarly Makerspace"
+subtitle: "Status: Draft"
+author: Till Grallert
+date: 2022-03-25
+lang: de
+ORCID: orcid.org/0000-0002-5739-8094
+bibliography: ../assets/bibliography/FuReSH.csl.json
+---
+
+Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts "Future e-Research Support in the Humanities II" in Zusammenarbeit mit den Lehrstühlen für [Digital History](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history) am Institut für Geschichte und für [Information Processing and Analytics](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa) am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende "Machen" mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.
+
+![Eine geschlossene "Blackbox"](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png){#fig:box-closed}
+```
+
+::::
+:::: column
+
+![als `DOCX`](https://furesh.github.io/slides/assets/images/pandoc_result-docx.png)
+
+![als `PDF`](https://furesh.github.io/slides/assets/images/pandoc_result-pdf.png)
+
+::::
+:::
+~~~
 
 # Voraussetzungen
 ## Software
