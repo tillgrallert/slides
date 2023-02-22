@@ -35,14 +35,16 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 # 1. Einführung
 ## Spätosmanischer östlicher Mittelmeerraum
 
-:::{.c_width-60}
+
+::: columns
+:::: wide
 
 <!-- ![Das Osmanische Reich, 1893. [@map_ottoman-empire-1893]](../../assets/maps/map_Ottoman-Empire-1893_annotated.jpg){#fig:map-oem} -->
 
 ![Die administrative Struktur des Osmanischen Reiches, ca. 1899. AbdurRahman AbdulMoneim, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ottoman_Empire_Administrative_Divisions.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ottoman_Empire_Administrative_Divisions.png/2048px-Ottoman_Empire_Administrative_Divisions.png){#fig:map-oem}
 
-:::
-:::{.c_width-30}
+::::
+:::: narrow
 
 - Norden: Rumelien und Anatolien
     + ab 14. Jhd. osmanisch
@@ -57,11 +59,13 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     + Muslimisierung
     + Arabisierung
 
+::::
 :::
 
 ## Spätosmanischer östlicher Mittelmeerraum <br/>Ein Raum der Vielfalt
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ### Sprachen
 
@@ -86,8 +90,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Von links nach rechts:
     - Griechisch, Armenisch, Lateinisch, Kyrillisch, Koptisch
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Religionen
 
@@ -96,8 +100,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Juden: sephardisch, aschkenasisch
 + Zoroastrier
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Kalender
 
@@ -112,12 +116,14 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 - *alla turca*: Tagesbeginn mit Sonnenuntergang. je 12 Stunden für Nacht und Tag.
 - *alle franca*: Tagesbeginn um Mitternacht. 24 gleichlange Stunden.
 
+::::
 :::
 
 
 ## Arabische Zeitungen und Zeitschriften
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - Presse als zentraler Agent des Wandels in der Moderne
     + erstes Massenmedium
@@ -125,8 +131,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     + Medium des Sprachwandels
     + zentrale Foren für Verhandlung von Moderne, Nationalismen, Islamismus etc.
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 - Presse bisher vor allem als Quelle genutzt und kaum als Gegenstand untersucht
 - Forschung wird dominiert von
@@ -134,18 +140,20 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     + Verengung auf zwei Orte und wenige <!-- allgemein zugängliche --> Titel
     + impliziten Hypothesen
 
+::::
 :::
 
 ![Neu gegründete arabisch-sprachige Periodika, 1799--1929](../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif){#fig:map-jaraid}
 
 ## Arabische Zeitungen und Zeitschriften
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![Titelseite von *al-Quds* #331, 10 Januar 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 - Grün: Osmanischer Halbmond mit drei Sternen und Slogan der jungtürkischen Revolution von 1908 "Freiheit, Gleichheit, Brüderlichkeit"
 - Blau: Französischer Titel
@@ -154,18 +162,20 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     + Gregorianischer K.: 10 Januar 1913
     + Islamischer K.: 2 Ṣafar 1331
 
+::::
 :::
 
 ![Titelseiten von *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *al-Iqbāl*, *al-Maḥabba*, *al-Ahrām*, *al-Muqtaṭaf* und *al-ʿAṣr al-Jadīd*](../../assets/OpenArabicPE/front-pages_strip.png){#fig:front-pages .c_height-30}
 
 ## Computationelle Periodikastudien
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness.png){#fig:network-authors}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 <!-- ![Orte in Autorenzeilen in *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east-na_mapped.png){#fig:authors-haqaiq .c_height-50}
 
@@ -173,24 +183,28 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ![Karte der in Autor_innenzeilen erwähnten Orte in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-data-set-bylines-middle-east-na_mapped-bar.png){#fig:map-bylines}
 
+::::
 :::
 
 ## Computationelle Periodikastudien
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png){#fig:network-periodicals}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![Karte der in Autor_innenzeilen erwähnten Orte in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png){#fig:map-referenced}
 
+::::
 :::
 
 ## Notwendige Datenbasis
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ### Modellierten Volltext mit Auszeichnung von *Named Entities*
 
@@ -201,8 +215,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
     * Zustand von OCR und Layout-Erkennung
     * Zustand von NER
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Strukturierte bibliographische (Meta)daten auf der Artikelebene
 
@@ -213,8 +227,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Probleme
     * Vielfalt von Namensformen
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Normdatensätze <!-- zur Disambiguierung und Anreicherung der Daten -->
 
@@ -226,13 +240,15 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 - Probleme
     + enormes Bias auf den Globalen Norden
 
+::::
 :::
 
 
 # 2. Mind the `<gap/>`! <br/>Digitalität zwischen Heilsversprechen und Realität
 ## Digitalität zwischen Heilsversprechen und Realität
 
-::: {.c_width-50}
+::: columns
+:::: column
 
 ### egalitäres Heilsversprechen
 
@@ -245,21 +261,23 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 - mehr Wissen = besseres Verständnis
 - Solutionism/Technokratie
 
-:::
-::: {.c_width-50}
+::::
+:::: column
 
 ![Vannevar Bushs *Memex*, 1945](../../assets/dh/memex-1945.jpg){#fig:memex}
 
+::::
 :::
 
 ## Digitalität zwischen Heilsversprechen und Realität
 
-::: {.c_width-50}
+::: columns
+:::: column
 
 ![Versuch einen Impftermin online zu buchen](../../assets/dh/covid-19-vaccination-fail.png){#fig:vaccination}
 
-:::
-::: {.c_width-50}
+::::
+:::: column
 
 ### ernüchternde Realtität
 
@@ -269,31 +287,34 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 - Digitalität wird als **voraussetzungslos** verstanden
 
+::::
 :::
 
 ## Digitalität als vorausetzungslos?
 ### Metaphermaschinen
 
-::: {.c_width-50 .c_right}
+::: columns
+:::: column
 
 - Digitalität **simuliert** Stasis und Vertrautheit
     + Metaphern
     + semantische Modelle
 - Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
 
-:::
-::: {.c_width-50 .c_left}
+::::
+:::: column
 
 ![Google docs](../..//assets/dh/google-docs.png){#fig:google-docs}
 
+::::
 :::
 
 ## Mind the `<gap/>`! <br/>Zugangsvorraussetzungen
 
 ...  müssen explizit gemacht werden!
 
-::: {.c_width-50}
-
+::: columns
+:::: column
 
 ### technisch
 
@@ -302,8 +323,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Internet: schnell und stabil
 + Software
 
-:::
-::: {.c_width-50}
+::::
+:::: column
 
 ### kulturell
 
@@ -311,26 +332,29 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 + Vertrautheit mit den Metaphern
 + Vertrautheit mit semantischen Modellen
 
+::::
 :::
 
 ## Mind the `<gap/>`! <br/>Zugangsvorraussetzungen
 
 ### Du bist so schön wie eine zusätzliche Stunde Strom
 
-:::{.c_width-30}
+::: columns
+:::: column
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote>
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a></blockquote>
 
+::::
 :::
 
 
@@ -339,15 +363,16 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ## Mind the `<gap/>`! <br/>Zwischen Globalem Norden und Globalem Süden
 
-::: {.c_width-50}
+::: columns
+:::: column
 
 ### Globaler Norden
 
 - Hegemon
 - Autor der technischen und kulturellen Standards der Digitalität
 
-:::
-::: {.c_width-50}
+::::
+:::: column
 
 ### Globaler Süden
 
@@ -355,6 +380,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 - Vielzahl heterogener Regionalitäten
 - gemeinsame Erfahrung der konstanten Auseinandersetzung mit dem Hegemon
 
+::::
 :::
 
 
@@ -378,7 +404,8 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-digital-history-colloquiu
 
 ## Englischkenntnisse sind <!-- für die Teilhabe --> unabdingbar
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 Englisch ist die Lingua Franca und Basis der technischen Infrastruktur
 
@@ -403,26 +430,29 @@ load("oape_stats.rda")
 write.table(المشار.اليها, file = "csv/oape_stats.csv", row.names = FALSE, quote = TRUE, sep = ",")
 ```
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 ![[Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en): Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün).](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
 
+
+::::
 :::
 
 ## Arabisch
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ### Schrift
 
 - zweithäufigste Schrift <!-- nach lateinischer Schrift -->
     + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ### Sprache
 
@@ -432,6 +462,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
     * \>420 Mio. Sprechende
 + liturgische Sprache des Islams mit 1,6 Mrd. Gläubigen
 
+::::
 :::
 
 ![Beispiel: [@oclc_4770057679-i_13-div_8.d1e1249]](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
@@ -449,23 +480,25 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 <!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
 
-:::{.c_width-50}
+::: columns
+:::: column
 
-### أميركا وعلماء العرب
+### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
 
 [كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
 
 <cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
 
-:::
-:::{.c_width-50 .c_rtl}
+::::
+:::: column
 
-### امىرکا وعلماء العرٮ
+### [امىرکا وعلماء العرٮ]{.c_rtl lang="ar"}
 
 [کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
 
 *rasm*
 
+::::
 :::
 
 ## Arabisch in der Digitalität
@@ -487,8 +520,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 <!-- + Abstraktion in Buchstaben ist zumindest umstritten
     + Zeichkodierung kann die kulturelle Praxis der Schreibenden nicht abbilden -->
 
-
-:::{.c_width-50}
+::: columns
+:::: column
 
 ### أميركا وعلماء العرب
 
@@ -496,8 +529,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 <cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
 
-:::
-:::{.c_width-50 .c_ltr}
+::::
+:::: column
 
 ### Amīrkā wa ʿulamāʾ al-ʿarab
 
@@ -505,6 +538,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 Umschrift (IJMES)
 
+::::
 :::
 
 <!-- hello Java, I am looking at you! -->
@@ -513,7 +547,8 @@ Umschrift (IJMES)
 ## Erfassung <br/> Grapheme und Zeichenkodierung
 ### Unicode ist nicht die Lösung aller Probleme
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 <!-- - Vor Unicode lange Zeit gar nicht unterstützt -->
 - Unicode: <!-- in Mountain View ansässiges --> Industriekonsortium und ein Standard <!-- mit US-Dominanz -->
@@ -527,31 +562,34 @@ Umschrift (IJMES)
 - Folge: Volltextsuchen sind nicht aussagekräftig
     + 32 Arten "mekkanisch" ([مكية]{lang="ar"}) zu schreiben
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 <!-- ![32 Varianten von "mekkanisch" (مكية). Quelle: Thomas Milo *Patterns of confusability* 2014.](../../assets/dh/arabic-script_unicode-example-makkiyya.png){#fig:arabic-mecca-1} -->
 
 ![Browsersuche nach "[مك]{lang="ar"}" im Wikidataeintrag für Mekka ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
 
+::::
 :::
 
 ## Darstellung <br/>basale Standards werden nicht unterstützt
 ### Beispiel 1: Werbung (Grafik- und Layout Programme)
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 <!-- Nicht verbunden und von rechts nach links -->
 
 !["Arabische" Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: [Twitter](https://twitter.com/2awbi2atiye/status/1347351918268489728)](../../assets/dh/ErLBbWwVgAErjHy.jpg){#fig:arabic-fail-covid}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 <!-- Korrektur -->
 
 ![Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: [Twitter](https://twitter.com/wcpublichealth/status/1347622725469130752)](../../assets/dh/ErO3qtUVkAEUAQ_.jpg){#fig:arabic-fail-covid-corrected}
 
+::::
 :::
 
 ## Darstellung <br/>basale Standards werden nicht unterstützt
@@ -559,13 +597,17 @@ Umschrift (IJMES)
 
 Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig dar
 
+::: columns
+:::: column
 
-:::{.c_width-50}
 ![Chrome](../../assets/dh/html5-lang_ar-chrome-2.png){#fig:arabic-fail-chrome}
-:::
 
-:::{.c_width-50}
+::::
+:::: column
+
 ![Firefox](../../assets/dh/html5-lang_ar-firefox-2.png){#fig:arabic-fail-firefox}
+
+::::
 :::
 
 ## Darstellung <br/>Arabische Inhalte in LTR-Standards
@@ -575,7 +617,8 @@ Browser ignorieren das HTML5 Attribut `@lang` und stellen Arabisch linksbündig 
 # 4. Mind the `<gap/>`! <br/>Digitalisierung des Kulturerbes
 ## Digitalisierung des Kulturerbes <br/>neo-koloniale Unsichtbarkeit des Globalen Südens
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ### Erfassung
 
@@ -591,8 +634,8 @@ Digitalisierung ist **teuer**: public-private partnerships, private vendors
 + Wirtschaftliche Entscheidungen
     * Outsourcing
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ### Bereitsstellung
 
@@ -603,6 +646,7 @@ Platformen zur Maximierung des Gewinns
 + Bezahlschranken
 + geo-fencing
 
+::::
 :::
 
 ## Digitalisierung des Kulturerbes <br/>Katalogisierung
@@ -624,21 +668,22 @@ Platformen zur Maximierung des Gewinns
 - Umschrift wird in unbekanntem Umfang "normalisiert"
 - aber der bestimmte Artikel "al-" muss manuell entfernt werden -->
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 - kein Arabisch
 
 ![ZDB Suche nach "الجنة"](../../assets/jaraid/zdb_janna-ar.png)
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 - keine volle Umschrift (*dmg* al-Ǧanna, *ijmes* al-Janna)
 
 ![ZDB Suche nach "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png)
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 - defektive Umschrift ohne "al-"
 - Umfang der Normalisierung unklar (`ʿ` wird komplet herausgefiltert, `'` und `ʾ` nicht)
@@ -646,6 +691,7 @@ Platformen zur Maximierung des Gewinns
 
 ![ZDB Suche nach "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png)
 
+::::
 :::
 
 
@@ -657,7 +703,8 @@ Welche Verzerrungen bildet die Karte ab: Sammlung, Katalogiesierung, Digitalisie
 
 ## Closing the knowledge `<gap/>` <br/>[Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - Bibliographische Erfassung sämtlicher arabisch-sprachiger Periodika weltweit seit ihrer Entstehung um 1800 bis 1929.
     + Webseite und offene Datensätze ([TEI XML](https://tei-c.org/)) für mehr als 3700 Periodika
@@ -665,17 +712,19 @@ Welche Verzerrungen bildet die Karte ab: Sammlung, Katalogiesierung, Digitalisie
 - Kollaboration mit Adam Mestyan (Duke), "Crowd"-Sourcing
 - Seit 2021/22: Integration von Bibliothekskatalogen, ZDB, HathiTrust
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![In Project Jarāʾid erfasste Periodika. Größe der Kreise korrespondiert mit Anzahl der Periodikatitel. Farben zeigen den Status an: bekannte Sammlung (grün), davon digitalisiert (blau), Rest (rot).](../../assets/jaraid/map-example_sf_mena_en-status_scatterpie.png){#fig:holding-stats}
 
+::::
 :::
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>Mind the `<gap/>`!
 ### Wissenslücke -> Digitalisierungslücke
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 Arabische Periodika bis 1929 weltweit
 
@@ -686,8 +735,8 @@ Arabische Periodika bis 1929 weltweit
 - Bezahlschranken, geo-fencing
 
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de)"
 
@@ -696,6 +745,7 @@ Zum Vergleich: "[Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](ht
 - Digitalisat: Faksimile und Volltext
 - Offen zugänglich
 
+::::
 :::
 
 ## Digitalisierung des Kulturerbes <br/>Copyrightregime, Bezahlschranken und Geo-fencing
@@ -704,17 +754,18 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 <!-- Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird korrekt als 19uu katalogisiert und dann Copyrightstatus sicherheitshalber als 1999 angenommen. -->
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (Original in Princeton) außerhalb der USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![*al-Muqtabas* 6 auf [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) mit US IP](../../assets/OpenArabicPE/hathi_muqtabas-2.png){#fig:hathi-muqtabas-us}
 
+::::
 :::
-
 <!-- hier muss noch was zu den verschiedenen Gaps hin -->
 
 <!-- OCR layer -->
@@ -731,20 +782,23 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 - Anbieter halten Algorithmen und Evaluierung unter Verschluss: unbekannte Anzahl von *false negatives*
 - Keine Strukturierung, keine APIs, proprietäre Interfaces
 
-:::{.c_width-50 .c_left}
+::: columns
+:::: column
 
 ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), Qualität der OCR-Schicht (nur mit US IP zugänglich)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png)
 
-:::
-:::{.c_width-50 .c_right}
+::::
+:::: column
 
 ![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), Qualität der OCR-Schicht](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png)
 
+::::
 :::
 
 ## Closing the tool `<gap/>` <br/>OCR/HTR für arabische Periodika (2019--)
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ### State of the art
 
@@ -758,8 +812,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
     + GUI sind nicht auf Arabisch ausgelegt
     + teuer: Rechenzeit, Upload von 100.000den Bildern
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ### Unser Experiment
 
@@ -772,6 +826,7 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
     + Komplexes Layout von Periodikaseiten
     + Software nimmt Links-nach-rechts als Leserichtung an
 
+::::
 :::
 
 ## OCR/HTR für arabische Periodika
@@ -785,15 +840,16 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 ## Closing the infrastructural `<gap/>` <br/>Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--)
 
-::: {.c_width-30}
+::: columns-3
+:::: column
 
 ### Ansatz
 
 - Verbindung **vorhandener** Faksimiles und Transkriptionen in einem standardkonformen, offenen Format
 - Scraping, Erzeugung, Validierung und Teilen von offenen bibliographischen Metadaten
 
-:::
-::: {.c_width-30}
+::::
+:::: column
 
 ### Ziele
 
@@ -801,8 +857,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 - Aufbau einer offenen Infrastruktur von Modellen, Workflows, Normdatensätzen
 - Unter den Bedingungen des Globalen Südens
 
-:::
-::: {.c_width-30}
+::::
+:::: column
 
 ### Prinzipien
 
@@ -810,12 +866,14 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 - **wenige**, **offene** und **einfache** Formate und Werkzeuge
 - **kostenfreie** Platformen ohne lock-in
 
+::::
 :::
 
 ## [OpenArabicPE](https://openarabicpe.github.io)
 ### Infrastruktur
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 1. Digitale Editionen, Normdatensätze: [TEI XML](https://tei-c.org/).
 1. Offene Lizenzen: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
@@ -824,11 +882,12 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 3. [Statische Webansichten](https://github.com/openarabicpe/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: Parallele Darstellung von Text und Faksimile.
 4. Bibliographische Metadaten sind als öffentliche [Zotero-Gruppe](https://www.zotero.org/groups/openarabicpe) gehostet
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![[Webansicht von *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png){#fig:webview-muqtabas}
 
+::::
 :::
 
 ## OpenArabicPE
@@ -854,7 +913,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 
 ## SIHAFA
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ### Ziele:
 
@@ -863,8 +923,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 + Hinterfragung etablierter Forschungsnarrative
 + Etablierung von "Arab Periodical Studies"
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Fragen
 
@@ -873,8 +933,8 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 + Welche Rolle spielt *text reuse*? Wie reisten Texte, Themen, Genres?
 + Wie hat sich die Sprache der Moderne im multilingualen, imperialen Raum etabliert?
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Methoden
 
@@ -885,40 +945,43 @@ Katalogisierungsregeln und algorithmische Copyrightbestimmung verstärken Unzug�
 + Topic modelling
 + Word embeddings
 
+::::
 :::
 
 ## 1. Historisches GIS: Typologie der Periodika <!-- CUT -->
 
 Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rückschlüsse über seine Bedeutung
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ### trans-regional
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Muqtabas* (Kairo und Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas-2}
 
-:::
-
-:::{.c_width-30}
+::::
+:::: column
 
 ### regional
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥasnāʾ* (Beirut)](../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### lokal
 
 ![Karte der in den Autorenzeilen erwähnten Orte für  *al-Ḥaqāʾiq* (Damaskus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq-2}
 
+::::
 :::
 
 
 ## Historisches GIS
 ### Voraussetzungen: Daten
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - Erste Quellen: OpenArabicPE
 - Auszeichnung von Orten im modellierten Volltext
@@ -929,8 +992,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Georeferenzierte Orte
     + Probleme: Mangel an historischen Ortsverzeichnissen (gazetteer)
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 - Autor_innenzeile: Maryam Zakā aus Saida
 
@@ -958,16 +1021,18 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 </place>
 ```
 
+::::
 :::
 
 ## 2. Netzwerkanalyse: erwähnte Periodika
 
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Gerichtetes Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika; nach Ausgaben gewichtet. Größe und Farbe der Knoten: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-periodicalsß2}
 
-:::
-:::{.c_width-30}
+::::
+:::: narrow
 
 ### Ziel
 
@@ -983,13 +1048,15 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     - Hochgradig geographisch konzentriert <!-- (10 Orte) -->
 <!--     - Bestätigt den Forschungsschwerpunkt auf Kairo und Beirut -->
 
+::::
 :::
 
 
 ## Netzwerkanalyse: erwähnte Periodika
 ### Voraussetzungen: Daten
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - Erste Quellen: OpenArabicPE, Project Jarāʾid, OCR
 - Auszeichnung aller Erwähnungen von Periodika im modellierten Volltext
@@ -999,8 +1066,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Bibliographie
     + Probleme: geringe Quote in vorhandenen Normdatensätzen
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
 
 
@@ -1018,16 +1085,18 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
 ```
 
+::::
 :::
 
 ## 2. Netzwerkanalyse: Autor_innen
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![Ungerichtetes Netzwerk der Autor_innen in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas*. Farbe der Knoten: betweenness centrality; Größe der Knoten: Anzahl der Periodika; Breite der Kanten: Anzahl der Artikel.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors-2}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ### Ziel
 
@@ -1042,12 +1111,14 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     - praktisch nicht in der Forschung abgebildet
     - Überraschende Zusammensetzung: viele Iraker (6), wenige Syrer (2), wenige Christen (2)
 
+::::
 :::
 
 ## Netzwerkanalyse: Autor_innen
 ### Voraussetzungen: Daten
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - Erste Quellen: OpenArabicPE, Project Jarāʾid
 - Strukturierte bibliographische Daten
@@ -1059,8 +1130,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Werke in Bibliothekskatalogen
     + Probleme: geringe Quote in vorhandenen Normdatensätzen
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 - Personographie-Eintrag für Père Anastase-Marie de Saint-Elie (Normdatensatz), der sich in den Quellen vornehmlich als *Sātisnā* findet.
 
@@ -1080,24 +1151,26 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 </person>
 ```
 
+::::
 :::
 
 ## Problem: Das Netzwerk der Autor_innen umfasst nur 17% aller Artikel
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ### Forschungsstand
 
 - Die Frage der Autorenschaftsbestimmung ist weitgehend ignoriert worden  <!-- standard accounts don't even mention the issue -->
 - Implizite und häufig angenommene Hypothese: die Herausgeber_innen haben alle anonymen Artikel selbst geschrieben
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ![ ](../../assets/clipart/iceberg-2070977_960_720.png){width="100%" height="100%"}
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ### Probleme
 
@@ -1105,6 +1178,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - Wir kennen gar nicht die Namen aller potentiellen Kandidat_innen <!-- (siehe Project Jarāʾid) -->
 - Es ist sehr unwahrscheinlich, dass alles von einer Person verfasst wurde <!-- Autor als Funktion, nicht als Person zu denken -->
 
+::::
 :::
 
 ## 3. Stilometrie zur Autorenschaftsbestimmung
@@ -1117,35 +1191,38 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + abhängig von der Zusammensetzung des Korpus
     + Texte müssen eine Mindestlänge haben
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ![PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von *al-Ḥaqāʾiq*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 - *Lughat al-ʿArab* and *al-Muqtabas* are indistinguishable
 - *al-Ḥaqāʾiq* is different
 - some issues of *al-Muqtabas* are very different
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ![PCA Kovarianzmatrix für die 100 MFWs in einem Korpus von 165 Ausgaben von *al-Ḥaqāʾiq*, *Lughat al-ʿArab* und *al-Muqtabas*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
 
+::::
 :::
 
 ## Stilometrie: erste Experimente
 ### Falsifizierung der Hypothese
 
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Figure: *bootstrap consensus network* von Artikeln in *al-Muqtabas* (Länge >= 5000 Wörter, 100--1000 MFWs). Farbe:  *modularity group*](../../assets/OpenArabicPE/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.svg){#fig:stylometry-muqtabas-w5000}
 
 <!-- modularity group: members of the group have more connections among themselves than with other (groups of) nodes -->
 
-:::
-:::{.c_width-30}
+::::
+:::: narrow
 
 - Stilometrie funktioniert für arabische Periodika
 - <!-- Erfolgreich identifizierte  -->Signale für
@@ -1156,6 +1233,7 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Genre
 <!-- - Falsifizierung der Hypothese: es gibt einen anonymen Autor, der nicht der Herausgeber ist -->
 
+::::
 :::
 
 <!-- - chunking/sampling beeinflusst die Ergebnisse
@@ -1166,7 +1244,8 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 # 6. Schlußbemerkungen <br/>Mind the `<gap/>`!
 ## Mind the `<gap/>`!
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - bei Forschung/Lehre zu Digitalität
 - bei digitaler Forschung/Lehre
@@ -1174,10 +1253,12 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
 - beim Forschungsdatenmanagement
 - ...
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![Graffiti "Du bist so schön, wie eine zusätzliche Stunde Strom", Gaza. Quelle: [Twitter](https://twitter.com/j_zabaneh/status/1366628891817828360)](../../assets/dh/Evc9uxzXEAE8GFw.jpg)
+
+::::
 :::
 
 ## Danke!
@@ -1195,3 +1276,5 @@ Hypothese: geographische Herkunft von Artikeln in einem Periodikum erlaubt Rück
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <till.grallert@fu-berlin.de>
 - Licence: slides and plots are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+## Literatur {#refs}
