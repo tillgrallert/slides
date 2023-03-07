@@ -384,12 +384,12 @@ When does the distance measure become unrealiable?
 
 :::{.c_width-30 .c_right}
 
-Muḥammad Kurd ʿAlī most likely not the author
+Muḥammad Kurd ʿAlī (blue) most likely not the author
 
 :::
 :::{.c_width-60 .c_left}
 
-![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
+![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
 
 :::
 
@@ -417,7 +417,7 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 :::
 :::{.c_width-60 .c_left}
 
-![Anonmyous sections and editors, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
+![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
 
 :::
 
