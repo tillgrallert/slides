@@ -181,7 +181,7 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 - computing network measures with `tidygraph()` and `igraph()`
     + centrality
     + community detection
-- plotting results with `ggpragh()` and `ggplot2()`
+- plotting results with `ggraph()` and `ggplot2()`
 
 
 ::::

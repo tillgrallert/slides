@@ -154,7 +154,7 @@ Based on parameter settings established in our tests
 - computing network measures with `tidygraph()` and `igraph()`
     + centrality
     + community detection
-- plotting results with `ggpragh()` and `ggplot2()`
+- plotting results with `ggraph()` and `ggplot2()`
 
 
 ::::

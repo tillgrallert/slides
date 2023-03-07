@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html  lang="de">
+<html  lang="en-UK">
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
               <meta name="dcterms.date" content="2023-03-07">
-                <title>Computational Approaches to Mundane Texts in Under-Resourced Languages</title>
+                  <meta name="license" content="https://creativecommons.org/licenses/by/4.0/" />
+        <title>Computational Approaches to Mundane Texts in Under-Resourced Languages</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -26,6 +27,69 @@
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
       }
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     </style>
         <link rel="stylesheet" href="https://furesh.github.io/slides/revealjs/dist/theme/none.css" id="theme">
@@ -92,8 +156,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -126,9 +190,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -139,8 +203,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -532,8 +596,10 @@
                     figure {
                         margin-block-start: 0;
                         margin-block-end: 0;
-                        margin-inline-start: 40px;
-                        margin-inline-end: 40px;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
                     }
                     div.figure p.caption,
                     figcaption {
@@ -1388,7 +1454,8 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
 History: Methodological Challenges and Practical Strategies</span>
           </p>
                                 <p class="date">2023-03-07</p>
-                            </div>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2023-bochum/">https://tillgrallert.github.io/slides/dh/2023-bochum/</a></p>
+                  </div>
       </div>
         </section>
 
@@ -1441,15 +1508,12 @@ History: Methodological Challenges and Practical Strategies</span>
         <section id="research-interest-intellectual-networks"
         class="slide level2">
         <h2>Research interest: intellectual networks</h2>
-        <p>There will be a <a
-        href="https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html">paper</a>
-        on Wednesday</p>
         <div class="columns">
         <div class="column">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
-        id="fig:network-authors-2"
+        id="fig:network-authors"
         alt="Figure 2: Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
         <figcaption aria-hidden="true">Figure 2: Undirected network of
         authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
@@ -1551,7 +1615,8 @@ History: Methodological Challenges and Practical Strategies</span>
         </ul>
         </div>
         <div class="column">
-        <h3 id="norm-data">norm data</h3>
+        <h3 id="authority-files-norm-data">authority files / norm
+        data</h3>
         <ul>
         <li><em>Sātisnā</em>
         <ul>
@@ -1572,8 +1637,9 @@ History: Methodological Challenges and Practical Strategies</span>
         </div>
         </section></section>
         <section>
-        <section id="closing-the-gaps" class="title-slide slide level1">
-        <h1>Closing the <code>&lt;gap/&gt;</code>(s)</h1>
+        <section id="closing-some-gaps"
+        class="title-slide slide level1">
+        <h1>Closing some <code>&lt;gap/&gt;</code>(s)</h1>
 
         </section>
         <section id="closing-the-knowledge-gap-project-jarāʾid-2012"
@@ -1589,8 +1655,8 @@ History: Methodological Challenges and Practical Strategies</span>
         <ul>
         <li>websits and open datasets (<a href="https://tei-c.org/">TEI
         XML</a>) for more than 3500 periodicals</li>
-        <li>additional norm data for c.2700 persons, 220 places, 180
-        libraries</li>
+        <li>additional authority files for c.2700 persons, 220 places,
+        180 libraries</li>
         </ul></li>
         <li>Unfunded collaboration with Adam Mestyan (Duke),
         “crowd”-sourcing</li>
@@ -1610,6 +1676,941 @@ History: Methodological Challenges and Practical Strategies</span>
         </figure>
         </div>
         </div>
+        </section>
+        <section id="project-jarāʾid-mind-the-gap" class="slide level2">
+        <h2><a href="https://projectjaraid.github.io/">Project
+        Jarāʾid</a> <br/>Mind the <code>&lt;gap/&gt;</code>!</h2>
+        <p>Knowledge <code>&lt;gap/&gt;</code>s contribute to
+        digitisation biases</p>
+        <div id="tbl:digitisation">
+        <table>
+        <caption>Table 1: Comparison of digitized periodicals between
+        the Global South and the Global North</caption>
+        <colgroup>
+        <col style="width: 11%" />
+        <col style="width: 28%" />
+        <col style="width: 60%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th></th>
+        <th>Arabic periodicals (1798–1918)</th>
+        <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian
+        regional papers</a></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>community</td>
+        <td>c. 420 million Arabic speakers</td>
+        <td>c. 6.2 million inhabitants</td>
+        </tr>
+        <tr class="even">
+        <td>periodicals</td>
+        <td>2054 newspapers and journals</td>
+        <td>125 newspapers</td>
+        </tr>
+        <tr class="odd">
+        <td>digitized</td>
+        <td>156 periodicals</td>
+        <td>125 newspapers with more than 1.5 million pages</td>
+        </tr>
+        <tr class="even">
+        <td>type</td>
+        <td>mostly facsimiles</td>
+        <td>facsimiles and full text</td>
+        </tr>
+        <tr class="odd">
+        <td>access</td>
+        <td>paywalls, geo-fencing</td>
+        <td>open access</td>
+        </tr>
+        <tr class="even">
+        <td>interface</td>
+        <td>mostly foreign languages only</td>
+        <td>local and foreign languages</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </section>
+        <section id="copyright-regimes-paywalls-and-geo-fencing"
+        class="slide level2">
+        <h2>copyright regimes, paywalls, and geo fencing</h2>
+        <p>cataloging rules and algorithmic copyright detection cause
+        further inaccessibilities</p>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
+        id="fig:hathi-muqtabas-global"
+        alt="Figure 6: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 6: <em>al-Muqtabas</em> 6
+        on <a
+        href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
+        (Original in Princeton) outside the USA</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
+        id="fig:hathi-muqtabas-us"
+        alt="Figure 7: The page from fig. 6 with a US-IP" />
+        <figcaption aria-hidden="true">Figure 7: The page from fig. 6
+        with a US-IP</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20.
+        Jahrhundert wird korrekt als 19uu katalogisiert und dann
+        Copyrightstatus sicherheitshalber als 1999 angenommen.</p>
+        </aside>
+        </section>
+        <section id="text-layers" class="slide level2">
+        <h2>Text layers</h2>
+        <blockquote>
+        <p>For old prints, there’s (cum grano salis) kraken/calamari for
+        coders, Transkribus if you’ve got money and just want to have
+        the results and OCR-D if you’ve got an IT department.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Winkler20230307OCR">(Winkler
+        <span>“@stefan_hessbrueggen @benwbrum @jbaiter you could also
+        use the Line Segmentaktion fromm archive.org and run e.g.
+        calamari on it (has decent…”</span> 2023)</span></cite></p>
+        <ul>
+        <li>Unstructured text, no APIs, propriertary interfaces</li>
+        <li>Algorithms and evaluation are kept secret
+        <ul>
+        <li>unknown numbers of <em>false positives</em> and <em>false
+        negatives</em></li>
+        </ul></li>
+        </ul>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png"
+        alt="al-Muqtabas 6 on HathiTrust, quality of the OCR layer (requires US IP)" />
+        <figcaption aria-hidden="true"><em>al-Muqtabas</em> 6 on <a
+        href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>,
+        quality of the OCR layer (requires US IP)</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
+        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
+        <figcaption aria-hidden="true"><em>al-Bashīr</em> 9 Jan. 1880
+        (#487), p.1 on <a
+        href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
+        quality of the OCR layer</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section
+        id="closing-the-infrastructural-gap-open-arabic-periodical-editions-openarabicpe-2015"
+        class="slide level2">
+        <h2>Closing the infrastructural <code>&lt;gap/&gt;</code>
+        <br/>Open Arabic Periodical Editions (<a
+        href="https://openarabicpe.github.io">OpenArabicPE</a>,
+        2015–)</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="approach">approach</h3>
+        <ul>
+        <li>combine available facsimiles and transcriptions into an open
+        standard format</li>
+        <li>scrape, generate, and share open bibliographic metadata</li>
+        <li>with the affordances of the Global South</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="aims-1">aims</h3>
+        <ul>
+        <li>validate available transcriptions for scholarly (re)use</li>
+        <li>develop an open infrastructure of models, workflows,
+        authority files</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="principles">principles</h3>
+        <ul>
+        <li><strong>established</strong> tools and technologies</li>
+        <li>as <strong>few</strong> as possible, <strong>open</strong>,
+        and <strong>simple</strong> tools and formats</li>
+        <li><strong>free-to-use</strong> platforms without lock-in</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing</li>
+        <li>meaningful connection</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="openarabicpe" class="slide level2">
+        <h2><a
+        href="https://openarabicpe.github.io">OpenArabicPE</a></h2>
+        <h3 id="infrastructure">Infrastructure</h3>
+        <div class="columns">
+        <div class="column">
+        <ol type="1">
+        <li>Digital scholarly editions, authority files: <a
+        href="https://tei-c.org/">TEI/XML</a>.</li>
+        <li>Open licenses: <a
+        href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+        4.0</a> (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)</li>
+        <li>Social digital editions, hosted on <a
+        href="https://github.com/openarabicpe">GitHub</a>:
+        <!-- gradually improve transcription and mark-up --></li>
+        <li>Archived on <a href="https://zenodo.org">Zenodo</a>: DOI for
+        stable citability</li>
+        <li><a
+        href="https://github.com/openarabicpe/tei-boilerplate-arabic-editions">Static
+        webviews</a><!--  (doesn't require a permanent internet connection) -->:
+        parallel display of text and facsimile</li>
+        <li>Bibliographic metadata, hosted through a <a
+        href="https://www.zotero.org/groups/openarabicpe">Zotero
+        group</a>.</li>
+        </ol>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/boilerplate_muqtabas.png"
+        id="fig:webview-muqtabas"
+        alt="Figure 8: Webview of al-Muqtabas 6(2)" />
+        <figcaption aria-hidden="true">Figure 8: <a
+        href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webview
+        of <em>al-Muqtabas</em> 6(2)</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="openarabicpe-1" class="slide level2">
+        <h2>OpenArabicPE</h2>
+        <h3 id="corpus">Corpus</h3>
+        <table>
+        <colgroup>
+        <col style="width: 28%" />
+        <col style="width: 9%" />
+        <col style="width: 15%" />
+        <col style="width: 15%" />
+        <col style="width: 15%" />
+        <col style="width: 15%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th style="text-align: left;">Title</th>
+        <th style="text-align: left;">DOI</th>
+        <th style="text-align: right;">Volumes</th>
+        <th style="text-align: right;">Issues</th>
+        <th style="text-align: right;">Articles</th>
+        <th style="text-align: right;">Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">35</td>
+        <td style="text-align: right;">389</td>
+        <td style="text-align: right;">298090</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">12</td>
+        <td style="text-align: right;">201</td>
+        <td style="text-align: right;">NA</td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+        <td style="text-align: left;"></td>
+        <td style="text-align: right;">35</td>
+        <td style="text-align: right;">537</td>
+        <td style="text-align: right;">4300</td>
+        <td style="text-align: right;">6144593</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+        <td style="text-align: right;">9</td>
+        <td style="text-align: right;">96</td>
+        <td style="text-align: right;">2964</td>
+        <td style="text-align: right;">1981081</td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">42</td>
+        <td style="text-align: right;">435</td>
+        <td style="text-align: right;">221447</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+        <td style="text-align: right;">4</td>
+        <td style="text-align: right;">39</td>
+        <td style="text-align: right;">436</td>
+        <td style="text-align: right;">292333</td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;"><a
+        href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat
+        al-ʿArab</a></td>
+        <td style="text-align: left;"><a
+        href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">34</td>
+        <td style="text-align: right;">939</td>
+        <td style="text-align: right;">373832</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;"><strong>total</strong></td>
+        <td style="text-align: left;"></td>
+        <td style="text-align: right;">56</td>
+        <td style="text-align: right;">795</td>
+        <td style="text-align: right;">9664</td>
+        <td style="text-align: right;">9311376</td>
+        </tr>
+        </tbody>
+        </table>
+        </section></section>
+        <section>
+        <section id="attempts-at-a-digitalcomputational-history"
+        class="title-slide slide level1">
+        <h1>Attempts at a digital/computational history</h1>
+
+        </section>
+        <section id="sihafa-msca-pf" class="slide level2">
+        <h2>SIHAFA (MSCA-PF)</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="aims-2">aims</h3>
+        <ul>
+        <li>systematic analysis of the late Ottoman Arabic press at
+        scale</li>
+        <li>development and evaluation of computational methods</li>
+        <li>challenging established narratives</li>
+        <li>establishing “Arab Periodical Studies”</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="questions">questions</h3>
+        <ul>
+        <li>who are the central actors (people, periodicals) in this
+        discursive field?</li>
+        <li>how were periodicals produced and how to think
+        “authorship”?</li>
+        <li>what is the role of <em>text reuse</em> and how did texts,
+        topics, and genres travel?</li>
+        <li>how did the language of modernity develop in this
+        multilingual, imperial space?</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="methods">methods</h3>
+        <ul>
+        <li>social network analysis (SNA)</li>
+        <li>stilometric authorship attribution</li>
+        <li>historical GIS</li>
+        <li>layout analysis</li>
+        <li>topic modelling</li>
+        <li>…</li>
+        </ul>
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="historical-gis" class="title-slide slide level1">
+        <h1>1. Historical GIS</h1>
+
+        </section>
+        <section id="historical-gis-typology-of-periodicals"
+        class="slide level2">
+        <h2>1. Historical GIS: typology of periodicals <!-- CUT --></h2>
+        <p>Hypothesis: distribution of geographic origin of
+        contributions to a periodical are an indicator about its
+        importance</p>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="trans-regional">trans-regional</h3>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png"
+        id="fig:authors-muqtabas-2"
+        alt="Figure 9: Places in bylines from al-Muqtabas (Cairo and Damascus)" />
+        <figcaption aria-hidden="true">Figure 9: Places in bylines from
+        <em>al-Muqtabas</em> (Cairo and Damascus)</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="regional">regional</h3>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png"
+        id="fig:authors-hasna"
+        alt="Figure 10: Places in bylines from al-Ḥasnāʾ (Beirut)" />
+        <figcaption aria-hidden="true">Figure 10: Places in bylines from
+        <em>al-Ḥasnāʾ</em> (Beirut)</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="local">local</h3>
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png"
+        id="fig:authors-haqaiq-2"
+        alt="Figure 11: Places in bylines fromal-Ḥaqāʾiq (Damascus)" />
+        <figcaption aria-hidden="true">Figure 11: Places in bylines
+        from<em>al-Ḥaqāʾiq</em> (Damascus)</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="historical-gis-1" class="slide level2">
+        <h2>Historical GIS</h2>
+        <h3 id="required-data">Required data</h3>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Initial sources: OpenArabicPE</li>
+        <li>Marked-up place names in the modelled text
+        <ul>
+        <li>bylines</li>
+        <li>reviews</li>
+        <li>problems: no functional NER for late Ottoman Arabic</li>
+        </ul></li>
+        <li>authority files for disambiguation and enriching data
+        <ul>
+        <li>geo-referenced places</li>
+        <li>problems: lack of historical gazetteers</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>Byline: Maryam Zakā from Sayda</li>
+        </ul>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> &lt;<span class="kw">byline</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:9 geon:268064&quot;</span>&gt;صيدا&lt;/<span class="kw">placeName</span>&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2845&quot;</span>&gt;مريم زكا&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">byline</span>&gt;</span></code></pre></div>
+        <ul>
+        <li>Gazetteer entry for Sayda</li>
+        </ul>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">place</span><span class="ot"> type=</span><span class="st">&quot;town&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;place_9&quot;</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">placeName</span><span class="ot"> type=</span><span class="st">&quot;simple&quot;</span>&gt;Saida&lt;/<span class="kw">placeName</span>&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span>&gt;Ṣaydā&lt;/<span class="kw">placeName</span>&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span>&gt;Sidon&lt;/<span class="kw">placeName</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;صيدا&lt;/<span class="kw">placeName</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">location</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">geo</span>&gt;33.55751, 35.37148&lt;/<span class="kw">geo</span>&gt;</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">location</span>&gt;</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;url&quot;</span>&gt;http://en.wikipedia.org/wiki/Sidon&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;geon&quot;</span>&gt;268064&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span>&gt;9&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">place</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>mention the “Historical Middle East Data Alliance” on
+        Github</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="social-network-analysis"
+        class="title-slide slide level1">
+        <h1>2. Social network analysis</h1>
+
+        </section>
+        <section id="social-network-analysis-referenced-periodicals"
+        class="slide level2">
+        <h2>2. Social network analysis: referenced periodicals</h2>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png"
+        id="fig:network-periodicals-2"
+        alt="Figure 12: Direkted network of periodical titles mentioned in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas; weighted by issues. Colour and size of nodes: in-degree. source" />
+        <figcaption aria-hidden="true">Figure 12: Direkted network of
+        periodical titles mentioned in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and
+        <em>al-Muqtabas</em>; weighted by issues. Colour and size of
+        nodes: in-degree. <a
+        href="https://doi.org/10.5281/zenodo.4527698">source</a></figcaption>
+        </figure>
+        </div><div class="narrow">
+        <h3 id="aim">aim</h3>
+        <ul>
+        <li>empirical testing of hypotheses</li>
+        <li>guidance for future digitisation efforts</li>
+        </ul>
+        <h3 id="results">results</h3>
+        <ul>
+        <li>mainly self-referential</li>
+        <li>typology: extent of outward looking</li>
+        <li>core network (44 of 465)
+        <ul>
+        <li>surprising members</li>
+        <li>highly concentrated on a few locations</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>geographic distribution: 10 locations only
+        <ul>
+        <li>The thirty core nodes with identified publication places
+        were published in only a handful of locations: Beirut (9), Cairo
+        (7), Baghdad, Damascus, Paris (3), Alexandria, London, Mount
+        Lebanon, Saida and Zahle (1).</li>
+        </ul></li>
+        <li>confirms the research bias on Cairo</li>
+        <li>Only nine of those (or 2.13 % of all periodicals) were
+        referenced by three journals in our corpus. They are: al-Manār,
+        al-Muqtaṭaf, al-Hilāl and al-Ḍiyāʾ from Cairo, al-Muqtabas
+        itself, alMufīd, al-Waṭan and al-Ḥaqīqa from Beirut and al-Ḥuqūq
+        from Mount Lebanon.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="social-network-analysis-referenced-periodicals-1"
+        class="slide level2">
+        <h2>Social network analysis: referenced periodicals</h2>
+        <h3 id="required-data-1">Required data</h3>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Initial sources: OpenArabicPE, Project Jarāʾid, OCR<br />
+        </li>
+        <li>Mark-up of all references to periodicals in the modelled
+        text:
+        <ul>
+        <li>semi-automatic (regex): tracks pattern of “<span
+        lang="ar">مجلة …</span>”, “<span lang="ar">جريدة …</span>”</li>
+        <li>problems: lack of functional NER for Arabic</li>
+        </ul></li>
+        <li>authority files for disambiguation and enriching data
+        <ul>
+        <li>bibliography</li>
+        <li>problems: absence from existing authority files</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <!-- Zwei Ausschnitte, die verschiedene Periodika mit dem gleichen Titel (*al-Zuhūr*) erwähnen. -->
+        <ul>
+        <li>the journal <em>al-Zuhūr</em> from Cairo</li>
+        </ul>
+        <!-- ägyptische Zeitschrift -->
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>والأصح الدرعية بلام التعريف (راجع &lt;<span class="kw">bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:3 oclc:1034545644&quot;</span>&gt;الزهور&lt;/<span class="kw">title</span>&gt; المصرية  &lt;<span class="kw">biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> from=</span><span class="st">&quot;2&quot;</span><span class="ot"> to=</span><span class="st">&quot;2&quot;</span>&gt;٢&lt;/<span class="kw">biblScope</span>&gt; :  &lt;<span class="kw">biblScope</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="ot"> from=</span><span class="st">&quot;292&quot;</span>&gt;٢٩٢&lt;/<span class="kw">biblScope</span>&gt;&lt;/<span class="kw">bibl</span>&gt;)</span></code></pre></div>
+        <ul>
+        <li>the newspaper <em>al-Zuhūr</em> from Baghdad</li>
+        </ul>
+        <!-- irakische Zeitung -->
+        <div class="sourceCode" id="cb4"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>وانتخب &lt;<span class="kw">persName</span>&gt;فؤاد أفندي الدفتري البغدادي&lt;/<span class="kw">persName</span>&gt; و&lt;<span class="kw">bibl</span>&gt;&lt;<span class="kw">editor</span>&gt;&lt;<span class="kw">persName</span>&gt;نوري أفندي&lt;/<span class="kw">persName</span>&gt;&lt;/<span class="kw">editor</span>&gt; راس كتاب &lt;<span class="kw">textLang</span><span class="ot"> otherLangs=</span><span class="st">&quot;ota&quot;</span>&gt;القسم التركي&lt;/<span class="kw">textLang</span>&gt; في &lt;<span class="kw">bibl</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;newspaper&quot;</span>&gt;جريدة &lt;<span class="kw">title</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:532&quot;</span>&gt;الزهور&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt; البغدادية&lt;/<span class="kw">bibl</span>&gt; نائبين عن &lt;<span class="kw">placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:372 geon:94824&quot;</span>&gt;كربلاء&lt;/<span class="kw">placeName</span>&gt;.</span></code></pre></div>
+        </div>
+        </div>
+        </section>
+        <section id="social-network-analysis-authors"
+        class="slide level2">
+        <h2>2. Social network analysis: authors</h2>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
+        id="fig:network-authors-2"
+        alt="Figure 13: Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption aria-hidden="true">Figure 13: Undirected network of
+        authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
+        betweenness centrality; size of nodes: number of periodicals;
+        width of edges: number of articles.</figcaption>
+        </figure>
+        </div><div class="column">
+        <h3 id="aim-1">aim</h3>
+        <ul>
+        <li>empirical testing of hypotheses</li>
+        <li>guidance for <em>close reading</em></li>
+        </ul>
+        <h3 id="results-1">results</h3>
+        <ul>
+        <li>very limited overlap between periodicals from the same
+        place</li>
+        <li>core network (14 of 319 nodes):
+        <ul>
+        <li>absent from the literature</li>
+        <li>suprising set up: many Iraqis (6), few Syrians (2), few
+        Christians (2)</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="netzwerkanalyse-autor_innen" class="slide level2">
+        <h2>Netzwerkanalyse: Autor_innen</h2>
+        <h3 id="required-data-2">Required data</h3>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Initial data: OpenArabicPE, Project Jarāʾid</li>
+        <li>Strukturierte bibliographische Daten</li>
+        <li>structured bibliographic data
+        <ul>
+        <li>semi-automatic on the basis of the editions</li>
+        <li>manual recording</li>
+        <li>problems: many accronyms, multiple name forms</li>
+        </ul></li>
+        <li>authority files for disambiguation and enriching data
+        <ul>
+        <li>life dates</li>
+        <li>works in library catalogues</li>
+        <li>problems: absence from existing authority files</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>personography entry for Père Anastase-Marie de Saint-Elie,
+        who was mostly referenced as <em>Sātisnā</em> in out
+        sources</li>
+        </ul>
+        <div class="sourceCode" id="cb5"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">person</span>&gt;</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span>&gt;ساتسنا&lt;/<span class="kw">roleName</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span>&gt;أمكح&lt;/<span class="kw">roleName</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;pseudonym&quot;</span>&gt;فهر الجابري&lt;/<span class="kw">roleName</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;rank&quot;</span>&gt;الأب&lt;/<span class="kw">roleName</span>&gt; &lt;<span class="kw">forename</span>&gt;أنستاس&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">forename</span>&gt;ماري&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">surname</span>&gt;&lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span>&gt;الكرملي&lt;/<span class="kw">addName</span>&gt;&lt;/<span class="kw">surname</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">forename</span>&gt;أنستاس&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">forename</span>&gt;ماري&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span>&gt;الألياوي&lt;/<span class="kw">addName</span>&gt; &lt;<span class="kw">surname</span>&gt;&lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span>&gt;الكرملي&lt;/<span class="kw">addName</span>&gt;&lt;/<span class="kw">surname</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">persName</span>&gt;&lt;<span class="kw">forename</span>&gt;بطرس&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span>&gt;بن &lt;<span class="kw">forename</span>&gt;جبرائيل&lt;/<span class="kw">forename</span>&gt;&lt;/<span class="kw">addName</span>&gt; &lt;<span class="kw">forename</span>&gt;يوسف&lt;/<span class="kw">forename</span>&gt; &lt;<span class="kw">surname</span>&gt;عواد&lt;/<span class="kw">surname</span>&gt;&lt;/<span class="kw">persName</span>&gt;</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span>&gt;39370998&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span>&gt;227&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span>&gt;Q4751824&lt;/<span class="kw">idno</span>&gt;</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">birth</span>&gt;&lt;<span class="kw">date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1866-08-05&quot;</span>&gt;1866-08-05&lt;/<span class="kw">date</span>&gt; in &lt;<span class="kw">placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span>&gt;Baghdad&lt;/<span class="kw">placeName</span>&gt;&lt;/<span class="kw">birth</span>&gt;</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">death</span>&gt;&lt;<span class="kw">date</span><span class="ot"> source=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1947-01-07&quot;</span>&gt;1947-01-07&lt;/<span class="kw">date</span>&gt; in &lt;<span class="kw">placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:216 geon:98182&quot;</span>&gt;Baghdad&lt;/<span class="kw">placeName</span>&gt;&lt;/<span class="kw">death</span>&gt;</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">person</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        </section>
+        <section
+        id="network-of-authors-maps-only-the-tip-of-the-iceberg"
+        class="slide level2">
+        <h2>Network of authors maps only the tip of the iceberg</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="state-of-research">state of research</h3>
+        <ul>
+        <li>Commonly ignored in scholarship
+        <!-- standard accounts don't even mention the issue --></li>
+        <li>Common implicit hypothesis: the publisher-cum-editor wrote
+        all articles in “his” periodical</li>
+        </ul>
+        </div>
+        <div class="column">
+        <p><img
+        data-src="../../assets/clipart/iceberg-2070977_960_720.png"
+        style="width:100.0%;height:100.0%" /></p>
+        <p>About 4/5 of all articles or 2/3 of all words carry no
+        byline</p>
+        </div>
+        <div class="column">
+        <h3 id="challenges">challenges</h3>
+        <ul>
+        <li>hypothesis is implausible and untested</li>
+        <li>we do not know the names of all potential authors
+        <!-- (siehe Project Jarāʾid) --></li>
+        <li>stylometric authorship attribution was untested for 19th
+        century Arabic <span class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        <span>“Parameters for Stylometric Authorship Attribution”</span>
+        2022)</span></li>
+        </ul>
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="stylometric-authorship-attribution"
+        class="title-slide slide level1">
+        <h1>3. Stylometric authorship attribution</h1>
+
+        </section>
+        <section id="stylometric-authorship-attribution-1"
+        class="slide level2">
+        <h2>3. Stylometric authorship attribution</h2>
+        <p>Authorship signal is prevalent in most frequent words,
+        i.e. function words</p>
+        <div class="columns">
+        <div class="column">
+        <h3 id="comparative-method">comparative method</h3>
+        <ul>
+        <li>steps:
+        <ol type="1">
+        <li>compute frequencies for every text</li>
+        <li>compare every text with every text</li>
+        <li>validate through voting (<em>consensus</em>) of multiple
+        iterations</li>
+        </ol></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="challenges-1">challenges</h3>
+        <ul>
+        <li>novel application to Arabic and this genre</li>
+        <li>comparison depends on input</li>
+        <li>reliability depends on a minimal length of texts</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>stylometry is old, compution has supercharged it</li>
+        <li>Computational Stylometry Group
+        <ul>
+        <li>Maciej Eder</li>
+        <li>Mike Kestemont</li>
+        <li>Jan Rybicki</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="stylometry" class="slide level2">
+        <h2>Stylometry</h2>
+        <ul>
+        <li>In R with the <code>stylo()</code> package <span
+        class="citation" data-cites="Eder+2016b">(Eder, Rybicki, and
+        Kestemont <span>“Stylometry with R”</span> 2016)</span></li>
+        <li>Based on parameter settings established in our tests <span
+        class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        <span>“Parameters for Stylometric Authorship Attribution”</span>
+        2022)</span></li>
+        </ul>
+        <div class="columns">
+        <div class="column">
+        <h3 id="stylo-settings"><code>stylo()</code> settings</h3>
+        <ul>
+        <li>Tokens: words</li>
+        <li>Sampling: 2500 tokens</li>
+        <li>Most Frequent Features: 200–500 tokens, incremented by
+        100</li>
+        <li>Culling: 0</li>
+        <li>distance measure: Eder’s simple delta</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="analysis">Analysis</h3>
+        <ul>
+        <li>edges (and nodes) tables from <code>stylo()</code></li>
+        <li>computing network measures with <code>tidygraph()</code> and
+        <code>igraph()</code>
+        <ul>
+        <li>centrality</li>
+        <li>community detection</li>
+        </ul></li>
+        <li>plotting results with <code>ggraph()</code> and
+        <code>ggplot2()</code></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Maxim designed and ran parameter test on a corpus of 300
+        nineteenth-century books</li>
+        <li>I confirmed the viability of these settings in my work on
+        periodicals</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="owners-cum-editors-as-authors"
+        class="slide level2">
+        <h2>owners-cum-editors as authors?</h2>
+        <h3 id="al-muqtabas"><em>al-Muqtabas</em></h3>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png"
+        id="fig:network-muqtabas-sect-auth"
+        alt="Figure 14: Anonmyous sections in al-Muqtabas and articles by potential editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)" />
+        <figcaption aria-hidden="true">Figure 14: Anonmyous sections in
+        <em>al-Muqtabas</em> and articles by potential editors, coloured
+        by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī,
+        green = Anastās al-Karmalī)</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <ul>
+        <li>Muḥammad Kurd ʿAlī most likely not the author</li>
+        <li>Neither Anastās Karmalī or Kāẓim al-Dujaylī from <em>Lughat
+        al-ʿArab</em></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="owners-cum-editors-as-authors-1"
+        class="slide level2">
+        <h2>owners-cum-editors as authors?</h2>
+        <h3 id="al-muqtabas-1"><em>al-Muqtabas</em></h3>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png"
+        id="fig:network-muqtabas-sect-comm"
+        alt="Figure 15: Anonmyous sections in al-Muqtabas and articles by potential editors, coloured by community" />
+        <figcaption aria-hidden="true">Figure 15: Anonmyous sections in
+        <em>al-Muqtabas</em> and articles by potential editors, coloured
+        by community</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <p>Multiple anonymous candidates?</p>
+        </div>
+        </div>
+        </section>
+        <section id="owners-cum-editors-as-authors-2"
+        class="slide level2">
+        <h2>owners-cum-editors as authors?</h2>
+        <h3 id="lughat-al-ʿarab"><em>Lughat al-ʿArab</em></h3>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png"
+        id="fig:network-lughat-sect-auth"
+        alt="Figure 16: Anonmyous sections in Lughat al-ʿArab and articles by potential editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)" />
+        <figcaption aria-hidden="true">Figure 16: Anonmyous sections in
+        <em>Lughat al-ʿArab</em> and articles by potential editors,
+        coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim
+        al-Duhaylī, green = Anastās al-Karmalī)</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
+        more likely</p>
+        </div>
+        </div>
+        </section>
+        <section id="owners-cum-editors-as-authors-3"
+        class="slide level2">
+        <h2>owners-cum-editors as authors?</h2>
+        <h3 id="lughat-al-ʿarab-1"><em>Lughat al-ʿArab</em></h3>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png"
+        id="fig:network-lughat-sect-comm"
+        alt="Figure 17: Anonmyous sections in Lughat al-ʿArab and articles by potential editors, coloured by community" />
+        <figcaption aria-hidden="true">Figure 17: Anonmyous sections in
+        <em>Lughat al-ʿArab</em> and articles by potential editors,
+        coloured by community</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
+        more likely</p>
+        </div>
+        </div>
+        </section>
+        <section id="stylistic-differences-between-journals"
+        class="slide level2">
+        <h2>stylistic differences between journals</h2>
+        <h3 id="importance-of-genre">Importance of genre</h3>
+        <div class="columns">
+        <div class="wide">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-issues-authors-size_degree-colour_publication.png"
+        alt="5 periodicals from OpenArabicPE + 6 works by one of the editors" />
+        <figcaption aria-hidden="true">5 periodicals from OpenArabicPE +
+        6 works by one of the editors</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <ul>
+        <li>very limited similarity between <em>al-Muqtabas</em> and its
+        editor Muḥammad Kurd ʿAlī</li>
+        </ul>
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="thank-you" class="title-slide slide level1">
+        <h1>Thank you!</h1>
+
+        </section>
+        <section id="thank-you-1" class="slide level2">
+        <h2>Thank you!</h2>
+        <ul>
+        <li><p>Contributors to Project Jarāʾid: Hala Auji, Philippe
+        Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold,
+        Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole
+        Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan,
+        Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek,
+        Philip Sadgrove, Ola Seif, and Rogier Visser</p></li>
+        <li><p>Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar
+        Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob
+        Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias
+        Sick, Manzi Tanna-Händel, and Layla Youssef</p></li>
+        <li><p>Maxim Romanov for his work on parameter testing</p></li>
+        <li><p>Contributors to OCR: Adam Mestyan, Sinai Rusinek</p></li>
+        <li><p>Links:</p>
+        <ul>
+        <li>slides: <a
+        href="https://tillgrallert.github.io/slides/dh/2023-bochum/index.html">https://tillgrallert.github.io/slides/dh/2023-bochum</a></li>
+        <li>publications:
+        <ul>
+        <li><span class="citation" data-cites="Grallert+2020">(Grallert
+        <span>“Catch Me If You Can!”</span> 2021)</span></li>
+        <li><span class="citation"
+        data-cites="Grallert2022DHQ">(Grallert <span>“Open Arabic
+        Periodical Editions: A Framework for Bootstrapped Scholarly
+        Editions Outside the Global North”</span> 2022)</span></li>
+        </ul></li>
+        <li>project URLs: <a
+        href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a>,
+        <a
+        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a>,</li>
+        <li>social media
+        <ul>
+        <li>Mastodon: <a
+        href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
+        <li>Twitter: <a
+        href="https://twitter.com/tillgrallert">@tillgrallert</a></li>
+        </ul></li>
+        <li>email: <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        </ul></li>
+        <li><p>Licence: slides and plots are licenced as <a
+        href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+        4.0</a></p></li>
+        </ul>
+        </section>
+        <section id="refs" class="slide level2">
+        <h2>Literatur</h2>
         </section></section>
       </div>
     </div>
@@ -1620,7 +2621,7 @@ History: Methodological Challenges and Practical Strategies</span>
     <script src="https://furesh.github.io/slides/revealjs/plugin/notes/notes.js"></script>
     <script src="https://furesh.github.io/slides/revealjs/plugin/search/search.js"></script>
     <script src="https://furesh.github.io/slides/revealjs/plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -1766,13 +2767,13 @@ History: Methodological Challenges and Practical Strategies</span>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-                                        
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -1792,7 +2793,11 @@ History: Methodological Challenges and Practical Strategies</span>
                     <span class="c_left">2023-03-07</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
-                        <!-- this should probably moved to the title slide only -->
+                        <span class="c_center">
+          <a href="https://tillgrallert.github.io/slides/dh/2023-bochum/">https://tillgrallert.github.io/slides/dh/2023-bochum/</a>
+          <span>https://creativecommons.org/licenses/by/4.0/</span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
