@@ -17,7 +17,7 @@ bibliography:
 suppress-bibliography: true
 url: https://tillgrallert.github.io/slides/dh/2023-bochum/
 license: https://creativecommons.org/licenses/by/4.0/
-revealjs-url: https://furesh.github.io/slides/revealjs
+revealjs-url: /Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs # https://furesh.github.io/slides/revealjs
 markdown: pandoc
 tags:
     - digital humanities
@@ -85,7 +85,7 @@ tags:
 ::: columns
 :::: column
 
-![Direkted network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png){#fig:network-periodicals}
+![Direkted network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png){#fig:network-periodicals}
 
 ::::
 :::: column
@@ -159,9 +159,45 @@ tags:
 ::::
 :::
 
-## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>Mind the `<gap/>`!
+## [Project Jarāʾid](https://projectjaraid.github.io/)
+### Collection and digitisation biases
 
-Knowledge `<gap/>`s contribute to digitisation biases
+::: columns
+:::: column
+
+![Periodicals and their holding institutions](../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png){#fig:holding-map}
+
+::::
+:::: column
+
+|      periodicals       | --1918 | --1929 |
+|------------------------|--------|--------|
+| published              |   2054 |   3550 |
+| known holdings         |    540 |    775 |
+| % of total             |  26.29 |  21.83 |
+|------------------------|--------|--------|
+| digitized              |    156 |    233 |
+| % of total             |   7.59 |   6.56 |
+|------------------------|--------|--------|
+| multiple digitizations |     51 |     66 |
+| % of total             |   2.48 |   1.86 |
+| % of digitized         |  32.69 |  28.33 |
+
+Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
+
+::::
+:::
+
+::: notes
+
+- collection bias is more of a knowledge bias
+- While the digitization quote of roughly 50% of titles in collections is surprisingly high, it must be kept in mind that we cannot resolve information on the extent of digitization. Even if only a single issue of hundreds published was digitized, the periodical title will be included in this count.
+- 66 periodicals or 28,33% have been digitized by multiple institutions and 21 of this subset by three and more.
+
+:::
+
+## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>
+### The digitisation bias compared
 
 |             | Arabic periodicals (1798--1918) | [WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de) |
 |-------------|---------------------------------|---------------------------------------------------------------------|
@@ -174,8 +210,44 @@ Knowledge `<gap/>`s contribute to digitisation biases
 
 Table: Comparison of digitized periodicals between the Global South and the Global North {#tbl:digitisation}
 
+## Accessibility
+### Catalogue searches
 
-## copyright regimes, paywalls, and geo fencing
+::: columns-3
+:::: column
+
+No Arabic script
+
+![ZDB Suche nach "الجنة"](../../assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
+
+::::
+:::: column
+
+Which Latinized transcription was used?
+
+![ZDB Suche nach "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
+
+::::
+:::: column
+
+What are the normalization rules for the search algorithm?
+
+![ZDB Suche nach "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
+
+::::
+:::
+
+::: notes
+
+- catalogue could be searched in Arabic but the data is missing
+- Latin input is mostly reduced to ASCII
+    + Hamza and ʿAyn escape this algorithm on ZDB
+- determined article is not automatically removed
+
+:::
+
+## Accessibility
+### copyright regimes, paywalls, and geo fencing
 
 cataloging rules and algorithmic copyright detection cause further inaccessibilities
 
@@ -199,7 +271,8 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 
 :::
 
-## Text layers
+## Accessibility
+### Text layers
 
 >For old prints, there's (cum grano salis) kraken/calamari for coders, Transkribus if you've got money and just want to have the results and OCR-D if you've got an IT department.
 
@@ -286,16 +359,16 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 ## OpenArabicPE
 ### Corpus
 
-| Title                                                                         | DOI                                                              | Volumes | Issues | Articles | Words  |
-| :--------                                                                     | :--                                                              | ----:   | ----:    | ----:   | ----:   |
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | 3       | 35       | 389     | 298090  |
-| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)             | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246) | 1       | 12       | 201     | NA      |
-| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)              |                                                                  | 35      | 537      | 4300    | 6144593 |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | 9       | 96       | 2964    | 1981081 |
-| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)            | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) | 1       | 42       | 435     | 221447  |
-| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | 4       | 39       | 436     | 292333  |
-| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | 3       | 34       | 939     | 373832  |
-| **total**                                                                     |                                                                  | 56      | 795      | 9664    | 9311376 |
+| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
+| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
+| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
 
 
 
@@ -425,10 +498,12 @@ Hypothesis: distribution of geographic origin of contributions to a periodical a
 # 2. Social network analysis
 ## 2. Social network analysis: referenced periodicals
 
+<!-- use Arabic labels -->
+
 ::: columns
 :::: wide
 
-![Direkted network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree. [source](https://doi.org/10.5281/zenodo.4527698)](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png){#fig:network-periodicals-2}
+![Direkted network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree. [source](https://doi.org/10.5281/zenodo.4527698)](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png){#fig:network-periodicals-2}
 
 ::::
 :::: narrow
