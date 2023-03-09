@@ -341,7 +341,7 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 # 1. Historical GIS
 ## 1. Historical GIS: typology of periodicals <!-- CUT -->
 
-Hypothesis: distribution of geographic origin of contributions to a periodical are an indicator about its importance
+Hypothesis: distribution of geographic origin of contributions to a periodical are an indicator for its importance
 
 ::: columns-3
 :::: column
