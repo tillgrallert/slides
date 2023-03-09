@@ -14,10 +14,10 @@ lang: en-UK
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
-suppress-bibliography: true
+suppress-bibliography: false
 url: https://tillgrallert.github.io/slides/dh/2023-bochum/
 license: https://creativecommons.org/licenses/by/4.0/
-revealjs-url: /Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs # https://furesh.github.io/slides/revealjs
+revealjs-url: https://furesh.github.io/slides/revealjs # /Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs # 
 markdown: pandoc
 tags:
     - digital humanities
@@ -140,7 +140,7 @@ tags:
 :::
 
 # Closing some `<gap/>`(s)
-## Closing the knowledge `<gap/>` <br/>[Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
+## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
 ::: columns
 :::: column
@@ -159,8 +159,7 @@ tags:
 ::::
 :::
 
-## [Project Jarāʾid](https://projectjaraid.github.io/)
-### Collection and digitisation biases
+## Collection and digitisation biases
 
 ::: columns
 :::: column
@@ -196,8 +195,7 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
 :::
 
-## [Project Jarāʾid](https://projectjaraid.github.io/) <br/>
-### The digitisation bias compared
+## The digitisation bias compared
 
 |             | Arabic periodicals (1798--1918) | [WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de) |
 |-------------|---------------------------------|---------------------------------------------------------------------|
@@ -247,6 +245,11 @@ What are the normalization rules for the search algorithm?
 :::
 
 ## Accessibility
+### Interfaces
+
+![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription;  green = German metadata](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
+
+## Accessibility
 ### copyright regimes, paywalls, and geo fencing
 
 cataloging rules and algorithmic copyright detection cause further inaccessibilities
@@ -274,7 +277,7 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 ## Accessibility
 ### Text layers
 
->For old prints, there's (cum grano salis) kraken/calamari for coders, Transkribus if you've got money and just want to have the results and OCR-D if you've got an IT department.
+>For old prints, there's [...] kraken/calamari for coders, Transkribus if you've got money and just want to have the results[,] and OCR-D if you've got an IT department.
 
 <cite>[@Winkler20230307OCR]</cite>
 
@@ -391,7 +394,7 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 ### questions
 
 + who are the central actors (people, periodicals) in this discursive field?
-+ how were periodicals produced and how to think "authorship"?
++ how were periodicals produced and how to conceptualise "authorship"?
 + what is the role of *text reuse* and how did texts, topics, and genres travel?
 + how did the language of modernity develop in this multilingual, imperial space?
 
@@ -414,7 +417,7 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 # 1. Historical GIS
 ## 1. Historical GIS: typology of periodicals <!-- CUT -->
 
-Hypothesis: distribution of geographic origin of contributions to a periodical are an indicator for its importance
+Hypothesis: distribution of geographic origin of contributions to a periodical is an indicator for its importance
 
 ::: columns-3
 :::: column
@@ -438,6 +441,12 @@ Hypothesis: distribution of geographic origin of contributions to a periodical a
 ![Places in bylines from*al-Ḥaqāʾiq* (Damascus)](../../assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq-2}
 
 ::::
+:::
+
+::: notes
+
+- *al-Muqtabas* turns the saying “Cairo writes, Beirut publishes and Baghdad reads” upside down with Baghdad well ahead of even Damascus.
+
 :::
 
 
@@ -602,7 +611,6 @@ Hypothesis: distribution of geographic origin of contributions to a periodical a
 :::: column
 
 - Initial data: OpenArabicPE, Project Jarāʾid
-- Strukturierte bibliographische Daten
 - structured bibliographic data
     + semi-automatic on the basis of the editions
     + manual recording
