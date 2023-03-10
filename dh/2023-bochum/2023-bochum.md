@@ -376,7 +376,7 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 
 
 # Attempts at a digital/computational history
-## SIHAFA (MSCA-PF)
+## SIHAFA
 
 ::: columns-3
 :::: column
