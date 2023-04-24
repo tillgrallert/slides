@@ -380,7 +380,7 @@ Für die erwähnte Zeitschrift *al-Bayān* (oclc:792754974)
         * Eingestellte Periodika: *al-Jinān* (1876--86), *al-Ḍiyāʾ* (1898--1906)
         * Ausländische Titel: 
             - Paris: *Le Temps*, *Revue des Revues* and *Revue du Monde Musulman*
-            - London: *The Times*
+            - London: *The Times
 :::
 
 ## Netzwerk erwähnter Periodika
@@ -395,12 +395,29 @@ Für die erwähnte Zeitschrift *al-Bayān* (oclc:792754974)
 
 1. *al-Muqtabas* macht die meisten Verweise
 2. Alle Zeitschriften sind selbstreferentiell
-1. Nur wenige Knoten sind von relativer Bedeutung (101 von 662)
-<!-- 5. Hochgradig geographisch zentralisiert (10 Orte)
-6. Bestätigt den Fokus auf Kairo und Beirut (8 von 9)
-6. Überraschende Mitglieder -->
+1. Nur wenige Knoten sind von relativer Bedeutung (101 von 613)
+    - Hochgradig geographisch zentralisiert (10 Orte)
+    - Überraschende Mitglieder
 
 ::::
+:::
+
+::: notes
+
++ Gesamtnetzwerk: 613 Periodika
+    * *al-Muqtabas* macht die meisten Verweise auch nach Abzug seines größeren Umfangs
+    * 512 Periodika (83.52 %) von nur einer Zeitschrift erwähnt
+    * 421 Periodika (68.68 %) in einer einzigen Ausgabe erwähnt
++ Kernnetzwerk: 
+    * 101 Periodika in mehr als einer Zeitschrift erwähnt
+    * 8 Periodika in 4 Zeitschriften erwähnt
+    * 21 Periodika in 3 Zeitschriften erwähnt
+    * 72 Periodika in 2 Zeitschriften erwähnt
+    + "Überraschende" Mitglieder
+        * Eingestellte Periodika: *al-Jinān* (1876--86), *al-Ḍiyāʾ* (1898--1906)
+        * Ausländische Titel: 
+            - Paris: *Le Temps*, *Revue des Revues* and *Revue du Monde Musulman*
+            - London: *The Times*
 :::
 
 ## Kernnetzwerk
@@ -417,6 +434,98 @@ Für die erwähnte Zeitschrift *al-Bayān* (oclc:792754974)
 5. Hochgradig geographisch zentralisiert (10 Orte)
 6. Bestätigt den Fokus auf Kairo und Beirut (8 von 9)
 6. Überraschende Mitglieder
+
+::::
+:::
+
+::: notes
+
+Kernnetzwerk: 
+    * 101 Periodika in mehr als einer Zeitschrift erwähnt
+        - Sprachen
+            + Arabisch: 89
+            + Französisch: 8
+            + Englisch: 3
+            + Osmanisch: 1
+    * 8 Periodika in 4 Zeitschriften erwähnt
+        - *al-Manār*, *al-Hilāl* and *al-Ḍiyā* aus Kairo
+        - *al-Muqtabas* aus Kairo/ Damaskus
+        - *al-Muqtaṭaf* aus Beirut / Kairo
+        - *al-Mufīd*, *Ḥadīqat al-Akhbār* aus Beirut
+        - *al-Athār* aus Zahle
+        - The centrality of the three Cairene periodicals, *al-Manār*, *al-Muqtaṭaf*, *al-Hilāl*, which were all published by Syrian immigrants, tentatively confirms standard narratives of the Arabic press
+        * The remaining five, however, do not figure prominently in scholarly literature.
+    * 21 Periodika in 3 Zeitschriften erwähnt
+    * 72 Periodika in 2 Zeitschriften erwähnt
+    + "Überraschende" Mitglieder
+        * Eingestellte Periodika: *al-Jinān* (1876--86), *al-Ḍiyāʾ* (1898--1906)
+        * Ausländische Titel: 
+            - Paris: *Le Temps*, *Revue des Revues* and *Revue du Monde Musulman*
+            - London: *The Times*
+
+:::
+
+## Kernnetzwerk
+
+|       title.Latn       | in-degree | in-degree (weighted by issue) | lang |     location    |
+|------------------------|-----------|-------------------------------|------|-----------------|
+| al-Muqtabas            |         4 |                            67 | ar   | Cairo, Damascus |
+| al-Mufīd               |         4 |                            12 | ar   | Beirut          |
+| al-Āthār               |         4 |                             5 | ar   | Zahle           |
+| al-Ḍiyāʾ               |         4 |                            13 | ar   | Cairo           |
+| al-Manār               |         4 |                            19 | ar   | Cairo           |
+| al-Hilāl               |         4 |                            25 | ar   | Cairo           |
+| Ḥadīqat al-Akhbār      |         4 |                             7 | ar   | Beirut          |
+| al-Muqtaṭaf            |         4 |                            17 | ar   | Beirut, Cairo   |
+| al-Zuhūr               |         3 |                            28 | ar   | Cairo           |
+| Lughat al-ʿArab        |         3 |                            32 | ar   | Baghdad         |
+| al-Ḥasnāʾ              |         3 |                            11 | ar   | Beirut          |
+| Sūriyya                |         3 |                             3 | ar   | NA              |
+| al-Waṭan               |         3 |                             6 | NA   | NA              |
+| al-Naṣīr               |         3 |                             4 | NA   | NA              |
+| al-Ḥuqūq               |         3 |                             4 | ar   | Mount Lebanon   |
+| al-ʿAṣr al-Jadīd       |         3 |                             4 | ar   | Damascus        |
+| al-Kulliyya            |         3 |                             3 | ar   | Beirut          |
+| al-Waṭan               |         3 |                             4 | ar   | Beirut          |
+| Lisān al-ʿArab         |         3 |                             3 | ar   | NA              |
+| al-Ikhāʾ               |         3 |                             3 | ar   | Hama            |
+| al-ʿIrfān              |         3 |                            11 | ar   | Sidon           |
+| al-Ḥaqīqa              |         3 |                             4 | ar   | Beirut          |
+| al-Ṭabīb               |         3 |                             4 | ar   | NA              |
+| al-Insāniyya           |         3 |                             4 | NA   | NA              |
+| Le Temps               |         3 |                            12 | fr   | Paris           |
+| al-Ittiḥād al-ʿUthmānī |         3 |                             5 | ar   | Beirut          |
+| al-Mashriq             |         3 |                            15 | ar   | Beirut          |
+| al-Muʾayyad            |         3 |                            19 | NA   | Cairo           |
+| The Times              |         3 |                             8 | en   | London          |
+
+## Kernnetzwerk
+
+::: columns
+:::: column
+
+| Rang | Sprache | Titel |
+|------|---------|-------|
+|    1 | ar      |    89 |
+|    2 | fr      |     8 |
+|    3 | en      |     3 |
+|    4 | ota     |     1 |
+
+::::
+:::: column
+
+| Rang |    Ort     | Titel |
+|------|------------|-------|
+|    1 | Beirut     |    27 |
+|    2 | Cairo      |    18 |
+|    3 | Damascus   |    10 |
+|    4 | Paris      |     7 |
+|    5 | NA         |     5 |
+|    6 | Alexandria |     4 |
+|    7 | Baghdad    |     4 |
+|    8 | Istanbul   |     3 |
+|    9 | Hama       |     2 |
+|   10 | Homs       |     2 |
 
 ::::
 :::
