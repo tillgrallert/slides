@@ -1,17 +1,19 @@
 ---
 title: "Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung"
 panel: "Arab Periodical Studies: Neue Ansätze zu Einer Kulturwissenschaftlichen Zeitschriftenforschung"
-event: ""
 author: 
 	- Till Grallert
 institute: Humboldt-Universität zu Berlin
 date: 2022-09-12 
+event:
+url: https://tillgrallert.github.io/slides/dh/network-analysis/index.html
 ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
 slide-level: 2
+license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
 ## Plan
@@ -229,23 +231,6 @@ Grafiken sind nicht ausreichend und potenziell irreführend
 
 ## Vorhandene Daten?
 
-Kombinationen von *survival*, *collection* und *digitisation biases*
-
-::: columns
-:::: column-60
-
-![Bekannte Sammlungen und Digitalisate arabischer Periodika bis 1929 nach Publikationsort](../../assets/jaraid/map-example_sf_mena_en-status_scatterpie.png){#fig:map-holdings-summary}
-
-::::
-:::: column-30
-
-![In Katalogen dokumentierte Sammlungen arabischer Periodika bis 1929](../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.svg){#fig:map-holdings-catalogues}
-
-::::
-:::
-
-## Vorhandene Daten?
-
 *Survival* und *collection biases* führen zu *digitisation bias*
 
 ::: columns
@@ -383,47 +368,6 @@ Für die erwähnte Zeitschrift *al-Bayān* (oclc:792754974)
 ::::
 :::
 
-## Netzwerk erwähnter Periodika
-
-::: columns
-:::: column-60
-
-![Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika. Größe und Farbe der Knoten: *in-degree*. Kanten: gewichtet nach Anzahl der Ausgaben.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg){#fig:network-mentioned-periodicals}
-
-::::
-:::: column-30
-
-1. *al-Muqtabas* macht die meisten Verweise
-2. Alle Zeitschriften sind selbstreferentiell
-1. Nur wenige Knoten sind von relativer Bedeutung (44 von 465)
-5. Hochgradig geographisch zentralisiert (10 Orte)
-6. Bestätigt den Fokus auf Kairo und Beirut (8 von 9)
-6. Überraschende Mitglieder
-
-::::
-:::
-
-::: notes
-
-+ Gesamtnetzwerk: 465 Periodika
-    * *al-Muqtabas* macht die meisten Verweise auch nach Abzug seines größeren Umfangs
-    * 421, 90% von nur einer Zeitschrift erwähnt
-    * 344 Periodika in einer einzigen Ausgabe erwähnt
-    * 335 Periodika in einem einzigen Artikel erwähnt
-+ Kernnetzwerk: 44 Periodika
-    * 9 Periodika in 3 Zeitschriften erwähnt
-        * *al-Manār*, *al-Muqtaṭaf*, *al-Hilāl* and *al-Ḍiyā* from Cairo
-        * *al-Muqtabas* aus Cairo/ Damaskus
-        * *al-Mufīd*, *al-Waṭan* and *al-Ḥaqīqa* from Beirut
-        * *al-Ḥuqūq* from Mt. Lebanon
-        * The centrality of the three Cairene periodicals, *al-Manār*, *al-Muqtaṭaf*, *al-Hilāl*, which were all published by Syrian immigrants, tentatively confirms standard narratives of the Arabic press
-        * The remaining six, however, do not figure prominently in scholarly literature.
-    + "Überraschende" Mitglieder
-        * Eingestellte Periodika: *al-Jinān* (1876--86), *al-Ḍiyāʾ* (1898--1906)
-        * Ausländische Titel: 
-            - Paris: *Le Temps*, *Revue des Revues* and *Revue du Monde Musulman*
-            - London: *The Times
-:::
 
 ## Netzwerk erwähnter Periodika
 
@@ -607,7 +551,7 @@ Kernnetzwerk:
 
 What most people think I do
 
-![@fig:network-mentioned-periodicals: Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg)
+![@fig:network-mentioned-periodicals-2: Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas* und *al-Zuhūr* erwähnten Periodika.](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png)
 
 ::::
 :::: column
@@ -637,10 +581,10 @@ What I actually do
 - Beiträger_innen zu [OpenArabicPE][openarabicpe_website]: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel, Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Beiträger_innen zu [Project Jarāʾid][jaraid_website]: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
 - Links:
-    + Folien: [https://tinyurl.com/dot2022-grallert-periodicals](https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html)
+    + Folien: [https://tinyurl.com/2023-grallert-network](https://tillgrallert.github.io/slides/dh/network-analysis/index.html)
     + Projektblog: <https://openarabicpe.github.io>
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
-    + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
+    + Mastodon: \@[tillgrallert@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
     + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
 - Lizenz: Folien und Plots sind unter [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) lizensiert
 
