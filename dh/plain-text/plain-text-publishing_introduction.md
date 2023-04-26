@@ -11,7 +11,7 @@ lang: de
 bibliography: 
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 suppress-bibliography: false
-licence: https://creativecommons.org/licenses/by/4.0/
+licence: https://creativecommons.org/licenses/by-sa/4.0/
 markdown: pandoc
 tags:
     - FuReSH

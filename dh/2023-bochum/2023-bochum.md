@@ -16,7 +16,7 @@ bibliography:
     - /Users/Shared/BachUni/applications/applications.csl.json
 suppress-bibliography: false
 url: https://tillgrallert.github.io/slides/dh/2023-bochum/
-license: https://creativecommons.org/licenses/by/4.0/
+license: https://creativecommons.org/licenses/by-sa/4.0/
 revealjs-url: https://furesh.github.io/slides/revealjs # /Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs # 
 markdown: pandoc
 tags:
