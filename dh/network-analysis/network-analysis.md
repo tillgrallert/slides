@@ -244,6 +244,48 @@ Kombinationen von *survival*, *collection* und *digitisation biases*
 ::::
 :::
 
+## Vorhandene Daten?
+
+*Survival* und *collection biases* führen zu *digitisation bias*
+
+::: columns
+:::: column
+
+|       Periodika        | --1918 | --1929 |
+|------------------------|--------|--------|
+| published              |   2054 |   3550 |
+| known holdings         |    540 |    775 |
+| % of total             |  26.29 |  21.83 |
+|------------------------|--------|--------|
+| digitized              |    156 |    233 |
+| % of total             |   7.59 |   6.56 |
+|------------------------|--------|--------|
+| multiple digitizations |     51 |     66 |
+| % of total             |   2.48 |   1.86 |
+| % of digitized         |  32.69 |  28.33 |
+
+::::
+:::: column
+
+![Publikationsorte arabischer Periodika bis 1929. Größe der Kreise: Anzahl der Titel. Farbe zeigt den Sammlungsstatus an: unbekannter Verbleib (rot), bekannte Sammlungen (grün und blau), digitalisiert (blau).](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:holding-stats}
+
+![In Katalogen dokumentierte Sammlungen arabischer Periodika bis 1929](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:holding-map}
+
+::::
+:::
+
+::: notes
+
+- we only know of collections that have been catalogued
+    + 775 of 3550 titles, c. 20%
+- predominantly localed in the Global North
+- digitisation is expensive and mundane sources in "foreign" languages do not matter
+    + 233 or 6,5% digitised
+- uncoordinated efforts
+    + 66 titles or c. 30% have been digitised multiple times
+
+:::
+
 ## Vorhandene Daten!
 
 - [Open Arabic Periodical Editions][openarabicpe_website]: Modellierter Volltext ([TEI XML](http://www.tei-c.org)), Normdaten ([TEI XML](http://www.tei-c.org))
