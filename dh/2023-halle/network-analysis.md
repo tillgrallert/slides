@@ -1,6 +1,6 @@
 ---
 title: "Metapher und Methode"
-panel: "Der Netzwerkbegriff und arabische Zeitschriftenforschung"
+subtitle: "Der Netzwerkbegriff und arabische Zeitschriftenforschung"
 author: 
 	- Till Grallert
     - Yvonne Albers
@@ -8,7 +8,7 @@ institute:
     - Humboldt-Universität zu Berlin
     - Freie Universität Berlin
 date: 2023-04-27
-event:
+event: "Workshop Zeitschriften als Netzwerke"
 url: https://tinyurl.com/2023-grallert-network
 ORCID: orcid.org/0000-0002-5739-8094
 lang: de
