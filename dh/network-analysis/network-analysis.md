@@ -151,7 +151,7 @@ Grafiken sind nicht ausreichend und potenziell irreführend
 ::: columns
 :::: column-60
 
-![Netzwerk der Herausgerber_innen sämtlicher arabischer Periodika, 1800--1929. Größe der Knoten: betweenness centrality](../../assets/OpenArabicPE/networks/network_project-jaraid_people-titles-n-size_betweenness-centrality.svg){#fig:network-editors}
+![Netzwerk der Herausgerber_innen sämtlicher arabischer Periodika, 1800--1929. Größe der Knoten: betweenness centrality](../../assets/sihafa/networks/network_n_person-e_co-editing-layout_fr-label_Latn.png){#fig:network-editors}
 
 ::::
 :::: column-30
