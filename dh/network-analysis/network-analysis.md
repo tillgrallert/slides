@@ -1,10 +1,13 @@
 ---
-title: "Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung"
-panel: "Arab Periodical Studies: Neue Ansätze zu Einer Kulturwissenschaftlichen Zeitschriftenforschung"
+title: "Metapher und Methode"
+panel: "Der Netzwerkbegriff und arabische Zeitschriftenforschung"
 author: 
 	- Till Grallert
-institute: Humboldt-Universität zu Berlin
-date: 2022-09-12 
+    - Yvonne Albers
+institute: 
+    - Humboldt-Universität zu Berlin
+    - Freie Universität Berlin
+date: 2023-04-27
 event:
 url: https://tillgrallert.github.io/slides/dh/network-analysis/index.html
 ORCID: orcid.org/0000-0002-5739-8094
@@ -16,12 +19,15 @@ slide-level: 2
 license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
+# Der Netzwerkbegriff und arabische Zeitschriftenforschung <br/> -------> <br/>Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung
+
+
 ## Plan
 
 ::: columns
 :::: column
 
-![Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* und *al-Muqtabas* erwähnten Periodika.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg)
+![Netzwerk der in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas* und *al-Zuhūr* erwähnten Periodika.](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-1}
 
 ::::
 :::: column
