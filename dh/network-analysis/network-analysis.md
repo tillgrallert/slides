@@ -522,13 +522,16 @@ Kernnetzwerk:
 ::::
 :::
 
-## Geographische Netzwerke
-### Internationale Zeitschriften
+## Kernnetzwerk
+
+![Kernnetzwerk mit zusätzlichen Kanten: Publikationsort und Herausgeber_innen](../../assets/sihafa/networks/network_n_periodical-e_referenced-core-loc-eds-layout_fr-label_Latn.png){#fig:network-periodicals-ref-core-additional-edges}
+
+# Geographische Netzwerke
+## Internationale Zeitschriften
 
 ![1462 in *al-Muqtabas* erwähnte Periodka](../../assets/OpenArabicPE/maps/map-oclc_4770057679-referenced-periodicals-all-source-na_mapped.png){#fig:map-periodicals-muqtabas}
 
-## Geographische Netzwerke
-### Lokale und regionale Zeitschriften
+## Lokale und regionale Zeitschriften
 
 ::: columns
 :::: column
@@ -543,6 +546,32 @@ Kernnetzwerk:
 ![85 in *al-Ḥaqāʾiq* erwähnte Periodka](../../assets/OpenArabicPE/maps/map-oclc_644997575-referenced-periodicals-all-source-na_mapped.png){#fig:map-periodicals-haqaiq}
 
 ::::
+:::
+
+# Andere Anwendungen
+## Stilometrische Autor_innenschaftsbestimmung
+
+*Bootstrap consensus networks* zeigen die relative Ähnlichkeit von Texten und damit die Wahrscheinlichkeit von den gleichen Autor_innen zu stammen.
+
+![ein Spaghettimonster! Bootstrap consensus network. Knoten: Texte; Farbe: Autor_in; Größe: degree. Kanten: Konsens von Eder's simple delta; Farbe: gleiche Autor_in; Breite: Weight](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
+
+::: notes
+
+- stylo() settings
+    + Tokens: words
+    - Sampling: 2500 tokens
+    - Most Frequent Features: 200--500 tokens, incremented by 100
+    - Culling: 0
+    - distance measure: Eder's simple delta
+
+- centrality measure
+    + degree: 
+        * number of connections
+        * local measure
+- authorship
+    + 116 attributed texts
+    + 112 unattributed
+    + 75 authors
 :::
 
 # Schlußbemerkungen
