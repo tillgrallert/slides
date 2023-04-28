@@ -258,9 +258,9 @@ Grafiken sind nicht ausreichend und potenziell irreführend
 ::::
 :::: column
 
-![Publikationsorte arabischer Periodika bis 1929. Größe der Kreise: Anzahl der Titel. Farbe zeigt den Sammlungsstatus an: unbekannter Verbleib (rot), bekannte Sammlungen (grün und blau), digitalisiert (blau).](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:holding-stats}
+![Publikationsorte arabischer Periodika bis 1929. Größe der Kreise: Anzahl der Titel. Farbe zeigt den Sammlungsstatus an: unbekannter Verbleib (rot), bekannte Sammlungen (grün und blau), digitalisiert (blau).](../../assets/jaraid/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:holding-stats}
 
-![In Katalogen dokumentierte Sammlungen arabischer Periodika bis 1929](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:holding-map}
+![In Katalogen dokumentierte Sammlungen arabischer Periodika bis 1929](../../assets/jaraid/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:holding-map}
 
 ::::
 :::
