@@ -1406,10 +1406,11 @@ zu Berlin</p>
                         <span>#DigHis23</span>
           </p>
                                 <p class="date">2023-05-22</p>
-                            </div>
+                              <p class="url"><a href="https://tinyurl.com/dighis23-grallert">https://tinyurl.com/dighis23-grallert</a></p>
+                  </div>
       </div>
         </section>
-                
+
         <section id="outline" class="slide level2">
         <h2>outline</h2>
         <ol type="1">
@@ -1492,9 +1493,6 @@ zu Berlin</p>
         <section id="research-interest-intellectual-networks"
         class="slide level2">
         <h2>Research interest: intellectual networks</h2>
-        <p>There will be a <a
-        href="https://tillgrallert.github.io/slides/dh/2022-dot-periodicals/index.html">paper</a>
-        on Wednesday</p>
         <div class="columns">
         <div class="column">
         <figure id="fig:network-authors-2">
@@ -1777,38 +1775,59 @@ zu Berlin</p>
         </table>
         </div>
         </section>
-        <section id="corpus-1" class="slide level2">
-        <h2>Corpus</h2>
+        <section id="data-set" class="slide level2">
+        <h2>Data set</h2>
         <p>Plain text files of &gt;2500 words</p>
         <div class="columns">
         <div class="column">
         <ul>
-        <li>corpus 1: 303 individual articles
+        <li>data set 1: 303 individual articles
         <ul>
-        <li>76 unique authors</li>
-        <li>190 anonymous articles</li>
+        <li>113 texts by 76 unique authors</li>
+        <li>190 anonymous texts</li>
         </ul></li>
         </ul>
-        <p>-&gt; <strong>very different from Maxim Romanov’s test
-        corpus</strong></p>
+        <p>-&gt; <strong>very different from <span class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        <span>‘Parameters for Stylometric Authorship Attribution’</span>
+        2022)</span>’s test corpus</strong></p>
         </div><div class="column">
         <ul>
-        <li>corpus 2: 88 sections of anonymous articles from 2
+        <li>data set 2: 88 sections of anonymous articles from 2
         journals</li>
-        <li>corpus 3: 246 full issues from 5 journals</li>
-        <li>corpus 4: 6 books by Muḥammad Kurd ʿAlī</li>
+        <li>data set 3: 6 books by Muḥammad Kurd ʿAlī</li>
+        <li>data set 4: 246 full issues from 5 journals</li>
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <ul>
+        <li>my data set
+        <ul>
+        <li>large number of authors with only a small number of
+        text</li>
+        <li>large number of unattributed texts</li>
+        <li>relatively short texts (close to the minimal length)</li>
+        <li>unclear if the actual authors are part of the data set</li>
+        </ul></li>
+        <li>our test data set
+        <ul>
+        <li>300 books from 28 authors</li>
+        <li>from the 19th–early 20th centuries</li>
+        </ul></li>
+        </ul>
+        </aside>
         </section></section>
         <section>
         <section id="results" class="title-slide slide level1">
         <h1>Results</h1>
 
         </section>
-        <section id="articles" class="slide level2">
-        <h2>articles</h2>
-        <p>We found the spaghetti monster!</p>
+        <section id="introducing-the-spaghetti-monster"
+        class="slide level2">
+        <h2>Introducing the spaghetti monster!</h2>
+        <div class="columns">
+        <div class="column">
         <figure id="fig:network-author">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png"
@@ -1816,7 +1835,18 @@ zu Berlin</p>
         <figcaption>Figure 4: Bootstrap consensus network, coloured by
         author</figcaption>
         </figure>
+        </div><div class="column">
+        <ul>
+        <li>stylometric authorship attribution works with this data
+        set</li>
+        <li>results get pretty confusing pretty quickly with this type
+        of data set</li>
+        </ul>
+        </div>
+        </div>
         <aside class="notes">
+        <ul>
+        <li>network
         <ul>
         <li>centrality measure
         <ul>
@@ -1826,11 +1856,19 @@ zu Berlin</p>
         <li>local measure</li>
         </ul></li>
         </ul></li>
-        <li>authorship
+        </ul></li>
+        <li>my data set
         <ul>
-        <li>116 attributed texts</li>
-        <li>112 unattributed</li>
-        <li>75 authors</li>
+        <li>large number of authors with only a small number of text
+        <ul>
+        <li>113 by 76 authors</li>
+        </ul></li>
+        <li>large number of unattributed texts:
+        <ul>
+        <li>190</li>
+        </ul></li>
+        <li>relatively short texts (close to the minimal length)</li>
+        <li>unclear if the actual authors are part of the data set</li>
         </ul></li>
         </ul>
         </aside>
@@ -2227,7 +2265,7 @@ zu Berlin</p>
         <li>Links:
         <ul>
         <li>Slides: <a
-        href="https://tillgrallert.github.io/slides/dh/2022-dot-dh/index.html">https://tinyurl.com/dot2022-grallert-dh</a></li>
+        href="https://tillgrallert.github.io/slides/dh/2023-digital-history/index.html">https://tinyurl.com/dighis23-grallert</a></li>
         <li>Project blog: <a
         href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
         <li>Papers: <a
@@ -2310,7 +2348,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
     <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -2456,13 +2494,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1000,
                         height: 800,
-                                        
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2482,7 +2520,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
                     <span class="c_left">2023-05-22</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
-                        <!-- this should probably moved to the title slide only -->
+                        <span class="c_center">
+          <a href="https://tinyurl.com/dighis23-grallert">https://tinyurl.com/dighis23-grallert</a>
+          <span></span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>

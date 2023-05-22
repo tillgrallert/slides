@@ -9,6 +9,7 @@ email: till.grallert@hu-berlin.de
 date: 2023-05-22 
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
+url: https://tinyurl.com/dighis23-grallert
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
@@ -537,7 +538,7 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 - Maxim Romanov for his work on parameter testing
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
-    + Slides: [https://tinyurl.com/dot2022-grallert-dh](https://tillgrallert.github.io/slides/dh/2022-dot-dh/index.html)
+    + Slides: [https://tinyurl.com/dighis23-grallert](https://tillgrallert.github.io/slides/dh/2023-digital-history/index.html)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
