@@ -59,7 +59,7 @@ nocite: |
 :::: column
 
 <!-- ![Title page of *al-Quds* #331, 10 Jan. 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds} -->
-![First page of the journal [*al-Muqtabas* 1(1)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_1.TEIP5.xml), 1906, Cairo](../../assets/OpenArabicPE/front-pages/al-muqtabas-m-v_1-i_1.tif){#fig:muqtabas-1}
+![First page of the journal [*al-Muqtabas* 1(1)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_1.TEIP5.xml), 1906, Cairo](../../assets/OpenArabicPE/front-pages/al-muqtabas-m-v_1-i_1.png){#fig:muqtabas-1}
 
 ::::
 :::: column
@@ -251,16 +251,16 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 # Corpus and data sets
 ## Corpus
 
-|            Periodical           |       Place       |  Dates[^tb1]  |  Vol.s  |   No.s  |    Words    | Articles | with author | 2500+ words | words/ article | Authors |                               DOI                                |
-| ------------------------------- | ----------------- | ------------- | ------: | ------: |   ------:   | ------:  |   ------:   |    -----:   |    ------:     | ------: |                     ------------------------                     |
-|    [*al-Ḥaqāʾiq*][haqaiq_git]   |      Damascus     |    1910--13   |    3    |    35   |    298090   |   389    |  **41.90**  |      22     |     832.66     |   104   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) |
-|  [*al-Muqtabas*][muqtabas_git]  |  Cairo, Damascus  |    1906--18   |  **9**  |  **96** | **1981081** | **2964** |    12.72    |   **241**   |     873.34     |   140   |  [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)  |
-|     [*al-Zuhūr*][zuhur_git]     |       Cairo       |    1910--13   |    4    |    39   |    292333   |   436    |  **41.51**  |      6      |     695.09     |   112   | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) |
-| [*Lughat al-ʿArab*][lughat_git] |      Baghdad      |    1911--14   |    3    |    34   |    373832   |   939    |    16.19    |      21     |     485.21     |    53   | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
-|              total              |                   |               |    19   |   204   |   2945336   |   4728   |             |     290     |     622.96     |         |                                                                  |
-|                                 |                   |               |         |         |             |          |             |             |                |         |                                                                  |
+| Periodical                      | Place             | Dates[^tb1]   | Vol.s   | No.s    | Words       | Articles | with author     | 2500+ words | words/ article | Authors | DOI                                                              |
+| ------------------------------- | ----------------- | ------------- | ------: | ------: | ------:     | ------:  | ------:         | -----:      | ------:        | ------: | ------------------------                                         |
+| [*al-Ḥaqāʾiq*][haqaiq_git]      | Damascus          | 1910--13      | 3       | 35      | 298090      | 389      | [41.90]{.green} | 22          | 832.66         | 104     | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) |
+| [*al-Muqtabas*][muqtabas_git]   | Cairo, Damascus   | 1906--18      | [9]{.green}   | [96]{.green}  | [1981081]{.green} | [2964]{.green} | [12.72]{.red}   | [241]{.green}     | 873.34         | 140     | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   |
+| [*al-Zuhūr*][zuhur_git]         | Cairo             | 1910--13      | 4       | 39      | 292333      | 436      | [41.51]{.green} | [6]{.red}     | 695.09         | 112     | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) |
+| [*Lughat al-ʿArab*][lughat_git] | Baghdad           | 1911--14      | 3       | 34      | 373832      | 939      | 16.19           | 21          | 485.21         | 53      | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
+| total                           |                   |               | 19      | 204     | 2945336     | 4728     |                 | 290         | 622.96         |         |                                                                  |
+|                                 |                   |               |         |         |             |          |                 |             |                |         |                                                                  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [*al-Ustādh*][ustadh_git]       | Cairo             | 1892--93      |       1 |      42 |      221447 |      435 |        5.52 |          13 |         582.21 |       8 | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) |
+| [*al-Ustādh*][ustadh_git]       | Cairo             | [1892--93]{.red} | 1       | 42      | 221447      | 435      | [5.52]{.red}    | 13          | 582.21         | 8       | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) |
 
 Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.github.io/)" {#tbl:openarabicpe-corpus}
 
