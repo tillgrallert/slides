@@ -21,8 +21,11 @@ nocite: |
 ## outline
 
 1. Background
-2. Method, corpus, data sets
-3. Results
+    - Arab periodical studies
+    - Research question
+2. Method: stylometric authorship attribution
+3. Corpus, data sets
+4. Results
 
 # Background {data-background-image="../../assets/OpenArabicPE/front-pages_strip.png" data-background-size="90%"}
 ## Arabic periodicals
@@ -52,24 +55,38 @@ nocite: |
 
 ## Arabic periodicals
 
-<!-- this slide should be changed to show two pages from our corpus -->
-
-::: columns
+::: columns-3
 :::: column
 
-![Title page of *al-Quds* #331, 10 Jan. 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds}
+<!-- ![Title page of *al-Quds* #331, 10 Jan. 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds} -->
+![First page of the journal [*al-Muqtabas* 1(1)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_1.TEIP5.xml), 1906, Cairo](../../assets/OpenArabicPE/front-pages/al-muqtabas-m-v_1-i_1.tif){#fig:muqtabas-1}
 
 ::::
 :::: column
 
-- Green: Ottoman crescent with 3 stars and slogan of the Young Turk Revolution of 1908: "Liberty, Equality, Fraternity"
+![Front page of the newspaper *al-Iqbāl* #1, 9 April 1902, Beirut](../../assets/OpenArabicPE/front-pages/al-iqbal-v_1-i_1.png){#fig:iqbal-1}
+
+::::
+:::: column
+
+![Front page of the newspaper *Kawkab Amīrkā* #1, 15 April 1892, New York](../../assets/OpenArabicPE/front-pages/kawkab-amirka-v_1-i_1.png){#fig:kawkab-1}
+
+::::
+:::
+
+
+<!-- - Green: Ottoman crescent with 3 stars and slogan of the Young Turk Revolution of 1908: "Liberty, Equality, Fraternity"
 - Blue: French title
 - Red: Date line according to 3 calendars
     + reformed Julian: 28 Dec. 1912
     + Gregorian: 10 Jan. 1913
-    + Islamic: 2 Ṣafar 1331
+    + Islamic: 2 Ṣafar 1331 -->
 
-::::
+::: notes
+
+- striking similarity in layouts of newspapers
+    + despite temporal and geographic distance
+
 :::
 
 ## Research interest: intellectual networks
@@ -234,13 +251,16 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 # Corpus and data sets
 ## Corpus
 
-| Periodical                                                                   | Place             | Dates[^tb1]   | Vol.s                                              | No.s                                                | Words                                                    | Articles                                              | with author                                            | 2500+ words                                          | words/ article | Authors | DOI                                                              |
-| -------------------------------                                              | ----------------- | ------------- | ------:                                            | ------:                                             | ------:                                                  | ------:                                               | ------:                                                | -----:                                               | ------:       | ------: | ------------------------                                         |
-| [[al-Ḥaqāʾiq]{.Transcription custom-style="Transcription"}][haqaiq_git]      | Damascus          | 1910--13      | 3                                                  | 35                                                  | 298090                                                   | 389                                                   | [**41.90**]{.StrongCustom custom-style="StrongCustom"} | 22                                                   | 832.66        | 104     | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) |
-| [[al-Muqtabas]{.Transcription custom-style="Transcription"}][muqtabas_git]   | Cairo, Damascus   | 1906--18      | [**9**]{.StrongCustom custom-style="StrongCustom"} | [**96**]{.StrongCustom custom-style="StrongCustom"} | [**1981081**]{.StrongCustom custom-style="StrongCustom"} | [**2964**]{.StrongCustom custom-style="StrongCustom"} | 12.72                                                  | [**241**]{.StrongCustom custom-style="StrongCustom"} | 873.34        | 140     | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   |
-| [[al-Zuhūr]{.Transcription custom-style="Transcription"}][zuhur_git]         | Cairo             | 1910--13      | 4                                                  | 39                                                  | 292333                                                   | 436                                                   | [**41.51**]{.StrongCustom custom-style="StrongCustom"} | 6                                                    | 695.09        | 112     | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) |
-| [[Lughat al-ʿArab]{.Transcription custom-style="Transcription"}][lughat_git] | Baghdad           | 1911--14      | 3                                                  | 34                                                  | 373832                                                   | 939                                                   | 16.19                                                  | 21                                                   | 485.21        | 53      | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
-| total                                                                        |                   |               | 19                                                 | 204                                                 | 2945336                                                  | 4728                                                  |                                                        | 290                                                  | 622.96        |         |                                                                  |
+|            Periodical           |       Place       |  Dates[^tb1]  |  Vol.s  |   No.s  |    Words    | Articles | with author | 2500+ words | words/ article | Authors |                               DOI                                |
+| ------------------------------- | ----------------- | ------------- | ------: | ------: |   ------:   | ------:  |   ------:   |    -----:   |    ------:     | ------: |                     ------------------------                     |
+|    [*al-Ḥaqāʾiq*][haqaiq_git]   |      Damascus     |    1910--13   |    3    |    35   |    298090   |   389    |  **41.90**  |      22     |     832.66     |   104   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) |
+|  [*al-Muqtabas*][muqtabas_git]  |  Cairo, Damascus  |    1906--18   |  **9**  |  **96** | **1981081** | **2964** |    12.72    |   **241**   |     873.34     |   140   |  [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)  |
+|     [*al-Zuhūr*][zuhur_git]     |       Cairo       |    1910--13   |    4    |    39   |    292333   |   436    |  **41.51**  |      6      |     695.09     |   112   | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) |
+| [*Lughat al-ʿArab*][lughat_git] |      Baghdad      |    1911--14   |    3    |    34   |    373832   |   939    |    16.19    |      21     |     485.21     |    53   | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) |
+|              total              |                   |               |    19   |   204   |   2945336   |   4728   |             |     290     |     622.96     |         |                                                                  |
+|                                 |                   |               |         |         |             |          |             |             |                |         |                                                                  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [*al-Ustādh*][ustadh_git]       | Cairo             | 1892--93      |       1 |      42 |      221447 |      435 |        5.52 |          13 |         582.21 |       8 | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) |
 
 Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.github.io/)" {#tbl:openarabicpe-corpus}
 
@@ -289,25 +309,25 @@ Plain text files of >2500 words
 
 :::
 
-# Results <br/> data set 1
+# Results <br/>data set 1
 ## Introducing the spaghetti monster!
 
 ::: columns
 :::: column
 
-![Bootstrap consensus network, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
+![Bootstrap consensus network of data set 1, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
 
 ::::
 :::: column
 
-- stylometric authorship attribution works with data set 1
-- results get pretty confusing pretty quickly with this type of data set
+![[@fig:network-author], coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_louvain-2022-09-09.png){#fig:network-author-com}
 
 ::::
 :::
 
 ::: notes
-
+- stylometric authorship attribution works with data set 1
+- results get pretty confusing pretty quickly with this type of data set
 - network
     - centrality measure
         + degree: 
@@ -452,128 +472,148 @@ When does the distance measure become unrealiable?
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
-:::{.c_width-30 .c_right}
-
-Muḥammad Kurd ʿAlī (blue) most likely not the author
-
-:::
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
 
+::::
+:::: narrow
+
+Muḥammad Kurd ʿAlī (blue) most likely not the author
+
+::::
 :::
 
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
-:::{.c_width-30 .c_right}
-
-Multiple anonymous candidates?
-
-:::
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
 
+::::
+:::: narrow
+
+Multiple anonymous candidates?
+
+::::
 :::
 
 ## owners-cum-editors as authors?
 ### *Lughat al-ʿArab*
 
-:::{.c_width-30 .c_right}
-
-Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
-
-:::
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
 
+::::
+:::: narrow
+
+Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
+
+::::
 :::
 
 ## owners-cum-editors as authors?
 ### *Lughat al-ʿArab*
 
-:::{.c_width-30 .c_right}
-
-Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
-
-:::
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png)
 
+::::
+:::: narrow
+
+Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
+
+::::
 :::
 
 # Data set 3 <br/>Do periodicals speak with a single voice?
 ## stylistic differences between journals
 ### Auctorial voices?
 
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![Issues of 5 periodicals from Cairo, Damascus, and Baghad](../../assets/OpenArabicPE/stylometry/stylo_network-issues-size_degree-colour_publication.png)
 
-:::
-:::{.c_width-30 .c_right}
+::::
+:::: narrow
 
 - periodicals show distinct stylistic features
 - some similarity between *al-Muqtabas* and *al-Zuhūr*
 
+::::
 :::
 
 ## stylistic differences between journals
 ### *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas*
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ![PCA covariance matrix for the 100 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 - *Lughat al-ʿArab* and *al-Muqtabas* are indistinguishable
 - *al-Ḥaqāʾiq* is different
 - some issues of *al-Muqtabas* are very different
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ![PCA covariance matrix for the 900 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
 
+::::
 :::
+
 
 ## stylistic differences between journals
 ### *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*
 
-:::{.c_width-30}
+::: columns-3
+:::: column
 
 ![PCA covariance matrix for the 100 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-100}
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 - Strong stylistic similarities between all three periodicals
 - some issues of *al-Muqtabas* are very different
 
-:::
-:::{.c_width-30}
+::::
+:::: column
 
 ![PCA covariance matrix for the 900 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-900}
 
+::::
 :::
+
+
+
 
 ## stylistic differences between journals
 ### Importance of genre
 
-:::{.c_width-60 .c_left}
+::: columns
+:::: wide
 
 ![The same 5 periodicals + 6 works by one of the editors](../../assets/OpenArabicPE/stylometry/stylo_network-issues-authors-size_degree-colour_publication.png)
 
-:::
-:::{.c_width-30 .c_right}
+::::
+:::: narrow
 
 - very limited similarity between *al-Muqtabas* and its editor Muḥammad Kurd ʿAlī
 
+::::
 :::
 
 # Thank you!

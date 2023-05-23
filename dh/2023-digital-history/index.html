@@ -1180,8 +1180,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1415,8 +1416,13 @@ zu Berlin</p>
         <section id="outline" class="slide level2">
         <h2>outline</h2>
         <ol type="1">
-        <li>Background</li>
-        <li>Method, corpus, data sets</li>
+        <li>Background
+        <ul>
+        <li>Arab periodical studies</li>
+        <li>Research question</li>
+        </ul></li>
+        <li>Method: stylometric authorship attribution</li>
+        <li>Corpus, data sets</li>
         <li>Results</li>
         </ol>
         </section>
@@ -1467,30 +1473,51 @@ zu Berlin</p>
         </section>
         <section id="arabic-periodicals-1" class="slide level2">
         <h2>Arabic periodicals</h2>
-        <!-- this slide should be changed to show two pages from our corpus -->
-        <div class="columns">
+        <div class="columns-3">
         <div class="column">
-        <figure id="fig:al-quds">
+        <!-- ![Title page of *al-Quds* #331, 10 Jan. 1913](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds} -->
+        <figure id="fig:muqtabas-1">
         <img
-        data-src="../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg"
-        alt="Title page of al-Quds #331, 10 Jan. 1913" />
-        <figcaption>Figure 2: Title page of <em>al-Quds</em> #331, 10
-        Jan. 1913</figcaption>
+        data-src="../../assets/OpenArabicPE/front-pages/al-muqtabas-m-v_1-i_1.tif"
+        alt="First page of the journal al-Muqtabas 1(1), 1906, Cairo" />
+        <figcaption>Figure 2: First page of the journal <a
+        href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_1.TEIP5.xml"><em>al-Muqtabas</em>
+        1(1)</a>, 1906, Cairo</figcaption>
         </figure>
-        </div><div class="column">
+        </div>
+        <div class="column">
+        <figure id="fig:iqbal-1">
+        <img
+        data-src="../../assets/OpenArabicPE/front-pages/al-iqbal-v_1-i_1.png"
+        alt="Front page of the newspaper al-Iqbāl #1, 9 April 1902, Beirut" />
+        <figcaption>Figure 3: Front page of the newspaper
+        <em>al-Iqbāl</em> #1, 9 April 1902, Beirut</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:kawkab-1">
+        <img
+        data-src="../../assets/OpenArabicPE/front-pages/kawkab-amirka-v_1-i_1.png"
+        alt="Front page of the newspaper Kawkab Amīrkā #1, 15 April 1892, New York" />
+        <figcaption>Figure 4: Front page of the newspaper <em>Kawkab
+        Amīrkā</em> #1, 15 April 1892, New York</figcaption>
+        </figure>
+        </div>
+        </div>
+        <!-- - Green: Ottoman crescent with 3 stars and slogan of the Young Turk Revolution of 1908: "Liberty, Equality, Fraternity"
+        - Blue: French title
+        - Red: Date line according to 3 calendars
+            + reformed Julian: 28 Dec. 1912
+            + Gregorian: 10 Jan. 1913
+            + Islamic: 2 Ṣafar 1331 -->
+        <aside class="notes">
         <ul>
-        <li>Green: Ottoman crescent with 3 stars and slogan of the Young
-        Turk Revolution of 1908: “Liberty, Equality, Fraternity”</li>
-        <li>Blue: French title</li>
-        <li>Red: Date line according to 3 calendars
+        <li>striking similarity in layouts of newspapers
         <ul>
-        <li>reformed Julian: 28 Dec. 1912</li>
-        <li>Gregorian: 10 Jan. 1913</li>
-        <li>Islamic: 2 Ṣafar 1331</li>
+        <li>despite temporal and geographic distance</li>
         </ul></li>
         </ul>
-        </div>
-        </div>
+        </aside>
         </section>
         <section id="research-interest-intellectual-networks"
         class="slide level2">
@@ -1501,7 +1528,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
         alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
-        <figcaption>Figure 3: Undirected network of authors in
+        <figcaption>Figure 5: Undirected network of authors in
         <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
         betweenness centrality; size of nodes: number of periodicals;
@@ -1688,7 +1715,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/sihafa/stylometry/parameter-test.png"
         alt="Plot of results from the parameter testing. Source: Romanov and Grallert (‘Parameters for Stylometric Authorship Attribution’ 2022)" />
-        <figcaption>Figure 4: Plot of results from the parameter
+        <figcaption>Figure 6: Plot of results from the parameter
         testing. Source: <span class="citation"
         data-cites="RomanovGrallert2022Stylometry">Romanov and Grallert
         (<span>‘Parameters for Stylometric Authorship
@@ -1742,17 +1769,14 @@ zu Berlin</p>
         <tbody>
         <tr class="odd">
         <td><a
-        href="https://github.com/OpenArabicPE/journal_al-haqaiq"><span
-        class="Transcription"
-        data-custom-style="Transcription">al-Ḥaqāʾiq</span></a></td>
+        href="https://github.com/OpenArabicPE/journal_al-haqaiq"><em>al-Ḥaqāʾiq</em></a></td>
         <td>Damascus</td>
         <td>1910–13</td>
         <td style="text-align: right;">3</td>
         <td style="text-align: right;">35</td>
         <td style="text-align: right;">298090</td>
         <td style="text-align: right;">389</td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>41.90</strong></span></td>
+        <td style="text-align: right;"><strong>41.90</strong></td>
         <td style="text-align: right;">22</td>
         <td style="text-align: right;">832.66</td>
         <td style="text-align: right;">104</td>
@@ -1761,22 +1785,15 @@ zu Berlin</p>
         </tr>
         <tr class="even">
         <td><a
-        href="https://github.com/OpenArabicPE/journal_al-muqtabas"><span
-        class="Transcription"
-        data-custom-style="Transcription">al-Muqtabas</span></a></td>
+        href="https://github.com/OpenArabicPE/journal_al-muqtabas"><em>al-Muqtabas</em></a></td>
         <td>Cairo, Damascus</td>
         <td>1906–18</td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>9</strong></span></td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>96</strong></span></td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>1981081</strong></span></td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>2964</strong></span></td>
+        <td style="text-align: right;"><strong>9</strong></td>
+        <td style="text-align: right;"><strong>96</strong></td>
+        <td style="text-align: right;"><strong>1981081</strong></td>
+        <td style="text-align: right;"><strong>2964</strong></td>
         <td style="text-align: right;">12.72</td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>241</strong></span></td>
+        <td style="text-align: right;"><strong>241</strong></td>
         <td style="text-align: right;">873.34</td>
         <td style="text-align: right;">140</td>
         <td><a
@@ -1784,17 +1801,14 @@ zu Berlin</p>
         </tr>
         <tr class="odd">
         <td><a
-        href="https://www.github.com/openarabicpe/journal_al-zuhur"><span
-        class="Transcription"
-        data-custom-style="Transcription">al-Zuhūr</span></a></td>
+        href="https://www.github.com/openarabicpe/journal_al-zuhur"><em>al-Zuhūr</em></a></td>
         <td>Cairo</td>
         <td>1910–13</td>
         <td style="text-align: right;">4</td>
         <td style="text-align: right;">39</td>
         <td style="text-align: right;">292333</td>
         <td style="text-align: right;">436</td>
-        <td style="text-align: right;"><span class="StrongCustom"
-        data-custom-style="StrongCustom"><strong>41.51</strong></span></td>
+        <td style="text-align: right;"><strong>41.51</strong></td>
         <td style="text-align: right;">6</td>
         <td style="text-align: right;">695.09</td>
         <td style="text-align: right;">112</td>
@@ -1803,9 +1817,8 @@ zu Berlin</p>
         </tr>
         <tr class="even">
         <td><a
-        href="https://github.com/OpenArabicPE/journal_lughat-al-arab"><span
-        class="Transcription" data-custom-style="Transcription">Lughat
-        al-ʿArab</span></a></td>
+        href="https://github.com/OpenArabicPE/journal_lughat-al-arab"><em>Lughat
+        al-ʿArab</em></a></td>
         <td>Baghdad</td>
         <td>1911–14</td>
         <td style="text-align: right;">3</td>
@@ -1832,6 +1845,50 @@ zu Berlin</p>
         <td style="text-align: right;">622.96</td>
         <td style="text-align: right;"></td>
         <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"></td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td style="text-align: right;">—</td>
+        <td>—</td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://github.com/OpenArabicPE/journal_al-ustadh"><em>al-Ustādh</em></a></td>
+        <td>Cairo</td>
+        <td>1892–93</td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">42</td>
+        <td style="text-align: right;">221447</td>
+        <td style="text-align: right;">435</td>
+        <td style="text-align: right;">5.52</td>
+        <td style="text-align: right;">13</td>
+        <td style="text-align: right;">582.21</td>
+        <td style="text-align: right;">8</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
         </tr>
         </tbody>
         </table>
@@ -1885,7 +1942,7 @@ zu Berlin</p>
         <section>
         <section id="results-data-set-1"
         class="title-slide slide level1">
-        <h1>Results <br/> data set 1</h1>
+        <h1>Results <br/>data set 1</h1>
 
         </section>
         <section id="introducing-the-spaghetti-monster"
@@ -1896,21 +1953,25 @@ zu Berlin</p>
         <figure id="fig:network-author">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png"
-        alt="Bootstrap consensus network, coloured by author" />
-        <figcaption>Figure 5: Bootstrap consensus network, coloured by
-        author</figcaption>
+        alt="Bootstrap consensus network of data set 1, coloured by author" />
+        <figcaption>Figure 7: Bootstrap consensus network of data set 1,
+        coloured by author</figcaption>
         </figure>
         </div><div class="column">
+        <figure id="fig:network-author-com">
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_louvain-2022-09-09.png"
+        alt="fig. 7, coloured by community" />
+        <figcaption>Figure 8: fig. 7, coloured by community</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
         <ul>
         <li>stylometric authorship attribution works with data set
         1</li>
         <li>results get pretty confusing pretty quickly with this type
         of data set</li>
-        </ul>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
         <li>network
         <ul>
         <li>centrality measure
@@ -1953,16 +2014,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-dujayli">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png"
-        alt="Detail from fig. 5" />
-        <figcaption>Figure 6: Detail from fig. 5</figcaption>
+        alt="Detail from fig. 7" />
+        <figcaption>Figure 9: Detail from fig. 7</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-dujayli">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png"
-        alt="Radar plot for the unattributed article (20) in fig. 6, “Riḥla ilá Shufāthā”, Lughat al-ʿArab 3(1), Aug. 1913" />
-        <figcaption>Figure 7: Radar plot for the unattributed article
-        (20) in fig. 6, <a
+        alt="Radar plot for the unattributed article (20) in fig. 9, “Riḥla ilá Shufāthā”, Lughat al-ʿArab 3(1), Aug. 1913" />
+        <figcaption>Figure 10: Radar plot for the unattributed article
+        (20) in fig. 9, <a
         href="https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438">“Riḥla
         ilá Shufāthā”, <em>Lughat al-ʿArab</em> 3(1),
         Aug. 1913</a></figcaption>
@@ -1979,16 +2040,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-muqaffa">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png"
-        alt="Detail from fig. 5" />
-        <figcaption>Figure 8: Detail from fig. 5</figcaption>
+        alt="Detail from fig. 7" />
+        <figcaption>Figure 11: Detail from fig. 7</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-muqaffa">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png"
-        alt="Radar plot for the unattributed article (34) in fig. 8, “al-Adab al-ṣaghīr”, al-Muqtabas 3(1), Sep. 1911" />
-        <figcaption>Figure 9: Radar plot for the unattributed article
-        (34) in fig. 8, <a
+        alt="Radar plot for the unattributed article (34) in fig. 11, “al-Adab al-ṣaghīr”, al-Muqtabas 3(1), Sep. 1911" />
+        <figcaption>Figure 12: Radar plot for the unattributed article
+        (34) in fig. 11, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733">“al-Adab
         al-ṣaghīr”, <em>al-Muqtabas</em> 3(1),
         Sep. 1911</a></figcaption>
@@ -2015,16 +2076,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-shakespeare">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_760.png"
-        alt="Detail from fig. 5" />
-        <figcaption>Figure 10: Detail from fig. 5</figcaption>
+        alt="Detail from fig. 7" />
+        <figcaption>Figure 13: Detail from fig. 7</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-shakespeare">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png"
-        alt="Radar plot for the attributed article in fig. 10, Shakespear, “Yūliyūs Qayṣar”, al-Zuhūr 3(4), Oct. 1912" />
-        <figcaption>Figure 11: Radar plot for the attributed article in
-        fig. 10, <a
+        alt="Radar plot for the attributed article in fig. 13, Shakespear, “Yūliyūs Qayṣar”, al-Zuhūr 3(4), Oct. 1912" />
+        <figcaption>Figure 14: Radar plot for the attributed article in
+        fig. 13, <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_27.TEIP5.xml#div_1.d2e1819">Shakespear,
         “Yūliyūs Qayṣar”, <em>al-Zuhūr</em> 3(4),
         Oct. 1912</a></figcaption>
@@ -2056,17 +2117,17 @@ zu Berlin</p>
         <figure id="fig:network-detail-asali">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_460.png"
-        alt="Detail from fig. 5" />
-        <figcaption>Figure 12: Detail from fig. 5</figcaption>
+        alt="Detail from fig. 7" />
+        <figcaption>Figure 15: Detail from fig. 7</figcaption>
         </figure>
         <!-- this is currently the wrong image -->
         </div><div class="column">
         <figure id="fig:radar-asali">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.460_oclc.4770057679_v.4_i.2_div_4.d1e2328_lollipop.png"
-        alt="Radar plot for the attributed article (164) in fig. 12, al-ʿAsalī, “al-Jabāya fī al-Islām”, al-Muqtabas 4(2, 3), Feb., Mar. 1909" />
-        <figcaption>Figure 13: Radar plot for the attributed article
-        (164) in fig. 12, <a
+        alt="Radar plot for the attributed article (164) in fig. 15, al-ʿAsalī, “al-Jabāya fī al-Islām”, al-Muqtabas 4(2, 3), Feb., Mar. 1909" />
+        <figcaption>Figure 16: Radar plot for the attributed article
+        (164) in fig. 15, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_38.TEIP5.xml#div_4.d1e2328">al-ʿAsalī,
         “al-Jabāya fī al-Islām”, <em>al-Muqtabas</em> 4(2, 3), Feb.,
         Mar. 1909</a></figcaption>
@@ -2082,6 +2143,10 @@ zu Berlin</p>
         2(4) in a footnote, which, however, is not part of the
         transcription from Shamela</li>
         </ul></li>
+        <li>authors:
+        <ul>
+        <li>482: Jamāl al-Dīn al-Qāsimī</li>
+        </ul></li>
         </ul>
         </aside>
         </section>
@@ -2096,16 +2161,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-seignobos">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png"
-        alt="Detail from fig. 5" />
-        <figcaption>Figure 14: Detail from fig. 5</figcaption>
+        alt="Detail from fig. 7" />
+        <figcaption>Figure 17: Detail from fig. 7</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-seignobos">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.741_oclc.4770057679_v.2_i.5_div_9.d1e1431_lollipop.png"
-        alt="Radar plot for the attributed article (201) in fig. 14, Seignobos, “al-Yūnān”, al-Muqtabas 2(5), June 1907" />
-        <figcaption>Figure 15: Radar plot for the attributed article
-        (201) in fig. 14, <a
+        alt="Radar plot for the attributed article (201) in fig. 17, Seignobos, “al-Yūnān”, al-Muqtabas 2(5), June 1907" />
+        <figcaption>Figure 18: Radar plot for the attributed article
+        (201) in fig. 17, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_17.TEIP5.xml#div_9.d1e1431">Seignobos,
         “al-Yūnān”, <em>al-Muqtabas</em> 2(5), June
         1907</a></figcaption>
@@ -2132,10 +2197,8 @@ zu Berlin</p>
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="al-muqtabas"><em>al-Muqtabas</em></h3>
-        <div class="c_width-30 c_right">
-        <p>Muḥammad Kurd ʿAlī (blue) most likely not the author</p>
-        </div>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png"
@@ -2144,16 +2207,17 @@ zu Berlin</p>
         coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim
         al-Duhaylī, green = Anastās al-Karmalī)</figcaption>
         </figure>
+        </div><div class="narrow">
+        <p>Muḥammad Kurd ʿAlī (blue) most likely not the author</p>
+        </div>
         </div>
         </section>
         <section id="owners-cum-editors-as-authors-1"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="al-muqtabas-1"><em>al-Muqtabas</em></h3>
-        <div class="c_width-30 c_right">
-        <p>Multiple anonymous candidates?</p>
-        </div>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png"
@@ -2161,17 +2225,17 @@ zu Berlin</p>
         <figcaption aria-hidden="true">Anonmyous sections and editors,
         coloured by community</figcaption>
         </figure>
+        </div><div class="narrow">
+        <p>Multiple anonymous candidates?</p>
+        </div>
         </div>
         </section>
         <section id="owners-cum-editors-as-authors-2"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="lughat-al-ʿarab"><em>Lughat al-ʿArab</em></h3>
-        <div class="c_width-30 c_right">
-        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
-        more likely</p>
-        </div>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png"
@@ -2180,17 +2244,18 @@ zu Berlin</p>
         coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim
         al-Duhaylī, green = Anastās al-Karmalī)</figcaption>
         </figure>
+        </div><div class="narrow">
+        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
+        more likely</p>
+        </div>
         </div>
         </section>
         <section id="owners-cum-editors-as-authors-3"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="lughat-al-ʿarab-1"><em>Lughat al-ʿArab</em></h3>
-        <div class="c_width-30 c_right">
-        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
-        more likely</p>
-        </div>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png"
@@ -2198,19 +2263,26 @@ zu Berlin</p>
         <figcaption aria-hidden="true">Anonmyous sections and editors,
         coloured by community</figcaption>
         </figure>
+        </div><div class="narrow">
+        <p>Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī
+        more likely</p>
+        </div>
         </div>
         </section></section>
         <section>
-        <section id="do-periodicals-speak-with-a-single-voice"
+        <section
+        id="data-set-3-do-periodicals-speak-with-a-single-voice"
         class="title-slide slide level1">
-        <h1>Do periodicals speak with a single voice?</h1>
+        <h1>Data set 3 <br/>Do periodicals speak with a single
+        voice?</h1>
 
         </section>
         <section id="stylistic-differences-between-journals"
         class="slide level2">
         <h2>stylistic differences between journals</h2>
         <h3 id="auctorial-voices">Auctorial voices?</h3>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-issues-size_degree-colour_publication.png"
@@ -2218,13 +2290,13 @@ zu Berlin</p>
         <figcaption aria-hidden="true">Issues of 5 periodicals from
         Cairo, Damascus, and Baghad</figcaption>
         </figure>
-        </div>
-        <div class="c_width-30 c_right">
+        </div><div class="narrow">
         <ul>
         <li>periodicals show distinct stylistic features</li>
         <li>some similarity between <em>al-Muqtabas</em> and
         <em>al-Zuhūr</em></li>
         </ul>
+        </div>
         </div>
         </section>
         <section id="stylistic-differences-between-journals-1"
@@ -2233,17 +2305,18 @@ zu Berlin</p>
         <h3
         id="al-ḥaqāʾiq-lughat-al-ʿarab-and-al-muqtabas"><em>al-Ḥaqāʾiq</em>,
         <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></h3>
-        <div class="c_width-30">
+        <div class="columns-3">
+        <div class="column">
         <figure id="fig:pca-halumu-100">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption>Figure 16: PCA covariance matrix for the 100 MFWs in
+        <figcaption>Figure 19: PCA covariance matrix for the 100 MFWs in
         a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and
         <em>al-Muqtabas</em></figcaption>
         </figure>
         </div>
-        <div class="c_width-30">
+        <div class="column">
         <ul>
         <li><em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em> are
         indistinguishable</li>
@@ -2251,15 +2324,16 @@ zu Berlin</p>
         <li>some issues of <em>al-Muqtabas</em> are very different</li>
         </ul>
         </div>
-        <div class="c_width-30">
+        <div class="column">
         <figure id="fig:pca-halumu-900">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption>Figure 17: PCA covariance matrix for the 900 MFWs in
+        <figcaption>Figure 20: PCA covariance matrix for the 900 MFWs in
         a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and
         <em>al-Muqtabas</em></figcaption>
         </figure>
+        </div>
         </div>
         </section>
         <section id="stylistic-differences-between-journals-2"
@@ -2267,39 +2341,42 @@ zu Berlin</p>
         <h2>stylistic differences between journals</h2>
         <h3 id="lughat-al-ʿarab-al-muqtabas-and-al-zuhūr"><em>Lughat
         al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></h3>
-        <div class="c_width-30">
+        <div class="columns-3">
+        <div class="column">
         <figure id="fig:pca-lumuzu-100">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 18: PCA covariance matrix for the 100 MFWs in
+        <figcaption>Figure 21: PCA covariance matrix for the 100 MFWs in
         a corpus of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and
         <em>al-Zuhūr</em></figcaption>
         </figure>
         </div>
-        <div class="c_width-30">
+        <div class="column">
         <ul>
         <li>Strong stylistic similarities between all three
         periodicals</li>
         <li>some issues of <em>al-Muqtabas</em> are very different</li>
         </ul>
         </div>
-        <div class="c_width-30">
+        <div class="column">
         <figure id="fig:pca-lumuzu-900">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 19: PCA covariance matrix for the 900 MFWs in
+        <figcaption>Figure 22: PCA covariance matrix for the 900 MFWs in
         a corpus of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and
         <em>al-Zuhūr</em></figcaption>
         </figure>
+        </div>
         </div>
         </section>
         <section id="stylistic-differences-between-journals-3"
         class="slide level2">
         <h2>stylistic differences between journals</h2>
         <h3 id="importance-of-genre">Importance of genre</h3>
-        <div class="c_width-60 c_left">
+        <div class="columns">
+        <div class="wide">
         <figure>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-issues-authors-size_degree-colour_publication.png"
@@ -2307,12 +2384,12 @@ zu Berlin</p>
         <figcaption aria-hidden="true">The same 5 periodicals + 6 works
         by one of the editors</figcaption>
         </figure>
-        </div>
-        <div class="c_width-30 c_right">
+        </div><div class="narrow">
         <ul>
         <li>very limited similarity between <em>al-Muqtabas</em> and its
         editor Muḥammad Kurd ʿAlī</li>
         </ul>
+        </div>
         </div>
         </section></section>
         <section>
