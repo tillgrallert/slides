@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2023-05-22">
+              <meta name="dcterms.date" content="2023-05-24">
                 <title>Looking at the iceberg from below the waterline</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -111,8 +111,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -145,9 +145,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -158,8 +158,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -1393,7 +1393,8 @@
           <h1 class="title">Looking at the iceberg from below the
 waterline</h1>
                     <h2 class="subtitle">Stylometric authorship
-attribution for anonymous periodical articles</h2>
+attribution for anonymous articles in Arabic periodicals from the early
+twentieth century</h2>
                     <div class="columns">
           <div class="column c_left c_left-align">
                       <p class="author">
@@ -1405,7 +1406,7 @@ zu Berlin</p>
                     <p class="event">
                         <span>#DigHis23</span>
           </p>
-                                <p class="date">2023-05-22</p>
+                                <p class="date">2023-05-24</p>
                               <p class="url"><a href="https://tinyurl.com/dighis23-grallert">https://tinyurl.com/dighis23-grallert</a></p>
                   </div>
       </div>
@@ -1415,7 +1416,7 @@ zu Berlin</p>
         <h2>outline</h2>
         <ol type="1">
         <li>Background</li>
-        <li>Method and corpus</li>
+        <li>Method, corpus, data sets</li>
         <li>Results</li>
         </ol>
         </section>
@@ -1466,6 +1467,7 @@ zu Berlin</p>
         </section>
         <section id="arabic-periodicals-1" class="slide level2">
         <h2>Arabic periodicals</h2>
+        <!-- this slide should be changed to show two pages from our corpus -->
         <div class="columns">
         <div class="column">
         <figure id="fig:al-quds">
@@ -1639,6 +1641,66 @@ zu Berlin</p>
         </ul>
         </aside>
         </section>
+        <section id="parameter-testing" class="slide level2">
+        <h2>Parameter testing</h2>
+        <p><span class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        <span>‘Parameters for Stylometric Authorship Attribution’</span>
+        2022)</span></p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li><a href="https://zenodo.org/record/5772261">corpus</a>
+        <ul>
+        <li>300 books from 28 authors</li>
+        <li>19th and early 20th century</li>
+        </ul></li>
+        <li>parameters
+        <ul>
+        <li>MFF: 100–500 tokens and character n-grams in increments of
+        100</li>
+        <li>culling: 0–50% in increments of 10</li>
+        <li>distance measure: all 14</li>
+        <li>sample length: 100 to 12000 tokens in increments of 100</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>testing
+        <ul>
+        <li>all possible combinations</li>
+        <li>Ward’s clustering (<code>ward.D2</code> in
+        <code>hclust</code>) for authors and works</li>
+        </ul></li>
+        <li>infrastructure
+        <ul>
+        <li>Server from the <a href="">KITAB project</a></li>
+        <li>20–30 cores</li>
+        <li>multiple weeks</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="parameter-testing-1" class="slide level2">
+        <h2>Parameter testing</h2>
+        <figure id="fig:param-test">
+        <img
+        data-src="../../assets/sihafa/stylometry/parameter-test.png"
+        alt="Plot of results from the parameter testing. Source: Romanov and Grallert (‘Parameters for Stylometric Authorship Attribution’ 2022)" />
+        <figcaption>Figure 4: Plot of results from the parameter
+        testing. Source: <span class="citation"
+        data-cites="RomanovGrallert2022Stylometry">Romanov and Grallert
+        (<span>‘Parameters for Stylometric Authorship
+        Attribution’</span> 2022)</span></figcaption>
+        </figure>
+        </section></section>
+        <section>
+        <section id="corpus-and-data-sets"
+        class="title-slide slide level1">
+        <h1>Corpus and data sets</h1>
+
+        </section>
         <section id="corpus" class="slide level2">
         <h2>Corpus</h2>
         <div id="tbl:openarabicpe-corpus">
@@ -1775,26 +1837,23 @@ zu Berlin</p>
         </table>
         </div>
         </section>
-        <section id="data-set" class="slide level2">
-        <h2>Data set</h2>
+        <section id="data-sets" class="slide level2">
+        <h2>Data sets</h2>
         <p>Plain text files of &gt;2500 words</p>
         <div class="columns">
         <div class="column">
         <ul>
-        <li>data set 1: 303 individual articles
+        <li><strong>data set 1</strong>: 303 individual articles
         <ul>
         <li>113 texts by 76 unique authors</li>
         <li>190 anonymous texts</li>
         </ul></li>
         </ul>
-        <p>-&gt; <strong>very different from <span class="citation"
-        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
-        <span>‘Parameters for Stylometric Authorship Attribution’</span>
-        2022)</span>’s test corpus</strong></p>
         </div><div class="column">
         <ul>
-        <li>data set 2: 88 sections of anonymous articles from 2
-        journals</li>
+        <li><strong>data set 2</strong>: 88 sections of anonymous
+        articles from 2 journals: <em>al-Muqtabas</em> and <em>Lughat
+        al-ʿArab</em></li>
         <li>data set 3: 6 books by Muḥammad Kurd ʿAlī</li>
         <li>data set 4: 246 full issues from 5 journals</li>
         </ul>
@@ -1802,14 +1861,19 @@ zu Berlin</p>
         </div>
         <aside class="notes">
         <ul>
-        <li>my data set
+        <li>data set 1: test the method
         <ul>
         <li>large number of authors with only a small number of
         text</li>
         <li>large number of unattributed texts</li>
         <li>relatively short texts (close to the minimal length)</li>
         <li>unclear if the actual authors are part of the data set</li>
+        <li>-&gt; <strong>very different from <span class="citation"
+        data-cites="RomanovGrallert2022Stylometry">(Romanov and Grallert
+        <span>‘Parameters for Stylometric Authorship Attribution’</span>
+        2022)</span>’s test corpus</strong></li>
         </ul></li>
+        <li>data set 2: test the hypothesis</li>
         <li>our test data set
         <ul>
         <li>300 books from 28 authors</li>
@@ -1819,8 +1883,9 @@ zu Berlin</p>
         </aside>
         </section></section>
         <section>
-        <section id="results" class="title-slide slide level1">
-        <h1>Results</h1>
+        <section id="results-data-set-1"
+        class="title-slide slide level1">
+        <h1>Results <br/> data set 1</h1>
 
         </section>
         <section id="introducing-the-spaghetti-monster"
@@ -1832,13 +1897,13 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png"
         alt="Bootstrap consensus network, coloured by author" />
-        <figcaption>Figure 4: Bootstrap consensus network, coloured by
+        <figcaption>Figure 5: Bootstrap consensus network, coloured by
         author</figcaption>
         </figure>
         </div><div class="column">
         <ul>
-        <li>stylometric authorship attribution works with this data
-        set</li>
+        <li>stylometric authorship attribution works with data set
+        1</li>
         <li>results get pretty confusing pretty quickly with this type
         of data set</li>
         </ul>
@@ -1888,16 +1953,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-dujayli">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_396.png"
-        alt="Detail from fig. 4" />
-        <figcaption>Figure 5: Detail from fig. 4</figcaption>
+        alt="Detail from fig. 5" />
+        <figcaption>Figure 6: Detail from fig. 5</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-dujayli">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.472450345_v.3_i.1_div_7.d2e1438_lollipop.png"
-        alt="Radar plot for the unattributed article (20) in fig. 5, “Riḥla ilá Shufāthā”, Lughat al-ʿArab 3(1), Aug. 1913" />
-        <figcaption>Figure 6: Radar plot for the unattributed article
-        (20) in fig. 5, <a
+        alt="Radar plot for the unattributed article (20) in fig. 6, “Riḥla ilá Shufāthā”, Lughat al-ʿArab 3(1), Aug. 1913" />
+        <figcaption>Figure 7: Radar plot for the unattributed article
+        (20) in fig. 6, <a
         href="https://openarabicpe.github.io/journal_lughat-al-arab/tei/oclc_472450345-i_25.TEIP5.xml#div_7.d2e1438">“Riḥla
         ilá Shufāthā”, <em>Lughat al-ʿArab</em> 3(1),
         Aug. 1913</a></figcaption>
@@ -1914,16 +1979,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-muqaffa">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_185.png"
-        alt="Detail from fig. 4" />
-        <figcaption>Figure 7: Detail from fig. 4</figcaption>
+        alt="Detail from fig. 5" />
+        <figcaption>Figure 8: Detail from fig. 5</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-muqaffa">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png"
-        alt="Radar plot for the unattributed article (34) in fig. 7, “al-Adab al-ṣaghīr”, al-Muqtabas 3(1), Sep. 1911" />
-        <figcaption>Figure 8: Radar plot for the unattributed article
-        (34) in fig. 7, <a
+        alt="Radar plot for the unattributed article (34) in fig. 8, “al-Adab al-ṣaghīr”, al-Muqtabas 3(1), Sep. 1911" />
+        <figcaption>Figure 9: Radar plot for the unattributed article
+        (34) in fig. 8, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733">“al-Adab
         al-ṣaghīr”, <em>al-Muqtabas</em> 3(1),
         Sep. 1911</a></figcaption>
@@ -1950,16 +2015,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-shakespeare">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_760.png"
-        alt="Detail from fig. 4" />
-        <figcaption>Figure 9: Detail from fig. 4</figcaption>
+        alt="Detail from fig. 5" />
+        <figcaption>Figure 10: Detail from fig. 5</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-shakespeare">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png"
-        alt="Radar plot for the attributed article in fig. 9, Shakespear, “Yūliyūs Qayṣar”, al-Zuhūr 3(4), Oct. 1912" />
-        <figcaption>Figure 10: Radar plot for the attributed article in
-        fig. 9, <a
+        alt="Radar plot for the attributed article in fig. 10, Shakespear, “Yūliyūs Qayṣar”, al-Zuhūr 3(4), Oct. 1912" />
+        <figcaption>Figure 11: Radar plot for the attributed article in
+        fig. 10, <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_27.TEIP5.xml#div_1.d2e1819">Shakespear,
         “Yūliyūs Qayṣar”, <em>al-Zuhūr</em> 3(4),
         Oct. 1912</a></figcaption>
@@ -1991,17 +2056,17 @@ zu Berlin</p>
         <figure id="fig:network-detail-asali">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_460.png"
-        alt="Detail from fig. 4" />
-        <figcaption>Figure 11: Detail from fig. 4</figcaption>
+        alt="Detail from fig. 5" />
+        <figcaption>Figure 12: Detail from fig. 5</figcaption>
         </figure>
         <!-- this is currently the wrong image -->
         </div><div class="column">
         <figure id="fig:radar-asali">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.460_oclc.4770057679_v.4_i.2_div_4.d1e2328_lollipop.png"
-        alt="Radar plot for the attributed article (164) in fig. 11, al-ʿAsalī, “al-Jabāya fī al-Islām”, al-Muqtabas 4(2, 3), Feb., Mar. 1909" />
-        <figcaption>Figure 12: Radar plot for the attributed article
-        (164) in fig. 11, <a
+        alt="Radar plot for the attributed article (164) in fig. 12, al-ʿAsalī, “al-Jabāya fī al-Islām”, al-Muqtabas 4(2, 3), Feb., Mar. 1909" />
+        <figcaption>Figure 13: Radar plot for the attributed article
+        (164) in fig. 12, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_38.TEIP5.xml#div_4.d1e2328">al-ʿAsalī,
         “al-Jabāya fī al-Islām”, <em>al-Muqtabas</em> 4(2, 3), Feb.,
         Mar. 1909</a></figcaption>
@@ -2031,16 +2096,16 @@ zu Berlin</p>
         <figure id="fig:network-detail-seignobos">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png"
-        alt="Detail from fig. 4" />
-        <figcaption>Figure 13: Detail from fig. 4</figcaption>
+        alt="Detail from fig. 5" />
+        <figcaption>Figure 14: Detail from fig. 5</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:radar-seignobos">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/stylo_oape.741_oclc.4770057679_v.2_i.5_div_9.d1e1431_lollipop.png"
-        alt="Radar plot for the attributed article (201) in fig. 13, Seignobos, “al-Yūnān”, al-Muqtabas 2(5), June 1907" />
-        <figcaption>Figure 14: Radar plot for the attributed article
-        (201) in fig. 13, <a
+        alt="Radar plot for the attributed article (201) in fig. 14, Seignobos, “al-Yūnān”, al-Muqtabas 2(5), June 1907" />
+        <figcaption>Figure 15: Radar plot for the attributed article
+        (201) in fig. 14, <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_17.TEIP5.xml#div_9.d1e1431">Seignobos,
         “al-Yūnān”, <em>al-Muqtabas</em> 2(5), June
         1907</a></figcaption>
@@ -2057,12 +2122,13 @@ zu Berlin</p>
         </aside>
         </section></section>
         <section>
-        <section id="owners-cum-editors-as-authors"
+        <section id="results-data-set-2-owners-cum-editors-as-authors"
         class="title-slide slide level1">
-        <h1>owners-cum-editors as authors?</h1>
+        <h1>Results <br/> data set 2: owners-cum-editors as
+        authors?</h1>
 
         </section>
-        <section id="owners-cum-editors-as-authors-1"
+        <section id="owners-cum-editors-as-authors"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="al-muqtabas"><em>al-Muqtabas</em></h3>
@@ -2080,7 +2146,7 @@ zu Berlin</p>
         </figure>
         </div>
         </section>
-        <section id="owners-cum-editors-as-authors-2"
+        <section id="owners-cum-editors-as-authors-1"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="al-muqtabas-1"><em>al-Muqtabas</em></h3>
@@ -2097,7 +2163,7 @@ zu Berlin</p>
         </figure>
         </div>
         </section>
-        <section id="owners-cum-editors-as-authors-3"
+        <section id="owners-cum-editors-as-authors-2"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="lughat-al-ʿarab"><em>Lughat al-ʿArab</em></h3>
@@ -2116,7 +2182,7 @@ zu Berlin</p>
         </figure>
         </div>
         </section>
-        <section id="owners-cum-editors-as-authors-4"
+        <section id="owners-cum-editors-as-authors-3"
         class="slide level2">
         <h2>owners-cum-editors as authors?</h2>
         <h3 id="lughat-al-ʿarab-1"><em>Lughat al-ʿArab</em></h3>
@@ -2172,7 +2238,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 100 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption>Figure 15: PCA covariance matrix for the 100 MFWs in
+        <figcaption>Figure 16: PCA covariance matrix for the 100 MFWs in
         a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and
         <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -2190,7 +2256,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 900 MFWs in a corpus of al-Ḥaqāʾiq, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption>Figure 16: PCA covariance matrix for the 900 MFWs in
+        <figcaption>Figure 17: PCA covariance matrix for the 900 MFWs in
         a corpus of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and
         <em>al-Muqtabas</em></figcaption>
         </figure>
@@ -2206,7 +2272,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 100 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 17: PCA covariance matrix for the 100 MFWs in
+        <figcaption>Figure 18: PCA covariance matrix for the 100 MFWs in
         a corpus of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and
         <em>al-Zuhūr</em></figcaption>
         </figure>
@@ -2223,7 +2289,7 @@ zu Berlin</p>
         <img
         data-src="../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png"
         alt="PCA covariance matrix for the 900 MFWs in a corpus of Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 18: PCA covariance matrix for the 900 MFWs in
+        <figcaption>Figure 19: PCA covariance matrix for the 900 MFWs in
         a corpus of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and
         <em>al-Zuhūr</em></figcaption>
         </figure>
@@ -2319,6 +2385,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         North’</span>. Edited by Roopika Risam and Alex Gil. <em>Digital
         Humanities Quarterly</em> 16 (2, "Minimal Computing"). <a
         href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
+        </div>
+        <div id="ref-Romanov+2021" class="csl-entry" role="listitem">
+        Romanov, Maxim. 2021. <span>‘A Corpus of Arabic Literature
+        (19-20th centuries) for Stylometric Tests’</span>. Zenodo. <a
+        href="https://doi.org/10.5281/zenodo.5772261">https://doi.org/10.5281/zenodo.5772261</a>.
         </div>
         <div id="ref-RomanovGrallert2022Stylometry" class="csl-entry"
         role="listitem">
@@ -2517,7 +2588,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2023-05-22</span>
+                    <span class="c_left">2023-05-24</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">

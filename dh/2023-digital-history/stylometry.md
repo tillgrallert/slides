@@ -1,12 +1,12 @@
 ---
 title: "Looking at the iceberg from below the waterline"
-subtitle: "Stylometric authorship attribution for anonymous periodical articles"
+subtitle: "Stylometric authorship attribution for anonymous articles in Arabic periodicals from the early twentieth century"
 panel: ""
 event: "#DigHis23"
 author: Till Grallert
 institute: Humboldt-Universität zu Berlin
 email: till.grallert@hu-berlin.de
-date: 2023-05-22 
+date: 2023-05-24 
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
 url: https://tinyurl.com/dighis23-grallert
@@ -15,13 +15,13 @@ bibliography:
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
 nocite: |
-    @Grallert2022DHQ; @Grallert+2020
+    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry
 ---
 
 ## outline
 
 1. Background
-2. Method and corpus
+2. Method, corpus, data sets
 3. Results
 
 # Background {data-background-image="../../assets/OpenArabicPE/front-pages_strip.png" data-background-size="90%"}
@@ -51,6 +51,8 @@ nocite: |
 ![Distribution of new Arabic periodical titles, 1799--1929](../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif){#fig:map-jaraid}
 
 ## Arabic periodicals
+
+<!-- this slide should be changed to show two pages from our corpus -->
 
 ::: columns
 :::: column
@@ -193,6 +195,43 @@ Authorship signal is prevalent in most frequent words, i.e. function words
 
 :::
 
+## Parameter testing
+
+[@RomanovGrallert2022Stylometry]
+
+::: columns
+:::: column
+
+- [corpus](https://zenodo.org/record/5772261)
+    + 300 books from 28 authors
+    + 19th and early 20th century
+- parameters
+    + MFF: 100--500 tokens and character n-grams in increments of 100
+    + culling: 0--50% in increments of 10 
+    + distance measure: all 14
+    + sample length: 100 to 12000 tokens in increments of 100
+
+::::
+:::: column
+
+- testing
+    + all possible combinations
+    + Ward’s clustering (`ward.D2` in `hclust`) for authors and works
+- infrastructure
+    + Server from the [KITAB project]()
+    + 20--30 cores
+    + multiple weeks
+
+::::
+:::
+
+## Parameter testing
+
+
+![Plot of results from the parameter testing. Source: @RomanovGrallert2022Stylometry](../../assets/sihafa/stylometry/parameter-test.png){#fig:param-test}
+
+
+# Corpus and data sets
 ## Corpus
 
 | Periodical                                                                   | Place             | Dates[^tb1]   | Vol.s                                              | No.s                                                | Words                                                    | Articles                                              | with author                                            | 2500+ words                                          | words/ article | Authors | DOI                                                              |
@@ -213,23 +252,22 @@ Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.g
 [ustadh_git]: https://github.com/OpenArabicPE/journal_al-ustadh
 [zuhur_git]: https://www.github.com/openarabicpe/journal_al-zuhur
 
-## Data set
+## Data sets
 
 Plain text files of >2500 words
 
 ::: columns
 :::: column
 
-- data set 1: 303 individual articles
+- **data set 1**: 303 individual articles
     + 113 texts by 76 unique authors
     + 190 anonymous texts
 
--> **very different from [@RomanovGrallert2022Stylometry]'s test corpus**
 
 ::::
 :::: column
 
-- data set 2: 88 sections of anonymous articles from 2 journals
+- **data set 2**: 88 sections of anonymous articles from 2 journals: *al-Muqtabas* and *Lughat al-ʿArab*
 - data set 3: 6 books by Muḥammad Kurd ʿAlī
 - data set 4: 246 full issues from 5 journals
 
@@ -238,18 +276,20 @@ Plain text files of >2500 words
 
 ::: notes
 
-- my data set
+- data set 1: test the method
     - large number of authors with only a small number of text
     - large number of unattributed texts
     - relatively short texts (close to the minimal length)
     + unclear if the actual authors are part of the data set
+    + -> **very different from [@RomanovGrallert2022Stylometry]'s test corpus**
+- data set 2: test the hypothesis
 - our test data set
     + 300 books from 28 authors 
     + from the 19th–early 20th centuries 
 
 :::
 
-# Results
+# Results <br/> data set 1
 ## Introducing the spaghetti monster!
 
 ::: columns
@@ -260,13 +300,14 @@ Plain text files of >2500 words
 ::::
 :::: column
 
-- stylometric authorship attribution works with this data set
+- stylometric authorship attribution works with data set 1
 - results get pretty confusing pretty quickly with this type of data set
 
 ::::
 :::
 
 ::: notes
+
 - network
     - centrality measure
         + degree: 
@@ -279,6 +320,7 @@ Plain text files of >2500 words
         + 190
     - relatively short texts (close to the minimal length)
     + unclear if the actual authors are part of the data set
+    
 :::
 
 # Zooming in: <br/>Individual authors
@@ -374,6 +416,8 @@ Texts by Shukrī al-ʿAsalī, later MP for Damascus and co-editor of one of Mu�
 - This information could also be gathered from close reading
     + based on the title
     + the text in *al-Muqtabas* 4(2) mentions the one in 2(4) in a footnote, which, however, is not part of the transcription from Shamela
+- authors:
+    + 482: Jamāl al-Dīn al-Qāsimī
 
 :::
 
@@ -404,7 +448,7 @@ When does the distance measure become unrealiable?
 :::
 
 
-# owners-cum-editors as authors?
+# Results <br/> data set 2: owners-cum-editors as authors?
 ## owners-cum-editors as authors?
 ### *al-Muqtabas*
 
@@ -461,7 +505,7 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 
 :::
 
-# Do periodicals speak with a single voice?
+# Data set 3 <br/>Do periodicals speak with a single voice?
 ## stylistic differences between journals
 ### Auctorial voices?
 
