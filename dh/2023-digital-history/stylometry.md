@@ -374,7 +374,7 @@ A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited b
 ::::
 :::: column
 
-![Radar plot for the unattributed article (34) in @fig:network-detail-muqaffa, ["al-Adab al-ṣaghīr", *al-Muqtabas* 3(1), Sep. 1911](https://OpenArabicPE.github.io/journal_al-muqtabas/teioclc_4770057679-i_25.TEIP5.xml#div_3.d1e733)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png){#fig:radar-muqaffa}
+![Radar plot for the unattributed article (34) in @fig:network-detail-muqaffa, ["al-Adab al-ṣaghīr", *al-Muqtabas* 3(1), Sep. 1911](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_25.TEIP5.xml#div_3.d1e733)](../../assets/OpenArabicPE/stylometry/stylo_NN_oclc.4770057679_v.3_i.1_div_3.d1e733_lollipop.png){#fig:radar-muqaffa}
 
 ::::
 :::
