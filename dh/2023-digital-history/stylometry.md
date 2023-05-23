@@ -475,7 +475,7 @@ When does the distance measure become unrealiable?
 ::: columns
 :::: wide
 
-![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
+![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/sihafa/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
 
 ::::
 :::: narrow
@@ -491,7 +491,7 @@ Muḥammad Kurd ʿAlī (blue) most likely not the author
 ::: columns
 :::: wide
 
-![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
+![Anonmyous sections and editors, coloured by community](../../assets/sihafa/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
 
 ::::
 :::: narrow
