@@ -275,6 +275,18 @@ Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.g
 [ustadh_git]: https://github.com/OpenArabicPE/journal_al-ustadh
 [zuhur_git]: https://www.github.com/openarabicpe/journal_al-zuhur
 
+::: notes
+
+- human-transcribed full text from a major Arabic shadow library
+- modelled in TEI/XML
+- mark-up of  
+    + sections
+    + articles
+    + heads
+    + bylines, as far as they exist
+
+:::
+
 ## Data sets
 
 Plain text files of >2500 words
