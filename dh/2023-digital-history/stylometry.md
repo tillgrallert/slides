@@ -4,7 +4,10 @@ subtitle: "Stylometric authorship attribution for anonymous articles in Arabic p
 panel: ""
 event: "#DigHis23"
 author: Till Grallert
-institute: Humboldt-Universität zu Berlin
+institute: 
+    - Scholarly Makerspace
+    - Universitätsbibliothek
+    - Humboldt-Universität zu Berlin
 email: till.grallert@hu-berlin.de
 date: 2023-05-24 
 ORCID: orcid.org/0000-0002-5739-8094
