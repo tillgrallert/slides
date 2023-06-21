@@ -8,7 +8,7 @@ institute:
     - Scholarly Makerspace
 date: 2023-06-27
 event: "History, Digitisation, and Archive"
-url: https://tinyurl.com/2023-grallert-network
+url: https://tillgrallert.github.io/slides/dh/2023-regensburg/
 ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 bibliography: 
@@ -214,19 +214,18 @@ Table: Comparison of digitized periodicals between the Global South and the Glob
 ## Digitisation biases
 ### Quality of metadata
 
-- Faulty throughout
-- Unstructured
+Bibliographic metadata is faulty throughout, mostly unstructured, and subject to *linguistic imperialism*
 
 ::: columns
 :::: column
 
-![[@oclc_4770057679-i_61-div_21.d1e2838] on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
+![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
 
 ::::
 :::: column
 
-![Facsimile of the same section as in @fig:muqtabas-6-2-shamela [@oclc_4770057679-i_61-div_21.d1e2838] from [EAP](https://eap.bl.uk/
-)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.png){#fig:muqtabas-6-2-133-eap}
+![Facsimile of the same section of @oclc_4770057679-i_61-div_21.d1e2838 from [EAP](https://eap.bl.uk/
+)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap}
 
 ::::
 :::
@@ -235,6 +234,9 @@ Table: Comparison of digitized periodicals between the Global South and the Glob
 
 - faulty on shadow libraries and official digitisation efforts
     - publication dates
+        + inferred from vol. and issue number: 1 Ṣafar 1329 aH / c. 1 February 1911
+        + EAP: March 1911
+        + secondary sources: probably delayed by up to four months
     - volume and issue numbers
         + shamela: no.61
         + correct: vol. 6, no. 2
@@ -249,38 +251,77 @@ Table: Comparison of digitized periodicals between the Global South and the Glob
 :::
 
 ## Digitisation biases
-### Automated character recognition
+### Traditional OCR
 
->For old prints, there's [...] kraken/calamari for coders, Transkribus if you've got money and just want to have the results[,] and OCR-D if you've got an IT department.
+>language [is] not currently OCRable.
 
-<cite>[@Winkler20230307OCR]</cite>
-
-- Unstructured text, no APIs, propriertary interfaces
-- Algorithms and evaluation are kept secret
-    +  unknown numbers of *false positives* and *false negatives*
+<cite>Archive.org's item description for [@KurdAli+1923+GharaibAlGharba]</cite>
 
 ::: columns
-:::: column
+:::: wide
 
-![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), quality of the OCR layer (requires US IP)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png)
+
+| Font Type          | Sakhr (%)           | ABBYY (%)           | RDI(%)              | Tesseract (%)       |
+| -----------------  | -------:            | --------:           | ------:             | -----------:        |
+| Traditional Arabic | 48.54               | 67.66               | [**51.88**]{.green} | 47.04               |
+| Tahoma             | 10.52               | 69.91               | 26.38               | 38.37               |
+| Simplified Arabic  | 52.97               | 67.69               | 44.94               | 46.75               |
+| M Unicode Sara     | 36.03               | 59.40               | 25.92               | 33.72               |
+| Diwani letter      | [**18.13**]{.red}   | [**18.47**]{.red}   | [**18.13**]{.red}   | [**23.32**]{.red}   |
+| DecoType Thuluth   | 36.12               | 37.71               | 24.26               | 32.48               |
+| Deco'Type Naskh    | 48.88               | 50.22               | 41.63               | 40.92               |
+| Arabic transparent | 51.56               | [**75.19**]{.green} | 46.00               | [**48.61**]{.green} |
+| Andalus            | 28.07               | 37.53               | 21.68               | 25.34               |
+| AdvertisingBold    | [**57.35**]{.green} | 70.26               | 27.20               | 39.39               |
+
+Table: Evaluation of traditional OCR software for Arabic font types from [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]. Values show percentage of correctly recognised characters {#tbl:ocr-ar-trad}
 
 ::::
-:::: column
+:::: narrow
 
-![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), quality of the OCR layer](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png)
+<!-- ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), quality of the OCR layer (requires US IP)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png) -->
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), quality of the OCR layer](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png){#fig:gpa-ocr}
 
 ::::
 :::
 
 ::: notes
 
-- problems
+- technical problems
     + layout recognition
     + segmentation
     + text recognition
 - what do you do if you have none of the resources mentioned in the toot
+- problems with platform providers
+    + Unstructured text, no APIs, propriertary interfaces
+    + Algorithms and evaluation are kept secret
+        *  unknown numbers of *false positives* and *false negatives*
 
 :::
+
+## Digitisation biases
+### machine-learning approaches to OCR 
+
+>For old prints, there's [...] kraken/calamari for coders, Transkribus if you've got money and just want to have the results[,] and OCR-D if you've got an IT department.
+
+<cite>[@Winkler20230307OCR]</cite>
+
+
+| ID      | ground truth    | words   | lines  | epochs  | CER train  | CER validation     |
+| ------- | --------------- | ------: | -----: | ------: | ---------: | --------------:    |
+| 15946   | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{.green} |
+| 13864   | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{.red}   |
+
+Table: Evaluation of my own Transkribus models {#tbl:ocr-ar-ml}
+
+
+::: notes
+
+- results are great (layout recognition still lacking)
+- but digitised collections need to be re-processed (expensive)
+
+:::
+
 
 ## Accessibility
 ### Catalogue searches
@@ -352,6 +393,44 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 
 # Minimal Computing
 # A preliminar workflow
+## Workflow for bootstrapping
+### 1. get the data
+
+- facsimiles
+    + link to existing facsimiles, preferably through [IIIF](http://iiif.io)
+    + scan your physical artefacts*
+- text
+    + scrape existing transcriptions
+    + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
+
+## Workflow for bootstrapping
+### 2. save and share the data
+
+- facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
+- working copy of everything else: [GitHub](https://github.com/)
+- longterm preservation: [Zenodo](https://zenodo.org/)
+    + make sure to add [ORCID](https://orcid.org)s for all contributors
+- authority data: [Wikidata](https://wikidata.org/)
+
+## Workflow for bootstrapping
+### 3. edit the data
+
+- Free, syntax-aware Texteditor with RTL support: [Visual Studio Code](https://code.visualstudio.com) 
+- use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
+- make use of version control and stable IDs for **transparent authorship attribution**: [GitHub](https://github.com/), [ORCID](https://orcid.org)
+
+## Workflow for bootstrapping
+### 4. disseminate the data
+
+- generate static webviews:
+    - render XML to HTML on-the-fly in the client's web browser:
+        + XSLT1: [TEI Boilerplate](https://github.com/OpenArabicPE/tei-boilerplate-arabic-editions)
+        + JavaScript: [CETEICean](https://github.com/TEIC/CETEIcean)
+    - [GitHub actions](https://github.com/features/actions) to generate static webpages
+- host webviews, project blogs: [gh-pages](https://pages.github.com/) on GitHub, GitLab etc.
+- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
+- full-text search: [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+
 # OpenArabicPE
 
 # Thank you!
