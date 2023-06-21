@@ -635,12 +635,12 @@ Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
 ## Thank you!
 
 - Maxim Romanov for his work on parameter testing
-- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
     + Slides: [https://tinyurl.com/dighis23-grallert](https://tillgrallert.github.io/slides/dh/2023-digital-history/index.html)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
-    + Twitter: \@[tillgrallert](https://twitter.com/tillgrallert)
+    + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
     + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
