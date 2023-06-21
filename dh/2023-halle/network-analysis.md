@@ -9,7 +9,7 @@ institute:
     - Freie Universität Berlin
 date: 2023-04-27
 event: "Workshop Zeitschriften als Netzwerke"
-url: https://tinyurl.com/2023-grallert-network
+url: https://tillgrallert.github.io/slides/dh/2023-halle/
 ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 bibliography: 

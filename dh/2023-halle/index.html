@@ -1227,8 +1227,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1331,6 +1332,12 @@
                         border-color: red;
                         margin-left: 2em;
                         border-left-width: 1em;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
                     }
                     /*
                      hide images for work around for save as bug
@@ -1456,11 +1463,11 @@ Berlin</p>
 Netzwerke</span>
           </p>
                                 <p class="date">2023-04-27</p>
-                              <p class="url"><a href="https://tinyurl.com/2023-grallert-network">https://tinyurl.com/2023-grallert-network</a></p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2023-halle/">https://tillgrallert.github.io/slides/dh/2023-halle/</a></p>
                   </div>
       </div>
         </section>
-
+                
         <section>
         <section
         id="der-netzwerkbegriff-und-arabische-zeitschriftenforschung---historische-netzwerkanalyse-als-zugang-zu-einer-systematischen-periodikaforschung"
@@ -2849,7 +2856,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
     <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -2950,8 +2957,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
+                autoSlide: 0,
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2995,13 +3002,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
-
+                width: 1200,
+                        height: 1000,
+        
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+        
+        // Bounds for smallest/largest possible scale to apply to content
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -3022,7 +3036,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert, Yvonne Albers</span>
                         <span class="c_center">
-          <a href="https://tinyurl.com/2023-grallert-network">https://tinyurl.com/2023-grallert-network</a>
+          <a href="https://tillgrallert.github.io/slides/dh/2023-halle/">https://tillgrallert.github.io/slides/dh/2023-halle/</a>
           <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
         </span>
                 <!-- this should probably moved to the title slide only -->
