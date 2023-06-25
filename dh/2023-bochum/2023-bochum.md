@@ -85,7 +85,7 @@ tags:
 ::: columns
 :::: column
 
-![Direkted network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png){#fig:network-periodicals}
+![Directed network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png){#fig:network-periodicals}
 
 ::::
 :::: column

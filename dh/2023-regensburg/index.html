@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="de">
+<html  lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
@@ -28,6 +28,70 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
       /* CSS for citations */
       div.csl-bib-body { }
       div.csl-entry {
@@ -112,8 +176,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -146,9 +210,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -159,8 +223,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -1422,22 +1486,139 @@ Makerspace</p>
       </div>
         </section>
 
-        <section class="slide level2">
-
-        <!--
-
-        - why do we need to be rescued
-        - what do we need to be rescued from
-
-         -->
-        </section>
         <section>
         <section id="introduction" class="title-slide slide level1">
         <h1>Introduction</h1>
 
         </section>
-        <section id="summary" class="slide level2">
-        <h2>Summary</h2>
+        <section id="my-background" class="slide level2">
+        <h2>My background</h2>
+        <h3 id="research-interest-intellectual-networks">Research
+        interest: intellectual networks</h3>
+        <div class="columns">
+        <div class="wide">
+        <figure id="fig:network-authors">
+        <img
+        data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
+        alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption>Figure 1: Undirected network of authors in
+        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
+        betweenness centrality; size of nodes: number of periodicals;
+        width of edges: number of articles.</figcaption>
+        </figure>
+        </div><section id="aims" class="narrow">
+        <h3>Aims</h3>
+        <ul>
+        <li>empirical testing of hypotheses</li>
+        <li>evaluate existing literature</li>
+        </ul>
+        </section>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>very limited overlap between periodicals from the same
+        place</li>
+        <li>core network (14 of 319 nodes):
+        <ul>
+        <li>absent from the literature</li>
+        <li>suprising set up: many Iraqis (6), few Syrians (2), few
+        Christians (2)</li>
+        </ul></li>
+        <li>of the 14, Ayalon mentions only ʿIsā Iskandar al-Maʿlūf</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="my-background-1" class="slide level2">
+        <h2>My background</h2>
+        <h3 id="research-interest-intellectual-networks-1">Research
+        interest: intellectual networks</h3>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:network-periodicals">
+        <img
+        data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png"
+        alt="Directed network of periodical titles mentioned in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas; weighted by issues. Colour and size of nodes: in-degree." />
+        <figcaption>Figure 2: Directed network of periodical titles
+        mentioned in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, and <em>al-Muqtabas</em>; weighted by issues.
+        Colour and size of nodes: in-degree.</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:map-referenced">
+        <img
+        data-src="../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png"
+        alt="Map of publication places for the periodical titles mentioend in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption>Figure 3: Map of publication places for the
+        periodical titles mentioend in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and
+        <em>al-Muqtabas</em></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="my-background-2" class="slide level2">
+        <h2>My background</h2>
+        <h3 id="data-requirements">Data requirements</h3>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="modelled-text">modelled text</h3>
+        <ul>
+        <li>e.g. “The newspaper <em>al-ʿAṣr al-Jadīd</em> from Damascus
+        reported in its last issue that …”</li>
+        <li>(semi)automated extraction based on
+        <ul>
+        <li>named entity recognition (NER)</li>
+        </ul></li>
+        <li>problems
+        <ul>
+        <li>state of OCR/HTR</li>
+        <li>state of Layout recognition</li>
+        <li>state of NER</li>
+        </ul></li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="structured-bibliographic-metadata">structured
+        bibliographic metadata</h3>
+        <ul>
+        <li>e.g. “<em>Sātisnā</em> dispatched this report from
+        <em>al-Shahbāʾ</em>”</li>
+        <li>(semi)automated extraction based on
+        <ul>
+        <li>presence of information in the material artefact</li>
+        <li>a modelled digital surrogate</li>
+        </ul></li>
+        <li>problems
+        <ul>
+        <li>absence of explicit information</li>
+        </ul></li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="authority-files-norm-data">authority files / norm
+        data</h3>
+        <ul>
+        <li><em>Sātisnā</em>
+        <ul>
+        <li>Pseudonym and anagramme of <em>Anastās al-Karmilī</em>,
+        editor of <em>Lughat al-ʿArab</em> in Baghdad</li>
+        </ul></li>
+        <li><em>al-Shahbāʾ</em>, “the grey”
+        <ul>
+        <li>one of the epithets of Aleppo</li>
+        <li>geo coordinates: <code>36.20124, 37.16117</code></li>
+        </ul></li>
+        <li>problems
+        <ul>
+        <li>bias on Global North in form and content</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="todays-talk" class="slide level2">
+        <h2>Today’s talk</h2>
         <div class="columns-3">
         <div class="column">
         <h3 id="topic">Topic</h3>
@@ -1450,7 +1631,7 @@ Makerspace</p>
         <h3 id="case-study">Case study</h3>
         <p><em>Minimal computing</em> approaches to address the
         affordances of the digital (or lack thereof) “without the help
-        we cannot get”: technological resistance to languages other than
+        we can’t get”: technological resistance to languages other than
         English, neo-colonial silencing of the cultural record, complete
         lack of funds.</p>
         </div>
@@ -1460,23 +1641,41 @@ Makerspace</p>
         <li>Creating knowledge about artefacts: Project Jarāʾid (2011–),
         a crowd-sourced union list of all Arabic periodicals published
         before 1930</li>
-        <li>Access to artefacts: Open Arabic Periodical Editions
-        (2015–), a framework for bootstrapped scholarly editions outside
-        the global north</li>
+        <li>Providing access to artefacts: Open Arabic Periodical
+        Editions (2015–), a framework for bootstrapped scholarly
+        editions outside the global north</li>
         </ol>
         </div>
         </div>
         </section>
-        <section id="overview-of-todays-talk" class="slide level2">
-        <h2>Overview of today’s talk</h2>
+        <section id="todays-talk-1" class="slide level2">
+        <h2>Today’s talk</h2>
+        <h3 id="overview">Overview</h3>
+        <div class="columns">
+        <div class="column">
         <ol type="1">
         <li>The problem or why do we need rescue</li>
+        <li>Minimal computing to the rescue</li>
         </ol>
+        </div><div class="column">
+        <ol start="3" type="1">
+        <li>Minimal computing approach to the digitisation of Arabic
+        periodicals</li>
+        <li>A minimal workflow for bootstrapping digital editions</li>
+        </ol>
+        </div>
+        </div>
         <!-- structure along the workflow:
         - knowledge gathering
         - digitisation
         - publication
          -->
+        <p><!--
+
+        - why do we need to be rescued
+        - what do we need to be rescued from
+
+         --></p>
         </section></section>
         <section>
         <section id="the-problem-or-why-do-we-need-rescue"
@@ -1495,11 +1694,11 @@ Makerspace</p>
         <li>literacy</li>
         </ul>
         </div><div class="column">
-        <figure id="fig:strom-baghdad">
+        <figure id="fig:power-baghdad">
         <img
         data-src="/Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/images/tweet_%20627223846244847616.png"
         alt="Protestor in Baghdad, 31. July 2015, holding sign “darling, you are as beautiful as an additional hour of electricity”. Source: Twitter" />
-        <figcaption>Figure 1: Protestor in Baghdad, 31. July 2015,
+        <figcaption>Figure 4: Protestor in Baghdad, 31. July 2015,
         holding sign “darling, you are as beautiful as an additional
         hour of electricity”. Source: <a
         href="https://twitter.com/aya_mansour_11_/status/627223846244847616">Twitter</a></figcaption>
@@ -1584,18 +1783,18 @@ Makerspace</p>
         <!-- ![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in Latinised transcription;  green = German metadata](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface} -->
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/arabic_failure-browser.png"
-        alt="Rendered HTML with the built-in default CSS for Zakham („Amīrkā wa-ʿulamāʾ al-ʿArab“ 1907). The test file is available online" />
-        <figcaption>Figure 2: Rendered HTML with the built-in default
+        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
+        <figcaption>Figure 5: Rendered HTML with the built-in default
         CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
-        (<span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span> 1907)</span>. The
+        (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
         test file is available <a
         href="https://doi.org/10.5281/zenodo.7781543">online</a></figcaption>
         </figure>
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 2 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 3: HTML-Code for fig. 2 in Visual Code
+        alt="HTML-Code for fig. 5 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption>Figure 6: HTML-Code for fig. 5 in Visual Code
         Studio. By default, non-ASCII characters are visually
         highlighted</figcaption>
         </figure>
@@ -1605,7 +1804,7 @@ Makerspace</p>
         <ul>
         <li><span class="citation"
         data-cites="Phillipson1997RealitiesAndMyths">(Phillipson
-        <span>„Realities and Myths of Linguistic Imperialism“</span>
+        <span>“Realities and Myths of Linguistic Imperialism”</span>
         1997)</span></li>
         <li>Arabic: script and language
         <ul>
@@ -1636,15 +1835,15 @@ Makerspace</p>
         </section>
         <section id="digitisation-bias" class="slide level2">
         <h2>Digitisation bias</h2>
-        <h3 id="collection-biases-perpatuated">Collection biases
-        perpatuated</h3>
+        <h3 id="collection-biases-perpetuated">Collection biases
+        perpetuated</h3>
         <div class="columns">
         <div class="column">
         <figure id="fig:holding-map">
         <img
         data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png"
         alt="Periodicals and their holding institutions" />
-        <figcaption>Figure 4: Periodicals and their holding
+        <figcaption>Figure 7: Periodicals and their holding
         institutions</figcaption>
         </figure>
         </div><div class="column">
@@ -1792,10 +1991,10 @@ Makerspace</p>
         <figure id="fig:muqtabas-6-2-shamela">
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
-        alt="al-Muqtabas („al-laban al-rāʾib“ 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 5: <span class="citation"
+        alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
+        <figcaption>Figure 8: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
-        (<span>„al-laban al-rāʾib“</span> 1911)</span> on <a
+        (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
         as it appeared in 2019</figcaption>
         </figure>
@@ -1803,11 +2002,11 @@ Makerspace</p>
         <figure id="fig:muqtabas-6-2-133-eap">
         <img
         data-src="../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg"
-        alt="Facsimile of the same section of al-Muqtabas („al-laban al-rāʾib“ 1911) from EAP" />
-        <figcaption>Figure 6: Facsimile of the same section of <span
+        alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
+        <figcaption>Figure 9: Facsimile of the same section of <span
         class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
-        (<span>„al-laban al-rāʾib“</span> 1911)</span> from <a
+        (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
         href="https://eap.bl.uk/">EAP</a></figcaption>
         </figure>
         </div>
@@ -1862,8 +2061,8 @@ Makerspace</p>
         <caption>Table 3: Evaluation of traditional OCR software for
         Arabic font types from <span class="citation"
         data-cites="Alghamdi.Teahan+2017+ExperimentalEvaluationArabic">(Alghamdi
-        und Teahan <span>„Experimental evaluation of Arabic OCR
-        systems“</span> 2017, table IV)</span>. Values show percentage
+        and Teahan <span>“Experimental Evaluation of Arabic OCR
+        Systems”</span> 2017, table IV)</span>. Values show percentage
         of correctly recognised characters</caption>
         <colgroup>
         <col style="width: 32%" />
@@ -1969,8 +2168,8 @@ Makerspace</p>
         <img
         data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
         alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 7: <em>al-Bashīr</em> 9 Jan. 1880 (#487), p.1
-        on <a
+        <figcaption>Figure 10: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
+        p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
         </figure>
@@ -2075,7 +2274,7 @@ Makerspace</p>
         <figure id="fig:zdb-ar">
         <img data-src="../../assets/jaraid/zdb_janna-ar.png"
         alt="Search in ZDB for “الجنة”" />
-        <figcaption>Figure 8: Search in <a
+        <figcaption>Figure 11: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=الجنة">ZDB</a> for
         “الجنة”</figcaption>
         </figure>
@@ -2085,7 +2284,7 @@ Makerspace</p>
         <figure id="fig:zdb-dmg">
         <img data-src="../../assets/jaraid/zdb_janna-ar-Latn.png"
         alt="Search in ZDB for “al-Ǧanna”" />
-        <figcaption>Figure 9: Search in <a
+        <figcaption>Figure 12: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=al-Ǧanna">ZDB</a> for
         “al-Ǧanna”</figcaption>
         </figure>
@@ -2096,7 +2295,7 @@ Makerspace</p>
         <figure id="fig:zdb-functional">
         <img data-src="../../assets/jaraid/zdb_janna-ar-Latn-no-al.png"
         alt="Search in ZDB for “Ganna”" />
-        <figcaption>Figure 10: Search in <a
+        <figcaption>Figure 13: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Ganna">ZDB</a> for
         “Ganna”</figcaption>
         </figure>
@@ -2121,7 +2320,7 @@ Makerspace</p>
         <img
         data-src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png"
         alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 11: Interface of the <a
+        <figcaption>Figure 14: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -2139,15 +2338,15 @@ Makerspace</p>
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
         alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 12: <em>al-Muqtabas</em> 6 on <a
+        <figcaption>Figure 15: <em>al-Muqtabas</em> 6 on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
-        alt="The page from fig. 12 with a US-IP" />
-        <figcaption>Figure 13: The page from fig. 12 with a
+        alt="The page from fig. 15 with a US-IP" />
+        <figcaption>Figure 16: The page from fig. 15 with a
         US-IP</figcaption>
         </figure>
         </div>
@@ -2158,31 +2357,264 @@ Makerspace</p>
         Copyrightstatus sicherheitshalber als 1999 angenommen.</p>
         </aside>
         </section></section>
-        <section id="minimal-computing"
-        class="title-slide slide level1">
-        <h1>Minimal Computing</h1>
-
-        </section>
-
         <section>
-        <section id="a-preliminar-workflow"
+        <section id="minimal-computing-to-the-rescue"
         class="title-slide slide level1">
-        <h1>A preliminar workflow</h1>
+        <h1>Minimal Computing to the rescue</h1>
 
         </section>
-        <section id="workflow-for-bootstrapping" class="slide level2">
-        <h2>Workflow for bootstrapping</h2>
-        <h3 id="get-the-data">1. get the data</h3>
+        <section id="building-what-we-need-with-what-we-have-at-hand"
+        class="slide level2">
+        <h2>Building what <strong>we need</strong> with what <strong>we
+        have</strong> at hand</h2>
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(Risam and Gil
+        <span>“Introduction: The Questions of Minimal Computing”</span>
+        2022, sec. 3)</span></cite></p>
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, without the help we
+        can’t get, even as we fight to build the infrastructures we need
+        at the intersection of, with, and beyond institutional libraries
+        and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Gil+2016">(Gil and
+        Ortega <span>“Global Outlooks in Digital Humanities”</span>
+        2016, 29)</span></cite></p>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing is a result of GO::DH and events and
+        conditions in Cuba</li>
+        <li>Alex Gil’s ideas resonated with me, upon meeting in Beirut
+        in April 2015</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="what-do-we-need" class="slide level2">
+        <h2>What do we need?</h2>
+        <!-- We need to digitise the cultural record -->
+        <div class="columns">
+        <div class="column">
+        <h3 id="access">Access</h3>
+        <ul>
+        <li>Societies of the Global South have a right to access their
+        own cultural record</li>
+        <li>Scholarship can immensely profit from broadening the scope
+        of our sources</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="preservation">Preservation</h3>
+        <ul>
+        <li>Periodicals are a volatile and dispersed cultural
+        artefact</li>
+        <li>libraries, archives, personal collections are under threat
+        of destruction, defunding, neglect</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>We need to digitise the cultural record</p>
+        </aside>
+        </section>
+        <section id="centering-the-we-in-what-do-we-need"
+        class="slide level2">
+        <h2>Centering the <em>we</em> in “what do we need?”</h2>
+        <div class="columns">
+        <div class="column">
+        <p><em>we</em> is defined by shared</p>
+        <ul>
+        <li>interests</li>
+        <li>ethics, e.g.
+        <ul>
+        <li><a href="https://www.go-fair.org/fair-principles/">FAIR</a>
+        principles</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>
+        principles</li>
+        <li>-&gt; digital commons</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <p><em>we</em> defines</p>
+        <ul>
+        <li>the specific context and and working conditions</li>
+        <li>our access to skills, methods, labour time, tools, materials
+        …</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>FAIR: <strong>F</strong>indability,
+        <strong>A</strong>ccessability,
+        <strong>I</strong>nteroperability, <strong>R</strong>euse</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>:
+        <strong>C</strong>ollective benefit, <strong>A</strong>uthority
+        to control, <strong>R</strong>esponsibility,
+        <strong>E</strong>thics
+        <ul>
+        <li>developped in the context of indigenous communities</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="what-about-the-minimal-in-minimal-computing"
+        class="slide level2">
+        <h2>What about the <em>minimal</em> in minimal computing?</h2>
+        <!-- add images -->
+        <div class="columns">
+        <div class="column">
+        <h3 id="from-a-position-of-privilege">from a position of
+        privilege</h3>
+        <ul>
+        <li>minimalism as an end in itself
+        <ul>
+        <li>destroying resources already at hand</li>
+        <li>fashion</li>
+        <li>purist principles</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="from-a-position-of-exclusion">from a position of
+        exclusion</h3>
+        <ul>
+        <li>minimalism as a means to an end
+        <ul>
+        <li>balance our needs against the resources at hand</li>
+        <li>acknowledge the inevitable impact of our actions</li>
+        <li>minimal computing as <em>meaningful</em> computing</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ol type="1">
+        <li>minimalism as an end
+        <ul>
+        <li>resource-intensive</li>
+        <li>example: Mary Condo</li>
+        <li>example: purist computing infrastructures
+        <ul>
+        <li>you got to run your own server and never use evil
+        platforms</li>
+        </ul></li>
+        </ul></li>
+        <li>minimalism as a means to an end
+        <ul>
+        <li>meaningful connectivity</li>
+        <li>original Bauhaus / modernist design:
+        <ul>
+        <li>form follows function to
+        <ul>
+        <li>decrease the cost of industrial production</li>
+        <li>increase the material benefits of the expended
+        resources</li>
+        </ul></li>
+        </ul></li>
+        </ul></li>
+        </ol>
+        </aside>
+        </section></section>
+        <section>
+        <section
+        id="minimal-computing-approach-to-the-digitisation-of-arabic-periodicals"
+        class="title-slide slide level1">
+        <h1>Minimal computing approach to the digitisation of Arabic
+        periodicals</h1>
+
+        </section>
+        <section
+        id="contributing-to-the-digital-commons-without-the-help-we-cant-get"
+        class="slide level2">
+        <h2>Contributing to the <em>digital commons</em> <br/> without
+        the help we can’t get</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="ideas">ideas</h3>
+        <ul>
+        <li>unite <strong>existing</strong> gray transcriptions with
+        digital facsimiles</li>
+        <li>learn from free and open-source software development
+        <!-- - model everything to make components citable
+        - harvest, generate, validate and share open metadata --></li>
+        </ul>
+        <h3 id="principles">principles</h3>
+        <ul>
+        <li>build what <strong>we need</strong> with what <strong>we
+        have</strong> at hand</li>
+        <li>as <strong>few</strong> as possible, <strong>open</strong>
+        and <strong>established</strong> formats and tools</li>
+        <li>running on <strong>our</strong> hardware</li>
+        <li>with <strong>our</strong> skills and knowledge</li>
+        <li><strong>free-to-use</strong> platforms without lock-in of
+        data</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="aims-1">aims</h3>
+        <!-- + **validate** and **improve** the transcription with the facsimiles
+        - **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+        - **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+        - **open licences** to facilitate re-use -->
+        <ul>
+        <li>make Arabic periodicals <strong>accessible</strong> on a
+        shoestring budget</li>
+        <li><strong>validate</strong> and improve utilization of
+        transcriptions
+        <ul>
+        <li>reliablity: content and citations</li>
+        <li>accessibility: for readers and computational analysis</li>
+        <li>ground truth for ML-based OCR/HTR</li>
+        </ul></li>
+        <li>establish an open, sustainable
+        <strong>infrastructure</strong> of workflows, models, authority
+        files <!-- - With the affordances of the Global South --></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing</li>
+        <li>meaningful connectivity: focus on practicability instead of
+        principled stance</li>
+        <li>result: bootstrapped scholarly editions</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section
+        id="a-minimal-workflow-for-bootstrapping-digital-editions"
+        class="title-slide slide level1">
+        <h1>A minimal workflow for bootstrapping digital editions</h1>
+
+        </section>
+        <section id="get-the-data" class="slide level2">
+        <h2>1. get the data</h2>
+        <div class="columns">
+        <div class="column">
         <ul>
         <li>facsimiles
         <ul>
-        <li>link to existing facsimiles, preferably through <a
-        href="http://iiif.io">IIIF</a></li>
-        <li>scan your physical artefacts*</li>
+        <li>link to existing facsimiles from <a
+        href="http://eap.bl.uk/">British Library’s “Endangered Archives
+        Programme” (EAP)</a>,
+        <!-- [HathiTrust](http://hathitrust.org/), --> <a
+        href="https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779">Translatio
+        Bonn</a>, <a href="http://archive.alsharekh.org/"><em>Arshīf
+        al-majallāt […] al-ʿarabiyya</em></a> etc., preferably through
+        <a href="https://iiif.io/">IIIF</a></li>
+        <li>scan/ photograph your physical artefacts (at the lowest
+        sustainable resolution)</li>
         </ul></li>
         <li>text
         <ul>
-        <li>scrape existing transcriptions</li>
+        <li>scrape existing transcriptions from <a
+        href="http://shamela.ws/index.php/book/26523"><em>shamela.ws</em></a>,
+        et al.</li>
         <li>use <a href="https://transkribus.eu/">Transkribus</a>, <a
         href="https://escripta.hypotheses.org">eScripta</a>/<a
         href="https://www.https://escriptorium.fr/">eScriptorium</a> for
@@ -2190,71 +2622,414 @@ Makerspace</p>
         corpus)</li>
         </ul></li>
         </ul>
+        </div><div class="column">
+        <p>EPub (HTML) for <em>al-Zuhūr</em> 2(4) from shamela.ws</p>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">dir</span><span class="ot">=</span><span class="st">&quot;rtl&quot;</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;book-container&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;hr/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;a</span> <span class="er">id</span><span class="ot">=</span><span class="st">&#39;C232&#39;</span><span class="kw">&gt;&lt;/a&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>صحافة سورية ولبنان<span class="kw">&lt;/span&gt;&lt;br</span> <span class="kw">/&gt;&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;red&quot;</span><span class="kw">&gt;</span>3 - <span class="kw">&lt;/span&gt;</span>المجلات<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+        <p>OCR output from Transkribus for <em>al-Ḥasnāʾ</em> (PAGE
+        XML)</p>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">TextLine</span><span class="ot"> id=</span><span class="st">&quot;r1l5&quot;</span><span class="ot"> custom=</span><span class="st">&quot;readingOrder {index:4;}&quot;</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Coords</span><span class="ot"> points=</span><span class="st">&quot;470,548 2191,527 1648,462 470,464&quot;</span>/&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Baseline</span><span class="ot"> points=</span><span class="st">&quot;480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536&quot;</span>/&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">Unicode</span>&gt;من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها&lt;/<span class="kw">Unicode</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">TextLine</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>IIIF allows to set a very low quality to reduce bandwidth
+        and traffic</li>
+        <li>what do you need to know
+        <ul>
+        <li>HTML</li>
+        <li>XML</li>
+        <li>JSON: for IIIF</li>
+        <li>wget, cURL: for scraping</li>
+        </ul></li>
+        </ul>
+        </aside>
         </section>
-        <section id="workflow-for-bootstrapping-1" class="slide level2">
-        <h2>Workflow for bootstrapping</h2>
-        <h3 id="save-and-share-the-data">2. save and share the data</h3>
+        <section id="model-the-data" class="slide level2">
+        <h2>2. model the data</h2>
+        <p>Structure the text string into issues, sections, articles
+        with bylines …</p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>widely accepted standard for textual editions: <a
+        href="https://tei-c.org/">Text Encoding Initiative</a> (TEI XML)
+        <ul>
+        <li>active community</li>
+        <li>pre-requisite for grant funding</li>
+        <li>easy to archive (XML = plain text)</li>
+        </ul></li>
+        <li>re-use / adapt domain specific encoding schemas within the
+        TEI</li>
+        <li>try to script basic modelling using patterns in your source
+        text:
+        <ul>
+        <li>regular expressions</li>
+        <li>XSLT, Python, R, whatever you are most comfortable with</li>
+        </ul></li>
+        <li>automatically model derivative bibliographic data: MODS,
+        METS, BibTeX, …</li>
+        </ul>
+        </div><div class="column">
+        <p>The same section of <em>al-Zuhūr</em> 2(4) modelled in
+        TEI</p>
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">body</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> corresp=</span><span class="st">&quot;../epub/shamela_36534/OEBPS/xhtml/P744.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n2-p184&quot;</span>/&gt;</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> edRef=</span><span class="st">&quot;#edition_1&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_184&quot;</span><span class="ot"> n=</span><span class="st">&quot;184&quot;</span>/&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> prev=</span><span class="st">&quot;oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;article&quot;</span><span class="ot"> type=</span><span class="st">&quot;item&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_1.d2e634&quot;</span>&gt;</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">head</span>&gt;صحافة &lt;<span class="kw">placeName</span>&gt;سورية&lt;/<span class="kw">placeName</span>&gt; و&lt;<span class="kw">placeName</span>&gt;لبنان&lt;/<span class="kw">placeName</span>&gt;&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_3.d2e1200&quot;</span>&gt;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">head</span>&gt; ٣ - المجلات&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا &lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المشرق&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt;  و&lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المقتبس&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt; .&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">body</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>why TEI?
+        <ul>
+        <li>I knew it already</li>
+        <li>widely adopted standard in the digital editing world</li>
+        <li>necessary for grant-funding in the Global North</li>
+        </ul></li>
+        <li>why not TEI
+        <ul>
+        <li>steep learning curve</li>
+        <li>not particularly well-suited to Arabic texts?</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="edit-the-data" class="slide level2">
+        <h2>3. edit the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>make use of version control
+        <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for
+        <strong>transparent authorship attribution</strong> and
+        <strong>damage control</strong>:
+        <ul>
+        <li><a href="https://git-scm.com/">.git</a> is open source and
+        available for all OSs</li>
+        </ul></li>
+        <li>plain-text (including XML) editors
+        <ul>
+        <li>should be <strong>syntax aware</strong></li>
+        <li><strong>RTL</strong>: support in text editors is a mixed
+        bag</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-vscode">
+        <img data-src="../../assets/OpenArabicPE/vscode_zuhur.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption>Figure 17: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        Code</a></figcaption>
+        </figure>
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../../assets/OpenArabicPE/sublime_zuhur.png) -->
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../../assets/OpenArabicPE/assets/textmate_zuhur.png) -->
+        </div><div class="column">
+        <ul>
+        <li>XML editors proper
+        <ul>
+        <li>should be <strong>schema aware</strong> to validate the
+        encoding</li>
+        <li><strong>RTL</strong>:
+        <ol type="1">
+        <li><a href="https://www.oxygenxml.com/">oXygen XML editor</a>
+        (99 USD) allows to separate content and
+        tags<!-- : [TextGrid Lab](https://textgrid.de/index) --></li>
+        <li><a href="https://code.visualstudio.com/">Visual Studio
+        Code</a> (free) with the right extensions is a viable
+        second</li>
+        </ol></li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-oxygen">
+        <img
+        data-src="../../assets/OpenArabicPE/oxygen_zuhur-author.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption>Figure 18: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
+        mode. Styling relies on CSS.</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>editing tools depend on modelling decisions and file
+        formats</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="save-and-share-the-data" class="slide level2">
+        <h2>4. save and share the data</h2>
+        <div class="columns">
+        <div class="column">
         <ul>
         <li>facsimiles: <a href="https://archive.org">Internet
-        Archive</a> (supports IIIF)</li>
-        <li>working copy of everything else: <a
-        href="https://github.com/">GitHub</a></li>
-        <li>longterm preservation: <a
-        href="https://zenodo.org/">Zenodo</a>
+        Archive</a> (supports <a href="https://iiif.io/">IIIF</a>)</li>
+        <li>working copy of everything else: distributed version control
+        platforms (<a href="https://github.com/">GitHub</a>, <a
+        href="https://about.gitlab.com/">GitLab</a>)</li>
+        <li>longterm preservation: publicly-funded, open repository (<a
+        href="https://zenodo.org/">Zenodo</a>)
         <ul>
         <li>make sure to add <a href="https://orcid.org">ORCID</a>s for
         all contributors</li>
         </ul></li>
-        <li>authority data: <a
+        <li>authority data (people, titles, etc.): <a
         href="https://wikidata.org/">Wikidata</a></li>
+        <li>provide suitable open licenses for re-use: <a
+        href="https://creativecommons.org/">Creative Commons</a>, <a
+        href="">MIT</a>, Public Domain (CC0)</li>
         </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zenodo">
+        <img data-src="../../assets/OpenArabicPE/zenodo_zuhur.png"
+        alt="Archived release of al-Zuhūr on Zenono" />
+        <figcaption>Figure 19: Archived release of <em>al-Zuhūr</em> on
+        <a
+        href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
+        </figure>
+        </div>
+        </div>
         </section>
-        <section id="workflow-for-bootstrapping-2" class="slide level2">
-        <h2>Workflow for bootstrapping</h2>
-        <h3 id="edit-the-data">3. edit the data</h3>
+        <section id="present-the-data" class="slide level2">
+        <h2>5. present the data</h2>
+        <!-- ### presentation layers and access for human readers -->
+        <div class="columns">
+        <div class="column">
         <ul>
-        <li>Free, syntax-aware Texteditor with RTL support: <a
-        href="https://code.visualstudio.com">Visual Studio Code</a></li>
-        <li>use open, publicly-funded (web)editors, such as <a
-        href="https://textgrid.de/index">TextGrid Lab</a></li>
-        <li>make use of version control and stable IDs for
-        <strong>transparent authorship attribution</strong>: <a
-        href="https://github.com/">GitHub</a>, <a
-        href="https://orcid.org">ORCID</a></li>
-        </ul>
-        </section>
-        <section id="workflow-for-bootstrapping-3" class="slide level2">
-        <h2>Workflow for bootstrapping</h2>
-        <h3 id="disseminate-the-data">4. disseminate the data</h3>
+        <li>Hosting: <a href="https://pages.github.com/">GitHub
+        Pages</a> can expose your data repository to the web</li>
+        <li>Generate static webviews
         <ul>
-        <li>generate static webviews:
-        <ul>
-        <li>render XML to HTML on-the-fly in the client’s web browser:
-        <ul>
-        <li>XSLT1: <a
-        href="https://github.com/OpenArabicPE/tei-boilerplate-arabic-editions">TEI
-        Boilerplate</a></li>
-        <li>JavaScript: <a
-        href="https://github.com/TEIC/CETEIcean">CETEICean</a></li>
+        <li>removes need for backend and minimises traffic</li>
+        <li>easy to archive</li>
+        <li>on the fly: XSLT1 (<a
+        href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>)
+        or JS (<a
+        href="https://github.com/TEIC/CETEIcean">CETEICEan</a>) to
+        render XML files in the client’s web browser</li>
+        <li>pre-computed: <a
+        href="https://github.com/features/actions">GitHub actions</a>
+        give access to virtual machines</li>
         </ul></li>
-        <li><a href="https://github.com/features/actions">GitHub
-        actions</a> to generate static webpages</li>
-        </ul></li>
-        <li>host webviews, project blogs: <a
-        href="https://pages.github.com/">gh-pages</a> on GitHub, GitLab
-        etc.</li>
         <li>bibliographic database: <a
-        href="https://www.zotero.org/groups/openarabicpe/items/">Zotero</a></li>
-        <li>full-text search: <a
+        href="https://www.zotero.org/groups/openarabicpe/items/">Zotero
+        group</a>
+        <ul>
+        <li>mitigates against the absent backend</li>
+        <li><strong>browse</strong> and <strong>search</strong>
+        independent of file structure</li>
+        </ul></li>
+        <li>full-text search across the entire corpus: <a
         href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
-        programmable search engines</a></li>
+        programmable search engine</a></li>
         </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zotero">
+        <img
+        data-src="../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png"
+        alt="Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption>Figure 20: Zotero group “<a
+        href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
+        details in mobile view</figcaption>
+        </figure>
+        <figure id="fig:zuhur-webview">
+        <img
+        data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png"
+        alt="Webview of al-Zuhūr 2(4)" />
+        <figcaption>Figure 21: <a
+        href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
+        of <em>al-Zuhūr</em> 2(4)</a></figcaption>
+        </figure>
+        <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+        </div>
+        </div>
         </section></section>
-        <section id="openarabicpe" class="title-slide slide level1">
-        <h1>OpenArabicPE</h1>
+        <section>
+        <section id="open-arabic-periodical-editions"
+        class="title-slide slide level1">
+        <h1>Open Arabic Periodical Editions</h1>
 
         </section>
-
+        <section id="corpus" class="slide level2">
+        <h2>Corpus</h2>
+        <table>
+        <colgroup>
+        <col style="width: 35%" />
+        <col style="width: 7%" />
+        <col style="width: 13%" />
+        <col style="width: 29%" />
+        <col style="width: 3%" />
+        <col style="width: 3%" />
+        <col style="width: 3%" />
+        <col style="width: 3%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Title</th>
+        <th>Place</th>
+        <th>Proprietor</th>
+        <th>DOI</th>
+        <th style="text-align: right;">Volumes</th>
+        <th style="text-align: right;">Issues</th>
+        <th style="text-align: right;">Articles</th>
+        <th style="text-align: right;">Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><a
+        href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+        <td>Damascus</td>
+        <td>Abd al-Qādir al-Iskandarānī</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">35</td>
+        <td style="text-align: right;">389</td>
+        <td style="text-align: right;">298090</td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+        <td>Beirut</td>
+        <td>Niqūlā Bāz</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">12</td>
+        <td style="text-align: right;">201</td>
+        <td style="text-align: right;">NA</td>
+        </tr>
+        <tr class="odd">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+        <td>Cairo</td>
+        <td>Muḥammad Rashīd Riḍā</td>
+        <td></td>
+        <td style="text-align: right;">35</td>
+        <td style="text-align: right;">537</td>
+        <td style="text-align: right;">4300</td>
+        <td style="text-align: right;">6144593</td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+        <td>Cairo, Damascus</td>
+        <td>Muḥammad Kurd ʿAlī</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+        <td style="text-align: right;">9</td>
+        <td style="text-align: right;">96</td>
+        <td style="text-align: right;">2964</td>
+        <td style="text-align: right;">1981081</td>
+        </tr>
+        <tr class="odd">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+        <td>Cairo</td>
+        <td>Abdallāh Nadīm al-Idrīsī</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+        <td style="text-align: right;">1</td>
+        <td style="text-align: right;">42</td>
+        <td style="text-align: right;">435</td>
+        <td style="text-align: right;">221447</td>
+        </tr>
+        <tr class="even">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+        <td>Cairo</td>
+        <td>Anṭūn al-Jumayyil</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+        <td style="text-align: right;">4</td>
+        <td style="text-align: right;">39</td>
+        <td style="text-align: right;">436</td>
+        <td style="text-align: right;">292333</td>
+        </tr>
+        <tr class="odd">
+        <td><a
+        href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat
+        al-ʿArab</a></td>
+        <td>Baghdad</td>
+        <td>Anastās Mārī al-Karmalī</td>
+        <td><a
+        href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+        <td style="text-align: right;">3</td>
+        <td style="text-align: right;">34</td>
+        <td style="text-align: right;">939</td>
+        <td style="text-align: right;">373832</td>
+        </tr>
+        <tr class="even">
+        <td><strong>total</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: right;">56</td>
+        <td style="text-align: right;">795</td>
+        <td style="text-align: right;">9664</td>
+        <td style="text-align: right;">9311376</td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section id="beware-bootstrapping-relies-on-the-work-of-others"
+        class="slide level2">
+        <h2>Beware: Bootstrapping relies on the work of others</h2>
+        <h3 id="all-dependencies-will-eventually-break-need-repair">All
+        dependencies will eventually break / need repair</h3>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Reliance on external data providers: link rot
+        <ul>
+        <li>links to facsimiles broke twice in four years</li>
+        </ul></li>
+        <li>Reliance on free tools and services: link rot
+        <ul>
+        <li>URLs to our editions had to be changed once</li>
+        </ul></li>
+        <li>XSLT1 in web browsers: will fall victim to JSON and security
+        features
+        <ul>
+        <li>over the last 5 years support has markedly decreased
+        <!-- - Full-text search across issues and periodicals without a backend
+          + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) --></li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png"
+        alt="The main components of OpenArabicPE" />
+        <figcaption aria-hidden="true">The main components of
+        OpenArabicPE</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section></section>
         <section>
         <section id="thank-you" class="title-slide slide level1">
         <h1>Thank you!</h1>
@@ -2313,31 +3088,46 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         role="list">
         <div id="ref-Alghamdi.Teahan+2017+ExperimentalEvaluationArabic"
         class="csl-entry" role="listitem">
-        Alghamdi, Mansoor, und William Teahan. 2017. <span>„Experimental
-        evaluation of Arabic OCR systems“</span>. <em>PSU Research
+        Alghamdi, Mansoor, and William Teahan. 2017. <span>“Experimental
+        Evaluation of Arabic OCR Systems.”</span> <em>PSU Research
         Review</em> 1 (3): 229–41. <a
         href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
         </div>
         <div id="ref-oclc_4770057679-i_61-div_21.d1e2838"
         class="csl-entry" role="listitem">
-        <em>al-Muqtabas</em>. 1911. <span>„Akhbār wa afkār: al-laban
-        al-rāʾib“</span> [News and thoughts: Yogurt] 6 (2), 1. Februar
+        <em>al-Muqtabas</em>. 1911. <span>“Akhbār wa afkār: al-laban
+        al-rāʾib”</span> [News and thoughts: Yogurt] 6 (2), February 1,
         1911. <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml#div_21.d1e2838">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml#div_21.d1e2838</a>.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, and Élika Ortega. 2016. <span>“Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing.”</span> In <em>Doing Digital Humanities: Practice,
+        Training, Research</em>, edited by Constance Crompton, Richard J
+        Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
         </div>
         <div id="ref-KurdAli+1923+GharaibAlGharba" class="csl-entry"
         role="listitem">
         Kurd ʿAlī, Muḥammad. 1923. <em>Gharāʾib al-Gharb</em> [The
-        Oddities of the West]. 2. Aufl. Bd. 1. Miṣr: al-Maṭbaʿa
+        Oddities of the West]. 2nd ed. Vol. 1. Miṣr: al-Maṭbaʿa
         al-Raḥmāniyya. <a
         href="http://archive.org/details/1_20191109_20191109_1843">http://archive.org/details/1_20191109_20191109_1843</a>.
         </div>
         <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
         role="listitem">
-        Phillipson, Robert. 1997. <span>„Realities and Myths of
-        Linguistic Imperialism“</span>. <em>Journal of Multilingual and
+        Phillipson, Robert. 1997. <span>“Realities and Myths of
+        Linguistic Imperialism.”</span> <em>Journal of Multilingual and
         Multicultural Development</em> 18 (3): 238–48. <a
         href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, and Alex Gil. 2022. <span>“Introduction: The
+        Questions of Minimal Computing.”</span> Edited by Alex Gil and
+        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
+        "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
         </div>
         <div id="ref-Winkler20230307OCR" class="csl-entry"
         role="listitem">
@@ -2347,9 +3137,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         </div>
         <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
         class="csl-entry" role="listitem">
-        Zakham, Yūsuf. 1907. <span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span>
-        [America and Arab Scholars]. <em>al-Muqtabas</em> 2 (1), 14.
-        Februar 1907. <a
+        Zakham, Yūsuf. 1907. <span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span>
+        [America and Arab Scholars]. <em>al-Muqtabas</em> 2 (1),
+        February 14, 1907. <a
         href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
         </div>
         </div>

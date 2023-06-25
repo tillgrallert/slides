@@ -10,7 +10,7 @@ date: 2023-06-27
 event: "History, Digitisation, and Archive"
 url: https://tillgrallert.github.io/slides/dh/2023-regensburg/
 ORCID: orcid.org/0000-0002-5739-8094
-lang: de
+lang: en
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
@@ -18,15 +18,100 @@ slide-level: 2
 license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
-<!-- 
 
-- why do we need to be rescued
-- what do we need to be rescued from
-
- -->
 
 # Introduction
-## Summary
+## My background
+### Research interest: intellectual networks
+
+::: columns
+:::: wide
+
+![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
+
+::::
+:::: narrow
+
+### Aims
+
+- empirical testing of hypotheses
+- evaluate existing literature
+
+
+::::
+:::
+
+::: notes
+
+- very limited overlap between periodicals from the same place
+- core network (14 of 319 nodes):
+    - absent from the literature
+    - suprising set up: many Iraqis (6), few Syrians (2), few Christians (2)
+- of the 14, Ayalon mentions only ʿIsā Iskandar al-Maʿlūf 
+:::
+
+## My background
+### Research interest: intellectual networks
+
+::: columns
+:::: column
+
+![Directed network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*; weighted by issues. Colour and size of nodes: in-degree.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree_ar.png){#fig:network-periodicals}
+
+::::
+:::: column
+
+![Map of publication places for the periodical titles mentioend in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*](../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png){#fig:map-referenced}
+
+::::
+:::
+
+## My background
+### Data requirements
+
+
+::: columns-3
+:::: column
+
+### modelled text
+
++ e.g. "The newspaper *al-ʿAṣr al-Jadīd* from Damascus reported in its last issue that ..."
++ (semi)automated extraction based on
+    * named entity recognition (NER)
++ problems
+    * state of OCR/HTR
+    * state of Layout recognition
+    * state of NER
+
+::::
+:::: column
+
+### structured bibliographic metadata
+
++ e.g. "*Sātisnā* dispatched this report from *al-Shahbāʾ*"
++ (semi)automated extraction based on
+    * presence of information in the material artefact
+    * a modelled digital surrogate
++ problems
+    * absence of explicit information
+
+::::
+:::: column
+
+### authority files / norm data
+
+- *Sātisnā*
+    + Pseudonym and anagramme of *Anastās al-Karmilī*, editor of *Lughat al-ʿArab* in Baghdad
+- *al-Shahbāʾ*, "the grey"
+    + one of the epithets of Aleppo
+    + geo coordinates: `36.20124, 37.16117`
+- problems
+    + bias on Global North in form and content
+
+::::
+:::
+
+## Today's talk
 
 ::: columns-3
 :::: column
@@ -40,7 +125,7 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
 
 ### Case study
 
-*Minimal computing* approaches to address the affordances of the digital (or lack thereof) "without the help we cannot get": technological resistance to languages other than English, neo-colonial silencing of the cultural record, complete lack of funds.
+*Minimal computing* approaches to address the affordances of the digital (or lack thereof) "without the help we can't get": technological resistance to languages other than English, neo-colonial silencing of the cultural record, complete lack of funds.
 
 ::::
 :::: column
@@ -48,19 +133,40 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
 ### Projects
 
 1. Creating knowledge about artefacts: Project Jarāʾid (2011--), a crowd-sourced union list of all Arabic periodicals published before 1930
-2. Access to artefacts: Open Arabic Periodical Editions (2015--), a framework for bootstrapped scholarly editions outside the global north
+2. Providing access to artefacts: Open Arabic Periodical Editions (2015--), a framework for bootstrapped scholarly editions outside the global north
 
 ::::
 :::
 
-## Overview of today's talk
+## Today's talk
+### Overview
+
+::: columns
+:::: column
 
 1. The problem or why do we need rescue
+2. Minimal computing to the rescue
+
+::::
+:::: column
+
+3. Minimal computing approach to the digitisation of Arabic periodicals
+4. A minimal workflow for bootstrapping digital editions 
+
+::::
+:::
+
 
 <!-- structure along the workflow:
 - knowledge gathering
 - digitisation
 - publication
+ -->
+ <!-- 
+
+- why do we need to be rescued
+- what do we need to be rescued from
+
  -->
 
 # The problem or why do we need rescue
@@ -76,7 +182,7 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
 ::::
 :::: column
 
-![Protestor in Baghdad, 31. July 2015, holding sign "darling, you are as beautiful as an additional hour of electricity". Source: [Twitter](https://twitter.com/aya_mansour_11_/status/627223846244847616)](/Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/images/tweet_ 627223846244847616.png){#fig:strom-baghdad}
+![Protestor in Baghdad, 31. July 2015, holding sign "darling, you are as beautiful as an additional hour of electricity". Source: [Twitter](https://twitter.com/aya_mansour_11_/status/627223846244847616)](/Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/images/tweet_ 627223846244847616.png){#fig:power-baghdad}
 
 ::::
 :::
@@ -161,7 +267,7 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
 :::
 
 ## Digitisation bias
-### Collection biases perpatuated
+### Collection biases perpetuated
 
 ::: columns
 :::: column
@@ -391,47 +497,417 @@ Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird k
 
 
 
-# Minimal Computing
-# A preliminar workflow
-## Workflow for bootstrapping
-### 1. get the data
+# Minimal Computing to the rescue
+## Building what **we need** with what **we have** at hand
+
+>minimal computing connotes digital humanities work undertaken in the context of some set of constraints. This could include lack of access to hardware or software, network capacity, technical education, or even a reliable power grid
+
+<cite>[@RisamGil2022Introduction, §3]</cite>
+
+>this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, without the help we can’t get, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
+
+<cite>[@Gil+2016, 29]</cite>
+
+
+::: notes
+
+- minimal computing is a result of GO::DH and events and conditions in Cuba
+- Alex Gil's ideas resonated with me, upon meeting in Beirut in April 2015
+
+:::
+
+## What do we need?
+
+<!-- We need to digitise the cultural record -->
+
+::: columns
+:::: column
+
+### Access
+
+- Societies of the Global South have a right to access their own cultural record
+- Scholarship can immensely profit from broadening the scope of our sources
+
+::::
+:::: column
+
+### Preservation
+
+- Periodicals are a volatile and dispersed cultural artefact
+- libraries, archives, personal collections are under threat of destruction, defunding, neglect
+
+::::
+:::
+
+::: notes
+
+We need to digitise the cultural record
+
+:::
+
+
+## Centering the *we* in "what do we need?"
+
+::: columns
+:::: column
+
+*we* is defined by shared 
+
+- interests
+- ethics, e.g.
+    + [FAIR](https://www.go-fair.org/fair-principles/) principles
+    + [CARE](https://www.gida-global.org/care) principles
+    + -> digital commons
+
+::::
+:::: column
+
+*we* defines
+
+- the specific context and and working conditions
+- our access to skills, methods, labour time, tools, materials ...
+
+::::
+:::
+
+::: notes
+
+- FAIR: **F**indability, **A**ccessability, **I**nteroperability, **R**euse
+- [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics 
+    + developped in the context of indigenous communities
+
+:::
+
+
+## What about the *minimal* in minimal computing?
+
+<!-- add images -->
+
+::: columns
+:::: column
+
+### from a position of privilege
+
+- minimalism as an end in itself
+    + destroying resources already at hand
+    + fashion
+    + purist principles
+
+::::
+:::: column
+
+### from a position of exclusion
+
+- minimalism as a means to an end
+    + balance our needs against the resources at hand
+    + acknowledge the inevitable impact of our actions
+    + minimal computing as *meaningful* computing
+
+::::
+:::
+
+
+::: notes
+
+1. minimalism as an end
+    - resource-intensive
+    - example: Mary Condo
+    - example: purist computing infrastructures
+        + you got to run your own server and never use evil platforms
+2. minimalism as a means to an end 
+    + meaningful connectivity
+    + original Bauhaus / modernist design:
+        * form follows function to 
+            - decrease the cost of industrial production
+            - increase the material benefits of the expended resources
+
+:::
+
+
+
+
+
+# Minimal computing approach to the digitisation of Arabic periodicals
+## Contributing to the *digital commons* <br/> without the help we can't get
+
+::: columns
+:::: column
+
+### ideas
+
+- unite **existing** gray transcriptions with digital facsimiles
+- learn from free and open-source software development
+<!-- - model everything to make components citable
+- harvest, generate, validate and share open metadata -->
+
+
+### principles
+
+- build what **we need** with what **we have** at hand
+- as **few** as possible, **open** and **established** formats and tools
+- running on **our** hardware
+- with **our** skills and knowledge
+- **free-to-use** platforms without lock-in of data
+
+::::
+:::: column
+
+### aims
+
+<!-- + **validate** and **improve** the transcription with the facsimiles
+- **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+- **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+- **open licences** to facilitate re-use -->
+
+- make Arabic periodicals **accessible** on a shoestring budget
+- **validate** and improve utilization of transcriptions
+    + reliablity: content and citations
+    + accessibility: for readers and computational analysis
+    + ground truth for ML-based OCR/HTR
+- establish an open, sustainable **infrastructure** of workflows, models, authority files
+<!-- - With the affordances of the Global South -->
+
+::::
+:::
+
+::: notes
+
+- minimal computing
+- meaningful connectivity: focus on practicability instead of principled stance
+- result: bootstrapped scholarly editions
+
+:::
+
+#  A minimal workflow for bootstrapping digital editions 
+## 1. get the data
+
+::: columns
+:::: column
 
 - facsimiles
-    + link to existing facsimiles, preferably through [IIIF](http://iiif.io)
-    + scan your physical artefacts*
+    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), <!-- [HathiTrust](http://hathitrust.org/), --> [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
+    + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
 - text
-    + scrape existing transcriptions
+    + scrape existing transcriptions from [*shamela.ws*](http://shamela.ws/index.php/book/26523), et al.
     + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
 
-## Workflow for bootstrapping
-### 2. save and share the data
 
-- facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
-- working copy of everything else: [GitHub](https://github.com/)
-- longterm preservation: [Zenodo](https://zenodo.org/)
+::::
+:::: column
+
+EPub (HTML) for *al-Zuhūr* 2(4) from shamela.ws
+
+```html
+<div dir="rtl" id="book-container">
+    <hr/>
+    <a id='C232'></a>
+    <span class="title">صحافة سورية ولبنان</span><br /><span class="red">3 - </span>المجلات<br />هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<br />أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<br />وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<br />
+</div>
+```
+
+OCR output from Transkribus for *al-Ḥasnāʾ* (PAGE XML)
+
+```xml
+<TextLine id="r1l5" custom="readingOrder {index:4;}">
+    <Coords points="470,548 2191,527 1648,462 470,464"/>
+    <Baseline points="480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536"/>
+    <TextEquiv>
+        <Unicode>من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها</Unicode>
+    </TextEquiv>
+</TextLine>
+```
+::::
+:::
+
+::: notes
+
+- IIIF allows to set a very low quality to reduce bandwidth and traffic
+- what do you need to know
+    - HTML
+    - XML
+    - JSON: for IIIF
+    - wget, cURL: for scraping
+
+:::
+
+## 2. model the data
+
+Structure the text string into issues, sections, articles with bylines ...
+
+::: columns
+:::: column
+
+- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI XML)
+    - active community
+    - pre-requisite for grant funding
+    - easy to archive (XML = plain text)
+- re-use / adapt domain specific encoding schemas within the TEI
+- try to script basic modelling using patterns in your source text:
+    + regular expressions
+    + XSLT, Python, R, whatever you are most comfortable with
+- automatically model derivative bibliographic data: MODS, METS, BibTeX, ...
+
+::::
+:::: column
+
+The same section of *al-Zuhūr* 2(4) modelled in TEI
+
+```xml
+<body xml:lang="ar">
+<pb corresp="../epub/shamela_36534/OEBPS/xhtml/P744.xhtml" ed="shamela" n="n2-p184"/>
+<pb ed="print" edRef="#edition_1" facs="#facs_184" n="184"/>
+    <div prev="oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766" subtype="article" type="item" xml:id="div_1.d2e634">
+        <head>صحافة <placeName>سورية</placeName> و<placeName>لبنان</placeName></head>
+        <div type="section" xml:id="div_3.d2e1200">
+            <head> ٣ - المجلات</head>
+            <p>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا <bibl>مجلة <title level="j">المشرق</title></bibl>  و<bibl>مجلة <title level="j">المقتبس</title></bibl> .</p>
+            <p>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.</p>
+            <p>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:</p>
+        </div>
+    </div>
+</body>
+```
+
+::::
+:::
+
+::: notes
+
+- why TEI?
+    + I knew it already
+    + widely adopted standard in the digital editing world
+    + necessary for grant-funding in the Global North
+- why not TEI
+    + steep learning curve
+    + not particularly well-suited to Arabic texts?
+
+:::
+
+## 3. edit the data
+
+::: columns
+:::: column
+
+- make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**:
+    + [.git](https://git-scm.com/) is open source and available for all OSs
+- plain-text (including XML) editors
+    + should be **syntax aware**
+    - **RTL**: support in text editors is a mixed bag
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [Visual Studio Code](https://code.visualstudio.com/)](../../assets/OpenArabicPE/vscode_zuhur.png){#fig:zuhur-vscode}
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../../assets/OpenArabicPE/sublime_zuhur.png) -->
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../../assets/OpenArabicPE/assets/textmate_zuhur.png) -->
+
+::::
+:::: column
+
+- XML editors proper
+    + should be **schema aware** to validate the encoding
+    - **RTL**:
+        1. [oXygen XML editor](https://www.oxygenxml.com/) (99 USD) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+        2. [Visual Studio Code](https://code.visualstudio.com/) (free) with the right extensions is a viable second
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen}
+
+::::
+:::
+
+::: notes
+
+- editing tools depend on modelling decisions and file formats
+
+:::
+
+## 4. save and share the data
+
+::: columns
+:::: column
+
+- facsimiles: [Internet Archive](https://archive.org) (supports [IIIF](https://iiif.io/))
+- working copy of everything else: distributed version control platforms ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
+- longterm preservation: publicly-funded, open repository ([Zenodo](https://zenodo.org/))
     + make sure to add [ORCID](https://orcid.org)s for all contributors
-- authority data: [Wikidata](https://wikidata.org/)
+- authority data (people, titles, etc.): [Wikidata](https://wikidata.org/)
+- provide suitable open licenses for re-use: [Creative Commons](https://creativecommons.org/), [MIT](), Public Domain (CC0)
 
-## Workflow for bootstrapping
-### 3. edit the data
+::::
+:::: column
 
-- Free, syntax-aware Texteditor with RTL support: [Visual Studio Code](https://code.visualstudio.com) 
-- use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
-- make use of version control and stable IDs for **transparent authorship attribution**: [GitHub](https://github.com/), [ORCID](https://orcid.org)
+![Archived release of *al-Zuhūr* on [Zenono](https://doi.org/10.5281/zenodo.3580606)](../../assets/OpenArabicPE/zenodo_zuhur.png){#fig:zuhur-zenodo}
 
-## Workflow for bootstrapping
-### 4. disseminate the data
+::::
+:::
 
-- generate static webviews:
-    - render XML to HTML on-the-fly in the client's web browser:
-        + XSLT1: [TEI Boilerplate](https://github.com/OpenArabicPE/tei-boilerplate-arabic-editions)
-        + JavaScript: [CETEICean](https://github.com/TEIC/CETEIcean)
-    - [GitHub actions](https://github.com/features/actions) to generate static webpages
-- host webviews, project blogs: [gh-pages](https://pages.github.com/) on GitHub, GitLab etc.
-- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
-- full-text search: [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+## 5. present the data
+<!-- ### presentation layers and access for human readers -->
 
-# OpenArabicPE
+::: columns
+:::: column
+
+- Hosting: [GitHub Pages](https://pages.github.com/) can expose your data repository to the web
+- Generate static webviews
+    + removes need for backend and minimises traffic
+    + easy to archive
+    - on the fly: XSLT1 ([TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/)) or JS ([CETEICEan](https://github.com/TEIC/CETEIcean)) to render XML files in the client's web browser
+    - pre-computed: [GitHub actions](https://github.com/features/actions) give access to virtual machines
+- bibliographic database: [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
+    + mitigates against the absent backend
+    + **browse** and **search** independent of file structure
+- full-text search across the entire corpus: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+
+::::
+:::: column
+
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png){#fig:zuhur-zotero}
+
+![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png){#fig:zuhur-webview}
+
+<!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+
+::::
+:::
+
+# Open Arabic Periodical Editions
+## Corpus
+
+| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
+| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
+| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
+
+## Beware: Bootstrapping relies on the work of others
+### All dependencies will eventually break / need repair
+
+::: columns
+:::: column
+
+- Reliance on external data providers: link rot
+    - links to facsimiles broke twice in four years
+- Reliance on free tools and services: link rot
+    + URLs to our editions had to be changed once
+- XSLT1 in web browsers: will fall victim to JSON and security features
+    + over the last 5 years support has markedly decreased
+<!-- - Full-text search across issues and periodicals without a backend
+    + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) -->
+
+::::
+:::: column
+
+![The main components of OpenArabicPE](../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png)
+
+::::
+:::
+
+
 
 # Thank you!
 ## Thank you!
