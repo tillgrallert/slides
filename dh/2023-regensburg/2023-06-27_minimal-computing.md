@@ -232,6 +232,8 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
     + rendering
     + computational methods
 
+![In-browser search for "مك" on the Wikidata item page for Mecca ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
+
 ::::
 :::: column
 
@@ -277,18 +279,18 @@ digital and infrastructual divide(s) between the hegemonic, Anglophone North and
 ::::
 :::: column
 
-|      periodicals       | --1918 | --1929 |
-|------------------------|--------|--------|
-| published              |   2054 |   3550 |
-| known holdings         |    540 |    775 |
-| % of total             |  26.29 |  21.83 |
-|------------------------|--------|--------|
-| digitized              |    156 |    233 |
-| % of total             |   7.59 |   6.56 |
-|------------------------|--------|--------|
-| multiple digitizations |     51 |     66 |
-| % of total             |   2.48 |   1.86 |
-| % of digitized         |  32.69 |  28.33 |
+|      periodicals       | --1918 |       | --1929 |               |
+|  :-------------------  | ----:  | ----: | ----:  |     ----:     |
+|       published        |  2054  |       |  3550  |               |
+|     known holdings     |  540   |       |  775   |               |
+|       % of total       |        | 26.29 |        | [21.83]{.red} |
+|------------------------|--------|-------|--------|---------------|
+| digitized              |    156 |       |    233 |               |
+| % of total             |        |  7.59 |        | [6.56]{.red}  |
+|------------------------|--------|-------|--------|---------------|
+| multiple digitisations |     51 |       |     66 |               |
+| % of total             |        |  2.48 |        | 1.86          |
+| % of digitised         |        | 32.69 |        | [28.33]{.red} |
 
 Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
@@ -593,6 +595,8 @@ We need to digitise the cultural record
     + fashion
     + purist principles
 
+![Screenshot of a [website](https://bulthaup.com/en/b3/) selling luxury kitchens](../../assets/dh/bulthaupt.png){#fig:bulthaupt}
+
 ::::
 :::: column
 
@@ -602,6 +606,8 @@ We need to digitise the cultural record
     + balance our needs against the resources at hand
     + acknowledge the inevitable impact of our actions
     + minimal computing as *meaningful* computing
+
+![Frankfurter Kitchen, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg?uselang=de){#fig:bauhaus}
 
 ::::
 :::
@@ -623,6 +629,39 @@ We need to digitise the cultural record
 
 :::
 
+## Finally, there is computing
+
+::: columns
+:::: column
+
+- use what we already know
+- use what we can afford long-term
+- do not impose unnecessary costs on our users
+- do not waste resources to the detriment of our planet
+
+::::
+:::: column
+
+- learn techniques new to you
+- develop skills
+
+::::
+:::
+
+
+::: notes
+
+- first column
+    + proven technologies and established standards
+    + not the latest framework
+        * think of what we do as space travel: Voyager I and II are still functioning with rudimentary computing powers
+    + flat technology stacks
+    + nothing shiny
+
+:::
+
+
+
 
 
 
@@ -641,7 +680,7 @@ We need to digitise the cultural record
 - harvest, generate, validate and share open metadata -->
 
 
-### principles
+### minimal computing principles
 
 - build what **we need** with what **we have** at hand
 - as **few** as possible, **open** and **established** formats and tools
@@ -871,7 +910,29 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 :::
 
 # Open Arabic Periodical Editions
-## Corpus
+## Resources
+
+::: columns
+:::: column
+
+- social resources
+    + one after-hours postdoc
+    + 13 interns
+
+::::
+:::: column
+
+- physical resources
+    + no funding
+    + work-issued / private laptops
+    + internet connections
+
+::::
+:::
+
+
+## Resulting Corpus
+
 
 | Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
 | ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
@@ -883,6 +944,50 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 | [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
 | [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
 | **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
+
+
+::: columns
+:::: column
+
+- TEI/XML files for each issue with structural mark-up on the article level
+- mark-up of named entities in bylines
+
+
+::::
+:::: column
+
+- authority files (TEI/XML)
+- bibliographic metadata on the article level (MODS/XML, Zotero RDF, BibTeX)
+
+::::
+:::
+
+
+## Important findings
+### Fakesimiles are a thing
+
+<!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
+
+*al-Muqtabas* 5(7), pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
+
+::: columns-3
+:::: column
+
+![facsimile of the original from EAP](../../assets/OpenArabicPE/eap_muqtabas-v_5-i_7-p_463.jpg){#fig:muq-eap}
+
+::::
+:::: column
+
+![digital text on *shamela.ws*](../../assets/OpenArabicPE/shamela_muqtabas-i_54-p_30-31.png){#fig:muq-shamela}
+
+::::
+:::: column
+
+!["fakesimile" from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG)](../../assets/OpenArabicPE/sakhrit_muqtabas-v_5-i_7-p_605.jpg){#fig:muq-fakesimile}
+
+::::
+:::
+
 
 ## Beware: Bootstrapping relies on the work of others
 ### All dependencies will eventually break / need repair
