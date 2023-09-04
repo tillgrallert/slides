@@ -274,7 +274,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::: columns
 :::: wide
 
-![Title page of *al-Quds* #331, 10 Jan. 1913, Jerusalem](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds}
+![Front page of *al-Quds* #331, 10 Jan. 1913, Jerusalem](../../assets/OpenArabicPE/front-pages/al-quds-v_5-i_331_annotated.jpg){#fig:al-quds}
 
 ::::
 :::: narrow
@@ -502,12 +502,10 @@ The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left
 
 :::
 
-## Transliteration, the undead solution of yore
+<!-- ## Transliteration, the undead solution of yore
 
-- Transliteration into Latin script served the need of colonial administrations and academics with the technological affordances of the time.
-- Depend on input and output **languages**
-- Subject to traditions and taste
-- Error prone
+Transliteration into Latin script served the need of colonial administrations and academics with the technological affordances of the time.
+
 
 
 ::: columns-3
@@ -538,10 +536,60 @@ The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left
 
 <cite>Automated ALA-LC transcription into Latin script with the [romanize Arabic demo](http://romanize-arabic.camel-lab.com)</cite>
 
+::::
+:::
+
+::: notes
+
+- Depend on input and output **languages**
+- Subject to traditions and taste
+- Error prone
+
+::: -->
+
+## Transliteration, the undead solution of yore
+
+Transliteration into Latin script served the need of colonial administrations and academics with the technological affordances of the time.
+
+::: columns-3
+:::: column
+
+### [مرآة الشرق]{lang="ar"}
+
+The Arabic original
+
+### Meraat al-Sherk
+
+The official transcription provided by the paper's masthead
+
+::::
+:::: column
+
+![Front page of *Mirʾāt al-Sharq* #192, 22 Nov. 1922, Jerusalem. Source: [EAP](https://eap.bl.uk/archive-file/EAP119-1-24-1).](https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg){#fig:mirat}
+
+::::
+:::: column
+
+### Mirʾāt al-Sharq
+
+Following the system of the *International Journal of Middle East Studies* (IJMES)
+
+### Mirʾāt aš-Šarq
+
+Following the system of the *Deutsche Morgenländische Gesellschaft* (DMG)
 
 ::::
 :::
 
+::: notes
+
+- transliteration
+    + Depend on input and output **languages**
+    - Subject to traditions and taste
+    - Error prone
+- published by Būlus Shaḥāda in Jerusalem between 1919 and 1938 
+
+:::
 
 
 # Thank you!
