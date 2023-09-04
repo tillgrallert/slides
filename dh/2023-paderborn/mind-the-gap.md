@@ -11,8 +11,10 @@ url: https://tillgrallert.github.io/slides/dh/2023-paderborn/
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en
 bibliography: 
-    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
+    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+    - /Users/Shared/BachUni/publications/github/pae326271/assets/bibliography/2023_dh-in-practice.csl.json
+    - /Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/bibliography/2023_clio-guide.csl.json
 slide-level: 2
 license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
@@ -84,6 +86,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 - access to infrastructures of the digital is limited in the Arabic world
 - support for Arabic is limited in the digital
 
+:::
 
 ## Cultural heritage
 
@@ -95,7 +98,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::: column
 
-![The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023](https://static.srpcdigital.com/2023-07/256558.jpeg){#fig:archives-dam}
+![The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: @](https://static.srpcdigital.com/2023-07/256558.jpeg){#fig:archives-dam}
 
 ::::
 :::
@@ -286,8 +289,12 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-# *Linguistic imperialism*
+# *Linguistic imperialism* and the condition of multilinguality
 ## Linguistic imperialism
+
+>Indigenous peoples have the right to revitalize, use, develop and transmit to future generations their histories, languages, oral traditions, philosophies, writing systems and literatures, and to designate and retain their own names for communities, places and persons.
+
+<cite>[@UNDRIP2007, §13]<cite>
 
 >'Linguistic imperialism' is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political
 
@@ -305,7 +312,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ### Script
 
 - Second most important script after Latin
-    + currently used by 14 languages: Arabic, Persian, Urdu, Pashto ...
+    + currently used by 14 languages: Arabic, Persian, Urdu, Pashto, Uzbek, Uighur ...
 
 ::::
 :::: column
@@ -321,30 +328,30 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-![Example: [@oclc_4770057679-i_13-div_8.d1e1249]](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-1}
+![Approximate distribution of Arabic script use along current national boundaries [@Nemeth+2017, fig 1.1]](../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png){#fig:arabic-script}
 
-## Arabic
+## Arabic Script Grammar
 
-### Script
+::: columns
+:::: column
 
 + Written from **right** to left (RTL)
 + Letters (*graphemes*)
     * mostly connected in direction of writing
     * letterform depends of position within the string (*allographs*): [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
     * combination of basic letterforms (*archigraphemes*, Arab. *rasm*) and diacritic marks (*iʿjām*)
-- Use of diacritics is subject to regional preferences and change of time 
+- diacritics 
+    + reduce semantic ambiguity
+    + subject to regional preferences and change of time 
 - Vocalisation (*tashkīl*) is **optional** and changes the semantics 
-<!-- + Präferenz für Ligaturen -->
 
 <!-- ![Beispiel: "Amerika und die arabischen Gelehrten". [*al-Muqtabas* 2(1)](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249)](../../assets/dh/arabic-script_sample-annotated.png){#fig:arabic-sample-2} -->
 
-::: columns
-:::: column
-
-![Beginning of @oclc_4770057679-i_13-div_8.d1e1249. Some ligatures are highlighted.](../../assets/dh/arabic-ligatures.png){#fig:zakham-ar}
 
 ::::
 :::: column
+
+![Beginning of @oclc_4770057679-i_13-div_8.d1e1249. Some ligatures are highlighted.](../../assets/dh/arabic-ligatures.png){#fig:zakham-ar}
 
 ![Pseudo-rasm of the text in @fig:zakham-ar. Automatically generated with @Pohl2022Rasmifize.](../../assets/dh/arabic_rasm.png){#fig:zakham-ar-rasm}
 
@@ -371,6 +378,128 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ::::
 ::: -->
+
+## Unicode is awesome ...
+<!-- ### [... Industry consortia not that much!]{.c_right} -->
+
+::: columns
+:::: column
+
+![Supported scripts in Unicode v1.0.0. Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/unicode_1-0-0.png){#fig:unicode-1}
+
+::::
+:::: column
+
+![Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/unicode_15-0-0-missing-scripts.png){#fig:unicode-15-missing}
+
+::::
+:::
+
+
+::: notes
+
+- unicode can be traced back to the 1980s
+- Unicode has become the dominant encoding standard in the 2000s
+- almost universal support across operating systems has been driven by people's fondness of emojis
+- Arabic has been part of Unicode since v 1.0.0
+- linguisting imperialism
+    + consortium: Adobe, Airbnb, Amazon, Apple, Yat, Google, ETCO, Meta, Microsoft, Netflix, SAP and Salesforce
+    + character encoding is part of the history of a global hegemonic technology stack  bound up in historically contingent cultural traditions of the Global North. 
+    + Mechanically and, later, electronically recording information in scripts other than Latin---particularly complex scripts with a much larger number of graphemes and different writing directions--- was never considered sufficiently important or profitable to be supported out-of-the-box.
+    + Character encoding enforces Latin script grammar
+        * unicode insufficiently distinguishes between languages and scripts
+    + The standard is written in English
+    + Current v 15:
+        *  we know at least 300 writing systems
+        *  127 are currently not encoded
+
+:::
+
+## Unicode is awesome ...
+
+[... but standards depend on implementation and software support]{.c_right}
+
+### Encoding nightmares
+
+::: columns
+:::: wide
+
+![32 variants of encoding "Meccan" ([مكية]{lang="ar"}) [@Milo2014VisuallyMisleading, 4]](../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png){#fig:arabic-mecca-1}
+
+::::
+:::: narrow
+
+![In-browser search for "[مك]{lang="ar"}" in the Wikidata entry for "Mecca" ([Q5806](https://www.wikidata.org/wiki/Q5806))](../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png){#fig:arabic-mecca-2 height="300px"}
+
+::::
+:::
+
+::: notes
+
+- unicode insufficiently distinguishes between languages and scripts
+    + violating two of its principles
+        * characters not glyphs
+        * unification: no duplicates within a script
+- yet, rendering depends on software support
+    + see [@fig:arabic-fail-covid]
+
+
+:::
+
+## Unicode is awesome ...
+
+<!-- [... but standards depend on implementation and software support]{.c_right} -->
+
+[... did I mention industry consortia?]{.c_right}
+
+>HTML elements all have names that only use ASCII alphanumerics [@HTMLLivingStandard2023, §13.1.2]
+
+::: columns
+:::: column
+
+![Rendered HTML with the built-in default CSS for @oclc_4770057679-i_13-div_8.d1e1249. The test file is available [online](https://doi.org/10.5281/zenodo.7781543)](../../assets/dh/arabic_failure-browser.png){#fig:zakham-ar-failure}
+
+::::
+:::: column
+
+![HTML-Code for @fig:zakham-ar-failure in Visual Code Studio. By default, non-ASCII characters are visually highlighted](../../assets/dh/html_vscode.png){#fig:html}
+
+::::
+:::
+::: notes
+
+- Arabic has been part of Unicode since its inception
+- yet, software support is a different question, as we have seen 
+- HTML5 is a *living standard* maintained by yet another consortium Web Hypertext Application Technology Working Group (WHATWG) 
+    + members are leading browser vendors such as Apple, Google, Microsoft and Mozilla
+    + all but Mozilla are also members of the Unicode consortium
+- `@lang` attribute not used by standard CSS
+    + everyone has to add `*[lang="ar"] {direction:rtl;}`
+
+:::
+
+
+## Bidirectional texts
+
+The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left-to-right as the base direction.
+
+::: columns
+:::: wide
+
+![Bi-directional TEI/XML at the beginning of @oclc_1034545644-i_15-div_1.d2e634. Arrows indicate the reading direction. Numbers indicate reading order.](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
+
+::::
+:::: narrow
+
+![The TEI/XML from @fig:bidi-xml in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen}
+
+::::
+:::
+::: notes
+
+- the Oxygen developers added support for Arabic in `@xml:lang` on our suggestion in 2015.
+- but only for TEI/XML and not for all RTL languages.
+
 
 
 # Thank you!
