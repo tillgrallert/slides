@@ -491,7 +491,7 @@ The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left
 ::::
 :::: narrow
 
-![The TEI/XML from @fig:bidi-xml in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen}
+![The TEI/XML from @fig:bidi-xml in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author_small.png){#fig:zuhur-oxygen}
 
 ::::
 :::
@@ -499,6 +499,48 @@ The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left
 
 - the Oxygen developers added support for Arabic in `@xml:lang` on our suggestion in 2015.
 - but only for TEI/XML and not for all RTL languages.
+
+:::
+
+## Transliteration, the undead solution of yore
+
+- Transliteration into Latin script served the need of colonial administrations and academics with the technological affordances of the time.
+- Depend on input and output **languages**
+- Subject to traditions and taste
+- Error prone
+
+
+::: columns-3
+:::: column
+
+### Amīrkā wa ʿulamāʾ al-ʿArab
+
+>Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl an al-muʾarrikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn.
+
+<cite>Transliteration according to the *International Journal of Middle East Studies*</cite>
+
+
+::::
+:::: column
+
+### Amīrkā wa ʿulamāʾ al-ʿarab
+
+>Kānat Amīrkā ma[ǧ]{.red}hūla ʿinda abnāʾ al-qarn al-[ḫ]{.red}āmis ʿa[š]{.red}r bi-dalīl an al-muʾarri[ḫ]{.red}īn fī [ḏ]{.red}alika al-ʿahd lam ya[ḏ]{.red}karū ʿanhā siwā a[ḫ]{.red}bār ikti[š]{.red}āfihā fī awā[ḫ]{.red}ir [ḏ]{.red}alika al-qarn.
+
+<cite>Transliteration according to the *Deutsche Morgenländische Gesellschaft*</cite>
+
+::::
+:::: column
+
+### Amīrikā wa-ʻulamāʼ al-ʻArab
+
+>Kānat Amīrikā majhūlah [ʻ]{.red}inda abnā[ʼ]{.red} al-qarn al-khāmis [ʻ]{.red}ashar bi-dalīl an al-mu[ʼ]{.red}arrikhīn fī dhālika al-[ʻ]{.red}ahd lam [ydhkrwā]{.red} [ʻ]{.red}anhā saw[á]{.red} Akhbār [aktshāfhā]{.red} fī awākhir dhālika al-qarn
+
+<cite>Automated ALA-LC transcription into Latin script with the [romanize Arabic demo](http://romanize-arabic.camel-lab.com)</cite>
+
+
+::::
+:::
 
 
 
