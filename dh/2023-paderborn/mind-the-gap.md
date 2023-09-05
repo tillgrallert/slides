@@ -289,7 +289,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-# *Linguistic imperialism* and the condition of multilinguality
+# *Linguistic imperialism* and the human condition of multilinguality
 ## Linguistic imperialism
 
 >Indigenous peoples have the right to revitalize, use, develop and transmit to future generations their histories, languages, oral traditions, philosophies, writing systems and literatures, and to designate and retain their own names for communities, places and persons.
@@ -417,7 +417,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Unicode is awesome ...
 
-[... but standards depend on implementation and software support]{.c_right}
+... but standards depend on implementation and software support
 
 ### Encoding nightmares
 
@@ -450,7 +450,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 <!-- [... but standards depend on implementation and software support]{.c_right} -->
 
-[... did I mention industry consortia?]{.c_right}
+... did I mention industry consortia?
 
 >HTML elements all have names that only use ASCII alphanumerics [@HTMLLivingStandard2023, §13.1.2]
 
@@ -578,6 +578,10 @@ Following the system of the *International Journal of Middle East Studies* (IJME
 
 Following the system of the *Deutsche Morgenländische Gesellschaft* (DMG)
 
+### mrMp Alcrq
+
+Buckwalter transliteration
+
 ::::
 :::
 
@@ -587,7 +591,226 @@ Following the system of the *Deutsche Morgenländische Gesellschaft* (DMG)
     + Depend on input and output **languages**
     - Subject to traditions and taste
     - Error prone
+    - if 1:1 grapheme replacement is intended, it becomes unreadable for casual readers
 - published by Būlus Shaḥāda in Jerusalem between 1919 and 1938 
+
+:::
+
+# Arabic textual heritage online
+## The long tail of ASCII in discovery systems
+
+::: columns-3
+:::: column
+
+### [الجنة]{lang="ar"}?
+
+No Arabic script
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=الجنة) for "[الجنة]{lang="ar"}"](../../assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
+
+::::
+:::: column
+
+### al-Ǧanna?
+
+Which Latinized transcription was used?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=al-Ǧanna) for "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
+
+::::
+:::: column
+
+### Ganna!
+
+What are the normalization rules for the search algorithm?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Ganna) for "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
+
+::::
+:::
+
+::: notes
+
+- catalogue could be searched in Arabic but the data is missing
+- catalogues are historical artefacts
+    + digitisation of catalogues: NOT re-cataloguing of original material
+        * card catalogue
+        * ASCII OPAC
+        * automated transcription of the card catalogue
+        * errors perpetuate
+- Latin input is mostly reduced to ASCII
+    + Hamza and ʿAyn escape this algorithm on ZDB
+- determined article is not automatically removed
+- The choices are not transparently documented
+- no software on-screen keyboards provided
+
+:::
+
+## Accessibility
+### Interfaces
+
+![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription;  green = German metadata](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
+
+# Digitisation bias
+## Digitisation bias
+### Collection biases perpetuated
+
+::: columns
+:::: column
+
+![Periodicals and their holding institutions](../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png){#fig:holding-map}
+
+::::
+:::: column
+
+|      periodicals       | --1918 |       | --1929 |               |
+|  :-------------------  | ----:  | ----: | ----:  |     ----:     |
+|       published        |  2054  |       |  3550  |               |
+|     known holdings     |  540   |       |  775   |               |
+|       % of total       |        | 26.29 |        | [21.83]{.red} |
+|------------------------|--------|-------|--------|---------------|
+| digitized              |    156 |       |    233 |               |
+| % of total             |        |  7.59 |        | [6.56]{.red}  |
+|------------------------|--------|-------|--------|---------------|
+| multiple digitisations |     51 |       |     66 |               |
+| % of total             |        |  2.48 |        | 1.86          |
+| % of digitised         |        | 32.69 |        | [28.33]{.red} |
+
+Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
+
+::::
+:::
+
+::: notes
+
+- collection bias is more of a knowledge bias
+- While the digitization quote of roughly 50% of titles in collections is surprisingly high, it must be kept in mind that we cannot resolve information on the extent of digitization. Even if only a single issue of hundreds published was digitized, the periodical title will be included in this count.
+- 66 periodicals or 28,33% have been digitized by multiple institutions and 21 of this subset by three and more.
+
+:::
+
+## Digitisation biases
+### illustrating the divide
+
+|             | Arabic periodicals (1798--1918) | [WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de) |
+|-------------|---------------------------------|---------------------------------------------------------------------|
+| community   | c. 420 million Arabic speakers  | c. 6.2 million inhabitants                                          |
+| periodicals | 2054 newspapers and journals    | 125 newspapers                                                      |
+| digitized   | 156 periodicals                 | 125 newspapers with more than 1.5 million pages                     |
+| type        | mostly facsimiles               | facsimiles and full text                                            |
+| access      | paywalls, geo-fencing           | open access                                                         |
+| interface   | mostly foreign languages only   | local and foreign languages                                         |
+
+Table: Comparison of digitized periodicals between the Global South and the Global North {#tbl:digitisation}
+
+## Digitisation biases
+### Quality of metadata
+
+Bibliographic metadata is faulty throughout, mostly unstructured, and subject to *linguistic imperialism*
+
+::: columns
+:::: column
+
+![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
+
+::::
+:::: column
+
+![Facsimile of the same section of @oclc_4770057679-i_61-div_21.d1e2838 from [EAP](https://eap.bl.uk/
+)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap}
+
+::::
+:::
+
+::: notes
+
+- faulty on shadow libraries and official digitisation efforts
+    - publication dates
+        + inferred from vol. and issue number: 1 Ṣafar 1329 aH / c. 1 February 1911
+        + EAP: March 1911
+        + secondary sources: probably delayed by up to four months
+    - volume and issue numbers
+        + shamela: no.61
+        + correct: vol. 6, no. 2
+    - pagination:
+        + shamela = 45, correct = 133
+    - publication place
+        + EAP lists Jerusalem
+- linguistic imperialism
+    + script
+    + calendars
+
+:::
+
+## Digitisation biases
+### Traditional OCR
+
+>language [is] not currently OCRable.
+
+<cite>Archive.org's item description for [@KurdAli+1923+GharaibAlGharba]</cite>
+
+::: columns
+:::: wide
+
+
+| Font Type          | Sakhr (%)           | ABBYY (%)           | RDI(%)              | Tesseract (%)       |
+| -----------------  | -------:            | --------:           | ------:             | -----------:        |
+| Traditional Arabic | 48.54               | 67.66               | [**51.88**]{.green} | 47.04               |
+| Tahoma             | 10.52               | 69.91               | 26.38               | 38.37               |
+| Simplified Arabic  | 52.97               | 67.69               | 44.94               | 46.75               |
+| M Unicode Sara     | 36.03               | 59.40               | 25.92               | 33.72               |
+| Diwani letter      | [**18.13**]{.red}   | [**18.47**]{.red}   | [**18.13**]{.red}   | [**23.32**]{.red}   |
+| DecoType Thuluth   | 36.12               | 37.71               | 24.26               | 32.48               |
+| Deco'Type Naskh    | 48.88               | 50.22               | 41.63               | 40.92               |
+| Arabic transparent | 51.56               | [**75.19**]{.green} | 46.00               | [**48.61**]{.green} |
+| Andalus            | 28.07               | 37.53               | 21.68               | 25.34               |
+| AdvertisingBold    | [**57.35**]{.green} | 70.26               | 27.20               | 39.39               |
+
+Table: Evaluation of traditional OCR software for Arabic font types from [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]. Values show percentage of correctly recognised characters {#tbl:ocr-ar-trad}
+
+::::
+:::: narrow
+
+<!-- ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), quality of the OCR layer (requires US IP)](../../assets/OpenArabicPE/hathi_muqtabas-ocr-3.png) -->
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), quality of the OCR layer](../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png){#fig:gpa-ocr}
+
+::::
+:::
+
+::: notes
+
+- technical problems
+    + layout recognition
+    + segmentation
+    + text recognition
+- what do you do if you have none of the resources mentioned in the toot
+- problems with platform providers
+    + Unstructured text, no APIs, propriertary interfaces
+    + Algorithms and evaluation are kept secret
+        *  unknown numbers of *false positives* and *false negatives*
+
+:::
+
+## Digitisation biases
+### machine-learning approaches to OCR 
+
+>For old prints, there's [...] kraken/calamari for coders, Transkribus if you've got money and just want to have the results[,] and OCR-D if you've got an IT department.
+
+<cite>[@Winkler20230307OCR]</cite>
+
+
+| ID      | ground truth    | words   | lines  | epochs  | CER train  | CER validation     |
+| ------- | --------------- | ------: | -----: | ------: | ---------: | --------------:    |
+| 15946   | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{.green} |
+| 13864   | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{.red}   |
+
+Table: Evaluation of my own Transkribus models {#tbl:ocr-ar-ml}
+
+
+::: notes
+
+- results are great (layout recognition still lacking)
+- but digitised collections need to be re-processed (expensive)
 
 :::
 
