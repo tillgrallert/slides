@@ -642,7 +642,7 @@ We need to digitise the cultural record
 ::::
 :::: column
 
-- learn techniques new to you
+- learn techniques new to us
 - develop skills
 
 ::::
@@ -917,12 +917,12 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 - social resources
     + one after-hours postdoc
-    + 13 interns
+    + 13 interns and volunteers
 
 ::::
 :::: column
 
-- physical resources
+- material resources
     + no funding
     + work-issued / private laptops
     + internet connections
@@ -1020,7 +1020,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 - Contributors to [OpenArabicPE](https://openarabicpe.github.io/): Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Contributors to [Project Jarāʾid](https://projectjaraid.github.io/): Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
 - Links:
-    + Slides: [https://tinyurl.com/dighis23-grallert](https://tillgrallert.github.io/slides/dh/2023-regensburg/index.html)
+    + Slides: [https://tillgrallert.github.io/slides/dh/2023-regensburg/](https://tillgrallert.github.io/slides/dh/2023-regensburg/index.html)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
