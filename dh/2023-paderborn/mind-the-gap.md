@@ -40,7 +40,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-## Digital Arabic
+## Failure despite our best intentions
 
 ::: columns
 :::: wide
@@ -63,7 +63,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 :::
 
-## Global DH
+## Absences
 
 ::: columns
 :::: column
@@ -88,17 +88,17 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 :::
 
-## Cultural heritage
+## Destruction
 
 ::: columns
 :::: column
 
-![Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020](../../assets/dh/2020-08-04-oib-damage.jpg){#fig:oib-explosion}
+![Meeting room at the [Orient-Institut Beirut](https://orient-institut.org/) damaged by the Beirut Port explosion on 4 August 2020. Source: OIB](../../assets/dh/2020-08-04-oib-damage.jpg){#fig:oib-explosion}
 
 ::::
 :::: column
 
-![The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: @](https://static.srpcdigital.com/2023-07/256558.jpeg){#fig:archives-dam}
+![The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: @aSbHrmAdFAwrkAmAHryqkbyr](https://static.srpcdigital.com/2023-07/256558.jpeg){#fig:archives-dam}
 
 ::::
 :::
@@ -646,12 +646,9 @@ What are the normalization rules for the search algorithm?
 
 :::
 
-## Accessibility
-### Interfaces
 
-![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription;  green = German metadata](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
 
-# Digitisation bias
+<!-- # Digitisation bias -->
 ## Digitisation bias
 ### Collection biases perpetuated
 
@@ -689,8 +686,8 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
 :::
 
-## Digitisation biases
-### illustrating the divide
+## Digitisation bias
+### mind the `<gap/>`!
 
 |             | Arabic periodicals (1798--1918) | [WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de) |
 |-------------|---------------------------------|---------------------------------------------------------------------|
@@ -703,8 +700,59 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
 Table: Comparison of digitized periodicals between the Global South and the Global North {#tbl:digitisation}
 
-## Digitisation biases
-### Quality of metadata
+
+::: columns
+:::: column
+
+![Map of Arabic dialects. Source: [reddit](https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp){#fig:map-arabic-dialects}
+
+::::
+:::: column
+
+![Map of Hesse in Europe. Source: <https://www.iz.sk/sk/projekty/regiony-eu/DE7>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/maps/map_hesse-europe.png){#fig:map-hesse}
+
+::::
+:::
+
+::: notes
+
+- price of digitisation is part of the equation
+- infrastructures of knowledge creation 
+- linguistic imperialism embodied in the technology stack
+
+:::
+
+## mind the `<gap/>`!
+### Interfaces
+
+![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription;  green = German metadata](../../assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface}
+
+## mind the `<gap/>`!
+### copyright regimes, paywalls, and geo fencing
+
+cataloging rules and algorithmic copyright detection cause further inaccessibilities
+
+::: columns
+:::: column
+
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (Original in Princeton) outside the USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
+
+::::
+:::: column
+
+![The page from [@fig:hathi-muqtabas-global] with a US-IP](../../assets/OpenArabicPE/hathi_muqtabas-2.png){#fig:hathi-muqtabas-us}
+
+::::
+:::
+
+
+::: notes
+
+Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird korrekt als 19uu katalogisiert und dann Copyrightstatus sicherheitshalber als 1999 angenommen.
+
+:::
+
+## Quality of metadata
 
 Bibliographic metadata is faulty throughout, mostly unstructured, and subject to *linguistic imperialism*
 
@@ -742,7 +790,7 @@ Bibliographic metadata is faulty throughout, mostly unstructured, and subject to
 
 :::
 
-## Digitisation biases
+## mind the `<gap/>`!
 ### Traditional OCR
 
 >language [is] not currently OCRable.
@@ -791,31 +839,566 @@ Table: Evaluation of traditional OCR software for Arabic font types from [@Algha
 
 :::
 
-## Digitisation biases
-### machine-learning approaches to OCR 
+
+## machine-learning approaches to OCR
 
 >For old prints, there's [...] kraken/calamari for coders, Transkribus if you've got money and just want to have the results[,] and OCR-D if you've got an IT department.
 
 <cite>[@Winkler20230307OCR]</cite>
 
+::: columns
+:::: narrow
 
-| ID      | ground truth    | words   | lines  | epochs  | CER train  | CER validation     |
-| ------- | --------------- | ------: | -----: | ------: | ---------: | --------------:    |
-| 15946   | *al-Ustādh*     | 192829  | 18732  | 200     | 2.01       | [**2.09**]{.green} |
-| 13864   | *al-Muqtabas*   | 11116   | 1013   | 200     | 0.07       | [**8.40**]{.red}   |
+| training set     | *al-Ustādh*        | *al-Muqtabas*    |
+| ---------------- | -----------------: | ---------------: |
+| words            | 192829             | 11116            |
+| lines            | 18732              | 1013             |
+| epochs           | 200                | 200              |
+| CER train        | 2.01               | 0.07             |
+| CER validation   | [**2.09**]{.green} | [**8.40**]{.red} |
 
-Table: Evaluation of my own Transkribus models {#tbl:ocr-ar-ml}
+Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
+
+::::
+:::: wide
+
+![Transkribus web-app showing results of our model for *al-Ḥasnāʾ* 1(1)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png){#fig:transkribus-web-app}
+
+::::
+:::
+
+::: notes
+
+- models were trained in late 2019 in collaboration with Sinai Rusinek
+- results are great (layout recognition still lacking)
+    + *al-Muqtabas* model suffers from over-fitting
+    + digitised collections need to be re-processed (expensive)
+- OpenITI
+    + Mellon fund for model training to re-process Arabic-script material on HathiTrust
+
+:::
+
+# Minimal Computing to the rescue
+## Building what **we need** with what **we have** at hand
+
+>minimal computing connotes digital humanities work undertaken in the context of some set of constraints. This could include lack of access to hardware or software, network capacity, technical education, or even a reliable power grid
+
+<cite>[@RisamGil2022Introduction, §3]</cite>
+
+>this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, without the help we can’t get, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
+
+<cite>[@Gil+2016, 29]</cite>
 
 
 ::: notes
 
-- results are great (layout recognition still lacking)
-- but digitised collections need to be re-processed (expensive)
+- minimal computing is a result of GO::DH and events and conditions in Cuba
+- Alex Gil's ideas resonated with me, upon meeting in Beirut in April 2015
+
+:::
+
+## What do we need?
+
+<!-- We need to digitise the cultural record -->
+
+::: columns
+:::: column
+
+### Access
+
+- Societies of the Global South have a right to access their own cultural record
+- Scholarship can immensely profit from broadening the scope of our sources
+
+::::
+:::: column
+
+### Preservation
+
+- Periodicals are a volatile and dispersed cultural artefact
+- libraries, archives, personal collections are under threat of destruction, defunding, neglect
+
+::::
+:::
+
+::: notes
+
+We need to digitise the cultural record
 
 :::
 
 
+## Centering the *we* in "what do we need?"
+
+::: columns
+:::: column
+
+*we* is defined by shared 
+
+- interests
+- ethics, e.g.
+    + [FAIR](https://www.go-fair.org/fair-principles/) principles
+    + [CARE](https://www.gida-global.org/care) principles
+    + -> digital commons
+
+::::
+:::: column
+
+*we* defines
+
+- the specific context and and working conditions
+- our access to skills, methods, labour time, tools, materials ...
+
+::::
+:::
+
+::: notes
+
+- FAIR: **F**indability, **A**ccessability, **I**nteroperability, **R**euse
+- [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics 
+    + developped in the context of indigenous communities
+
+:::
+
+
+## What about the *minimal* in minimal computing?
+
+<!-- add images -->
+
+::: columns
+:::: column
+
+### from a position of privilege
+
+- minimalism as an end in itself
+    + destroying resources already at hand
+    + fashion
+    + purist principles
+
+![Screenshot of a [website](https://bulthaup.com/en/b3/) selling luxury kitchens](../../assets/dh/bulthaupt.png){#fig:bulthaupt}
+
+::::
+:::: column
+
+### from a position of exclusion
+
+- minimalism as a means to an end
+    + balance our needs against the resources at hand
+    + acknowledge the inevitable impact of our actions
+    + minimal computing as *meaningful* computing
+
+![Frankfurter Kitchen, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg?uselang=de){#fig:bauhaus}
+
+::::
+:::
+
+
+::: notes
+
+1. minimalism as an end
+    - resource-intensive
+    - example: Mary Condo
+    - example: purist computing infrastructures
+        + you got to run your own server and never use evil platforms
+2. minimalism as a means to an end 
+    + meaningful connectivity
+    + original Bauhaus / modernist design:
+        * form follows function to 
+            - decrease the cost of industrial production
+            - increase the material benefits of the expended resources
+
+:::
+
+## Finally, there is computing
+
+::: columns
+:::: column
+
+- use what we already know
+- use what we can afford long-term
+- do not impose unnecessary costs on our users
+- do not waste resources to the detriment of our planet
+
+::::
+:::: column
+
+- learn techniques new to us
+- develop skills
+
+::::
+:::
+
+
+::: notes
+
+- first column
+    + proven technologies and established standards
+    + not the latest framework
+        * think of what we do as space travel: Voyager I and II are still functioning with rudimentary computing powers
+    + flat technology stacks
+    + nothing shiny
+
+:::
+
+# Minimal computing approach to the digitisation of Arabic periodicals
+## Contributing to the *digital commons* <br/> without the help we can't get
+
+::: columns
+:::: column
+
+### ideas
+
+- unite **existing** gray transcriptions with digital facsimiles
+- learn from free and open-source software development
+<!-- - model everything to make components citable
+- harvest, generate, validate and share open metadata -->
+
+
+### minimal computing principles
+
+- build what **we need** with what **we have** at hand
+- as **few** as possible, **open** and **established** formats and tools
+- running on **our** hardware
+- with **our** skills and knowledge
+- **free-to-use** platforms without lock-in of data
+
+::::
+:::: column
+
+### aims
+
+<!-- + **validate** and **improve** the transcription with the facsimiles
+- **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+- **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+- **open licences** to facilitate re-use -->
+
+- make Arabic periodicals **accessible** on a shoestring budget
+- **validate** and improve utilization of transcriptions
+    + reliablity: content and citations
+    + accessibility: for readers and computational analysis
+    + ground truth for ML-based OCR/HTR
+- establish an open, sustainable **infrastructure** of workflows, models, authority files
+<!-- - With the affordances of the Global South -->
+
+::::
+:::
+
+::: notes
+
+- minimal computing
+- meaningful connectivity: focus on practicability instead of principled stance
+- result: bootstrapped scholarly editions
+
+:::
+
+#  A minimal workflow for bootstrapping digital editions 
+## 1. get the data
+
+::: columns
+:::: column
+
+- facsimiles
+    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), <!-- [HathiTrust](http://hathitrust.org/), --> [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
+    + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
+- text
+    + scrape existing transcriptions from [*shamela.ws*](http://shamela.ws/index.php/book/26523), et al.
+    + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
+
+
+::::
+:::: column
+
+EPub (HTML) for *al-Zuhūr* 2(4) from shamela.ws
+
+```html
+<div dir="rtl" id="book-container">
+    <hr/>
+    <a id='C232'></a>
+    <span class="title">صحافة سورية ولبنان</span><br /><span class="red">3 - </span>المجلات<br />هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<br />أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<br />وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<br />
+</div>
+```
+
+OCR output from Transkribus for *al-Ḥasnāʾ* (PAGE XML)
+
+```xml
+<TextLine id="r1l5" custom="readingOrder {index:4;}">
+    <Coords points="470,548 2191,527 1648,462 470,464"/>
+    <Baseline points="480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536"/>
+    <TextEquiv>
+        <Unicode>من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها</Unicode>
+    </TextEquiv>
+</TextLine>
+```
+::::
+:::
+
+::: notes
+
+- IIIF allows to set a very low quality to reduce bandwidth and traffic
+- what do you need to know
+    - HTML
+    - XML
+    - JSON: for IIIF
+    - wget, cURL: for scraping
+
+:::
+
+## 2. model the data
+
+Structure the text string into issues, sections, articles with bylines ...
+
+::: columns
+:::: column
+
+- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI XML)
+    - active community
+    - pre-requisite for grant funding
+    - easy to archive (XML = plain text)
+- re-use / adapt domain specific encoding schemas within the TEI
+- try to script basic modelling using patterns in your source text:
+    + regular expressions
+    + XSLT, Python, R, whatever you are most comfortable with
+- automatically model derivative bibliographic data: MODS, METS, BibTeX, ...
+
+::::
+:::: column
+
+The same section of *al-Zuhūr* 2(4) modelled in TEI
+
+```xml
+<body xml:lang="ar">
+<pb corresp="../epub/shamela_36534/OEBPS/xhtml/P744.xhtml" ed="shamela" n="n2-p184"/>
+<pb ed="print" edRef="#edition_1" facs="#facs_184" n="184"/>
+    <div prev="oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766" subtype="article" type="item" xml:id="div_1.d2e634">
+        <head>صحافة <placeName>سورية</placeName> و<placeName>لبنان</placeName></head>
+        <div type="section" xml:id="div_3.d2e1200">
+            <head> ٣ - المجلات</head>
+            <p>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا <bibl>مجلة <title level="j">المشرق</title></bibl>  و<bibl>مجلة <title level="j">المقتبس</title></bibl> .</p>
+            <p>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.</p>
+            <p>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:</p>
+        </div>
+    </div>
+</body>
+```
+
+::::
+:::
+
+::: notes
+
+- why TEI?
+    + I knew it already
+    + widely adopted standard in the digital editing world
+    + necessary for grant-funding in the Global North
+- why not TEI
+    + steep learning curve
+    + not particularly well-suited to Arabic texts?
+
+:::
+
+## 3. edit the data
+
+::: columns
+:::: column
+
+- make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**:
+    + [.git](https://git-scm.com/) is open source and available for all OSs
+- plain-text (including XML) editors
+    + should be **syntax aware**
+    - **RTL**: support in text editors is a mixed bag
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [Visual Studio Code](https://code.visualstudio.com/)](../../assets/OpenArabicPE/vscode_zuhur.png){#fig:zuhur-vscode}
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../../assets/OpenArabicPE/sublime_zuhur.png) -->
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../../assets/OpenArabicPE/assets/textmate_zuhur.png) -->
+
+::::
+:::: column
+
+- XML editors proper
+    + should be **schema aware** to validate the encoding
+    - **RTL**:
+        1. [oXygen XML editor](https://www.oxygenxml.com/) (99 USD) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+        2. [Visual Studio Code](https://code.visualstudio.com/) (free) with the right extensions is a viable second
+
+![The TEI/XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen-2}
+
+::::
+:::
+
+::: notes
+
+- editing tools depend on modelling decisions and file formats
+
+:::
+
+## 4. save and share the data
+
+::: columns
+:::: column
+
+- facsimiles: [Internet Archive](https://archive.org) (supports [IIIF](https://iiif.io/))
+- working copy of everything else: distributed version control platforms ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
+- longterm preservation: publicly-funded, open repository ([Zenodo](https://zenodo.org/))
+    + make sure to add [ORCID](https://orcid.org)s for all contributors
+- authority data (people, titles, etc.): [Wikidata](https://wikidata.org/)
+- provide suitable open licenses for re-use: [Creative Commons](https://creativecommons.org/), [MIT](), Public Domain (CC0)
+
+::::
+:::: column
+
+![Archived release of *al-Zuhūr* on [Zenono](https://doi.org/10.5281/zenodo.3580606)](../../assets/OpenArabicPE/zenodo_zuhur.png){#fig:zuhur-zenodo}
+
+::::
+:::
+
+## 5. present the data
+<!-- ### presentation layers and access for human readers -->
+
+::: columns
+:::: column
+
+- Hosting: [GitHub Pages](https://pages.github.com/) can expose your data repository to the web
+- Generate static webviews
+    + removes need for backend and minimises traffic
+    + easy to archive
+    - on the fly: XSLT1 ([TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/)) or JS ([CETEICEan](https://github.com/TEIC/CETEIcean)) to render XML files in the client's web browser
+    - pre-computed: [GitHub actions](https://github.com/features/actions) give access to virtual machines
+- bibliographic database: [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
+    + mitigates against the absent backend
+    + **browse** and **search** independent of file structure
+- full-text search across the entire corpus: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+
+::::
+:::: column
+
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png){#fig:zuhur-zotero}
+
+![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png){#fig:zuhur-webview}
+
+<!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+
+::::
+:::
+
+# Open Arabic Periodical Editions
+## Resources
+
+::: columns
+:::: column
+
+- social resources
+    + one after-hours postdoc
+    + 13 interns and volunteers
+
+::::
+:::: column
+
+- material resources
+    + no funding
+    + work-issued / private laptops
+    + internet connections
+
+::::
+:::
+
+
+## Resulting Corpus
+
+
+| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
+| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
+| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
+
+
+::: columns
+:::: column
+
+- TEI/XML files for each issue with structural mark-up on the article level
+- mark-up of named entities in bylines
+
+
+::::
+:::: column
+
+- authority files (TEI/XML)
+- bibliographic metadata on the article level (MODS/XML, Zotero RDF, BibTeX)
+
+::::
+:::
+
+
+## Important findings
+### Fakesimiles are a thing
+
+<!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
+
+*al-Muqtabas* 5(7), pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
+
+::: columns-3
+:::: column
+
+![facsimile of the original from EAP](../../assets/OpenArabicPE/eap_muqtabas-v_5-i_7-p_463.jpg){#fig:muq-eap}
+
+::::
+:::: column
+
+![digital text on *shamela.ws*](../../assets/OpenArabicPE/shamela_muqtabas-i_54-p_30-31.png){#fig:muq-shamela}
+
+::::
+:::: column
+
+!["fakesimile" from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG)](../../assets/OpenArabicPE/sakhrit_muqtabas-v_5-i_7-p_605.jpg){#fig:muq-fakesimile}
+
+::::
+:::
+
+
+## Beware: Bootstrapping relies on the work of others
+### All dependencies will eventually break / need repair
+
+::: columns
+:::: column
+
+- Reliance on external data providers: link rot
+    - links to facsimiles broke twice in four years
+- Reliance on free tools and services: link rot
+    + URLs to our editions had to be changed once
+- XSLT1 in web browsers: will fall victim to JSON and security features
+    + over the last 5 years support has markedly decreased
+<!-- - Full-text search across issues and periodicals without a backend
+    + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) -->
+
+::::
+:::: column
+
+![The main components of OpenArabicPE](../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png)
+
+::::
+:::
+
+
 # Thank you!
-## Literature
+## Thank you!
+
+- Contributors to [OpenArabicPE](https://openarabicpe.github.io/): Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Contributors to [Project Jarāʾid](https://projectjaraid.github.io/): Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
+- Links:
+    + Slides: [https://tillgrallert.github.io/slides/dh/2023-paderborn/](https://tillgrallert.github.io/slides/dh/2023-paderborn/index.html)
+    + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
+    + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
+    + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
+    + Email: <till.grallert@hu-berlin.de>
+<!-- - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) -->
+
+## References {#refs}
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
