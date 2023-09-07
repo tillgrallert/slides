@@ -16,14 +16,23 @@
     - start a poll
         + 
 - Introduction
-    + to the SWANA region
+    + [x] to the SWANA region
     + the Arabic and Islamic cultural heritage and its importance to the world
     + [x] to Arabic periodicals: from the Digital History Conference 2023 
     + [x] my research interest: from the Digital History Conference 2023 
 - Arabic language and script
-- character encodings
+- [x] character encodings
     + unicode
     + catalogues
 - TEI or not TEI
-- minimal computing
-- my workflow
+- [x] minimal computing
+- [x] my workflow
+
+# to do
+
+- [ ] screenshots of catalog searches for mirʾāt al-sharq
+- [ ] extent the modelling section in the workflow
+    + NER
+    + authority files
+    + extensions for non-European names
+    + slides could be based on the 2017 talk at the SFB or rather the 2021 talk at SBB

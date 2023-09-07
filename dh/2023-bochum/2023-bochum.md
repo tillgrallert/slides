@@ -549,7 +549,7 @@ Hypothesis: distribution of geographic origin of contributions to a periodical i
 ::: columns
 :::: column
 
-- Initial sources: OpenArabicPE, Project Jarāʾid, OCR\
+- Initial sources: OpenArabicPE, Project Jarāʾid, OCR
 - Mark-up of all references to periodicals in the modelled text:
     + semi-automatic (regex): tracks pattern of "[مجلة ...]{lang="ar"}", "[جريدة ...]{lang="ar"}"
     + problems: lack of functional NER for Arabic

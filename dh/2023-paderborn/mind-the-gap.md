@@ -20,7 +20,25 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
 # Mind the `<gap/>`s
-## >You are as beautiful as an additional hour of electricity!
+## Promises of digital knowledge ecologies
+
+![Vannevar Bushs *Memex*, 1945](../../assets/dh/memex-1945.jpg){#fig:memex}
+
+::: notes
+
+- egalitarian promises
+    - unlimited access to the entirety of the human cultural record and knowledge
+    - for everyone without any difference (of race, gender, age, religion, geography)
+    - practically not just disembodied knowledge but disembodied humans
+- there is a normative basis
+    + knowledge = data = comprehension
+    + more data = more comprehension
+    + reminds of technocractic movement at the turn of the 20th century
+    + solutionism 
+
+:::
+
+## "You are as beautiful as an additional hour of electricity!"
 
 ::: columns-3
 :::: column
@@ -38,6 +56,49 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a></blockquote>
 
 ::::
+:::
+
+::: notes
+
+- very unequal access to the means of digital production
+- 
+:::
+
+## "You are as beautiful as an additional hour of electricity!"
+
+::: columns
+:::: column
+
+<iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
+
+::::
+:::: column
+
+<iframe src="https://data.worldbank.org/share/widget?indicators=IT.NET.BBND.P2&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
+
+::::
+:::
+
+::: notes
+
+- very unequal access to the means of digital production
+- sustainable development goals (SDG) of the UN
+- electricity
+    + 800 mio have no access
+        * almost exclusively in the global south
+        * vast majority in subsaharan Africa
+    + by 2030 according to projections of the International Energy Agency (IEA): 
+        * 600 mio
+        * 33 per cent of all Africans
+    - access: 
+        + 250--500 kWh per year and household
+        + less than 14 hours of a 100W lightbulb per day
+ - internet
+        + 36,6 percent of the world population, or 2,93 billion people do not participate
+        + 85 per cent of them live in Africa, South, East and South-East Asia
+        + lower speed
+        + higher latency
+        + higher cost per unit of traffic
 :::
 
 ## Failure despite our best intentions
@@ -63,7 +124,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 :::
 
-## Absences
+## Absences and exclusions
 
 ::: columns
 :::: column
@@ -289,7 +350,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-# *Linguistic imperialism* and the human condition of multilinguality
+# the human condition of multilinguality and *linguistic imperialism*
 ## Linguistic imperialism
 
 >Indigenous peoples have the right to revitalize, use, develop and transmit to future generations their histories, languages, oral traditions, philosophies, writing systems and literatures, and to designate and retain their own names for communities, places and persons.
@@ -303,6 +364,13 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 >The basis for the codes, languages, methodologies, and technical instruments of the digital humanities is English; the written and spoken language of all the main conferences, the most prestigious journals, the institutions that control the discipline, the organizations and international consortia, and the central authorities of knowledge is, with few exceptions, some dialect of British or American English.
 
 <cite>[@Fiormonte+2021+TaxationagainstOverrepresentation, 334-335]</cite>
+
+::: notes
+
+- UNDRIP: United Nations Declaration on the Rights of Indigenous Peoples.
+- this  ties back to the map I showed you at the very beginning
+
+:::
 
 ## Arabic
 
@@ -358,39 +426,52 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-<!-- ::: columns
-:::: column
+::: notes
 
-### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
+- note: 
+    + gaps within words
+    + tilted base lines
+    + ligatures
+    + vertical overlap
+- "*allograph*"  is Thomas Milo's terminology
+- I am showing this in order to demonstrate the epistemic violence exercised by the paradigm of 
+    + discrete letters, 
+    + the Latin alphabet with its rather small number of letters, 
+    + movable type printing
+        * magazines become unfeasibly large
+            - unwieldy
+            - expensive: 
+                + more material 
+                + more machinery
+                + more time for composing
+- tilted baselines and vertical overlap of words makes things even more unwieldy
+- 
+:::
 
-[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+## Arabic Script Grammar
 
-<cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
+![Arabic Linotype, 1910s. Source: [@Nemeth+2017, fig. 2.7]](../../assets/dh/arabic-linotype_nemeth-p_46.png){#fig:ar-linotype}
 
-::::
-:::: column
+::: notes
 
-### [امىرکا وعلماء العرٮ]{.c_rtl lang="ar"}
+- keyboard with 180 keys 
+- two magazines  were required for a single Arabic fount
 
-[کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
+:::
 
-*rasm*
-
-::::
-::: -->
-
-## Unicode is awesome ...
+## Encoding characters
+### Unicode is awesome ...
 <!-- ### [... Industry consortia not that much!]{.c_right} -->
 
 ::: columns
 :::: column
 
-![Supported scripts in Unicode v1.0.0. Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/unicode_1-0-0.png){#fig:unicode-1}
+![Supported scripts in Unicode v1.0.0. Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](../../assets/dh/unicode_1-0-0.png){#fig:unicode-1}
 
 ::::
 :::: column
 
-![Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/unicode_15-0-0-missing-scripts.png){#fig:unicode-15-missing}
+![Currently unsupported scripts. Source: <https://www.worldswritingsystems.org>](../../assets/dh/unicode_15-0-0-missing-scripts.png){#fig:unicode-15-missing}
 
 ::::
 :::
@@ -486,7 +567,7 @@ The mandatory XML declaration `<?xml version="1.0" encoding="UTF-8"?>` sets left
 ::: columns
 :::: wide
 
-![Bi-directional TEI/XML at the beginning of @oclc_1034545644-i_15-div_1.d2e634. Arrows indicate the reading direction. Numbers indicate reading order.](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
+![Bi-directional TEI/XML at the beginning of @oclc_1034545644-i_15-div_1.d2e634. Arrows indicate the reading direction. Numbers indicate reading order.](../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml}
 
 ::::
 :::: narrow
@@ -637,12 +718,17 @@ What are the normalization rules for the search algorithm?
         * card catalogue
         * ASCII OPAC
         * automated transcription of the card catalogue
+        * human cataloguers depend on the technology they have at hand, which means they might be unable to enter the correct string
         * errors perpetuate
 - Latin input is mostly reduced to ASCII
     + Hamza and ʿAyn escape this algorithm on ZDB
 - determined article is not automatically removed
 - The choices are not transparently documented
 - no software on-screen keyboards provided
+- additional problems
+    + catalogues are inherently local documents
+    + aggregated, if at all, on a national level
+    + frequently accessible only through Web interfaces and not APIs
 
 :::
 
@@ -704,12 +790,12 @@ Table: Comparison of digitized periodicals between the Global South and the Glob
 ::: columns
 :::: column
 
-![Map of Arabic dialects. Source: [reddit](https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp){#fig:map-arabic-dialects}
+![Map of Arabic dialects. Source: [reddit](https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130)](../../assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp){#fig:map-arabic-dialects}
 
 ::::
 :::: column
 
-![Map of Hesse in Europe. Source: <https://www.iz.sk/sk/projekty/regiony-eu/DE7>](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/maps/map_hesse-europe.png){#fig:map-hesse}
+![Map of Hesse in Europe. Source: <https://www.iz.sk/sk/projekty/regiony-eu/DE7>](../../assets/maps/map_hesse-europe.png){#fig:map-hesse}
 
 ::::
 :::
@@ -862,7 +948,7 @@ Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
 ::::
 :::: wide
 
-![Transkribus web-app showing results of our model for *al-Ḥasnāʾ* 1(1)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png){#fig:transkribus-web-app}
+![Transkribus web-app showing results of our model for *al-Ḥasnāʾ* 1(1)](../../assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png){#fig:transkribus-web-app}
 
 ::::
 :::
@@ -885,7 +971,7 @@ Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
 
 <cite>[@RisamGil2022Introduction, §3]</cite>
 
->this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, without the help we can’t get, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
+>this implies learning how to produce, disseminate, and preserve digital scholarship ourselves, **without the help we can’t get**, even as we fight to build the infrastructures we need at the intersection of, with, and beyond institutional libraries and schools.
 
 <cite>[@Gil+2016, 29]</cite>
 
@@ -1090,7 +1176,88 @@ We need to digitise the cultural record
 
 :::
 
-#  A minimal workflow for bootstrapping digital editions 
+
+## Social network analysis
+
+::: columns-3
+:::: column
+
+![Network of periodicals referenced in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-1}
+
+::::
+:::: column
+
+- modelled full text
+- Mark-up of all references to periodicals:
+    + semi-automatic (regex): tracks pattern of "[مجلة ...]{lang="ar"}", "[جريدة ...]{lang="ar"}"
+    + problems: lack of functional NER for Arabic
+- authority files for disambiguation and enriching data
+    + bibliography
+    + problems: absence from existing authority files
+
+::::
+:::: column
+
++ the journal *al-Zuhūr* from Cairo 
+
+<!-- ägyptische Zeitschrift -->
+```xml
+والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
+```
+
++ the newspaper *al-Zuhūr* from Baghdad
+
+<!-- irakische Zeitung -->
+```xml
+وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
+```
+::::
+:::
+
+::: note
+
+- this is an example from my own work
+- I am interested in the ideosphere of the Arab periodical press as the first mass media in the Eastern Mediterranean
+    + purpose: 
+        * a social history of the press
+        * a revisionist history of the Arabic press that decenters Cairo and Beirut
+- This slide shows the required data
+
+#  A minimal workflow for bootstrapping digital editions
+## Open Arabic Periodical Editions (2015--)
+
+::: columns
+:::: column
+
+- social resources
+    + one after-hours postdoc
+    + 13 interns and volunteers
+
+::::
+:::: column
+
+- material resources
+    + no funding
+    + work-issued / private laptops
+    + internet connections
+
+::::
+:::
+
+
+| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
+| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
+| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
+
+Table: Current state of our corpus {#tbl:openarabicpe-corpus}
+
 ## 1. get the data
 
 ::: columns
@@ -1149,10 +1316,10 @@ Structure the text string into issues, sections, articles with bylines ...
 ::: columns
 :::: column
 
-- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI XML)
+- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI/XML)
     - active community
     - pre-requisite for grant funding
-    - easy to archive (XML = plain text)
+    - easy to archive
 - re-use / adapt domain specific encoding schemas within the TEI
 - try to script basic modelling using patterns in your source text:
     + regular expressions
@@ -1189,6 +1356,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + I knew it already
     + widely adopted standard in the digital editing world
     + necessary for grant-funding in the Global North
+    + serialised as XML, as is the output of OCR-software, very similar to the HTML5 served on the web and as EPub
 - why not TEI
     + steep learning curve
     + not particularly well-suited to Arabic texts?
@@ -1218,7 +1386,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 - XML editors proper
     + should be **schema aware** to validate the encoding
     - **RTL**:
-        1. [oXygen XML editor](https://www.oxygenxml.com/) (99 USD) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+        1. [oXygen XML editor](https://www.oxygenxml.com/) (137 USD) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
         2. [Visual Studio Code](https://code.visualstudio.com/) (free) with the right extensions is a viable second
 
 ![The TEI/XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen-2}
@@ -1233,6 +1401,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 :::
 
 ## 4. save and share the data
+### for (re)use and computational analysis
 
 ::: columns
 :::: column
@@ -1252,7 +1421,14 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ::::
 :::
 
-## 5. present the data
+::: notes
+
+- publication to Wikidata is particularly important as it will feed into VIAF 
+
+:::
+
+## 5. present and publish the data 
+### for human readers
 <!-- ### presentation layers and access for human readers -->
 
 ::: columns
@@ -1307,33 +1483,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ## Resulting Corpus
 
 
-| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
-| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
-| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
-| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
-| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
-| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
-| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
-| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
 
-
-::: columns
-:::: column
-
-- TEI/XML files for each issue with structural mark-up on the article level
-- mark-up of named entities in bylines
-
-
-::::
-:::: column
-
-- authority files (TEI/XML)
-- bibliographic metadata on the article level (MODS/XML, Zotero RDF, BibTeX)
-
-::::
-:::
 
 
 ## Important findings
