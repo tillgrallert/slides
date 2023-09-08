@@ -99,6 +99,9 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
         + lower speed
         + higher latency
         + higher cost per unit of traffic
+
+- At my former home institution, a well-funded foreign research institute, for instance, we shared a single connection of 24Mbps. Simply loading the landing page for a single volume of al-Muqtabas at the Endangered Archives Programme will require three seconds of load time even under perfect conditions. With 20 colleagues and another 20 library users equally trying to access online services and resources, load time quickly multiplies tenfold and more. Browsing through a large number of scanned images behind such a bottleneck is a daunting task. Uploading multiple gigabytes of high-resolution scans to a cloud computing service for machine-learning based OCR, for instance, is practically impossible and we rather ship hard drives and wait for months for the results.
+
 :::
 
 ## Failure despite our best intentions
@@ -146,6 +149,8 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 - these distributions illustrate the gaps shown before
 - access to infrastructures of the digital is limited in the Arabic world
 - support for Arabic is limited in the digital
+- I should also show a map of migrations showing the massive exodus from the Arabic speaking regions of the world
+    + significant brain drain contributes to these absences
 
 :::
 
@@ -174,6 +179,21 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 :::
 
 # Background
+## My research interests
+
+::: columns
+:::: column
+
+![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors-1}
+
+::::
+:::: column
+
+![Directed network of periodicals referenced in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-1}
+
+::::
+:::
+
 ## Late-Ottoman Eastern Mediterranean
 
 
@@ -351,11 +371,20 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 :::
 
 # the human condition of multilinguality and *linguistic imperialism*
-## Linguistic imperialism
+## multilinguality
 
 >Indigenous peoples have the right to revitalize, use, develop and transmit to future generations their histories, languages, oral traditions, philosophies, writing systems and literatures, and to designate and retain their own names for communities, places and persons.
 
 <cite>[@UNDRIP2007, §13]<cite>
+
+::: notes
+
+The human condition, historically, is one of multilinguality. People speak different languages, dialects, sociolects etc. in different contexts: at home, at work, at social gatherings, for worship etc.. Sometimes we share a language with people across geographic distances, just as in this meeting, and sometimes, we do not understand our direct neighbours.
+
+:::
+
+## Linguistic imperialism
+
 
 >'Linguistic imperialism' is shorthand for a multitude of activities, ideologies, and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/ South relations, where language interlocks with other dimensions, cultural (particularly in education, science, and the media), economic and political
 
@@ -845,13 +874,13 @@ Bibliographic metadata is faulty throughout, mostly unstructured, and subject to
 ::: columns
 :::: column
 
-![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
+![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela-2}
 
 ::::
 :::: column
 
 ![Facsimile of the same section of @oclc_4770057679-i_61-div_21.d1e2838 from [EAP](https://eap.bl.uk/
-)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap}
+)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap-2}
 
 ::::
 :::
@@ -1182,7 +1211,7 @@ We need to digitise the cultural record
 ::: columns-3
 :::: column
 
-![Network of periodicals referenced in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-1}
+![Network of periodicals referenced in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-2}
 
 ::::
 :::: column
@@ -1214,7 +1243,7 @@ We need to digitise the cultural record
 ::::
 :::
 
-::: note
+::: notes
 
 - this is an example from my own work
 - I am interested in the ideosphere of the Arab periodical press as the first mass media in the Eastern Mediterranean
@@ -1222,6 +1251,8 @@ We need to digitise the cultural record
         * a social history of the press
         * a revisionist history of the Arabic press that decenters Cairo and Beirut
 - This slide shows the required data
+
+:::
 
 #  A minimal workflow for bootstrapping digital editions
 ## Open Arabic Periodical Editions (2015--)
@@ -1363,6 +1394,76 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 :::
 
+## 2. model the data
+
+::: columns
+:::: column
+
+![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
+
+::::
+:::: column
+
+![Facsimile of the same section of @oclc_4770057679-i_61-div_21.d1e2838 from [EAP](https://eap.bl.uk/
+)](../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap}
+
+::::
+:::
+
+::: notes
+
+- faulty on shadow libraries and official digitisation efforts
+    - publication dates
+        + inferred from vol. and issue number: 1 Ṣafar 1329 aH / c. 1 February 1911
+        + EAP: March 1911
+        + secondary sources: probably delayed by up to four months
+    - volume and issue numbers
+        + shamela: no.61
+        + correct: vol. 6, no. 2
+    - pagination:
+        + shamela = 45, correct = 133
+    - publication place
+        + EAP lists Jerusalem
+- linguistic imperialism
+    + script
+    + calendars
+
+:::
+
+## 2. model the data
+### named entity linking
+
+::: columns
+:::: column
+
+- Ḥāfiẓ Ibrāhīm
+- Ḥāfiẓ Efendi Ibrāhīm
+- Ḥāfiẓ Ibrāhīm Bey
+- Muḥammad Ḥāfiẓ Bey Ibrāhīm
+
+![[*al-Muqtabas* 1(1)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661)](../../assets/OpenArabicPE/disambiguation_names-tei-viaf_32410755-1.png) 
+
+![[*al-Muqtabas* 2(1)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334)](../../assets/OpenArabicPE/disambiguation_names-tei-viaf_32410755-2.png)
+
+::::
+:::: column
+
+![Searching VIAF for Ḥāfiẓ Efendi Ibrāhīm](../../assets/OpenArabicPE/disambiguation_names-viaf_32410755-none.png)
+
+![Searching VIAF for Ḥāfiẓ Ibrāhīm](../../assets/OpenArabicPE/disambiguation_names-viaf_32410755.png)
+
+::::
+:::
+
+::: notes
+
+- transliteration
+- link to nyms
+- remove all titles
+- remove all name components most likely not captured in Western authority files
+
+:::
+
 ## 3. edit the data
 
 ::: columns
@@ -1457,33 +1558,6 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 ::::
 :::
-
-# Open Arabic Periodical Editions
-## Resources
-
-::: columns
-:::: column
-
-- social resources
-    + one after-hours postdoc
-    + 13 interns and volunteers
-
-::::
-:::: column
-
-- material resources
-    + no funding
-    + work-issued / private laptops
-    + internet connections
-
-::::
-:::
-
-
-## Resulting Corpus
-
-
-
 
 
 ## Important findings
