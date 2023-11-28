@@ -255,47 +255,66 @@ flowchart LR
     class comp2,comp5,gpt3,gpt,chatgpt focus
 </pre>
 
-## Wer kann das benutzen?
 
-
-- Die Nutzung ist **zunächst** kostenfrei nach Anmeldung und in der Kapazität begrenzt
-- Dient der Verbesserung der Modelle und Produktentwicklung
+## LLMs sind nicht intelligent
 
 ::: columns
 :::: column
 
-![Aktuell häufig zu sehen. ChatGPT ist ausgelastet](../../assets/ai/chatgpt_over-capacity.png){#fig:chatgpt-max}
+- "Wahrheit" oder "Korrektheit" sind nicht Teil von LLMs
+    + Sie sind **sprachlich** auf den Input optimiert
+    + ohne Korrekturen reproduzieren sie den Gestus und die Inhalte des Inputs
 
 ::::
 :::: column
 
-<!-- ![ChatGPTs Antwort zur Kostenfrage. Quelle: Reddit](../../assets/ai/chatgpt_costing-money_reddit.png){#fig:chatgpt-cost} -->
-<video width="500" height="400" controls>
-    <source src="../assets/video/example_ChatGPT-math.mp4" type="video/mp4"></source>
-    <p>Your browser does not support the video tag. </p>
-</video>
+![Bings von LLMs generierte Antwort auf eine essentielle Frage. Quelle: <https://wetdry.world/@keat/111479034674203372>](https://media.wetdry.world/media_attachments/files/111/479/014/041/664/438/original/57a69381c7c11c58.jpg){#fig:bing-1}
 
 ::::
 :::
 
-
-
-# Anmerkungen vom Grantler 
-## LLMs sind Bullshit-Artists
+## Der Output ist abhängig vom Input
 
 ::: columns
 :::: column
 
-- Konzepte wie "Wahrheit" oder "Korrektheit" sind nur nebensächlicher Beifang
-- Optimiert werden "Menschenähnlichkeit" und "Menschengefälligkeit" 
+### Daten
+
+- Es werden gigantische Mengen an Text für das Training benötigt
+- Das "freie" Internet wird aumatisiert gecrawlt
+    + es gibt Inputfilter regeln: z.B. Listen von Worten, die nicht enthalten sein dürfen
+    + ohne weitere Filter spiegeln LLMs z.B. 
+        * die sprachliche Zusammensetzung des Internets
+        * die Biases des englisch-sprachigen Globalen Nordens
 
 ::::
 :::: column
 
-![[@Frankfurt2005Bullshit]](../../assets/ai/on-bullshit.jpg)
+### menschliche Arbeitskraft
+
+- Die Trainingstexte sind ursprünglich alle von Menschen geschaffen
+    + Arbeitskraft wird nicht entlohnt
+    + Urheber- und Verwertungsrechte werden verletzt
+- Filter sind nur zum Teil automatisiert
+    + Geflechte von Firmen für das manualle Filtern im Globalen Süden
+    + Arbeitskraft wird so wenig wie möglich entlohnt
 
 ::::
 :::
+
+## Der Output ist abhängig vom Input
+
+
+Training und inference ...
+
+- benötigen enorme Mengen an
+    + Strom für den Betrieb
+    + Wasser für die Kühlung
+    - Materialien und Platz für die Hardware
+
+- erzeugen enorme Mengen an
+    + Treibhausgasen
+    + Umweltverschmutzung
 
 
 
