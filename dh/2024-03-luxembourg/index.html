@@ -612,7 +612,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -2063,6 +2063,8 @@ Vices</span>
         </figure>
         <aside class="notes">
         <ul>
+        <li>Arabic script is much for challenging for mechanical
+        reproduction than Latin script</li>
         <li>keyboard with 180 keys</li>
         <li>two magazines were required for a single Arabic fount</li>
         </ul>
@@ -2174,6 +2176,34 @@ Vices</span>
         </aside>
         </section>
         <section id="unicode-is-awesome-2" class="slide level2">
+        <h2>Unicode is awesome …</h2>
+        <p>… but standards depend on implementation and software
+        support</p>
+        <h3 id="rendering-nightmares">Rendering nightmares</h3>
+        <div class="columns">
+        <div class="wide">
+        <!-- ![@Spence2023MultilingualDigital, 19](../../assets/dh/spence-2023-p_19_arabic-failure.png){#fig:spence-arabic-fail} -->
+        <iframe src="https://fedihum.org/@jomla/112094232400811983/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms">
+        </iframe>
+        <!-- <cite>Quote from @Spence2023MultilingualDigital, 19</cite> -->
+        </div><div class="narrow">
+        <p>This ought to be the <strong>perfect example</strong></p>
+        <p>The text should read</p>
+        <blockquote>
+        <p>As Ramsey Nasser notes in the overview of his programming
+        language <span class="c_rtl red" lang="ar">قلب</span> these are
+        almost exclusively based on the ASCII character set</p>
+        </blockquote>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>yet, rendering depends on software support
+        <!-- + see [@fig:arabic-fail-covid] --></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-is-awesome-3" class="slide level2">
         <h2>Unicode is awesome …</h2>
         <!-- [... but standards depend on implementation and software support]{.c_right} -->
         <p>… did I mention industry consortia?</p>

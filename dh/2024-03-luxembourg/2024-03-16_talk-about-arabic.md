@@ -408,6 +408,7 @@ The human condition, historically, is one of multilinguality. People speak diffe
 
 ::: notes
 
+- Arabic script is much for challenging for mechanical reproduction than Latin script
 - keyboard with 180 keys 
 - two magazines  were required for a single Arabic fount
 
@@ -476,6 +477,41 @@ The human condition, historically, is one of multilinguality. People speak diffe
     + violating two of its principles
         * characters not glyphs
         * unification: no duplicates within a script
+- yet, rendering depends on software support
+    <!-- + see [@fig:arabic-fail-covid] -->
+
+
+:::
+
+## Unicode is awesome ...
+
+... but standards depend on implementation and software support
+
+### Rendering nightmares
+
+::: columns
+:::: wide
+
+<!-- ![@Spence2023MultilingualDigital, 19](../../assets/dh/spence-2023-p_19_arabic-failure.png){#fig:spence-arabic-fail} -->
+
+<iframe src="https://fedihum.org/@jomla/112094232400811983/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
+
+<!-- <cite>Quote from @Spence2023MultilingualDigital, 19</cite> -->
+
+::::
+:::: narrow
+
+This ought to be the **perfect example**
+
+The text should read 
+
+>As Ramsey Nasser notes in the overview of his programming language [قلب]{.c_rtl .red lang="ar"} these are almost exclusively based on the ASCII character set
+
+::::
+:::
+
+::: notes
+
 - yet, rendering depends on software support
     <!-- + see [@fig:arabic-fail-covid] -->
 
