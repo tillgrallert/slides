@@ -29,10 +29,9 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 3. Arabic textual heritage online
 
 # Background
-## My research interests or what I would want to do
+## My research interests 
 
-<!-- what I want to do -->
-<!-- add slide on stylometry -->
+[... or what I would want to do]{.c_right}
 
 ::: columns
 :::: column
@@ -47,9 +46,19 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ::::
 :::
 
-<!-- what I really do -->
-<!-- 1. Creating knowledge about artefacts: Project Jarāʾid (2011--), a crowd-sourced union list of all Arabic periodicals published before 1930
-2. Providing access to artefacts: Open Arabic Periodical Editions (2015--), a framework for bootstrapped scholarly editions outside the global north -->
+## My research interests
+
+[... or what I would want to do]{.c_right}
+
+![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous}
+
+
+::: notes
+
+Note how the anonymous articles cluster on the left.
+
+:::
+
 
 ## ... and what I spend my time on
 ### [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
@@ -58,10 +67,12 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 :::: column
 
 - Bibliographic record of **all** Arabic periodical titles published between 1798 and 1929
-    - websits and open datasets ([TEI XML](https://tei-c.org/)) for more than 3500 periodicals
+    - websites and open datasets ([TEI/XML](https://tei-c.org/)) for more than 3500 periodicals
     - additional authority files for c.2700 persons, 220 places, 180 libraries
 - Unfunded collaboration with Adam Mestyan (Duke), "crowd"-sourcing
-- Ongoing since 2021/22: Integration of holding information from library catalogues such as ZDB, AUB, BnF, HathiTrust
+- Networking and reconciling existing information: 
+    - Integration of holding information from library catalogues such as ZDB, AUB, BnF, HathiTrust
+    - Publish everything as Linked Open Data on [Wikidata](https://wikidata.org/)
 
 ::::
 :::: column
@@ -75,32 +86,45 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 ### Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
 ::: columns
-:::: column
+:::: wide
 
-1. Digital scholarly editions, authority files: [TEI/XML](https://tei-c.org/).
-1. Open licenses: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
-2. Social digital editions, hosted on [GitHub](https://github.com/openarabicpe): <!-- gradually improve transcription and mark-up -->
-2. Archived on [Zenodo](https://zenodo.org): DOI for stable citability
-3. [Static webviews](https://github.com/openarabicpe/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: parallel display of text and facsimile
-4. Bibliographic metadata, hosted through a [Zotero group](https://www.zotero.org/groups/openarabicpe).
+- Digital scholarly editions
+    + 6 Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
+    + full text and facsimiles modelled in TEI/XML
+    - Bibliographic metadata (MODS, BibTeX, Zotero RDF)
+    - Open licenses: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+       <!--  - on the article level for the entire corpus plus 2 additional magazines
+        - on the issue level for 7 additional newspapers
+        - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) -->
+- Infrastructure:
+    + [TEI Boilerplate]((https://github.com/openarabicpe/tei-boilerplate-arabic-editions)): static websites. No need for backend, database or internet connection
+    + [GitHub](https://github.com/openarabicpe) / [Zenodo](https://zenodo.org): free hosting and archiving with DOIs
+    - [Zotero group](https://zotero.org/groups/openarabicpe) as gateway to search/browse the corpus
+- Workflows and tools
 
 ::::
-:::: column
+:::: narrow
 
-![[Webview of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas.png){#fig:webview-muqtabas}
+![[Webview of *al-Zuhur* 1(1)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_zuhur-v_1-i_1.png){#fig:webview-zuhur}
+
+![[Webview of *al-Muqtabas* 3(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml)](../../assets/OpenArabicPE/boilerplate_muqtabas-v_3-i_2.png){#fig:webview-muqtabas}
 
 ::::
 :::
 
 
-## Late-Ottoman Eastern Mediterranean
+## Late-Ottoman Eastern Mediterranean <br/>Diversity across the board
+
+::: columns
+:::: column
 
 ![Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: @SykesPicot1916Map](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg/1055px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg){#fig:sykes-picot}
 
-## Late-Ottoman Eastern Mediterranean <br/>Diversity across the board
-
-::: columns-3
+::::
 :::: column
+
+::: columns
+:::: wide
 
 ### Languages
 
@@ -117,7 +141,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
     * Greek, Armenian, Latin, Cyrillic, Coptic
 
 ::::
-:::: {.column .small-font}
+:::: {.narrow .small-font}
 
 ### Religions
 
@@ -126,8 +150,8 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 + Jews: sephardic, ashkenazic
 + Zoroastrians
 
-::::
-:::: {.column .small-font}
+
+::: {.small-font}
 
 ### Calendars
 
@@ -142,8 +166,13 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 - *alla turca*: day begins with sundown, 12 unequal hours each for day and night
 - *alle franca*: day begins at midnight. 24 equinoctial hours
 
+:::
 ::::
 :::
+
+::::
+:::
+
 
 ::: notes
 
