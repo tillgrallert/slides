@@ -28,7 +28,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 2. Multilinguality and linguistic imperialism of socio-technologic infrastructures
 3. Arabic textual heritage online
 
-# Background
+# Introduction
 ## My research interests 
 
 [... or what I would want to do]{.c_right}
@@ -112,7 +112,7 @@ Note how the anonymous articles cluster on the left.
 ::::
 :::
 
-
+# Background
 ## Late-Ottoman Eastern Mediterranean <br/>Diversity across the board
 
 ::: columns
@@ -182,7 +182,122 @@ Note how the anonymous articles cluster on the left.
 
 <!-- add  slides on the disadvantages in the technical infrastructure -->
 
-# Arabic
+## "You are as beautiful as an additional hour of electricity!"
+
+::: columns-3
+:::: column
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
+
+::::
+:::: column
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote>
+
+::::
+:::: column
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a></blockquote>
+
+::::
+:::
+
+::: notes
+
+- very unequal access to the means of digital production
+- 
+:::
+
+## "You are as beautiful as an additional hour of electricity!"
+
+::: columns
+:::: column
+
+<iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
+
+::::
+:::: column
+
+<iframe src="https://data.worldbank.org/share/widget?indicators=IT.NET.BBND.P2&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
+
+::::
+:::
+
+::: notes
+
+- very unequal access to the means of digital production
+- sustainable development goals (SDG) of the UN
+- electricity
+    + 800 mio have no access
+        * almost exclusively in the global south
+        * vast majority in subsaharan Africa
+    + by 2030 according to projections of the International Energy Agency (IEA): 
+        * 600 mio
+        * 33 per cent of all Africans
+    - access: 
+        + 250--500 kWh per year and household
+        + less than 14 hours of a 100W lightbulb per day
+ - internet
+        + 36,6 percent of the world population, or 2,93 billion people do not participate
+        + 85 per cent of them live in Africa, South, East and South-East Asia
+        + lower speed
+        + higher latency
+        + higher cost per unit of traffic
+
+:::
+
+## Destruction
+
+::: columns
+:::: column
+
+![Meeting room at the [Orient-Institut Beirut](https://orient-institut.org/) damaged by the Beirut Port explosion on 4 August 2020. Source: OIB](../../assets/dh/2020-08-04-oib-damage.jpg){#fig:oib-explosion}
+
+::::
+:::: column
+
+![The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: @aSbHrmAdFAwrkAmAHryqkbyr](https://static.srpcdigital.com/2023-07/256558.jpeg){#fig:archives-dam}
+
+::::
+:::
+
+::: notes
+
+- Port explosion on 4 Aug 2020
+    + 2750t of ammonium nitrate
+    + one of the largest non-nuclear explosions ever
+- Conflagration of the Dār al-Wathāʾiq al-Tārīkhiyya in Sūq Sārūjā on 16 July 2023
+
+:::
+
+## Absences and exclusions
+
+::: columns
+:::: column
+
+![Global distribution of DH centres. Source: [DH centerNet](http://dhcenternet.org/centers)](../../assets/dh/map_dhcenters.png){#fig:dh-centres}
+
+::::
+:::: column
+
+<!-- <iframe src="https://hcommons.social/@dh_potsdam/110696533309515172/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe> -->
+
+![Global distribution of attendees at DH2023 in Graz. Source: [@Potsdam2023GeographyDH2023](https://digitalcourage.social/@dh_potsdam@hcommons.social/110696533594288097)](../../assets/maps/map_dh2023.jpeg){#fig:map-dh2023}
+
+::::
+:::
+
+::: notes
+
+- these distributions illustrate the gaps shown before
+- access to infrastructures of the digital is limited in the Arabic world
+- support for Arabic is limited in the digital
+- I should also show a map of migrations showing the massive exodus from the Arabic speaking regions of the world
+    + significant brain drain contributes to these absences
+
+:::
+
+# We need to talk about Arabic!
 ## Arabic
 
 ::: columns
