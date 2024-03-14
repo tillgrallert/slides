@@ -6,7 +6,7 @@
           <meta name="author" content="Till Grallert">
               <meta name="dcterms.date" content="2024-03-16">
                   <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
-        <title>## We need to talk about Arabic!</title>
+        <title>We need to talk about Arabic!</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,7 +31,27 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    </style>
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
@@ -96,8 +116,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -130,9 +150,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -143,8 +163,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -1401,7 +1421,7 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">## We need to talk about Arabic!</h1>
+          <h1 class="title">We need to talk about Arabic!</h1>
                     <h2 class="subtitle">A practical critique of the
 hostility towards the second most common human writing system built into
 our quotidian digital infrastructures</h2>
@@ -1424,10 +1444,822 @@ Vices</span>
                   </div>
       </div>
         </section>
-                
-        <section class="slide level6">
+
+        <section class="slide level2">
+
+        <!-- fix the problem with a cross reference to @fig:zakham-ar -->
+        </section>
+        <section id="outline" class="slide level2">
+        <h2>Outline</h2>
+        <ol type="1">
+        <li>Introduction</li>
+        <li>Arabic</li>
+        <li>Multilinguality and linguistic imperialism of
+        socio-technologic infrastructures</li>
+        <li>Arabic textual heritage online</li>
+        </ol>
+        </section>
+        <section>
+        <section id="background" class="title-slide slide level1">
+        <h1>Background</h1>
 
         </section>
+        <section id="my-research-interests" class="slide level2">
+        <h2>My research interests</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:network-authors-1">
+        <img
+        data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
+        alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption>Figure 1: Undirected network of authors in
+        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
+        betweenness centrality; size of nodes: number of periodicals;
+        width of edges: number of articles.</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:network-mentioned-periodicals-1">
+        <img
+        data-src="../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
+        alt="Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption>Figure 2: Directed network of periodicals referenced
+        in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, <em>al-Muqtabas</em>, and
+        <em>al-Zuhūr</em></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="late-ottoman-eastern-mediterranean"
+        class="slide level2">
+        <h2>Late-Ottoman Eastern Mediterranean</h2>
+        <figure id="fig:sykes-picot">
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg/1055px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
+        alt="Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: Royal Geographical Society (“English” 1916)" />
+        <figcaption>Figure 3: Map showing the colonial spheres of
+        interest agreed upon by France and UK. Signed by Sir Mark Sykes
+        and Fr[ançois] Georges-Picot, 8 May 1916. Source: <span
+        class="citation" data-cites="SykesPicot1916Map">Royal
+        Geographical Society (<span>“English”</span>
+        1916)</span></figcaption>
+        </figure>
+        </section>
+        <section
+        id="late-ottoman-eastern-mediterranean-diversity-across-the-board"
+        class="slide level2">
+        <h2>Late-Ottoman Eastern Mediterranean <br/>Diversity across the
+        board</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="languages">Languages</h3>
+        <ul>
+        <li>Administrative: Ottoman, Arabic, Persian</li>
+        <li>Quotidian: Turkic languages, Arabic, Greek, Slavic
+        languages, Armenian, Ladino …</li>
+        <li>Lithurgic: Arabic, Greek, Armenia, Coptic, Russian, Hebrew
+        …</li>
+        <li>Educational: Ottoman, Arabic, French, English, Russian
+        …</li>
+        </ul>
+        <h3 id="scripts">Scripts</h3>
+        <ul>
+        <li>From right to left:
+        <ul>
+        <li>Arabic, Hebrew, Assyrian</li>
+        </ul></li>
+        <li>Fro left to right:
+        <ul>
+        <li>Greek, Armenian, Latin, Cyrillic, Coptic</li>
+        </ul></li>
+        </ul>
+        </div>
+        <div class="column small-font">
+        <h3 id="religions">Religions</h3>
+        <ul>
+        <li>Muslims: Sunni, Shi’ite</li>
+        <li>Christians: div. Orthodox, Eastern Catholic, Western
+        Catholic, Assyrian, Protestant …</li>
+        <li>Jews: sephardic, ashkenazic</li>
+        <li>Zoroastrians</li>
+        </ul>
+        </div>
+        <div class="column small-font">
+        <h3 id="calendars">Calendars</h3>
+        <ul>
+        <li>Islamic (<em>hijri</em>): <strong>lunar</strong>, observed,
+        epoch begins with Muḥammad’s exodus from Mecca</li>
+        <li>Reformed Julian: <strong>solar</strong>; year begins on 1.
+        January, epoch begins with Christ’s birth</li>
+        <li>Ottoman fiscal (<em>mālī</em>): <strong>lunisolar</strong>;
+        year begins on 1. March, eepoch begins with Muḥammad’s exodus
+        from Mecca</li>
+        <li>Gregorian: <strong>solar</strong>; year begins on 1.
+        January, epoch begins with Christ’s birth</li>
+        <li>Jewish: <strong>lunar</strong>; epoch begins with the
+        creation of the world</li>
+        </ul>
+        <h3 id="days-hours">Days, hours</h3>
+        <ul>
+        <li><em>alla turca</em>: day begins with sundown, 12 unequal
+        hours each for day and night</li>
+        <li><em>alle franca</em>: day begins at midnight. 24 equinoctial
+        hours</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>this slide could/ should be split into multiple slides with
+        more visual content</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="arabic" class="title-slide slide level1">
+        <h1>Arabic</h1>
+
+        </section>
+        <section id="arabic-1" class="slide level2">
+        <h2>Arabic</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="script">Script</h3>
+        <ul>
+        <li>Second most important script after Latin
+        <ul>
+        <li>currently used by 14 languages: Arabic, Persian, Urdu,
+        Pashto, Uzbek, Uighur …</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="language">Language</h3>
+        <ul>
+        <li>Fifth most important language
+        <ul>
+        <li>One of six official languages of the United Nations</li>
+        <li>Official language in 26 countries</li>
+        <li>&gt;420 million speakers</li>
+        </ul></li>
+        <li>Lithurgical language of 1,6 billion Muslims</li>
+        </ul>
+        </div>
+        </div>
+        <figure id="fig:arabic-script">
+        <img
+        data-src="../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png"
+        alt="Approximate distribution of Arabic script use along current national boundaries (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
+        <figcaption>Figure 4: Approximate distribution of Arabic script
+        use along current national boundaries <span class="citation"
+        data-cites="Nemeth+2017">(Nemeth <em>Arabic Type-Making in the
+        Machine Age</em> 2017, fig 1.1)</span></figcaption>
+        </figure>
+        </section>
+        <section id="arabic-script-grammar" class="slide level2">
+        <h2>Arabic Script Grammar</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Written from <strong>right</strong> to left (RTL)</li>
+        <li>Letters (<em>graphemes</em>)
+        <ul>
+        <li>mostly connected in direction of writing</li>
+        <li>letterform depends of position within the string
+        (<em>allographs</em>): <span class="c_rtl" lang="ar">ج جـ ـجـ
+        ـج</span></li>
+        <li>combination of basic letterforms (<em>archigraphemes</em>,
+        Arab. <em>rasm</em>) and diacritic marks (<em>iʿjām</em>)</li>
+        </ul></li>
+        <li>diacritics
+        <ul>
+        <li>reduce semantic ambiguity</li>
+        <li>subject to regional preferences and change of time</li>
+        </ul></li>
+        <li>Vocalisation (<em>tashkīl</em>) is <strong>optional</strong>
+        and changes the semantics</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:zakham-ar">
+        <img data-src="../../assets/dh/arabic-ligatures.png"
+        alt="Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
+        <figcaption>Figure 5: Beginning of <span class="citation"
+        data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
+        (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. Some
+        ligatures are highlighted.</figcaption>
+        </figure>
+        <figure id="fig:zakham-ar-rasm">
+        <img data-src="../../assets/dh/arabic_rasm.png"
+        alt="Pseudo-rasm of the text in @fig:zakham-ar. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
+        <figcaption>Figure 6: Pseudo-rasm of the text in
+        <code>@fig:zakham-ar</code>. Automatically generated with <span
+        class="citation" data-cites="Pohl2022Rasmifize">Pohl
+        (<span>“Rasmifize”</span> [2020] 2022)</span>.</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>note:
+        <ul>
+        <li>gaps within words</li>
+        <li>tilted base lines</li>
+        <li>ligatures</li>
+        <li>vertical overlap</li>
+        </ul></li>
+        <li>“<em>allograph</em>” is Thomas Milo’s terminology</li>
+        <li>I am showing this in order to demonstrate the epistemic
+        violence exercised by the paradigm of
+        <ul>
+        <li>discrete letters,</li>
+        <li>the Latin alphabet with its rather small number of
+        letters,</li>
+        <li>movable type printing
+        <ul>
+        <li>magazines become unfeasibly large
+        <ul>
+        <li>unwieldy</li>
+        <li>expensive:
+        <ul>
+        <li>more material</li>
+        <li>more machinery</li>
+        <li>more time for composing</li>
+        </ul></li>
+        </ul></li>
+        </ul></li>
+        </ul></li>
+        <li>tilted baselines and vertical overlap of words makes things
+        even more unwieldy</li>
+        <li></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="multilinguality-and-linguistic-imperialism"
+        class="title-slide slide level1">
+        <h1>multilinguality and <em>linguistic imperialism</em></h1>
+
+        </section>
+        <section id="multilinguality" class="slide level2">
+        <h2>multilinguality</h2>
+        <blockquote>
+        <p>Indigenous peoples have the right to revitalize, use, develop
+        and transmit to future generations their histories, languages,
+        oral traditions, philosophies, writing systems and literatures,
+        and to designate and retain their own names for communities,
+        places and persons.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="UNDRIP2007">(United
+        Nations <span>“UNDRIP”</span> 2007, sec. 13)</span><cite></p>
+        <aside class="notes">
+        <p>The human condition, historically, is one of multilinguality.
+        People speak different languages, dialects, sociolects etc. in
+        different contexts: at home, at work, at social gatherings, for
+        worship etc.. Sometimes we share a language with people across
+        geographic distances, just as in this meeting, and sometimes, we
+        do not understand our direct neighbours.</p>
+        </aside>
+        </section>
+        <section id="linguistic-imperialism" class="slide level2">
+        <h2>Linguistic imperialism</h2>
+        <blockquote>
+        <p>‘Linguistic imperialism’ is shorthand for a multitude of
+        activities, ideologies, and structural relationships. Linguistic
+        imperialism takes place within an overarching structure of
+        asymmetrical North/ South relations, where language interlocks
+        with other dimensions, cultural (particularly in education,
+        science, and the media), economic and political</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Phillipson1997RealitiesAndMyths">(Phillipson
+        <span>“Realities and Myths of Linguistic Imperialism”</span>
+        1997, 239)</span></cite></p>
+        <blockquote>
+        <p>The basis for the codes, languages, methodologies, and
+        technical instruments of the digital humanities is English; the
+        written and spoken language of all the main conferences, the
+        most prestigious journals, the institutions that control the
+        discipline, the organizations and international consortia, and
+        the central authorities of knowledge is, with few exceptions,
+        some dialect of British or American English.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Fiormonte+2021+TaxationagainstOverrepresentation">(Fiormonte
+        <span>“Taxation Against Overrepresentation?”</span> 2021,
+        334–35)</span></cite></p>
+        <aside class="notes">
+        <ul>
+        <li>UNDRIP: United Nations Declaration on the Rights of
+        Indigenous Peoples.</li>
+        <li>this ties back to the map I showed you at the very
+        beginning</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="technical-affordances" class="slide level2">
+        <h2>Technical affordances</h2>
+        <figure id="fig:ar-linotype">
+        <img data-src="../../assets/dh/arabic-linotype_nemeth-p_46.png"
+        alt="Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
+        <figcaption>Figure 7: Arabic Linotype, 1910s. Source: <span
+        class="citation" data-cites="Nemeth+2017">(Nemeth <em>Arabic
+        Type-Making in the Machine Age</em> 2017, fig.
+        2.7)</span></figcaption>
+        </figure>
+        <aside class="notes">
+        <ul>
+        <li>keyboard with 180 keys</li>
+        <li>two magazines were required for a single Arabic fount</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="encoding-characters" class="slide level2">
+        <h2>Encoding characters</h2>
+        <h3 id="unicode-is-awesome">Unicode is awesome …</h3>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:unicode-1">
+        <img data-src="../../assets/dh/unicode_1-0-0.png"
+        alt="Supported scripts in Unicode v1.0.0. Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption>Figure 8: Supported scripts in Unicode v1.0.0.
+        Currently unsupported scripts. Source: <a
+        href="https://www.worldswritingsystems.org"
+        class="uri">https://www.worldswritingsystems.org</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:unicode-15-missing">
+        <img
+        data-src="../../assets/dh/unicode_15-0-0-missing-scripts.png"
+        alt="Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption>Figure 9: Currently unsupported scripts. Source: <a
+        href="https://www.worldswritingsystems.org"
+        class="uri">https://www.worldswritingsystems.org</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>unicode can be traced back to the 1980s</li>
+        <li>Unicode has become the dominant encoding standard in the
+        2000s</li>
+        <li>almost universal support across operating systems has been
+        driven by people’s fondness of emojis</li>
+        <li>Arabic has been part of Unicode since v 1.0.0</li>
+        <li>linguisting imperialism
+        <ul>
+        <li>consortium: Adobe, Airbnb, Amazon, Apple, Yat, Google, ETCO,
+        Meta, Microsoft, Netflix, SAP and Salesforce</li>
+        <li>character encoding is part of the history of a global
+        hegemonic technology stack bound up in historically contingent
+        cultural traditions of the Global North.</li>
+        <li>Mechanically and, later, electronically recording
+        information in scripts other than Latin—particularly complex
+        scripts with a much larger number of graphemes and different
+        writing directions— was never considered sufficiently important
+        or profitable to be supported out-of-the-box.</li>
+        <li>Character encoding enforces Latin script grammar
+        <ul>
+        <li>unicode insufficiently distinguishes between languages and
+        scripts</li>
+        </ul></li>
+        <li>The standard is written in English</li>
+        <li>Current v 15:
+        <ul>
+        <li>we know at least 300 writing systems</li>
+        <li>127 are currently not encoded</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-is-awesome-1" class="slide level2">
+        <h2>Unicode is awesome …</h2>
+        <p>… but standards depend on implementation and software
+        support</p>
+        <h3 id="encoding-nightmares">Encoding nightmares</h3>
+        <!-- change this slide to show rendering issues ([@fig:arabic-fail-covid]) AND encoding issues -->
+        <div class="columns">
+        <div class="wide">
+        <figure id="fig:arabic-mecca-1">
+        <img
+        data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
+        alt="32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
+        <figcaption>Figure 10: 32 variants of encoding “Meccan” (<span
+        lang="ar">مكية</span>) <span class="citation"
+        data-cites="Milo2014VisuallyMisleading">(Milo <span>“Visually
+        Misleading Characters in the Arabic URL”</span> 2014,
+        4)</span></figcaption>
+        </figure>
+        </div><div class="narrow">
+        <figure id="fig:arabic-mecca-2">
+        <img
+        data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
+        height="300"
+        alt="In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
+        <figcaption>Figure 11: In-browser search for “<span
+        lang="ar">مك</span>” in the Wikidata entry for “Mecca” (<a
+        href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>unicode insufficiently distinguishes between languages and
+        scripts
+        <ul>
+        <li>violating two of its principles
+        <ul>
+        <li>characters not glyphs</li>
+        <li>unification: no duplicates within a script</li>
+        </ul></li>
+        </ul></li>
+        <li>yet, rendering depends on software support
+        <!-- + see [@fig:arabic-fail-covid] --></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-is-awesome-2" class="slide level2">
+        <h2>Unicode is awesome …</h2>
+        <!-- [... but standards depend on implementation and software support]{.c_right} -->
+        <p>… did I mention industry consortia?</p>
+        <blockquote>
+        <p>HTML elements all have names that only use ASCII
+        alphanumerics <span class="citation"
+        data-cites="HTMLLivingStandard2023">(Web Hypertext Application
+        Technology Working Group <span>“HTML: Living Standard”</span>
+        2023, sec. 13.1.2)</span></p>
+        </blockquote>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:zakham-ar-failure">
+        <img data-src="../../assets/dh/arabic_failure-browser.png"
+        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
+        <figcaption>Figure 12: Rendered HTML with the built-in default
+        CSS for <span class="citation"
+        data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
+        (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
+        test file is available <a
+        href="https://doi.org/10.5281/zenodo.7781543">online</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:html">
+        <img data-src="../../assets/dh/html_vscode.png"
+        alt="HTML-Code for fig. 12 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption>Figure 13: HTML-Code for fig. 12 in Visual Code
+        Studio. By default, non-ASCII characters are visually
+        highlighted</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Arabic has been part of Unicode since its inception</li>
+        <li>yet, software support is a different question, as we have
+        seen</li>
+        <li>HTML5 is a <em>living standard</em> maintained by yet
+        another consortium Web Hypertext Application Technology Working
+        Group (WHATWG)
+        <ul>
+        <li>members are leading browser vendors such as Apple, Google,
+        Microsoft and Mozilla</li>
+        <li>all but Mozilla are also members of the Unicode
+        consortium</li>
+        </ul></li>
+        <li><code>@lang</code> attribute not used by standard CSS
+        <ul>
+        <li>everyone has to add
+        <code>*[lang="ar"] {direction:rtl;}</code></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="bidirectional-texts" class="slide level2">
+        <h2>Bidirectional texts</h2>
+        <p>The mandatory XML declaration
+        <code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code> sets
+        left-to-right as the base direction.</p>
+        <div class="columns">
+        <div class="wide">
+        <figure id="fig:bidi-xml">
+        <img
+        data-src="../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png"
+        alt="Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
+        <figcaption>Figure 14: Bi-directional TEI/XML at the beginning
+        of <span class="citation"
+        data-cites="oclc_1034545644-i_15-div_1.d2e634">Dammūs
+        (<span>“Ṣiḥāfat Sūriyya wa-Lubnān”</span> 1911)</span>. Arrows
+        indicate the reading direction. Numbers indicate reading
+        order.</figcaption>
+        </figure>
+        </div><div class="narrow">
+        <figure id="fig:zuhur-oxygen">
+        <img
+        data-src="../../assets/OpenArabicPE/oxygen_zuhur-author_small.png"
+        alt="The TEI/XML from fig. 14 in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption>Figure 15: The TEI/XML from fig. 14 in <a
+        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
+        Styling relies on CSS.</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>the Oxygen developers added support for Arabic in
+        <code>@xml:lang</code> on our suggestion in 2015.</li>
+        <li>but only for TEI/XML and not for all RTL languages.</li>
+        </ul>
+        </aside>
+        <!-- ## Transliteration, the undead solution of yore
+
+        Transliteration into Latin script served the need of colonial administrations and academics with the technological affordances of the time.
+
+
+
+        ::: columns-3
+        :::: column
+
+        ### Amīrkā wa ʿulamāʾ al-ʿArab
+
+        >Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl an al-muʾarrikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn.
+
+        <cite>Transliteration according to the *International Journal of Middle East Studies*</cite>
+
+
+        ::::
+        :::: column
+
+        ### Amīrkā wa ʿulamāʾ al-ʿarab
+
+        >Kānat Amīrkā ma[ǧ]{.red}hūla ʿinda abnāʾ al-qarn al-[ḫ]{.red}āmis ʿa[š]{.red}r bi-dalīl an al-muʾarri[ḫ]{.red}īn fī [ḏ]{.red}alika al-ʿahd lam ya[ḏ]{.red}karū ʿanhā siwā a[ḫ]{.red}bār ikti[š]{.red}āfihā fī awā[ḫ]{.red}ir [ḏ]{.red}alika al-qarn.
+
+        <cite>Transliteration according to the *Deutsche Morgenländische Gesellschaft*</cite>
+
+        ::::
+        :::: column
+
+        ### Amīrikā wa-ʻulamāʼ al-ʻArab
+
+        >Kānat Amīrikā majhūlah [ʻ]{.red}inda abnā[ʼ]{.red} al-qarn al-khāmis [ʻ]{.red}ashar bi-dalīl an al-mu[ʼ]{.red}arrikhīn fī dhālika al-[ʻ]{.red}ahd lam [ydhkrwā]{.red} [ʻ]{.red}anhā saw[á]{.red} Akhbār [aktshāfhā]{.red} fī awākhir dhālika al-qarn
+
+        <cite>Automated ALA-LC transcription into Latin script with the [romanize Arabic demo](http://romanize-arabic.camel-lab.com)</cite>
+
+        ::::
+        :::
+
+        ::: notes
+
+        - Depend on input and output **languages**
+        - Subject to traditions and taste
+        - Error prone
+
+        ::: -->
+        </section>
+        <section id="transliteration-the-undead-solution-of-yore"
+        class="slide level2">
+        <h2>Transliteration, the undead solution of yore</h2>
+        <p>Transliteration into Latin script served the need of colonial
+        administrations and academics with the technological affordances
+        of the time.</p>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="مرآة-الشرق"><span lang="ar">مرآة الشرق</span></h3>
+        <p>The Arabic original</p>
+        <h3 id="meraat-al-sherk">Meraat al-Sherk</h3>
+        <p>The official transcription provided by the paper’s
+        masthead</p>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat">
+        <img
+        data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
+        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption>Figure 16: Front page of <em>Mirʾāt al-Sharq</em>
+        #192, 22 Nov. 1922, Jerusalem. Source: <a
+        href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="mirʾāt-al-sharq">Mirʾāt al-Sharq</h3>
+        <p>Following the system of the <em>International Journal of
+        Middle East Studies</em> (IJMES)</p>
+        <h3 id="mirʾāt-aš-šarq">Mirʾāt aš-Šarq</h3>
+        <p>Following the system of the <em>Deutsche Morgenländische
+        Gesellschaft</em> (DMG)</p>
+        <h3 id="mrmp-alcrq">mrMp Alcrq</h3>
+        <p>Buckwalter transliteration</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>transliteration
+        <ul>
+        <li>Depend on input and output <strong>languages</strong></li>
+        <li>Subject to traditions and taste</li>
+        <li>Error prone</li>
+        <li>if 1:1 grapheme replacement is intended, it becomes
+        unreadable for casual readers</li>
+        </ul></li>
+        <li>published by Būlus Shaḥāda in Jerusalem between 1919 and
+        1938</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="arabic-textual-heritage-online"
+        class="title-slide slide level1">
+        <h1>Arabic textual heritage online</h1>
+
+        </section>
+        <section id="the-long-tail-of-ascii-in-discovery-systems"
+        class="slide level2">
+        <h2>The long tail of ASCII in discovery systems</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="الجنة"><span lang="ar">الجنة</span>?</h3>
+        <p>No Arabic script</p>
+        <figure id="fig:zdb-ar">
+        <img data-src="../../assets/jaraid/zdb_janna-ar.png"
+        alt="Search in ZDB for “الجنة”" />
+        <figcaption>Figure 17: Search in <a
+        href="https://zdb-katalog.de/list.xhtml?t=الجنة">ZDB</a> for
+        “<span lang="ar">الجنة</span>”</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="al-ǧanna">al-Ǧanna?</h3>
+        <p>Which Latinized transcription was used?</p>
+        <figure id="fig:zdb-dmg">
+        <img data-src="../../assets/jaraid/zdb_janna-ar-Latn.png"
+        alt="Search in ZDB for “al-Ǧanna”" />
+        <figcaption>Figure 18: Search in <a
+        href="https://zdb-katalog.de/list.xhtml?t=al-Ǧanna">ZDB</a> for
+        “al-Ǧanna”</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="ganna">Ganna!</h3>
+        <p>What are the normalization rules for the search
+        algorithm?</p>
+        <figure id="fig:zdb-functional">
+        <img data-src="../../assets/jaraid/zdb_janna-ar-Latn-no-al.png"
+        alt="Search in ZDB for “Ganna”" />
+        <figcaption>Figure 19: Search in <a
+        href="https://zdb-katalog.de/list.xhtml?t=Ganna">ZDB</a> for
+        “Ganna”</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>catalogue could be searched in Arabic but the data is
+        missing</li>
+        <li>catalogues are historical artefacts
+        <ul>
+        <li>digitisation of catalogues: NOT re-cataloguing of original
+        material
+        <ul>
+        <li>card catalogue</li>
+        <li>ASCII OPAC</li>
+        <li>automated transcription of the card catalogue</li>
+        <li>human cataloguers depend on the technology they have at
+        hand, which means they might be unable to enter the correct
+        string</li>
+        <li>errors perpetuate</li>
+        </ul></li>
+        </ul></li>
+        <li>Latin input is mostly reduced to ASCII
+        <ul>
+        <li>Hamza and ʿAyn escape this algorithm on ZDB</li>
+        </ul></li>
+        <li>determined article is not automatically removed</li>
+        <li>The choices are not transparently documented</li>
+        <li>no software on-screen keyboards provided</li>
+        <li>additional problems
+        <ul>
+        <li>catalogues are inherently local documents</li>
+        <li>aggregated, if at all, on a national level</li>
+        <li>frequently accessible only through Web interfaces and not
+        APIs</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="thank-you" class="title-slide slide level1">
+        <h1>Thank you!</h1>
+
+        </section>
+        <section id="thank-you-1" class="slide level2">
+        <h2>Thank you!</h2>
+        <ul>
+        <li>Contributors to <a
+        href="https://openarabicpe.github.io/">OpenArabicPE</a>: Jasper
+        Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans
+        Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver
+        Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi
+        Tanna-Händel, and Layla Youssef</li>
+        <li>Contributors to <a
+        href="https://projectjaraid.github.io/">Project Jarāʾid</a>:
+        Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid,
+        Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa,
+        Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan,
+        Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek,
+        Philip Sadgrove, Ola Seif, and Rogier Visser</li>
+        <li>Links:
+        <ul>
+        <li>Slides: <a
+        href="https://tillgrallert.github.io/slides/dh/2024-03-luxembourg/"
+        class="uri">https://tillgrallert.github.io/slides/dh/2024-03-luxembourg/</a></li>
+        <li>Project blog: <a
+        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+        <li>Papers: <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html"
+        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>,
+        <a href="https://doi.org/10/gkhrjr"
+        class="uri">https://doi.org/10/gkhrjr</a></li>
+        <li>Mastodon: <a
+        href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
+        <li>Email: <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        </ul></li>
+        </ul>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">References</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        data-entry-spacing="0" role="list">
+        <div id="ref-oclc_1034545644-i_15-div_1.d2e634"
+        class="csl-entry" role="listitem">
+        Dammūs, Ḥalīm Ibrāhīm. 1911. <span>“Ṣiḥāfat Sūriyya
+        wa-Lubnān”</span> [The Press of Syria and Lebanon].
+        <em>al-Zuhūr</em> 2 (4), June 1, 1911. <a
+        href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634</a>.
+        </div>
+        <div id="ref-Fiormonte+2021+TaxationagainstOverrepresentation"
+        class="csl-entry" role="listitem">
+        Fiormonte, Domenico. 2021. <span>“Taxation Against
+        Overrepresentation? The Consequences of Monolingualism for
+        Digital Humanities.”</span> In <em>Alternative Historiographies
+        of the Digital Humanities</em>, edited by Dorothy Kim and
+        Adeline Koh, 333–76. Earth: punctum books. <a
+        href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+        </div>
+        <div id="ref-Milo2014VisuallyMisleading" class="csl-entry"
+        role="listitem">
+        Milo, Thomas. 2014. <span>“Visually Misleading Characters in the
+        Arabic URL.”</span> Deco Type.
+        </div>
+        <div id="ref-Nemeth+2017" class="csl-entry" role="listitem">
+        Nemeth, Titus. 2017. <em>Arabic Type-Making in the Machine Age:
+        The Influence of Technology on the Form of Arabic Type,
+        1908-1993</em>. Leiden: Brill. <a
+        href="https://doi.org/10.1163/9789004349308">https://doi.org/10.1163/9789004349308</a>.
+        </div>
+        <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+        role="listitem">
+        Phillipson, Robert. 1997. <span>“Realities and Myths of
+        Linguistic Imperialism.”</span> <em>Journal of Multilingual and
+        Multicultural Development</em> 18 (3): 238–48. <a
+        href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        </div>
+        <div id="ref-Pohl2022Rasmifize" class="csl-entry"
+        role="listitem">
+        Pohl, Oliver. (2020) 2022. <span>“Rasmifize.”</span> TypeScript.
+        <a
+        href="https://github.com/suchmaske/rasmifize">https://github.com/suchmaske/rasmifize</a>.
+        </div>
+        <div id="ref-SykesPicot1916Map" class="csl-entry"
+        role="listitem">
+        Royal Geographical Society. 1916. <span>“Sykes Picot Agreement
+        Map Signed 8 May 1916.”</span> MPK 1/426. PRO. <a
+        href="https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg">https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg</a>.
+        </div>
+        <div id="ref-UNDRIP2007" class="csl-entry" role="listitem">
+        United Nations. 2007. <span>“United Nations Declaration on the
+        Rights of Indigenous Peoples.”</span> A/RES/61/295. United
+        Nations. <a
+        href="https://undocs.org/A/RES/61/295">https://undocs.org/A/RES/61/295</a>.
+        </div>
+        <div id="ref-HTMLLivingStandard2023" class="csl-entry"
+        role="listitem">
+        Web Hypertext Application Technology Working Group. 2023.
+        <span>“HTML: Living Standard.”</span> March 24, 2023. <a
+        href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
+        </div>
+        <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
+        class="csl-entry" role="listitem">
+        Zakham, Yūsuf. 1907. <span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span>
+        [America and Arab Scholars]. <em>al-Muqtabas</em> 2 (1),
+        February 14, 1907. <a
+        href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
+        </div>
+        </div>
+        </section></section>
       </div>
     </div>
 
