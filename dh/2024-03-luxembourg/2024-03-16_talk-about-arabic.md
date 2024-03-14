@@ -50,7 +50,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 [... or what I would want to do]{.c_right}
 
-![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous}
+![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous}
 
 
 ::: notes
