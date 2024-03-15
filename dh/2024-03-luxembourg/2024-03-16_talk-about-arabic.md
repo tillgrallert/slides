@@ -953,7 +953,12 @@ Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
 
 :::
 
-# Thank you!
+# Conclusion
+## Conclusion
+
+- minimal computing
+- be your own tool builder
+
 ## Thank you!
 
 - Contributors to [OpenArabicPE](https://openarabicpe.github.io/): Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
