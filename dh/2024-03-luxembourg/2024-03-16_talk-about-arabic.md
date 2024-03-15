@@ -492,20 +492,20 @@ The human condition, historically, is one of multilinguality. People speak diffe
 ::: columns
 :::: wide
 
-<!-- ![@Spence2023MultilingualDigital, 19](../../assets/dh/spence-2023-p_19_arabic-failure.png){#fig:spence-arabic-fail} -->
+<!-- ![@IsasiEtAl2023ModelMultilingual, 19](../../assets/dh/spence-2023-p_19_arabic-failure.png){#fig:spence-arabic-fail} -->
 
 <iframe src="https://fedihum.org/@jomla/112094232400811983/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
-
-<!-- <cite>Quote from @Spence2023MultilingualDigital, 19</cite> -->
 
 ::::
 :::: narrow
 
-This ought to be the **perfect example**
+This ought to be the **perfect example** (from a £130 book from a major publisher)
 
-The text should read 
+>As Ramsey Nasser notes in the overview of his programming language [ب ل ق]{.c_rtl .red lang="ar"} [pre-existing digital techonologies] are almost exclusively based on the ASCII character set
 
->As Ramsey Nasser notes in the overview of his programming language [قلب]{.c_rtl .red lang="ar"} these are almost exclusively based on the ASCII character set
+<cite>@IsasiEtAl2023ModelMultilingual, 19</cite>
+
+[ب ل ق]{.c_rtl .red lang="ar"} should have been  [قلب]{.c_rtl .green lang="ar"}
 
 ::::
 :::
