@@ -274,7 +274,8 @@
                     h3,
                     h4,
                     h5,
-                    th {
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -1147,9 +1148,11 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
+
                     /*******************************
                     tables
                     *******************************/
@@ -1448,18 +1451,21 @@ NFDI4Memory</p>
         <h1>Digital history <br/>what is it and why does it matter?</h1>
 
         </section>
-        <section id="datafication-and-the-epoch-of-computationability"
+        <section
+        id="the-premise-of-datafication-and-the-epoch-of-computationability"
         class="slide level2">
-        <h2>Datafication and the epoch of computationability</h2>
+        <h2>The premise of <strong>datafication</strong> and the epoch
+        of computationability</h2>
         <p><strong>Datafication</strong> emphasises the epistemic shift
         from a world were data were a closely defined part of the output
         of research processes towards the new status quo in which all
         research processes are always already computationally mediated
         through information and communication technologies.</p>
         <div class="columns">
-        <div class="column">
-        <h3 id="being-digital-has-become-meaningless">being
-        <em>digital</em> has become meaningless</h3>
+        <div class="narrow">
+        <p><span class="keyphrase">being <em>digital</em> has become
+        meaningless</span></p>
+        </div><div class="wide">
         <blockquote>
         <p>We think of the ‘digital’ as a previous historic movement
         when computation as digitality was understood in opposition to
@@ -1468,10 +1474,13 @@ NFDI4Memory</p>
         <p><cite><span class="citation" data-cites="Berry+2017">Berry
         und Fagerjord (<em>Digital Humanities</em> 2017)</span>,
         2</cite></p>
-        </div><div class="column">
-        <h3
-        id="algorithms-as-part-of-the-social-fabric"><em>algorithms</em>
-        as part of the social fabric</h3>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase"><em>algorithms</em> as part of the
+        social fabric</span></p>
+        </div><div class="wide">
         <blockquote>
         <p>Today, algorithms are such an intrinsic and fundamental part
         of how daily life is experienced that some scholars even argue
@@ -1484,69 +1493,6 @@ NFDI4Memory</p>
         <p><cite><span class="citation"
         data-cites="Siles2023Living">Siles (<em>Living with
         Algorithms</em> 2023)</span>, 1</cite></p>
-        </div>
-        </div>
-        </section>
-        <section id="datafication-and-the-epoch-of-computationability-1"
-        class="slide level2">
-        <h2>Datafication and the epoch of computationability</h2>
-        <p><strong>Datafication</strong> emphasises the epistemic shift
-        from a world were data were a closely defined part of the output
-        of research processes towards the new status quo in which all
-        research processes are always already computationally mediated
-        through information and communication technologies.</p>
-        <div class="columns">
-        <section id="being-digital-has-become-meaningless-1"
-        class="narrow">
-        <h3>being <em>digital</em> has become meaningless</h3>
-        </section><div class="wide">
-        <blockquote>
-        <p>We think of the ‘digital’ as a previous historic movement
-        when computation as digitality was understood in opposition to
-        the analogue, rather than complementary […]</p>
-        </blockquote>
-        <p><cite><span class="citation" data-cites="Berry+2017">Berry
-        und Fagerjord (<em>Digital Humanities</em> 2017)</span>,
-        2</cite></p>
-        </div>
-        </div>
-        <div class="columns">
-        <section id="algorithms-as-part-of-the-social-fabric-1"
-        class="narrow">
-        <h3><em>algorithms</em> as part of the social fabric</h3>
-        </section><div class="wide">
-        <blockquote>
-        <p>Today, algorithms are such an intrinsic and fundamental part
-        of how daily life is experienced that some scholars even argue
-        that we live in “algorithmic cultures” […]. This evocative
-        notion points to the increasing difficulty of separating
-        algorithms from the activities that make up culture. It also
-        evinces the complex ways in which human agency and algorithmic
-        actions are intertwined […]</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Siles2023Living">Siles (<em>Living with
-        Algorithms</em> 2023)</span>, 1</cite></p>
-        </div>
-        </div>
-        </section>
-        <section id="data-data-everywhere" class="slide level2">
-        <h2>Data, data everywhere</h2>
-        <p>What exactly to we mean by data?</p>
-        <div class="columns">
-        <section id="all-data-is-modelled" class="narrow">
-        <h3>All data is modelled</h3>
-        </section><div class="wide">
-        <blockquote>
-        <p>[Datafication/modeling] is the work of abstracting discrete
-        values from a phenomenon or artifact. These values may be
-        expressed in numbers or texts and are necessarily a reduction of
-        complex materials into a form for computation. With data we can
-        automate processes</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Drucker2021DHCoursebook">Drucker (<em>DH
-        Coursebook</em> 2021)</span>, 3</cite></p>
         </div>
         </div>
         </section>
@@ -1574,7 +1520,8 @@ NFDI4Memory</p>
         <h3 id="aims">Aims</h3>
         <ul>
         <li>Establish a robust and sustainable <strong>data
-        culture</strong> in order to
+        culture</strong> in order to <em>emerge from our self-incurred
+        immaturity</em>
         <ul>
         <li>make sense of the new episteme</li>
         <li>develop the necessary skills to conduct historical
@@ -1633,6 +1580,142 @@ NFDI4Memory</p>
         </ul></li>
         </ul>
         </aside>
+        </section>
+        <section id="data-data-everywhere" class="slide level2">
+        <h2>Data, data everywhere</h2>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">All digital information is
+        data</span> …</p>
+        </div><div class="column">
+        <blockquote>
+        <p>Data are forms of information, a larger concept that is even
+        more difficult to define. Epistemological and ontological
+        problems abound, resulting in many books devoted to explicating
+        information and knowledge</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Borgman2015BigData">Borgman (<em>Big Data, Little
+        Data, No Data</em> 2015)</span>, 18</cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>[Datafication/modeling] is the work of abstracting discrete
+        values from a phenomenon or artifact. These values may be
+        expressed in numbers or texts and are necessarily a reduction of
+        complex materials into a form for computation.
+        <!--With data we can automate processes --></p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Drucker2021DHCoursebook">Drucker (<em>DH
+        Coursebook</em> 2021)</span>, 3</cite></p>
+        </div><div class="narrow">
+        <p>… and <span class="keyphrase">all data is modelled</span></p>
+        <ul>
+        <li>Mapping</li>
+        <li>Reduction</li>
+        <li>Purpose</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Data literacy as part of data culture</li>
+        <li>data re always a concrete embodyment and a
+        socio-technological stack: serialisation</li>
+        <li>If we subscribe to social constructivism then all models are
+        historically situated
+        <ul>
+        <li>Data and models are situated in historical processes of
+        knowledge production</li>
+        </ul></li>
+        <li>Models have three characteristics <span class="citation"
+        data-cites="Stachowiak1973AllgemeineModelltheorie">(Stachowiak
+        <em>Allgemeine Modelltheorie</em> 1973)</span>
+        <ul>
+        <li>Mapping/ replacing: model for something</li>
+        <li>Reduction: abstracts aspects of interest</li>
+        <li>Purpose: models have a purpose for something</li>
+        </ul></li>
+        <li>drucker: capta</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section id="data-culture-through-examples"
+        class="title-slide slide level1">
+        <h1>Data culture through examples</h1>
+
+        </section>
+
+        <section>
+        <section
+        id="learning-teaching-data-culture-at-the-chair-of-digital-history"
+        class="title-slide slide level1">
+        <h1>Learning / teaching data culture at the chair of Digital
+        History</h1>
+
+        </section>
+        <section id="the-name-of-things" class="slide level2">
+        <h2>The Name of Things</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="methods">Methods</h3>
+        <p>Named Entity Recognition and the Automatic Recognition of
+        Place and Personal Names in Medieval and Modern Texts</p>
+        </div><div class="column">
+        <h3 id="components">Components</h3>
+        <ul>
+        <li>Definition of NER as Task</li>
+        <li>Overview of approaches:
+        <ul>
+        <li>Rule Based</li>
+        <li>Traditional ML</li>
+        <li>Deep Learning</li>
+        <li>LLM</li>
+        </ul></li>
+        <li>Challenges of Historical Texts for NER</li>
+        <li>Application and Evaluation of various Python Libraries</li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="computer-vision" class="slide level2">
+        <h2>Computer Vision</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="methods-1">Methods</h3>
+        <p>Methods of image recognition and analysis in Digital
+        History</p>
+        </div><div class="column">
+        <h3 id="components-1">Components</h3>
+        <ul>
+        <li>Computational image analysis</li>
+        <li>Theory of deep learning ML</li>
+        <li>Application of ready-to-use solutions (YOLO v8, COCO)</li>
+        <li>Image annotation and training for detection tasks</li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="who-wrote-it" class="slide level2">
+        <h2>Who wrote it?</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="methods-2">Methods</h3>
+        <p>Authorship Attribution as a method ofDigital History</p>
+        </div><div class="column">
+        <h3 id="components-2">Components</h3>
+        <ul>
+        <li>computational text analysis</li>
+        <li>Theoretical foundations, comparison of analog and digital
+        methods</li>
+        <li>Creation of a silver standard</li>
+        <li>Comparison of implementations for authorship analysis</li>
+        </ul>
+        </div>
+        </div>
         </section></section>
         <section>
         <section id="conclusion" class="title-slide slide level1">
@@ -1648,6 +1731,12 @@ NFDI4Memory</p>
         Humanities: Knowledge and Critique in a Digital Age</em>.
         Cambridge; Malden: Polity.
         </div>
+        <div id="ref-Borgman2015BigData" class="csl-entry"
+        role="listitem">
+        Borgman, Christine L. 2015. <em>Big Data, Little Data, No Data:
+        Scholarship in the Networked World</em>. MIT Press. <a
+        href="https://mitpress.mit.edu/9780262529914/big-data-little-data-no-data/">https://mitpress.mit.edu/9780262529914/big-data-little-data-no-data/</a>.
+        </div>
         <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
         role="listitem">
         Drucker, Johanna. 2021. <em>The Digital Humanities Coursebook:
@@ -1659,6 +1748,11 @@ NFDI4Memory</p>
         Siles, Ignacio. 2023. <em>Living with Algorithms: Agency and
         User Culture in Costa Rica</em>. Boston: MIT Press. <a
         href="https://bookshop.org/p/books/living-with-algorithms-agency-and-user-culture-in-costa-rica-ignacio-siles/18738790">https://bookshop.org/p/books/living-with-algorithms-agency-and-user-culture-in-costa-rica-ignacio-siles/18738790</a>.
+        </div>
+        <div id="ref-Stachowiak1973AllgemeineModelltheorie"
+        class="csl-entry" role="listitem">
+        Stachowiak, Herbert. 1973. <em>Allgemeine Modelltheorie</em>.
+        Wien: Springer.
         </div>
         </div>
         </section></section>
