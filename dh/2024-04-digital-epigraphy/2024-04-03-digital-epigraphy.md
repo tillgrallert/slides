@@ -8,13 +8,13 @@ institute:
 homepage:
 event: "Epigraphy.info Workshop VIII"
 date: 2024-03-27
-url: https://tillgrallert.github.io/slides/...
+url: https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/
 status: published
 lang: de
 slide-level: 2
 bibliography:
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
-    - /Users/Shared/HUBox/4memory/Data/bibliography_methods-innovation-lab.csl.json
+    - /Users/Shared/BachCloud/HUBox/Methodenlabor/Data/bibliography_methods-innovation-lab.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 tags:
@@ -57,8 +57,15 @@ tags:
 ::::
 :::
 
+::: notes
 
-## To make sense of *datafication* we need cultural change within the discipline
+"epoch of computationability" orginates with Berry
+
+:::
+
+## Academic history in the epoch of computationability
+
+[To make sense of *datafication* we need cultural change within the discipline]{.keyphrase}
 
 ::: columns
 :::: column
@@ -85,7 +92,7 @@ tags:
 ::::
 :::
 
-## Data culture
+## What do we mean by **data culture**?
 
 ::: columns
 :::: column
@@ -134,12 +141,12 @@ This requires:
 
 
 ::: columns
-:::: column
+:::: narrow
 
 [All digital information is data]{.keyphrase} ...
 
 ::::
-:::: column
+:::: wide
 
 >Data are forms of information, a larger concept that is even more difficult to define. Epistemological and ontological problems abound, resulting in many books devoted to explicating information and knowledge 
 
@@ -155,14 +162,18 @@ This requires:
 
 <cite>@Drucker2021DHCoursebook, 3</cite>
 
+>Data need to be imagined *as* data to exist and function as such, and the imagination of data entails an interpretive base.
+
+<cite>@Gitelman2013Introduction, 3</cite>
+
 ::::
 :::: narrow
 
 ... and [all data is modelled]{.keyphrase}
 
-- Mapping
+<!-- - Mapping
 - Reduction
-- Purpose
+- Purpose -->
 
 ::::
 :::
@@ -172,7 +183,7 @@ This requires:
 ::: notes 
 
 - Data literacy as part of data culture
-- data re always a concrete embodyment and a socio-technological stack: serialisation
+- data are always a concrete embodyment and a socio-technological stack: serialisation
 - If we subscribe to social constructivism then all models are historically situated
     - Data and models are situated in historical processes of knowledge production
 - Models have three characteristics [@Stachowiak1973AllgemeineModelltheorie]
@@ -184,6 +195,128 @@ This requires:
 :::
 
 # Data culture through examples
+## Who wrote "Sein Leben und seine Reden?"
+
+::: columns
+:::: column
+
+![Screenshot of a journalistic peace on the "discovery"](../../assets/datafication/hitler_welt-article.png){#fig:hitler-welt}
+
+::::
+:::: column
+
+- Research question
+    - Who wrote Adolf Hitler's short biography published as part of @Koerber1923AdolfHitler?
+- Background
+    - The book is an important source for research on the early phase of National Socialism and the rise of Adolf Hitler
+    - Hypothesis of Hitler's authorship stoked up considerable public controversy in the 2010s
+- Context
+    - MA seminar "Who wrote it? Authorship Attribution as a method of Digital History" 2023
+    - Research paper
+
+::::
+:::
+
+## Methods and tool criticism
+### Designing a research project
+
+1. Are there computational methods to investigate the question of authorship?
+2. What are the epistemological implications and consequences of applying a specific method and its concrete implementation for our research project?
+3. What are the infrastructural requirements for using concrete tools?
+
+::: notes
+
+- infrastructures are always socio-technical
+    - requirements
+        - knowledge
+        - skills
+        - access to hard- and software
+        - licences
+        - data formats etc.
+
+:::
+
+## Methods and tool criticism
+### Stilometric authorship attribution
+
+![PCA of MFF](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca.png){#fig:hitler-pca}
+
+::: notes
+
+- comparative method
+- most frequent features (MFF) as reliable indicator of authorship
+- sharp decline in reliability below a mininmal text length (>2500 tokens)
+- corpus building: requires detailed historical domain knowlege
+- pre-processing to turn the corpus into a data set: 
+    - OCR, 
+    - orthographic normalisation, 
+    - removing pronomina
+    - sampling
+- feature extraction: which kind of MFF? Characters, words, n-grams?
+- feature count:
+    - how many MFF?
+    - iteration?
+- statistical analysis:
+    - which distance measure?
+    - cluster analysis, PCA?
+- presentation and visualisation: 
+    - dendrogramm
+    - bootstrapped consensus network
+    - scatterplot
+
+:::
+
+
+## How to publish and review datafied historiography?
+
+![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/reviewing-robot.png)
+
+- How to publish the historical narrative, the data set, methodological discussions, computer code for analysis and visualisation, and our interpretation of the results?
+- Which levels of transparency, reproducability, and interactivity shall be reached (and for how long)?
+- How stable should publications be?
+- How to review such new historiographies (both pre and post publication)?
+
+
+## ethical and legal dimensions of **data culture**
+
+::: columns
+:::: column
+
+### legal questions
+
+- **are we allowed** to *datafy*, save, and process copyrighted or censored material?
+- which *research data* **can we** publish to ensure transparency and reproducability?
+- which *research data* **do we have to** publish?
+
+::::
+:::: column
+
+### ethical questions
+
+- **should we** make racist material accessible and visible?
+- which *research data* **should we** publish to ensure transparency and reproducability?
+- **should we** and **can we** prevent the decontextualisation of published data?
+- which expense of natural and social resources is **justified**? 
+
+::::
+:::
+
+
+## making sense / understanding the espitemological shift
+
+- epistomoligical and methodological changes
+    - added value from datafication: increasing our options through a changing perspective on the information to be extracted from sources
+    - expanding hermeneutics through datafied approaches (as hermeneutical instruments)
+    - algorithmicity: chances and challenges of explorative scaling as an approach to research questions
+    - grounded with the processes of knowledge producation and narration within academic history
+    - expanding source criticism into  computational source criticism?
+- changing knowledge orders
+    - knowledge as being formalised and embodied in algorithms, models, and corpora
+    - changing forms of traceability and transparency, potential for replication
+- new skills, formats of output, and genuine research
+    - changing courses of study and qualification
+    - changing indicators of reputation
+    - changing hiring processes
 
 # Learning / teaching data culture at the chair of Digital History
 ## The Name of Things
@@ -242,7 +375,7 @@ Methods of image recognition and analysis in Digital History
 
 ### Methods
 
-Authorship Attribution as a method ofDigital History
+Authorship Attribution as a method of Digital History
 
 ::::
 :::: column

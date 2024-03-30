@@ -634,7 +634,6 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
-                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -1152,7 +1151,6 @@
                     .keyphrase {
                         font-size: 130%
                     }
-
                     /*******************************
                     tables
                     *******************************/
@@ -1440,7 +1438,7 @@ NFDI4Memory</p>
                         <span>Epigraphy.info Workshop VIII</span>
           </p>
                                 <p class="date">2024-03-27</p>
-                              <p class="url"><a href="https://tillgrallert.github.io/slides/…">https://tillgrallert.github.io/slides/…</a></p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/">https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/</a></p>
                   </div>
       </div>
         </section>
@@ -1495,12 +1493,17 @@ NFDI4Memory</p>
         Algorithms</em> 2023)</span>, 1</cite></p>
         </div>
         </div>
+        <aside class="notes">
+        <p>“epoch of computationability” orginates with Berry</p>
+        </aside>
         </section>
         <section
-        id="to-make-sense-of-datafication-we-need-cultural-change-within-the-discipline"
+        id="academic-history-in-the-epoch-of-computationability"
         class="slide level2">
-        <h2>To make sense of <em>datafication</em> we need cultural
-        change within the discipline</h2>
+        <h2>Academic history in the epoch of computationability</h2>
+        <p><span class="keyphrase">To make sense of
+        <em>datafication</em> we need cultural change within the
+        discipline</span></p>
         <div class="columns">
         <div class="column">
         <h3 id="staus-quo">Staus quo</h3>
@@ -1532,8 +1535,9 @@ NFDI4Memory</p>
         </div>
         </div>
         </section>
-        <section id="data-culture" class="slide level2">
-        <h2>Data culture</h2>
+        <section id="what-do-we-mean-by-data-culture"
+        class="slide level2">
+        <h2>What do we mean by <strong>data culture</strong>?</h2>
         <div class="columns">
         <div class="column">
         <h3 id="broad-sense">broad sense</h3>
@@ -1584,10 +1588,10 @@ NFDI4Memory</p>
         <section id="data-data-everywhere" class="slide level2">
         <h2>Data, data everywhere</h2>
         <div class="columns">
-        <div class="column">
+        <div class="narrow">
         <p><span class="keyphrase">All digital information is
         data</span> …</p>
-        </div><div class="column">
+        </div><div class="wide">
         <blockquote>
         <p>Data are forms of information, a larger concept that is even
         more difficult to define. Epistemological and ontological
@@ -1611,19 +1615,23 @@ NFDI4Memory</p>
         <p><cite><span class="citation"
         data-cites="Drucker2021DHCoursebook">Drucker (<em>DH
         Coursebook</em> 2021)</span>, 3</cite></p>
+        <blockquote>
+        <p>Data need to be imagined <em>as</em> data to exist and
+        function as such, and the imagination of data entails an
+        interpretive base.</p>
+        </blockquote>
+        <p><cite>Gitelman2013Introduction, 3</cite></p>
         </div><div class="narrow">
         <p>… and <span class="keyphrase">all data is modelled</span></p>
-        <ul>
-        <li>Mapping</li>
-        <li>Reduction</li>
-        <li>Purpose</li>
-        </ul>
+        <!-- - Mapping
+        - Reduction
+        - Purpose -->
         </div>
         </div>
         <aside class="notes">
         <ul>
         <li>Data literacy as part of data culture</li>
-        <li>data re always a concrete embodyment and a
+        <li>data are always a concrete embodyment and a
         socio-technological stack: serialisation</li>
         <li>If we subscribe to social constructivism then all models are
         historically situated
@@ -1643,12 +1651,83 @@ NFDI4Memory</p>
         </ul>
         </aside>
         </section></section>
+        <section>
         <section id="data-culture-through-examples"
         class="title-slide slide level1">
         <h1>Data culture through examples</h1>
 
         </section>
-
+        <section id="who-wrote-sein-leben-und-seine-reden"
+        class="slide level2">
+        <h2>Who wrote “Sein Leben und seine Reden?”</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:hitler-welt">
+        <img
+        data-src="../../assets/datafication/hitler_welt-article.png"
+        alt="Screenshot of a journalistic peace on the “discovery”" />
+        <figcaption>Figure 1: Screenshot of a journalistic peace on the
+        “discovery”</figcaption>
+        </figure>
+        </div><div class="column">
+        <ul>
+        <li>Research question
+        <ul>
+        <li>Who wrote Adolf Hitler’s short biography published as part
+        of <span class="citation"
+        data-cites="Koerber1923AdolfHitler">Koerber (<em>Adolf Hitler -
+        Sein Leben und seine Reden</em> 1923)</span>?</li>
+        </ul></li>
+        <li>Background
+        <ul>
+        <li>The book is an important source for research on the early
+        phase of National Socialism and the rise of Adolf Hitler</li>
+        <li>Hypothesis of Hitler’s authorship stoked up considerable
+        public controversy in the 2010s</li>
+        </ul></li>
+        <li>Context
+        <ul>
+        <li>MA seminar “Who wrote it? Authorship Attribution as a method
+        of Digital History” 2023</li>
+        <li>Research paper</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="methods-and-tool-criticism" class="slide level2">
+        <h2>Methods and tool criticism</h2>
+        <h3 id="questions">Questions</h3>
+        <ol type="1">
+        <li>Which methods allow to computationally investigate the
+        question of authorship?</li>
+        <li>What are the epistemological implications and consequences
+        of applying a specific method and its concrete implementation
+        for our research project?</li>
+        <li>What are the infrastructural requirements for using concrete
+        tools?</li>
+        </ol>
+        <aside class="notes">
+        <ul>
+        <li>infrastructures are always socio-technical
+        <ul>
+        <li>requirements
+        <ul>
+        <li>knowledge</li>
+        <li>skills</li>
+        <li>access to hard- and software</li>
+        <li>licences</li>
+        <li>data formats etc.</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="methods-and-tool-criticism-1" class="slide level2">
+        <h2>Methods and tool criticism</h2>
+        <h3 id="stilometric-authorship-attribution">Stilometric
+        authorship attribution</h3>
+        </section></section>
         <section>
         <section
         id="learning-teaching-data-culture-at-the-chair-of-digital-history"
@@ -1704,7 +1783,7 @@ NFDI4Memory</p>
         <div class="columns">
         <div class="column">
         <h3 id="methods-2">Methods</h3>
-        <p>Authorship Attribution as a method ofDigital History</p>
+        <p>Authorship Attribution as a method of Digital History</p>
         </div><div class="column">
         <h3 id="components-2">Components</h3>
         <ul>
@@ -1734,8 +1813,7 @@ NFDI4Memory</p>
         <div id="ref-Borgman2015BigData" class="csl-entry"
         role="listitem">
         Borgman, Christine L. 2015. <em>Big Data, Little Data, No Data:
-        Scholarship in the Networked World</em>. MIT Press. <a
-        href="https://mitpress.mit.edu/9780262529914/big-data-little-data-no-data/">https://mitpress.mit.edu/9780262529914/big-data-little-data-no-data/</a>.
+        Scholarship in the Networked World</em>. MIT Press.
         </div>
         <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
         role="listitem">
@@ -1744,10 +1822,15 @@ NFDI4Memory</p>
         Scholarship</em>. 1. Aufl. Abingdon: Routledge. <a
         href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
         </div>
+        <div id="ref-Koerber1923AdolfHitler" class="csl-entry"
+        role="listitem">
+        Koerber, Adolf-Viktor von, Hrsg. 1923. <em>Adolf Hitler - Sein
+        Leben und seine Reden</em>. München: Deutscher Volksverlag. <a
+        href="http://archive.org/details/AHSeinLebenSeineReden">http://archive.org/details/AHSeinLebenSeineReden</a>.
+        </div>
         <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
         Siles, Ignacio. 2023. <em>Living with Algorithms: Agency and
-        User Culture in Costa Rica</em>. Boston: MIT Press. <a
-        href="https://bookshop.org/p/books/living-with-algorithms-agency-and-user-culture-in-costa-rica-ignacio-siles/18738790">https://bookshop.org/p/books/living-with-algorithms-agency-and-user-culture-in-costa-rica-ignacio-siles/18738790</a>.
+        User Culture in Costa Rica</em>. Boston: MIT Press.
         </div>
         <div id="ref-Stachowiak1973AllgemeineModelltheorie"
         class="csl-entry" role="listitem">
@@ -1765,7 +1848,7 @@ NFDI4Memory</p>
     <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -1867,7 +1950,7 @@ NFDI4Memory</p>
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-        
+
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -1911,20 +1994,20 @@ NFDI4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-        
+
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-        
+
         // Bounds for smallest/largest possible scale to apply to content
-        
-        
-        
+
+
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -1945,7 +2028,7 @@ NFDI4Memory</p>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">
-          <a href="https://tillgrallert.github.io/slides/…">https://tillgrallert.github.io/slides/…</a>
+          <a href="https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/">https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/</a>
           <span></span>
         </span>
                 <!-- this should probably moved to the title slide only -->
