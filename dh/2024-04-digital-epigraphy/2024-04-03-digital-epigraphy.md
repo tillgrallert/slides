@@ -13,14 +13,19 @@ status: published
 lang: de
 slide-level: 2
 bibliography:
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
     - /Users/Shared/BachCloud/HUBox/Methodenlabor/Data/bibliography_methods-innovation-lab.csl.json
+#    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
+background-image: ../../assets/datafication/datafication_digital-history.png
+revealjs-url: ../../assets/revealjs
 tags:
     - 4Memory
     - slides
 ---
+
+# Digital history at HU Berlin
+
 
 # Digital history <br/>what is it and why does it matter?
 ## The premise of **datafication** and the epoch of computationability
@@ -59,7 +64,8 @@ tags:
 
 ::: notes
 
-"epoch of computationability" orginates with Berry
+- "epoch of computationability" orginates with Berry
+- Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
 
 :::
 
@@ -90,6 +96,12 @@ tags:
     - negotiate new understandings of history as a discipline
 
 ::::
+:::
+
+::: notes
+
+>In a strict sense, digital history characterizes an approach to history that utilizes digital technologies for researching the past, and in the North American context, it also stands for digital representations of the past. [@Laessig2021DigitalHistory, 6]
+
 :::
 
 ## What do we mean by **data culture**?
@@ -194,7 +206,7 @@ This requires:
 
 :::
 
-# Data culture through examples
+# Data culture by example
 ## Who wrote "Sein Leben und seine Reden?"
 
 ::: columns
@@ -215,6 +227,24 @@ This requires:
     - Research paper
 
 ::::
+:::
+
+::: notes
+
+- historical background
+    - 1923: Hitlerputsch of 9. November in Munich, Bürgerbräukeller. Consequences: prison sentence, writing "mein Kampf"
+    - book was published immediately after the coup with 70.000 copies. read as handbook to the court proceedings
+- public controversy in the 2010s
+    -  Thomas Weber (Aberdeen)
+        - "found" "new" documentes in South Africa, in which Koebers admits to Hitler's authorship
+        - The hypothesis garners much attention and is reported as a fact
+    - Othmar Plöckinger (Hg. der kritischen Edition von "Mein Kampf"): doubtful
+    - Winfried Meyer (Berlin)
+        - provides a source critique of Weber's hermeneutic (and source critique)
+            - extremely eccelctic choice of sources
+            - a qualitative stilistic analysis indicates a high degree of similarity with Koebers's writing
+        - argues that Koebers ennunciations post 1945 must be read as an attempt at distancing himself from his Nazi past
+
 :::
 
 ## Methods and tool criticism
@@ -239,14 +269,67 @@ This requires:
 ## Methods and tool criticism
 ### Stilometric authorship attribution
 
+
+::: columns
+:::: column
+
+[background]{.keyphrase} ...
+
+- Authorship signal is prevalent in most frequent features (MFF)
+    - comparative method
+    - sharp decline in reliability below a mininmal text length (>2500 tokens)
+
+::::
+:::: column
+
+... [workflow]{.keyphrase} ...
+
+1. compute frequencies of features for every text
+2. compare all frequencies
+3. validate through voting (*consensus*) of multiple iterations
+
+::::
+:::
+
+::: columns
+:::: column
+
+[decisions, decisions, decisions all along the way]{.keyphrase}
+
+- corpus building
+- pre-processing to turn the corpus into a data set
+- feature extraction
+- feature count
+- statistical analysis
+- presentation and visualisation
+
+::::
+:::: column
+
 ![PCA of MFF](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca.png){#fig:hitler-pca}
+
+::::
+:::
+
+
+
 
 ::: notes
 
 - comparative method
-- most frequent features (MFF) as reliable indicator of authorship
-- sharp decline in reliability below a mininmal text length (>2500 tokens)
+    - most frequent features (MFF) as reliable indicator of authorship
+    - sharp decline in reliability below a mininmal text length (>2500 tokens)
+        - text in question is 3461 tokens long
 - corpus building: requires detailed historical domain knowlege
+    - Hitler: 
+        - 42 essays and 3 Denkschriften
+        - c. 55000 Tokens
+    - Koerber: 
+        - 5 texts from 1917--24
+        - c.96000 Tokens
+    - Rosenberg
+        - 4 texts, 1920--24
+        - c. 127000 Tokens
 - pre-processing to turn the corpus into a data set: 
     - OCR, 
     - orthographic normalisation, 
@@ -269,12 +352,24 @@ This requires:
 
 ## How to publish and review datafied historiography?
 
-![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/reviewing-robot.png)
+
+
+::: columns
+:::: wide
 
 - How to publish the historical narrative, the data set, methodological discussions, computer code for analysis and visualisation, and our interpretation of the results?
 - Which levels of transparency, reproducability, and interactivity shall be reached (and for how long)?
 - How stable should publications be?
 - How to review such new historiographies (both pre and post publication)?
+
+::::
+:::: narrow
+
+![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/reviewing-robot.png)
+
+::::
+:::
+
 
 
 ## ethical and legal dimensions of **data culture**
@@ -282,7 +377,7 @@ This requires:
 ::: columns
 :::: column
 
-### legal questions
+### legal dimension
 
 - **are we allowed** to *datafy*, save, and process copyrighted or censored material?
 - which *research data* **can we** publish to ensure transparency and reproducability?
@@ -291,7 +386,7 @@ This requires:
 ::::
 :::: column
 
-### ethical questions
+### ethical dimension
 
 - **should we** make racist material accessible and visible?
 - which *research data* **should we** publish to ensure transparency and reproducability?
@@ -301,8 +396,41 @@ This requires:
 ::::
 :::
 
+::: notes
 
-## making sense / understanding the espitemological shift
+- ethical dimentions:
+    - stilometry works on a bag of words. Sequence of tokens is irrelevant.
+    - we can, therefore, publish a derivate format for replication studies without being able to re-constitute the texts from the derivate format
+
+:::
+
+
+## making sense of the new episteme
+
+::: columns
+:::: column
+
+- shifting epistemologies
+    - added value of datafication: new answers, new questions
+    - algorithmicity: allows for frequent testing of hypotheses
+- shifting knowledge orders
+    - knowledge as being formalised and embodied in algorithms, models, corpora
+    - changing forms of traceability and transparency, potential for replication
+- shifting discipline?
+    - new modes of working: interdisciplinary collaboration
+    - new skills: require novel training and qualifications
+    - new forms of output: require novel indicators of reputation
+    - new hiring processes?
+
+::::
+:::: column
+
+![PCA of MFF on our data set. Not how the text in question (`D`) is savely within Koerber's corner (`K`).](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca-annotated.png){#fig:hitler-pca-2}
+
+::::
+:::
+
+::: notes
 
 - epistomoligical and methodological changes
     - added value from datafication: increasing our options through a changing perspective on the information to be extracted from sources
@@ -317,6 +445,8 @@ This requires:
     - changing courses of study and qualification
     - changing indicators of reputation
     - changing hiring processes
+
+:::
 
 # Learning / teaching data culture at the chair of Digital History
 ## The Name of Things

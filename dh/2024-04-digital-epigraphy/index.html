@@ -9,8 +9,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -51,7 +51,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -219,8 +219,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -228,9 +228,11 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
                     div.slide {
                         top: 10% ;
@@ -634,6 +636,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -1443,6 +1446,12 @@ NFDI4Memory</p>
       </div>
         </section>
 
+        <section id="digital-history-at-hu-berlin"
+        class="title-slide slide level1">
+        <h1>Digital history at HU Berlin</h1>
+
+        </section>
+
         <section>
         <section id="digital-history-what-is-it-and-why-does-it-matter"
         class="title-slide slide level1">
@@ -1494,7 +1503,17 @@ NFDI4Memory</p>
         </div>
         </div>
         <aside class="notes">
-        <p>“epoch of computationability” orginates with Berry</p>
+        <ul>
+        <li>“epoch of computationability” orginates with Berry</li>
+        <li>Digital history, then, accepts that the human cultural
+        record is being <em>datafied</em> and we need computational
+        methods in order to make historical arguments <span
+        class="citation"
+        data-cites="DigitalHistoryArgument2017 Laessig2021DigitalHistory">(cf.
+        Arguing with Digital History working group <span>„Digital
+        History and Argument“</span> 2017, 2; Lässig <span>„Digital
+        History“</span> 2021, 6)</span></li>
+        </ul>
         </aside>
         </section>
         <section
@@ -1534,6 +1553,16 @@ NFDI4Memory</p>
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <blockquote>
+        <p>In a strict sense, digital history characterizes an approach
+        to history that utilizes digital technologies for researching
+        the past, and in the North American context, it also stands for
+        digital representations of the past. <span class="citation"
+        data-cites="Laessig2021DigitalHistory">(Lässig <span>„Digital
+        History“</span> 2021, 6)</span></p>
+        </blockquote>
+        </aside>
         </section>
         <section id="what-do-we-mean-by-data-culture"
         class="slide level2">
@@ -1620,7 +1649,9 @@ NFDI4Memory</p>
         function as such, and the imagination of data entails an
         interpretive base.</p>
         </blockquote>
-        <p><cite>Gitelman2013Introduction, 3</cite></p>
+        <p><cite><span class="citation"
+        data-cites="Gitelman2013Introduction">Gitelman
+        (<span>„Introduction“</span> 2013)</span>, 3</cite></p>
         </div><div class="narrow">
         <p>… and <span class="keyphrase">all data is modelled</span></p>
         <!-- - Mapping
@@ -1652,9 +1683,9 @@ NFDI4Memory</p>
         </aside>
         </section></section>
         <section>
-        <section id="data-culture-through-examples"
+        <section id="data-culture-by-example"
         class="title-slide slide level1">
-        <h1>Data culture through examples</h1>
+        <h1>Data culture by example</h1>
 
         </section>
         <section id="who-wrote-sein-leben-und-seine-reden"
@@ -1694,13 +1725,50 @@ NFDI4Memory</p>
         </ul>
         </div>
         </div>
+        <aside class="notes">
+        <ul>
+        <li>historical background
+        <ul>
+        <li>1923: Hitlerputsch of 9. November in Munich,
+        Bürgerbräukeller. Consequences: prison sentence, writing “mein
+        Kampf”</li>
+        <li>book was published immediately after the coup with 70.000
+        copies. read as handbook to the court proceedings</li>
+        </ul></li>
+        <li>public controversy in the 2010s
+        <ul>
+        <li>Thomas Weber (Aberdeen)
+        <ul>
+        <li>“found” “new” documentes in South Africa, in which Koebers
+        admits to Hitler’s authorship</li>
+        <li>The hypothesis garners much attention and is reported as a
+        fact</li>
+        </ul></li>
+        <li>Othmar Plöckinger (Hg. der kritischen Edition von “Mein
+        Kampf”): doubtful</li>
+        <li>Winfried Meyer (Berlin)
+        <ul>
+        <li>provides a source critique of Weber’s hermeneutic (and
+        source critique)
+        <ul>
+        <li>extremely eccelctic choice of sources</li>
+        <li>a qualitative stilistic analysis indicates a high degree of
+        similarity with Koebers’s writing</li>
+        </ul></li>
+        <li>argues that Koebers ennunciations post 1945 must be read as
+        an attempt at distancing himself from his Nazi past</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
         </section>
         <section id="methods-and-tool-criticism" class="slide level2">
         <h2>Methods and tool criticism</h2>
-        <h3 id="questions">Questions</h3>
+        <h3 id="designing-a-research-project">Designing a research
+        project</h3>
         <ol type="1">
-        <li>Which methods allow to computationally investigate the
-        question of authorship?</li>
+        <li>Are there computational methods to investigate the question
+        of authorship?</li>
         <li>What are the epistemological implications and consequences
         of applying a specific method and its concrete implementation
         for our research project?</li>
@@ -1727,6 +1795,245 @@ NFDI4Memory</p>
         <h2>Methods and tool criticism</h2>
         <h3 id="stilometric-authorship-attribution">Stilometric
         authorship attribution</h3>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">background</span> …</p>
+        <ul>
+        <li>Authorship signal is prevalent in most frequent features
+        (MFF)
+        <ul>
+        <li>comparative method</li>
+        <li>sharp decline in reliability below a mininmal text length
+        (&gt;2500 tokens)</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <p>… <span class="keyphrase">workflow</span> …</p>
+        <ol type="1">
+        <li>compute frequencies of features for every text</li>
+        <li>compare all frequencies</li>
+        <li>validate through voting (<em>consensus</em>) of multiple
+        iterations</li>
+        </ol>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">decisions, decisions, decisions all
+        along the way</span></p>
+        <ul>
+        <li>corpus building</li>
+        <li>pre-processing to turn the corpus into a data set</li>
+        <li>feature extraction</li>
+        <li>feature count</li>
+        <li>statistical analysis</li>
+        <li>presentation and visualisation</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:hitler-pca">
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca.png"
+        alt="PCA of MFF" />
+        <figcaption>Figure 2: PCA of MFF</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>comparative method
+        <ul>
+        <li>most frequent features (MFF) as reliable indicator of
+        authorship</li>
+        <li>sharp decline in reliability below a mininmal text length
+        (&gt;2500 tokens)
+        <ul>
+        <li>text in question is 3461 tokens long</li>
+        </ul></li>
+        </ul></li>
+        <li>corpus building: requires detailed historical domain
+        knowlege
+        <ul>
+        <li>Hitler:
+        <ul>
+        <li>42 essays and 3 Denkschriften</li>
+        <li><ol start="3" type="a">
+        <li>55000 Tokens</li>
+        </ol></li>
+        </ul></li>
+        <li>Koerber:
+        <ul>
+        <li>5 texts from 1917–24</li>
+        <li>c.96000 Tokens</li>
+        </ul></li>
+        <li>Rosenberg
+        <ul>
+        <li>4 texts, 1920–24</li>
+        <li><ol start="3" type="a">
+        <li>127000 Tokens</li>
+        </ol></li>
+        </ul></li>
+        </ul></li>
+        <li>pre-processing to turn the corpus into a data set:
+        <ul>
+        <li>OCR,</li>
+        <li>orthographic normalisation,</li>
+        <li>removing pronomina</li>
+        <li>sampling</li>
+        </ul></li>
+        <li>feature extraction: which kind of MFF? Characters, words,
+        n-grams?</li>
+        <li>feature count:
+        <ul>
+        <li>how many MFF?</li>
+        <li>iteration?</li>
+        </ul></li>
+        <li>statistical analysis:
+        <ul>
+        <li>which distance measure?</li>
+        <li>cluster analysis, PCA?</li>
+        </ul></li>
+        <li>presentation and visualisation:
+        <ul>
+        <li>dendrogramm</li>
+        <li>bootstrapped consensus network</li>
+        <li>scatterplot</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="how-to-publish-and-review-datafied-historiography"
+        class="slide level2">
+        <h2>How to publish and review datafied historiography?</h2>
+        <div class="columns">
+        <div class="wide">
+        <ul>
+        <li>How to publish the historical narrative, the data set,
+        methodological discussions, computer code for analysis and
+        visualisation, and our interpretation of the results?</li>
+        <li>Which levels of transparency, reproducability, and
+        interactivity shall be reached (and for how long)?</li>
+        <li>How stable should publications be?</li>
+        <li>How to review such new historiographies (both pre and post
+        publication)?</li>
+        </ul>
+        </div><div class="narrow">
+        <p><img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/reviewing-robot.png" /></p>
+        </div>
+        </div>
+        </section>
+        <section id="ethical-and-legal-dimensions-of-data-culture"
+        class="slide level2">
+        <h2>ethical and legal dimensions of <strong>data
+        culture</strong></h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="legal-dimension">legal dimension</h3>
+        <ul>
+        <li><strong>are we allowed</strong> to <em>datafy</em>, save,
+        and process copyrighted or censored material?</li>
+        <li>which <em>research data</em> <strong>can we</strong> publish
+        to ensure transparency and reproducability?</li>
+        <li>which <em>research data</em> <strong>do we have to</strong>
+        publish?</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="ethical-dimension">ethical dimension</h3>
+        <ul>
+        <li><strong>should we</strong> make racist material accessible
+        and visible?</li>
+        <li>which <em>research data</em> <strong>should we</strong>
+        publish to ensure transparency and reproducability?</li>
+        <li><strong>should we</strong> and <strong>can we</strong>
+        prevent the decontextualisation of published data?</li>
+        <li>which expense of natural and social resources is
+        <strong>justified</strong>?</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>ethical dimentions:
+        <ul>
+        <li>stilometry works on a bag of words. Sequence of tokens is
+        irrelevant.</li>
+        <li>we can, therefore, publish a derivate format for replication
+        studies without being able to re-constitute the texts from the
+        derivate format</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="making-sense-of-the-new-episteme"
+        class="slide level2">
+        <h2>making sense of the new episteme</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>shifting epistemologies
+        <ul>
+        <li>added value of datafication: new answers, new questions</li>
+        <li>algorithmicity: allows for frequent testing of
+        hypotheses</li>
+        </ul></li>
+        <li>shifting knowledge orders
+        <ul>
+        <li>knowledge as being formalised and embodied in algorithms,
+        models, corpora</li>
+        <li>changing forms of traceability and transparency, potential
+        for replication</li>
+        </ul></li>
+        <li>shifting discipline?
+        <ul>
+        <li>new modes of working: interdisciplinary collaboration</li>
+        <li>new skills: require novel training and qualifications</li>
+        <li>new forms of output: require novel indicators of
+        reputation</li>
+        <li>new hiring processes?</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:hitler-pca-2">
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca-annotated.png"
+        alt="PCA of MFF on our data set. Not how the text in question (D) is savely within Koerber’s corner (K)." />
+        <figcaption>Figure 3: PCA of MFF on our data set. Not how the
+        text in question (<code>D</code>) is savely within Koerber’s
+        corner (<code>K</code>).</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>epistomoligical and methodological changes
+        <ul>
+        <li>added value from datafication: increasing our options
+        through a changing perspective on the information to be
+        extracted from sources</li>
+        <li>expanding hermeneutics through datafied approaches (as
+        hermeneutical instruments)</li>
+        <li>algorithmicity: chances and challenges of explorative
+        scaling as an approach to research questions</li>
+        <li>grounded with the processes of knowledge producation and
+        narration within academic history</li>
+        <li>expanding source criticism into computational source
+        criticism?</li>
+        </ul></li>
+        <li>changing knowledge orders
+        <ul>
+        <li>knowledge as being formalised and embodied in algorithms,
+        models, and corpora</li>
+        <li>changing forms of traceability and transparency, potential
+        for replication</li>
+        </ul></li>
+        <li>new skills, formats of output, and genuine research
+        <ul>
+        <li>changing courses of study and qualification</li>
+        <li>changing indicators of reputation</li>
+        <li>changing hiring processes</li>
+        </ul></li>
+        </ul>
+        </aside>
         </section></section>
         <section>
         <section
@@ -1805,6 +2112,12 @@ NFDI4Memory</p>
         <h2 class="unnumbered">Bibliography</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
         data-entry-spacing="0" role="list">
+        <div id="ref-DigitalHistoryArgument2017" class="csl-entry"
+        role="listitem">
+        Arguing with Digital History working group. 2017. <span>„Digital
+        History and Argument“</span>. White paper. <a
+        href="https://rrchnm.org/argument-white-paper/">https://rrchnm.org/argument-white-paper/</a>.
+        </div>
         <div id="ref-Berry+2017" class="csl-entry" role="listitem">
         Berry, David M, und Anders Fagerjord. 2017. <em>Digital
         Humanities: Knowledge and Critique in a Digital Age</em>.
@@ -1822,11 +2135,24 @@ NFDI4Memory</p>
         Scholarship</em>. 1. Aufl. Abingdon: Routledge. <a
         href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
         </div>
+        <div id="ref-Gitelman2013Introduction" class="csl-entry"
+        role="listitem">
+        Gitelman, Lisa, Hrsg. 2013. <span>„Introduction“</span>. In
+        <em><span>„Raw Data“</span> Is an Oxymoron</em>, 1–14.
+        Cambridge: MIT Press.
+        </div>
         <div id="ref-Koerber1923AdolfHitler" class="csl-entry"
         role="listitem">
         Koerber, Adolf-Viktor von, Hrsg. 1923. <em>Adolf Hitler - Sein
         Leben und seine Reden</em>. München: Deutscher Volksverlag. <a
         href="http://archive.org/details/AHSeinLebenSeineReden">http://archive.org/details/AHSeinLebenSeineReden</a>.
+        </div>
+        <div id="ref-Laessig2021DigitalHistory" class="csl-entry"
+        role="listitem">
+        Lässig, Simone. 2021. <span>„Digital History: Challenges and
+        Opportunities for the Profession“</span>. <em>Geschichte und
+        Gesellschaft</em> 47 (1): 5–34. <a
+        href="https://doi.org/gkhrjp">https://doi.org/gkhrjp</a>.
         </div>
         <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
         Siles, Ignacio. 2023. <em>Living with Algorithms: Agency and
@@ -1842,12 +2168,12 @@ NFDI4Memory</p>
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="../../assets/revealjs/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
+    <script src="../../assets/revealjs/plugin/search/search.js"></script>
+    <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
 
     <script>
 
@@ -1994,6 +2320,9 @@ NFDI4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
+
+       // Parallax background image
+       parallaxBackgroundImage: '../../assets/datafication/datafication_digital-history.png', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
