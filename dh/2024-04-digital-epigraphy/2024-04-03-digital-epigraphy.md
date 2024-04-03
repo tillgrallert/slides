@@ -55,7 +55,7 @@ tags:
 
 
 # Digital history <br/>what is it and why does it matter?
-## What is "Digital History"?
+## What is *digital History*?
 
 >In a strict sense, digital history characterizes an approach to history that utilizes digital technologies for researching the past, and in the North American context, it also stands for digital representations of the past. 
 
@@ -70,9 +70,20 @@ Digital history, then, accepts that the human cultural record is being *datafied
 
 :::
 
-## The premise of **datafication** and the epoch of computationability
+## Why does *digital history* matter?
+
+::: columns
+:::: wide
 
 **Datafication** emphasises the epistemic shift from a world were data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies.
+
+::::
+:::: narrow
+
+[we live in *datafied* societies]{.keyphrase}
+
+::::
+:::
 
 ::: columns
 :::: narrow
@@ -332,7 +343,7 @@ This requires:
 ::: columns
 :::: column
 
-[decisions, decisions, decisions all along the way]{.keyphrase}
+... [decisions all along the way]{.keyphrase}
 
 - corpus building
 - pre-processing to turn the corpus into a data set
@@ -388,7 +399,7 @@ This requires:
 :::
 
 
-## How to publish and review datafied historiography?
+## How to publish datafied historiography?
 
 
 
