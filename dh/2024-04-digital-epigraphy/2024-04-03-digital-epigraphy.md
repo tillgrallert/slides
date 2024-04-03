@@ -25,6 +25,9 @@ tags:
 ---
 
 # Digital history at HU Berlin
+## Digital history at HU Berlin
+
+![](../../assets/datafication/digital-history-at-hu.jpg)
 
 
 # Digital history <br/>what is it and why does it matter?
@@ -306,7 +309,7 @@ This requires:
 ::::
 :::: column
 
-![PCA of MFF](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca.png){#fig:hitler-pca}
+![PCA of MFF](../../assets/datafication/hitler_pca.png){#fig:hitler-pca}
 
 ::::
 :::
@@ -365,7 +368,7 @@ This requires:
 ::::
 :::: narrow
 
-![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/reviewing-robot.png)
+![](../../assets/datafication/reviewing-robot.png)
 
 ::::
 :::
@@ -425,7 +428,7 @@ This requires:
 ::::
 :::: column
 
-![PCA of MFF on our data set. Not how the text in question (`D`) is savely within Koerber's corner (`K`).](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/datafication/hitler_pca-annotated.png){#fig:hitler-pca-2}
+![PCA of MFF on our data set. Not how the text in question (`D`) is savely within Koerber's corner (`K`).](../../assets/datafication/hitler_pca-annotated.png){#fig:hitler-pca-2}
 
 ::::
 :::
