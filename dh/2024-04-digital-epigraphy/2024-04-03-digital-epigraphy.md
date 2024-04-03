@@ -29,8 +29,47 @@ tags:
 
 ![](../../assets/datafication/digital-history-at-hu.jpg)
 
+::: notes
+
+- Chair of Digital History: 
+    - Torsten Hiltmann, since 2020
+    - Since 2018: MA specialisation programme *Digital History* as part of the MA in History
+        1. Algorithmic thinking, 
+        2. methodological competence through 
+        3. theoretical foundations, and
+        4. critical reflection in a historical context
+- HSozKult
+    - since 1996 at the IfG
+    - information and communications platform
+    - announcements, reviews
+- NFDI4Memory
+    - since 2023
+    - one of 26 consortia, one of four consortia in the humanities and social sciences
+    - at HU: task area "data culture", together with VHD
+- IZ
+    - since 2024
+    - collaboration of all DH initiatives at HU in order to increase visibility and collaboration
+
+
+:::
+
 
 # Digital history <br/>what is it and why does it matter?
+## What is "Digital History"?
+
+>In a strict sense, digital history characterizes an approach to history that utilizes digital technologies for researching the past, and in the North American context, it also stands for digital representations of the past. 
+
+>digital history is conceived as a new kind of studying, researching, and writing history that takes into account what Rosenzweig called "a fundamental paradigm shift from a culture of scarcity to a culture of abundance."
+
+<cite>@Laessig2021DigitalHistory, 6, 7</cite>
+
+
+::: notes
+
+Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
+
+:::
+
 ## The premise of **datafication** and the epoch of computationability
 
 **Datafication** emphasises the epistemic shift from a world were data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies.
@@ -69,6 +108,8 @@ tags:
 
 - "epoch of computationability" orginates with Berry
 - Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
+- Digital history also addresses the age of abundance, as postulated by Roy Rosenzweig, and epitomised by the recent advances in generative AI and LLMs, which will create an infinite amount of absolutely plausible and convincing yet utterly false sources 
+- 
 
 :::
 
@@ -99,12 +140,6 @@ tags:
     - negotiate new understandings of history as a discipline
 
 ::::
-:::
-
-::: notes
-
->In a strict sense, digital history characterizes an approach to history that utilizes digital technologies for researching the past, and in the North American context, it also stands for digital representations of the past. [@Laessig2021DigitalHistory, 6]
-
 :::
 
 ## What do we mean by **data culture**?
@@ -407,7 +442,7 @@ This requires:
 
 :::
 
-
+# Conclusion
 ## making sense of the new episteme
 
 ::: columns
@@ -451,77 +486,4 @@ This requires:
 
 :::
 
-# Learning / teaching data culture at the chair of Digital History
-## The Name of Things
-
-::: columns
-:::: column
-
-### Methods
-
-Named Entity Recognition and the Automatic Recognition of Place and Personal Names in Medieval and Modern Texts
-
-::::
-:::: column
-
-### Components
-
-- Definition of NER as Task
-- Overview of approaches: 
-    - Rule Based
-    - Traditional ML
-    - Deep Learning
-    - LLM
-- Challenges of Historical Texts for NER
-- Application and Evaluation of various Python Libraries
-
-::::
-:::
-
-## Computer Vision
-
-::: columns
-:::: column
-
-### Methods
-
-Methods of image recognition and analysis in Digital History
-
-::::
-:::: column
-
-### Components
-
-- Computational image analysis
-- Theory of deep learning ML
-- Application of ready-to-use solutions (YOLO v8, COCO)
-- Image annotation and training for detection tasks
-
-::::
-:::
-
-
-## Who wrote it?
-
-::: columns
-:::: column
-
-### Methods
-
-Authorship Attribution as a method of Digital History
-
-::::
-:::: column
-
-### Components
-
-- computational text analysis
-- Theoretical foundations, comparison of analog and digital methods
-- Creation of a silver standard
-- Comparison of implementations for authorship analysis
-
-::::
-:::
-
-# Conclusion
 ## Bibliography {#refs}
