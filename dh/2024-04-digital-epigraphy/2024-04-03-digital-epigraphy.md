@@ -244,7 +244,7 @@ This requires:
 
 :::
 
-# Data culture by example
+# Data culture by way of an example
 ## Who wrote "Sein Leben und seine Reden?"
 
 ::: columns
