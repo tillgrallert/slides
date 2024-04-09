@@ -14,7 +14,9 @@ lang: de
 slide-level: 2
 bibliography:
     - /Users/Shared/BachCloud/HUBox/Methodenlabor/Data/bibliography_methods-innovation-lab.csl.json
-#    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+link-citations: false
+nocite: |
+    @Hiltmann2022Methodenwandel; @RisamGil2022Introduction
 licence: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 background-image: ../../assets/datafication/datafication_digital-history.png
