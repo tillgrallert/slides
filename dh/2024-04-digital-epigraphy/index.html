@@ -594,6 +594,7 @@
                     footer img {
                         display: block;
                     }
+
                     /* inline images */
                     /*p img,
                     li img {
@@ -601,12 +602,19 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
+                        display: inline-block;
+                        position: relative;
                         margin-top: 1em;
                         margin-bottom: 1em;
+
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    .c_logo.c_left {
+                        margin-left: 2em;
+                    }
+                    .c_logo.c_right {
+                        margin-right: 2em;
                     }
                     /*img {
                       max-height: 700px;
@@ -1421,8 +1429,8 @@
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-        <!-- <a class="c_left" href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a> -->
-        <a class="c_left" href="https://4memory.de"><img class="c_left c_logo" src="../../assets/datafication/logo_digital-history.png"></a>
+        <a class="c_left" href="https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history"><img class="c_left c_logo" src="../../assets/datafication/logo_digital-history.png"></a>
+        <a class="c_left" href="https://4memory.de"><img class="c_left c_logo" src="../../assets/dh/Logo_for_memory_RGB.png"></a>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
