@@ -77,7 +77,7 @@ Digital history, then, accepts that the human cultural record is being *datafied
 ::: columns
 :::: wide
 
-**Datafication** emphasises the epistemic shift from a world were data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies.
+**Datafication** emphasises the epistemic shift from a world where data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies.
 
 ::::
 :::: narrow
