@@ -17,7 +17,7 @@ bibliography:
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
 nocite: |
-    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry
+    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
 ---
 
 ## outline
@@ -286,30 +286,79 @@ Table: Our corpus from "[Open Arabic Periodical Editions](https://openarabicpe.g
 
 :::
 
-## Data sets
-
-Plain text files of >2500 words
+## Why this corpus?
+### Collection and digitisation biases
 
 ::: columns
-:::: column
+:::: wide
 
-- **data set 1**: 303 individual articles
-    + 113 texts by 76 unique authors
-    + 190 anonymous texts
-
+![Geographic distribution of Arabic periodical titles published across South West Asia and North Africa (SWANA) between 1789--1929. The size of the pie charts corresponds to the total number of titles published at a location. Slices show the percentage of known holdings and digitized collections](../../assets/jaraid/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:map-periodicals-status}
 
 ::::
-:::: column
+:::: narrow
 
-- **data set 2**: 88 sections of anonymous articles from 2 journals: *al-Muqtabas* and *Lughat al-ʿArab*
-- data set 3: 6 books by Muḥammad Kurd ʿAlī
-- data set 4: 246 full issues from 5 journals
+|      periodicals       | --1918 |       | --1929 |               |
+|  :-------------------  | ----:  | ----: | ----:  |     ----:     |
+|       published        |  2054  |       |  3550  |               |
+|     known holdings     |  540   |       |  775   |               |
+|       % of total       |        | 26.29 |        | [21.83]{.red} |
+|------------------------|--------|-------|--------|---------------|
+| digitized              |    156 |       |    233 |               |
+| % of total             |        |  7.59 |        | [6.56]{.red}  |
+|------------------------|--------|-------|--------|---------------|
+| multiple digitisations |     51 |       |     66 |               |
+| % of total             |        |  2.48 |        | 1.86          |
+| % of digitised         |        | 32.69 |        | [28.33]{.red} |
+
+Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
 ::::
 :::
 
 ::: notes
 
+- collection bias is more of a knowledge bias
+- While the digitization quote of roughly 50% of titles in collections is surprisingly high, it must be kept in mind that we cannot resolve information on the extent of digitization. Even if only a single issue of hundreds published was digitized, the periodical title will be included in this count.
+- 66 periodicals or 28,33% have been digitized by multiple institutions and 21 of this subset by three and more.
+
+:::
+
+## Data sets
+
+All data sets consist of plain text files with minimal normalisation generated from the TEI/XML in our corpus.
+
+::: columns-3
+:::: column
+
+### Data set 1
+
+- 215 articles of 2.500+ tokens
+- 74 authors with only one or two texts
+- 103 unattributed texts
+
+::::
+:::: column
+
+### Data set 2
+
+- 88 texts of 2.500+ tokens
+- compilations of smaller anonymous texts from rubrics
+- most likely written by editors
+
+::::
+:::: column
+
+### Data set 3
+
+- 612 full issues
+- for basic sanity checks
+
+::::
+:::
+
+::: notes
+
+- data set 1 includes texts from some of the periodicals's known editors, it is unclear to which extent included authors could or should be considered potential candidates for authorship of the unattributed texts.
 - data set 1: test the method
     - large number of authors with only a small number of text
     - large number of unattributed texts
@@ -317,48 +366,136 @@ Plain text files of >2500 words
     + unclear if the actual authors are part of the data set
     + -> **very different from [@RomanovGrallert2022Stylometry]'s test corpus**
 - data set 2: test the hypothesis
-- our test data set
-    + 300 books from 28 authors 
-    + from the 19th–early 20th centuries 
+
 
 :::
 
-# Results <br/>data set 1
-## Introducing the spaghetti monster!
+# Results
+## Sanity check: data set 3
+
+Questions:
+
+1. Are individual periodicals stylistically distinguishable?
+2. Do they a single auctorial voice?
 
 ::: columns
 :::: column
 
-![Bootstrap consensus network of data set 1, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
+![Network plot of stylometric similarity in data set 3. Node colours indicate periodicals: purple = al-Ḥaqāʾiq,  turquoise = al-Muqtabas, green = Lughat al-ʿArab, red = al-Zuhūr](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-issues-size_degree-colour_publication.png){#fig:dataset3-publication}
 
 ::::
 :::: column
 
-![[@fig:network-author], coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_louvain-2022-09-09.png){#fig:network-author-com}
+![Network plot of stylometric similarity in data set 3. Node colours indicate communities established by the walktrap algorithm](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-issues-size_degree-colour_walktrap.png){#fig:dataset3-walktrap}
 
 ::::
 :::
 
 ::: notes
-- stylometric authorship attribution works with data set 1
-- results get pretty confusing pretty quickly with this type of data set
-- network
-    - centrality measure
-        + degree: 
-            * number of connections
-            * local measure
-- my data set
-    - large number of authors with only a small number of text
-        + 113 by 76 authors
-    - large number of unattributed texts: 
-        + 190
-    - relatively short texts (close to the minimal length)
-    + unclear if the actual authors are part of the data set
-    
+
+- two issues of al-Zuhūr are stylistically different from the rest of the journal 
+    - These are issues no. 88 and 91 in the plot, which refer to vol.3, no.8 and 9.,
+    - confirmed by community-detection algorithms 
+    - might indicate a shift in editorship. 
+- Similar shifts seemingly happened at other periodicals as well.
+    - at least at al-Muqtabas as indicated by walktrap and Louvain.
+        - There is one issue of al-Muqtbas, vol. 4, no.5-6, which is stylistically part of al-Zuhūr.
+        - There are two issues of al-Muqtabas which are pretty close to al-Ḥaqāʾiq
+    - using walktrap we get two communities at al-Ḥaqāʾiq as well.
+
 :::
 
-# Zooming in: <br/>Individual authors
-## Kāẓim al-Dujaylī
+## Test the hypothesis: data set 1
+
+Questions:
+
+1. Do anonymous articles cluster by periodical? 
+2. Can the owners-cum-editors present in this data set be considered strong candidates for their authorship?
+
+::: columns
+:::: column
+
+![Network plot of stylometric similarity for all articles from data set 1. Node colours indicate periodicals: purple = al-Ḥaqāʾiq,  turquoise = al-Muqtabas, green = Lughat al-ʿArab, red = al-Zuhūr](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-articles-w_2500-size_degree-colour_publication.png){#fig:articles-publications}
+
+::::
+:::: column
+
+![Network plot of stylometric similarity for all articles from data set 1. Node colours indicate communities established by the Louvain algorithm](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-articles-w_2500-size_degree-colour_louvain.png){#fig:articles-louvain}
+
+::::
+:::
+
+::: notes
+
+- both hypotheses can be rejected for al-Muqtabas and Lughat al-ʿArab, whose editors, Muḥammad Kurd ʿAlī, Anastās Mārī al-Karmalī, and  Kāẓim al-Duyalī, are present in the data set (labelled with their respective identifiers as oape:878, oape:227, and oape:396). 
+- The anonymous articles from al-Muqtabas form two distinct clusters with substantial internal differences and thus force us to reject any notion of single authorship ([@fig:articles-louvain]). 
+- neither Muḥammad Kurd ʿAlī nor Anastās Mārī al-Karmalī and Kāẓim al-Duyalī seemingly authored a significant number of articles in their respective journals.
+- The small cluster of texts from al-Zuhūr in the top left can all be attributed to Shakespeare through close reading
+
+:::
+
+## Test the hypothesis on stronger candidates: data set 2
+
+::: columns
+:::: wide
+
+![Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and articles by its publisher Muḥammad Kurd ʿAlī from data set 1. Node colours indicate communities established by the Louvain algorithm.](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png){#fig:muqtabas-editors-louvain}
+
+::::
+:::: narrow
+
+Muḥammad Kurd ʿAlī might have authored some texts in his journal *al-Muqtabas* but he was certainly not alone
+
+::::
+:::
+::: notes
+
+we divided data set 2 by source publication and added texts from data set 1 authored by the owners-cum-editors.
+
+:::
+
+## Test the hypothesis on stronger candidates: data set 2
+
+Adding unlikely contenders to amplify the signal
+
+::: columns
+:::: column
+
+![Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster on the left.](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:muqtabas-authors-louvain}
+
+::::
+:::: column
+
+![Network plot of stylometric similarity for anonymous articles in Lughat al-ʿArab from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster in the top right.](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-authors_lughat-size_degree-colour_louvain.png){#fig:lughat-authors-louvain}
+
+::::
+:::
+
+::: notes
+
+- added all attributed articles from data set 1 as a control group. We argue that if they were less likely to be editors (and thus more stylistically different), they would push the assumed owner-com-editors closer to the anonymous articles.
+- not the case for al-Muqtabas nor Lughat al-ʿArab. This indicates that Muḥammad Kurd ʿAlī and Anastās Mārī al-Karmalī should not be considered strong contenders for the authorship of anonymous  reporting in their journals. 
+- We can also safely exclude all other 73 authors in data set 1 as potential candidates for the editorship.
+
+:::
+
+## All isn't in vain: individual authors
+
+::: columns
+:::: narrow
+
+Let's return to a slightly different version of @fig:articles-publications ...
+
+::::
+:::: wide
+
+![Bootstrap consensus network of data set 1, coloured by author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-w_2500-size_degree-colour_author-2022-09-09.png){#fig:network-author}
+
+::::
+:::
+
+## All isn't in vain: individual authors
+### Kāẓim al-Dujaylī
 
 Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine's editor Kāẓim al-Dujaylī
 
@@ -375,8 +512,8 @@ Anonymous travellogue in *Lughat al-ʿArab* most likely written by the magazine'
 ::::
 :::
 
-
-## Ibn al-Muqaffaʿ?
+## All isn't in vain: individual authors
+### Ibn al-Muqaffaʿ?
 
 A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited by Ṭāhir al-Jazāʾirī
 
@@ -400,33 +537,8 @@ A cluster of texts potentially written by Ibn al-Muqaffaʿ (d. 759) and edited b
 
 :::
 
-## William Shakespeare
-
-Unmarked translations of Shakespeare's "Julius Caesar" in *al-Zuhūr*
-
-::: columns
-:::: column
-
-![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_760.png){#fig:network-detail-shakespeare}
-
-::::
-:::: column
-
-![Radar plot for the attributed article in @fig:network-detail-shakespeare, [Shakespear, "Yūliyūs Qayṣar", *al-Zuhūr* 3(4), Oct. 1912](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_27.TEIP5.xml#div_1.d2e1819)](../../assets/OpenArabicPE/stylometry/stylo_oape.760_oclc.1034545644_v.3_i.6_div_1.d2e1819_lollipop.png){#fig:radar-shakespeare}
-
-::::
-:::
-
-::: notes
-
-- one case of faulty transcription by al-Maktaba al-Shamela: *būlūs qayṣar*
-- the fourth installment of the play was too short to make it into the corpus
-- #3 is also a play featuring Antonius, Casius, Brutus -> https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_30.TEIP5.xml#div_1.d2e2328
-    + but kept under the title of "Fukaha ilá madāris al-banāt" and a brief introductory scene
-
-:::
-
-## Shukrī al-ʿAsalī: resolving acronyms
+## All isn't in vain: individual authors
+### Shukrī al-ʿAsalī: resolving acronyms
 
 Texts by Shukrī al-ʿAsalī, later MP for Damascus and co-editor of one of Muḥammad Kurd ʿAlī's newspapers
 
@@ -455,190 +567,27 @@ Texts by Shukrī al-ʿAsalī, later MP for Damascus and co-editor of one of Mu�
 
 :::
 
-## Charles Seignobos: threshold for distance measures?
+# Conclusion
+## Summary
 
-Historical texts by Charles Seignobos translated by Muḥammad Kurd ʿAlī. 
+- We tested and falsified a hypothesis: anonymous articles in *al-Muqtabas* from Cairo and, later, Damascus, and *Lughat al-ʿArab* from Baghdad were not authored by their respective owners-cum-editors.
+- A small number of anonymous articles could be attributed
 
-When does the distance measure become unrealiable?
+### Future work
 
-::: columns
-:::: column 
+- identify potential candidates for authorship
+- build the necessary data sets for these candidates
+- expand the scope by systematically digitising a representative sample of Arabic periodicals
 
-![Detail from @fig:network-author](../../assets/OpenArabicPE/stylometry/stylo_network-articles-size_degree-colour_author-oape_741.png){#fig:network-detail-seignobos}
 
-::::
-:::: column
-
-![Radar plot for the attributed article (201) in @fig:network-detail-seignobos, [Seignobos, "al-Yūnān", *al-Muqtabas* 2(5), June 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_17.TEIP5.xml#div_9.d1e1431)](../../assets/OpenArabicPE/stylometry/stylo_oape.741_oclc.4770057679_v.2_i.5_div_9.d1e1431_lollipop.png){#fig:radar-seignobos}
-
-::::
-:::
-
-::: notes
-
-- Which values of the distance measure are close enough to be considered?
-- The text of Jibrāʾīl Madīnā is closer than other texts by Seignobos
-
-:::
-
-
-# Results <br/> data set 2: owners-cum-editors as authors?
-## owners-cum-editors as authors?
-### *al-Muqtabas*
-
-::: columns
-:::: wide
-
-![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/sihafa/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_author.png)
-
-::::
-:::: narrow
-
-Muḥammad Kurd ʿAlī (blue) most likely not the author
-
-::::
-:::
-
-## owners-cum-editors as authors?
-### *al-Muqtabas*
-
-::: columns
-:::: wide
-
-![Anonmyous sections and editors, coloured by community](../../assets/sihafa/stylometry/stylo_network-sections-editors_muqtabas-size_degree-colour_louvain.png)
-
-::::
-:::: narrow
-
-Multiple anonymous candidates?
-
-::::
-:::
-
-## owners-cum-editors as authors?
-### *Lughat al-ʿArab*
-
-::: columns
-:::: wide
-
-![Anonmyous sections and editors, coloured by author (blue = Muḥammad Kurd ʿAlī, red = Kāẓim al-Duhaylī, green = Anastās al-Karmalī)](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_author.png)
-
-::::
-:::: narrow
-
-Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
-
-::::
-:::
-
-## owners-cum-editors as authors?
-### *Lughat al-ʿArab*
-
-::: columns
-:::: wide
-
-![Anonmyous sections and editors, coloured by community](../../assets/OpenArabicPE/stylometry/stylo_network-sections-editors_lughat-size_degree-colour_louvain.png)
-
-::::
-:::: narrow
-
-Authorship of Anastās Mārī al-Karmalī and Kāẓim al-Duyalī more likely
-
-::::
-:::
-
-# Data set 3 <br/>Do periodicals speak with a single voice?
-## stylistic differences between journals
-### Auctorial voices?
-
-::: columns
-:::: wide
-
-![Issues of 5 periodicals from Cairo, Damascus, and Baghad](../../assets/OpenArabicPE/stylometry/stylo_network-issues-size_degree-colour_publication.png)
-
-::::
-:::: narrow
-
-- periodicals show distinct stylistic features
-- some similarity between *al-Muqtabas* and *al-Zuhūr*
-
-::::
-:::
-
-## stylistic differences between journals
-### *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas*
-
-::: columns-3
-:::: column
-
-![PCA covariance matrix for the 100 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-100}
-
-::::
-:::: column
-
-- *Lughat al-ʿArab* and *al-Muqtabas* are indistinguishable
-- *al-Ḥaqāʾiq* is different
-- some issues of *al-Muqtabas* are very different
-
-::::
-:::: column
-
-![PCA covariance matrix for the 900 MFWs in a corpus of *al-Ḥaqāʾiq*, *Lughat al-ʿArab*, and *al-Muqtabas* ](../../assets/OpenArabicPE/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-halumu-900}
-
-::::
-:::
-
-
-## stylistic differences between journals
-### *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*
-
-::: columns-3
-:::: column
-
-![PCA covariance matrix for the 100 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-100}
-
-::::
-:::: column
-
-- Strong stylistic similarities between all three periodicals
-- some issues of *al-Muqtabas* are very different
-
-::::
-:::: column
-
-![PCA covariance matrix for the 900 MFWs in a corpus of *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png){#fig:pca-lumuzu-900}
-
-::::
-:::
-
-
-
-
-## stylistic differences between journals
-### Importance of genre
-
-::: columns
-:::: wide
-
-![The same 5 periodicals + 6 works by one of the editors](../../assets/OpenArabicPE/stylometry/stylo_network-issues-authors-size_degree-colour_publication.png)
-
-::::
-:::: narrow
-
-- very limited similarity between *al-Muqtabas* and its editor Muḥammad Kurd ʿAlī
-
-::::
-:::
-
-# Thank you!
 ## Thank you!
 
 - Maxim Romanov for his work on parameter testing
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
-    + Slides: [https://tinyurl.com/dighis23-grallert](https://tillgrallert.github.io/slides/dh/2023-digital-history/index.html)
+    + Slides: [https://tillgrallert.github.io/slides/dh/2024-davo/](https://tillgrallert.github.io/slides/dh/2024-davo/index.html)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
-    + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
+    + Papers: <https://doi.org/10.5281/zenodo.10159446>, <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
     + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
     + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
