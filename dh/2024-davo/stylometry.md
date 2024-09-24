@@ -8,7 +8,7 @@ institute:
     - "Humboldt-Universität zu Berlin, Institut für Geschichtswissenschaften"
     - "Methods Innovation Lab, NFDI4Memory"
 email: till.grallert@hu-berlin.de
-date: 2023-09-27
+date: 2024-09-27
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
 url: https://tillgrallert.github.io/slides/dh/2024-davo/
@@ -16,6 +16,7 @@ bibliography:
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
+background-image: ../../assets/OpenArabicPE/front-pages_strip.png
 nocite: |
     @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
 ---
@@ -29,7 +30,7 @@ nocite: |
 3. Corpus, data sets
 4. Results
 
-# Background {data-background-image="../../assets/OpenArabicPE/front-pages_strip.png" data-background-size="90%"}
+# Background
 ## Arabic periodicals
 
 ::: columns
