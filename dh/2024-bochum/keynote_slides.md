@@ -13,13 +13,9 @@ ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 bibliography: 
-    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
-    - /Users/Shared/BachUni/applications/applications.csl.json
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+    - references.bib
 background-image: ""
-nocite: |
-    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
+nocite:
 ---
 
 # Raison d'etre <lb/>Wir leben in einem postdigitalen Moment
@@ -78,6 +74,7 @@ nocite: |
 
 - Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
 - Digital history also addresses the age of abundance, as postulated by Roy Rosenzweig, and epitomised by the recent advances in generative AI and LLMs, which will create an infinite amount of absolutely plausible and convincing yet utterly false sources 
+- Daraus folgt aber auch, dass **digital** history oder **digital** humanities hilfreiche Begriffe einer Übergangsphase sind. Sie sind Label mit einem hohen symbolischen und ökonomischen Kapital. 
 
 
 :::
@@ -211,8 +208,202 @@ Es herrscht in der Breite ein Mangel an
 
 :::
 
-# minimal computing
-## Building what **we need** with what **we have** at hand
+# DIY <br/>Do it yourself
+## Making
+
+::: columns
+:::: narrow
+
+>Do artefacts have politics? 
+
+<cite>[@Winner+1980]</cite>
+
+>Do politics have artefacts? 
+
+<cite>[@DunbarHester2014LowPower]</cite>
+
+::::
+:::: wide
+
+>To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. 
+
+<cite>[@Tenen2016BluntInstrumentalism, 85]</cite>
+
+>Without access to the code, whether because it is proprietary or generated on the fly, as in the case of some machine-learning algorithms, analysts can only comment on the apparent operations of the code based on its effects. The operations of the code are left in the hands of those who can access it, usually those who have made or maintain it, and those who can read it. 
+
+<cite>[@Marino2020CriticalCodeStudies, 4]</cite>
+
+::::
+:::
+
+::: columns
+:::: column
+
+### Making
+
+- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
+- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+
+::::
+:::: column
+
+### Maker turn
+
+Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+
+::::
+:::
+
+
+::: notes
+
+- Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
+    - >The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7, Hervorhebung im Original]
+- Geschichte
+    + 1970er Kalifornien: kooperative Werkstätten
+    + Recht auf Reparatur
+    + DIY: do it yourself culture
+    + "Maker Movement Manifesto" von Hatch (2013)
+        * make, share, give, learn, tool up, play, participate, support, change
+- bezieht sich auf [@Wythoff2022MinimalComputing], der die beiden Fragen verknüpft hat
+    + Do artefacts have politics? [@Winner+1980]
+    + Do politics have artefacts? [@DunbarHester2014LowPower]
+- Kritik an Maker culture als omnipotenter maskuliner Raum:
+    - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+
+:::
+
+## Datenkultur und Werkzeugkompetenz
+
+::: notes
+
+- maker culture als ein Teil der Datenkultur
+    - als praktische Kritik der Digitalität
+- Das Ziel des *Scholarly Makerspaces* ist die Erarbeitung von *tool literacy*, die in zwei Dimensionen gedacht wird: 
+    1. Zum einen geht es um das ganz konkrete Erlernen von Werkzeugen und computergestützten Verfahren: Wie kann ich Korpus von Digitalisaten mit Methoden des *distant reading* analysieren? Was ist eine Netzwerkanalyse? Was sind die Möglichkeiten der Datenvisualisierung? Wie kann ich die Disinformationskampagnien rechter Trollfarmen in Social Media sinnvoll analysieren?
+    2. Zum anderen wird *tool literacy* aber mit dem Fokus auf Werkzeuge und Methoden als Gegenstand der Untersuchung weiter gedacht und mit  [*Critical Code Studies*](https://criticalcodestudies.com/) [@Marino2020CriticalCodeStudies] und den *Science and Technology Studies* in Beziehung gesetzt: von der Reflexion über die hermeneutischen und epistemologischen Folgen bestimmter Werkzeuge und Zugänge zu digitalen Daten bis zu den ethischen und ökologischen Folgen im Bereich der künstlichen Intelligenz bzw. des maschinellen Lernens, wie z.B. dem massiven [Einsatz endlicher natürlicher Resourcen](https://dhc-barnard.github.io/dhclimate/) und die verschiedenen Biases ihrer Schöpfer\*innen perpetuierende Algorithmen und Modelle.
+
+:::
+
+# Do it yourself, but not alone!
+## Gemeinschaftlich und kollaborativ
+
+>I also remind DH is an imposter syndrome house of mirrors. You look around and see experts in GIS, TEI, dataviz, etc.; it's hard to remember that people tend to be good at *one* of those things when the collective appears to be good at *all* of them. **We all suck at most of DH**.
+
+<cite>[@Weingart2021AlsoRemindDH]</cite>
+
+>Unfortunately, I'm not particularly handy. On every new project, the tools require blood.
+
+<cite>[@Graham2023FindMyselfCharge]</cite>
+
+::: notes
+
+- daraus folgt, dass es neue Rollen und neue Anforderungen gibt
+- 
+
+
+## Generous thinking: zuhören und lernen
+
+>Generous Thinking [begins] by proposing that rooting the humanities in generosity, and in particular in the practices of thinking *with* rather than reflexively *against* both the people and the materials with which we work, might invite more productive relationships and conversations not just among scholars but between scholars and the surrounding community.
+
+<cite>[@Fitzpatrick2016GenerousThinking]</cite>
+
+::: notes
+
+- frage:
+    - Wie kann Kollaboration zum Nutzen aller gestaltet werden?
+- sie entwirft eine Kritik der neoliberalen Universität, in der, vor allem in den Humanities, eine destruktive Kritik geübt wird
+
+:::
+
+## trading zones, contact languages, and project management
+
+>to coordinate and develop [...] ‘contact languages’ [..] is the necessary underpinning of a stable, respectful and hybrid form of interdisciplinary collaboration. Done correctly they can create something new: Galison’s ‘full-fledged creoles’  supporting ‘activities as complex as poetry and metalinguistic reflection’.  They can create new disciplinary spaces and practices in their own right. 
+
+<cite>[@AhnertEtAl2023CollaborativeHistoricalResearch]</cite>
+
+
+::: columns
+:::: column
+
+![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/cover_Kemman2021.jpeg){#fig:book-kemman2021}
+
+::::
+:::: column
+
+![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/cover_Cremer2024.png){#fig:book-cremer2024}
+
+::::
+:::
+
+::: notes
+
+- Max Kemman und andere auf der Basis von Peter Galison
+- contact zones müssen in "trading zones" verwandelt werden
+    - Aber allein der Aufenthalt in einer Kontaktzone erfordert ein Mindestmaß an Toleranz
+- Zonen der lokalen Verständigung, in den sich erst ein 
+    - Pidgin und dann 
+        - Pidgnization als die Periode, in der Labels, wie Digital History, sinnvoll sein können
+    - Kreolisch entwickeln kann
+
+- Peter Galison:
+            >employed the metaphor of a ‘trading zone’ to explain  how engineers and physicists from a number of different sub-fields went about  collaborating with each other to develop particle detectors and radar.
+
+
+:::
+
+## Leistungen anerkennen
+
+::: columns
+:::: column
+
+![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_CRediT.png){#fig:credit}
+
+::::
+:::: column
+
+Anteile an jeglichem Output transparent klassifizieren
+
+- Seit 2012: [Contributor Role Taxonomy (CRediT)](https://credit.niso.org)
+    - ANSI/NISO Standard (seit 2022)
+    - 14 Rollen im gesamten Forschungsprozess
+    - einige Zeitschriften erlauben weitere Unterscheidung als _lead_ ,_equal_ oder _supporting_
+- Die [relators](http://id.loc.gov/vocabulary/relators) Taxonomie der LoC
+- Und natürlich gibt es Zeitschriften zum Thema, z.B. [Accountability in Research](https://www.tandfonline.com/journals/gacr20)
+
+Unsere Stakeholder und ihre Bedürfnisse kennen
+
+- z.B. über die Entwicklung von Personae
+
+::::
+:::
+
+::: notes
+
+- CRediT
+    - Rollen
+        1. Conceptualization  
+        2. Data curation  
+        3. Formal analysis  
+        4. Funding acquisition  
+        5. Investigation  
+        6. Methodology  
+        7. Project administration  
+        8. Resources  
+        9. Software  
+        10. Supervision  
+        11. Validation  
+        12. Visualization  
+        13. Writing – original draft  
+        14. Writing – review & editing
+    - Außerhalb der Geisteswissenschaften weithin umgesetzt
+    - >CRediT grew from a practical realization that bibliographic conventions for describing and listing authors on scholarly outputs are increasingly outdated and fail to represent the range of contributions that researchers make to published output. Furthermore, there is growing interest among researchers, funding agencies, academic institutions, editors, and publishers in increasing both the transparency and accessibility of research contributions.
+
+:::
+
+# KISS <br/>keep it simple, stupid
+## minimal computing
+### Building what **we need** with what **we have** at hand
 
 ::: columns
 :::: narrow
@@ -357,48 +548,22 @@ Es herrscht in der Breite ein Mangel an
 
 :::
 
-# Do it yourself
-## Making
+## *Project Endings*
+
 
 ::: columns
 :::: narrow
 
->Do artefacts have politics? 
+!["[Endings Principles for Digital Longevity](https://endings.uvic.ca/principles.html)"](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_project-endings-principles.png){#fig:endings-principles}
 
-<cite>[@Winner+1980]</cite>
-
->Do politics have artefacts? 
-
-<cite>[@DunbarHester2014LowPower]</cite>
 
 ::::
 :::: wide
 
->To use [...] tools well, we must, in some real sense, understand them better than the tool makers. [...] The best kind of tools are therefore the ones that we make ourselves. 
-
-<cite>[@Tenen2016BluntInstrumentalism, 85]</cite>
-
->Without access to the code, whether because it is proprietary or generated on the fly, as in the case of some machine-learning algorithms, analysts can only comment on the apparent operations of the code based on its effects. The operations of the code are left in the hands of those who can access it, usually those who have made or maintain it, and those who can read it. 
-
-<cite>[@Marino2020CriticalCodeStudies, 4]</cite>
-
-::::
-:::
-
-::: columns
-:::: column
-
-### Making
-
-- Experimentieren, Tüfteln, Ausprobieren, Werkeln 
-- Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
-
-::::
-:::: column
-
-### Maker turn
-
-Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+- kollaboratives Projekt von Faculty, Bibliothekar_innen, Entwickler_innen an der University of Victoria, Kanada, zur Untersuchung 
+- Hauptziele
+    - Belange von Forscher_innen und Archivar_innen bei der langfristigen Kuratierung und Erhaltung von DH-Projekten in Einklang zu bringen
+    - Entwicklung praktischer Werkzeuge.
 
 ::::
 :::
@@ -406,49 +571,10 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 ::: notes
 
-- Grundsatz: Werkzeuge und Methoden sind mit Machtverhältnissen verwoben
-    - >The Cloud *is* a factory. Your AI *is* a human. Sexism *is* a feature, not a bug. [@Mullaney2021Intro, 7, Hervorhebung im Original]
-- Geschichte
-    + 1970er Kalifornien: kooperative Werkstätten
-    + Recht auf Reparatur
-    + DIY: do it yourself culture
-    + "Maker Movement Manifesto" von Hatch (2013)
-        * make, share, give, learn, tool up, play, participate, support, change
-- bezieht sich auf [@Wythoff2022MinimalComputing], der die beiden Fragen verknüpft hat
-    + Do artefacts have politics? [@Winner+1980]
-    + Do politics have artefacts? [@DunbarHester2014LowPower]
-- Kritik an Maker culture als omnipotenter maskuliner Raum:
-    - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+- bei den gezeigten Prinzipien wird ganz klar ein *minimal computing* Ansatz deutlich
+- tools to assist with the archiving of both data and interactive elements of digital projects.
 
 :::
-
-## Datenkultur und Werkzeugkompetenz
-
-::: notes
-
-- Das Ziel des *Scholarly Makerspaces* ist die Erarbeitung von *tool literacy*, die in zwei Dimensionen gedacht wird: 
-    1. Zum einen geht es um das ganz konkrete Erlernen von Werkzeugen und computergestützten Verfahren: Wie kann ich Korpus von Digitalisaten mit Methoden des *distant reading* analysieren? Was ist eine Netzwerkanalyse? Was sind die Möglichkeiten der Datenvisualisierung? Wie kann ich die Disinformationskampagnien rechter Trollfarmen in Social Media sinnvoll analysieren?
-    2. Zum anderen wird *tool literacy* aber mit dem Fokus auf Werkzeuge und Methoden als Gegenstand der Untersuchung weiter gedacht und mit  [*Critical Code Studies*](https://criticalcodestudies.com/) [@Marino2020CriticalCodeStudies] und den *Science and Technology Studies* in Beziehung gesetzt: von der Reflexion über die hermeneutischen und epistemologischen Folgen bestimmter Werkzeuge und Zugänge zu digitalen Daten bis zu den ethischen und ökologischen Folgen im Bereich der künstlichen Intelligenz bzw. des maschinellen Lernens, wie z.B. dem massiven [Einsatz endlicher natürlicher Resourcen](https://dhc-barnard.github.io/dhclimate/) und die verschiedenen Biases ihrer Schöpfer\*innen perpetuierende Algorithmen und Modelle.
-
-:::
-
-# Do it yourself, but not alone!
-## Gemeinschaft
-
->I also remind DH is an imposter syndrome house of mirrors. You look around and see experts in GIS, TEI, dataviz, etc.; it's hard to remember that people tend to be good at *one* of those things when the collective appears to be good at *all* of them. **We all suck at most of DH**.
-
-<cite>[@Weingart2021AlsoRemindDH]</cite>
-
-## Wie kann Kollaboration gestaltet werden?
-
-## Generous thinking
-
->Unfortunately, I'm not particularly handy. On every new project, the tools require blood.
-
-<cite>[@Graham2023FindMyselfCharge]</cite>
-
-
-# The endings project
 
 # scholarly makerspace
 ## Makerspace
