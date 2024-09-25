@@ -18,8 +18,8 @@ background-image: ""
 nocite:
 ---
 
-# Raison d'etre <lb/>Wir leben in einem postdigitalen Moment
-## *Digital* ist bedeutungslos geworden 
+# Raison d'etre <br/>Wir leben in einem postdigitalen Moment
+## *Digital* als ein historischer Begriff 
 
 ::: columns
 :::: wide
@@ -39,7 +39,7 @@ nocite:
 ::: columns
 :::: narrow
 
-[*digital* hat seine Bedeutung verloren]{.keyphrase}
+["*digital*" hat seine Bedeutung verloren]{.keyphrase}
 
 ::::
 :::: wide
@@ -141,7 +141,7 @@ nocite:
 
 <!-- Kataloge und Discovery systeme -->
 
-## Die Geistes- und Kulturwissenschaften in der "epoch of computationability"
+## Die Humanities in der Epoche der Berechenbarkeit
 
 [Für einen aufgeklärten Umgang mit *Datafizierung* brauchen wir einen fundamentalen **Kulturwandel**]{.keyphrase}
 
@@ -152,7 +152,7 @@ nocite:
 
 !["Werkzeuge" in Digital Humanities Quarterly](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png){#fig:wordcloud-dhq}
 
-!["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences}
+<!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
 
 ::::
 :::: column
@@ -170,11 +170,17 @@ Es herrscht in der Breite ein Mangel an
 ::::
 :::
 
-## Datenkultur: von *digital consumers* zu *digital citizens*
+::: notes
+
+- David Berry "epoch of computationability" 
+
+:::
+
+## Von *digital consumers* zu *digital citizens*, oder warum wir eine Datenkultur brauchen
 
 <!-- requires some work -->
 
-[*digital natives* sind nicht automatisch *digital citizens*]
+[*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase}
 
 ::: columns
 :::: column
@@ -204,7 +210,7 @@ Es herrscht in der Breite ein Mangel an
     + **ABER** Digital natives sind nicht automatisch digital citizens
         + >despite what the term “digital natives” invokes, it does not mean that those who are digital natives (born after 1980) understand digital technology. In fact, digital natives may not remember life before the internet, but that does not mean they understand the complex systems that supports it or the nuances of communication and knowledge creation in the digital age [@Levy2017DigitalZombies, §16].
 - kann **nur kollaborativ** adäquat bewältigt werden. 
-+ Tool literacy ist extrem aufwändig
++ ich fokussiere heute eher auf die Datenkultur im engeren Sinn, und schlage alltägliche Praktiken vor, die uns erlauben auch eine Datenkultur im weiteren Sinn zu etablieren.
 
 :::
 
