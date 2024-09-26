@@ -13,7 +13,7 @@ ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 bibliography: 
-    - references.bib
+    - references.bib #csl.json
 background-image: ""
 nocite:
 ---
@@ -137,9 +137,59 @@ nocite:
 
 :::
 
-## Praktische Beispiele?
+## The long tail of ASCII in discovery systems
 
-<!-- Kataloge und Discovery systeme -->
+::: columns-3
+:::: column
+
+### [الجنة]{lang="ar"}?
+
+No Arabic script
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=الجنة) for "[الجنة]{lang="ar"}"](../../assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
+
+::::
+:::: column
+
+### al-Ǧanna?
+
+Which Latinized transcription was used?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=al-Ǧanna) for "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
+
+::::
+:::: column
+
+### Ganna!
+
+What are the normalization rules for the search algorithm?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Ganna) for "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
+
+::::
+:::
+
+::: notes
+
+- catalogue could be searched in Arabic but the data is missing
+- catalogues are historical artefacts
+    + digitisation of catalogues: NOT re-cataloguing of original material
+        * card catalogue
+        * ASCII OPAC
+        * automated transcription of the card catalogue
+        * human cataloguers depend on the technology they have at hand, which means they might be unable to enter the correct string
+        * errors perpetuate
+- Latin input is mostly reduced to ASCII
+    + Hamza and ʿAyn escape this algorithm on ZDB
+- determined article is not automatically removed
+- The choices are not transparently documented
+- no software on-screen keyboards provided
+- additional problems
+    + catalogues are inherently local documents
+    + aggregated, if at all, on a national level
+    + frequently accessible only through Web interfaces and not APIs
+
+:::
 
 ## Die Humanities in der Epoche der Berechenbarkeit
 
@@ -305,8 +355,8 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 ::: notes
 
 - daraus folgt, dass es neue Rollen und neue Anforderungen gibt
-- 
 
+:::
 
 ## Generous thinking: zuhören und lernen
 
@@ -409,12 +459,12 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 # KISS <br/>keep it simple, stupid
 ## minimal computing
-### Building what **we need** with what **we have** at hand
+### Was **wir brauchen** müssen **wir** schaffen mit dem was **wir zuhanden haben**
 
 ::: columns
 :::: narrow
 
-![Website of the [GO::DH working group on minimal computing](https://go-dh.github.io/mincomp)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_mincomp.png){#fig:mincomp-website}
+![Webseite der [GO::DH working group zu minimal computing](https://go-dh.github.io/mincomp)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_mincomp.png){#fig:mincomp-website}
 
 ::::
 :::: wide
@@ -437,7 +487,7 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 ::: notes
 
-- minimal computing is a result of GO::DH and events and conditions in Cuba
+- minimal computing ist ein Ergebnis von GO::DH und Ereignissen und Bedingungen der Digitalität in Cuba
 - Alex Gil's ideas resonated with me, upon meeting in Beirut in April 2015
 
 :::
@@ -447,10 +497,15 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 ::: columns
 :::: column
 
-### *we* is defined by shared
+### *wir* ist bestimmt durch geteilte
 
-- interests
-- ethics, e.g.
+- Interessen
+- Werte
+    + Zugänglichkeit
+    + Teilhabe
+    + Nachhaltigkeit: sozial, ökologisch, technologisch
+    + Verantwortlichkeit
+    + Gerechtigkeit
     + [FAIR](https://www.go-fair.org/fair-principles/) principles
     + [CARE](https://www.gida-global.org/care) principles
     + -> digital commons
@@ -458,10 +513,10 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 ::::
 :::: column
 
-### *we* defines
+### *wir* bestimmt
 
-- the specific context and and working conditions
-- our access to skills, methods, labour time, tools, materials ...
+- den spezifischen Kontext und die Arbeitsbedingungen
+- unseren Zugang zu Fähigkeiten, Methoden, Arbeitszeit, Werkzeug, Material ...
 
 ::::
 :::
@@ -474,33 +529,33 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 :::
 
-## What about the *minimal* in minimal computing?
+## Was bedeutet *minimal*?
 
 <!-- add images -->
 
 ::: columns
 :::: column
 
-### from a position of privilege
+### Aus einer privilegierten Position
 
-- minimalism as an end in itself
-    + destroying resources already at hand
-    + fashion
-    + purist principles
+- Minimalismus als Selbstzweck
+    - Vorhandene Resourcen zerstörend
+    - Mode
+    - Prinzipieller Purismus
 
-![Screenshot of a [website](https://bulthaup.com/en/b3/) selling luxury kitchens](../../assets/dh/bulthaupt.png){#fig:bulthaupt}
+![[Webseite](https://bulthaup.com/en/b3/) für Luxus-Küchen](../../assets/dh/bulthaupt.png){#fig:bulthaupt}
 
 ::::
 :::: column
 
-### from a position of exclusion
+### Aus einer marginalisierten Position
 
-- minimalism as a means to an end
-    + balance our needs against the resources at hand
-    + acknowledge the inevitable impact of our actions
-    + minimal computing as *meaningful* computing
+- Minimalismus als ein *Mittel* zum Zweck
+    - Abwägung unserer Bedürfnisse und unserer Ressourcen
+    - Anerkennung der unausweichlichen Folgen unserer Handlungen
+    - minimal computing als *meaningful* computing
 
-![Frankfurter Kitchen, Source: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
+![Frankfurter Küche, Quelle: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
 
 ::::
 :::
@@ -522,22 +577,22 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 :::
 
-## What about the *computing*<!-- in minimal computing-->?
+## Und schließlich was ist mit *computing*<!-- in minimal computing-->?
 
 ::: columns
 :::: column
 
-- use what we already know
-- use what we can afford long-term
-- do not impose unnecessary costs on our users
-- do not waste resources to the detriment of our planet
+- Nutze was wir bereits kennen
+- Nutze was wir uns langfristig leisten könne
+- Lege den Nutzer_innen keine unnötigen Kosten auf
+- Verschwende keine Resourcen zum Schaden unsers Planeten
 
 ::::
 :::: column
 
-- learn techniques new to us
-- develop skills
-- grow communities
+- Lerne *für uns* neue Techniken
+- Entwickle Fähigkeiten
+- Fördere und nähre Communities of Practice
 
 ::::
 :::
@@ -546,11 +601,11 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 ::: notes
 
 - first column
-    + proven technologies and established standards
-    + not the latest framework
-        * think of what we do as space travel: Voyager I and II are still functioning with rudimentary computing powers
-    + flat technology stacks
-    + nothing shiny
+    + Etablierte Standards und bewährte Technologien
+    + nicht das neuest Framework
+        + es muss nicht glitzern und funkeln, es soll mit minimalem Aufwand lange laufen
+        + Hier sollten wir uns an der Raumfahrtindustrie (nicht SpaceX) ein Beispiel nehmen: Voyager I and II are still functioning with rudimentary computing powers
+    - Flache technology stacks
 
 :::
 
@@ -579,6 +634,35 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 - bei den gezeigten Prinzipien wird ganz klar ein *minimal computing* Ansatz deutlich
 - tools to assist with the archiving of both data and interactive elements of digital projects.
+
+:::
+
+
+## Digital Humanities Climate Coalition
+
+it all started with a manifesto <!-- "Digital Humanities and the Climate Crisis" (2021)-->
+
+::: columns
+:::: column
+
+![Webseite des [DHCC Toolkit](https://sas-dhrh.github.io/dhcc-toolkit/)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_dhcc.png){#fig:website-dhcc}
+
+::::
+:::: column
+
+>The digital is material. As digital humanists, every project we create, every software application we use, every piece of hardware we purchase impacts our environment. [...] we aim to surface the ecological impacts of our work while learning with and from our DH community about ways to reduce harm to the environment and to the people most impacted by environmental injustices.
+>As humanities researchers, it is also our role to probe the values, the power structures, and the future imaginaries that underpin sustainable solutions. Given, especially, the immense and monopolistic power wielded by the global tech sector, and the critiques of this power that are part of DH, our use of their resources should be informed by the ways corporate economic, cultural, and scientific power perpetuates and exacerbates the crisis.
+
+<cite>[@BaillotEtAl2021DHCCManifesto]</cite>
+
+::::
+:::
+
+::: notes
+
+- 2021 manifesto
+- seit 2022: Entwicklung des Toolkits
+- DHd AG Greening DH
 
 :::
 
@@ -623,21 +707,6 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 :::
 
-## Gegenstand
-
-Die computationelle Forschung in den Geistes- und Kulturwissenschaften umfasst drei Komponenten [@Drucker2021DHCoursebook]
-
-1. Erstellung, Aufbereitung **digitaler Materialien**
-2. **computationelle Be- / Verarbeitung** dieser Materialien
-3. **Präsentation** der Ergebnisse, der Prozesse und der Materialien
-
-## Ziele
-
-Stärkung der *tool literacy* (Werkzeugkompetenz) für:
-
-+ **Teilhabe** an der Digitalität durch computationelle Methoden,
-+ kritische **Reflexion** über ein neues epistemisches Paradigma,
-+ Genese **neuer Erkenntnisse** {--für die Geistes- und Kulturwissenschaften--}
 
 # Conclusion
 ## Summary

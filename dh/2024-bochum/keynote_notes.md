@@ -12,20 +12,13 @@ date: 2024-09-30
 ORCID: orcid.org/0000-0002-5739-8094
 lang: de
 url: https://tillgrallert.github.io/slides/dh/2024-bochum/
-bibliography: 
-    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
-    - /Users/Shared/BachUni/applications/applications.csl.json
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
-background-image: ""
-nocite: |
-    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
 ---
 
 # to do
 ## requires work
 
 - [ ] Datenkultur: Blackbox erwähnen
+- [x] Minimal computing: ins Deutsche übersetzen
 - [ ] Struktur
     1. Problemstellung: postdigitaler Moment
         - 'digital' ist ein empty signifier
@@ -51,17 +44,12 @@ nocite: |
 
 ## missing bits
 
-- [ ] praktische Beispiele: Kataloge 
-- [ ] endings project
-- [ ] generous thinking
-- [ ] greening DH
+- [/] praktische Beispiele: Kataloge
+    - hier muss gehörig was gemacht werden 
+- [x] endings project
+- [x] generous thinking
+- [x] greening DH
+- [ ] Gemeinschaft
+    - Verweise auf das Panel bei der DH2024
 
 ## missing bibliographic data
-
-- [ ] citation Borgman2015BigData not found
-- [ ] citation DigitalHistoryArgument2017 not found
-- [ ] citation Gitelman2013Introduction not found
-- [ ] citation Graham2023FindMyselfCharge not found
-- [ ] citation Laessig2021DigitalHistory not found
-- [ ] citation Siles2023Living not found
-- [ ] citation Weingart2021AlsoRemindDH not found
