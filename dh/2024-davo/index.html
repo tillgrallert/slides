@@ -1420,35 +1420,14 @@
                             page-break-before: avoid
                         }
                     }
-                    /*===================
-add a corner banner
-===================*/
-body::after {
-    content: "🇵🇸 حرية لفلسطين 🇵🇸";
-    min-width: 100px;
-    float: left;
-    top: 2.5em;
-    position: absolute;
-    transform: rotate(-45deg);
-    background:red;
-    color:white;
-    left: -3em;
-    padding-left: 3em;    padding-right: 3em;
-    padding-top: .5em;    padding-bottom: .5em;
-    border: 0px;
-    margin: 0;
-    z-index: 999999999;
-    font-family: AmiriWeb;
-    font-weight: 300;
-}
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-      <!-- <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a> -->
-              <a href="https://tillgrallert.github.io/slides/dh/2024-davo/"><img class="c_right c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-davo/"></a>
-        <!-- <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a> -->
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/2024-davo/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-davo/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
           </header>
     <div class="reveal">
       <div class="slides">
@@ -2731,9 +2710,6 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
-       // Parallax background image
-       parallaxBackgroundImage: '../../assets/OpenArabicPE/front-pages_strip.png', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be

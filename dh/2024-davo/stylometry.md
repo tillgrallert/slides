@@ -16,18 +16,16 @@ bibliography:
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
-background-image: ../../assets/OpenArabicPE/front-pages_strip.png
+#background-image: ../../assets/OpenArabicPE/front-pages_strip.png
 nocite: |
     @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
 ---
 
 ## outline
 
-1. Background
-    - Arab periodical studies
-    - Research question
+1. Background: Arab periodical studies
 2. Method: stylometric authorship attribution
-3. Corpus, data sets
+3. Corpus and derivative data sets
 4. Results
 
 # Background
