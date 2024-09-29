@@ -79,7 +79,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2021-mind-the-gap](https://til
 :::
 ::: {.c_width-50 .c_left}
 
-![Google docs](../..//assets/dh/google-docs.png){#fig:google-docs}
+![Google docs](../../assets/dh/google-docs.png){#fig:google-docs}
 
 :::
 
