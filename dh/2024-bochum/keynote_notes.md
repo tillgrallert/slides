@@ -30,9 +30,14 @@ url: https://tillgrallert.github.io/slides/dh/2024-bochum/
     2. Ideen
         - DIY
             - making: artefacts have politics
-            - Experimentieren, Ausprobieren
+                - [ ] split into multiple slides
+                - one with a blackbox
+            - Experimentieren, Ausprobieren: 
+                - [x] sollte hier kurz der Scholarly Makerspace erwähnt werden?
+                    - ja, denn er führt das Thema Gemeinschaft ein
         - but not alone
             - Gemeinschaft: we all suck at most of DH
+                - [x] add plot of vexing complexity
             - Kollaboration: 
                 - CRediT
             - generous thinking
@@ -44,7 +49,7 @@ url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 
 ## missing bits
 
-- [/] praktische Beispiele: Kataloge
+- [x] praktische Beispiele: Kataloge
     - hier muss gehörig was gemacht werden 
 - [x] endings project
 - [x] generous thinking

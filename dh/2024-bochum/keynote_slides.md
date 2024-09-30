@@ -18,7 +18,7 @@ background-image: ""
 nocite:
 ---
 
-# Raison d'etre <br/>Wir leben in einem postdigitalen Moment
+# Ein neues Epistem 
 ## *Digital* als ein historischer Begriff 
 
 ::: columns
@@ -72,6 +72,8 @@ nocite:
 
 ::: notes
 
+- das ist die Ausgangsprämisse unserer Arbeit für NFDI4Memory
+
 - Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
 - Digital history also addresses the age of abundance, as postulated by Roy Rosenzweig, and epitomised by the recent advances in generative AI and LLMs, which will create an infinite amount of absolutely plausible and convincing yet utterly false sources 
 - Daraus folgt aber auch, dass **digital** history oder **digital** humanities hilfreiche Begriffe einer Übergangsphase sind. Sie sind Label mit einem hohen symbolischen und ökonomischen Kapital. 
@@ -79,7 +81,7 @@ nocite:
 
 :::
 
-## Daten aller Ecken
+## Datum? captum? raw? meta?
 
 
 
@@ -127,50 +129,137 @@ nocite:
 
 - Data literacy as part of data culture
 - data are always a concrete embodyment and a socio-technological stack: serialisation
-- If we subscribe to social constructivism then all models are historically situated
-    - Data and models are situated in historical processes of knowledge production
 - Models have three characteristics [@Stachowiak1973AllgemeineModelltheorie]
-    - Mapping/ replacing: model for something
-    - Reduction: abstracts aspects of interest
-    - Purpose: models have a purpose for something
+    - Abbildung: model for something
+    - Reduktion: abstracts aspects of interest
+    - Zweck: models have a purpose for something
+- If we subscribe to social constructivism then all models are historically situated
+- Wenn wir dem Konstruktivismus folgen, dann sind alle Modelle historisch situiert. Sie haben einen konkreten Ort und eine spezifische Zeitlichkeit
+    - Daten und Modelle sind in historischen Prozessen der Wissensproduktion, des Wissenschaffens verortet
 - drucker: capta
 
 :::
 
-## The long tail of ASCII in discovery systems
+## Die falsche Vertrautheit
+
+
+![Google docs](../../assets/dh/google-docs.png){#fig:google-docs}
+
+::: notes
+
+- Digitalität **simuliert** Stasis und Vertrautheit
+    + Metaphern
+    + semantische Modelle
+- Digitalität ist hochgradig ephemer und wird kontinuierlich remediiert
+- Google docs
+    - UI für eine distribuierte Datenbank
+    - Die "Seite" wird konstant erzeugt und existiert so nur im Bildschirmausschnitt des Betrachters
+    - Datenzentren
+    - Netzwerkprotokolle
+    - Inhaltsanalysen für Werbung, Kommerzialisierung
+    - Interaktion mit Embeddings, Sprachmodellen of sorts
+- Suchschlitz
+    - simuliert Einfachheit
+- Mein Punkt ist, dass wir nicht auf Papier schreiben und nicht in einer Bibliothek durch die Regale streifen
+
+:::
+
+## Ein Dokument?
+
+::: columns
+:::: column
+
+![Googles globale Netzwerkinfrastruktur. Quelle: <https://cloud.google.com/about/locations/>](https://cloud.google.com/static/images/locations/edgepoint-map-popup_2x.jpg){#fig:google-network}
+
+::::
+:::: column
+
+![Die Datenzentren in Googles globalem Content Delivery Network. Quelle: <https://cloud.google.com/about/locations/>](https://cloud.google.com/static/images/locations/media-cdn-map-popup_2x.jpg){#fig:google-cdn}
+
+::::
+:::
+::: notes
+
+- Google docs
+    - UI für eine distribuierte Datenbank
+    - Die "Seite" wird konstant erzeugt und existiert so nur im Bildschirmausschnitt des Betrachters
+    - Datenzentren
+    - Netzwerkprotokolle
+
+:::
+## "Du bist so schön wie eine weitere Stunde Strom!"
 
 ::: columns-3
 :::: column
 
-### [الجنة]{lang="ar"}?
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
 
-No Arabic script
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote>
 
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=الجنة) for "[الجنة]{lang="ar"}"](../../assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
-
-::::
+:::: 
 :::: column
 
-### al-Ǧanna?
+<iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
 
-Which Latinized transcription was used?
-
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=al-Ǧanna) for "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
-
-::::
+:::: 
 :::: column
 
-### Ganna!
-
-What are the normalization rules for the search algorithm?
-
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Ganna) for "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
+<iframe src="https://data.worldbank.org/share/widget?indicators=IT.NET.BBND.P2&view=map" width='500' height='500' frameBorder='0' scrolling="no" ></iframe>
 
 ::::
 :::
 
 ::: notes
 
+- very unequal access to the means of digital production
+- sustainable development goals (SDG) of the UN
+- electricity
+    + 800 mio have no access
+        * almost exclusively in the global south
+        * vast majority in subsaharan Africa
+    + by 2030 according to projections of the International Energy Agency (IEA): 
+        * 600 mio
+        * 33 per cent of all Africans
+    - access: 
+        + 250--500 kWh per year and household
+        + less than 14 hours of a 100W lightbulb per day
+ - internet
+        + 36,6 percent of the world population, or 2,93 billion people do not participate
+        + 85 per cent of them live in Africa, South, East and South-East Asia
+        + lower speed
+        + higher latency
+        + higher cost per unit of traffic
+
+- At my former home institution, a well-funded foreign research institute, for instance, we shared a single connection of 24Mbps. Simply loading the landing page for a single volume of al-Muqtabas at the Endangered Archives Programme will require three seconds of load time even under perfect conditions. With 20 colleagues and another 20 library users equally trying to access online services and resources, load time quickly multiplies tenfold and more. Browsing through a large number of scanned images behind such a bottleneck is a daunting task. Uploading multiple gigabytes of high-resolution scans to a cloud computing service for machine-learning based OCR, for instance, is practically impossible and we rather ship hard drives and wait for months for the results.
+
+:::
+
+
+## Vom Suchen und Finden
+
+::: columns-3
+:::: narrow
+
+![Original in arabischer Schrift](../../assets/jaraid/zdb_mirat-ar-Latn-ar.png){#fig:mirat-ar}
+
+![In international gebräuchlicher Umschrift](../../assets/jaraid/zdb_mirat-ar-Latn-x-ijmes.png){#fig:mirat-ijmes}
+
+::::
+:::: column
+
+![In Umschrift der Deutschen Morgenländischen Gesellschaft](../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png){#fig:mirat-dmg}
+
+::::
+:::: column
+
+![In DMG Umschrift ohne diakritische Zeichen](../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png){#fig:mirat-dmg-flat}
+
+::::
+:::
+
+::: notes
+
+- von Bulus Šahade von 1919 bis 1938 in Jerusalem herausgegebene Wochenzeitung [Mirʾāt aš-Šarq](https://www.wikidata.org/wiki/Q124971778)
 - catalogue could be searched in Arabic but the data is missing
 - catalogues are historical artefacts
     + digitisation of catalogues: NOT re-cataloguing of original material
@@ -191,6 +280,8 @@ What are the normalization rules for the search algorithm?
 
 :::
 
+
+
 ## Die Humanities in der Epoche der Berechenbarkeit
 
 [Für einen aufgeklärten Umgang mit *Datafizierung* brauchen wir einen fundamentalen **Kulturwandel**]{.keyphrase}
@@ -200,9 +291,9 @@ What are the normalization rules for the search algorithm?
 
 [Kennen Sie die?]{.keyphrase}
 
-!["Werkzeuge" in Digital Humanities Quarterly](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png){#fig:wordcloud-dhq}
+!["Werkzeuge" in Digital Humanities Quarterly](../../assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png){#fig:wordcloud-dhq}
 
-<!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
+<!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
 
 ::::
 :::: column
@@ -230,23 +321,38 @@ Es herrscht in der Breite ein Mangel an
 
 <!-- requires some work -->
 
-[*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase}
+<!-- [*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase} -->
 
 ::: columns
 :::: column
 
 ### im weiteren Sinn
 
-- eine **Fachkultur**, bei der (Forschungs-)daten und datengetriebener Methoden ein integraler Bestandteil sind, die Arbeit mit und an Daten also nicht mehr als ein netter Appendix zum "eigentlichen" Forschungsprozess verstanden wird.
-    - braucht Verständnis der theoretischen und epistemologischen Grundlagen und Implikationen der Datafizierung und Diskussion über deren Folgen
+eine **Fachkultur**, bei der (Forschungs-)daten und datengetriebener Methoden ein integraler Bestandteil sind, die Arbeit mit und an Daten also nicht mehr als ein netter Appendix zum “eigentlichen” Forschungsprozess verstanden wird.
 
 ::::
 :::: column
 
 ### im engeren Sinn
 
-- **alltägliche Praktiken** und Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung mit Hilfe von computationellen Methoden und Werkzeugen.
-    - braucht Orientierung, Guidelines und Unterstützung
+**alltägliche Praktiken** und Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung mit Hilfe von computationellen Methoden und Werkzeugen.
+
+
+::::
+:::
+
+::: columns
+
+### braucht
+
+:::: column
+
+Verständnis der theoretischen und epistemologischen Grundlagen und Implikationen der Datafizierung und Diskussion über deren Folgen
+
+::::
+:::: column
+
+Orientierung, Guidelines und Unterstützung
 
 ::::
 :::
@@ -326,23 +432,55 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
     + Do politics have artefacts? [@DunbarHester2014LowPower]
 - Kritik an Maker culture als omnipotenter maskuliner Raum:
     - >knowledge of circuitry is often conflated with (superheroic) command over people, situations, and things. In present-day “maker” cultures, consider the ubiquity of remarks such as “getting under the hood” or “knowing the nuts and bolts,” which tend to fuse logic with mastery, control with masculinity, engineering with rationality, and programming with revealing. [@Sayers2017Introduction, 3]
+- Scheitern als wichtiges Moment
 
 :::
 
-## Datenkultur und Werkzeugkompetenz
+## Unser Scholarly Makerspace
+
+
+DFG-Projekt "Future e-Research Support in the Humanities II" an der UB der Humboldt-Universität zum Aufbau eines **prototypischen *Scholarly Makerspace*** zur Förderung **digitaler** und **computationaler Werkzeugkompetenz** (*tool literacy*) in den Geistes- und Kulturwissenschaften (2022--25)
+
+::: columns
+:::: narrow
+
+![Kein 3D Drucker](https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg)
+
+::::
+:::: wide
+
+>Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden 
+
+<cite>[@Spath2019Makerspaces, 41]</cite>
+
+::::
+:::
 
 ::: notes
 
-- maker culture als ein Teil der Datenkultur
-    - als praktische Kritik der Digitalität
-- Das Ziel des *Scholarly Makerspaces* ist die Erarbeitung von *tool literacy*, die in zwei Dimensionen gedacht wird: 
-    1. Zum einen geht es um das ganz konkrete Erlernen von Werkzeugen und computergestützten Verfahren: Wie kann ich Korpus von Digitalisaten mit Methoden des *distant reading* analysieren? Was ist eine Netzwerkanalyse? Was sind die Möglichkeiten der Datenvisualisierung? Wie kann ich die Disinformationskampagnien rechter Trollfarmen in Social Media sinnvoll analysieren?
-    2. Zum anderen wird *tool literacy* aber mit dem Fokus auf Werkzeuge und Methoden als Gegenstand der Untersuchung weiter gedacht und mit  [*Critical Code Studies*](https://criticalcodestudies.com/) [@Marino2020CriticalCodeStudies] und den *Science and Technology Studies* in Beziehung gesetzt: von der Reflexion über die hermeneutischen und epistemologischen Folgen bestimmter Werkzeuge und Zugänge zu digitalen Daten bis zu den ethischen und ökologischen Folgen im Bereich der künstlichen Intelligenz bzw. des maschinellen Lernens, wie z.B. dem massiven [Einsatz endlicher natürlicher Resourcen](https://dhc-barnard.github.io/dhclimate/) und die verschiedenen Biases ihrer Schöpfer\*innen perpetuierende Algorithmen und Modelle.
+- Ergebnisse
+    - Gescheitert: das Experiment wird nicht fortgesetzt und heisst seit längerem Kompetenzwerkstatt DH
+    - Gelernt: Gemeinschaftlich! Es kann nur um die Menschen gehen!
+    - Der duale Ansatz unseres Verständnisses davon wie der Kulturwandel in den Geisteswissenschaften gestaltet werden kann/sollte ist hier entscheident entwickelt worden.
+
+- 2 Dimensionen von *tool literacy*
+    1. das ganz konkrete Erlernen von Werkzeugen und computergestützten Verfahren: Wie kann ich Korpus von Digitalisaten mit Methoden des *distant reading* analysieren? Was ist eine Netzwerkanalyse? Was sind die Möglichkeiten der Datenvisualisierung? Wie kann ich die Disinformationskampagnien rechter Trollfarmen in Social Media sinnvoll analysieren?
+    2. Zum anderen wird *tool literacy* aber mit dem Fokus auf Werkzeuge und Methoden als Gegenstand der Untersuchung weiter gedacht und mit  [*Critical Code Studies*](https://criticalcodestudies.com/) [@Marino2020CriticalCodeStudies] und den *Science and Technology Studies* in Beziehung gesetzt: von der Reflexion über die hermeneutischen und epistemologischen Folgen bestimmter Werkzeuge und Zugänge zu digitalen Daten bis zu den ethischen und ökologischen Folgen im Bereich der künstlichen Intelligenz bzw. des maschinellen Lernens
+- >Kontext entscheidend. Als **wichtige Schnittstelle zwischen formellem und informellem Lernen** verfolgen Makerspaces an Bildungseinrichtungen sehr unterschiedliche Ansätze, die von offenen interdisziplinären Werkstätten über mobile Fab Labs bis hin zu großflächigen 3D-Technologie-Laboren reichen. [@Heinzeletal2020Einleitung, 1]
+- >Die Ermöglichung des Zugangs für alle, stellt so einen zentralen Faktor für eine offene und demokratische Gesellschaft dar. [@Heinzeletal2020Einleitung, 2]
 
 :::
 
 # Do it yourself, but not alone!
 ## Gemeinschaftlich und kollaborativ
+
+::: columns
+:::: narrow
+
+!["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences}
+
+::::
+:::: wide
 
 >I also remind DH is an imposter syndrome house of mirrors. You look around and see experts in GIS, TEI, dataviz, etc.; it's hard to remember that people tend to be good at *one* of those things when the collective appears to be good at *all* of them. **We all suck at most of DH**.
 
@@ -352,17 +490,46 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 
 <cite>[@Graham2023FindMyselfCharge]</cite>
 
+::::
+:::
+
 ::: notes
 
 - daraus folgt, dass es neue Rollen und neue Anforderungen gibt
 
 :::
 
+## Interdisziplinäres Zentrum für Digitalität und digitale Methoden am Campus Mitte
+
+![Mitglieder des [IZ Digitalität und digitale Methoden](https://izd2m.hu-berlin.de/)](../../assets/dh/website_iz-digitalität.png){#fig:website-iz}
+
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://izd2m.hu-berlin.de/){.c_logo .c_qr .c_right}
+
+::: notes
+
+- neue Initiative, seit 2024
+- soll die vielen Menschen, die bereits zu Themen der Digitalität arbeiten zusammenbringen
+- ihnen Raum für Austausch bieten
+- ihre Arbeit sichtbar machen nach außen und nach innen
+
+:::
+
 ## Generous thinking: zuhören und lernen
+
+::: columns
+:::: wide
 
 >Generous Thinking [begins] by proposing that rooting the humanities in generosity, and in particular in the practices of thinking *with* rather than reflexively *against* both the people and the materials with which we work, might invite more productive relationships and conversations not just among scholars but between scholars and the surrounding community.
 
 <cite>[@Fitzpatrick2016GenerousThinking]</cite>
+
+::::
+:::: narrow
+
+![](../../assets/dh/cover_Fitzpatrick2019.png){#fig:book-fitzpatrick2019}
+
+::::
+:::
 
 ::: notes
 
@@ -382,12 +549,12 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 ::: columns
 :::: column
 
-![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/cover_Kemman2021.jpeg){#fig:book-kemman2021}
+![](../../assets/dh/cover_Kemman2021.jpeg){#fig:book-kemman2021}
 
 ::::
 :::: column
 
-![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/cover_Cremer2024.png){#fig:book-cremer2024}
+![](../../assets/dh/cover_Cremer2024.png){#fig:book-cremer2024}
 
 ::::
 :::
@@ -413,12 +580,12 @@ Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als 
 ::: columns
 :::: column
 
-![](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_CRediT.png){#fig:credit}
+![](../../assets/dh/website_CRediT.png){#fig:credit}
 
 ::::
 :::: column
 
-Anteile an jeglichem Output transparent klassifizieren
+[Anteile an jeglichem Output transparent klassifizieren]{.keyphrase}
 
 - Seit 2012: [Contributor Role Taxonomy (CRediT)](https://credit.niso.org)
     - ANSI/NISO Standard (seit 2022)
@@ -427,7 +594,7 @@ Anteile an jeglichem Output transparent klassifizieren
 - Die [relators](http://id.loc.gov/vocabulary/relators) Taxonomie der LoC
 - Und natürlich gibt es Zeitschriften zum Thema, z.B. [Accountability in Research](https://www.tandfonline.com/journals/gacr20)
 
-Unsere Stakeholder und ihre Bedürfnisse kennen
+[Unsere Stakeholder und ihre Bedürfnisse kennen]{.keyphrase}
 
 - z.B. über die Entwicklung von Personae
 
@@ -464,7 +631,7 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 ::: columns
 :::: narrow
 
-![Webseite der [GO::DH working group zu minimal computing](https://go-dh.github.io/mincomp)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_mincomp.png){#fig:mincomp-website}
+![Webseite der [GO::DH working group zu minimal computing](https://go-dh.github.io/mincomp)](../../assets/dh/website_mincomp.png){#fig:mincomp-website}
 
 ::::
 :::: wide
@@ -526,6 +693,7 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 - FAIR: **F**indability, **A**ccessability, **I**nteroperability, **R**euse
 - [CARE](https://www.gida-global.org/care): **C**ollective benefit, **A**uthority to control, **R**esponsibility, **E**thics 
     + developped in the context of indigenous communities
+- commons: Allmende 
 
 :::
 
@@ -615,13 +783,18 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 ::: columns
 :::: narrow
 
-!["[Endings Principles for Digital Longevity](https://endings.uvic.ca/principles.html)"](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_project-endings-principles.png){#fig:endings-principles}
+!["[Endings Principles for Digital Longevity](https://endings.uvic.ca/principles.html)"](../../assets/dh/website_project-endings-principles.png){#fig:endings-principles}
+
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://endings.uvic.ca/principles.html){.c_logo .c_qr .c_right}
 
 
 ::::
 :::: wide
 
-- kollaboratives Projekt von Faculty, Bibliothekar_innen, Entwickler_innen an der University of Victoria, Kanada, zur Untersuchung 
+Kollaboratives Projekt von Faculty, Bibliothekar_innen, Entwickler_innen an der University of Victoria, Kanada
+
+- Problem: 
+    - Mit enormen Funding haben die DH vor allem viele tote Projekte hervor gebracht, von denen nur noch URLs in Publikationen existieren
 - Hauptziele
     - Belange von Forscher_innen und Archivar_innen bei der langfristigen Kuratierung und Erhaltung von DH-Projekten in Einklang zu bringen
     - Entwicklung praktischer Werkzeuge.
@@ -632,6 +805,9 @@ Unsere Stakeholder und ihre Bedürfnisse kennen
 
 ::: notes
 
+- 2016: multi-year grant
+    - survey and interviews
+    - mehr als die Hälfte aller Interviewten hatte keinerlei Plan für die langfristige Erhaltung ihrer Projekte
 - bei den gezeigten Prinzipien wird ganz klar ein *minimal computing* Ansatz deutlich
 - tools to assist with the archiving of both data and interactive elements of digital projects.
 
@@ -645,7 +821,9 @@ it all started with a manifesto <!-- "Digital Humanities and the Climate Crisis"
 ::: columns
 :::: column
 
-![Webseite des [DHCC Toolkit](https://sas-dhrh.github.io/dhcc-toolkit/)](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/dh/website_dhcc.png){#fig:website-dhcc}
+![Webseite des [DHCC Toolkit](https://sas-dhrh.github.io/dhcc-toolkit/)](../../assets/dh/website_dhcc.png){#fig:website-dhcc}
+
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://sas-dhrh.github.io/dhcc-toolkit/){.c_logo .c_qr .c_right}
 
 ::::
 :::: column
@@ -666,63 +844,274 @@ it all started with a manifesto <!-- "Digital Humanities and the Climate Crisis"
 
 :::
 
-# scholarly makerspace
-## Makerspace
+# Tool Registry und Survey als Beispiel
+## Tool Registries sind Legion und ein eigenes Genre der DH
 
->Der Grundgedanke von Makerspaces ist das Teilen von **Räumen**, **Ressourcen** und **Wissen** innerhalb einer **Gemeinschaft**, welche Einzelpersonen sonst nicht zur Verfügung stünden 
+::: columns
+:::: column
 
-<cite>[@Spath2019Makerspaces, 41]</cite>
+- DiRT -> Bamboo -> [TAPoR (3.0)][tapor]
+- [Social Sciences and Humanities (SSH) Open Marketplace][sshmarketplace]
+    + DARIAH, CLARIN, CESSDA
+- NFDIs
+    + [fortext](https://fortext.net/tools)
+    + [NFDI4culture](https://nfdi4culture.de/resources/registry.html)
+    + Basisdienste ...
+- [Research Software Directory](https://www.esciencecenter.nl/rsd/), Netherlands eScience Center
+
+::::
+:::: column
+
+![Einige Beispiele](../../assets/dh/tool-registry/registries_websites.png){#fig:websites}
+
+::::
+:::
 
 ::: notes
 
-- Damit greifen makerspaces dem minimal computing vor
-- Es gibt das "Maker Movement Manifesto" von Hatch (2013), der das Wort "Makerspace" geprägt hat
-    + >Maker Movement Manifest von HATCH (2013), das die Prinzipien folgendermaßen beschreibt, zitiert werden dabei nur die Überschriften: „make, share, give, learn, tool up, play, participate, support“ und „change“. Betont werden also darin das konkrete Tun, das Teilen, der offene Austausch und das Lernen, der spielerische Zugang, Unterstützung und der Wille, etwas und sich selbst zu ändern als Prinzipien für Maker. [@SchonEbner2017Makerspaces]
-- >Die physische und inhaltliche Ausrichtung des Makerspace ist in diesem Kontext entscheidend. Als **wichtige Schnittstelle zwischen formellem und informellem Lernen** verfolgen Makerspaces an Bildungseinrichtungen sehr unterschiedliche Ansätze, die von offenen interdisziplinären Werkstätten über mobile Fab Labs bis hin zu großflächigen 3D-Technologie-Laboren reichen. [@Heinzeletal2020Einleitung, 1]
-- >Die Ermöglichung des Zugangs für alle, stellt so einen zentralen Faktor für eine offene und demokratische Gesellschaft dar. [@Heinzeletal2020Einleitung, 2]
-
+- Abkürzungen
+    + Bamboo DiRT, 2011, 2012--
+    + CESSDA: Consortium of European Social Science Data Archives
+    + CLARIN: Common Language Resources and Technology Infrastructure
+    + DARIAH: Digital Research Infrastructure for the Arts and Humanities, 2011
+    + DiRT: Digital Research Tools, 2008--
+    + TaDiRAH: developed as collaboration between DiRT and DARIAH-DE, 2013
+    + TAPoR: Text Analysis Portal for Research, maintained by Geoffrey Roper
 :::
 
+## Hintergrund
 
-## Gegenstand
+::: columns
+:::: column
 
-- digitale und computationelle Aspekte zeitgenössischer Geistes- und Kulturwissenschaften
-- durch Forschungsfragen getrieben
-- die Auswirkungen auf den Erkenntnisprozess untersuchend
-- die gesellschaftlichen Auswirkungen untersuchend
+!["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences-2}
+
+::::
+:::: column
+
+- Toolverzeichnisse bedienen einen evidenten Bedarf
+* Informationen zu Werkzeugen: 
+    - Was gibt es?
+    - Wofür kann es im DH Kontext eingesetzt werden?
+* Informationen zum Gebrauch von Werkzeugen: 
+    - Wie kann ich das Lernen?
+    - Wer hat es wie und mit welchem Ergebnis bereits angewendet?
+
+::::
+:::
 
 ::: notes
 
-- durch Forschungsfragen getrieben:
-    + Wie lassen sich genuin digitale, kulturelle Artefakte für die Zeitgeschichte des 21. Jahrhunderts einsetzen
-    + Wie lassen sich (sehr) große Corpora mit *distant reading* statistisch valide erschließen?
-    + Wie lassen sich Soziale Medien für die Untersuchung gesellschaftlichen Wandels in repressiven Systemen nutzen?
-- die Auswirkungen auf den Erkenntnisprozess untersuchend:
-    + Welche Auswirkungen haben OCR Algorithmen und Normalisierung auf die Qualität meines Korpus?
-    + Was ist die Auswirkung von abstrahierenden Operationalisierungen für die quantitative Auswertung?
-- die gesellschaftlichen Auswirkungen untersuchend?
-    + Wie hoch ist der Verbrauch natürlicher Ressourcen für das Training einer KI auf die Klassifizierung von Abbildungen in mittelalterlichen Handschriften?
-    + Was ist mit dem Einsatz von Sklaverei-ähnlichen Zuständen für die Herstellung und Erhalt der notwendigen technischen Infrastrukturen?
-    + Welche Folge hat eine auf Beiträge in den Sozialmedien trainierte KI für die Hausratversicherungen in sozialen Brennpunkten?
+- klare Antwort auf die Frage: Was brauchen wir?
+- hier können wir kurz über den Kontext unserer beiden Projekte reden
+- FuReSH bzw. Kompetenzwerkstatt DH
+- NFDI4Memory Methodenlabor
 
 :::
 
+## Schwächen
+
+<!-- Problem: "DiRT trap" [@Dombrowski2021DirectoryParadox] -->
+
+>directories require ongoing upkeep, and it is unrealistic for an individual -- particularly in an alternative academic career track -- to do that work indefinitely. 
+
+<cite>@Dombrowski2021DirectoryParadox</cite>
+
+::: columns
+:::: column
+
+- Projektfinanzierung
+- Datensilos 
+    + Fokus auf Präsentationsschicht
+    + Proprietäre bzw. custom Infrastrukturen
+    + schlecht dokumentierte oder gar keine Schnittstellen (API's)
+    + Kein Normdatensätze
+- Kuratierung
+    + (unbezahlte) Expert_innen und Gremien
+    + praktisch kein community engagement
+    + unmöglich Informationen aktuel zu halten
+
+::::
+:::: column
+
+![TAPoR's about page](../../assets/dh/tool-registry/tapor_about.png){#fig:tapor-about}
+
+![TAPoR asking you to send the late Stéfan Sinclair an email](../../assets/dh/tool-registry/tapor_contribute.png){#fig:tapor-contribute}
+
+::::
+:::
+
+
+
+::: notes
+
+- Sehr eingeschränkter Einsatz von APIs
+    + Bsp. TAPoR hat eine nicht-dokumentierte API, auf die wir nur durch eine Analyese des  [ToolXtractor](https://github.com/lehkost/ToolXtractor)  [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools] gestoßen sind.
+    + Bsp. SSH Open Marketplace hat eine dokumentierte API, aber es lassen sich nicht alle Werkzeuge abfragen, die mit einem bestimmten TaDiRAH-Konzept kategorisiert sind
+- Folge: Momentaufnahme
+    + IDs können nicht von externen für LOD benutzt werden 
+    + Es können keine neuen Werkzeuge hinzugefügt werden
+    + Es gibt keine dauerhafte Maintenance (Finanzierung)
+        * Bsp.: TAPoR listet immer noch Stéfan Sinclairs Email für die Einreichung neuer Werkzeuge, obwohl Stéfan im August 2020 verstorben ist.
+        * Die API des SSH Open Marketplace liefert `informationContributor` und `lastInfoUpdate`
+:::
+
+## Das Ganze mit DIY und KISS
+
+Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten können
+
+::: columns
+:::: column
+
+### Was brauchen *wir*?
+
+- Toolverzeichnis (s.o.), als Abbild 
+    + der sich wandelden *Tool-Landschaft* bzw. *Tool-Bandbreite*
+    + des *Toolgebrauchs* in den Digital Humanities, Digital History ...
+- Tools sollen
+    + beschrieben werden
+    + klassifiziert werden
+    + referenzierbar sein
+    + auffindbar sein
+- Einbettung in bestehende Infrastruktur
+    + Linked Open Data
+    + hohe Sichtbarkeit
+    + Community Management
+
+::::
+:::: column
+
+### Wer sind *wir*?
+
++ 4 Personen (2 Humanists, 2 RSE)
++ Projektfinanziert
++ Gemeinschaft von Praktitioners
+
+### Was haben *wir*?
+
++ Know-how
++ Kontakte
++ Anschubfinanzierung
++ anteilige Arbeitszeit
+
+::::
+:::
+
+::: notes
+
+- Funktionen von Toolverzeichnissen
+    * Informationen zu Werkzeugen: 
+        - Was gibt es?
+        - Wofür kann es im DH Kontext eingesetzt werden?
+    * Informationen zum Gebrauch von Werkzeugen: 
+        - Wie kann ich das Lernen?
+        - Wer hat es wie und mit welchem Ergebnis bereits angewendet?
+
+:::
+
+## Folglich haben wir eine weitere Registry aufgesetzt
+
+::: columns
+:::: narrow
+
+![Erste Seite der Google Suche nach "Tool Registry digital humanities"](../../assets/dh/tool-registry/search_google.png){#fig:search-google}
+
+::::
+:::: wide
+
+[Sustainable und FAI]{.keyphrase} ...
+
+- Setzen alles auf [Wikidata][wikidata] auf
+    + (Linked) Open Data, CC0, quelloffene Software
+    + Community und User Management
+    + Multilingualität von Interface und Daten
+    + hohe Sichtbarkeit: Suchmaschinen, Integration in Normdateien ([VIAF](https://viaf.org/))
+- minimales, domänenspezifisch erweiterbares Datenmodell
+
+... [R]{.keyphrase}
+
+- (Nach)-nutzung bestehender Datensätze
+    + Mapping nach Wikidata
+        - Registries: [TAPoR][tapor], [SSH Open Marketplace][sshmarketplace]
+        - Taxonomien: [TaDiRAH][tadirah]
+        - Literatur: DHQ, DHd Konferenzen ...
+- Versionierte Publikation des Graphen als RDF
+    - GitLab und Zenodo
+
+::::
+:::
+
+::: notes
+
+- nachhaltige, offene Infrastruktur seit 2012
+- etablierte Governancestruktur für nutzergenerierte und -kuratierte Inhalte mit einer aktiven Community.
+- CC0 lizensierte Daten, quelloffener Softwarestack.
+- Linked Open Data (LOD) über SPARQL, APIs, sowie das etablierte Webinterface out- of- the- box.
+- Hohe Sichtbarkeit in Suchmaschinen und Forschungszusammenhängen
+- Mehrsprachigkeit von Interfaces und Datensätzen
+- wichtiger Baustein der digital commons mit zunehmender Nutzung in Forschungs- und Kulturerbeinstitutionen
+
+:::
 
 # Conclusion
 ## Summary
 
-- Die minimale Lösung 
+::: columns-3
+:::: column
+
+### DIY
+
+- Wir müssen uns selbst ermächtigen und Blackboxes öffnen!
+- Wer, wenn nicht wir, baut die Dinge, die wir benötigen?
+
+::::
+:::: column
+
+### but not alone
+
+<!-- - Die Aufgabe ist zu groß und zu komplex um sie allein bewältigen zu können. -->
+- Niemand kann alleine Wissen schaffen
+- Zusammenarbeit kann gelernt werden
+- Befähigung von Menschen als nachhaltigste Investition
+
+::::
+:::: column
+
+### and KISS
+
+- Verantwortungsvoller Umgang mit menschlichen und natürlichen Ressourcen
+- Ermöglicht Transparenz und Weiternutzung
+- Ermächtigt alle Beteiligten
+
+::::
+:::
+
+
+
+<!-- - Die minimale Lösung 
     - ist unter den Rahmenbedingungen zeitgenössischen Wissenschaft im Kontext von Polykrisen, **die einzig machbare**.
     - schont natürliche und menschliche Ressourcen.
     - trägt dazu bei, dass Forschung im Einklang mit guter Wissenschaftlicher Praxis steht.
     - **ermächtigt** alle Beteiligten am Forschungsprozess.
-    - ermöglicht die Weiternutzung und Archivierung ihrer Ergebnisse.
+    - ermöglicht die Weiternutzung und Archivierung ihrer Ergebnisse. -->
 
-### minimal computing principles
+<!-- ### minimal computing principles
 
 - build what **we need** with what **we have** at hand
     - *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
 - as **few** as possible, **open** and **established** formats and tools
 - running on **our** hardware
 - with **our** skills and knowledge
-- **free-to-use** platforms without lock-in of data
+- **free-to-use** platforms without lock-in of data -->
+
+## Literatur
+
+[huberlin]: https://hu-berlin.de/
+[scholia]: https://scholia.toolforge.org/
+[sshmarketplace]: https://marketplace.sshopencloud.eu/
+[tadirah]: https://vocabs.dariah.eu/tadirah/
+[tapor]: https://tapor.ca/
+[viaf]: https://viaf.org/
+[wikidata]: https://wikidata.org/
+[wikiproject]: https://www.wikidata.org/wiki/Wikidata:WikiProject_DH_Tool_Registry
+[4memory]: https://4memory.de/
