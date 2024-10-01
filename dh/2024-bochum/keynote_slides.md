@@ -15,7 +15,8 @@ url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 bibliography: 
     - references.bib #csl.json
 background-image: ""
-nocite:
+nocite: |
+    @Comeau2023ProjectEndings
 ---
 
 # Ein neues Epistem 
