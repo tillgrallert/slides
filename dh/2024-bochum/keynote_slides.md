@@ -13,7 +13,7 @@ lang: de
 url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 bibliography: 
     - references.bib #csl.json
-license: https://creativecommons.org/licenses/by/4.0/
+license: https://creativecommons.org/licenses/by-sa/4.0/
 slide-level: 2
 revealjs-url: ../../assets/revealjs
 nocite: |

@@ -1,8 +1,8 @@
 ---
-title: "Looking at the iceberg from below the waterline"
-subtitle: "Stylometric authorship attribution for anonymous articles in Arabic periodicals from the early twentieth century"
-panel: ""
-event: "DAVO 2024"
+title: "How did they do it?"
+subtitle: "Stylometric authorship attribution of anonymous texts in late Ottoman Arabic periodicals"
+panel: "Stylometry and the Digital Humanities"
+event: "DAVO 2024, Göttingen"
 author: Till Grallert
 institute: 
     - "Humboldt-Universität zu Berlin, Institut für Geschichtswissenschaften"
@@ -11,14 +11,12 @@ email: till.grallert@hu-berlin.de
 date: 2024-09-27
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en-GB
+license: https://creativecommons.org/licenses/by-sa/4.0/
 url: https://tillgrallert.github.io/slides/dh/2024-davo/
-bibliography: 
-    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /Users/Shared/BachUni/research-projects/Sihafa/assets/bibliography/sihafa.csl.json
-    - /Users/Shared/BachUni/applications/applications.csl.json
+bibliography: references.bib
 #background-image: ../../assets/OpenArabicPE/front-pages_strip.png
 nocite: |
-    @Grallert2022DHQ; @Grallert+2020; @Romanov+2021; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
+    @Grallert2022DHQ; @Grallert2021GG; @Romanov2021CorpusArabic; @RomanovGrallert2022Stylometry; @Grallert2023LookingIceberg
 ---
 
 ## outline

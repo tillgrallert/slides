@@ -14,7 +14,7 @@ license: CC BY 4.0
 status: published
 lang: de
 bibliography: references.bib
-license: https://creativecommons.org/licenses/by/4.0/
+license: https://creativecommons.org/licenses/by-sa/4.0/
 markdown: pandoc
 revealjs-url: https://furesh.github.io/slides/revealjs
 tags:
