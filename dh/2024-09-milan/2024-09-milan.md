@@ -17,7 +17,7 @@ bibliography:
 link-citations: false
 nocite: |
     @Hiltmann2022Methodenwandel; @RisamGil2022Introduction
-licence: https://creativecommons.org/licenses/by/4.0/
+license: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 background-image: ../../assets/datafication/datafication_digital-history.png
 revealjs-url: ../../assets/revealjs

@@ -1,8 +1,7 @@
 ---
 title: "Do it yourself (but not alone) and KISS!"
 subtitle: ""
-panel: ""
-event: "Bochum"
+event: "RUB, Digital Humanities Day #6"
 author: Till Grallert
 institute: 
     - "Humboldt-Universität zu Berlin, Institut für Geschichtswissenschaften"
@@ -14,7 +13,9 @@ lang: de
 url: https://tillgrallert.github.io/slides/dh/2024-bochum/
 bibliography: 
     - references.bib #csl.json
-background-image: ""
+license: https://creativecommons.org/licenses/by/4.0/
+slide-level: 2
+revealjs-url: ../../assets/revealjs
 nocite: |
     @Comeau2023ProjectEndings
 ---
@@ -1104,6 +1105,9 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 - running on **our** hardware
 - with **our** skills and knowledge
 - **free-to-use** platforms without lock-in of data -->
+
+
+# Vielen Dank!
 
 ## Literatur
 
