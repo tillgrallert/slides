@@ -13,10 +13,8 @@ url: https://tillgrallert.github.io/slides/dh/2023-11-27
 license: CC BY 4.0
 status: published
 lang: de
-bibliography:
-    - /Users/Shared/HUBox/FuReSH/assets/bibliography/FuReSH.csl.json
-    - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
-licence: https://creativecommons.org/licenses/by/4.0/
+bibliography: references.bib
+license: https://creativecommons.org/licenses/by/4.0/
 markdown: pandoc
 revealjs-url: https://furesh.github.io/slides/revealjs
 tags:

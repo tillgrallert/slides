@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2022-12-02">
-                <title>Plain-text Workflows für das akademische Schreiben</title>
+                      <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+        <title>Plain-text Workflows für das akademische Schreiben</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -17,12 +17,22 @@
       }
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
       pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span { line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
       .sourceCode { overflow: visible; }
       code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +43,7 @@
       }
       @media print {
       pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
       }
       pre.numberSource code
         { counter-reset: source-line 0; }
@@ -59,7 +69,7 @@
       code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
       code span.at { color: #7d9029; } /* Attribute */
       code span.bn { color: #40a070; } /* BaseN */
-      code span.bu { } /* BuiltIn */
+      code span.bu { color: #008000; } /* BuiltIn */
       code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
       code span.ch { color: #4070a0; } /* Char */
       code span.cn { color: #880000; } /* Constant */
@@ -72,7 +82,7 @@
       code span.ex { } /* Extension */
       code span.fl { color: #40a070; } /* Float */
       code span.fu { color: #06287e; } /* Function */
-      code span.im { } /* Import */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
       code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
       code span.kw { color: #007020; font-weight: bold; } /* Keyword */
       code span.op { color: #666666; } /* Operator */
@@ -84,7 +94,6 @@
       code span.va { color: #19177c; } /* Variable */
       code span.vs { color: #4070a0; } /* VerbatimString */
       code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     </style>
         <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
                     <style type="text/css">
@@ -254,8 +263,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -263,9 +272,14 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
+                    }
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
                     }
                     div.slide {
                         top: 10% ;
@@ -309,7 +323,8 @@
                     h3,
                     h4,
                     h5,
-                    th {
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -337,6 +352,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -587,6 +605,14 @@
                         padding: 0;
                         /*height: inherit;*/
                     }
+                    figure {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
+                    }
                     div.figure p.caption,
                     figcaption {
                         position: relative;
@@ -619,12 +645,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
-                        max-width: 6em;
-                        max-height: 4em;
+                    /*    max-width: 6em !important;*/
+                        max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -635,7 +665,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -651,17 +681,27 @@
                     /*****************
                     columns
                     ******************/
-                    div.columns {
+                    div.columns,
+                    div.columns-2,
+                    div.columns-3 {
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
+                    }
+                    div.columns-3 {
+                        clear: both;
                     }
                     div.column {
-                        display: inline-block;
+                    /*    display: inline-block;*/
                         flex: none;
+                        display: block;
+                        float: left;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
                     .columns-3 > .column {
-                        width: 32%;
+                        width: 31%;
                     }
                     .columns-3 > .narrow {
                         width: 23%;
@@ -675,8 +715,9 @@
                         float: left;
                     }
                     .columns-2 > .column,
-                    .columns > .column {
-                        width: 50%;
+                    .columns > .column,
+                    .c_width-50  {
+                        width: 48%;
                     }
                     .c_width-60,
                     .column-60,
@@ -686,14 +727,13 @@
                         float: left;
                     }
                     .c_width-50 {
-                        width: 50%;
                         position: relative;
                         float: left;
                     }
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 33%;
+                        width: 31%;
                         position: relative;
                         float: left;
                     }
@@ -954,6 +994,12 @@
                         /*box-shadow: 2px 2px 5px #000;*/
                         border: #95ABD0 solid 1px;
                     }
+                    pre.mermaid {
+                        border: none;
+                        background-color: white;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
                     pre > code.sourceCode {
                         white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
                     }
@@ -1016,6 +1062,7 @@
                     ul,
                     ol {
                         display: block;
+                        clear: both;
                         font-style: normal;
                         margin-top: 0.1em;
                         margin-bottom: 0.5em;
@@ -1154,7 +1201,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1195,8 +1243,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1292,13 +1341,34 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
                     }
                     /*
                      hide images for work around for save as bug
@@ -1397,11 +1467,12 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- FuReSH header -->
+        <!-- HU Berlin header -->
     <header>
-        <!-- <img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"> -->
-        <img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png">
-    </header>
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/plain-text/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/plain-text/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+          </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1416,7 +1487,7 @@ Schreiben</h1>
                           Till Grallert            </p>
                                       </div>
         <div class="column c_right c_right-align">
-                                <p class="date">2022-12-02</p>
+                                <p class="current-date"></p>
                               <p class="url"><a href="https://tillgrallert.github.io/slides/dh/plain-text/">https://tillgrallert.github.io/slides/dh/plain-text/</a></p>
                   </div>
       </div>
@@ -1452,17 +1523,17 @@ Schreiben</h1>
         </section>
         <section id="das-problem-1" class="slide level2">
         <h2>Das Problem</h2>
-        <table>
+        <table style="width:99%;">
         <colgroup>
-        <col style="width: 30%" />
+        <col style="width: 29%" />
         <col style="width: 37%" />
         <col style="width: 32%" />
         </colgroup>
         <thead>
         <tr class="header">
-        <th>Prozess</th>
-        <th>“Früher”</th>
-        <th>Heute</th>
+        <th><pre><code>   Prozess</code></pre></th>
+        <th><pre><code>      &quot;Früher&quot;</code></pre></th>
+        <th><pre><code>     Heute</code></pre></th>
         </tr>
         </thead>
         <tbody>
@@ -1561,20 +1632,20 @@ Schreiben</h1>
         <h2>Pandox to the rescue</h2>
         <div class="columns">
         <div class="column">
-        <div class="sourceCode" id="cb1"><pre
-        class="sourceCode md"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;Ankündigung Scholarly Makerspace&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> &quot;Status: Draft&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Till Grallert</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2022-03-25</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> de</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">ORCID:</span><span class="co"> orcid.org/0000-0002-5739-8094</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../assets/bibliography/FuReSH.csl.json</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts &quot;Future e-Research Support in the Humanities II&quot; in Zusammenarbeit mit den Lehrstühlen für <span class="co">[</span><span class="ot">Digital History</span><span class="co">](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history)</span> am Institut für Geschichte und für <span class="co">[</span><span class="ot">Information Processing and Analytics</span><span class="co">](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa)</span> am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende &quot;Machen&quot; mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="al">![Eine geschlossene &quot;Blackbox&quot;](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png)</span>{#fig:box-closed}</span></code></pre></div>
+        <div class="sourceCode" id="cb4"><pre
+        class="sourceCode md"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;Ankündigung Scholarly Makerspace&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> &quot;Status: Draft&quot;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Till Grallert</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2022-03-25</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> de</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="an">ORCID:</span><span class="co"> orcid.org/0000-0002-5739-8094</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../assets/bibliography/FuReSH.csl.json</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts &quot;Future e-Research Support in the Humanities II&quot; in Zusammenarbeit mit den Lehrstühlen für <span class="co">[</span><span class="ot">Digital History</span><span class="co">](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history)</span> am Institut für Geschichte und für <span class="co">[</span><span class="ot">Information Processing and Analytics</span><span class="co">](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa)</span> am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende &quot;Machen&quot; mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="al">![Eine geschlossene &quot;Blackbox&quot;](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png)</span>{#fig:box-closed}</span></code></pre></div>
         </div><div class="column">
         <figure>
         <img
@@ -1596,35 +1667,35 @@ Schreiben</h1>
         <h2>Pandox to the rescue</h2>
         <p>Diese Folien sind selber mit Pandoc aus Markdown generiert
         worden. Die Quelle der letzten Folie sieht so aus:</p>
-        <div class="sourceCode" id="cb2"><pre
-        class="sourceCode md"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: columns</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>:::: column</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```md</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>title: &quot;Ankündigung Scholarly Makerspace&quot;</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>subtitle: &quot;Status: Draft&quot;</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>author: Till Grallert</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>date: 2022-03-25</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>lang: de</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>ORCID: orcid.org/0000-0002-5739-8094</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>bibliography: ../assets/bibliography/FuReSH.csl.json</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts &quot;Future e-Research Support in the Humanities II&quot; in Zusammenarbeit mit den Lehrstühlen für <span class="co">[</span><span class="ot">Digital History</span><span class="co">](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history)</span> am Institut für Geschichte und für <span class="co">[</span><span class="ot">Information Processing and Analytics</span><span class="co">](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa)</span> am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende &quot;Machen&quot; mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="al">![Eine geschlossene &quot;Blackbox&quot;](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png)</span>{#fig:box-closed}</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>::::</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>:::: column</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="al">![als `DOCX`](https://furesh.github.io/slides/assets/images/pandoc_result-docx.png)</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="al">![als `PDF`](https://furesh.github.io/slides/assets/images/pandoc_result-pdf.png)</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>::::</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div>
+        <div class="sourceCode" id="cb5"><pre
+        class="sourceCode md"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>::: columns</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>:::: column</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="in">```md</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>title: &quot;Ankündigung Scholarly Makerspace&quot;</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>subtitle: &quot;Status: Draft&quot;</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>author: Till Grallert</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>date: 2022-03-25</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>lang: de</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ORCID: orcid.org/0000-0002-5739-8094</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>bibliography: ../assets/bibliography/FuReSH.csl.json</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>Die Universitätsbibliothek der Humboldt-Universität richtet in den kommenden drei Jahren im Rahmen des DFG-geförderten Projekts &quot;Future e-Research Support in the Humanities II&quot; in Zusammenarbeit mit den Lehrstühlen für <span class="co">[</span><span class="ot">Digital History</span><span class="co">](https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history)</span> am Institut für Geschichte und für <span class="co">[</span><span class="ot">Information Processing and Analytics</span><span class="co">](https://www.ibi.hu-berlin.de/de/forschung/info_processing_analytics/ipa)</span> am Institut für Bibliotheks- und Informationswissenschaften einen **prototypischen *Scholarly Makerspace*** ein. Inspiriert von der *maker culture* und der  Idee der Makerspaces, die in einigen Bibliotheken bereits  etabliert sind [@Spath2019Makerspaces], stellen wir das experimentierende &quot;Machen&quot; mit Computern und digitalen Artefakten in das Zentrum hermeneutischer und epistemologischer Zugänge [@Sayers2018MakingThings]. Der *Scholarly Makerspace* wir dafür die Infrastruktur aus Raum, computergestützten Werkzeugen und Erfahrungen in den Digital Humanities zur Verfügung stellen, um gemeinsam mit Forschenden in allen Phasen ihrer Karrieren die **Herausforderungen der Digitalität für die Geistes- und Kulturwissenschaften experimentell anzugehen**.</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="al">![Eine geschlossene &quot;Blackbox&quot;](https://furesh.github.io/slides/assets/images/blackbox/blackbox_makerspace-closed.png)</span>{#fig:box-closed}</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>:::: column</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="al">![als `DOCX`](https://furesh.github.io/slides/assets/images/pandoc_result-docx.png)</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="al">![als `PDF`](https://furesh.github.io/slides/assets/images/pandoc_result-pdf.png)</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div>
         </section></section>
         <section>
         <section id="voraussetzungen" class="title-slide slide level1">
@@ -1674,8 +1745,8 @@ Schreiben</h1>
         </div>
         </section></section>
         <section>
-        <section id="glossar" class="title-slide slide level1">
-        <h1>Glossar</h1>
+        <section id="komponenten" class="title-slide slide level1">
+        <h1>Komponenten</h1>
 
         </section>
         <section id="markdown-md" class="slide level2">
@@ -1697,12 +1768,12 @@ Schreiben</h1>
         <li>Aktuelle Version: Markdown 1.0.1 (2004)</li>
         </ul>
         </div><div class="narrow">
-        <div class="sourceCode" id="cb3"><pre
-        class="sourceCode md"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># [Markdown (md)](http://daringfireball.net/projects/markdown)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was: eine *leichtgewichtige Auszeichnungssprache* (plain-text **Syntax**) und text-to-`HTML` Konvertierungs-**Werkzeug**. </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Die Syntax ist durch plain-text Email inspiriert</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wann: **2004**</span></code></pre></div>
+        <div class="sourceCode" id="cb6"><pre
+        class="sourceCode md"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># [Markdown (md)](http://daringfireball.net/projects/markdown)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was: eine *leichtgewichtige Auszeichnungssprache* (plain-text **Syntax**) und text-to-`HTML` Konvertierungs-**Werkzeug**. </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Die Syntax ist durch plain-text Email inspiriert</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wann: **2004**</span></code></pre></div>
         </div>
         </div>
         <div class="columns">
@@ -1825,14 +1896,14 @@ Schreiben</h1>
         href="http://yaml.org/spec/1.2/spec.html">spec</a>)</li>
         </ul>
         </div><div class="narrow">
-        <div class="sourceCode" id="cb4"><pre
-        class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Alles nur Spielerei?&quot;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Till Grallert</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Samantha Tirtohusodo</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">date</span><span class="kw">:</span><span class="at"> 2022-11-29</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+        <div class="sourceCode" id="cb7"><pre
+        class="sourceCode yml"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Alles nur Spielerei?&quot;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Till Grallert</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Samantha Tirtohusodo</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">date</span><span class="kw">:</span><span class="at"> 2022-11-29</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
         </div>
         </div>
         </section>
@@ -1849,17 +1920,17 @@ Schreiben</h1>
         <li>Aktuelle Version: 0.99c (1988), 0.99d (2010)</li>
         </ul>
         </div><div class="narrow">
-        <div class="sourceCode" id="cb5"><pre
-        class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="va">@book</span>{<span class="ot">JannidisEtAl2017DigitalHumanities</span>,</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span> = {{Digital Humanities}},</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">editor</span> = {Jannidis, Fotis and Kohle, Hubertus and Rehbein, Malte},</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span> = {2017},</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publisher</span> = {{J.B. Metzler}},</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span> = {{Stuttgart}},</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span> = {10.1007/978-3-476-05446-3},</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">isbn</span> = {978-3-476-02622-4 978-3-476-05446-3},</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">langid</span> = {ngerman}</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+        <div class="sourceCode" id="cb8"><pre
+        class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="va">@book</span>{<span class="ot">JannidisEtAl2017DigitalHumanities</span>,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span> = {{Digital Humanities}},</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">editor</span> = {Jannidis, Fotis and Kohle, Hubertus and Rehbein, Malte},</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span> = {2017},</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publisher</span> = {{J.B. Metzler}},</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span> = {{Stuttgart}},</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span> = {10.1007/978-3-476-05446-3},</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">isbn</span> = {978-3-476-02622-4 978-3-476-05446-3},</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">langid</span> = {ngerman}</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
         </div>
         </div>
         <div class="columns">
@@ -1939,7 +2010,8 @@ Schreiben</h1>
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        // center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -1986,7 +2058,7 @@ Schreiben</h1>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
+                autoSlide: 0,
 
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
@@ -2035,8 +2107,15 @@ Schreiben</h1>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
+                width: 1200,
+                        height: 1000,
+
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+
+
 
         // reveal.js plugins
         plugins: [
@@ -2046,13 +2125,23 @@ Schreiben</h1>
         ]
       });
     </script>
+    <!-- support for mermaid.js -->
+    <!-- <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script> -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2022-12-02</span>
+                    <span class="c_left current-date"></span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
-                        <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</span>
+                        <span class="c_center">
+          <a href="https://tillgrallert.github.io/slides/dh/plain-text/">https://tillgrallert.github.io/slides/dh/plain-text/</a>
+          <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>

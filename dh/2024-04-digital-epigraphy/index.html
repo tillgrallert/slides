@@ -5,7 +5,8 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
               <meta name="dcterms.date" content="2024-03-27">
-                <title>Digital History and the challenges of Data Culture at Humboldt-Universität zu Berlin</title>
+                  <meta name="license" content="https://creativecommons.org/licenses/by/4.0/" />
+        <title>Digital History and the challenges of Data Culture at Humboldt-Universität zu Berlin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -115,8 +116,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em)
-                        accumulate for nested elements and must thus be avoided.
+                        /*keep in mind that relative sizes (%, em) 
+                        accumulate for nested elements and must thus be avoided. 
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -149,9 +150,9 @@
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
                       font-size: 12px;*/
-                      line-height: 1.2;
+                      line-height: 1.2; 
                       word-wrap: break-word;
                     }
                     body,
@@ -162,8 +163,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header,
-                    footer,
+                    header, 
+                    footer, 
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -594,7 +595,6 @@
                     footer img {
                         display: block;
                     }
-
                     /* inline images */
                     /*p img,
                     li img {
@@ -602,19 +602,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        display: inline-block;
-                        position: relative;
                         margin-top: 1em;
                         margin-bottom: 1em;
-
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
                     }
-                    .c_logo.c_left {
-                        margin-left: 2em;
+                    img.c_logo.c_left {
+                        margin-left: 1em;
                     }
-                    .c_logo.c_right {
-                        margin-right: 2em;
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -1429,10 +1426,10 @@
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-        <a class="c_left" href="https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history"><img class="c_left c_logo" src="../../assets/datafication/logo_digital-history.png"></a>
-        <a class="c_left" href="https://4memory.de"><img class="c_left c_logo" src="../../assets/dh/Logo_for_memory_RGB.png"></a>
-        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+          </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1457,7 +1454,7 @@ NFDI4Memory</p>
                   </div>
       </div>
         </section>
-
+                
         <section>
         <section id="digital-history-at-hu-berlin"
         class="title-slide slide level1">
@@ -1544,10 +1541,10 @@ NFDI4Memory</p>
         <div class="columns">
         <div class="wide">
         <p><strong>Datafication</strong> emphasises the epistemic shift
-        from a world were data were a closely defined part of the output
-        of research processes towards the new status quo in which all
-        research processes are always already computationally mediated
-        through information and communication technologies.</p>
+        from a world where data were a closely defined part of the
+        output of research processes towards the new status quo in which
+        all research processes are always already computationally
+        mediated through information and communication technologies.</p>
         </div><div class="narrow">
         <p><span class="keyphrase">we live in <em>datafied</em>
         societies</span></p>
@@ -2186,7 +2183,7 @@ NFDI4Memory</p>
     <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
     <script src="../../assets/revealjs/plugin/search/search.js"></script>
     <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -2288,7 +2285,7 @@ NFDI4Memory</p>
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2332,23 +2329,23 @@ NFDI4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                
        // Parallax background image
        parallaxBackgroundImage: '../../assets/datafication/datafication_digital-history.png', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
-
+                                     
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-
+        
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-
+        
         // Bounds for smallest/largest possible scale to apply to content
-
-
-
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2370,7 +2367,7 @@ NFDI4Memory</p>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">
           <a href="https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/">https://tillgrallert.github.io/slides/dh/2024-04-digital-epigraphy/</a>
-          <span></span>
+          <span>https://creativecommons.org/licenses/by/4.0/</span>
         </span>
                 <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>

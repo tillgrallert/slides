@@ -4,14 +4,14 @@ subtitle: "Digital Humanities und die (Wieder-)Aneignung der Produktionsmittel"
 author: 
     - Till Grallert
 Institution: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-12-02
+date: 
 status: published
 url: https://tillgrallert.github.io/slides/dh/plain-text/
 lang: de
 bibliography: 
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 suppress-bibliography: false
-licence: https://creativecommons.org/licenses/by-sa/4.0/
+license: https://creativecommons.org/licenses/by-sa/4.0/
 markdown: pandoc
 tags:
     - FuReSH
@@ -41,6 +41,7 @@ tags:
 :::
 
 ## Das Problem
+
 +-----------------------+-----------------------------+-------------------------+
 |        Prozess        |           "Früher"          |          Heute          |
 +=======================+=============================+=========================+
@@ -164,7 +165,7 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 
 :::
 
-# Glossar
+# Komponenten
 ## [Markdown (md)](http://daringfireball.net/projects/markdown)
 
 ::: columns

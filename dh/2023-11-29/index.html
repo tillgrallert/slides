@@ -5,7 +5,7 @@
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
               <meta name="dcterms.date" content="2023-11-27">
-                  <meta name="license" content="CC BY 4.0" />
+                  <meta name="license" content="https://creativecommons.org/licenses/by/4.0/" />
         <title>Kritischen Perspektiven auf LLM und abgeleitete Anwendungen</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -21,8 +21,11 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
@@ -32,6 +35,7 @@
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
+        margin-bottom: 0em;
       }
       .hanging-indent div.csl-entry {
         margin-left:2em;
@@ -216,8 +220,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -225,9 +229,14 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
+                    }
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
                     }
                     div.slide {
                         top: 10% ;
@@ -271,7 +280,8 @@
                     h3,
                     h4,
                     h5,
-                    th {
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -299,6 +309,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -589,12 +602,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -605,7 +622,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -627,6 +644,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -675,9 +693,6 @@
                         width: 31%;
                         position: relative;
                         float: left;
-                    }
-                    .columns .small-font {
-                        font-size: 70%;
                     }
                     .c_left {
                         display: block;
@@ -1143,7 +1158,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1282,13 +1298,28 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
                     }
                     .green {
                         color: green;
@@ -1393,9 +1424,9 @@
                     </style>
       </head>
   <body onload="setCurrentDate()">
-        <!-- HU Berlin header -->
+        <!-- FuReSH header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+        <!-- <a href="https://makerspace.hypotheses.org"><img class="c_left c_logo" src="https://furesh.github.io/slides/assets/images/logo_furesh-yellow.png"></a> -->
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
     </header>
     <div class="reveal">
@@ -1436,10 +1467,11 @@ zu Berlin</p>
         <figure id="fig:plaque">
         <img data-src="../../assets/ai/ai-plaque-darthmouth-reveal.jpg"
         alt="Enthüllung einer Gedenktafel im Darthmouth College, Quelle: (Belser „AI Conference Returns to College After 50 Yrs.“ 2006)" />
-        <figcaption>Figure 1: Enthüllung einer Gedenktafel im Darthmouth
-        College, Quelle: <span class="citation"
-        data-cites="Belser2006AIConferenceReturns">(Belser <span>„AI
-        Conference Returns to College After 50 Yrs.“</span>
+        <figcaption aria-hidden="true">Enthüllung einer Gedenktafel im
+        Darthmouth College, Quelle: <span class="citation"
+        data-cites="Belser2006AIConferenceReturns">(Belser
+        <span>„<span>AI</span> Conference Returns to
+        <span>College</span> After 50 Yrs.“</span>
         2006)</span></figcaption>
         </figure>
         </div><div class="column">
@@ -1524,8 +1556,8 @@ zu Berlin</p>
         <li>dienen der Stringvorhersage</li>
         <li>Idee ist alt <span class="citation"
         data-cites="ShannonWeaver1949MathematicalTheoryCommunication">(Shannon
-        und Weaver <em>The Mathematical Theory of Communication</em>
-        1949)</span></li>
+        und Weaver <em>The <span>Mathematical Theory</span> of
+        <span>Communication</span></em> 1949)</span></li>
         </ul></li>
         <li><strong>Große</strong> Sprachmodelle (LLM):
         <ul>
@@ -1538,8 +1570,8 @@ zu Berlin</p>
         <figure id="fig:ios-keyboard">
         <img data-src="../../assets/ai/iOS-predictive-keyboard.png"
         alt="Texteingabe eines Smartphones mit Hilfe eines LLM" />
-        <figcaption>Figure 2: Texteingabe eines Smartphones mit Hilfe
-        eines LLM</figcaption>
+        <figcaption aria-hidden="true">Texteingabe eines Smartphones mit
+        Hilfe eines LLM</figcaption>
         </figure>
         </section>
         </div>
@@ -1573,8 +1605,8 @@ zu Berlin</p>
         </ul></li>
         <li>“stochastic parrots” <span class="citation"
         data-cites="BenderEtal2021StochasticParrots">(Bender u. a.
-        <span>„On the Dangers of Stochastic Parrots“</span> 2021,
-        617)</span>
+        <span>„On the <span>Dangers</span> of <span>Stochastic
+        Parrots</span>“</span> 2021, 617)</span>
         <ul>
         <li><blockquote>
         <p>an LM is a system for haphazardly stitching together
@@ -1602,7 +1634,7 @@ zu Berlin</p>
         <figure id="fig:transformer-model">
         <img data-src="../../assets/ai/transformer-toy.png"
         alt="Transformer! Quelle: https://www.flickr.com/photos/yellawolfstudios/5853934455, CC BY-NC 2.0" />
-        <figcaption>Figure 3: Transformer! Quelle: <a
+        <figcaption aria-hidden="true">Transformer! Quelle: <a
         href="https://www.flickr.com/photos/yellawolfstudios/5853934455"
         class="uri">https://www.flickr.com/photos/yellawolfstudios/5853934455</a>,
         CC BY-NC 2.0</figcaption>
@@ -1774,8 +1806,8 @@ zu Berlin</p>
         <img
         data-src="https://media.wetdry.world/media_attachments/files/111/479/014/041/664/438/original/57a69381c7c11c58.jpg"
         alt="Bings von LLMs generierte Antwort auf eine essentielle Frage. Quelle: https://wetdry.world/@keat/111479034674203372" />
-        <figcaption>Figure 4: Bings von LLMs generierte Antwort auf eine
-        essentielle Frage. Quelle: <a
+        <figcaption aria-hidden="true">Bings von LLMs generierte Antwort
+        auf eine essentielle Frage. Quelle: <a
         href="https://wetdry.world/@keat/111479034674203372"
         class="uri">https://wetdry.world/@keat/111479034674203372</a></figcaption>
         </figure>
@@ -1889,37 +1921,43 @@ zu Berlin</p>
         <section id="refs" class="slide level2 unnumbered">
         <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
-        role="list">
+        data-entry-spacing="0" role="list">
         <div id="ref-Belser2006AIConferenceReturns" class="csl-entry"
         role="listitem">
-        Belser, Alex. 2006. <span>„AI Conference Returns to College
-        After 50 Yrs.“</span> <em>The Dartmouth</em>, 18. Juli 2006. <a
+        Belser, Alex. 2006. <span>„<span>AI</span> Conference Returns to
+        <span>College</span> After 50 Yrs.“</span> <em>The
+        Dartmouth</em>, 18. Juli 2006. <a
         href="https://www.thedartmouth.com/article/2006/07/ai-conference-returns-to-college-after-50-yrs">https://www.thedartmouth.com/article/2006/07/ai-conference-returns-to-college-after-50-yrs</a>.
         </div>
         <div id="ref-BenderEtal2021StochasticParrots" class="csl-entry"
         role="listitem">
         Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, und
-        Shmargaret Shmitchell. 2021. <span>„On the Dangers of Stochastic
-        Parrots: Can Language Models Be Too Big? 🦜“</span>. In
-        <em>Proceedings of the 2021 ACM Conference on Fairness,
-        Accountability, and Transparency</em>, 610–23. FAccT ’21. New
-        York, NY, USA: Association for Computing Machinery. <a
+        Shmargaret Shmitchell. 2021. <span>„On the <span>Dangers</span>
+        of <span>Stochastic Parrots</span>: <span>Can Language Models Be
+        Too Big</span>? 🦜“</span>. In <em>Proceedings of the 2021
+        <span>ACM Conference</span> on <span>Fairness</span>,
+        <span>Accountability</span>, and <span>Transparency</span></em>,
+        610–23. <span>FAccT</span> ’21. New York, NY, USA: Association
+        for Computing Machinery. <a
         href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
         </div>
         <div id="ref-JannidisFlanders2019GentleIntroduction"
         class="csl-entry" role="listitem">
         Jannidis, Fotis, und Julia Flanders. 2019. <span>„A Gentle
-        Introduction to Data Modeling“</span>. In <em>The Shape of Data
-        in Digital Humanities: Modeling Texts and Text-Based
-        Resources</em>, herausgegeben von Julia Flanders und Fotis
-        Jannidis, 26–95. Digital Research in the Arts and Humanities.
-        London: Routledge.
+        Introduction to Data Modeling“</span>. In <em>The
+        <span>Shape</span> of <span>Data</span> in <span>Digital
+        Humanities</span>: <span>Modeling Texts</span> and
+        <span>Text-Based Resources</span></em>, herausgegeben von Julia
+        Flanders und Fotis Jannidis, 26–95. Digital
+        <span>Research</span> in the <span>Arts</span> and
+        <span>Humanities</span>. London: Routledge.
         </div>
         <div id="ref-ShannonWeaver1949MathematicalTheoryCommunication"
         class="csl-entry" role="listitem">
         Shannon, Claude E., und Warren Weaver. 1949. <em>The
-        Mathematical Theory of Communication</em>. Urbana: University of
-        Illinois Press.
+        <span>Mathematical Theory</span> of
+        <span>Communication</span></em>. Urbana: University of Illinois
+        Press.
         </div>
         <div id="ref-Stachowiak1973AllgemeineModelltheorie"
         class="csl-entry" role="listitem">
@@ -2038,8 +2076,8 @@ zu Berlin</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
-        
+        autoSlide: 0,
+
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2087,16 +2125,9 @@ zu Berlin</p>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1200,
-                        height: 1000,
-        
-        // Factor of the display size that should remain empty around the content
-                margin: 0,
-        
-        // Bounds for smallest/largest possible scale to apply to content
-        
-        
-        
+                width: 1000,
+                        height: 800,
+                                        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2116,12 +2147,14 @@ zu Berlin</p>
                     <span class="c_left">2023-11-27</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
-                        <span class="c_center">
-          <a href="https://tillgrallert.github.io/slides/dh/2023-11-27">https://tillgrallert.github.io/slides/dh/2023-11-27</a>
-          <span>CC BY 4.0</span>
-        </span>
-                <!-- this should probably moved to the title slide only -->
-        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        
+        <span class="c_center">
+                    <a href="https://tillgrallert.github.io/slides/dh/2023-11-27">https://tillgrallert.github.io/slides/dh/2023-11-27</a>
+          <span>https://creativecommons.org/licenses/by/4.0/</span>
+                  </span>
+
+        <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.ub.hu-berlin.de">UNIVERSITÄTSBIBLIOTHEK DER HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>
     </footer>
     <script>
