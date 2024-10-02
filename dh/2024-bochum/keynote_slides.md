@@ -315,7 +315,7 @@ Es herrscht in der Breite ein Mangel an
 
 ::: notes
 
-- David Berry "epoch of computationability" 
+- David Berry "epoch of computationality" 
 
 :::
 
