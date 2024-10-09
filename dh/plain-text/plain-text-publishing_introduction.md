@@ -221,7 +221,7 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 - Was: Konvertierungs-**Werkzeug** und auf Markdown basierende plain-text **Syntax**
 - Wann: aktive Entwicklung seit **2006**
 - Wer: John MacFarlane (UC Berkeley)
-- Aktuelle Version: 2.19.2 (2022)
+- Aktuelle Version: ![[github release](https://github.com/jgm/pandoc/releases)](https://img.shields.io/github/release/jgm/pandoc.svg?label=current+release)
 
 ::: columns
 :::: column
