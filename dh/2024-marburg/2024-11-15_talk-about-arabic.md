@@ -1,20 +1,20 @@
 ---
-title: "We need to talk about Arabic!"
-subtitle: "A practical critique of the hostility towards the second most common human writing system built into our quotidian digital infrastructures"
+title: "Let's talk about Arabic periodicals"
+subtitle: "A practical critique of digital infrastructures of exclusion"
 author: Till Grallert
 institute: 
     - Humboldt-Universität zu Berlin
     - Methods Innovation Lab (NFDI 4Memory)
-date: 2024-03-16
-event: "Exploring Epistemic Virtues and Vices"
-url: https://tillgrallert.github.io/slides/dh/2024-03-luxembourg/
+date: 2024-11-15
+event: "Cultural Heritage Data & Power. Exploring Digital Collections and Situated Knowledges in Film History and Beyond"
+url: https://tillgrallert.github.io/slides/dh/2024-marburg/
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en
-bibliography: 
-    - /Users/Shared/BachUni/applications/applications.csl.json
-    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
-    - /Users/Shared/BachUni/publications/github/pae326271/assets/bibliography/2023_dh-in-practice.csl.json
-    - /Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/bibliography/2023_clio-guide.csl.json
+bibliography: references.bib
+#    - /Users/Shared/BachUni/applications/applications.csl.json
+#    - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+#    - /Users/Shared/BachUni/publications/github/pae326271/assets/bibliography/2023_dh-in-practice.csl.json
+#    - /Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/bibliography/2023_clio-guide.csl.json
 slide-level: 2
 license: https://creativecommons.org/licenses/by-sa/4.0/
 ---
@@ -289,7 +289,7 @@ Note how the anonymous articles cluster on the left.
 
 :::
 
-# We need to talk about Arabic!
+# Let's talk about Arabic!
 ## Arabic
 
 ::: columns
@@ -383,7 +383,7 @@ The human condition, historically, is one of multilinguality. People speak diffe
 
 >The basis for the codes, languages, methodologies, and technical instruments of the digital humanities is English; the written and spoken language of all the main conferences, the most prestigious journals, the institutions that control the discipline, the organizations and international consortia, and the central authorities of knowledge is, with few exceptions, some dialect of British or American English.
 
-<cite>[@Fiormonte+2021+TaxationagainstOverrepresentation, 334-335]</cite>
+<cite>[@Fiormonte2021Taxation, 334-335]</cite>
 
 ::: notes
 
