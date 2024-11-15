@@ -628,7 +628,7 @@ The official transcription provided by the paper's masthead
 ::::
 :::: column
 
-![Front page of *Mirʾāt al-Sharq* #192, 22 Nov. 1922, Jerusalem. Source: [EAP](https://eap.bl.uk/archive-file/EAP119-1-24-1).](https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg){#fig:mirat}
+![Front page of *Mirʾāt al-Sharq* #192, 22 Nov. 1922, Jerusalem. Source: [EAP](https://eap.bl.uk/archive-file/EAP119-1-24-1).](https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg){#fig:mirat-1}
 
 ::::
 :::: column
@@ -665,29 +665,38 @@ Buckwalter transliteration
 ::: columns-3
 :::: column
 
-### [الجنة]{lang="ar"}?
+How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org/wiki/Q124971778)?
 
-No Arabic script
+- original Arabic: [مرآة الشرق]{lang="ar"}
+- original Latin: Meraat al-Sherk
+- IJMES: Mirʾāt al-Sharq
+- DMG: Mirʾāt aš-Šarq
+- Buckwalter: mrMp Alcrq
 
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=الجنة) for "[الجنة]{lang="ar"}"](../../assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
-
-::::
-:::: column
-
-### al-Ǧanna?
-
-Which Latinized transcription was used?
-
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=al-Ǧanna) for "al-Ǧanna"](../../assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
+![Front page of *Mirʾāt al-Sharq* #192, 22 Nov. 1922, Jerusalem. Source: [EAP](https://eap.bl.uk/archive-file/EAP119-1-24-1).](https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg){#fig:mirat-2}
 
 ::::
 :::: column
 
-### Ganna!
+### failure
 
-What are the normalization rules for the search algorithm?
+- Arabic script (data or interface)
+- IJMES
+- removing or substituting *hamza* and *ʿayn*: `mir'at sarq`
 
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Ganna) for "Ganna"](../../assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=mir'at sarq) for "mir'at sarq"](../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png){#fig:zdb-hamza}
+ 
+
+::::
+:::: column
+
+### success
+
+- original Latin title
+- DMG
+- removing all diacritics and articles: `mirʾat sarq`
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Mirʾāt aš-Šarq) for "Mirʾāt aš-Šarq"](../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png){#fig:zdb-dmg}
 
 ::::
 :::
