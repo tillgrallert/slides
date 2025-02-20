@@ -1,13 +1,12 @@
 ---
-title: "Metapher und Methode"
-panel: "Der Netzwerkbegriff und arabische Zeitschriftenforschung"
+title: "Historische Netzwerkanalyse als Zugang zu einer systematischen Periodikaforschung"
+panel: ""
 author: 
 	- Till Grallert
-    - Yvonne Albers
 institute: 
     - Humboldt-Universität zu Berlin
-    - Freie Universität Berlin
-date: 2023-04-27
+    - NFDI4Memory
+date: 
 event:
 url: https://tillgrallert.github.io/slides/dh/network-analysis/index.html
 ORCID: orcid.org/0000-0002-5739-8094
