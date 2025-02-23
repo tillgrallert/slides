@@ -9,8 +9,8 @@ institute:
 date: 2025-02-25
 event: "The Digital Humanities Brown Bag Lunch series"
 place: MPIW Berlin
-url: https://tillgrallert.github.io/slides/dh/2025-mpwi/
-ORCID: orcid.org/0000-0002-5739-8094
+url: https://tillgrallert.eu/slides/dh/2025-mpiw/
+ORCID: 0000-0002-5739-8094
 lang: en
 bibliography: references.bib
 slide-level: 2
@@ -20,7 +20,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 # Introduction
 ## My research interests
 
-[... or what I would want to do]{.c_right}
+[... or what I would want to do]{.c_right-align .keyphrase}
 
 ::: columns
 :::: column
@@ -37,7 +37,7 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## My research interests
 
-[... or what I would want to do]{.c_right}
+[... or what I would want to do]{.c_right-align .keyphrase}
 
 ![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous}
 
@@ -175,20 +175,19 @@ Note how the anonymous articles cluster on the left.
 
 ## "You are as beautiful as an additional hour of electricity!"
 
-::: columns-3
+::: columns
 :::: column
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616">July 31, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681">June 27, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436">January 17, 2018</a></blockquote>
 
 ::::
 :::: column
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote>
-
-::::
-:::: column
-
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl"><a href="https://twitter.com/hashtag/%D8%B3%D8%A3%D9%83%D8%AA%D8%A8_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1?src=hash&amp;ref_src=twsrc%5Etfw">#سأكتب_على_الجدار</a><br>أنتِ جميلة كساعة إضافية من الكهرباء <a href="https://t.co/jKpLnnlorR">pic.twitter.com/jKpLnnlorR</a></p>&mdash; A - M .. Syria (\@Azrael90) <a href="https://twitter.com/Azrael90/status/953594519836135436?ref_src=twsrc%5Etfw">January 17, 2018</a></blockquote>
+![](../../assets/dh/twitter_CLRYwKiUsAAILP8.jpeg)
 
 ::::
 :::
@@ -338,7 +337,7 @@ Note how the anonymous articles cluster on the left.
 ::::
 :::
 
-![Approximate distribution of Arabic script use along current national boundaries [@Nemeth+2017, fig 1.1]](../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png){#fig:arabic-script}
+![Approximate distribution of Arabic script use along current national boundaries. Solid colours: contemporary primary script; vertical stripes: contemporary use as a secondary national script; horizontal stripes historical use [@Nemeth+2017, fig 1.1]](../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png){#fig:arabic-script}
 
 ## Arabic Script Grammar
 
@@ -430,9 +429,10 @@ The human condition, historically, is one of multilinguality. People speak diffe
 :::
 
 ## Encoding characters
-### Unicode is awesome ...
 
-... but many contemporary and historical human writing systems are not supported even in its latest iteration.
+[Unicode is awesome ...]{.c_left-align .keyphrase}
+
+[... but many contemporary and historical human writing systems are not supported even in its latest iteration]{.c_center}
 
 ::: columns
 :::: column
@@ -469,7 +469,7 @@ The human condition, historically, is one of multilinguality. People speak diffe
 
 ## Unicode is awesome ...
 
-... but standards depend on implementation and software support
+[... but standards depend on implementation and software support]{.c_center}
 
 ### Encoding nightmares
 
@@ -502,7 +502,7 @@ The human condition, historically, is one of multilinguality. People speak diffe
 
 ## Unicode is awesome ...
 
-... but standards depend on implementation and software support
+[... but standards depend on implementation and software support]{.c_center}
 
 ### Rendering nightmares
 
@@ -540,7 +540,7 @@ This ought to be the **perfect example**:
 
 <!-- [... but standards depend on implementation and software support]{.c_right} -->
 
-... did I mention industry consortia?
+[... did I mention industry consortia?]{.c_center}
 
 >HTML elements all have names that only use ASCII alphanumerics [@HTMLLivingStandard2023, §13.1.2]
 
@@ -690,10 +690,10 @@ Buckwalter transliteration
 # Arabic textual heritage online
 ## The long tail of ASCII in discovery systems
 
+[How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org/wiki/Q124971778)?]{.c_center}
+
 ::: columns-3
 :::: column
-
-How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org/wiki/Q124971778)?
 
 - original Arabic: [مرآة الشرق]{lang="ar"}
 - original Latin: Meraat al-Sherk
@@ -758,7 +758,7 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
 ::: columns
 :::: column
 
-![Periodicals and their holding institutions](../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png){#fig:holding-map}
+![Periodicals and their holding institutions ([Wikidata][rq:map-holdings])](../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png){#fig:holding-map}
 
 ::::
 :::: column
@@ -833,14 +833,12 @@ Table: Comparison of digitized periodicals between the Global South and the Glob
 ## mind the `<gap/>`!
 ### copyright regimes, paywalls, and geo fencing
 
-
+[cataloguing rules and algorithmic copyright detection cause further inaccessibilities]{.c_center}
 
 ::: columns
 :::: column
 
 ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (Original in Princeton) outside the USA](../../assets/OpenArabicPE/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
-
-cataloguing rules and algorithmic copyright detection cause further inaccessibilities
 
 ::::
 :::: column
@@ -1011,69 +1009,6 @@ Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
 :::
 
 # Implementation 1: <br/>Publishing metadata on Wikidata
-## The long tail of ASCII in discovery systems
-
-::: columns-3
-:::: column
-
-How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org/wiki/Q124971778)?
-
-- original Arabic: [مرآة الشرق]{lang="ar"}
-- original Latin: Meraat al-Sherk
-- IJMES: Mirʾāt al-Sharq
-- DMG: Mirʾāt aš-Šarq
-- Buckwalter: mrMp Alcrq
-
-![Front page of *Mirʾāt al-Sharq* #192, 22 Nov. 1922, Jerusalem. Source: [EAP](https://eap.bl.uk/archive-file/EAP119-1-24-1).](https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg){#fig:mirat}
-
-::::
-:::: column
-
-### failure
-
-- Arabic script (data or interface)
-- IJMES
-- removing or substituting *hamza* and *ʿayn*: `mir'at sarq`
-
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=mir'at sarq) for "mir'at sarq"](../assets/zdb_mirat-ar-Latn-hamza.png){#fig:zdb-hamza}
- 
-
-::::
-:::: column
-
-### success
-
-- original Latin title
-- DMG
-- removing all diacritics and articles: `mirʾat sarq`
-
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Mirʾāt aš-Šarq) for "Mirʾāt aš-Šarq"](../assets/zdb_mirat-ar-Latn-x-dmg.png){#fig:zdb-dmg}
-
-::::
-:::
-
-::: notes
-
-- catalogue could be searched in Arabic but the data is missing
-- catalogues are historical artefacts
-    + digitisation of catalogues: NOT re-cataloguing of original material
-        * card catalogue
-        * ASCII OPAC
-        * automated transcription of the card catalogue
-        * human cataloguers depend on the technology they have at hand, which means they might be unable to enter the correct string
-        * errors perpetuate
-- Latin input is mostly reduced to ASCII
-    + Hamza and ʿAyn escape this algorithm on ZDB
-- determined article is not automatically removed
-- The choices are not transparently documented
-- no software on-screen keyboards provided
-- additional problems
-    + catalogues are inherently local documents
-    + aggregated, if at all, on a national level
-    + frequently accessible only through Web interfaces and not APIs
-
-:::
-
 ## 1. Gather the data: [Project Jarāʾid](https://projectjaraid.github.io/) (2012--)
 
 ::: columns
@@ -1171,7 +1106,7 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
 ::::
 :::: column
 
-![Veḳāʾiʿ-i Miṣriye on [Wikidata](https://www.wikidata.org/wiki/Q4703322)](../assets/wikidata_Q4703322.png){#fig:wikidata-Q4703322}
+![Veḳāʾiʿ-i Miṣriye on [Wikidata](https://www.wikidata.org/wiki/Q4703322)](../../assets/jaraid/wikidata_Q4703322.png){#fig:wikidata-Q4703322}
 
 ::::
 :::
@@ -1188,7 +1123,9 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
 ::: columns-3
 :::: column
 
-![[Map of all periodicals, 2024-08-21](https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20on%2021%20August%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-08-21%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset)](../assets/wikidata-map_periodicals-all-2024-08-21_markercluster.png){#fig:map-periodicals-all-2024-08-21-cluster}
+![[Map of all periodicals, March 2024][rq:map-periodicals-all-2024-03-16-cluster]](../../assets/jaraid/wikidata-map_periodicals-all-2024-03-16_markercluster.png){#fig:map-periodicals-all-2024-03-cluster}
+
+![[Map of all periodicals, Aug. 2024, after we added our data][rq:map-periodicals-all-2024-08-21-cluster]](../../assets/jaraid/wikidata-map_periodicals-all-2024-08-21_markercluster.png){#fig:map-periodicals-all-2024-08-cluster}
 
 ::::
 :::: column
@@ -1202,7 +1139,7 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
 ::::
 :::: column
 
-![[Map of newspapers published in the Eastern Mediterranean during the summer of 1910 with known holdings](https://query.wikidata.org/embed.html#%23title%3A%20Periodicals%20published%20within%20a%20certain%20area%20at%20a%20given%20point%20in%20time%20and%20with%20known%20holdings%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%2C%20%22%3FpubPlace%22%5D%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28%20CONCAT%20%28%22https%3A%2F%2Freasonator.toolforge.org%2F%3F%26q%3D%22%2C%20STRAFTER%28STR%28%3Fperiodical%29%2C%20STR%28wd%3A%29%20%29%29%29%20as%20%3Fitem%29%20%23%20link%20to%20item%20on%20Reasonator%0A%20%20%23%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0A%23%20all%20periodicals%20before%20the%20date%20of%20interest%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FpubPlace%20%3FdateOfInterest%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221910-06-01%22%5E%5Exsd%3AdateTime%7D.%20%20%20%23%20set%20a%20date%20of%20interest%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ11032%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20newspapers%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%20%0A%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20to%20titles%20published%20before%20a%20specific%20date%0A%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%20%23%20retrieve%20more%20properties%3A%20locations%0A%20%20%7D%0A%20%20LIMIT%2050000%0A%7D%20AS%20%25periodicals%0A%23%20items%20within%20a%20bounding%20box%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20SERVICE%20wikibase%3Abox%20%7B%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%20%23%20get%20coordinates%0A%20%20%20%20%20%20%23%20limit%20Western%20and%20Eastern%20corners%3A%20Levant%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerSouthWest%20%22Point%2832.11074%2031.2163%29%22%5E%5Egeo%3AwktLiteral.%20%20%23%20SW%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerNorthEast%20%22Point%2837.97328%2037.34235%29%22%5E%5Egeo%3AwktLiteral.%20%23%20NE%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D%20as%20%25area%0A%23%20items%20in%20holdings%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%0A%20%20%20%3FcatalogueId%20%3Fcollection%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25area%0A%20%20%20%20%23%20holdings%3A%20P1042%3DZDB%2C%20P243%3DOCLC%2C%20P1844%3DHathi%2C%20P6721%3DKOBV%0A%20%20%20%20%7B%3Fperiodical%20%28wdt%3AP1042%20%7C%20wdt%3AP243%20%7C%20wdt%3AP1844%20%7C%20wdt%3AP6721%29%20%3FcatalogueId.%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fperiodical%20wdt%3AP195%20%3Fcollection%7D%0A%20%20%7D%0A%7D%20as%20%25holdings%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25holdings%0A%20%20%20%20%23%20exclude%20discontinued%20papers%0A%20%20%20%20OPTIONAL%7B%20%3Fperiodical%20%28wdt%3AP582%29%20%3FdateTerminus.%7D%20%0A%20%20%20%20FILTER%28%21bound%28%3FdateTerminus%29%20%7C%7C%20%3FdateTerminus%20%3E%20%3FdateOfInterest%29.%0A%20%20%20%20%23%20get%20labels%20and%20descriptions%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22ar%2C%20%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%20%3FperiodicalLabel)](../assets/wikidata-map_periodicals-bilad-al-sham-1910-06-15-known-holdings_cropped.png){#fig:map-levant-1910-06-holdings}
+![[Map of newspapers published in Palestine until 1930][rq:press-palestine]](../../assets/jaraid/wikidata-map_periodicals-palestine-1930_cropped.png){#fig:map-palestine-1930}
 
 ::::
 :::
@@ -1225,7 +1162,7 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
     - save a copy local copy of the graph
 - `bash` script as a wrapper
 - deploy via [GitHub][github], [GitLab][gitlab] actions for periodic runs
-- push periodic release to publicly-funded, open repository ([Zenodo][zenodo]) for long-term preservation
+- push periodic release to publicly-funded, open repository ([Zenodo][zenodo]) for long-term preservation [@Grallert2024jaraidData]
     + make sure to add [ORCID][orcid]s for all contributors
     + provides versioned [DOI][doi]s
 
@@ -1350,7 +1287,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + should be **syntax aware**
     - **RTL**: support in text editors is a mixed bag
 
-![The TEI XML file for *al-Zuhūr* 2(4) in [Visual Studio Code](https://code.visualstudio.com/)](../assets/vscode_zuhur.png){#fig:zuhur-vscode}
+![The TEI XML file for *al-Zuhūr* 2(4) in [Visual Studio Code](https://code.visualstudio.com/)](../../assets/OpenArabicPE/vscode_zuhur.png){#fig:zuhur-vscode}
 
 <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
 
@@ -1365,7 +1302,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
         1. [oXygen XML editor](https://www.oxygenxml.com/) (158 USD [2024]) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
         2. [Visual Studio Code](https://code.visualstudio.com/) (free) with the right extensions is a viable second
 
-![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../assets/oxygen_zuhur-author.png){#fig:zuhur-oxygen}
+![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../../assets/OpenArabicPE/oxygen_zuhur-author.png){#fig:zuhur-oxygen-1}
 
 ::::
 :::
@@ -1392,7 +1329,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ::::
 :::: column
 
-![Archived release of *al-Zuhūr* on [Zenono](https://doi.org/10.5281/zenodo.3580606)](../assets/zenodo_zuhur.png){#fig:zuhur-zenodo}
+![Archived release of *al-Zuhūr* on [Zenono](https://doi.org/10.5281/zenodo.3580606)](../../assets/OpenArabicPE/zenodo_zuhur.png){#fig:zuhur-zenodo}
 
 ::::
 :::
@@ -1418,9 +1355,9 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 :::: column
 
 
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details_small.png){#fig:zuhur-zotero}
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png){#fig:zuhur-zotero}
 
-![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../assets/boilerplate_zuhur-v_2-i_4_small.png){#fig:zuhur-webview}
+![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png){#fig:zuhur-webview}
 
 <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
 
@@ -1476,7 +1413,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ::::
 :::: column
 
-![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png){#fig:components}
+![The main components of OpenArabicPE](../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png){#fig:components}
 
 ::::
 :::
@@ -1492,15 +1429,28 @@ Bootstrapping relies on the work of others
 # Thank you
 ## Thank you!
 
+::: columns
+:::: column
+
 - Contributors to [OpenArabicPE](https://openarabicpe.github.io/): Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Contributors to [Project Jarāʾid](https://projectjaraid.github.io/): Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
-- Links:
-    + Slides: [https://openarabicpe.github.io/slides/2023-openiti/](https://openarabicpe.github.io/slides/2023-openiti//index.html)
-    + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
-    + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
-    + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
-    + Email: <till.grallert@fu-berlin.de>, <till.grallert@hu-berlin.de>
-- Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+::::
+:::: column
+
++ Slides: [tillgrallert.eu/slides/de/2025-mpiw/](https://tillgrallert.eu/slides/dh/2025-mpiw/index.html)
++ Project blog: [openarabicpe.github.io](https://openarabicpe.github.io)
++ Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
++ Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
++ Email: <till.grallert@hu-berlin.de>, <till.grallert@fu-berlin.de>
++ ADHO SIG multilingual DH: [multilingualdh.org](https://multilingualdh.org/)
++ DHd AG multilingual DH: [ag.multilingualdh.de](https://ag.multilingualdh.de)
+
+::::
+:::
+
+
+
 
 ## References {#refs}
 
@@ -1515,3 +1465,14 @@ Bootstrapping relies on the work of others
 [tei]: https://tei-c.org/
 [wd]: https://wikidata.org/
 [zenodo]: https://zenodo.org/
+
+<!-- maps -->
+[rq:press-palestine]: https://query-main.wikidata.org/embed.html#%23title%3A%20الصحافة%20في%20فلسطين%20حتى%20سنة%20١٩٣%D9%A0%0A%23title%3A%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%2C%20%22%3FpubPlace%22%2C%20%22lang%22%5D%2C%20%22markercluster%22%3A%20%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28%20CONCAT%20%28%22https%3A%2F%2Freasonator.toolforge.org%2F%3F%26q%3D%22%2C%20STRAFTER%28STR%28%3Fperiodical%29%2C%20STR%28wd%3A%29%20%29%29%29%20as%20%3Fitem%29%20%23%20link%20to%20item%20on%20Reasonator%0A%20%20%23%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%20%7C%20wdt%3AP131%29%20%3FpubPlace.%20%23%20locations%0A%20%20%7D%0A%20%20LIMIT%2040000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%23%20query%20for%20values%20within%20a%20bounding%20box%0A%20%20%20%20SERVICE%20wikibase%3Abox%20%7B%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%20%23%20get%20coordinates%20of%20locations%0A%20%20%20%20%20%20%23%20limit%20bounding%20box%20by%20Western%20and%20Eastern%20corners%3A%20Palestine%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerSouthWest%20%22Point%2834.11074%2031.2163%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerNorthEast%20%22Point%2835.97328%2033.34235%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D%20as%20%25area%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25area%0A%20%20%20%20%23%20get%20labels%20and%20descriptions%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22ar%2C%20%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%20300
+
+[rq:press-bilad-sham-1910-holdings]: https://query.wikidata.org/embed.html#%23title%3A%20Periodicals%20published%20within%20a%20certain%20area%20at%20a%20given%20point%20in%20time%20and%20with%20known%20holdings%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%2C%20%22%3FpubPlace%22%5D%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28%20CONCAT%20%28%22https%3A%2F%2Freasonator.toolforge.org%2F%3F%26q%3D%22%2C%20STRAFTER%28STR%28%3Fperiodical%29%2C%20STR%28wd%3A%29%20%29%29%29%20as%20%3Fitem%29%20%23%20link%20to%20item%20on%20Reasonator%0A%20%20%23%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0A%23%20all%20periodicals%20before%20the%20date%20of%20interest%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FpubPlace%20%3FdateOfInterest%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221910-06-01%22%5E%5Exsd%3AdateTime%7D.%20%20%20%23%20set%20a%20date%20of%20interest%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ11032%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20newspapers%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%20%0A%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20to%20titles%20published%20before%20a%20specific%20date%0A%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%20%23%20retrieve%20more%20properties%3A%20locations%0A%20%20%7D%0A%20%20LIMIT%2050000%0A%7D%20AS%20%25periodicals%0A%23%20items%20within%20a%20bounding%20box%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20SERVICE%20wikibase%3Abox%20%7B%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%20%23%20get%20coordinates%0A%20%20%20%20%20%20%23%20limit%20Western%20and%20Eastern%20corners%3A%20Levant%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerSouthWest%20%22Point%2832.11074%2031.2163%29%22%5E%5Egeo%3AwktLiteral.%20%20%23%20SW%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerNorthEast%20%22Point%2837.97328%2037.34235%29%22%5E%5Egeo%3AwktLiteral.%20%23%20NE%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D%20as%20%25area%0A%23%20items%20in%20holdings%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%0A%20%20%20%3FcatalogueId%20%3Fcollection%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25area%0A%20%20%20%20%23%20holdings%3A%20P1042%3DZDB%2C%20P243%3DOCLC%2C%20P1844%3DHathi%2C%20P6721%3DKOBV%0A%20%20%20%20%7B%3Fperiodical%20%28wdt%3AP1042%20%7C%20wdt%3AP243%20%7C%20wdt%3AP1844%20%7C%20wdt%3AP6721%29%20%3FcatalogueId.%7D%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fperiodical%20wdt%3AP195%20%3Fcollection%7D%0A%20%20%7D%0A%7D%20as%20%25holdings%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25holdings%0A%20%20%20%20%23%20exclude%20discontinued%20papers%0A%20%20%20%20OPTIONAL%7B%20%3Fperiodical%20%28wdt%3AP582%29%20%3FdateTerminus.%7D%20%0A%20%20%20%20FILTER%28%21bound%28%3FdateTerminus%29%20%7C%7C%20%3FdateTerminus%20%3E%20%3FdateOfInterest%29.%0A%20%20%20%20%23%20get%20labels%20and%20descriptions%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22ar%2C%20%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%20%3FperiodicalLabel
+
+[rq:map-periodicals-all-2024-03-16-cluster]: https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20before%20March%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-03-16%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset
+
+[rq:map-periodicals-all-2024-08-21-cluster]: https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20on%2021%20August%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-08-21%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset
+
+[rq:map-holdings]: https://query-main.wikidata.org/embed.html#%23title%3AHoldings%20of%20Arabic%20periodicals%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0APREFIX%20medium%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ1002697%3E%20%20%20%20%23%20set%20a%20publication%20type%3A%20periodicals%20%28wd%3AQ1002697%29%2C%20newspapers%20%28wd%3AQ11032%29%0ASELECT%20DISTINCT%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0A%20%20%3Fcoords%0A%20%20%3Fcollection%20%3FcollectionLabel%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%20%23%20set%20a%20date%20of%20interest%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20medium%3A%20%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20to%20medium%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20%3Fperiodical%20wdt%3AP407%2Fwdt%3AP279%2a%20wd%3AQ13955.%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20by%20publication%20language%20%28Arabic%20%3D%20Q13955%29%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%7D%0A%20%20ORDER%20BY%20%3FdateOnset%0A%20%20LIMIT%204000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%3Fperiodical%20%3FdateOnset%20%3Fcollection%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20wdt%3AP195%20%3Fcollection%20.%0A%20%20%7D%0A%20%20%23LIMIT%2010000%0A%7D%20as%20%25holdings%0AWHERE%20%7B%0A%20%20INCLUDE%20%25holdings%0A%20%20OPTIONAL%7B%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP625%20%3Fcoords%20.%7D%20%20%20%20%20%20%20%20%20%20%20%20%23%20coordinates%20of%20the%20collection%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20p%3AP159%20%5Bps%3A625%20%3Fcoords%5D.%7D%20%20%20%20%20%20%23%20or%20cords%20of%20the%20HQ%20location%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP276%20%5Bwdt%3AP625%20%3Fcoords%5D.%20%7D%20%23%20or%20cords%20of%20the%20location%0A%20%20%20%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2C%20ar%22.%0A%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%20%20%3Fcollection%20rdfs%3Alabel%20%3FcollectionLabel.%0A%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%2010000
