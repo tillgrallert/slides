@@ -373,7 +373,7 @@ All data sets consist of plain text files with minimal normalisation generated f
 Questions:
 
 1. Are individual periodicals stylistically distinguishable?
-2. Do they a single auctorial voice?
+2. Do they speak with a single auctorial voice?
 
 ::: columns
 :::: column

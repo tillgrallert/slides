@@ -9,7 +9,7 @@ institute:
 date: 2025-02-25
 event: "The Digital Humanities Brown Bag Lunch series"
 place: MPIW Berlin
-url: https://tillgrallert.eu/slides/dh/2025-mpiw/
+url: http://tillgrallert.eu/slides/dh/2025-mpiw/
 ORCID: 0000-0002-5739-8094
 lang: en
 bibliography: references.bib
@@ -20,26 +20,51 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 # Introduction
 ## My research interests
 
-[... or what I would want to do]{.c_right-align .keyphrase}
+[... or what I would want to do]{.c_center .keyphrase}
 
 ::: columns
 :::: column
+
+Who are the most important authors?
 
 ![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors-1}
 
 ::::
 :::: column
 
+What are the most important periodicals?
+
 ![Directed network of periodicals referenced in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*](../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-mentioned-periodicals-1}
+
 
 ::::
 :::
 
 ## My research interests
 
-[... or what I would want to do]{.c_right-align .keyphrase}
+[... or what I would want to do]{.c_center .keyphrase}
 
-![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous}
+::: columns
+:::: column
+
+<!-- ![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous} -->
+
+Do periodicals speak with one auctorial voice?
+
+![Network plot of stylometric similarity in data set 3. Node colours indicate periodicals: purple = *al-Ḥaqāʾiq*,  turquoise = *al-Muqtabas*, green = *Lughat al-ʿArab*, red = *al-Zuhūr*](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-issues-size_degree-colour_publication.png){#fig:dataset3-publication}
+
+
+::::
+:::: column
+
+Should we conflate editors with "their" periodical?
+
+![Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster on the left.](../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:muqtabas-authors-louvain}
+
+::::
+:::
+
+
 
 
 ::: notes
@@ -104,6 +129,40 @@ Note how the anonymous articles cluster on the left.
 :::
 
 # Background
+## Arabic periodicals
+
+The first mass medium of the Eastern Mediterranean and a global Arabic ideosphere
+
+::: columns-3
+:::: column
+
+![Front page of the newspaper [*Thamarāt al-Funūn*](https://www.wikidata.org/wiki/Q124973713) #1, 20 April 1875, Beirut](../../assets/OpenArabicPE/front-pages/thamarat-al-funun-v_1-i_1.jpg){#fig:tf-1}
+
+::::
+:::: column
+
+<!-- ![Front page of the newspaper *al-Iqbāl* #1, 9 April 1902, Beirut](../../assets/OpenArabicPE/front-pages/al-iqbal-v_1-i_1.png){#fig:iqbal-1} -->
+![Front page of the newspaper [*Kawkab Amīrkā*](https://www.wikidata.org/wiki/Q4499150) #1, 15 April 1892, New York](../../assets/OpenArabicPE/front-pages/kawkab-amirka-v_1-i_1.png){#fig:kawkab-1}
+
+::::
+:::: column
+
+![Front page of the newspaper [*al-Quds*](https://www.wikidata.org/wiki/Q124972244) #2, 22 Sep. 1908, Jerusalem](../../assets/OpenArabicPE/front-pages/al-quds-v_1-i_2.jpg){#fig:quds-2}
+
+::::
+:::
+
+
+::: notes
+
+- striking similarity in layouts of newspapers
+    + despite temporal and geographic distance
+- note the Ottoman symbolism
+- note the absence of visual / typographic segmentation for Thamarāt al-Funūn 
+
+:::
+
+
 ## Late-Ottoman Eastern Mediterranean <br/>Diversity across the board
 
 ::: columns
@@ -198,7 +257,7 @@ Note how the anonymous articles cluster on the left.
 - 
 :::
 
-## "You are as beautiful as an additional hour of electricity!"
+## Access to power and the internet
 
 ::: columns
 :::: column
@@ -1438,13 +1497,13 @@ Bootstrapping relies on the work of others
 ::::
 :::: column
 
-+ Slides: [tillgrallert.eu/slides/de/2025-mpiw/](https://tillgrallert.eu/slides/dh/2025-mpiw/index.html)
++ Slides: [tillgrallert.eu/slides/de/2025-mpiw/](http://tillgrallert.eu/slides/dh/2025-mpiw/index.html)
 + Project blog: [openarabicpe.github.io](https://openarabicpe.github.io)
 + Papers: <http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html>, <https://doi.org/10/gkhrjr>
 + Mastodon: [\@tillgrallert\@digitalcourage.social](https://digitalcourage.social/@tillgrallert)
 + Email: <till.grallert@hu-berlin.de>, <till.grallert@fu-berlin.de>
 + ADHO SIG multilingual DH: [multilingualdh.org](https://multilingualdh.org/)
-+ DHd AG multilingual DH: [ag.multilingualdh.de](https://ag.multilingualdh.de)
++ DHd AG multilingual DH: [ag.multilingualdh.de](http://ag.multilingualdh.de)
 
 ::::
 :::

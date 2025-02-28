@@ -785,11 +785,11 @@
                         display: inline-block;
                     }
 
-                    span.c_left,
+                    /*span.c_left,
                     span.c_right,
                     span.c_center {
                         display: inline-block;
-                    }
+                    }*/
 
                     /*****************
                     blackbox
@@ -1513,7 +1513,7 @@
         <!-- HU Berlin header -->
     <header>
       <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-              <a href="https://tillgrallert.eu/slides/dh/2025-mpiw/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.eu/slides/dh/2025-mpiw/"></a>
+              <a href="http://tillgrallert.eu/slides/dh/2025-mpiw/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=http://tillgrallert.eu/slides/dh/2025-mpiw/"></a>
         <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
           </header>
     <div class="reveal">
@@ -1540,7 +1540,7 @@ Lab</p>
 series</span>
           </p>
                                 <p class="date">2025-02-25</p>
-                              <p class="url"><a href="https://tillgrallert.eu/slides/dh/2025-mpiw/">https://tillgrallert.eu/slides/dh/2025-mpiw/</a></p>
+                              <p class="url"><a href="http://tillgrallert.eu/slides/dh/2025-mpiw/">http://tillgrallert.eu/slides/dh/2025-mpiw/</a></p>
                   </div>
       </div>
         </section>
@@ -1552,10 +1552,11 @@ series</span>
         </section>
         <section id="my-research-interests" class="slide level2">
         <h2>My research interests</h2>
-        <p><span class="c_right-align keyphrase">… or what I would want
-        to do</span></p>
+        <p><span class="c_center keyphrase">… or what I would want to
+        do</span></p>
         <div class="columns">
         <div class="column">
+        <p>Who are the most important authors?</p>
         <figure id="fig:network-authors-1">
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
@@ -1567,6 +1568,7 @@ series</span>
         width of edges: number of articles.</figcaption>
         </figure>
         </div><div class="column">
+        <p>What are the most important periodicals?</p>
         <figure id="fig:network-mentioned-periodicals-1">
         <img
         data-src="../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
@@ -1581,17 +1583,35 @@ series</span>
         </section>
         <section id="my-research-interests-1" class="slide level2">
         <h2>My research interests</h2>
-        <p><span class="c_right-align keyphrase">… or what I would want
-        to do</span></p>
-        <figure id="fig:stylo-muqtabas-anonymous">
+        <p><span class="c_center keyphrase">… or what I would want to
+        do</span></p>
+        <div class="columns">
+        <div class="column">
+        <!-- ![Bootstrap consencus network of stylometric similarity for anonymous articles in *al-Muqtabas* and all attributed articles in the OpenArabicPE data set](../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png){#fig:stylo-muqtabas-anonymous} -->
+        <p>Do periodicals speak with one auctorial voice?</p>
+        <figure id="fig:dataset3-publication">
         <img
-        data-src="../../assets/OpenArabicPE/stylometry/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png"
-        alt="Bootstrap consencus network of stylometric similarity for anonymous articles in al-Muqtabas and all attributed articles in the OpenArabicPE data set" />
-        <figcaption>Figure 3: Bootstrap consencus network of stylometric
-        similarity for anonymous articles in <em>al-Muqtabas</em> and
-        all attributed articles in the OpenArabicPE data
-        set</figcaption>
+        data-src="../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-issues-size_degree-colour_publication.png"
+        alt="Network plot of stylometric similarity in data set 3. Node colours indicate periodicals: purple = al-Ḥaqāʾiq, turquoise = al-Muqtabas, green = Lughat al-ʿArab, red = al-Zuhūr" />
+        <figcaption>Figure 3: Network plot of stylometric similarity in
+        data set 3. Node colours indicate periodicals: purple =
+        <em>al-Ḥaqāʾiq</em>, turquoise = <em>al-Muqtabas</em>, green =
+        <em>Lughat al-ʿArab</em>, red = <em>al-Zuhūr</em></figcaption>
         </figure>
+        </div><div class="column">
+        <p>Should we conflate editors with “their” periodical?</p>
+        <figure id="fig:muqtabas-authors-louvain">
+        <img
+        data-src="../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png"
+        alt="Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster on the left." />
+        <figcaption>Figure 4: Network plot of stylometric similarity for
+        anonymous articles in al-Muqtabas from data set 2 and all
+        attributed articles from data set 1. Node colours indicate
+        communities established by the Louvain algorithm. Note how the
+        anonymous articles cluster on the left.</figcaption>
+        </figure>
+        </div>
+        </div>
         <aside class="notes">
         <p>Note how the anonymous articles cluster on the left.</p>
         </aside>
@@ -1630,7 +1650,7 @@ series</span>
         <img
         data-src="../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif"
         alt="Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the number of new titles per period." />
-        <figcaption>Figure 4: Periodicals by places of publication. Size
+        <figcaption>Figure 5: Periodicals by places of publication. Size
         of circles corresponds to the number of periodicals. Colour
         indicates the number of new titles per period.</figcaption>
         </figure>
@@ -1680,7 +1700,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_1-i_1.png"
         alt="Webview of al-Zuhur 1(1)" />
-        <figcaption>Figure 5: <a
+        <figcaption>Figure 6: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview
         of <em>al-Zuhur</em> 1(1)</a></figcaption>
         </figure>
@@ -1688,7 +1708,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_muqtabas-v_3-i_2.png"
         alt="Webview of al-Muqtabas 3(2)" />
-        <figcaption>Figure 6: <a
+        <figcaption>Figure 7: <a
         href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview
         of <em>al-Muqtabas</em> 3(2)</a></figcaption>
         </figure>
@@ -1699,6 +1719,55 @@ series</span>
         <section id="background" class="title-slide slide level1">
         <h1>Background</h1>
 
+        </section>
+        <section id="arabic-periodicals" class="slide level2">
+        <h2>Arabic periodicals</h2>
+        <p>The first mass medium of the Eastern Mediterranean and a
+        global Arabic ideosphere</p>
+        <div class="columns-3">
+        <div class="column">
+        <figure id="fig:tf-1">
+        <img
+        data-src="../../assets/OpenArabicPE/front-pages/thamarat-al-funun-v_1-i_1.jpg"
+        alt="Front page of the newspaper Thamarāt al-Funūn #1, 20 April 1875, Beirut" />
+        <figcaption>Figure 8: Front page of the newspaper <a
+        href="https://www.wikidata.org/wiki/Q124973713"><em>Thamarāt
+        al-Funūn</em></a> #1, 20 April 1875, Beirut</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <!-- ![Front page of the newspaper *al-Iqbāl* #1, 9 April 1902, Beirut](../../assets/OpenArabicPE/front-pages/al-iqbal-v_1-i_1.png){#fig:iqbal-1} -->
+        <figure id="fig:kawkab-1">
+        <img
+        data-src="../../assets/OpenArabicPE/front-pages/kawkab-amirka-v_1-i_1.png"
+        alt="Front page of the newspaper Kawkab Amīrkā #1, 15 April 1892, New York" />
+        <figcaption>Figure 9: Front page of the newspaper <a
+        href="https://www.wikidata.org/wiki/Q4499150"><em>Kawkab
+        Amīrkā</em></a> #1, 15 April 1892, New York</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:quds-2">
+        <img
+        data-src="../../assets/OpenArabicPE/front-pages/al-quds-v_1-i_2.jpg"
+        alt="Front page of the newspaper al-Quds #2, 22 Sep. 1908, Jerusalem" />
+        <figcaption>Figure 10: Front page of the newspaper <a
+        href="https://www.wikidata.org/wiki/Q124972244"><em>al-Quds</em></a>
+        #2, 22 Sep. 1908, Jerusalem</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>striking similarity in layouts of newspapers
+        <ul>
+        <li>despite temporal and geographic distance</li>
+        </ul></li>
+        <li>note the Ottoman symbolism</li>
+        <li>note the absence of visual / typographic segmentation for
+        Thamarāt al-Funūn</li>
+        </ul>
+        </aside>
         </section>
         <section
         id="late-ottoman-eastern-mediterranean-diversity-across-the-board"
@@ -1711,7 +1780,7 @@ series</span>
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg/1055px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
         alt="Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: “Sykes Picot Agreement Map Signed 8 May 1916” (“English” 1916)" />
-        <figcaption>Figure 7: Map showing the colonial spheres of
+        <figcaption>Figure 11: Map showing the colonial spheres of
         interest agreed upon by France and UK. Signed by Sir Mark Sykes
         and Fr[ançois] Georges-Picot, 8 May 1916. Source: <span
         class="citation" data-cites="SykesPicot1916Map"><span>“Sykes
@@ -1835,11 +1904,9 @@ series</span>
         </ul>
         </aside>
         </section>
-        <section
-        id="you-are-as-beautiful-as-an-additional-hour-of-electricity-1"
+        <section id="access-to-power-and-the-internet"
         class="slide level2">
-        <h2>“You are as beautiful as an additional hour of
-        electricity!”</h2>
+        <h2>Access to power and the internet</h2>
         <div class="columns">
         <div class="column">
         <iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&amp;view=map" width="500" height="500" frameBorder="0" scrolling="no">
@@ -1888,9 +1955,9 @@ series</span>
         <img
         data-src="../../assets/dh/2023-07-17_damascus-archives_256558.jpeg"
         alt="The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: “«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب دمشق” (2023)" />
-        <figcaption>Figure 8: The National Archives of Syria in Damascus
-        the day after their conflagration on 16. July 2023. Source:
-        <span class="citation"
+        <figcaption>Figure 12: The National Archives of Syria in
+        Damascus the day after their conflagration on 16. July 2023.
+        Source: <span class="citation"
         data-cites="aSbHrmAdFAwrkAmAHryqkbyr"><span>“«أصبح رمادًا
         وركاما»... حريق كبير يدمر سوقًا في قلب دمشق”</span>
         (2023)</span></figcaption>
@@ -1902,7 +1969,7 @@ series</span>
         <img
         data-src="../../assets/dh/2024-02-04_gaza-omari-mosque_qattan.jpg"
         alt="The Great Omari Mosque in Gaza after its complete destruction by the Israeli military on 8. Dec. 2023. Source: Estrin and Bashir (Https 2024)" />
-        <figcaption>Figure 9: The Great Omari Mosque in Gaza after its
+        <figcaption>Figure 13: The Great Omari Mosque in Gaza after its
         complete destruction by the Israeli military on 8. Dec. 2023.
         Source: <span class="citation"
         data-cites="EstrinBashir2024requiemGazasiconic">Estrin and
@@ -1916,7 +1983,7 @@ series</span>
         <figure id="fig:oib-explosion">
         <img data-src="../../assets/dh/2020-08-04-oib-damage.jpg"
         alt="Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020. Source: OIB" />
-        <figcaption>Figure 10: Meeting room at the <a
+        <figcaption>Figure 14: Meeting room at the <a
         href="https://orient-institut.org/">Orient-Institut Beirut</a>
         damaged by the Beirut Port explosion on 4 August 2020. Source:
         OIB</figcaption>
@@ -1927,7 +1994,7 @@ series</span>
         <img
         data-src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iraq_National_Library_Destroyed.jpg"
         alt="The Iraq National Library and Archive in Baghdad after its destruction by arson in April 2003 during the American invasion. Source: Wikipedia" />
-        <figcaption>Figure 11: The Iraq National Library and Archive in
+        <figcaption>Figure 15: The Iraq National Library and Archive in
         Baghdad after its destruction by arson in April 2003 during the
         American invasion. Source: <a
         href="https://en.wikipedia.org/wiki/File:Iraq_National_Library_Destroyed.jpg">Wikipedia</a></figcaption>
@@ -1974,7 +2041,7 @@ series</span>
         <figure id="fig:dh-centres">
         <img data-src="../../assets/dh/map_dhcenters.png"
         alt="Global distribution of DH centres. Source: DH centerNet" />
-        <figcaption>Figure 12: Global distribution of DH centres.
+        <figcaption>Figure 16: Global distribution of DH centres.
         Source: <a href="http://dhcenternet.org/centers">DH
         centerNet</a></figcaption>
         </figure>
@@ -1983,7 +2050,7 @@ series</span>
         <figure id="fig:map-dh2023">
         <img data-src="../../assets/maps/map_dh2023.jpeg"
         alt="Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
-        <figcaption>Figure 13: Global distribution of attendees at
+        <figcaption>Figure 17: Global distribution of attendees at
         DH2023 in Graz. Source: <a
         href="https://digitalcourage.social/@dh_potsdam@hcommons.social/110696533594288097"><span
         class="citation" data-cites="Potsdam2023GeographyDH2023">Digital
@@ -2042,7 +2109,7 @@ series</span>
         <img
         data-src="../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png"
         alt="Approximate distribution of Arabic script use along current national boundaries. Solid colours: contemporary primary script; vertical stripes: contemporary use as a secondary national script; horizontal stripes historical use (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
-        <figcaption>Figure 14: Approximate distribution of Arabic script
+        <figcaption>Figure 18: Approximate distribution of Arabic script
         use along current national boundaries. Solid colours:
         contemporary primary script; vertical stripes: contemporary use
         as a secondary national script; horizontal stripes historical
@@ -2078,15 +2145,15 @@ series</span>
         <figure id="fig:zakham-ar">
         <img data-src="../../assets/dh/arabic-ligatures.png"
         alt="Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
-        <figcaption>Figure 15: Beginning of <span class="citation"
+        <figcaption>Figure 19: Beginning of <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. Some
         ligatures are highlighted.</figcaption>
         </figure>
         <figure id="fig:zakham-ar-rasm">
         <img data-src="../../assets/dh/arabic_rasm.png"
-        alt="Pseudo-rasm of the text in fig. 15. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
-        <figcaption>Figure 16: Pseudo-rasm of the text in fig. 15.
+        alt="Pseudo-rasm of the text in fig. 19. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
+        <figcaption>Figure 20: Pseudo-rasm of the text in fig. 19.
         Automatically generated with <span class="citation"
         data-cites="Pohl2022Rasmifize">Pohl (<span>“Rasmifize”</span>
         [2020] 2022)</span>.</figcaption>
@@ -2195,7 +2262,7 @@ series</span>
         <figure id="fig:ar-linotype">
         <img data-src="../../assets/dh/arabic-linotype_nemeth-p_46.png"
         alt="Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
-        <figcaption>Figure 17: Arabic Linotype, 1910s. Source: <span
+        <figcaption>Figure 21: Arabic Linotype, 1910s. Source: <span
         class="citation" data-cites="Nemeth+2017">(Nemeth <em>Arabic
         Type-Making in the Machine Age</em> 2017, fig.
         2.7)</span></figcaption>
@@ -2223,7 +2290,7 @@ series</span>
         <figure id="fig:unicode-1">
         <img data-src="../../assets/dh/unicode_1-0-0.png"
         alt="Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 18: Supported scripts in Unicode v1.0.0.
+        <figcaption>Figure 22: Supported scripts in Unicode v1.0.0.
         Source: <a href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
@@ -2232,7 +2299,7 @@ series</span>
         <img
         data-src="../../assets/dh/unicode_15-0-0-missing-scripts.png"
         alt="Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 19: Currently unsupported scripts. Source: <a
+        <figcaption>Figure 23: Currently unsupported scripts. Source: <a
         href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
@@ -2285,7 +2352,7 @@ series</span>
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
         alt="32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
-        <figcaption>Figure 20: 32 variants of encoding “Meccan” (<span
+        <figcaption>Figure 24: 32 variants of encoding “Meccan” (<span
         lang="ar">مكية</span>) <span class="citation"
         data-cites="Milo2014VisuallyMisleading">(Milo <span>“Visually
         <span>Misleading Characters</span> in the <span>Arabic
@@ -2297,7 +2364,7 @@ series</span>
         data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
         height="300"
         alt="In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
-        <figcaption>Figure 21: In-browser search for “<span
+        <figcaption>Figure 25: In-browser search for “<span
         lang="ar">مك</span>” in the Wikidata entry for “Mecca” (<a
         href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
         </figure>
@@ -2330,7 +2397,7 @@ series</span>
         <img
         data-src="../../assets/dh/spence-2023-p_19_arabic-failure.png"
         alt="Isasi et al. (“A Model for Multilingual and Multicultural Digital Scholarship Methods Publishing” 2023), 19" />
-        <figcaption>Figure 22: <span class="citation"
+        <figcaption>Figure 26: <span class="citation"
         data-cites="IsasiEtAl2023ModelMultilingual">Isasi et al.
         (<span>“A <span>Model</span> for <span>Multilingual</span> and
         <span>Multicultural Digital Scholarship Methods
@@ -2379,7 +2446,7 @@ series</span>
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/arabic_failure-browser.png"
         alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
-        <figcaption>Figure 23: Rendered HTML with the built-in default
+        <figcaption>Figure 27: Rendered HTML with the built-in default
         CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
@@ -2389,8 +2456,8 @@ series</span>
         </div><div class="column">
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 23 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 24: HTML-Code for fig. 23 in Visual Code
+        alt="HTML-Code for fig. 27 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption>Figure 28: HTML-Code for fig. 27 in Visual Code
         Studio. By default, non-ASCII characters are visually
         highlighted</figcaption>
         </figure>
@@ -2429,7 +2496,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png"
         alt="Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
-        <figcaption>Figure 25: Bi-directional TEI/XML at the beginning
+        <figcaption>Figure 29: Bi-directional TEI/XML at the beginning
         of <span class="citation"
         data-cites="oclc_1034545644-i_15-div_1.d2e634">Dammūs
         (<span>“Ṣiḥāfat Sūriyya wa-Lubnān”</span> 1911)</span>. Arrows
@@ -2440,8 +2507,8 @@ series</span>
         <figure id="fig:zuhur-oxygen">
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author_small.png"
-        alt="The TEI/XML from fig. 25 in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 26: The TEI/XML from fig. 25 in <a
+        alt="The TEI/XML from fig. 29 in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption>Figure 30: The TEI/XML from fig. 29 in <a
         href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
         Styling relies on CSS.</figcaption>
         </figure>
@@ -2519,7 +2586,7 @@ series</span>
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
         alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 27: Front page of <em><a
+        <figcaption>Figure 31: Front page of <em><a
         href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
         al-Sharq</a></em> #192, 22 Nov. 1922, Jerusalem. Source: <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
@@ -2577,7 +2644,7 @@ series</span>
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
         alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 28: Front page of <em>Mirʾāt al-Sharq</em>
+        <figcaption>Figure 32: Front page of <em>Mirʾāt al-Sharq</em>
         #192, 22 Nov. 1922, Jerusalem. Source: <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
         </figure>
@@ -2593,7 +2660,7 @@ series</span>
         <figure id="fig:zdb-hamza">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
         alt="Search in ZDB for “mir’at sarq”" />
-        <figcaption>Figure 29: Search in <a
+        <figcaption>Figure 33: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=mir&#39;at%20sarq">ZDB</a>
         for “mir’at sarq”</figcaption>
         </figure>
@@ -2609,7 +2676,7 @@ series</span>
         <figure id="fig:zdb-dmg">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
         alt="Search in ZDB for “Mirʾāt aš-Šarq”" />
-        <figcaption>Figure 30: Search in <a
+        <figcaption>Figure 34: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Mirʾāt%20aš-Šarq">ZDB</a>
         for “Mirʾāt aš-Šarq”</figcaption>
         </figure>
@@ -2661,7 +2728,7 @@ series</span>
         <img
         data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png"
         alt="Periodicals and their holding institutions (Wikidata)" />
-        <figcaption>Figure 31: Periodicals and their holding
+        <figcaption>Figure 35: Periodicals and their holding
         institutions (<a
         href="https://query-main.wikidata.org/embed.html#%23title%3AHoldings%20of%20Arabic%20periodicals%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0APREFIX%20medium%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ1002697%3E%20%20%20%20%23%20set%20a%20publication%20type%3A%20periodicals%20%28wd%3AQ1002697%29%2C%20newspapers%20%28wd%3AQ11032%29%0ASELECT%20DISTINCT%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0A%20%20%3Fcoords%0A%20%20%3Fcollection%20%3FcollectionLabel%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%20%23%20set%20a%20date%20of%20interest%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20medium%3A%20%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20to%20medium%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20%3Fperiodical%20wdt%3AP407%2Fwdt%3AP279%2a%20wd%3AQ13955.%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20by%20publication%20language%20%28Arabic%20%3D%20Q13955%29%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%7D%0A%20%20ORDER%20BY%20%3FdateOnset%0A%20%20LIMIT%204000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%3Fperiodical%20%3FdateOnset%20%3Fcollection%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20wdt%3AP195%20%3Fcollection%20.%0A%20%20%7D%0A%20%20%23LIMIT%2010000%0A%7D%20as%20%25holdings%0AWHERE%20%7B%0A%20%20INCLUDE%20%25holdings%0A%20%20OPTIONAL%7B%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP625%20%3Fcoords%20.%7D%20%20%20%20%20%20%20%20%20%20%20%20%23%20coordinates%20of%20the%20collection%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20p%3AP159%20%5Bps%3A625%20%3Fcoords%5D.%7D%20%20%20%20%20%20%23%20or%20cords%20of%20the%20HQ%20location%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP276%20%5Bwdt%3AP625%20%3Fcoords%5D.%20%7D%20%23%20or%20cords%20of%20the%20location%0A%20%20%20%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2C%20ar%22.%0A%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%20%20%3Fcollection%20rdfs%3Alabel%20%3FcollectionLabel.%0A%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%2010000">Wikidata</a>)</figcaption>
         </figure>
@@ -2831,14 +2898,14 @@ series</span>
         <img
         data-src="../../assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp"
         alt="Map of Arabic dialects. Source: reddit" />
-        <figcaption>Figure 32: Map of Arabic dialects. Source: <a
+        <figcaption>Figure 36: Map of Arabic dialects. Source: <a
         href="https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130">reddit</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:map-hesse">
         <img data-src="../../assets/maps/map_hesse-europe.png"
         alt="Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
-        <figcaption>Figure 33: Map of Hesse in Europe. Source: <a
+        <figcaption>Figure 37: Map of Hesse in Europe. Source: <a
         href="https://www.iz.sk/sk/projekty/regiony-eu/DE7"
         class="uri">https://www.iz.sk/sk/projekty/regiony-eu/DE7</a></figcaption>
         </figure>
@@ -2859,7 +2926,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png"
         alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 34: Interface of the <a
+        <figcaption>Figure 38: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -2877,15 +2944,15 @@ series</span>
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
         alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 35: <em>al-Muqtabas</em> 6 on <a
+        <figcaption>Figure 39: <em>al-Muqtabas</em> 6 on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
-        alt="The page from fig. 35 with a US-IP" />
-        <figcaption>Figure 36: The page from fig. 35 with a
+        alt="The page from fig. 39 with a US-IP" />
+        <figcaption>Figure 40: The page from fig. 39 with a
         US-IP</figcaption>
         </figure>
         </div>
@@ -2906,7 +2973,7 @@ series</span>
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
         alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 37: <span class="citation"
+        <figcaption>Figure 41: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
@@ -2917,7 +2984,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg"
         alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
-        <figcaption>Figure 38: Facsimile of the same section of <span
+        <figcaption>Figure 42: Facsimile of the same section of <span
         class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
@@ -3082,7 +3149,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
         alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 39: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
+        <figcaption>Figure 43: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
         p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
@@ -3171,7 +3238,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png"
         alt="Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
-        <figcaption>Figure 40: Transkribus web-app showing results of
+        <figcaption>Figure 44: Transkribus web-app showing results of
         our model for <em>al-Ḥasnāʾ</em> 1(1)</figcaption>
         </figure>
         </div>
@@ -3370,7 +3437,7 @@ series</span>
         <figure id="fig:wikidata-Q4703322">
         <img data-src="../../assets/jaraid/wikidata_Q4703322.png"
         alt="Veḳāʾiʿ-i Miṣriye on Wikidata" />
-        <figcaption>Figure 41: Veḳāʾiʿ-i Miṣriye on <a
+        <figcaption>Figure 45: Veḳāʾiʿ-i Miṣriye on <a
         href="https://www.wikidata.org/wiki/Q4703322">Wikidata</a></figcaption>
         </figure>
         </div>
@@ -3394,7 +3461,7 @@ series</span>
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-all-2024-03-16_markercluster.png"
         alt="Map of all periodicals, March 2024" />
-        <figcaption>Figure 42: <a
+        <figcaption>Figure 46: <a
         href="https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20before%20March%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-03-16%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset">Map
         of all periodicals, March 2024</a></figcaption>
         </figure>
@@ -3402,7 +3469,7 @@ series</span>
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-all-2024-08-21_markercluster.png"
         alt="Map of all periodicals, Aug. 2024, after we added our data" />
-        <figcaption>Figure 43: <a
+        <figcaption>Figure 47: <a
         href="https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20on%2021%20August%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-08-21%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset">Map
         of all periodicals, Aug. 2024, after we added our
         data</a></figcaption>
@@ -3430,7 +3497,7 @@ series</span>
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-palestine-1930_cropped.png"
         alt="Map of newspapers published in Palestine until 1930" />
-        <figcaption>Figure 44: <a
+        <figcaption>Figure 48: <a
         href="https://query-main.wikidata.org/embed.html#%23title%3A%20الصحافة%20في%20فلسطين%20حتى%20سنة%20١٩٣%D9%A0%0A%23title%3A%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%2C%20%22%3FpubPlace%22%2C%20%22lang%22%5D%2C%20%22markercluster%22%3A%20%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28%20CONCAT%20%28%22https%3A%2F%2Freasonator.toolforge.org%2F%3F%26q%3D%22%2C%20STRAFTER%28STR%28%3Fperiodical%29%2C%20STR%28wd%3A%29%20%29%29%29%20as%20%3Fitem%29%20%23%20link%20to%20item%20on%20Reasonator%0A%20%20%23%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%20%7C%20wdt%3AP131%29%20%3FpubPlace.%20%23%20locations%0A%20%20%7D%0A%20%20LIMIT%2040000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%23%20query%20for%20values%20within%20a%20bounding%20box%0A%20%20%20%20SERVICE%20wikibase%3Abox%20%7B%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%20%23%20get%20coordinates%20of%20locations%0A%20%20%20%20%20%20%23%20limit%20bounding%20box%20by%20Western%20and%20Eastern%20corners%3A%20Palestine%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerSouthWest%20%22Point%2834.11074%2031.2163%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerNorthEast%20%22Point%2835.97328%2033.34235%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D%20as%20%25area%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25area%0A%20%20%20%20%23%20get%20labels%20and%20descriptions%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22ar%2C%20%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%20300">Map
         of newspapers published in Palestine until 1930</a></figcaption>
         </figure>
@@ -3630,7 +3697,7 @@ series</span>
         <figure id="fig:zuhur-vscode">
         <img data-src="../../assets/OpenArabicPE/vscode_zuhur.png"
         alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
-        <figcaption>Figure 45: The TEI XML file for <em>al-Zuhūr</em>
+        <figcaption>Figure 49: The TEI XML file for <em>al-Zuhūr</em>
         2(4) in <a href="https://code.visualstudio.com/">Visual Studio
         Code</a></figcaption>
         </figure>
@@ -3657,7 +3724,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author.png"
         alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 46: The TEI XML file for <em>al-Zuhūr</em>
+        <figcaption>Figure 50: The TEI XML file for <em>al-Zuhūr</em>
         2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
         mode. Styling relies on CSS.</figcaption>
         </figure>
@@ -3697,7 +3764,7 @@ series</span>
         <figure id="fig:zuhur-zenodo">
         <img data-src="../../assets/OpenArabicPE/zenodo_zuhur.png"
         alt="Archived release of al-Zuhūr on Zenono" />
-        <figcaption>Figure 47: Archived release of <em>al-Zuhūr</em> on
+        <figcaption>Figure 51: Archived release of <em>al-Zuhūr</em> on
         <a
         href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
         </figure>
@@ -3742,7 +3809,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png"
         alt="Zotero group “OpenArabicPE”: details in mobile view" />
-        <figcaption>Figure 48: Zotero group “<a
+        <figcaption>Figure 52: Zotero group “<a
         href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
         details in mobile view</figcaption>
         </figure>
@@ -3750,7 +3817,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png"
         alt="Webview of al-Zuhūr 2(4)" />
-        <figcaption>Figure 49: <a
+        <figcaption>Figure 53: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
         of <em>al-Zuhūr</em> 2(4)</a></figcaption>
         </figure>
@@ -3925,7 +3992,7 @@ series</span>
         <img
         data-src="../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png"
         alt="The main components of OpenArabicPE" />
-        <figcaption>Figure 50: The main components of
+        <figcaption>Figure 54: The main components of
         OpenArabicPE</figcaption>
         </figure>
         </div>
@@ -3961,7 +4028,7 @@ series</span>
         </div><div class="column">
         <ul>
         <li>Slides: <a
-        href="https://tillgrallert.eu/slides/dh/2025-mpiw/index.html">tillgrallert.eu/slides/de/2025-mpiw/</a></li>
+        href="http://tillgrallert.eu/slides/dh/2025-mpiw/index.html">tillgrallert.eu/slides/de/2025-mpiw/</a></li>
         <li>Project blog: <a
         href="https://openarabicpe.github.io">openarabicpe.github.io</a></li>
         <li>Papers: <a
@@ -3988,7 +4055,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         <li>ADHO SIG multilingual DH: <a
         href="https://multilingualdh.org/">multilingualdh.org</a></li>
         <li>DHd AG multilingual DH: <a
-        href="https://ag.multilingualdh.de">ag.multilingualdh.de</a></li>
+        href="http://ag.multilingualdh.de">ag.multilingualdh.de</a></li>
         </ul>
         </div>
         </div>
@@ -4342,7 +4409,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">
-          <a href="https://tillgrallert.eu/slides/dh/2025-mpiw/">https://tillgrallert.eu/slides/dh/2025-mpiw/</a>
+          <a href="http://tillgrallert.eu/slides/dh/2025-mpiw/">http://tillgrallert.eu/slides/dh/2025-mpiw/</a>
           <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
         </span>
                 <!-- this should probably moved to the title slide only -->
