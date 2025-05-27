@@ -952,6 +952,35 @@ Bibliographic metadata is faulty throughout, mostly unstructured, and subject to
 
 :::
 
+## Quality of metadata
+
+Bibliographic metadata is faulty throughout, mostly unstructured, and subject to *linguistic imperialism*
+
+::: columns
+:::: wide
+
+*al-Quds* was "published twice a week every Tuesday and Friday" by [جرجي حبيب حنانيا]{lang="ar"} in Jerusalem from Friday, 18 September, 1908 onwards. The masthead records three calendars: Julian, Gregorian, Hijrī.
+
+![ [*al-Quds* 1(1)](https://jrayed.org/en/newspapers/?a=d&d=alkouds19080905-01.1.1): the dateline states "Jerusalem, Friday, 5 and 18 September 1908, which corresponds to 22 Shaʾbān 1316 aH"](../../assets/jaraid/al-quds_nloi_annotated.png){#fig:al-quds-dateline}
+
+::::
+:::: narrow
+
+![Calender with publication dates according to the National Library of Israel](../../assets/jaraid/al-quds_nloi_calendar.png){#fig:al-quds-nloi}
+
+![Publication dates according to the Institute of Palestine Studies, Beirut](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/al-quds_ips_annotated.png){#fig:al-quds-ips}
+
+::::
+:::
+
+::: notes
+
+- cataloguers are frequently unfamiliar with the cultural artefacts in front of them
+- *al-Quds* was published on Wed and Fri, according to the mastheads, which provided the day of the week as well as Julian, Gregorian, and Hijrī dates
+- both the NLoI and the Institute for Palestine Studies in Beirut, misread the Julian dates for Gregorian ones and then computed weekdays that do not match the ones recorded in the masthead
+
+:::
+
 ## mind the `<gap/>`!
 ### Traditional OCR
 
