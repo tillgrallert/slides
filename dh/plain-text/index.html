@@ -9,8 +9,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -95,7 +95,7 @@
       code span.vs { color: #4070a0; } /* VerbatimString */
       code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -159,8 +159,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -182,20 +182,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -206,8 +211,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -281,10 +286,12 @@
                     #title-slide {
                         background-color: rgba(255, 255, 255, 0.93);
                     }
-                    div.slide {
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -313,16 +320,9 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
                     th,
                     .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
@@ -740,29 +740,35 @@
                     .c_left {
                         display: block;
                         float: left;
+                        text-align: left;
                     }
                     .c_right {
                         display: block;
                         float: right;
+                        text-align: right;
                     }
                     .c_center {
                         display: block;
                         /*clear: both;*/
                         margin: 0 auto;
+                        text-align: center;
+                    /*    width: 100%;*/
                     }
                     .c_left-align {
                         text-align: left;
+                        display: inline-block;
                     }
 
                     .c_right-align {
                         text-align: right;
+                        display: inline-block;
                     }
 
-                    span.c_left,
+                    /*span.c_left,
                     span.c_right,
                     span.c_center {
                         display: inline-block;
-                    }
+                    }*/
 
                     /*****************
                     blackbox
@@ -1464,6 +1470,22 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
@@ -1492,7 +1514,7 @@ Schreiben</h1>
                   </div>
       </div>
         </section>
-                
+
         <section>
         <section id="hintergrund" class="title-slide slide level1">
         <h1>Hintergrund</h1>
@@ -1953,12 +1975,12 @@ Schreiben</h1>
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="../../assets/revealjs/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
+    <script src="../../assets/revealjs/plugin/search/search.js"></script>
+    <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
     
     <script>
 

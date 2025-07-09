@@ -11,6 +11,7 @@ lang: de
 bibliography: 
     - https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 suppress-bibliography: false
+revealjs-url: ../../assets/revealjs
 license: https://creativecommons.org/licenses/by-sa/4.0/
 markdown: pandoc
 tags:
