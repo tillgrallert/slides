@@ -71,7 +71,7 @@ tags:
 ::::
 :::
 
-## 3. Algorithmen und Infrastrukturen sind Akteure
+## 3. Algorithmen sind Akteure
 
 ::: columns
 :::: narrow
