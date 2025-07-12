@@ -167,10 +167,10 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 :::
 
 # Komponenten
-## [Markdown (md)](http://daringfireball.net/projects/markdown)
+## [Markdown (md)](https://www.wikidata.org/wiki/Q1193600)
 
 ::: columns
-:::: wide
+:::: {.wide lang="de"}
 
 - Was: eine *leichtgewichtige Auszeichnungssprache* (plain-text **Syntax**) und text-to-`HTML` Konvertierungs-**Werkzeug**. 
     + Die Syntax ist durch plain-text Email inspiriert
@@ -179,20 +179,35 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 - Aktuelle Version: Markdown 1.0.1 (2004)
 
 ::::
+:::: {.wide lang="en"}
+
+- what: "lightweight markup language" (plain text **syntax**) and text-to-Html conversion **tool**. The syntax was inspired by plain text email.
+- when: **2004**
+- who: John Gruber (et al.)
+- current version: Markdown 1.0.1 (2004)
+
+::::
 :::: narrow
 
 ```md
-# [Markdown (md)](http://daringfireball.net/projects/markdown)
+# head level 1
+## head level 2
 
-- Was: eine *leichtgewichtige Auszeichnungssprache* (plain-text **Syntax**) und text-to-`HTML` Konvertierungs-**Werkzeug**. 
-    + Die Syntax ist durch plain-text Email inspiriert
-- Wann: **2004**
+Some plain paragraph with some *emphasis* ("italics") and **strong emphasis** ("bold"), 
+a [hyperlink](http://www.some-url.org) and an <email.address@some-url.org>.
+
+- unordered list
+    + second level
+
+1. ordered list
+4. second entry
+    1. second level
 ```
 
 ::::
 :::
 
-::: columns
+::: {.columns lang="de"}
 :::: column
 
 ### Pros
@@ -215,16 +230,48 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 
 ::::
 :::
+::: {.columns lang="en"}
+:::: column
+
+### Pros
+
++ extremly flexiber
++ large-scale support 
+    * HU: Element (Matrix), HU Box, Open Project
+    * Slack, Discord
+    * GitHub, R Markdown, Jupyter Notebooks
+
+::::
+:::: column
+
+### Cons:
+
++ `md` is a **convention** with many ambiguities
+    + no strict syntax or standard beyond the original implementation
++ missing features: footnotes, tables ...
++ no further development
+
+::::
+:::
 
 
-## [Pandoc](https://pandoc.org/)
+## [Pandoc](https://www.wikidata.org/wiki/Q2049294)
+
+::: {lang="de"}
 
 - Was: Konvertierungs-**Werkzeug** und auf Markdown basierende plain-text **Syntax**
 - Wann: aktive Entwicklung seit **2006**
 - Wer: John MacFarlane (UC Berkeley)
-- Aktuelle Version: ![[github release](https://github.com/jgm/pandoc/releases)](https://img.shields.io/github/release/jgm/pandoc.svg?label=current+release)
 
-::: columns
+:::
+::: {lang="en"}
+
+- what: conversion **tool** and plain text **syntax** based on Markdown
+- when: under active development since **2006**
+- who: John MacFarlane (UC Berkeley)
+
+:::
+::: {.columns lang="de"}
 :::: column
 
 ### Pros
@@ -243,6 +290,27 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 
 + weiterhin kein strikter Standard
 + teilweise Inkompatibilität mit anderen Markdown Flavours
+
+::::
+:::
+::: {.columns lang="en"}
+:::: column
+
+### Pros
+
++ active development
++ basis for many other tools
++ large number of import and export formats: HTML, Word processors, Ebooks, documentation formats (including [TEI Simple](https://github.com/TEIC/TEI-Simple)), TeX formats, PDF, markdown flavours
++ extends markdown with footnotes, tables, automatic citations and bibliographies
++ large number of options to tweak the conversion
+
+::::
+:::: column
+
+### Cons (format)
+
++ no strict standard
++ partial incompatibility with other markdown flavours
 
 ::::
 :::
@@ -267,29 +335,36 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
     + generate table of content: `--toc`, `--table-of-contents`
     + standalone (include a proper header and footer): `-s`, `--standalone` 
 
-## [Yaml (Yaml ain't markup language)](http://yaml.org/)
+## [Yaml (Yaml ain't markup language)](https://www.wikidata.org/wiki/Q281876)
 
 
 ::: columns
-:::: wide
+:::: {.wide lang="de"}
 
-- Was: "menschenfreundliche" [Datenserialisierung](https://en.wikipedia.org/wiki/Serialization); superset von [JSON]()
+- Was: "menschenfreundliche" [Datenserialisierung](https://en.wikipedia.org/wiki/Serialization); superset von [JSON](https://www.wikidata.org/wiki/Q2063)
     + provides a very simple means of adding metadata to the beginning of plain text files
 - Wann: seit **2001** <!--; first working draft of YAML 1.1 in 2004-->
 - Wer: Clark Evans, Ingy döt Net and Oren Ben-Kiki
 - Aktuelle Version: YAML 1.2 ([spec](http://yaml.org/spec/1.2/spec.html))
 
+::::
+:::: {.wide lang="en"}
 
+- what: "human friendly" [data serialization](https://en.wikipedia.org/wiki/Serialization); superset of [JSON](https://www.wikidata.org/wiki/Q2063)
+    + provides a very simple means of adding metadata to the beginning of plain text files
+- when: since **2001**; first working draft of YAML 1.1 in 2004
+- who: Clark Evans, Ingy döt Net and Oren Ben-Kiki
+- current version: YAML 1.2 ([spec](http://yaml.org/spec/1.2/spec.html))
 
 ::::
 :::: narrow
 
 ```yml
 ---
-- title: "Alles nur Spielerei?"
+- title: "plain-text publishing"
+- lang: en
 - author: 
     - Till Grallert
-    - Samantha Tirtohusodo
 - date: 2022-11-29
 ---
 ```
@@ -297,16 +372,26 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 ::::
 :::
 
-## [BibTeX](http://www.bibtex.org/Format/)
+
+
+## [BibTeX](https://www.wikidata.org/wiki/Q8029)
 
 
 ::: columns
-:::: wide
+:::: {.wide lang="de"}
 
 - Was: ein strukturiertes **Format** für bibliographische Daten (und ein Programm zur Erstellung von Literaturverzeichnissen in TeX/ LaTeX)
 - Wann: seit **1985** 
 - Wer: Oren Patashnik, Leslie Lamport
 - Aktuelle Version: 0.99c (1988), 0.99d (2010)
+
+::::
+:::: {.wide lang="en"}
+
+- what: a structured *format* for bibliographic data
+- when: since **1985**
+- who: Oren Patashnik, Leslie Lamport
+- current version: Version: 0.99c (1988), 0.99d (2010)
 
 ::::
 :::: narrow
@@ -327,7 +412,7 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 ::::
 :::
 
-::: columns
+::: {.columns lang="de"}
 :::: column
 
 ### Pros
@@ -337,10 +422,29 @@ Nur explizites Wissen kann verlässlich wiedergefunden und angezeigt werden
 ::::
 :::: column
 
-### Cons:
+### Cons
 
 + praktisch keine Entwicklung seit 1988
 + kein strikter Standard
+
+::::
+:::
+
+::: {.columns lang="en"}
+:::: column
+
+### Pros
+
++ wide support across the board
+
+::::
+:::: column
+
+### Cons
+
++ no strict standard
++ practically dorment development since the 1980s
++ patchy support for Unicode
 
 ::::
 :::
