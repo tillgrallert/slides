@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -32,8 +32,9 @@
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
       /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
       pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
       .sourceCode { overflow: visible; }
       code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -44,7 +45,7 @@
       }
       @media print {
       pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
       }
       pre.numberSource code
         { counter-reset: source-line 0; }
@@ -116,1405 +117,657 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
-                    <style type="text/css">
-                    /* slidy.css
-
-                       Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
-                       W3C liability, trademark, document use and software licensing
-                       rules apply, see:
-
-                       http://www.w3.org/Consortium/Legal/copyright-documents
-                       http://www.w3.org/Consortium/Legal/copyright-software
-                    */
-
-                    @font-face {
-                        font-family: AmiriWeb;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
-                    }
-
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: italic;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: regular;
-                        font-weight: bold;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: italic;
-                        font-weight: bold;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: HeptaSlab;
-                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: linowrite;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
-                    }
-
-
-                    /* render Arabic as rtl */
-                    [lang = "ar"],
-                    [lang = "ota"],
-                    [lang = "fa"],
-                    [lang = "he"],
-                    [lang *= "-Arab-AR"] {
-                        direction: rtl;
-                        text-align: right !important;
-                        font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
-                        At the moment almost everything is tailored to 18px */
-                        /*    font-size: 18px;*/
-                    }
-                    /* display latin scripts in a smaller font */
-                    [lang = "en"],
-                    [lang = "fr"],
-                    [lang = "de"],
-                    [lang = "it"],
-                    [lang *= "ar-Latn-"],
-                    [lang *= "ota-Latn-"] {
-                        direction: ltr;
-                        text-align: left !important;
-                        /*    font-size: 14px;*/
-                    }
-                    /* counter default settings in reveal.css */
-                    .reveal .slides {
-                        text-align: left;
-                    }
-
-                    html,
-                    body,
-                    html.print-pdf body,
-                    .reveal-viewport {
-                        margin: 0 0 0 0 !important;
-                        padding: 0 0 0 0;
-                        width: 100%;
-                        height: 100%;
-                    }
-                    html,
-                    body,
-                    .reveal-viewport {
-                        /*color: white;*/
-                        color: black !important;
-                        /*color: #4d4d4d;*/
-                        /*background-color: black;*/
-                        background-color: white !important;
-                        overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-                      font-size: 12px;*/
-                      line-height: 1.2;
-                      word-wrap: break-word;
-                    }
-                    body,
-                    .reveal-viewport {
-                        position: static;
-                    }
-                    /******************
-                      header and footer to be displayed on all slides
-                    *******************/
-
-                    header, 
-                    footer, 
-                    div.c_header,
-                    div.c_footer  {
-                      z-index: 30;
-                      display: block;
-                      position: fixed;
-                      height: 3.8em;
-                      width: 100%;
-                    }
-                    footer.reveal {
-                        height: 3em;
-                    }
-                    header,
-                    div.c_header {
-                        top: 0;
-                    }
-                    footer,
-                    footer * {
-                        bottom: 0;
-                        background-color: #8a0f14;
-                        color: white !important;
-                    }
-
-                    footer {
-                        font-size: 0.7em;
-                    }
-
-                    footer span {
-                        /*text-transform:  capitalize; */
-                        /*this doesn't seem to have an effect*/
-                        display: inline-block;
-                        padding-left: 0.5em;
-                        padding-right: 0.5em;
-                    }
-                    div.c_footer {
-                        top: auto;
-                        bottom: 1.2em;
-                        height: 1.2em;
-                        font-size: 60%;
-                    }
-                    div.c_frame {
-                    /*padding: 1em;*/
-                    margin-top: 1em;
-                    margin-left: 3em;
-                    margin-right: 3em;
-                    }
-
-                    /* basic styling for all slides */
-                    div.slide,
-                    section.slide {
-                        z-index: 20;
-                        display: block;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-right: auto;
-                        margin-left: auto;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        border-width: 0;
-                        clear: both;
-                        left: 0;
-                        right: 0;
-                        /*line-height: 120%;*/
-                        background-color: rgba(255, 255, 255, 0.93);
-                        /*background-color: transparent;*/
-                        /* width should be in em dashes*/
-                        max-width: 50em;
-                        height: 40em;
-                    }
-                    #title-slide {
-                        background-color: rgba(255, 255, 255, 0.93);
-                    }
-                    div.slide,
-                    html.print-pdf div.slide {
-                        top: 10% ;
-                    }
-                    /* revealjs generates inline CSS that needs to be overridden  */
-                    html.print-pdf section.slide,
-                    section.slide {
-                        top: 0 !important;
-                    }
-                    /* while on screen slides should be black on white, it should be the opposite on projectors */
-                    @media projector {
-                        body {
-                            background-color: black;
-                            color: white;
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/white.css" id="theme">
+                    <!-- global settings for revealjs -->
+                    <style>
+                    /* load fonts */
+                        @font-face {
+                            font-family: AmiriWeb;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
                         }
-                        pre {
-                            background-color: white;
-                            color: black;
+
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
                         }
-                    }
-                    /******************
-                    set fonts and sizes
-                    *******************/
-                    body,
-                    .reveal-viewport {
-                        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-                    /*font-family: "American Typewriter";*/
-                    /*font-family: "Gentium Plus";*/
-                    }
-                    body {
-                        font-weight: 300 !important;
-                        /*font-size is over-ridden by automatically generated inline CSS on body*/
-                        font-size: 24px !important;
-                    }
-                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
-                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
-                    h1, h2, h3, h4, h5,
-                    th,
-                    .keyphrase {
-                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
-                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
-                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-                        font-weight: 400;
-                        color: #113868;
-                    }
-                    p,
-                    ol,
-                    ul,
-                    span {
-                    }
-                    /**
-                    highlights: <em> is for transcribed terms, <strong> for emphasis;
-                    **/
-                    em {
-                        /*font-family: "Gentium Plus";
-                      /*font-family: Georgia;*/
-                      font-style: italic;
-                      font-weight: 200;
-                    }
-                    strong {
-                        font-style: italic;
-                        font-weight: 200;
-                        border-bottom: 2px dotted #F96827;
-                    }
-                    table {
-                        font-size: 0.8em;
-                    }
-                    .small-font {
-                        font-size: 70%;
-                    }
-                    /******************
-                    set colours
-                    *******************/
-
-                    /***************
-                    standard classes, navigation
-                    ***************/
-                    div.toolbar {
-                        position: fixed;
-                        z-index: 40;
-                        top: auto;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        height: 1.2em;
-                        text-align: right;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                        font-size: 60%;
-                        color: red;
-                        background-color: rgb(240, 240, 240);
-                        border-top: solid 1px rgb(180, 180, 180);
-                    }
-                    div.toolbar span.copyright {
-                        /*display: inline-block;
-                      text-align: center;*/
-                      color: black;
-                      margin-left: 0.5em;
-                    }
-                    /* revealjs navigation */
-                    aside.controls {
-                        bottom: 7em !important;
-                    }
-                    aside.controls * {
-                        z-index: 40;
-                    }
-                    div.initial_prompt {
-                        position: absolute;
-                        z-index: 1000;
-                        bottom: 1.2em;
-                        width: 100%;
-                        background-color: rgb(200, 200, 200);
-                        opacity: 0.35;
-                        background-color: rgba(200, 200, 200, 0.35);
-                        cursor: pointer;
-                    }
-                    div.initial_prompt p.help {
-                        text-align: center;
-                    }
-                    div.initial_prompt p.close {
-                        text-align: right;
-                        font-style: italic;
-                    }
-                    div.slidy_toc {
-                        position: absolute;
-                        z-index: 300;
-                        width: 60%;
-                        max-width: 30em;
-                        height: 30em;
-                        overflow: auto;
-                        top: auto;
-                        right: auto;
-                        left: 4em;
-                        bottom: 4em;
-                        padding: 1em;
-                        background: rgb(240, 240, 240);
-                        border-style: solid;
-                        border-width: 2px;
-                        font-size: 60%;
-                    }
-                    div.slidy_toc .toc-heading {
-                        text-align: center;
-                        width: 100%;
-                        margin: 0;
-                        margin-bottom: 1em;
-                        border-bottom-style: solid;
-                        border-bottom-color: rgb(180, 180, 180);
-                        border-bottom-width: 1px;
-                    }
-                    /* basic styling for all slides */
-                    div.background {
-                        display: none;
-                    }
-                    div.handout {
-                        margin-left: 20px;
-                        margin-right: 20px;
-                    }
-                    div.slide.titlepage {
-                        text-align: center;
-                    }
-                    div.slide.titlepage h1 {
-                        padding-top: 10%;
-                        margin-right: 0;
-                    }
-                    /* h1 needs to override the standard CSS */
-                    div.slide h1 {
-                        padding-left: 0;
-                        padding-right: 0;
-                        padding-top: 4pt;
-                        padding-bottom: 4pt;
-                        margin-top: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        margin-bottom: 0.5em;
-                        display: block;
-                        /*font-size: 160%;*/
-                        line-height: 1.2em;
-                        background: transparent;
-                    }
-                    /*****************
-                    heads
-                    ******************/
-                    /* title and dividing slides */
-                    /* put h1 in the center of the slide */
-                    div.titleslide h1,
-                    #title-slide h1 {
-                        margin-top: 2em;
-                    /*margin-bottom: auto;*/
-                    font-size: 2em;
-                    }
-
-                    h1,
-                    h2,
-                    h3,
-                    h4 {
-                        text-align: center;
-                    }
-                    div.reveal h1, h1 {
-                        padding-bottom: 0.3em;
-                        font-size: 1.75em;
-                        line-height: 1.2;
-                        border-bottom: 1px solid #eee;
-                        margin-top: 4em;
-                    }
-                    div.reveal h2, h2 {
-                        padding-bottom: 0.3em;
-                        font-size: 1.5em;
-                        line-height: 1.225;
-                        border-bottom: 1px solid #eee;
-                    }
-                    div.reveal h3, h3 {
-                        font-size: 1.25em;
-                        line-height: 1.43;
-                    }
-                    div.reveal h4, h4 {
-                        font-size: 1em;
-                    }
-                    /******************
-                    levels of slides
-                    ******************/
-                    .title-slide,
-                    .level1 {
-                        padding-top: 100px;
-                        padding-bottom: 100px;
-                    }
-                    /******************
-                    links
-                    ******************/
-                    a {
-                        text-decoration: none
-                    }
-                    a img {
-                        border-width: 0;
-                        border-style: none
-                    }
-                    /*a:visited { color: navy }
-                    a:link { color: navy }
-                    a:hover { color: red; text-decoration: underline }
-                    a:active { color: red; text-decoration: underline }*/
-                    a,
-                    a:link {
-                        color: #F46A00 /*!important*/;
-                        /*text-decoration: none; */
-                    }
-                    a:visited {
-                        color: #a84900;
-                        /*text-decoration: none; */
-                    }
-                    a:hover,
-                    a:active {
-                        color: #8DB300;
-                        /*text-decoration: none; */
-                    }
-                    .toolbar a:link {
-                        color: blue
-                    }
-                    .toolbar a:visited {
-                        color: blue
-                    }
-                    .toolbar a:active {
-                        color: red
-                    }
-                    .toolbar a:hover {
-                        color: red
-                    }
-                    @media screen and (max-device-width : 1024px) {
-                        div.slide {
-                            font-size: 100%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: italic;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
                         }
-                    }
-                    @media screen and (max-device-width : 800px) {
-                        div.slide {
-                            font-size: 200%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: regular;
+                            font-weight: bold;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
                         }
-                        div.slidy_toc {
-                            top: 1em;
-                            left: 1em;
-                            right: auto;
-                            width: 80%;
-                            font-size: 180%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: italic;
+                            font-weight: bold;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
                         }
-                    }
-                    div.toc-heading {
-                        width: 100%;
-                        display: inline-block;
-                        height: auto;
-                        border-bottom: solid 1px rgb(180, 180, 180);
-                        margin-bottom: 1em;
-                        text-align: center;
-                    }
-                    /****************
-                    title slide
-                    *****************/
-
-                    /*span.author ~ span.author::before {
-                      content: ', ';
-                    }*/
-
-                    /****************
-                    images and figures
-                    *****************/
-                    div.slide img {
-                        /* image-rendering: optimize-quality; */
-                        background-color: white; /*rgba(0,0,0,0.04);*/
-                        border-radius: 5px;
-                        display: block;
-                        max-height: 600px;
-                        max-width: 95%;
-                        /* center images */
-                        margin-left: auto;
-                        margin-right: auto;
-                        /*box-shadow: 2px 2px 5px #000;*/
-                        /*border: gray solid 1px;*/
-                    }
-                    div.figure {
-                        width: 100%;
-                        padding: 0;
-                        /*height: inherit;*/
-                    }
-                    figure {
-                        margin-block-start: 0;
-                        margin-block-end: 0;
-                        /*margin-inline-start: 40px;
-                        margin-inline-end: 40px;*/
-                        margin-inline-start: 0;
-                        margin-inline-end: 0;
-                    }
-                    div.figure p.caption,
-                    figcaption {
-                        position: relative;
-                        float: right;
-                        text-align: right;
-                        margin-top: 0.2em;
-                        margin-bottom: 0.5em;
-                        /*top:2em;*/
-                        /*max-width:15%;
-                        min-width: 180px;*/
-                        font-size: 0.6em;
-                        font-weight: lighter;
-                    }
-                    div.figure img {
-                        float: right;
-                        /*max-height: 80%;*/
-                        /*max-height: 600px;*/
-                        /*max-height: inherit;*/
-                        /*max-width:80%;*/
-                        /*max-width: 95%;*/
-                    }
-                    header img,
-                    footer img {
-                        display: block;
-                    }
-                    /* inline images */
-                    /*p img,
-                    li img {
-                        display: inline-block;
-                        height: 1em;
-                    }*/
-                    img.c_logo {
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                    /*    max-width: 6em !important;*/
-                        max-height: 4em !important;
-                    }
-                    img.c_logo.c_left {
-                        margin-left: 1em;
-                    }
-                    img.c_logo.c_right {
-                        margin-right: 1em;
-                    }
-                    /*img {
-                      max-height: 700px;
-                      max-width: 100%;
-                    }*/
-                    /* external content, including local html pages */
-                    iframe {
-                        display: block;
-                        width: 90%;
-                        /* the height setting seems to squeeze iframes */
-                        height: 600px;
-                        /* center the iframe */
-                        margin-left: auto;
-                        margin-right: auto;
-                        scrolling: auto;
-                        scroll-behavior: auto;
-                        /*border:none;*/
-                    }
-                    /*.size-80 {
-                      display: block;
-                      width: 80%;
-                      height: 80%;
-                    }*/
-                    /*****************
-                    columns
-                    ******************/
-                    div.columns,
-                    div.columns-2,
-                    div.columns-3 {
-                        /* newer? versions of reveal use display: flex */
-                        display: block;
-                        /*flex: none;*/
-                        clear: both;
-                    }
-                    div.columns-3 {
-                        clear: both;
-                    }
-                    div.column {
-                    /*    display: inline-block;*/
-                        flex: none;
-                        display: block;
-                        float: left;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                    }
-                    .columns-3 > .column {
-                        width: 31%;
-                    }
-                    .columns-3 > .narrow {
-                        width: 23%;
-                        position: relative;
-                        float: left;
-                    }
-
-                    .columns-3 > .wide {
-                        width: 50%;
-                        position: relative;
-                        float: left;
-                    }
-                    .columns-2 > .column,
-                    .columns > .column,
-                    .c_width-50  {
-                        width: 48%;
-                    }
-                    .c_width-60,
-                    .column-60,
-                    .columns .wide {
-                        width: 64%;
-                        position: relative;
-                        float: left;
-                    }
-                    .c_width-50 {
-                        position: relative;
-                        float: left;
-                    }
-                    .c_width-30,
-                    .column-30,
-                    .columns .narrow {
-                        width: 31%;
-                        position: relative;
-                        float: left;
-                    }
-                    .c_left {
-                        display: block;
-                        float: left;
-                        text-align: left;
-                    }
-                    .c_right {
-                        display: block;
-                        float: right;
-                        text-align: right;
-                    }
-                    .c_center {
-                        display: block;
-                        /*clear: both;*/
-                        margin: 0 auto;
-                        text-align: center;
-                    /*    width: 100%;*/
-                    }
-                    .c_left-align {
-                        text-align: left;
-                        display: inline-block;
-                    }
-
-                    .c_right-align {
-                        text-align: right;
-                        display: inline-block;
-                    }
-
-                    /*span.c_left,
-                    span.c_right,
-                    span.c_center {
-                        display: inline-block;
-                    }*/
-
-                    /*****************
-                    blackbox
-                    ******************/
-
-                    .blackbox  * {
-                        font-size: inherit;
-                        font-family: inherit;
-                    }
-                    .blackbox > div,
-                    .blackbox > section {
-                        width: 32%;
-                        position: relative;
-                        /*float: left;*/
-                        min-height: 5em;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                    }
-                    .blackbox > .input,
-                    .blackbox > .output {
-                        width: 25%;
-                        background-color: rgba(245, 245, 245, 1);
-                    }
-                    .blackbox > .input {
-                        float: left;
-                    }
-                    .blackbox > .output {
-                        float: right;
-                    }
-                    .blackbox textarea {
-                        min-height: inherit;
-                        background-color: inherit;
-                    }
-                    .blackbox > .computing,
-                    .blackbox > .content {
-                        min-height: 5em;
-                        /*padding: 1em;*/
-                        margin: 0 auto;
-                        border-style: solid;
-                        border-width: 1px;
-                        border-color: black;
-                    }
-                    .blackbox > .computing {
-                        background-color: black;
-                        color: white;
-                    }
-                    .blackbox > .content {
-
-                    }
-
-                    button {
-                        display: block;
-                        cursor: pointer;
-                    }
-                    .blackbox button {
-                        min-width: 150px;
-                        height: 50px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        top: 1em;
-                    }
-                    .button-36 {
-                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-                        border-radius: 8px;
-                        border-style: none;
-                        box-sizing: border-box;
-                        color: #FFFFFF;
-                        cursor: pointer;
-                        flex-shrink: 0;
-                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-                        font-size: 16px;
-                        font-weight: 500;
-                        height: 4rem;
-                        padding: 0 1.6rem;
-                        text-align: center;
-                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-                        transition: all .5s;
-                        user-select: none;
-                        -webkit-user-select: none;
-                        touch-action: manipulation;
-                    }
-
-                    .button-36:hover {
-                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-                        transition-duration: .1s;
-                    }
-                    .button-49,
-                    .button-49:after {
-                      line-height: 50px;
-                      font-size: 20px;
-                      font-family: 'Bebas Neue', sans-serif;
-                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-                      border: 0;
-                      color: #fff;
-                      letter-spacing: 3px;
-                      box-shadow: 6px 0px 0px #00E6F6;
-                      outline: transparent;
-                      position: relative;
-                      user-select: none;
-                      -webkit-user-select: none;
-                      touch-action: manipulation;
-                    }
-
-                    .button-49:after {
-                      --slice-0: inset(50% 50% 50% 50%);
-                      --slice-1: inset(80% -6px 0 0);
-                      --slice-2: inset(50% -6px 30% 0);
-                      --slice-3: inset(10% -6px 85% 0);
-                      --slice-4: inset(40% -6px 43% 0);
-                      --slice-5: inset(80% -6px 5% 0);
-
-                      content: 'ALTERNATE TEXT';
-                      display: block;
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      bottom: 0;
-                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-                      clip-path: var(--slice-0);
-                    }
-
-                    .button-49:hover:after {
-                      animation: 1s glitch;
-                      animation-timing-function: steps(2, end);
-                    }
-
-                    @keyframes glitch {
-                      0% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-20px, -10px);
-                      }
-                      10% {
-                        clip-path: var(--slice-3);
-                        transform: translate(10px, 10px);
-                      }
-                      20% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 10px);
-                      }
-                      30% {
-                        clip-path: var(--slice-3);
-                        transform: translate(0px, 5px);
-                      }
-                      40% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-5px, 0px);
-                      }
-                      50% {
-                        clip-path: var(--slice-3);
-                        transform: translate(5px, 0px);
-                      }
-                      60% {
-                        clip-path: var(--slice-4);
-                        transform: translate(5px, 10px);
-                      }
-                      70% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-10px, 10px);
-                      }
-                      80% {
-                        clip-path: var(--slice-5);
-                        transform: translate(20px, -10px);
-                      }
-                      90% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 0px);
-                      }
-                      100% {
-                        clip-path: var(--slice-1);
-                        transform: translate(0);
-                      }
-                    }
-
-                    .hidden {
-                            /*display: none;*/
-                            visibility: hidden !important;
-                            width: 0 !important;
-                            height: 0 !important;
-                            padding: 0 !important;
-                            margin: 0 !important;
-                            animation: 1s fadeOut;
+                        @font-face {
+                            font-family: HeptaSlab;
+                            src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
                         }
-                    @keyframes fadeOut {
-                      0% {
-                        opacity: 1;
-                      }
-                      100% {
-                        visibility: hidden;
-                        opacity: 0;
-                      }
-                    }
-
-                    /*****************
-                    writing direction
-                    ******************/
-                    .c_rtl {
-                        display: inline-block;
-                        direction: rtl;
-                        text-align: right;
-                        font-family: AmiriWeb;
-                    }
-                    .c_ltr {
-                        direction: ltr;
-                        text-align: left;
-                    }
-                    /*****************
-                    code
-                    ******************/
-                    div.sourceCode {
-                        margin: 10px 5px;
-                    }
-                    /*font*/
-                    pre,
-                    code {
-                        font-size: 0.8em;
-                        line-height: 0.9;
-                    }
-                    pre {
-                        display: block;
-                        font-family: monospace;
-                        white-space: pre-wrap;
-                        padding-left: 5px;
-                        padding-right: 5px;
-                        margin: 0;
-                        background-color: rgba(0, 0, 0, 0.04);
-                        border-radius: 5px;
-                        /*box-shadow: 2px 2px 5px #000;*/
-                        border: #95ABD0 solid 1px;
-                    }
-                    pre.mermaid {
-                        border: none;
-                        background-color: white;
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                    pre > code.sourceCode {
-                        white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
-                    }
-                    h1 > code {
-                        background: transparent;
-                        border: 0;
-                        font-size: inherit;
-                    }
-                    /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
-                    code {
-                        white-space: pre-wrap;
-                        /* color: #00428C; */
-                        color: #9C20EE;
-                        /*font-size:0.9em;*/
-                    }
-                    pre code {
-                        color: #000000;
-                    }
-                    li pre {
-                        margin-left: 0;
-                    }
-                    blockquote {
-                        padding-left: 1em;
-                        padding-left: 1em;
-                        margin-bottom: 1em;
-                        text-align: right;
-                        /*font-style: italic;*/
-                        clear: both;
-                        margin-block-start: 0em;
-                        margin-block-end: 0em;
-                        margin-inline-start: 0px;
-                        margin-inline-end: 0px;
-                    }
-                    blockquote > p:before {
-                        content: "> "
-                    }
-                    cite {
-                        display: block;
-                        margin-left: 10%;
-                        font-size: 0.8em;
-                        font-style: normal;
-                        text-align: right;
-                    /*    the float attribute destroys the multi-column layout*/
-                    /*    float: right;*/
-                        padding-bottom: 1em;
-                    }
-                    p.copyright {
-                        font-size: smaller
-                    }
-                    .center {
-                        text-align: center
-                    }
-                    .footnote {
-                        font-size: smaller;
-                        margin-left: 2em;
-                    }
-                    /**********
-                    lists
-                    ***********/
-                    ul,
-                    ol {
-                        display: block;
-                        clear: both;
-                        font-style: normal;
-                        margin-top: 0.1em;
-                        margin-bottom: 0.5em;
-                        /*margin-left: 1.5em;*/
-                        list-style-position: inside;
-                        padding-left: 1em;
-                        /* all lists should be centered */
-                        /*text-align: left;*/
-                        /*margin-left: auto;
-                      margin-right: auto;*/
-                    }
-                    /* padding, line-height etc. for all list items */
-                    ul li,
-                    ol li {
-                        margin-top: 0.2em;
-                        margin-bottom: 0.2em;
-                        padding: 0 0 0 0px;
-                        line-height: 120%;
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    li li {
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    li li li {
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    /* unordered lists */
-                    ul {
-                        list-style-type: circle;
-                    }
-                    ul ul {
-                        list-style-type: circle;
-                    }
-                    ul ul ul {
-                        list-style-type: circle;
-                    }
-                    ul ul ul ul {
-                        list-style-type: circle;
-                    }
-                    ul li {
-                        list-style: circle;
-                        /*margin: 0.1em 0em 0.6em 0;
-                      padding: 0 0 0 0;
-                      line-height: 140%;*/
-                    }
-                    li ul li {
-                    /*font-size: 85%; */
-                    font-style: normal;
-                    list-style-type: circle;
-                        /* background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    li li ul li {
-                    /*font-size: 85%; */
-                    font-style: normal;
-                    list-style-type: circle;
-                        /*background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    li li li ul li {
-                        font-style: normal;
-                        list-style-type: circle;
-                        /*background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    /*ul {
-                      margin: 0.5em 1.5em 0.5em 1.5em;
-                      padding: 0;
-                    }*/
-                    /* ordered lists */
-                    ol {
-                        margin: 0.5em 1.5em 0.5em 1.5em;
-                        padding: 0;
-                    }
-                    ol li {
-                        list-style-type: decimal;
-                    }
-                    li ol li {
-                        list-style-type: decimal;
-                    }
-                    li li ol li {
-                        list-style-type: decimal;
-                    }
-
-                    /***********
-                    indentation of nested lists
-                    ***********/
-
-                    ul ul,
-                    ul ol,
-                    ol ol,
-                    ol ul {
-                        padding-inline-start: 2em;
-                    }
-
-                    /*this is to accomodated the snipped highlight js*/
-                    pre ul li {
-                        margin-top: 0;
-                        font-size: 0.7em;
-                        padding: 0;
-                    }
-                    div dt {
-                        margin-left: 0;
-                        margin-top: 1em;
-                        margin-bottom: 0.5em;
-                        font-weight: bold;
-                    }
-                    div dd {
-                        margin-left: 2em;
-                        margin-bottom: 0.5em;
-                    }
-                    p,
-                    pre,
-                    /*ul,*/
-                    /*ol,*/
-                    blockquote,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6,
-                    dl,
-                    table {
-                        margin-left: 0.5em;
-                        margin-right: 0.5em;
-                        margin-top: 0.5em;
-                        margin-bottom: 0.5em;
-                    }
-                    p.subhead {
-                        font-weight: bold;
-                        margin-top: 2em;
-                    }
-                    .smaller {
-                        font-size: smaller
-                    }
-                    .bigger,
-                    .keyphrase {
-                        font-size: 130%
-                    }
-                    /*******************************
-                    tables
-                    *******************************/
-                    table {
-                        display: table;
-                        /* the table should be centred on the page*/
-                        margin-left: auto;
-                        margin-right: auto;
-                        /*font-size: 0.8em;*/
-                        border-collapse: collapse;
-                    }
-                    th {
-                        border-bottom-width: 2px;
-                        border-bottom-style: double;
-                        border-bottom-color: black;
-                    }
-                    td,
-                    th {
-                        padding: 0.2em
-                    }
-                    td {
-                        border-bottom-width: 1px;
-                        /*border-top-width: 1px;*/
-                        border-bottom-style: solid;
-                        /*border-top-style: solid;*/
-                        border-color: white;
-                    }
-                    /*
-                    highlight mouse-over on tables
-                    */
-                    tr:hover td {
-                        /*background-color: red; */
-                        /*border-top-color: #F46A00;
-                        border-bottom-color: #F46A00;*/
-                        border-color: #F46A00;
-                        border-bottom-width: 1px;
-                        border-bottom-style: solid;
-                    }
-                    td:hover, td:hover * {
-                        background-color: #F46A00;
-                        color: black;
-                    }
-                    .focus {
-                        border-color: red;
-                        border-width: 2px;
-                        border-style: solid;
-                    }
-                    table > caption {
-                        /*position: relative;
-                        float: right;*/
-                        text-align: center;
-                        margin-top: 0.2em;
-                        margin-bottom: 0.5em;
-                        /*top:2em;*/
-                        /*max-width:15%;
-                        min-width: 180px;*/
-                        font-size: 0.6em;
-                        font-weight: lighter;
-                    }
-
-                    /*
-                     setting class="outline on ol or ul makes it behave as an
-                     ouline list where blocklevel content in li elements is
-                     hidden by default and can be expanded or collapsed with
-                     mouse click. Set class="expand" on li to override default
-                    */
-                    ol.outline li:hover {
-                        cursor: pointer
-                    }
-                    ol.outline li.nofold:hover {
-                        cursor: default
-                    }
-                    ul.outline li:hover {
-                        cursor: pointer
-                    }
-                    ul.outline li.nofold:hover {
-                        cursor: default
-                    }
-                    ol.outline {
-                        list-style: decimal;
-                    }
-                    ol.outline ol {
-                        list-style-type: lower-alpha
-                    }
-                    ol.outline li.nofold {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.unfolded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.folded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.unfolded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.folded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.nofold {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.unfolded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.folded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.unfolded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.folded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
-                    }
-                    /* for slides with class "title" in table of contents */
-                    a.titleslide {
-                        font-weight: bold;
-                        font-style: italic
-                    }
-                    /* references, footnotes, bibliography */
-                    div.references {
-                        font-size: 80%
-                    }
-                    div.references p {
-                        margin: 5px 0px;
-                    }
-                    /******************
-                    alerts
-                    *******************/
-
-
-                    div.alert {
-                        clear: both;
-                        display: block;
-                        font-size: 70%;
-                        border-width: 1px;
-                        border-style: solid;
-                    /*    border-color: red;*/
-                        background-color: white;
-                        margin-left: 2em;
-                        border-left-width: 1em;
-                        width: 60%;
-                        float: right;
-                    }
-
-                    div.alert.red {
-                        border-color: red;
-                        color: black;
-                    }
-                    .green {
-                        color: green;
-                    }
-                    .red {
-                        color: red;
-                    }
-                    /*
-                     hide images for work around for save as bug
-                     where browsers fail to save images used by CSS
-                    */
-                    img.hidden {
-                        display: none;
-                        visibility: hidden
-                    }
-                    div.initial_prompt {
-                        display: none;
-                        visibility: hidden
-                    }
-                    div.slide {
-                        visibility: visible;
-                        position: inherit;
-                    }
-                    div.handout {
-                        border-top-style: solid;
-                        border-top-width: thin;
-                        border-top-color: black;
-                    }
-                    @media screen {
-                        .hidden {
-                            display: none;
-                            visibility: visible
+                        @font-face {
+                            font-family: linowrite;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
                         }
-                        div.slide.hidden {
+                        /*********************************************
+                         * GLOBAL STYLES
+                         *********************************************/
+                        :root {
+                          /*--r-background-color: #fff;*/
+                          --r-main-font: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                          --r-main-font-size: 24px;
+                          /*--r-main-color: #222;*/
+                          --r-block-margin: 20px;
+                          --r-heading-margin: 0 0 20px 0;
+                          --r-heading-font: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                          --r-heading-color: #113868;
+                          --r-heading-line-height: 1.2;
+                          --r-heading-letter-spacing: normal;
+                          --r-heading-text-transform: titlecase;
+                          --r-heading-text-shadow: none;
+                          --r-heading-font-weight: 400;
+                          --r-heading1-text-shadow: none;
+                          --r-heading1-size: 1.75em;
+                          --r-heading2-size: 1.5em;
+                          --r-heading3-size: 1.3em;
+                          --r-heading4-size: 1em;
+                          --r-code-font: monospace;
+                          --r-link-color: #2a76dd;
+                          --r-link-color-dark: rgb(30.7720647773, 99.5566801619, 192.7779352227);
+                          --r-link-color-hover: rgb(73.95, 138.55, 226.1);
+                          --r-selection-background-color: rgb(95.25, 152.25, 229.5);
+                          --r-selection-color: #fff;
+                          --r-overlay-element-bg-color: 0, 0, 0;
+                          --r-overlay-element-fg-color: 240, 240, 240;
+                        }
+
+                        .reveal-viewport {
+                          background: #fff;
+                          background-color: var(--r-background-color);
+                        }
+
+                        .reveal {
+                          font-family: var(--r-main-font);
+                          font-size: var(--r-main-font-size);
+                          font-weight: normal;
+                          color: var(--r-main-color);
+                        }
+
+                        .reveal ::selection {
+                          color: var(--r-selection-color);
+                          background: var(--r-selection-background-color);
+                          text-shadow: none;
+                        }
+
+                        .reveal ::-moz-selection {
+                          color: var(--r-selection-color);
+                          background: var(--r-selection-background-color);
+                          text-shadow: none;
+                        }
+
+                        .reveal .slides section,
+                        .reveal .slides section > section {
+                          line-height: 1.3;
+                          font-weight: inherit;
+                        }
+                        /* general settings */
+                        html {
+                            font-family: var(--r-main-font);
+                        }
+                        html,
+                        body,
+                        html.print-pdf body,
+                        .reveal-viewport {
+                            /*margin: 0 0 0 0 !important;
+                            padding: 0 0 0 0;
+                            width: 100%;
+                            height: 100%;*/
+                        }
+                        html,
+                        body,
+                        .reveal-viewport {
+                            overflow: hidden;
+                        }
+                        /******************
+                        basic styling for all slides
+                        *******************/
+                        div.slide,
+                        section.slide {
+                            z-index: 20;
                             display: block;
-                            visibility: visible
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-right: auto;
+                            margin-left: auto;
+                            border-width: 0;
+                            clear: both;
+                            left: 0;
+                            right: 0;
+                            /* width should be in em dashes*/
+                            max-width: 50em;
+                            /*height: 40em;*/
                         }
-                        div.handout.hidden {
-                            display: block;
-                            visibility: visible
+                        /*********************************************
+                         * HEADERS
+                         *********************************************/
+                        .reveal h1,
+                        .reveal h2,
+                        .reveal h3,
+                        .reveal h4,
+                        .reveal h5,
+                        .reveal h6 {
+                          margin: var(--r-heading-margin);
+                          color: var(--r-heading-color);
+                          font-family: var(--r-heading-font);
+                          font-weight: var(--r-heading-font-weight);
+                          line-height: var(--r-heading-line-height);
+                          letter-spacing: var(--r-heading-letter-spacing);
+                          text-transform: var(--r-heading-text-transform);
+                          text-shadow: var(--r-heading-text-shadow);
+                          word-wrap: break-word;
                         }
-                        div.background {
-                            display: none;
-                            visibility: hidden
-                        }
-                        body.single_slide div.initial_prompt {
-                            display: block;
-                            visibility: visible
-                        }
-                        body.single_slide div.background {
-                            display: block;
-                            visibility: visible
-                        }
-                        body.single_slide div.background.hidden {
-                            display: none;
-                            visibility: hidden
-                        }
-                        body.single_slide .invisible {
-                            visibility: hidden
-                        }
-                        body.single_slide .hidden {
-                            display: none;
-                            visibility: hidden
-                        }
-                        body.single_slide div.slide {
-                            position: absolute
-                        }
-                        body.single_slide div.handout {
-                            display: none;
-                            visibility: hidden
-                        }
-                    }
-                    @media print {
-                        .hidden {
-                            display: block;
-                            visibility: visible
-                        }
-                        div.slide pre {
-                            font-size: 60%;
-                            padding-left: 0.5em;
-                        }
-                        div.toolbar {
-                            display: none;
-                            visibility: hidden;
-                        }
-                        div.slidy_toc {
-                            display: none;
-                            visibility: hidden;
-                        }
-                        div.background {
-                            display: none;
-                            visibility: hidden;
-                        }
-                        div.slide {
-                            page-break-before: always
-                        }
-                        /* :first-child isn't reliable for print media */
-                        div.slide.first-slide {
-                            page-break-before: avoid
-                        }
-                    }
-                    /**********************
-                     necessary hacks to counter the linked reveal.css
-                     ***********************/
-                    html.print-pdf {
-                        overflow: visible;
-                        float: none!important;
-                        color: black !important;
-                        background-color: white !important;
-                    }
-                    html.print-pdf .reveal {
-                        width: 100% !important;
-                    }
-                    html.print-pdf section.slide {
-                        padding-top: 20px !important;
-                    }
 
+                        .reveal h1 {
+                          font-size: var(--r-heading1-size);
+                        }
+
+                        .reveal h2 {
+                          font-size: var(--r-heading2-size);
+                        }
+
+                        .reveal h3 {
+                          font-size: var(--r-heading3-size);
+                        }
+
+                        .reveal h4 {
+                          font-size: var(--r-heading4-size);
+                        }
+
+                        .reveal h1 {
+                          text-shadow: var(--r-heading1-text-shadow);
+                        }
+                        /*********************************************
+                         * LINKS
+                         *********************************************/
+                        .reveal a {
+                          color: var(--r-link-color);
+                          text-decoration: none;
+                          transition: color 0.15s ease;
+                        }
+
+                        .reveal a:hover {
+                          color: var(--r-link-color-hover);
+                          text-shadow: none;
+                          border: none;
+                        }
+
+                        .reveal .roll span:after {
+                          color: #fff;
+                          background: var(--r-link-color-dark);
+                        }
+                        /*****************
+                        columns
+                        ******************/
+                        div.columns,
+                        div.columns-2,
+                        div.columns-3 {
+                            /* newer? versions of reveal use display: flex */
+                            display: block;
+                            /*flex: none;*/
+                            clear: both;
+                        }
+                        div.columns-3 {
+                            clear: both;
+                        }
+                        div.column {
+                        /*    display: inline-block;*/
+                            flex: none;
+                            display: block;
+                            float: left;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                        .columns-3 > .column {
+                            width: 31%;
+                        }
+                        .columns-3 > .narrow {
+                            width: 23%;
+                            position: relative;
+                            float: left;
+                        }
+
+                        .columns-3 > .wide {
+                            width: 50%;
+                            position: relative;
+                            float: left;
+                        }
+                        .columns-2 > .column,
+                        .columns > .column,
+                        .c_width-50  {
+                            width: 48%;
+                        }
+                        .c_width-60,
+                        .column-60,
+                        .columns .wide {
+                            width: 64%;
+                            position: relative;
+                            float: left;
+                        }
+                        .c_width-50 {
+                            position: relative;
+                            float: left;
+                        }
+                        .c_width-30,
+                        .column-30,
+                        .columns .narrow {
+                            width: 31%;
+                            position: relative;
+                            float: left;
+                        }
+                        .c_left {
+                            display: block;
+                            float: left;
+                        }
+                        .c_right {
+                            display: block;
+                            float: right;
+                        }
+                        .c_center {
+                            display: block;
+                            /*clear: both;*/
+                            margin: 0 auto;
+                        }
+                        .c_left-align {
+                            text-align: left;
+                        }
+
+                        .c_right-align {
+                            text-align: right;
+                        }
+
+                        span.c_left,
+                        span.c_right,
+                        span.c_center {
+                            display: inline-block;
+                        }
+                        /*********************************************
+                         * PRINT BACKGROUND
+                         *********************************************/
+                        @media print {
+                          .backgrounds {
+                            background-color: var(--r-background-color);
+                          }
+                        }
                     </style>
+        <style>
+            /******************
+            set fonts and sizes
+            *******************/
+            .keyphrase {
+                /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                font-weight: 400;
+                color: #113868;
+            }
+            p,
+            ol,
+            ul,
+            span {
+            }
+            /**
+            highlights: <em> is for transcribed terms, <strong> for emphasis;
+            **/
+            em {
+                /*font-family: "Gentium Plus";
+              /*font-family: Georgia;*/
+              font-style: italic;
+              font-weight: 200;
+            }
+            strong {
+                font-style: italic;
+                font-weight: 200;
+                border-bottom: 2px dotted #F96827;
+            }
+            table {
+                font-size: 0.8em;
+            }
+            .small-font {
+                font-size: 70%;
+            }
+            /*****************
+            heads
+            ******************/
+            /* title and dividing slides */
+            /* put h1 in the center of the slide */
+            div.titleslide h1,
+            div.titleslide h1.print-pdf,
+            #title-slide h1 {
+                margin-top: 2em;
+            /*margin-bottom: auto;*/
+            font-size: 2em;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                text-align: center;
+            }
+            div.reveal h1, h1 {
+                padding-bottom: 0.3em;
+                /*font-size: 1.75em;*/
+                line-height: 1.2;
+                border-bottom: 1px solid #eee;
+                margin-top: 4em;
+            }
+            div.reveal h2, h2 {
+                padding-bottom: 0.3em;
+                /*font-size: 1.5em;*/
+                line-height: 1.225;
+                border-bottom: 1px solid #eee;
+            }
+            div.reveal h3, h3 {
+                /*font-size: 1.25em;*/
+                line-height: 1.43;
+            }
+            div.reveal h4, h4 {
+                /*font-size: 1em;*/
+            }
+        </style>
+        <style>
+            /**********
+            lists
+            ***********/
+        ul,
+        ol {
+            display: block;
+            clear: both;
+            font-style: normal;
+            margin-top: 0.1em;
+            margin-bottom: 0.5em;
+            /*margin-left: 1.5em;*/
+            list-style-position: inside;
+            padding-left: 1em;
+            /* all lists should be centered */
+            /*text-align: left;*/
+                /*margin-left: auto;
+              margin-right: auto;*/
+          }
+          /* padding, line-height etc. for all list items */
+          ul li,
+          ol li {
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            padding: 0 0 0 0px;
+            line-height: 120%;
+            font-size: inherit;
+            font-style: normal;
+        }
+        li li {
+            font-size: inherit;
+            font-style: normal;
+        }
+        li li li {
+            font-size: inherit;
+            font-style: normal;
+        }
+        /* unordered lists */
+        ul {
+            list-style-type: circle;
+        }
+        ul ul {
+            list-style-type: circle;
+        }
+        ul ul ul {
+            list-style-type: circle;
+        }
+        ul ul ul ul {
+            list-style-type: circle;
+        }
+        ul li {
+            list-style: circle;
+                /*margin: 0.1em 0em 0.6em 0;
+              padding: 0 0 0 0;
+              line-height: 140%;*/
+          }
+          li ul li {
+            /*font-size: 85%; */
+            font-style: normal;
+            list-style-type: circle;
+                /* background: transparent;
+              padding: 0 0 0 0;*/
+          }
+          li li ul li {
+            /*font-size: 85%; */
+            font-style: normal;
+            list-style-type: circle;
+                /*background: transparent;
+              padding: 0 0 0 0;*/
+          }
+          li li li ul li {
+            font-style: normal;
+            list-style-type: circle;
+                /*background: transparent;
+              padding: 0 0 0 0;*/
+          }
+            /*ul {
+              margin: 0.5em 1.5em 0.5em 1.5em;
+              padding: 0;
+            }*/
+            /* ordered lists */
+            ol {
+                margin: 0.5em 1.5em 0.5em 1.5em;
+                padding: 0;
+            }
+            ol li {
+                list-style-type: decimal;
+            }
+            li ol li {
+                list-style-type: decimal;
+            }
+            li li ol li {
+                list-style-type: decimal;
+            }
+
+            /***********
+            indentation of nested lists
+            ***********/
+
+            ul ul,
+            ul ol,
+            ol ol,
+            ol ul {
+                padding-inline-start: 1em;
+            }
+
+            /*this is to accomodated the snipped highlight js*/
+            pre ul li {
+                margin-top: 0;
+                font-size: 0.7em;
+                padding: 0;
+            }
+            div dt {
+                margin-left: 0;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+                font-weight: bold;
+            }
+            div dd {
+                margin-left: 2em;
+                margin-bottom: 0.5em;
+            }
+        </style>
+        <style>
+            /****************
+            images and figures
+            *****************/
+            div.slide img {
+                /* image-rendering: optimize-quality; */
+                background-color: white; /*rgba(0,0,0,0.04);*/
+                border-radius: 5px;
+                display: block;
+                max-height: 600px;
+                max-width: 95%;
+                /* center images */
+                margin-left: auto;
+                margin-right: auto;
+                /*box-shadow: 2px 2px 5px #000;*/
+                /*border: gray solid 1px;*/
+            }
+            div.figure {
+                width: 100%;
+                padding: 0;
+                /*height: inherit;*/
+            }
+            figure {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                /*margin-inline-start: 40px;
+                margin-inline-end: 40px;*/
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+            }
+            div.figure p.caption,
+            figcaption {
+                position: relative;
+                float: right;
+                text-align: right;
+                margin-top: 0.2em;
+                margin-bottom: 0.5em;
+                /*top:2em;*/
+                /*max-width:15%;
+                min-width: 180px;*/
+                font-size: 0.6em;
+                font-weight: lighter;
+            }
+            div.figure img {
+                float: right;
+                /*max-height: 80%;*/
+                /*max-height: 600px;*/
+                /*max-height: inherit;*/
+                /*max-width:80%;*/
+                /*max-width: 95%;*/
+            }
+            header img,
+            footer img {
+                display: block;
+            }
+            /* inline images */
+            /*p img,
+            li img {
+                display: inline-block;
+                height: 1em;
+            }*/
+            /* logos */
+            img.c_logo {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            /*    max-width: 6em !important;*/
+                max-height: 4em !important;
+            }
+            img.c_logo.c_left {
+                margin-left: 1em;
+            }
+            img.c_logo.c_right {
+                margin-right: 1em;
+            }
+            img.c_logo {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            /*    max-width: 6em !important;*/
+                max-height: 4em !important;
+            }
+            img.c_logo.c_left {
+                margin-left: 1em;
+            }
+            img.c_logo.c_right {
+                margin-right: 1em;
+            }
+            /*img {
+              max-height: 700px;
+              max-width: 100%;
+            }*/
+            /* external content, including local html pages */
+            iframe {
+                display: block;
+                width: 90%;
+                /* the height setting seems to squeeze iframes */
+                height: 600px;
+                /* center the iframe */
+                margin-left: auto;
+                margin-right: auto;
+                scrolling: auto;
+                scroll-behavior: auto;
+                /*border:none;*/
+            }
+            /*.size-80 {
+              display: block;
+              width: 80%;
+              height: 80%;
+            }*/
+        </style>
+        <style>
+            blockquote {
+                border-image-width: 0;
+                padding-left: 1em !important;
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+                margin-bottom: 1em;
+                text-align: right;
+                /*font-style: italic;*/
+                clear: both;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                border-width: 0px;
+                border: none;
+                /*background-clip: none;*/
+            }
+            blockquote > p:before {
+                content: "> "
+            }
+            cite {
+                display: block;
+                margin-left: 10%;
+                font-size: 0.8em;
+                font-style: normal;
+                text-align: right;
+            /*    the float attribute destroys the multi-column layout*/
+            /*    float: right;*/
+                padding-bottom: 1em;
+            }
+            p.copyright {
+                font-size: smaller
+            }
+            .center {
+                text-align: center
+            }
+            .footnote {
+                font-size: smaller;
+                margin-left: 2em;
+            }
+        </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
       <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
               <a href="http://tillgrallert.eu/slides/dh/2025-mpiw/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=http://tillgrallert.eu/slides/dh/2025-mpiw/"></a>
-        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/fileadmin/files/Logos/4Memory/Logo_NFDI4memory_RGB.png"></a>
           </header>
     <div class="reveal">
       <div class="slides">
@@ -1560,9 +813,9 @@ series</span>
         <figure id="fig:network-authors-1">
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
-        alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
-        <figcaption>Figure 1: Undirected network of authors in
-        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        alt="Figure 1: Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption aria-hidden="true">Figure 1: Undirected network of
+        authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
         betweenness centrality; size of nodes: number of periodicals;
         width of edges: number of articles.</figcaption>
@@ -1572,11 +825,11 @@ series</span>
         <figure id="fig:network-mentioned-periodicals-1">
         <img
         data-src="../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
-        alt="Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 2: Directed network of periodicals referenced
-        in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
-        al-ʿArab</em>, <em>al-Muqtabas</em>, and
-        <em>al-Zuhūr</em></figcaption>
+        alt="Figure 2: Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 2: Directed network of
+        periodicals referenced in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>,
+        <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
         </div>
         </div>
@@ -1592,23 +845,25 @@ series</span>
         <figure id="fig:dataset3-publication">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-issues-size_degree-colour_publication.png"
-        alt="Network plot of stylometric similarity in data set 3. Node colours indicate periodicals: purple = al-Ḥaqāʾiq, turquoise = al-Muqtabas, green = Lughat al-ʿArab, red = al-Zuhūr" />
-        <figcaption>Figure 3: Network plot of stylometric similarity in
-        data set 3. Node colours indicate periodicals: purple =
-        <em>al-Ḥaqāʾiq</em>, turquoise = <em>al-Muqtabas</em>, green =
-        <em>Lughat al-ʿArab</em>, red = <em>al-Zuhūr</em></figcaption>
+        alt="Figure 3: Network plot of stylometric similarity in data set 3. Node colours indicate periodicals: purple = al-Ḥaqāʾiq, turquoise = al-Muqtabas, green = Lughat al-ʿArab, red = al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 3: Network plot of
+        stylometric similarity in data set 3. Node colours indicate
+        periodicals: purple = <em>al-Ḥaqāʾiq</em>, turquoise =
+        <em>al-Muqtabas</em>, green = <em>Lughat al-ʿArab</em>, red =
+        <em>al-Zuhūr</em></figcaption>
         </figure>
         </div><div class="column">
         <p>Should we conflate editors with “their” periodical?</p>
         <figure id="fig:muqtabas-authors-louvain">
         <img
         data-src="../../assets/OpenArabicPE/stylometry/2023-paper/stylo_network-sections-authors_muqtabas-size_degree-colour_louvain.png"
-        alt="Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster on the left." />
-        <figcaption>Figure 4: Network plot of stylometric similarity for
-        anonymous articles in al-Muqtabas from data set 2 and all
-        attributed articles from data set 1. Node colours indicate
-        communities established by the Louvain algorithm. Note how the
-        anonymous articles cluster on the left.</figcaption>
+        alt="Figure 4: Network plot of stylometric similarity for anonymous articles in al-Muqtabas from data set 2 and all attributed articles from data set 1. Node colours indicate communities established by the Louvain algorithm. Note how the anonymous articles cluster on the left." />
+        <figcaption aria-hidden="true">Figure 4: Network plot of
+        stylometric similarity for anonymous articles in al-Muqtabas
+        from data set 2 and all attributed articles from data set 1.
+        Node colours indicate communities established by the Louvain
+        algorithm. Note how the anonymous articles cluster on the
+        left.</figcaption>
         </figure>
         </div>
         </div>
@@ -1649,10 +904,11 @@ series</span>
         <figure id="fig:history-arab-press">
         <img
         data-src="../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif"
-        alt="Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the number of new titles per period." />
-        <figcaption>Figure 5: Periodicals by places of publication. Size
-        of circles corresponds to the number of periodicals. Colour
-        indicates the number of new titles per period.</figcaption>
+        alt="Figure 5: Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the number of new titles per period." />
+        <figcaption aria-hidden="true">Figure 5: Periodicals by places
+        of publication. Size of circles corresponds to the number of
+        periodicals. Colour indicates the number of new titles per
+        period.</figcaption>
         </figure>
         </div>
         </div>
@@ -1678,8 +934,8 @@ series</span>
         href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
         4.0</a>
         <!--  - on the article level for the entire corpus plus 2 additional magazines
-              - on the issue level for 7 additional newspapers
-              - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
+          - on the issue level for 7 additional newspapers
+          - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
         </ul></li>
         <li>Infrastructure:
         <ul>
@@ -1699,16 +955,16 @@ series</span>
         <figure id="fig:webview-zuhur">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_1-i_1.png"
-        alt="Webview of al-Zuhur 1(1)" />
-        <figcaption>Figure 6: <a
+        alt="Figure 6: Webview of al-Zuhur 1(1)" />
+        <figcaption aria-hidden="true">Figure 6: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview
         of <em>al-Zuhur</em> 1(1)</a></figcaption>
         </figure>
         <figure id="fig:webview-muqtabas">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_muqtabas-v_3-i_2.png"
-        alt="Webview of al-Muqtabas 3(2)" />
-        <figcaption>Figure 7: <a
+        alt="Figure 7: Webview of al-Muqtabas 3(2)" />
+        <figcaption aria-hidden="true">Figure 7: <a
         href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview
         of <em>al-Muqtabas</em> 3(2)</a></figcaption>
         </figure>
@@ -1729,8 +985,9 @@ series</span>
         <figure id="fig:tf-1">
         <img
         data-src="../../assets/OpenArabicPE/front-pages/thamarat-al-funun-v_1-i_1.jpg"
-        alt="Front page of the newspaper Thamarāt al-Funūn #1, 20 April 1875, Beirut" />
-        <figcaption>Figure 8: Front page of the newspaper <a
+        alt="Figure 8: Front page of the newspaper Thamarāt al-Funūn #1, 20 April 1875, Beirut" />
+        <figcaption aria-hidden="true">Figure 8: Front page of the
+        newspaper <a
         href="https://www.wikidata.org/wiki/Q124973713"><em>Thamarāt
         al-Funūn</em></a> #1, 20 April 1875, Beirut</figcaption>
         </figure>
@@ -1740,8 +997,9 @@ series</span>
         <figure id="fig:kawkab-1">
         <img
         data-src="../../assets/OpenArabicPE/front-pages/kawkab-amirka-v_1-i_1.png"
-        alt="Front page of the newspaper Kawkab Amīrkā #1, 15 April 1892, New York" />
-        <figcaption>Figure 9: Front page of the newspaper <a
+        alt="Figure 9: Front page of the newspaper Kawkab Amīrkā #1, 15 April 1892, New York" />
+        <figcaption aria-hidden="true">Figure 9: Front page of the
+        newspaper <a
         href="https://www.wikidata.org/wiki/Q4499150"><em>Kawkab
         Amīrkā</em></a> #1, 15 April 1892, New York</figcaption>
         </figure>
@@ -1750,8 +1008,9 @@ series</span>
         <figure id="fig:quds-2">
         <img
         data-src="../../assets/OpenArabicPE/front-pages/al-quds-v_1-i_2.jpg"
-        alt="Front page of the newspaper al-Quds #2, 22 Sep. 1908, Jerusalem" />
-        <figcaption>Figure 10: Front page of the newspaper <a
+        alt="Figure 10: Front page of the newspaper al-Quds #2, 22 Sep. 1908, Jerusalem" />
+        <figcaption aria-hidden="true">Figure 10: Front page of the
+        newspaper <a
         href="https://www.wikidata.org/wiki/Q124972244"><em>al-Quds</em></a>
         #2, 22 Sep. 1908, Jerusalem</figcaption>
         </figure>
@@ -1779,13 +1038,14 @@ series</span>
         <figure id="fig:sykes-picot">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg/1055px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
-        alt="Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: “Sykes Picot Agreement Map Signed 8 May 1916” (“English” 1916)" />
-        <figcaption>Figure 11: Map showing the colonial spheres of
-        interest agreed upon by France and UK. Signed by Sir Mark Sykes
-        and Fr[ançois] Georges-Picot, 8 May 1916. Source: <span
-        class="citation" data-cites="SykesPicot1916Map"><span>“Sykes
-        <span>Picot Agreement Map</span> Signed 8 <span>May</span>
-        1916”</span> (<span>“English”</span> 1916)</span></figcaption>
+        alt="Figure 11: Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: “Sykes Picot Agreement Map Signed 8 May 1916” (“English” 1916)" />
+        <figcaption aria-hidden="true">Figure 11: Map showing the
+        colonial spheres of interest agreed upon by France and UK.
+        Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May
+        1916. Source: <span class="citation"
+        data-cites="SykesPicot1916Map"><span>“Sykes <span>Picot
+        Agreement Map</span> Signed 8 <span>May</span> 1916”</span>
+        (<span>“English”</span> 1916)</span></figcaption>
         </figure>
         </div><div class="column">
         <div class="columns">
@@ -1954,10 +1214,10 @@ series</span>
         <figure id="fig:archives-dam">
         <img
         data-src="../../assets/dh/2023-07-17_damascus-archives_256558.jpeg"
-        alt="The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: “«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب دمشق” (2023)" />
-        <figcaption>Figure 12: The National Archives of Syria in
-        Damascus the day after their conflagration on 16. July 2023.
-        Source: <span class="citation"
+        alt="Figure 12: The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: “«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب دمشق” (2023)" />
+        <figcaption aria-hidden="true">Figure 12: The National Archives
+        of Syria in Damascus the day after their conflagration on 16.
+        July 2023. Source: <span class="citation"
         data-cites="aSbHrmAdFAwrkAmAHryqkbyr"><span>“«أصبح رمادًا
         وركاما»... حريق كبير يدمر سوقًا في قلب دمشق”</span>
         (2023)</span></figcaption>
@@ -1968,10 +1228,10 @@ series</span>
         <figure id="fig:gaza-mosque">
         <img
         data-src="../../assets/dh/2024-02-04_gaza-omari-mosque_qattan.jpg"
-        alt="The Great Omari Mosque in Gaza after its complete destruction by the Israeli military on 8. Dec. 2023. Source: Estrin and Bashir (Requiem 2024)" />
-        <figcaption>Figure 13: The Great Omari Mosque in Gaza after its
-        complete destruction by the Israeli military on 8. Dec. 2023.
-        Source: <span class="citation"
+        alt="Figure 13: The Great Omari Mosque in Gaza after its complete destruction by the Israeli military on 8. Dec. 2023. Source: Estrin and Bashir (Requiem 2024)" />
+        <figcaption aria-hidden="true">Figure 13: The Great Omari Mosque
+        in Gaza after its complete destruction by the Israeli military
+        on 8. Dec. 2023. Source: <span class="citation"
         data-cites="EstrinBashir2024requiemGazasiconic">Estrin and
         Bashir (<em>Requiem</em> 2024)</span></figcaption>
         </figure>
@@ -1982,8 +1242,8 @@ series</span>
         <h3 id="lebanon">Lebanon</h3>
         <figure id="fig:oib-explosion">
         <img data-src="../../assets/dh/2020-08-04-oib-damage.jpg"
-        alt="Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020. Source: OIB" />
-        <figcaption>Figure 14: Meeting room at the <a
+        alt="Figure 14: Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020. Source: OIB" />
+        <figcaption aria-hidden="true">Figure 14: Meeting room at the <a
         href="https://orient-institut.org/">Orient-Institut Beirut</a>
         damaged by the Beirut Port explosion on 4 August 2020. Source:
         OIB</figcaption>
@@ -1993,10 +1253,10 @@ series</span>
         <figure id="fig:inla">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iraq_National_Library_Destroyed.jpg"
-        alt="The Iraq National Library and Archive in Baghdad after its destruction by arson in April 2003 during the American invasion. Source: Wikipedia" />
-        <figcaption>Figure 15: The Iraq National Library and Archive in
-        Baghdad after its destruction by arson in April 2003 during the
-        American invasion. Source: <a
+        alt="Figure 15: The Iraq National Library and Archive in Baghdad after its destruction by arson in April 2003 during the American invasion. Source: Wikipedia" />
+        <figcaption aria-hidden="true">Figure 15: The Iraq National
+        Library and Archive in Baghdad after its destruction by arson in
+        April 2003 during the American invasion. Source: <a
         href="https://en.wikipedia.org/wiki/File:Iraq_National_Library_Destroyed.jpg">Wikipedia</a></figcaption>
         </figure>
         </div>
@@ -2040,18 +1300,18 @@ series</span>
         <div class="column">
         <figure id="fig:dh-centres">
         <img data-src="../../assets/dh/map_dhcenters.png"
-        alt="Global distribution of DH centres. Source: DH centerNet" />
-        <figcaption>Figure 16: Global distribution of DH centres.
-        Source: <a href="http://dhcenternet.org/centers">DH
+        alt="Figure 16: Global distribution of DH centres. Source: DH centerNet" />
+        <figcaption aria-hidden="true">Figure 16: Global distribution of
+        DH centres. Source: <a href="http://dhcenternet.org/centers">DH
         centerNet</a></figcaption>
         </figure>
         </div><div class="column">
         <!-- <iframe src="https://hcommons.social/@dh_potsdam/110696533309515172/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe> -->
         <figure id="fig:map-dh2023">
         <img data-src="../../assets/maps/map_dh2023.jpeg"
-        alt="Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
-        <figcaption>Figure 17: Global distribution of attendees at
-        DH2023 in Graz. Source: <a
+        alt="Figure 17: Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
+        <figcaption aria-hidden="true">Figure 17: Global distribution of
+        attendees at DH2023 in Graz. Source: <a
         href="https://digitalcourage.social/@dh_potsdam@hcommons.social/110696533594288097"><span
         class="citation" data-cites="Potsdam2023GeographyDH2023">Digital
         Humanities Uni Potsdam and @dh_potsdam@hcommons.social
@@ -2108,14 +1368,14 @@ series</span>
         <figure id="fig:arabic-script">
         <img
         data-src="../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png"
-        alt="Approximate distribution of Arabic script use along current national boundaries. Solid colours: contemporary primary script; vertical stripes: contemporary use as a secondary national script; horizontal stripes historical use (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
-        <figcaption>Figure 18: Approximate distribution of Arabic script
-        use along current national boundaries. Solid colours:
-        contemporary primary script; vertical stripes: contemporary use
-        as a secondary national script; horizontal stripes historical
-        use <span class="citation" data-cites="Nemeth+2017">(Nemeth
-        <em>Arabic Type-Making in the Machine Age</em> 2017, fig
-        1.1)</span></figcaption>
+        alt="Figure 18: Approximate distribution of Arabic script use along current national boundaries. Solid colours: contemporary primary script; vertical stripes: contemporary use as a secondary national script; horizontal stripes historical use (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
+        <figcaption aria-hidden="true">Figure 18: Approximate
+        distribution of Arabic script use along current national
+        boundaries. Solid colours: contemporary primary script; vertical
+        stripes: contemporary use as a secondary national script;
+        horizontal stripes historical use <span class="citation"
+        data-cites="Nemeth+2017">(Nemeth <em>Arabic Type-Making in the
+        Machine Age</em> 2017, fig 1.1)</span></figcaption>
         </figure>
         </section>
         <section id="arabic-script-grammar" class="slide level2">
@@ -2144,19 +1404,20 @@ series</span>
         </div><div class="column">
         <figure id="fig:zakham-ar">
         <img data-src="../../assets/dh/arabic-ligatures.png"
-        alt="Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
-        <figcaption>Figure 19: Beginning of <span class="citation"
+        alt="Figure 19: Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
+        <figcaption aria-hidden="true">Figure 19: Beginning of <span
+        class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. Some
         ligatures are highlighted.</figcaption>
         </figure>
         <figure id="fig:zakham-ar-rasm">
         <img data-src="../../assets/dh/arabic_rasm.png"
-        alt="Pseudo-rasm of the text in fig. 19. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
-        <figcaption>Figure 20: Pseudo-rasm of the text in fig. 19.
-        Automatically generated with <span class="citation"
-        data-cites="Pohl2022Rasmifize">Pohl (<span>“Rasmifize”</span>
-        [2020] 2022)</span>.</figcaption>
+        alt="Figure 20: Pseudo-rasm of the text in fig. 19. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
+        <figcaption aria-hidden="true">Figure 20: Pseudo-rasm of the
+        text in fig. 19. Automatically generated with <span
+        class="citation" data-cites="Pohl2022Rasmifize">Pohl
+        (<span>“Rasmifize”</span> [2020] 2022)</span>.</figcaption>
         </figure>
         </div>
         </div>
@@ -2261,11 +1522,11 @@ series</span>
         <h2>Technical affordances</h2>
         <figure id="fig:ar-linotype">
         <img data-src="../../assets/dh/arabic-linotype_nemeth-p_46.png"
-        alt="Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
-        <figcaption>Figure 21: Arabic Linotype, 1910s. Source: <span
-        class="citation" data-cites="Nemeth+2017">(Nemeth <em>Arabic
-        Type-Making in the Machine Age</em> 2017, fig.
-        2.7)</span></figcaption>
+        alt="Figure 21: Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
+        <figcaption aria-hidden="true">Figure 21: Arabic Linotype,
+        1910s. Source: <span class="citation"
+        data-cites="Nemeth+2017">(Nemeth <em>Arabic Type-Making in the
+        Machine Age</em> 2017, fig. 2.7)</span></figcaption>
         </figure>
         <aside class="notes">
         <ul>
@@ -2289,18 +1550,19 @@ series</span>
         <div class="column">
         <figure id="fig:unicode-1">
         <img data-src="../../assets/dh/unicode_1-0-0.png"
-        alt="Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 22: Supported scripts in Unicode v1.0.0.
-        Source: <a href="https://www.worldswritingsystems.org"
+        alt="Figure 22: Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 22: Supported scripts in
+        Unicode v1.0.0. Source: <a
+        href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:unicode-15-missing">
         <img
         data-src="../../assets/dh/unicode_15-0-0-missing-scripts.png"
-        alt="Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 23: Currently unsupported scripts. Source: <a
-        href="https://www.worldswritingsystems.org"
+        alt="Figure 23: Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 23: Currently unsupported
+        scripts. Source: <a href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
         </div>
@@ -2351,21 +1613,22 @@ series</span>
         <figure id="fig:arabic-mecca-1">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
-        alt="32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
-        <figcaption>Figure 24: 32 variants of encoding “Meccan” (<span
-        lang="ar">مكية</span>) <span class="citation"
-        data-cites="Milo2014VisuallyMisleading">(Milo <span>“Visually
-        <span>Misleading Characters</span> in the <span>Arabic
-        URL</span>”</span> 2014, 4)</span></figcaption>
+        alt="Figure 24: 32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
+        <figcaption aria-hidden="true">Figure 24: 32 variants of
+        encoding “Meccan” (<span lang="ar">مكية</span>) <span
+        class="citation" data-cites="Milo2014VisuallyMisleading">(Milo
+        <span>“Visually <span>Misleading Characters</span> in the
+        <span>Arabic URL</span>”</span> 2014, 4)</span></figcaption>
         </figure>
         </div><div class="narrow">
         <figure id="fig:arabic-mecca-2">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
         height="300"
-        alt="In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
-        <figcaption>Figure 25: In-browser search for “<span
-        lang="ar">مك</span>” in the Wikidata entry for “Mecca” (<a
+        alt="Figure 25: In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
+        <figcaption aria-hidden="true">Figure 25: In-browser search for
+        “<span lang="ar">مك</span>” in the Wikidata entry for “Mecca”
+        (<a
         href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
         </figure>
         </div>
@@ -2396,8 +1659,8 @@ series</span>
         <figure id="fig:spence-arabic-fail">
         <img
         data-src="../../assets/dh/spence-2023-p_19_arabic-failure.png"
-        alt="Isasi et al. (“A Model for Multilingual and Multicultural Digital Scholarship Methods Publishing” 2023), 19" />
-        <figcaption>Figure 26: <span class="citation"
+        alt="Figure 26: Isasi et al. (“A Model for Multilingual and Multicultural Digital Scholarship Methods Publishing” 2023), 19" />
+        <figcaption aria-hidden="true">Figure 26: <span class="citation"
         data-cites="IsasiEtAl2023ModelMultilingual">Isasi et al.
         (<span>“A <span>Model</span> for <span>Multilingual</span> and
         <span>Multicultural Digital Scholarship Methods
@@ -2445,9 +1708,9 @@ series</span>
         <div class="column">
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/arabic_failure-browser.png"
-        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
-        <figcaption>Figure 27: Rendered HTML with the built-in default
-        CSS for <span class="citation"
+        alt="Figure 27: Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
+        <figcaption aria-hidden="true">Figure 27: Rendered HTML with the
+        built-in default CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
         test file is available <a
@@ -2456,10 +1719,10 @@ series</span>
         </div><div class="column">
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 27 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 28: HTML-Code for fig. 27 in Visual Code
-        Studio. By default, non-ASCII characters are visually
-        highlighted</figcaption>
+        alt="Figure 28: HTML-Code for fig. 27 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption aria-hidden="true">Figure 28: HTML-Code for fig. 27
+        in Visual Code Studio. By default, non-ASCII characters are
+        visually highlighted</figcaption>
         </figure>
         </div>
         </div>
@@ -2495,9 +1758,9 @@ series</span>
         <figure id="fig:bidi-xml">
         <img
         data-src="../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png"
-        alt="Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
-        <figcaption>Figure 29: Bi-directional TEI/XML at the beginning
-        of <span class="citation"
+        alt="Figure 29: Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
+        <figcaption aria-hidden="true">Figure 29: Bi-directional TEI/XML
+        at the beginning of <span class="citation"
         data-cites="oclc_1034545644-i_15-div_1.d2e634">Dammūs
         (<span>“Ṣiḥāfat Sūriyya wa-Lubnān”</span> 1911)</span>. Arrows
         indicate the reading direction. Numbers indicate reading
@@ -2507,10 +1770,10 @@ series</span>
         <figure id="fig:zuhur-oxygen">
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author_small.png"
-        alt="The TEI/XML from fig. 29 in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 30: The TEI/XML from fig. 29 in <a
-        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
-        Styling relies on CSS.</figcaption>
+        alt="Figure 30: The TEI/XML from fig. 29 in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 30: The TEI/XML from
+        fig. 29 in <a href="https://www.oxygenxml.com/">oXygen</a>’s
+        author mode. Styling relies on CSS.</figcaption>
         </figure>
         </div>
         </div>
@@ -2585,8 +1848,8 @@ series</span>
         <figure id="fig:mirat-1">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 31: Front page of <em><a
+        alt="Figure 31: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 31: Front page of <em><a
         href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
         al-Sharq</a></em> #192, 22 Nov. 1922, Jerusalem. Source: <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
@@ -2643,9 +1906,10 @@ series</span>
         <figure id="fig:mirat-2">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 32: Front page of <em>Mirʾāt al-Sharq</em>
-        #192, 22 Nov. 1922, Jerusalem. Source: <a
+        alt="Figure 32: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 32: Front page of
+        <em>Mirʾāt al-Sharq</em> #192, 22 Nov. 1922, Jerusalem. Source:
+        <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
         </figure>
         </div>
@@ -2659,8 +1923,8 @@ series</span>
         </ul>
         <figure id="fig:zdb-hamza">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
-        alt="Search in ZDB for “mir’at sarq”" />
-        <figcaption>Figure 33: Search in <a
+        alt="Figure 33: Search in ZDB for “mir’at sarq”" />
+        <figcaption aria-hidden="true">Figure 33: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=mir&#39;at%20sarq">ZDB</a>
         for “mir’at sarq”</figcaption>
         </figure>
@@ -2675,8 +1939,8 @@ series</span>
         </ul>
         <figure id="fig:zdb-dmg">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="Search in ZDB for “Mirʾāt aš-Šarq”" />
-        <figcaption>Figure 34: Search in <a
+        alt="Figure 34: Search in ZDB for “Mirʾāt aš-Šarq”" />
+        <figcaption aria-hidden="true">Figure 34: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Mirʾāt%20aš-Šarq">ZDB</a>
         for “Mirʾāt aš-Šarq”</figcaption>
         </figure>
@@ -2727,9 +1991,9 @@ series</span>
         <figure id="fig:holding-map">
         <img
         data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png"
-        alt="Periodicals and their holding institutions (Wikidata)" />
-        <figcaption>Figure 35: Periodicals and their holding
-        institutions (<a
+        alt="Figure 35: Periodicals and their holding institutions (Wikidata)" />
+        <figcaption aria-hidden="true">Figure 35: Periodicals and their
+        holding institutions (<a
         href="https://query-main.wikidata.org/embed.html#%23title%3AHoldings%20of%20Arabic%20periodicals%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0APREFIX%20medium%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2FQ1002697%3E%20%20%20%20%23%20set%20a%20publication%20type%3A%20periodicals%20%28wd%3AQ1002697%29%2C%20newspapers%20%28wd%3AQ11032%29%0ASELECT%20DISTINCT%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0A%20%20%3Fcoords%0A%20%20%3Fcollection%20%3FcollectionLabel%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%20%23%20set%20a%20date%20of%20interest%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20medium%3A%20%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20to%20medium%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20%3Fperiodical%20wdt%3AP407%2Fwdt%3AP279%2a%20wd%3AQ13955.%20%20%20%20%20%20%20%20%20%20%20%20%23%20limit%20by%20publication%20language%20%28Arabic%20%3D%20Q13955%29%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%7D%0A%20%20ORDER%20BY%20%3FdateOnset%0A%20%20LIMIT%204000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%3Fperiodical%20%3FdateOnset%20%3Fcollection%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20wdt%3AP195%20%3Fcollection%20.%0A%20%20%7D%0A%20%20%23LIMIT%2010000%0A%7D%20as%20%25holdings%0AWHERE%20%7B%0A%20%20INCLUDE%20%25holdings%0A%20%20OPTIONAL%7B%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP625%20%3Fcoords%20.%7D%20%20%20%20%20%20%20%20%20%20%20%20%23%20coordinates%20of%20the%20collection%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20p%3AP159%20%5Bps%3A625%20%3Fcoords%5D.%7D%20%20%20%20%20%20%23%20or%20cords%20of%20the%20HQ%20location%0A%20%20%20%20UNION%0A%20%20%20%20%7B%3Fcollection%20wdt%3AP276%20%5Bwdt%3AP625%20%3Fcoords%5D.%20%7D%20%23%20or%20cords%20of%20the%20location%0A%20%20%20%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2C%20ar%22.%0A%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%20%20%3Fcollection%20rdfs%3Alabel%20%3FcollectionLabel.%0A%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%2010000">Wikidata</a>)</figcaption>
         </figure>
         </div><div class="column">
@@ -2737,7 +2001,7 @@ series</span>
         <table>
         <caption>Table 1: Periodical holdings and digitization</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th style="text-align: left;">periodicals</th>
         <th style="text-align: right;">–1918</th>
         <th style="text-align: right;"></th>
@@ -2746,21 +2010,21 @@ series</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">published</td>
         <td style="text-align: right;">2054</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">3550</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">known holdings</td>
         <td style="text-align: right;">540</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">775</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">26.29</td>
@@ -2768,21 +2032,21 @@ series</span>
         <td style="text-align: right;"><span
         class="red">21.83</span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">digitized</td>
         <td style="text-align: right;">156</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">233</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">7.59</td>
@@ -2790,28 +2054,28 @@ series</span>
         <td style="text-align: right;"><span
         class="red">6.56</span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">multiple digitisations</td>
         <td style="text-align: right;">51</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">66</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">2.48</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">1.86</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of digitised</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">32.69</td>
@@ -2850,7 +2114,7 @@ series</span>
         <col style="width: 60%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th></th>
         <th>Arabic periodicals (1798–1918)</th>
         <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian
@@ -2858,33 +2122,33 @@ series</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>community</td>
         <td>c. <strong>420 mio.</strong> Arabic speakers</td>
         <td>c. <strong>6.2 mio.</strong> inhabitants</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>periodicals</td>
         <td>2054 newspapers and journals</td>
         <td>125 newspapers</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>digitized</td>
         <td><span class="red">156</span> periodicals</td>
         <td><span class="green">125</span> newspapers with more than 1.5
         million pages</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>type</td>
         <td>mostly facsimiles</td>
         <td>facsimiles and full text</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>access</td>
         <td>paywalls, geo-fencing</td>
         <td>open access</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>interface</td>
         <td>mostly foreign languages only</td>
         <td>local and foreign languages</td>
@@ -2897,15 +2161,17 @@ series</span>
         <figure id="fig:map-arabic-dialects">
         <img
         data-src="../../assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp"
-        alt="Map of Arabic dialects. Source: reddit" />
-        <figcaption>Figure 36: Map of Arabic dialects. Source: <a
+        alt="Figure 36: Map of Arabic dialects. Source: reddit" />
+        <figcaption aria-hidden="true">Figure 36: Map of Arabic
+        dialects. Source: <a
         href="https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130">reddit</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:map-hesse">
         <img data-src="../../assets/maps/map_hesse-europe.png"
-        alt="Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
-        <figcaption>Figure 37: Map of Hesse in Europe. Source: <a
+        alt="Figure 37: Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
+        <figcaption aria-hidden="true">Figure 37: Map of Hesse in
+        Europe. Source: <a
         href="https://www.iz.sk/sk/projekty/regiony-eu/DE7"
         class="uri">https://www.iz.sk/sk/projekty/regiony-eu/DE7</a></figcaption>
         </figure>
@@ -2925,8 +2191,8 @@ series</span>
         <figure id="fig:translatio-interface">
         <img
         data-src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png"
-        alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 38: Interface of the <a
+        alt="Figure 38: Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
+        <figcaption aria-hidden="true">Figure 38: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -2943,17 +2209,18 @@ series</span>
         <div class="column">
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
-        alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 39: <em>al-Muqtabas</em> 6 on <a
+        alt="Figure 39: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 39: <em>al-Muqtabas</em> 6
+        on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
-        alt="The page from fig. 39 with a US-IP" />
-        <figcaption>Figure 40: The page from fig. 39 with a
-        US-IP</figcaption>
+        alt="Figure 40: The page from fig. 39 with a US-IP" />
+        <figcaption aria-hidden="true">Figure 40: The page from fig. 39
+        with a US-IP</figcaption>
         </figure>
         </div>
         </div>
@@ -2972,8 +2239,8 @@ series</span>
         <figure id="fig:muqtabas-6-2-shamela-2">
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
-        alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 41: <span class="citation"
+        alt="Figure 41: al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
+        <figcaption aria-hidden="true">Figure 41: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
@@ -2983,9 +2250,9 @@ series</span>
         <figure id="fig:muqtabas-6-2-133-eap-2">
         <img
         data-src="../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg"
-        alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
-        <figcaption>Figure 42: Facsimile of the same section of <span
-        class="citation"
+        alt="Figure 42: Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
+        <figcaption aria-hidden="true">Figure 42: Facsimile of the same
+        section of <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
         href="https://eap.bl.uk/">EAP</a></figcaption>
@@ -3038,8 +2305,8 @@ series</span>
         records three calendars: Julian, Gregorian, Hijrī.</p>
         <figure id="fig:al-quds-dateline">
         <img data-src="../../assets/jaraid/al-quds_nloi_annotated.png"
-        alt="al-Quds 1(1): the dateline states “Jerusalem, Friday, 5 and 18 September 1908, which corresponds to 22 Shaʾbān 1316 aH”" />
-        <figcaption>Figure 43: <a
+        alt="Figure 43: al-Quds 1(1): the dateline states “Jerusalem, Friday, 5 and 18 September 1908, which corresponds to 22 Shaʾbān 1316 aH”" />
+        <figcaption aria-hidden="true">Figure 43: <a
         href="https://jrayed.org/en/newspapers/?a=d&amp;d=alkouds19080905-01.1.1"><em>al-Quds</em>
         1(1)</a>: the dateline states “Jerusalem, Friday, 5 and 18
         September 1908, which corresponds to 22 Shaʾbān 1316
@@ -3048,16 +2315,18 @@ series</span>
         </div><div class="narrow">
         <figure id="fig:al-quds-nloi">
         <img data-src="../../assets/jaraid/al-quds_nloi_calendar.png"
-        alt="Calender with publication dates according to the National Library of Israel" />
-        <figcaption>Figure 44: Calender with publication dates according
-        to the National Library of Israel</figcaption>
+        alt="Figure 44: Calender with publication dates according to the National Library of Israel" />
+        <figcaption aria-hidden="true">Figure 44: Calender with
+        publication dates according to the National Library of
+        Israel</figcaption>
         </figure>
         <figure id="fig:al-quds-ips">
         <img
         data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/al-quds_ips_annotated.png"
-        alt="Publication dates according to the Institute of Palestine Studies, Beirut" />
-        <figcaption>Figure 45: Publication dates according to the
-        Institute of Palestine Studies, Beirut</figcaption>
+        alt="Figure 45: Publication dates according to the Institute of Palestine Studies, Beirut" />
+        <figcaption aria-hidden="true">Figure 45: Publication dates
+        according to the Institute of Palestine Studies,
+        Beirut</figcaption>
         </figure>
         </div>
         </div>
@@ -3102,7 +2371,7 @@ series</span>
         <col style="width: 22%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Font Type</th>
         <th style="text-align: right;">Sakhr (%)</th>
         <th style="text-align: right;">ABBYY (%)</th>
@@ -3111,7 +2380,7 @@ series</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>Traditional Arabic</td>
         <td style="text-align: right;">48.54</td>
         <td style="text-align: right;">67.66</td>
@@ -3119,28 +2388,28 @@ series</span>
         class="green"><strong>51.88</strong></span></td>
         <td style="text-align: right;">47.04</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Tahoma</td>
         <td style="text-align: right;">10.52</td>
         <td style="text-align: right;">69.91</td>
         <td style="text-align: right;">26.38</td>
         <td style="text-align: right;">38.37</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Simplified Arabic</td>
         <td style="text-align: right;">52.97</td>
         <td style="text-align: right;">67.69</td>
         <td style="text-align: right;">44.94</td>
         <td style="text-align: right;">46.75</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>M Unicode Sara</td>
         <td style="text-align: right;">36.03</td>
         <td style="text-align: right;">59.40</td>
         <td style="text-align: right;">25.92</td>
         <td style="text-align: right;">33.72</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Diwani letter</td>
         <td style="text-align: right;"><span
         class="red"><strong>18.13</strong></span></td>
@@ -3151,21 +2420,21 @@ series</span>
         <td style="text-align: right;"><span
         class="red"><strong>23.32</strong></span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>DecoType Thuluth</td>
         <td style="text-align: right;">36.12</td>
         <td style="text-align: right;">37.71</td>
         <td style="text-align: right;">24.26</td>
         <td style="text-align: right;">32.48</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Deco’Type Naskh</td>
         <td style="text-align: right;">48.88</td>
         <td style="text-align: right;">50.22</td>
         <td style="text-align: right;">41.63</td>
         <td style="text-align: right;">40.92</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Arabic transparent</td>
         <td style="text-align: right;">51.56</td>
         <td style="text-align: right;"><span
@@ -3174,14 +2443,14 @@ series</span>
         <td style="text-align: right;"><span
         class="green"><strong>48.61</strong></span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Andalus</td>
         <td style="text-align: right;">28.07</td>
         <td style="text-align: right;">37.53</td>
         <td style="text-align: right;">21.68</td>
         <td style="text-align: right;">25.34</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>AdvertisingBold</td>
         <td style="text-align: right;"><span
         class="green"><strong>57.35</strong></span></td>
@@ -3197,9 +2466,9 @@ series</span>
         <figure id="fig:gpa-ocr">
         <img
         data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
-        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 46: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
-        p.1 on <a
+        alt="Figure 46: al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
+        <figcaption aria-hidden="true">Figure 46: <em>al-Bashīr</em> 9
+        Jan. 1880 (#487), p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
         </figure>
@@ -3245,34 +2514,34 @@ series</span>
         <caption>Table 4: Evaluation of my our Transkribus
         models</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th>training set</th>
         <th style="text-align: right;"><em>al-Ustādh</em></th>
         <th style="text-align: right;"><em>al-Muqtabas</em></th>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>words</td>
         <td style="text-align: right;">192829</td>
         <td style="text-align: right;">11116</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>lines</td>
         <td style="text-align: right;">18732</td>
         <td style="text-align: right;">1013</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>epochs</td>
         <td style="text-align: right;">200</td>
         <td style="text-align: right;">200</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>CER train</td>
         <td style="text-align: right;">2.01</td>
         <td style="text-align: right;">0.07</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>CER validation</td>
         <td style="text-align: right;"><span
         class="green"><strong>2.09</strong></span></td>
@@ -3286,9 +2555,10 @@ series</span>
         <figure id="fig:transkribus-web-app">
         <img
         data-src="../../assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png"
-        alt="Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
-        <figcaption>Figure 47: Transkribus web-app showing results of
-        our model for <em>al-Ḥasnāʾ</em> 1(1)</figcaption>
+        alt="Figure 47: Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
+        <figcaption aria-hidden="true">Figure 47: Transkribus web-app
+        showing results of our model for <em>al-Ḥasnāʾ</em>
+        1(1)</figcaption>
         </figure>
         </div>
         </div>
@@ -3485,8 +2755,9 @@ series</span>
         <div class="column">
         <figure id="fig:wikidata-Q4703322">
         <img data-src="../../assets/jaraid/wikidata_Q4703322.png"
-        alt="Veḳāʾiʿ-i Miṣriye on Wikidata" />
-        <figcaption>Figure 48: Veḳāʾiʿ-i Miṣriye on <a
+        alt="Figure 48: Veḳāʾiʿ-i Miṣriye on Wikidata" />
+        <figcaption aria-hidden="true">Figure 48: Veḳāʾiʿ-i Miṣriye on
+        <a
         href="https://www.wikidata.org/wiki/Q4703322">Wikidata</a></figcaption>
         </figure>
         </div>
@@ -3509,16 +2780,16 @@ series</span>
         <figure id="fig:map-periodicals-all-2024-03-cluster">
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-all-2024-03-16_markercluster.png"
-        alt="Map of all periodicals, March 2024" />
-        <figcaption>Figure 49: <a
+        alt="Figure 49: Map of all periodicals, March 2024" />
+        <figcaption aria-hidden="true">Figure 49: <a
         href="https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20before%20March%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-03-16%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset">Map
         of all periodicals, March 2024</a></figcaption>
         </figure>
         <figure id="fig:map-periodicals-all-2024-08-cluster">
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-all-2024-08-21_markercluster.png"
-        alt="Map of all periodicals, Aug. 2024, after we added our data" />
-        <figcaption>Figure 50: <a
+        alt="Figure 50: Map of all periodicals, Aug. 2024, after we added our data" />
+        <figcaption aria-hidden="true">Figure 50: <a
         href="https://query.wikidata.org/embed.html#%23title%3A%20The%20global%20periodical%20press%20until%201930%20%28items%20present%20on%2021%20August%202024%29%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%5D%2C%20%22markercluster%22%3A%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%20%7B%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%20YEAR%28%3FdateOnset%29%20%3C%201930%29.%0A%20%20%20%20%7D%0A%20%20LIMIT%2040000%0A%20%20%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FdateOnset%0A%20%20WHERE%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%3Fperiodical%20schema%3AdateModified%20%3Fmodified.%0A%20%20%20%20FILTER%28%3Fmodified%20%3C%3D%20%222024-08-21%22%5E%5Exsd%3AdateTime%29.%0A%20%20%20%20%7D%0A%20%20%7D%20as%20%25lastWeek%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25lastWeek%0A%20%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%29%20%3FpubPlace.%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%7D%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset">Map
         of all periodicals, Aug. 2024, after we added our
         data</a></figcaption>
@@ -3545,8 +2816,8 @@ series</span>
         <figure id="fig:map-palestine-1930">
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-palestine-1930_cropped.png"
-        alt="Map of newspapers published in Palestine until 1930" />
-        <figcaption>Figure 51: <a
+        alt="Figure 51: Map of newspapers published in Palestine until 1930" />
+        <figcaption aria-hidden="true">Figure 51: <a
         href="https://query-main.wikidata.org/embed.html#%23title%3A%20الصحافة%20في%20فلسطين%20حتى%20سنة%20١٩٣%D9%A0%0A%23title%3A%0A%23defaultView%3AMap%7B%22hide%22%3A%5B%22%3Fcoords%22%2C%20%22%3FpubPlace%22%2C%20%22lang%22%5D%2C%20%22markercluster%22%3A%20%22true%22%7D%0ASELECT%20DISTINCT%0A%20%20%3Fcoords%0A%20%20%28URI%28%20CONCAT%20%28%22https%3A%2F%2Freasonator.toolforge.org%2F%3F%26q%3D%22%2C%20STRAFTER%28STR%28%3Fperiodical%29%2C%20STR%28wd%3A%29%20%29%29%29%20as%20%3Fitem%29%20%23%20link%20to%20item%20on%20Reasonator%0A%20%20%23%20%28URI%28str%28%3Fperiodical%29%29%20as%20%3Fitem%29%20%23%20link%20to%20the%20wikidata%20item%0A%20%20%28CONCAT%28%3FperiodicalLabel%2C%20%22%3A%20%22%2C%20%3FperiodicalDesc%29%20as%20%3FitemLabel%29%20%23%20construct%20a%20label%20for%20the%20item%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20VALUES%20%3FdateOfInterest%20%7B%221930-01-01%22%5E%5Exsd%3AdateTime%7D.%0A%20%20%20%20%3Fperiodical%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ1002697%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%28wdt%3AP571%20%7C%20wdt%3AP580%29%20%3FdateOnset.%0A%20%20%20%20FILTER%28%3FdateOnset%20%3C%20%3FdateOfInterest%29.%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20published%20before%20a%20specific%20date%0A%20%20%20%20%3Fperiodical%20%28wdt%3AP291%20%7C%20wdt%3AP276%20%7C%20wdt%3AP495%20%7C%20wdt%3AP131%29%20%3FpubPlace.%20%23%20locations%0A%20%20%7D%0A%20%20LIMIT%2040000%0A%7D%20as%20%25periodicals%0AWITH%20%7B%0A%20%20SELECT%20DISTINCT%0A%20%20%20%20%3Fcoords%20%3Fperiodical%20%3FpubPlace%20%3FdateOnset%20%3Flang%0A%20%20WHERE%20%7B%0A%20%20%20%20INCLUDE%20%25periodicals%0A%20%20%20%20%23%20query%20for%20values%20within%20a%20bounding%20box%0A%20%20%20%20SERVICE%20wikibase%3Abox%20%7B%0A%20%20%20%20%20%20%3FpubPlace%20wdt%3AP625%20%3Fcoords.%20%23%20get%20coordinates%20of%20locations%0A%20%20%20%20%20%20%23%20limit%20bounding%20box%20by%20Western%20and%20Eastern%20corners%3A%20Palestine%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerSouthWest%20%22Point%2834.11074%2031.2163%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3AcornerNorthEast%20%22Point%2835.97328%2033.34235%29%22%5E%5Egeo%3AwktLiteral.%0A%20%20%20%20%20%7D%0A%20%20%7D%0A%7D%20as%20%25area%0AWHERE%20%7B%0A%20%20%20%20INCLUDE%20%25area%0A%20%20%20%20%23%20get%20labels%20and%20descriptions%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22ar%2C%20%5BAUTO_LANGUAGE%5D%22.%0A%20%20%20%20%20%20%20%20%3Fperiodical%20rdfs%3Alabel%20%3FperiodicalLabel%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3Adescription%20%3FperiodicalDesc.%0A%20%20%20%20%7D%0A%7D%0AORDER%20BY%20%3FdateOnset%0ALIMIT%20300">Map
         of newspapers published in Palestine until 1930</a></figcaption>
         </figure>
@@ -3745,9 +3016,10 @@ series</span>
         </ul>
         <figure id="fig:zuhur-vscode">
         <img data-src="../../assets/OpenArabicPE/vscode_zuhur.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
-        <figcaption>Figure 52: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        alt="Figure 52: The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption aria-hidden="true">Figure 52: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://code.visualstudio.com/">Visual Studio
         Code</a></figcaption>
         </figure>
         <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
@@ -3772,10 +3044,11 @@ series</span>
         <figure id="fig:zuhur-oxygen-1">
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 53: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
-        mode. Styling relies on CSS.</figcaption>
+        alt="Figure 53: The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 53: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
+        Styling relies on CSS.</figcaption>
         </figure>
         </div>
         </div>
@@ -3812,9 +3085,9 @@ series</span>
         </div><div class="column">
         <figure id="fig:zuhur-zenodo">
         <img data-src="../../assets/OpenArabicPE/zenodo_zuhur.png"
-        alt="Archived release of al-Zuhūr on Zenono" />
-        <figcaption>Figure 54: Archived release of <em>al-Zuhūr</em> on
-        <a
+        alt="Figure 54: Archived release of al-Zuhūr on Zenono" />
+        <figcaption aria-hidden="true">Figure 54: Archived release of
+        <em>al-Zuhūr</em> on <a
         href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
         </figure>
         </div>
@@ -3857,16 +3130,16 @@ series</span>
         <figure id="fig:zuhur-zotero">
         <img
         data-src="../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png"
-        alt="Zotero group “OpenArabicPE”: details in mobile view" />
-        <figcaption>Figure 55: Zotero group “<a
+        alt="Figure 55: Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption aria-hidden="true">Figure 55: Zotero group “<a
         href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
         details in mobile view</figcaption>
         </figure>
         <figure id="fig:zuhur-webview">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png"
-        alt="Webview of al-Zuhūr 2(4)" />
-        <figcaption>Figure 56: <a
+        alt="Figure 56: Webview of al-Zuhūr 2(4)" />
+        <figcaption aria-hidden="true">Figure 56: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
         of <em>al-Zuhūr</em> 2(4)</a></figcaption>
         </figure>
@@ -3888,7 +3161,7 @@ series</span>
         <col style="width: 3%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Title</th>
         <th>Place</th>
         <th>Proprietor</th>
@@ -3900,7 +3173,7 @@ series</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-haqaiq">al-Ḥaqāʾiq</a></td>
         <td>Damascus</td>
@@ -3912,7 +3185,7 @@ series</span>
         <td style="text-align: right;">389</td>
         <td style="text-align: right;">298090</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
         <td>Beirut</td>
@@ -3924,7 +3197,7 @@ series</span>
         <td style="text-align: right;">201</td>
         <td style="text-align: right;">NA</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
         <td>Cairo</td>
@@ -3935,7 +3208,7 @@ series</span>
         <td style="text-align: right;">4300</td>
         <td style="text-align: right;">6144593</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-muqtabas">al-Muqtabas</a></td>
         <td>Cairo, Damascus</td>
@@ -3947,7 +3220,7 @@ series</span>
         <td style="text-align: right;">2964</td>
         <td style="text-align: right;">1981081</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
         <td>Cairo</td>
@@ -3959,7 +3232,7 @@ series</span>
         <td style="text-align: right;">435</td>
         <td style="text-align: right;">221447</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
         <td>Cairo</td>
@@ -3971,7 +3244,7 @@ series</span>
         <td style="text-align: right;">436</td>
         <td style="text-align: right;">292333</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat
         al-ʿArab</a></td>
@@ -3984,7 +3257,7 @@ series</span>
         <td style="text-align: right;">939</td>
         <td style="text-align: right;">373832</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><strong>total</strong></td>
         <td></td>
         <td></td>
@@ -4031,17 +3304,21 @@ series</span>
         <li>XSLT1 in web browsers: will fall victim to JSON and security
         features
         <ul>
-        <li>over the last 5 years support has markedly decreased
-        <!-- - Full-text search across issues and periodicals without a backend
-          + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) --></li>
+        <li>over the last 5 years support has markedly decreased &lt;!–
+        - Full-text search across issues and periodicals without a
+        backend</li>
+        <li><a
+        href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
+        programmable search engines</a>: requires internet connection
+        (and Google account!) –&gt;</li>
         </ul></li>
         </ul>
         </div><div class="column">
         <figure id="fig:components">
         <img
         data-src="../../assets/OpenArabicPE/OpenArabicPE_components-layer-1-4.png"
-        alt="The main components of OpenArabicPE" />
-        <figcaption>Figure 57: The main components of
+        alt="Figure 57: The main components of OpenArabicPE" />
+        <figcaption aria-hidden="true">Figure 57: The main components of
         OpenArabicPE</figcaption>
         </figure>
         </div>
@@ -4119,7 +3396,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Alghamdi, Mansoor, and William Teahan. 2017. <span>“Experimental
         Evaluation of <span>Arabic OCR</span> Systems.”</span> <em>PSU
         Research Review</em> 1 (3, 3): 229–41. <a
-        href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
+        href="https://doi.org/10/gh4457">https://doi.org/10/gh4457</a>.
         </div>
         <div id="ref-oclc_4770057679-i_61-div_21.d1e2838"
         class="csl-entry" role="listitem">
@@ -4212,7 +3489,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Phillipson, Robert. 1997. <span>“Realities and Myths of
         Linguistic Imperialism.”</span> <em>Journal of Multilingual and
         Multicultural Development</em> 18 (3): 238–48. <a
-        href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
         </div>
         <div id="ref-Pohl2022Rasmifize" class="csl-entry"
         role="listitem">
@@ -4272,12 +3549,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
     
     <script>
 
