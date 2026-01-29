@@ -1,0 +1,3550 @@
+<!DOCTYPE html>
+<html  lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+          <meta name="author" content="Till Grallert">
+              <meta name="dcterms.date" content="2024-09-30">
+                  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+        <title>Do it yourself (but not alone) and KISS!</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reveal.css">
+    <style>
+      .reveal .sourceCode {  /* see #7635 */
+        overflow: visible;
+      }
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/none.css" id="theme">
+                    <style type="text/css">
+                    /* slidy.css
+
+                       Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+                       W3C liability, trademark, document use and software licensing
+                       rules apply, see:
+
+                       http://www.w3.org/Consortium/Legal/copyright-documents
+                       http://www.w3.org/Consortium/Legal/copyright-software
+                    */
+
+                    @font-face {
+                        font-family: AmiriWeb;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: regular;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: HeptaSlab;
+                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: linowrite;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
+                    }
+
+
+                    /* render Arabic as rtl */
+                    [lang = "ar"],
+                    [lang = "ota"],
+                    [lang = "fa"],
+                    [lang = "he"],
+                    [lang *= "-Arab-AR"] {
+                        direction: rtl;
+                        text-align: right !important;
+                        font-family: AmiriWeb, Helvetica, Arial, sans-serif;
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
+                        At the moment almost everything is tailored to 18px */
+                        /*    font-size: 18px;*/
+                    }
+                    /* display latin scripts in a smaller font */
+                    [lang = "en"],
+                    [lang = "fr"],
+                    [lang = "de"],
+                    [lang = "it"],
+                    [lang *= "ar-Latn-"],
+                    [lang *= "ota-Latn-"] {
+                        direction: ltr;
+                        text-align: left !important;
+                        /*    font-size: 14px;*/
+                    }
+                    /* counter default settings in reveal.css */
+                    .reveal .slides {
+                        text-align: left;
+                    }
+
+                    html,
+                    body,
+                    .reveal-viewport {
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
+                        width: 100%;
+                        height: 100%;
+                        /*color: white;*/
+                        color: black !important;
+                        /*color: #4d4d4d;*/
+                        /*background-color: black;*/
+                        background-color: white !important;
+                        overflow: hidden;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                      font-size: 12px;*/
+                      line-height: 1.2;
+                      word-wrap: break-word;
+                    }
+                    body,
+                    .reveal-viewport {
+                        position: static;
+                    }
+                    /******************
+                      header and footer to be displayed on all slides
+                    *******************/
+
+                    header,
+                    footer,
+                    div.c_header,
+                    div.c_footer  {
+                      z-index: 30;
+                      display: block;
+                      position: fixed;
+                      height: 3.8em;
+                      width: 100%;
+                    }
+                    footer.reveal {
+                        height: 3em;
+                    }
+                    header,
+                    div.c_header {
+                        top: 0;
+                    }
+                    footer,
+                    footer * {
+                        bottom: 0;
+                        background-color: #8a0f14;
+                        color: white !important;
+                    }
+
+                    footer {
+                        font-size: 0.7em;
+                    }
+
+                    footer span {
+                        /*text-transform:  capitalize; */
+                        /*this doesn't seem to have an effect*/
+                        display: inline-block;
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                    }
+                    div.c_footer {
+                        top: auto;
+                        bottom: 1.2em;
+                        height: 1.2em;
+                        font-size: 60%;
+                    }
+                    div.c_frame {
+                    /*padding: 1em;*/
+                    margin-top: 1em;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                    }
+
+                    /* basic styling for all slides */
+                    div.slide,
+                    section.slide {
+                        z-index: 20;
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border-width: 0;
+                        clear: both;
+                        left: 0;
+                        right: 0;
+                        /*line-height: 120%;*/
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
+                        /* width should be in em dashes*/
+                        max-width: 50em;
+                        height: 40em;
+                    }
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide {
+                        top: 10% ;
+                    }
+                    /* revealjs generates inline CSS that needs to be overridden  */
+                    section.slide {
+                        top: 0 !important;
+                    }
+                    /* while on screen slides should be black on white, it should be the opposite on projectors */
+                    @media projector {
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                        pre {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                    /******************
+                    set fonts and sizes
+                    *******************/
+                    body,
+                    .reveal-viewport {
+                        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                    /*font-family: "American Typewriter";*/
+                    /*font-family: "Gentium Plus";*/
+                    }
+                    body {
+                        font-weight: 300 !important;
+                        /*font-size is over-ridden by automatically generated inline CSS on body*/
+                        font-size: 24px !important;
+                    }
+                    .reveal h1,
+                    .reveal h2,
+                    .reveal h3,
+                    .reveal h4,
+                    .reveal h5,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    th,
+                    .keyphrase {
+                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
+                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                        font-weight: 400;
+                        color: #113868;
+                    }
+                    p,
+                    ol,
+                    ul,
+                    span {
+                    }
+                    /**
+                    highlights: <em> is for transcribed terms, <strong> for emphasis;
+                    **/
+                    em {
+                        /*font-family: "Gentium Plus";
+                      /*font-family: Georgia;*/
+                      font-style: italic;
+                      font-weight: 200;
+                    }
+                    strong {
+                        font-style: italic;
+                        font-weight: 200;
+                        border-bottom: 2px dotted #F96827;
+                    }
+                    table {
+                        font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
+                    }
+                    /******************
+                    set colours
+                    *******************/
+
+                    /***************
+                    standard classes, navigation
+                    ***************/
+                    div.toolbar {
+                        position: fixed;
+                        z-index: 40;
+                        top: auto;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 1.2em;
+                        text-align: right;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        font-size: 60%;
+                        color: red;
+                        background-color: rgb(240, 240, 240);
+                        border-top: solid 1px rgb(180, 180, 180);
+                    }
+                    div.toolbar span.copyright {
+                        /*display: inline-block;
+                      text-align: center;*/
+                      color: black;
+                      margin-left: 0.5em;
+                    }
+                    /* revealjs navigation */
+                    aside.controls {
+                        bottom: 7em !important;
+                    }
+                    aside.controls * {
+                        z-index: 40;
+                    }
+                    div.initial_prompt {
+                        position: absolute;
+                        z-index: 1000;
+                        bottom: 1.2em;
+                        width: 100%;
+                        background-color: rgb(200, 200, 200);
+                        opacity: 0.35;
+                        background-color: rgba(200, 200, 200, 0.35);
+                        cursor: pointer;
+                    }
+                    div.initial_prompt p.help {
+                        text-align: center;
+                    }
+                    div.initial_prompt p.close {
+                        text-align: right;
+                        font-style: italic;
+                    }
+                    div.slidy_toc {
+                        position: absolute;
+                        z-index: 300;
+                        width: 60%;
+                        max-width: 30em;
+                        height: 30em;
+                        overflow: auto;
+                        top: auto;
+                        right: auto;
+                        left: 4em;
+                        bottom: 4em;
+                        padding: 1em;
+                        background: rgb(240, 240, 240);
+                        border-style: solid;
+                        border-width: 2px;
+                        font-size: 60%;
+                    }
+                    div.slidy_toc .toc-heading {
+                        text-align: center;
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 1em;
+                        border-bottom-style: solid;
+                        border-bottom-color: rgb(180, 180, 180);
+                        border-bottom-width: 1px;
+                    }
+                    /* basic styling for all slides */
+                    div.background {
+                        display: none;
+                    }
+                    div.handout {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                    div.slide.titlepage {
+                        text-align: center;
+                    }
+                    div.slide.titlepage h1 {
+                        padding-top: 10%;
+                        margin-right: 0;
+                    }
+                    /* h1 needs to override the standard CSS */
+                    div.slide h1 {
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 4pt;
+                        padding-bottom: 4pt;
+                        margin-top: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-bottom: 0.5em;
+                        display: block;
+                        /*font-size: 160%;*/
+                        line-height: 1.2em;
+                        background: transparent;
+                    }
+                    /*****************
+                    heads
+                    ******************/
+                    /* title and dividing slides */
+                    /* put h1 in the center of the slide */
+                    div.titleslide h1,
+                    #title-slide h1 {
+                        margin-top: 2em;
+                    /*margin-bottom: auto;*/
+                    font-size: 2em;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4 {
+                        text-align: center;
+                    }
+                    div.reveal h1, h1 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.75em;
+                        line-height: 1.2;
+                        border-bottom: 1px solid #eee;
+                        margin-top: 4em;
+                    }
+                    div.reveal h2, h2 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.5em;
+                        line-height: 1.225;
+                        border-bottom: 1px solid #eee;
+                    }
+                    div.reveal h3, h3 {
+                        font-size: 1.25em;
+                        line-height: 1.43;
+                    }
+                    div.reveal h4, h4 {
+                        font-size: 1em;
+                    }
+                    /******************
+                    levels of slides
+                    ******************/
+                    .title-slide,
+                    .level1 {
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                    }
+                    /******************
+                    links
+                    ******************/
+                    a {
+                        text-decoration: none
+                    }
+                    a img {
+                        border-width: 0;
+                        border-style: none
+                    }
+                    /*a:visited { color: navy }
+                    a:link { color: navy }
+                    a:hover { color: red; text-decoration: underline }
+                    a:active { color: red; text-decoration: underline }*/
+                    a,
+                    a:link {
+                        color: #F46A00 /*!important*/;
+                        /*text-decoration: none; */
+                    }
+                    a:visited {
+                        color: #a84900;
+                        /*text-decoration: none; */
+                    }
+                    a:hover,
+                    a:active {
+                        color: #8DB300;
+                        /*text-decoration: none; */
+                    }
+                    .toolbar a:link {
+                        color: blue
+                    }
+                    .toolbar a:visited {
+                        color: blue
+                    }
+                    .toolbar a:active {
+                        color: red
+                    }
+                    .toolbar a:hover {
+                        color: red
+                    }
+                    @media screen and (max-device-width : 1024px) {
+                        div.slide {
+                            font-size: 100%;
+                        }
+                    }
+                    @media screen and (max-device-width : 800px) {
+                        div.slide {
+                            font-size: 200%;
+                        }
+                        div.slidy_toc {
+                            top: 1em;
+                            left: 1em;
+                            right: auto;
+                            width: 80%;
+                            font-size: 180%;
+                        }
+                    }
+                    div.toc-heading {
+                        width: 100%;
+                        display: inline-block;
+                        height: auto;
+                        border-bottom: solid 1px rgb(180, 180, 180);
+                        margin-bottom: 1em;
+                        text-align: center;
+                    }
+                    /****************
+                    title slide
+                    *****************/
+
+                    /*span.author ~ span.author::before {
+                      content: ', ';
+                    }*/
+
+                    /****************
+                    images and figures
+                    *****************/
+                    div.slide img {
+                        /* image-rendering: optimize-quality; */
+                        background-color: white; /*rgba(0,0,0,0.04);*/
+                        border-radius: 5px;
+                        display: block;
+                        max-height: 600px;
+                        max-width: 95%;
+                        /* center images */
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        /*border: gray solid 1px;*/
+                    }
+                    div.figure {
+                        width: 100%;
+                        padding: 0;
+                        /*height: inherit;*/
+                    }
+                    figure {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
+                    }
+                    div.figure p.caption,
+                    figcaption {
+                        position: relative;
+                        float: right;
+                        text-align: right;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+                    div.figure img {
+                        float: right;
+                        /*max-height: 80%;*/
+                        /*max-height: 600px;*/
+                        /*max-height: inherit;*/
+                        /*max-width:80%;*/
+                        /*max-width: 95%;*/
+                    }
+                    header img,
+                    footer img {
+                        display: block;
+                    }
+                    /* inline images */
+                    /*p img,
+                    li img {
+                        display: inline-block;
+                        height: 1em;
+                    }*/
+                    img.c_logo {
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    /*    max-width: 6em !important;*/
+                        max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
+                    }
+                    /*img {
+                      max-height: 700px;
+                      max-width: 100%;
+                    }*/
+                    /* external content, including local html pages */
+                    iframe {
+                        display: block;
+                        width: 90%;
+                        /* the height setting seems to squeeze iframes */
+                        height: 600px;
+                        /* center the iframe */
+                        margin-left: auto;
+                        margin-right: auto;
+                        scrolling: auto;
+                        scroll-behavior: auto;
+                        /*border:none;*/
+                    }
+                    /*.size-80 {
+                      display: block;
+                      width: 80%;
+                      height: 80%;
+                    }*/
+                    /*****************
+                    columns
+                    ******************/
+                    div.columns,
+                    div.columns-2,
+                    div.columns-3 {
+                        /* newer? versions of reveal use display: flex */
+                        display: block;
+                        /*flex: none;*/
+                        clear: both;
+                    }
+                    div.columns-3 {
+                        clear: both;
+                    }
+                    div.column {
+                    /*    display: inline-block;*/
+                        flex: none;
+                        display: block;
+                        float: left;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .columns-3 > .column {
+                        width: 31%;
+                    }
+                    .columns-3 > .narrow {
+                        width: 23%;
+                        position: relative;
+                        float: left;
+                    }
+
+                    .columns-3 > .wide {
+                        width: 50%;
+                        position: relative;
+                        float: left;
+                    }
+                    .columns-2 > .column,
+                    .columns > .column,
+                    .c_width-50  {
+                        width: 48%;
+                    }
+                    .c_width-60,
+                    .column-60,
+                    .columns .wide {
+                        width: 64%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-50 {
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-30,
+                    .column-30,
+                    .columns .narrow {
+                        width: 31%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_left {
+                        display: block;
+                        float: left;
+                    }
+                    .c_right {
+                        display: block;
+                        float: right;
+                    }
+                    .c_center {
+                        display: block;
+                        /*clear: both;*/
+                        margin: 0 auto;
+                    }
+                    .c_left-align {
+                        text-align: left;
+                    }
+
+                    .c_right-align {
+                        text-align: right;
+                    }
+
+                    span.c_left,
+                    span.c_right,
+                    span.c_center {
+                        display: inline-block;
+                    }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing,
+                    .blackbox > .content {
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        color: white;
+                    }
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
+                    }
+
+                    .hidden {
+                            /*display: none;*/
+                            visibility: hidden !important;
+                            width: 0 !important;
+                            height: 0 !important;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            animation: 1s fadeOut;
+                        }
+                    @keyframes fadeOut {
+                      0% {
+                        opacity: 1;
+                      }
+                      100% {
+                        visibility: hidden;
+                        opacity: 0;
+                      }
+                    }
+
+                    /*****************
+                    writing direction
+                    ******************/
+                    .c_rtl {
+                        display: inline-block;
+                        direction: rtl;
+                        text-align: right;
+                        font-family: AmiriWeb;
+                    }
+                    .c_ltr {
+                        direction: ltr;
+                        text-align: left;
+                    }
+                    /*****************
+                    code
+                    ******************/
+                    div.sourceCode {
+                        margin: 10px 5px;
+                    }
+                    /*font*/
+                    pre,
+                    code {
+                        font-size: 0.8em;
+                        line-height: 0.9;
+                    }
+                    pre {
+                        display: block;
+                        font-family: monospace;
+                        white-space: pre-wrap;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin: 0;
+                        background-color: rgba(0, 0, 0, 0.04);
+                        border-radius: 5px;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        border: #95ABD0 solid 1px;
+                    }
+                    pre.mermaid {
+                        border: none;
+                        background-color: white;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    pre > code.sourceCode {
+                        white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
+                    }
+                    h1 > code {
+                        background: transparent;
+                        border: 0;
+                        font-size: inherit;
+                    }
+                    /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
+                    code {
+                        white-space: pre-wrap;
+                        /* color: #00428C; */
+                        color: #9C20EE;
+                        /*font-size:0.9em;*/
+                    }
+                    pre code {
+                        color: #000000;
+                    }
+                    li pre {
+                        margin-left: 0;
+                    }
+                    blockquote {
+                        padding-left: 1em;
+                        padding-left: 1em;
+                        margin-bottom: 1em;
+                        text-align: right;
+                        /*font-style: italic;*/
+                        clear: both;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                    }
+                    blockquote > p:before {
+                        content: "> "
+                    }
+                    cite {
+                        display: block;
+                        margin-left: 10%;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        text-align: right;
+                    /*    the float attribute destroys the multi-column layout*/
+                    /*    float: right;*/
+                        padding-bottom: 1em;
+                    }
+                    p.copyright {
+                        font-size: smaller
+                    }
+                    .center {
+                        text-align: center
+                    }
+                    .footnote {
+                        font-size: smaller;
+                        margin-left: 2em;
+                    }
+                    /**********
+                    lists
+                    ***********/
+                    ul,
+                    ol {
+                        display: block;
+                        clear: both;
+                        font-style: normal;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.5em;
+                        /*margin-left: 1.5em;*/
+                        list-style-position: inside;
+                        padding-left: 1em;
+                        /* all lists should be centered */
+                        /*text-align: left;*/
+                        /*margin-left: auto;
+                      margin-right: auto;*/
+                    }
+                    /* padding, line-height etc. for all list items */
+                    ul li,
+                    ol li {
+                        margin-top: 0.2em;
+                        margin-bottom: 0.2em;
+                        padding: 0 0 0 0px;
+                        line-height: 120%;
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    /* unordered lists */
+                    ul {
+                        list-style-type: circle;
+                    }
+                    ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul li {
+                        list-style: circle;
+                        /*margin: 0.1em 0em 0.6em 0;
+                      padding: 0 0 0 0;
+                      line-height: 140%;*/
+                    }
+                    li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /* background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li li ul li {
+                        font-style: normal;
+                        list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    /*ul {
+                      margin: 0.5em 1.5em 0.5em 1.5em;
+                      padding: 0;
+                    }*/
+                    /* ordered lists */
+                    ol {
+                        margin: 0.5em 1.5em 0.5em 1.5em;
+                        padding: 0;
+                    }
+                    ol li {
+                        list-style-type: decimal;
+                    }
+                    li ol li {
+                        list-style-type: decimal;
+                    }
+                    li li ol li {
+                        list-style-type: decimal;
+                    }
+
+                    /***********
+                    indentation of nested lists
+                    ***********/
+
+                    ul ul,
+                    ul ol,
+                    ol ol,
+                    ol ul {
+                        padding-inline-start: 2em;
+                    }
+
+                    /*this is to accomodated the snipped highlight js*/
+                    pre ul li {
+                        margin-top: 0;
+                        font-size: 0.7em;
+                        padding: 0;
+                    }
+                    div dt {
+                        margin-left: 0;
+                        margin-top: 1em;
+                        margin-bottom: 0.5em;
+                        font-weight: bold;
+                    }
+                    div dd {
+                        margin-left: 2em;
+                        margin-bottom: 0.5em;
+                    }
+                    p,
+                    pre,
+                    /*ul,*/
+                    /*ol,*/
+                    blockquote,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    dl,
+                    table {
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    p.subhead {
+                        font-weight: bold;
+                        margin-top: 2em;
+                    }
+                    .smaller {
+                        font-size: smaller
+                    }
+                    .bigger,
+                    .keyphrase {
+                        font-size: 130%
+                    }
+                    /*******************************
+                    tables
+                    *******************************/
+                    table {
+                        display: table;
+                        /* the table should be centred on the page*/
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*font-size: 0.8em;*/
+                        border-collapse: collapse;
+                    }
+                    th {
+                        border-bottom-width: 2px;
+                        border-bottom-style: double;
+                        border-bottom-color: black;
+                    }
+                    td,
+                    th {
+                        padding: 0.2em
+                    }
+                    td {
+                        border-bottom-width: 1px;
+                        /*border-top-width: 1px;*/
+                        border-bottom-style: solid;
+                        /*border-top-style: solid;*/
+                        border-color: white;
+                    }
+                    /*
+                    highlight mouse-over on tables
+                    */
+                    tr:hover td {
+                        /*background-color: red; */
+                        /*border-top-color: #F46A00;
+                        border-bottom-color: #F46A00;*/
+                        border-color: #F46A00;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                    }
+                    td:hover, td:hover * {
+                        background-color: #F46A00;
+                        color: black;
+                    }
+                    .focus {
+                        border-color: red;
+                        border-width: 2px;
+                        border-style: solid;
+                    }
+                    table > caption {
+                        /*position: relative;
+                        float: right;*/
+                        text-align: center;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+
+                    /*
+                     setting class="outline on ol or ul makes it behave as an
+                     ouline list where blocklevel content in li elements is
+                     hidden by default and can be expanded or collapsed with
+                     mouse click. Set class="expand" on li to override default
+                    */
+                    ol.outline li:hover {
+                        cursor: pointer
+                    }
+                    ol.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ul.outline li:hover {
+                        cursor: pointer
+                    }
+                    ul.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ol.outline {
+                        list-style: decimal;
+                    }
+                    ol.outline ol {
+                        list-style-type: lower-alpha
+                    }
+                    ol.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    /* for slides with class "title" in table of contents */
+                    a.titleslide {
+                        font-weight: bold;
+                        font-style: italic
+                    }
+                    /* references, footnotes, bibliography */
+                    div.references {
+                        font-size: 80%
+                    }
+                    div.references p {
+                        margin: 5px 0px;
+                    }
+                    /******************
+                    alerts
+                    *******************/
+
+
+                    div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
+                        border-width: 1px;
+                        border-style: solid;
+                    /*    border-color: red;*/
+                        background-color: white;
+                        margin-left: 2em;
+                        border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
+                    }
+                    /*
+                     hide images for work around for save as bug
+                     where browsers fail to save images used by CSS
+                    */
+                    img.hidden {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.initial_prompt {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.slide {
+                        visibility: visible;
+                        position: inherit;
+                    }
+                    div.handout {
+                        border-top-style: solid;
+                        border-top-width: thin;
+                        border-top-color: black;
+                    }
+                    @media screen {
+                        .hidden {
+                            display: none;
+                            visibility: visible
+                        }
+                        div.slide.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.handout.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.initial_prompt {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background.hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide .invisible {
+                            visibility: hidden
+                        }
+                        body.single_slide .hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.slide {
+                            position: absolute
+                        }
+                        body.single_slide div.handout {
+                            display: none;
+                            visibility: hidden
+                        }
+                    }
+                    @media print {
+                        .hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.slide pre {
+                            font-size: 60%;
+                            padding-left: 0.5em;
+                        }
+                        div.toolbar {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slidy_toc {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slide {
+                            page-break-before: always
+                        }
+                        /* :first-child isn't reliable for print media */
+                        div.slide.first-slide {
+                            page-break-before: avoid
+                        }
+                    }
+                    </style>
+      </head>
+  <body onload="setCurrentDate()">
+        <!-- HU Berlin header -->
+    <header>
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/2024-bochum/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-bochum/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+          </header>
+    <div class="reveal">
+      <div class="slides">
+
+                <section id="title-slide">
+          <h1 class="title">Do it yourself (but not alone) and
+KISS!</h1>
+                    <div class="columns">
+          <div class="column c_left c_left-align">
+                      <p class="author">
+                          Till Grallert            </p>
+                                                <p class="institute">Humboldt-Universität
+zu Berlin, Institut für Geschichtswissenschaften</p>
+                            <p class="institute">Methods Innovation Lab,
+NFDI4Memory</p>
+                                          </div>
+        <div class="column c_right c_right-align">
+                    <p class="event">
+                        <span>RUB, Digital Humanities Day #6</span>
+          </p>
+                                <p class="date">2024-09-30</p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2024-bochum/">https://tillgrallert.github.io/slides/dh/2024-bochum/</a></p>
+                  </div>
+      </div>
+        </section>
+
+        <section>
+        <section id="ein-neues-epistem"
+        class="title-slide slide level1">
+        <h1>Ein neues Epistem</h1>
+
+        </section>
+        <section id="digital-als-ein-historischer-begriff"
+        class="slide level2">
+        <h2><em>Digital</em> als ein historischer Begriff</h2>
+        <div class="columns">
+        <div class="wide">
+        <!-- **Datafication** emphasises the epistemic shift from a world where data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies. -->
+        <p><strong>Datafizierung</strong> unterstreicht den
+        fundamentalen epistemischen und konzeptionellen Wandel von einer
+        Welt, in der Daten ein eng definierter Teil der Ergebnisse von
+        Forschungsprozessen waren, hin zu einem neuen Status Quo, in dem
+        alle Forschungsprozesse immer bereits durch Informations- und
+        Kommunikationstechnologien (ICT) computationell mediiert
+        sind.</p>
+        </div><div class="narrow">
+        <p><span class="keyphrase">wir leben in <em>datafizierten</em>
+        Gesellschaften</span></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase">“<em>digital</em>” hat seine
+        Bedeutung verloren</span></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>We think of the ‘digital’ as a previous historic movement
+        when computation as digitality was understood in opposition to
+        the analogue, rather than complementary […]</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Berry+2017">Berry
+        und Fagerjord (<em>Digital Humanities</em> 2017)</span>,
+        2</cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase"><em>Algorithmen</em> sind Teil des
+        sozialen Gewebes</span></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>Today, algorithms are such an intrinsic and fundamental part
+        of how daily life is experienced that some scholars even argue
+        that we live in “algorithmic cultures” […]. This evocative
+        notion points to the increasing difficulty of separating
+        algorithms from the activities that make up culture. It also
+        evinces the complex ways in which human agency and algorithmic
+        actions are intertwined […]</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Siles2023Living">Siles (<em>Living with
+        <span>Algorithms</span></em> 2023)</span>, 1</cite></p>
+        <blockquote>
+        <p>It is our position that the “digital” cannot be understood as
+        a separate domain of culture. If we actually examine the digital
+        […] we see that today digital information processing is present
+        in every aspect of our lives.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="CPCAbout">(Centre
+        for Postdigital Cultures <span>„About Us“</span>
+        2018)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><p>das ist die Ausgangsprämisse unserer Arbeit für
+        NFDI4Memory</p></li>
+        <li><p>Digital history, then, accepts that the human cultural
+        record is being <em>datafied</em> and we need computational
+        methods in order to make historical arguments <span
+        class="citation"
+        data-cites="DigitalHistoryArgument2017 Laessig2021DigitalHistory">(cf.
+        Arguing with Digital History working group <span>„Digital
+        <span>History</span> and <span>Argument</span>“</span> 2017, 2;
+        Lässig <span>„Digital History“</span> 2021, 6)</span></p></li>
+        <li><p>Digital history also addresses the age of abundance, as
+        postulated by Roy Rosenzweig, and epitomised by the recent
+        advances in generative AI and LLMs, which will create an
+        infinite amount of absolutely plausible and convincing yet
+        utterly false sources</p></li>
+        <li><p>Daraus folgt aber auch, dass <strong>digital</strong>
+        history oder <strong>digital</strong> humanities hilfreiche
+        Begriffe einer Übergangsphase sind. Sie sind Label mit einem
+        hohen symbolischen und ökonomischen Kapital.</p></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="datum-captum-raw-meta" class="slide level2">
+        <h2>Datum? captum? raw? meta?</h2>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase">Jegliche digitale Informationen sind
+        Daten</span> …</p>
+        </div><div class="wide">
+        <blockquote>
+        <p>Data are forms of information, a larger concept that is even
+        more difficult to define. Epistemological and ontological
+        problems abound, resulting in many books devoted to explicating
+        information and knowledge</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Borgman2015BigData">Borgman (<em>Big
+        <span>Data</span>, <span>Little Data</span>, <span>No
+        Data</span></em> 2015)</span>, 18</cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>[Datafication/modeling] is the work of abstracting discrete
+        values from a phenomenon or artifact. These values may be
+        expressed in numbers or texts and are necessarily a reduction of
+        complex materials into a form for computation.
+        <!--With data we can automate processes --></p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Drucker2021DHCoursebook">Drucker (<em><span>DH
+        Coursebook</span></em> 2021)</span>, 3</cite></p>
+        <blockquote>
+        <p>Data need to be imagined <em>as</em> data to exist and
+        function as such, and the imagination of data entails an
+        interpretive base.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Gitelman2013Introduction">Gitelman
+        (<span>„Introduction“</span> 2013)</span>, 3</cite></p>
+        </div><div class="narrow">
+        <p>… und <span class="keyphrase">alle Daten sind
+        modelliert</span></p>
+        <!-- - Mapping
+        - Reduction
+        - Purpose -->
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Data literacy as part of data culture</li>
+        <li>data are always a concrete embodyment and a
+        socio-technological stack: serialisation</li>
+        <li>Models have three characteristics <span class="citation"
+        data-cites="Stachowiak1973AllgemeineModelltheorie">(Stachowiak
+        <em>Allgemeine Modelltheorie</em> 1973)</span>
+        <ul>
+        <li>Abbildung: model for something</li>
+        <li>Reduktion: abstracts aspects of interest</li>
+        <li>Zweck: models have a purpose for something</li>
+        </ul></li>
+        <li>If we subscribe to social constructivism then all models are
+        historically situated</li>
+        <li>Wenn wir dem Konstruktivismus folgen, dann sind alle Modelle
+        historisch situiert. Sie haben einen konkreten Ort und eine
+        spezifische Zeitlichkeit
+        <ul>
+        <li>Daten und Modelle sind in historischen Prozessen der
+        Wissensproduktion, des Wissenschaffens verortet</li>
+        </ul></li>
+        <li>drucker: capta</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="die-falsche-vertrautheit" class="slide level2">
+        <h2>Die falsche Vertrautheit</h2>
+        <figure id="fig:google-docs">
+        <img data-src="../../assets/dh/google-docs.png"
+        alt="Google docs" />
+        <figcaption>Figure 1: Google docs</figcaption>
+        </figure>
+        <aside class="notes">
+        <ul>
+        <li>Digitalität <strong>simuliert</strong> Stasis und
+        Vertrautheit
+        <ul>
+        <li>Metaphern</li>
+        <li>semantische Modelle</li>
+        </ul></li>
+        <li>Digitalität ist hochgradig ephemer und wird kontinuierlich
+        remediiert</li>
+        <li>Google docs
+        <ul>
+        <li>UI für eine distribuierte Datenbank</li>
+        <li>Die “Seite” wird konstant erzeugt und existiert so nur im
+        Bildschirmausschnitt des Betrachters</li>
+        <li>Datenzentren</li>
+        <li>Netzwerkprotokolle</li>
+        <li>Inhaltsanalysen für Werbung, Kommerzialisierung</li>
+        <li>Interaktion mit Embeddings, Sprachmodellen of sorts</li>
+        </ul></li>
+        <li>Suchschlitz
+        <ul>
+        <li>simuliert Einfachheit</li>
+        </ul></li>
+        <li>Mein Punkt ist, dass wir nicht auf Papier schreiben und
+        nicht in einer Bibliothek durch die Regale streifen</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="ein-dokument" class="slide level2">
+        <h2>Ein Dokument?</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:google-network">
+        <img
+        data-src="https://cloud.google.com/static/images/locations/edgepoint-map-popup_2x.jpg"
+        alt="Googles globale Netzwerkinfrastruktur. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption>Figure 2: Googles globale Netzwerkinfrastruktur.
+        Quelle: <a href="https://cloud.google.com/about/locations/"
+        class="uri">https://cloud.google.com/about/locations/</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:google-cdn">
+        <img
+        data-src="https://cloud.google.com/static/images/locations/media-cdn-map-popup_2x.jpg"
+        alt="Die Datenzentren in Googles globalem Content Delivery Network. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption>Figure 3: Die Datenzentren in Googles globalem
+        Content Delivery Network. Quelle: <a
+        href="https://cloud.google.com/about/locations/"
+        class="uri">https://cloud.google.com/about/locations/</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Google docs
+        <ul>
+        <li>UI für eine distribuierte Datenbank</li>
+        <li>Die “Seite” wird konstant erzeugt und existiert so nur im
+        Bildschirmausschnitt des Betrachters</li>
+        <li>Datenzentren</li>
+        <li>Netzwerkprotokolle</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="du-bist-so-schön-wie-eine-weitere-stunde-strom"
+        class="slide level2">
+        <h2>“Du bist so schön wie eine weitere Stunde Strom!”</h2>
+        <div class="columns-3">
+        <div class="column">
+        <blockquote class="twitter-tweet" data-partner="tweetdeck">
+        <p lang="ar" dir="rtl">
+        "حبيبتي، انت جميلة، كساعة اضافية من الكهرباء"<br><br>هذا غزل أحد
+        المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة!
+        <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a>
+        </p>
+        — aya mansour (@aya_mansour_11_)
+        <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July
+        31, 2015</a>
+        </blockquote>
+        <blockquote class="twitter-tweet" data-partner="tweetdeck">
+        <p lang="ar" dir="rtl">
+        مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق
+        في فلسطين - غزة
+        <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a>
+        </p>
+        — Jawdat Alsaleh (@JawdatAlsaleh)
+        <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June
+        27, 2017</a>
+        </blockquote>
+        </div>
+        <div class="column">
+        <iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&amp;view=map" width="500" height="500" frameBorder="0" scrolling="no">
+        </iframe>
+        </div>
+        <div class="column">
+        <iframe src="https://data.worldbank.org/share/widget?indicators=IT.NET.BBND.P2&amp;view=map" width="500" height="500" frameBorder="0" scrolling="no">
+        </iframe>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><p>very unequal access to the means of digital
+        production</p></li>
+        <li><p>sustainable development goals (SDG) of the UN</p></li>
+        <li><p>electricity</p>
+        <ul>
+        <li>800 mio have no access
+        <ul>
+        <li>almost exclusively in the global south</li>
+        <li>vast majority in subsaharan Africa</li>
+        </ul></li>
+        <li>by 2030 according to projections of the International Energy
+        Agency (IEA):
+        <ul>
+        <li>600 mio</li>
+        <li>33 per cent of all Africans</li>
+        </ul></li>
+        <li>access:
+        <ul>
+        <li>250–500 kWh per year and household</li>
+        <li>less than 14 hours of a 100W lightbulb per day</li>
+        </ul></li>
+        </ul></li>
+        <li><p>internet + 36,6 percent of the world population, or 2,93
+        billion people do not participate + 85 per cent of them live in
+        Africa, South, East and South-East Asia + lower speed + higher
+        latency + higher cost per unit of traffic</p></li>
+        <li><p>At my former home institution, a well-funded foreign
+        research institute, for instance, we shared a single connection
+        of 24Mbps. Simply loading the landing page for a single volume
+        of al-Muqtabas at the Endangered Archives Programme will require
+        three seconds of load time even under perfect conditions. With
+        20 colleagues and another 20 library users equally trying to
+        access online services and resources, load time quickly
+        multiplies tenfold and more. Browsing through a large number of
+        scanned images behind such a bottleneck is a daunting task.
+        Uploading multiple gigabytes of high-resolution scans to a cloud
+        computing service for machine-learning based OCR, for instance,
+        is practically impossible and we rather ship hard drives and
+        wait for months for the results.</p></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="vom-suchen-und-finden" class="slide level2">
+        <h2>Vom Suchen und Finden</h2>
+        <div class="columns-3">
+        <div class="narrow">
+        <figure id="fig:mirat-ar">
+        <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-ar.png"
+        alt="Original in arabischer Schrift" />
+        <figcaption>Figure 4: Original in arabischer
+        Schrift</figcaption>
+        </figure>
+        <figure id="fig:mirat-ijmes">
+        <img
+        data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-ijmes.png"
+        alt="In international gebräuchlicher Umschrift" />
+        <figcaption>Figure 5: In international gebräuchlicher
+        Umschrift</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat-dmg">
+        <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
+        alt="In Umschrift der Deutschen Morgenländischen Gesellschaft" />
+        <figcaption>Figure 6: In Umschrift der Deutschen
+        Morgenländischen Gesellschaft</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat-dmg-flat">
+        <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
+        alt="In DMG Umschrift ohne diakritische Zeichen" />
+        <figcaption>Figure 7: In DMG Umschrift ohne diakritische
+        Zeichen</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>von Bulus Šahade von 1919 bis 1938 in Jerusalem
+        herausgegebene Wochenzeitung <a
+        href="https://www.wikidata.org/wiki/Q124971778">Mirʾāt
+        aš-Šarq</a></li>
+        <li>catalogue could be searched in Arabic but the data is
+        missing</li>
+        <li>catalogues are historical artefacts
+        <ul>
+        <li>digitisation of catalogues: NOT re-cataloguing of original
+        material
+        <ul>
+        <li>card catalogue</li>
+        <li>ASCII OPAC</li>
+        <li>automated transcription of the card catalogue</li>
+        <li>human cataloguers depend on the technology they have at
+        hand, which means they might be unable to enter the correct
+        string</li>
+        <li>errors perpetuate</li>
+        </ul></li>
+        </ul></li>
+        <li>Latin input is mostly reduced to ASCII
+        <ul>
+        <li>Hamza and ʿAyn escape this algorithm on ZDB</li>
+        </ul></li>
+        <li>determined article is not automatically removed</li>
+        <li>The choices are not transparently documented</li>
+        <li>no software on-screen keyboards provided</li>
+        <li>additional problems
+        <ul>
+        <li>catalogues are inherently local documents</li>
+        <li>aggregated, if at all, on a national level</li>
+        <li>frequently accessible only through Web interfaces and not
+        APIs</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="die-humanities-in-der-epoche-der-berechenbarkeit"
+        class="slide level2">
+        <h2>Die Humanities in der Epoche der Berechenbarkeit</h2>
+        <p><span class="keyphrase">Für einen aufgeklärten Umgang mit
+        <em>Datafizierung</em> brauchen wir einen fundamentalen
+        <strong>Kulturwandel</strong></span></p>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">Kennen Sie die?</span></p>
+        <figure id="fig:wordcloud-dhq">
+        <img
+        data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png"
+        alt="“Werkzeuge” in Digital Humanities Quarterly" />
+        <figcaption>Figure 8: “Werkzeuge” in Digital Humanities
+        Quarterly</figcaption>
+        </figure>
+        <!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
+        </div><div class="column">
+        <p>Es herrscht in der Breite ein Mangel an</p>
+        <ul>
+        <li><strong>Diskurs</strong>: Austausch über unser
+        (disziplinäres) Selbstverständnis</li>
+        <li><strong>Theorie</strong>: Verständnis des epistemischen
+        Wandels und der ontologischen Dimensionen der
+        <em>Datafizierung</em></li>
+        <li><strong>Praktiken</strong>: Beherrschung der notwendigen
+        Methoden und Werkzeuge</li>
+        <li>positivem <strong>Wissen</strong>: Überblick über die
+        Möglichkeiten in einem sich rapide wandelnden Umfeld</li>
+        </ul>
+        <!-- - Es gibt ein starkes Ressentiment gegenüber allem "digitalen"
+        - *"Digital" Humanities* als Indikator -->
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>David Berry “epoch of computationability”</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="von-digital-consumers-zu-digital-citizens-oder-warum-wir-eine-datenkultur-brauchen"
+        class="slide level2">
+        <h2>Von <em>digital consumers</em> zu <em>digital citizens</em>,
+        oder warum wir eine Datenkultur brauchen</h2>
+        <!-- requires some work -->
+        <!-- [*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase} -->
+        <div class="columns">
+        <div class="column">
+        <h3 id="im-weiteren-sinn">im weiteren Sinn</h3>
+        <p>eine <strong>Fachkultur</strong>, bei der (Forschungs-)daten
+        und datengetriebener Methoden ein integraler Bestandteil sind,
+        die Arbeit mit und an Daten also nicht mehr als ein netter
+        Appendix zum “eigentlichen” Forschungsprozess verstanden
+        wird.</p>
+        </div><div class="column">
+        <h3 id="im-engeren-sinn">im engeren Sinn</h3>
+        <p><strong>alltägliche Praktiken</strong> und
+        Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit
+        Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung
+        mit Hilfe von computationellen Methoden und Werkzeugen.</p>
+        </div>
+        </div>
+        <div class="columns">
+        <h3 id="braucht">braucht</h3>
+        <div class="column">
+        <p>Verständnis der theoretischen und epistemologischen
+        Grundlagen und Implikationen der Datafizierung und Diskussion
+        über deren Folgen</p>
+        </div>
+        <div class="column">
+        <p>Orientierung, Guidelines und Unterstützung</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><em>digital citizenry</em> ist von <span class="citation"
+        data-cites="Rankin2018PeoplesHistory">(Rankin <em>A
+        <span>People</span>’s <span>History</span> of
+        <span>Computing</span></em> 2018, 11)</span> geprägt
+        <ul>
+        <li><blockquote>
+        <p>Kurtz, the director of the Computation Center, used the
+        language of “citizenship” to describe the relationship between a
+        user and the user’s computing network. A good computing citizen
+        respected the college’s ongoing computer memory limitations.
+        <span class="citation"
+        data-cites="Rankin2018PeoplesHistory">(Rankin <em>A
+        <span>People</span>’s <span>History</span> of
+        <span>Computing</span></em> 2018, 43–44)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Ziel ist <em>digital</em> or <em>computing citizens</em>,
+        die über ihre Teilnahme und -habe an einer Gemeinschaft
+        definiert sind.
+        <ul>
+        <li>Unterschied zu Produzenten und <em>Makers</em></li>
+        <li><strong>ABER</strong> Digital natives sind nicht automatisch
+        digital citizens
+        <ul>
+        <li><blockquote>
+        <p>despite what the term “digital natives” invokes, it does not
+        mean that those who are digital natives (born after 1980)
+        understand digital technology. In fact, digital natives may not
+        remember life before the internet, but that does not mean they
+        understand the complex systems that supports it or the nuances
+        of communication and knowledge creation in the digital age <span
+        class="citation" data-cites="Levy2017DigitalZombies">(Levy
+        <span>„<span>‚<span>Digital Zombies</span>‘</span> — <span>A
+        Learner-Centered Game</span>“</span> 2017, Abschn.
+        16)</span>.</p>
+        </blockquote></li>
+        </ul></li>
+        </ul></li>
+        <li>kann <strong>nur kollaborativ</strong> adäquat bewältigt
+        werden.</li>
+        <li>ich fokussiere heute eher auf die Datenkultur im engeren
+        Sinn, und schlage alltägliche Praktiken vor, die uns erlauben
+        auch eine Datenkultur im weiteren Sinn zu etablieren.</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="diy-do-it-yourself"
+        class="title-slide slide level1">
+        <h1>DIY <br/>Do it yourself</h1>
+
+        </section>
+        <section id="making" class="slide level2">
+        <h2>Making</h2>
+        <div class="columns">
+        <div class="narrow">
+        <blockquote>
+        <p>Do artefacts have politics?</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Winner+1980">(Winner
+        <span>„Do Artifacts Have Politics?“</span>
+        1980)</span></cite></p>
+        <blockquote>
+        <p>Do politics have artefacts?</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
+        <span>Power</span> to the <span>People</span></em>
+        2014)</span></cite></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>To use […] tools well, we must, in some real sense,
+        understand them better than the tool makers. […] The best kind
+        of tools are therefore the ones that we make ourselves.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Tenen2016BluntInstrumentalism">(Tenen <span>„Blunt
+        <span>Instrumentalism</span>“</span> 2016, 85)</span></cite></p>
+        <blockquote>
+        <p>Without access to the code, whether because it is proprietary
+        or generated on the fly, as in the case of some machine-learning
+        algorithms, analysts can only comment on the apparent operations
+        of the code based on its effects. The operations of the code are
+        left in the hands of those who can access it, usually those who
+        have made or maintain it, and those who can read it.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Marino2020CriticalCodeStudies">(Marino <em>Critical
+        <span>Code Studies</span></em> 2020, 4)</span></cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="column">
+        <h3 id="making-1">Making</h3>
+        <ul>
+        <li>Experimentieren, Tüfteln, Ausprobieren, Werkeln</li>
+        <li>Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der
+        Produktionsmittel</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="maker-turn">Maker turn</h3>
+        <p>Kreativität von Design, Herstellung und Erfahrung von
+        (digitalen) Objekten als From von Wissenschaft</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Grundsatz: Werkzeuge und Methoden sind mit
+        Machtverhältnissen verwoben
+        <ul>
+        <li><blockquote>
+        <p>The Cloud <em>is</em> a factory. Your AI <em>is</em> a human.
+        Sexism <em>is</em> a feature, not a bug. <span class="citation"
+        data-cites="Mullaney2021Intro">(Mullaney <span>„Your
+        <span>Computer Is</span> on <span>Fire</span>“</span> 2021, 7,
+        Hervorhebung im Original)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Geschichte
+        <ul>
+        <li>1970er Kalifornien: kooperative Werkstätten</li>
+        <li>Recht auf Reparatur</li>
+        <li>DIY: do it yourself culture</li>
+        <li>“Maker Movement Manifesto” von Hatch (2013)
+        <ul>
+        <li>make, share, give, learn, tool up, play, participate,
+        support, change</li>
+        </ul></li>
+        </ul></li>
+        <li>bezieht sich auf <span class="citation"
+        data-cites="Wythoff2022MinimalComputing">(Wythoff
+        <span>„Ensuring <span>Minimal Computing Serves Maximal
+        Connection</span>“</span> 2022)</span>, der die beiden Fragen
+        verknüpft hat
+        <ul>
+        <li>Do artefacts have politics? <span class="citation"
+        data-cites="Winner+1980">(Winner <span>„Do Artifacts Have
+        Politics?“</span> 1980)</span></li>
+        <li>Do politics have artefacts? <span class="citation"
+        data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
+        <span>Power</span> to the <span>People</span></em>
+        2014)</span></li>
+        </ul></li>
+        <li>Kritik an Maker culture als omnipotenter maskuliner Raum:
+        <ul>
+        <li><blockquote>
+        <p>knowledge of circuitry is often conflated with (superheroic)
+        command over people, situations, and things. In present-day
+        “maker” cultures, consider the ubiquity of remarks such as
+        “getting under the hood” or “knowing the nuts and bolts,” which
+        tend to fuse logic with mastery, control with masculinity,
+        engineering with rationality, and programming with revealing.
+        <span class="citation"
+        data-cites="Sayers2017Introduction">(Sayers
+        <span>„Introduction“</span> 2017, 3)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Scheitern als wichtiges Moment</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unser-scholarly-makerspace" class="slide level2">
+        <h2>Unser Scholarly Makerspace</h2>
+        <p>DFG-Projekt “Future e-Research Support in the Humanities II”
+        an der UB der Humboldt-Universität zum Aufbau eines
+        <strong>prototypischen <em>Scholarly Makerspace</em></strong>
+        zur Förderung <strong>digitaler</strong> und
+        <strong>computationaler Werkzeugkompetenz</strong> (<em>tool
+        literacy</em>) in den Geistes- und Kulturwissenschaften
+        (2022–25)</p>
+        <div class="columns">
+        <div class="narrow">
+        <figure>
+        <img
+        data-src="https://furesh.github.io/slides/assets/images/3d-printer_struck-through.jpg"
+        alt="Kein 3D Drucker" />
+        <figcaption aria-hidden="true">Kein 3D Drucker</figcaption>
+        </figure>
+        </div><div class="wide">
+        <blockquote>
+        <p>Der Grundgedanke von Makerspaces ist das Teilen von
+        <strong>Räumen</strong>, <strong>Ressourcen</strong> und
+        <strong>Wissen</strong> innerhalb einer
+        <strong>Gemeinschaft</strong>, welche Einzelpersonen sonst nicht
+        zur Verfügung stünden</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Spath2019Makerspaces">(Späth, Seidl, und Heinzel
+        <span>„Verbreitung und Ausgestaltung von Makerspaces an
+        Universitäten in Deutschland“</span> 2019, 41)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Ergebnisse
+        <ul>
+        <li>Gescheitert: das Experiment wird nicht fortgesetzt und
+        heisst seit längerem Kompetenzwerkstatt DH</li>
+        <li>Gelernt: Gemeinschaftlich! Es kann nur um die Menschen
+        gehen!</li>
+        <li>Der duale Ansatz unseres Verständnisses davon wie der
+        Kulturwandel in den Geisteswissenschaften gestaltet werden
+        kann/sollte ist hier entscheident entwickelt worden.</li>
+        </ul></li>
+        <li>2 Dimensionen von <em>tool literacy</em>
+        <ol type="1">
+        <li>das ganz konkrete Erlernen von Werkzeugen und
+        computergestützten Verfahren: Wie kann ich Korpus von
+        Digitalisaten mit Methoden des <em>distant reading</em>
+        analysieren? Was ist eine Netzwerkanalyse? Was sind die
+        Möglichkeiten der Datenvisualisierung? Wie kann ich die
+        Disinformationskampagnien rechter Trollfarmen in Social Media
+        sinnvoll analysieren?</li>
+        <li>Zum anderen wird <em>tool literacy</em> aber mit dem Fokus
+        auf Werkzeuge und Methoden als Gegenstand der Untersuchung
+        weiter gedacht und mit <a
+        href="https://criticalcodestudies.com/"><em>Critical Code
+        Studies</em></a> <span class="citation"
+        data-cites="Marino2020CriticalCodeStudies">(Marino <em>Critical
+        <span>Code Studies</span></em> 2020)</span> und den <em>Science
+        and Technology Studies</em> in Beziehung gesetzt: von der
+        Reflexion über die hermeneutischen und epistemologischen Folgen
+        bestimmter Werkzeuge und Zugänge zu digitalen Daten bis zu den
+        ethischen und ökologischen Folgen im Bereich der künstlichen
+        Intelligenz bzw. des maschinellen Lernens</li>
+        </ol></li>
+        <li><blockquote>
+        <p>Kontext entscheidend. Als <strong>wichtige Schnittstelle
+        zwischen formellem und informellem Lernen</strong> verfolgen
+        Makerspaces an Bildungseinrichtungen sehr unterschiedliche
+        Ansätze, die von offenen interdisziplinären Werkstätten über
+        mobile Fab Labs bis hin zu großflächigen 3D-Technologie-Laboren
+        reichen. <span class="citation"
+        data-cites="Heinzeletal2020Einleitung">(Heinzel, Seidl, und
+        Stang <span>„Einleitung“</span> 2020, 1)</span></p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>Die Ermöglichung des Zugangs für alle, stellt so einen
+        zentralen Faktor für eine offene und demokratische Gesellschaft
+        dar. <span class="citation"
+        data-cites="Heinzeletal2020Einleitung">(Heinzel, Seidl, und
+        Stang <span>„Einleitung“</span> 2020, 2)</span></p>
+        </blockquote></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="do-it-yourself-but-not-alone"
+        class="title-slide slide level1">
+        <h1>Do it yourself, but not alone!</h1>
+
+        </section>
+        <section id="gemeinschaftlich-und-kollaborativ"
+        class="slide level2">
+        <h2>Gemeinschaftlich und kollaborativ</h2>
+        <div class="columns">
+        <div class="narrow">
+        <figure id="fig:wordcloud-dh-conferences">
+        <img
+        data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png"
+        alt="“Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
+        <figcaption>Figure 9: “Werkzeuge” in Abstracts für DH
+        Konferenzen, 2014–22</figcaption>
+        </figure>
+        </div><div class="wide">
+        <blockquote>
+        <p>I also remind DH is an imposter syndrome house of mirrors.
+        You look around and see experts in GIS, TEI, dataviz, etc.; it’s
+        hard to remember that people tend to be good at <em>one</em> of
+        those things when the collective appears to be good at
+        <em>all</em> of them. <strong>We all suck at most of
+        DH</strong>.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Weingart2021AlsoRemindDH">(Weingart
+        <span>„Tweet“</span> 2021)</span></cite></p>
+        <blockquote>
+        <p>Unfortunately, I’m not particularly handy. On every new
+        project, the tools require blood.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Graham2023FindMyselfCharge">(Graham
+        <span>„Toot“</span> 2023)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>daraus folgt, dass es neue Rollen und neue Anforderungen
+        gibt</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="interdisziplinäres-zentrum-für-digitalität-und-digitale-methoden-am-campus-mitte"
+        class="slide level2">
+        <h2>Interdisziplinäres Zentrum für Digitalität und digitale
+        Methoden am Campus Mitte</h2>
+        <figure id="fig:website-iz">
+        <img data-src="../../assets/dh/website_iz-digitalität.png"
+        alt="Mitglieder des IZ Digitalität und digitale Methoden" />
+        <figcaption>Figure 10: Mitglieder des <a
+        href="https://izd2m.hu-berlin.de/">IZ Digitalität und digitale
+        Methoden</a></figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://izd2m.hu-berlin.de/"
+        class="c_logo c_qr c_right" /></p>
+        <aside class="notes">
+        <ul>
+        <li>neue Initiative, seit 2024</li>
+        <li>soll die vielen Menschen, die bereits zu Themen der
+        Digitalität arbeiten zusammenbringen</li>
+        <li>ihnen Raum für Austausch bieten</li>
+        <li>ihre Arbeit sichtbar machen nach außen und nach innen</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="generous-thinking-zuhören-und-lernen"
+        class="slide level2">
+        <h2>Generous thinking: zuhören und lernen</h2>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>Generous Thinking [begins] by proposing that rooting the
+        humanities in generosity, and in particular in the practices of
+        thinking <em>with</em> rather than reflexively <em>against</em>
+        both the people and the materials with which we work, might
+        invite more productive relationships and conversations not just
+        among scholars but between scholars and the surrounding
+        community.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Fitzpatrick2016GenerousThinking">(Fitzpatrick
+        <span>„Generous <span>Thinking</span>“</span>
+        2016)</span></cite></p>
+        </div><div class="narrow">
+        <p><img data-src="../../assets/dh/cover_Fitzpatrick2019.png"
+        id="fig:book-fitzpatrick2019" /></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>frage:
+        <ul>
+        <li>Wie kann Kollaboration zum Nutzen aller gestaltet
+        werden?</li>
+        </ul></li>
+        <li>sie entwirft eine Kritik der neoliberalen Universität, in
+        der, vor allem in den Humanities, eine destruktive Kritik geübt
+        wird</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="trading-zones-contact-languages-and-project-management"
+        class="slide level2">
+        <h2>trading zones, contact languages, and project
+        management</h2>
+        <blockquote>
+        <p>to coordinate and develop […] ‘contact languages’ [..] is the
+        necessary underpinning of a stable, respectful and hybrid form
+        of interdisciplinary collaboration. Done correctly they can
+        create something new: Galison’s ‘full-fledged creoles’
+        supporting ‘activities as complex as poetry and metalinguistic
+        reflection’. They can create new disciplinary spaces and
+        practices in their own right.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="AhnertEtAl2023CollaborativeHistoricalResearch">(Ahnert
+        u. a. <em>Collaborative <span>Historical Research</span> in the
+        <span>Age</span> of <span>Big Data</span></em>
+        2023)</span></cite></p>
+        <div class="columns">
+        <div class="column">
+        <p><img data-src="../../assets/dh/cover_Kemman2021.jpeg"
+        id="fig:book-kemman2021" /></p>
+        </div><div class="column">
+        <p><img data-src="../../assets/dh/cover_Cremer2024.png"
+        id="fig:book-cremer2024" /></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Max Kemman und andere auf der Basis von Peter Galison</li>
+        <li>contact zones müssen in “trading zones” verwandelt werden
+        <ul>
+        <li>Aber allein der Aufenthalt in einer Kontaktzone erfordert
+        ein Mindestmaß an Toleranz</li>
+        </ul></li>
+        <li>Zonen der lokalen Verständigung, in den sich erst ein
+        <ul>
+        <li>Pidgin und dann
+        <ul>
+        <li>Pidgnization als die Periode, in der Labels, wie Digital
+        History, sinnvoll sein können</li>
+        </ul></li>
+        <li>Kreolisch entwickeln kann</li>
+        </ul></li>
+        <li>Peter Galison: &gt;employed the metaphor of a ‘trading zone’
+        to explain how engineers and physicists from a number of
+        different sub-fields went about collaborating with each other to
+        develop particle detectors and radar.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="leistungen-anerkennen" class="slide level2">
+        <h2>Leistungen anerkennen</h2>
+        <div class="columns">
+        <div class="column">
+        <p><img data-src="../../assets/dh/website_CRediT.png"
+        id="fig:credit" /></p>
+        </div><div class="column">
+        <p><span class="keyphrase">Anteile an jeglichem Output
+        transparent klassifizieren</span></p>
+        <ul>
+        <li>Seit 2012: <a href="https://credit.niso.org">Contributor
+        Role Taxonomy (CRediT)</a>
+        <ul>
+        <li>ANSI/NISO Standard (seit 2022)</li>
+        <li>14 Rollen im gesamten Forschungsprozess</li>
+        <li>einige Zeitschriften erlauben weitere Unterscheidung als
+        <em>lead</em> ,<em>equal</em> oder <em>supporting</em></li>
+        </ul></li>
+        <li>Die <a
+        href="http://id.loc.gov/vocabulary/relators">relators</a>
+        Taxonomie der LoC</li>
+        <li>Und natürlich gibt es Zeitschriften zum Thema, z.B. <a
+        href="https://www.tandfonline.com/journals/gacr20">Accountability
+        in Research</a></li>
+        </ul>
+        <p><span class="keyphrase">Unsere Stakeholder und ihre
+        Bedürfnisse kennen</span></p>
+        <ul>
+        <li>z.B. über die Entwicklung von Personae</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>CRediT
+        <ul>
+        <li>Rollen
+        <ol type="1">
+        <li>Conceptualization<br />
+        </li>
+        <li>Data curation<br />
+        </li>
+        <li>Formal analysis<br />
+        </li>
+        <li>Funding acquisition<br />
+        </li>
+        <li>Investigation<br />
+        </li>
+        <li>Methodology<br />
+        </li>
+        <li>Project administration<br />
+        </li>
+        <li>Resources<br />
+        </li>
+        <li>Software<br />
+        </li>
+        <li>Supervision<br />
+        </li>
+        <li>Validation<br />
+        </li>
+        <li>Visualization<br />
+        </li>
+        <li>Writing – original draft<br />
+        </li>
+        <li>Writing – review &amp; editing</li>
+        </ol></li>
+        <li>Außerhalb der Geisteswissenschaften weithin umgesetzt</li>
+        <li><blockquote>
+        <p>CRediT grew from a practical realization that bibliographic
+        conventions for describing and listing authors on scholarly
+        outputs are increasingly outdated and fail to represent the
+        range of contributions that researchers make to published
+        output. Furthermore, there is growing interest among
+        researchers, funding agencies, academic institutions, editors,
+        and publishers in increasing both the transparency and
+        accessibility of research contributions.</p>
+        </blockquote></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="kiss-keep-it-simple-stupid"
+        class="title-slide slide level1">
+        <h1>KISS <br/>keep it simple, stupid</h1>
+
+        </section>
+        <section id="minimal-computing" class="slide level2">
+        <h2>minimal computing</h2>
+        <h3
+        id="was-wir-brauchen-müssen-wir-schaffen-mit-dem-was-wir-zuhanden-haben">Was
+        <strong>wir brauchen</strong> müssen <strong>wir</strong>
+        schaffen mit dem was <strong>wir zuhanden haben</strong></h3>
+        <div class="columns">
+        <div class="narrow">
+        <figure id="fig:mincomp-website">
+        <img data-src="../../assets/dh/website_mincomp.png"
+        alt="Webseite der GO::DH working group zu minimal computing" />
+        <figcaption>Figure 11: Webseite der <a
+        href="https://go-dh.github.io/mincomp">GO::DH working group zu
+        minimal computing</a></figcaption>
+        </figure>
+        </div><div class="wide">
+        <blockquote>
+        <p>Das Haus ist gebaut aus den Steinen, die vorhanden waren</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Brecht1967SchlechteZeiten">(Brecht <span>„Schlechte
+        <span>Zeiten</span>“</span> 1967)</span></cite></p>
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(Risam und Gil
+        <span>„Introduction“</span> 2022, Abschn. 3)</span></cite></p>
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, <strong>without the help
+        we can’t get</strong>, even as we fight to build the
+        infrastructures we need at the intersection of, with, and beyond
+        institutional libraries and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Gil+2016">(Gil und
+        Ortega <span>„Global <span>Outlooks</span> in <span>Digital
+        Humanities</span>“</span> 2016, 29)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing ist ein Ergebnis von GO::DH und
+        Ereignissen und Bedingungen der Digitalität in Cuba</li>
+        <li>Alex Gil’s ideas resonated with me, upon meeting in Beirut
+        in April 2015</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="centering-the-we-in-what-do-we-need"
+        class="slide level2">
+        <h2>Centering the <em>we</em> in “what do we need?”</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="wir-ist-bestimmt-durch-geteilte"><em>wir</em> ist
+        bestimmt durch geteilte</h3>
+        <ul>
+        <li>Interessen</li>
+        <li>Werte
+        <ul>
+        <li>Zugänglichkeit</li>
+        <li>Teilhabe</li>
+        <li>Nachhaltigkeit: sozial, ökologisch, technologisch</li>
+        <li>Verantwortlichkeit</li>
+        <li>Gerechtigkeit</li>
+        <li><a href="https://www.go-fair.org/fair-principles/">FAIR</a>
+        principles</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>
+        principles</li>
+        <li>-&gt; digital commons</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="wir-bestimmt"><em>wir</em> bestimmt</h3>
+        <ul>
+        <li>den spezifischen Kontext und die Arbeitsbedingungen</li>
+        <li>unseren Zugang zu Fähigkeiten, Methoden, Arbeitszeit,
+        Werkzeug, Material …</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>FAIR: <strong>F</strong>indability,
+        <strong>A</strong>ccessability,
+        <strong>I</strong>nteroperability, <strong>R</strong>euse</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>:
+        <strong>C</strong>ollective benefit, <strong>A</strong>uthority
+        to control, <strong>R</strong>esponsibility,
+        <strong>E</strong>thics
+        <ul>
+        <li>developped in the context of indigenous communities</li>
+        </ul></li>
+        <li>commons: Allmende</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="was-bedeutet-minimal" class="slide level2">
+        <h2>Was bedeutet <em>minimal</em>?</h2>
+        <!-- add images -->
+        <div class="columns">
+        <div class="column">
+        <h3 id="aus-einer-privilegierten-position">Aus einer
+        privilegierten Position</h3>
+        <ul>
+        <li>Minimalismus als Selbstzweck
+        <ul>
+        <li>Vorhandene Resourcen zerstörend</li>
+        <li>Mode</li>
+        <li>Prinzipieller Purismus</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:bulthaupt">
+        <img data-src="../../assets/dh/bulthaupt.png"
+        alt="Webseite für Luxus-Küchen" />
+        <figcaption>Figure 12: <a
+        href="https://bulthaup.com/en/b3/">Webseite</a> für
+        Luxus-Küchen</figcaption>
+        </figure>
+        </div><div class="column">
+        <h3 id="aus-einer-marginalisierten-position">Aus einer
+        marginalisierten Position</h3>
+        <ul>
+        <li>Minimalismus als ein <em>Mittel</em> zum Zweck
+        <ul>
+        <li>Abwägung unserer Bedürfnisse und unserer Ressourcen</li>
+        <li>Anerkennung der unausweichlichen Folgen unserer
+        Handlungen</li>
+        <li>minimal computing als <em>meaningful</em> computing</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:bauhaus">
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
+        alt="Frankfurter Küche, Quelle: WikiCommons, CCO" />
+        <figcaption>Figure 13: Frankfurter Küche, Quelle: <a
+        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        CCO</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ol type="1">
+        <li>minimalism as an end
+        <ul>
+        <li>resource-intensive</li>
+        <li>example: Mary Condo</li>
+        <li>example: purist computing infrastructures
+        <ul>
+        <li>you got to run your own server and never use evil
+        platforms</li>
+        </ul></li>
+        </ul></li>
+        <li>minimalism as a means to an end
+        <ul>
+        <li>meaningful connectivity</li>
+        <li>original Bauhaus / modernist design:
+        <ul>
+        <li>form follows function to
+        <ul>
+        <li>decrease the cost of industrial production</li>
+        <li>increase the material benefits of the expended
+        resources</li>
+        </ul></li>
+        </ul></li>
+        </ul></li>
+        </ol>
+        </aside>
+        </section>
+        <section id="und-schließlich-was-ist-mit-computing"
+        class="slide level2">
+        <h2>Und schließlich was ist mit
+        <em>computing</em><!-- in minimal computing-->?</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Nutze was wir bereits kennen</li>
+        <li>Nutze was wir uns langfristig leisten könne</li>
+        <li>Lege den Nutzer_innen keine unnötigen Kosten auf</li>
+        <li>Verschwende keine Resourcen zum Schaden unsers Planeten</li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>Lerne <em>für uns</em> neue Techniken</li>
+        <li>Entwickle Fähigkeiten</li>
+        <li>Fördere und nähre Communities of Practice</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>first column
+        <ul>
+        <li>Etablierte Standards und bewährte Technologien</li>
+        <li>nicht das neuest Framework
+        <ul>
+        <li>es muss nicht glitzern und funkeln, es soll mit minimalem
+        Aufwand lange laufen</li>
+        <li>Hier sollten wir uns an der Raumfahrtindustrie (nicht
+        SpaceX) ein Beispiel nehmen: Voyager I and II are still
+        functioning with rudimentary computing powers</li>
+        </ul></li>
+        <li>Flache technology stacks</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="project-endings" class="slide level2">
+        <h2><em>Project Endings</em></h2>
+        <div class="columns">
+        <div class="narrow">
+        <figure id="fig:endings-principles">
+        <img
+        data-src="../../assets/dh/website_project-endings-principles.png"
+        alt="“Endings Principles for Digital Longevity”" />
+        <figcaption>Figure 14: “<a
+        href="https://endings.uvic.ca/principles.html">Endings
+        Principles for Digital Longevity</a>”</figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://endings.uvic.ca/principles.html"
+        class="c_logo c_qr c_right" /></p>
+        </div><div class="wide">
+        <p>Kollaboratives Projekt von Faculty, Bibliothekar_innen,
+        Entwickler_innen an der University of Victoria, Kanada</p>
+        <ul>
+        <li>Problem:
+        <ul>
+        <li>Mit enormen Funding haben die DH vor allem viele tote
+        Projekte hervor gebracht, von denen nur noch URLs in
+        Publikationen existieren</li>
+        </ul></li>
+        <li>Hauptziele
+        <ul>
+        <li>Belange von Forscher_innen und Archivar_innen bei der
+        langfristigen Kuratierung und Erhaltung von DH-Projekten in
+        Einklang zu bringen</li>
+        <li>Entwicklung praktischer Werkzeuge.</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>2016: multi-year grant
+        <ul>
+        <li>survey and interviews</li>
+        <li>mehr als die Hälfte aller Interviewten hatte keinerlei Plan
+        für die langfristige Erhaltung ihrer Projekte</li>
+        </ul></li>
+        <li>bei den gezeigten Prinzipien wird ganz klar ein <em>minimal
+        computing</em> Ansatz deutlich</li>
+        <li>tools to assist with the archiving of both data and
+        interactive elements of digital projects.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="digital-humanities-climate-coalition"
+        class="slide level2">
+        <h2>Digital Humanities Climate Coalition</h2>
+        <p>it all started with a manifesto
+        <!-- "Digital Humanities and the Climate Crisis" (2021)--></p>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:website-dhcc">
+        <img data-src="../../assets/dh/website_dhcc.png"
+        alt="Webseite des DHCC Toolkit" />
+        <figcaption>Figure 15: Webseite des <a
+        href="https://sas-dhrh.github.io/dhcc-toolkit/">DHCC
+        Toolkit</a></figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://sas-dhrh.github.io/dhcc-toolkit/"
+        class="c_logo c_qr c_right" /></p>
+        </div><div class="column">
+        <blockquote>
+        <p>The digital is material. As digital humanists, every project
+        we create, every software application we use, every piece of
+        hardware we purchase impacts our environment. […] we aim to
+        surface the ecological impacts of our work while learning with
+        and from our DH community about ways to reduce harm to the
+        environment and to the people most impacted by environmental
+        injustices. As humanities researchers, it is also our role to
+        probe the values, the power structures, and the future
+        imaginaries that underpin sustainable solutions. Given,
+        especially, the immense and monopolistic power wielded by the
+        global tech sector, and the critiques of this power that are
+        part of DH, our use of their resources should be informed by the
+        ways corporate economic, cultural, and scientific power
+        perpetuates and exacerbates the crisis.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="BaillotEtAl2021DHCCManifesto">(Baillot u. a.
+        <span>„Digital <span>Humanities</span> and the <span>Climate
+        Crisis</span>“</span> 2021)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>2021 manifesto</li>
+        <li>seit 2022: Entwicklung des Toolkits</li>
+        <li>DHd AG Greening DH</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="tool-registry-und-survey-als-beispiel"
+        class="title-slide slide level1">
+        <h1>Tool Registry und Survey als Beispiel</h1>
+
+        </section>
+        <section
+        id="tool-registries-sind-legion-und-ein-eigenes-genre-der-dh"
+        class="slide level2">
+        <h2>Tool Registries sind Legion und ein eigenes Genre der
+        DH</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>DiRT -&gt; Bamboo -&gt; <a href="https://tapor.ca/">TAPoR
+        (3.0)</a></li>
+        <li><a href="https://marketplace.sshopencloud.eu/">Social
+        Sciences and Humanities (SSH) Open Marketplace</a>
+        <ul>
+        <li>DARIAH, CLARIN, CESSDA</li>
+        </ul></li>
+        <li>NFDIs
+        <ul>
+        <li><a href="https://fortext.net/tools">fortext</a></li>
+        <li><a
+        href="https://nfdi4culture.de/resources/registry.html">NFDI4culture</a></li>
+        <li>Basisdienste …</li>
+        </ul></li>
+        <li><a href="https://www.esciencecenter.nl/rsd/">Research
+        Software Directory</a>, Netherlands eScience Center</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:websites">
+        <img
+        data-src="../../assets/dh/tool-registry/registries_websites.png"
+        alt="Einige Beispiele" />
+        <figcaption>Figure 16: Einige Beispiele</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Abkürzungen
+        <ul>
+        <li>Bamboo DiRT, 2011, 2012–</li>
+        <li>CESSDA: Consortium of European Social Science Data
+        Archives</li>
+        <li>CLARIN: Common Language Resources and Technology
+        Infrastructure</li>
+        <li>DARIAH: Digital Research Infrastructure for the Arts and
+        Humanities, 2011</li>
+        <li>DiRT: Digital Research Tools, 2008–</li>
+        <li>TaDiRAH: developed as collaboration between DiRT and
+        DARIAH-DE, 2013</li>
+        <li>TAPoR: Text Analysis Portal for Research, maintained by
+        Geoffrey Roper</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="hintergrund" class="slide level2">
+        <h2>Hintergrund</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:wordcloud-dh-conferences-2">
+        <img
+        data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png"
+        alt="“Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
+        <figcaption>Figure 17: “Werkzeuge” in Abstracts für DH
+        Konferenzen, 2014–22</figcaption>
+        </figure>
+        </div><div class="column">
+        <ul>
+        <li>Toolverzeichnisse bedienen einen evidenten Bedarf</li>
+        <li>Informationen zu Werkzeugen:
+        <ul>
+        <li>Was gibt es?</li>
+        <li>Wofür kann es im DH Kontext eingesetzt werden?</li>
+        </ul></li>
+        <li>Informationen zum Gebrauch von Werkzeugen:
+        <ul>
+        <li>Wie kann ich das Lernen?</li>
+        <li>Wer hat es wie und mit welchem Ergebnis bereits
+        angewendet?</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>klare Antwort auf die Frage: Was brauchen wir?</li>
+        <li>hier können wir kurz über den Kontext unserer beiden
+        Projekte reden</li>
+        <li>FuReSH bzw. Kompetenzwerkstatt DH</li>
+        <li>NFDI4Memory Methodenlabor</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="schwächen" class="slide level2">
+        <h2>Schwächen</h2>
+        <!-- Problem: "DiRT trap" [@Dombrowski2021DirectoryParadox] -->
+        <blockquote>
+        <p>directories require ongoing upkeep, and it is unrealistic for
+        an individual – particularly in an alternative academic career
+        track – to do that work indefinitely.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Dombrowski2021DirectoryParadox">Dombrowski
+        (<span>„The <span>Directory Paradox</span>“</span>
+        2021)</span></cite></p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Projektfinanzierung</li>
+        <li>Datensilos
+        <ul>
+        <li>Fokus auf Präsentationsschicht</li>
+        <li>Proprietäre bzw. custom Infrastrukturen</li>
+        <li>schlecht dokumentierte oder gar keine Schnittstellen
+        (API’s)</li>
+        <li>Kein Normdatensätze</li>
+        </ul></li>
+        <li>Kuratierung
+        <ul>
+        <li>(unbezahlte) Expert_innen und Gremien</li>
+        <li>praktisch kein community engagement</li>
+        <li>unmöglich Informationen aktuel zu halten</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:tapor-about">
+        <img data-src="../../assets/dh/tool-registry/tapor_about.png"
+        alt="TAPoR’s about page" />
+        <figcaption>Figure 18: TAPoR’s about page</figcaption>
+        </figure>
+        <figure id="fig:tapor-contribute">
+        <img
+        data-src="../../assets/dh/tool-registry/tapor_contribute.png"
+        alt="TAPoR asking you to send the late Stéfan Sinclair an email" />
+        <figcaption>Figure 19: TAPoR asking you to send the late Stéfan
+        Sinclair an email</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Sehr eingeschränkter Einsatz von APIs
+        <ul>
+        <li>Bsp. TAPoR hat eine nicht-dokumentierte API, auf die wir nur
+        durch eine Analyese des <a
+        href="https://github.com/lehkost/ToolXtractor">ToolXtractor</a>
+        <span class="citation"
+        data-cites="BarbotEtAl2019ToolsMentioned BarbotEtAl2019WhichDHTools">(Barbot
+        u. a. <span>„Tools Mentioned in the Proceedings of the Annual
+        <span>ADHO</span> Conferences (2015–2019)“</span> 2019,
+        <span>„Which <span>DH Tools Are Actually Used</span> in
+        <span>Research</span>?“</span> 2019)</span> gestoßen sind.</li>
+        <li>Bsp. SSH Open Marketplace hat eine dokumentierte API, aber
+        es lassen sich nicht alle Werkzeuge abfragen, die mit einem
+        bestimmten TaDiRAH-Konzept kategorisiert sind</li>
+        </ul></li>
+        <li>Folge: Momentaufnahme
+        <ul>
+        <li>IDs können nicht von externen für LOD benutzt werden</li>
+        <li>Es können keine neuen Werkzeuge hinzugefügt werden</li>
+        <li>Es gibt keine dauerhafte Maintenance (Finanzierung)
+        <ul>
+        <li>Bsp.: TAPoR listet immer noch Stéfan Sinclairs Email für die
+        Einreichung neuer Werkzeuge, obwohl Stéfan im August 2020
+        verstorben ist.</li>
+        <li>Die API des SSH Open Marketplace liefert
+        <code>informationContributor</code> und
+        <code>lastInfoUpdate</code></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="das-ganze-mit-diy-und-kiss" class="slide level2">
+        <h2>Das Ganze mit DIY und KISS</h2>
+        <p>Wir müssen die Frage “was brauchen <em>wir</em>” mit “was
+        haben <em>wir</em>” beantworten können</p>
+        <div class="columns">
+        <div class="column">
+        <h3 id="was-brauchen-wir">Was brauchen <em>wir</em>?</h3>
+        <ul>
+        <li>Toolverzeichnis (s.o.), als Abbild
+        <ul>
+        <li>der sich wandelden <em>Tool-Landschaft</em> bzw.
+        <em>Tool-Bandbreite</em></li>
+        <li>des <em>Toolgebrauchs</em> in den Digital Humanities,
+        Digital History …</li>
+        </ul></li>
+        <li>Tools sollen
+        <ul>
+        <li>beschrieben werden</li>
+        <li>klassifiziert werden</li>
+        <li>referenzierbar sein</li>
+        <li>auffindbar sein</li>
+        </ul></li>
+        <li>Einbettung in bestehende Infrastruktur
+        <ul>
+        <li>Linked Open Data</li>
+        <li>hohe Sichtbarkeit</li>
+        <li>Community Management</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <h3 id="wer-sind-wir">Wer sind <em>wir</em>?</h3>
+        <ul>
+        <li>4 Personen (2 Humanists, 2 RSE)</li>
+        <li>Projektfinanziert</li>
+        <li>Gemeinschaft von Praktitioners</li>
+        </ul>
+        <h3 id="was-haben-wir">Was haben <em>wir</em>?</h3>
+        <ul>
+        <li>Know-how</li>
+        <li>Kontakte</li>
+        <li>Anschubfinanzierung</li>
+        <li>anteilige Arbeitszeit</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Funktionen von Toolverzeichnissen
+        <ul>
+        <li>Informationen zu Werkzeugen:
+        <ul>
+        <li>Was gibt es?</li>
+        <li>Wofür kann es im DH Kontext eingesetzt werden?</li>
+        </ul></li>
+        <li>Informationen zum Gebrauch von Werkzeugen:
+        <ul>
+        <li>Wie kann ich das Lernen?</li>
+        <li>Wer hat es wie und mit welchem Ergebnis bereits
+        angewendet?</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="folglich-haben-wir-eine-weitere-registry-aufgesetzt"
+        class="slide level2">
+        <h2>Folglich haben wir eine weitere Registry aufgesetzt</h2>
+        <div class="columns">
+        <div class="narrow">
+        <figure id="fig:search-google">
+        <img data-src="../../assets/dh/tool-registry/search_google.png"
+        alt="Erste Seite der Google Suche nach “Tool Registry digital humanities”" />
+        <figcaption>Figure 20: Erste Seite der Google Suche nach “Tool
+        Registry digital humanities”</figcaption>
+        </figure>
+        </div><div class="wide">
+        <p><span class="keyphrase">Sustainable und FAI</span> …</p>
+        <ul>
+        <li>Setzen alles auf <a
+        href="https://wikidata.org/">Wikidata</a> auf
+        <ul>
+        <li>(Linked) Open Data, CC0, quelloffene Software</li>
+        <li>Community und User Management</li>
+        <li>Multilingualität von Interface und Daten</li>
+        <li>hohe Sichtbarkeit: Suchmaschinen, Integration in Normdateien
+        (<a href="https://viaf.org/">VIAF</a>)</li>
+        </ul></li>
+        <li>minimales, domänenspezifisch erweiterbares Datenmodell</li>
+        </ul>
+        <p>… <span class="keyphrase">R</span></p>
+        <ul>
+        <li>(Nach)-nutzung bestehender Datensätze
+        <ul>
+        <li>Mapping nach Wikidata
+        <ul>
+        <li>Registries: <a href="https://tapor.ca/">TAPoR</a>, <a
+        href="https://marketplace.sshopencloud.eu/">SSH Open
+        Marketplace</a></li>
+        <li>Taxonomien: <a
+        href="https://vocabs.dariah.eu/tadirah/">TaDiRAH</a></li>
+        <li>Literatur: DHQ, DHd Konferenzen …</li>
+        </ul></li>
+        </ul></li>
+        <li>Versionierte Publikation des Graphen als RDF
+        <ul>
+        <li>GitLab und Zenodo</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>nachhaltige, offene Infrastruktur seit 2012</li>
+        <li>etablierte Governancestruktur für nutzergenerierte und
+        -kuratierte Inhalte mit einer aktiven Community.</li>
+        <li>CC0 lizensierte Daten, quelloffener Softwarestack.</li>
+        <li>Linked Open Data (LOD) über SPARQL, APIs, sowie das
+        etablierte Webinterface out- of- the- box.</li>
+        <li>Hohe Sichtbarkeit in Suchmaschinen und
+        Forschungszusammenhängen</li>
+        <li>Mehrsprachigkeit von Interfaces und Datensätzen</li>
+        <li>wichtiger Baustein der digital commons mit zunehmender
+        Nutzung in Forschungs- und Kulturerbeinstitutionen</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="conclusion" class="title-slide slide level1">
+        <h1>Conclusion</h1>
+
+        </section>
+        <section id="summary" class="slide level2">
+        <h2>Summary</h2>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="diy">DIY</h3>
+        <ul>
+        <li>Wir müssen uns selbst ermächtigen und Blackboxes
+        öffnen!</li>
+        <li>Wer, wenn nicht wir, baut die Dinge, die wir benötigen?</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="but-not-alone">but not alone</h3>
+        <!-- - Die Aufgabe ist zu groß und zu komplex um sie allein bewältigen zu können. -->
+        <ul>
+        <li>Niemand kann alleine Wissen schaffen</li>
+        <li>Zusammenarbeit kann gelernt werden</li>
+        <li>Befähigung von Menschen als nachhaltigste Investition</li>
+        </ul>
+        </div>
+        <div class="column">
+        <h3 id="and-kiss">and KISS</h3>
+        <ul>
+        <li>Verantwortungsvoller Umgang mit menschlichen und natürlichen
+        Ressourcen</li>
+        <li>Ermöglicht Transparenz und Weiternutzung</li>
+        <li>Ermächtigt alle Beteiligten</li>
+        </ul>
+        </div>
+        </div>
+        <!-- - Die minimale Lösung
+            - ist unter den Rahmenbedingungen zeitgenössischen Wissenschaft im Kontext von Polykrisen, **die einzig machbare**.
+            - schont natürliche und menschliche Ressourcen.
+            - trägt dazu bei, dass Forschung im Einklang mit guter Wissenschaftlicher Praxis steht.
+            - **ermächtigt** alle Beteiligten am Forschungsprozess.
+            - ermöglicht die Weiternutzung und Archivierung ihrer Ergebnisse. -->
+        <!-- ### minimal computing principles
+
+        - build what **we need** with what **we have** at hand
+            - *vorhanden* reicht im Sinne Heideggers nicht, Dinge müssen *zuhanden* sein
+        - as **few** as possible, **open** and **established** formats and tools
+        - running on **our** hardware
+        - with **our** skills and knowledge
+        - **free-to-use** platforms without lock-in of data -->
+        </section></section>
+        <section>
+        <section id="vielen-dank" class="title-slide slide level1">
+        <h1>Vielen Dank!</h1>
+
+        </section>
+        <section id="literatur" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        data-entry-spacing="0" role="list">
+        <div id="ref-AhnertEtAl2023CollaborativeHistoricalResearch"
+        class="csl-entry" role="listitem">
+        Ahnert, Ruth, Emma Griffin, Mia Ridge, und Giorgia Tolfo. 2023.
+        <em>Collaborative <span>Historical Research</span> in the
+        <span>Age</span> of <span>Big Data</span>: <span>Lessons</span>
+        from an <span>Interdisciplinary Project</span></em>. Cambridge
+        <span>Elements</span>: <span>Historical Theory</span> and
+        <span>Practice</span>. Cambridge: Cambridge University Press. <a
+        href="https://doi.org/10.1017/9781009175548">https://doi.org/10.1017/9781009175548</a>.
+        </div>
+        <div id="ref-DigitalHistoryArgument2017" class="csl-entry"
+        role="listitem">
+        Arguing with Digital History working group. 2017. <span>„Digital
+        <span>History</span> and <span>Argument</span>“</span>. White
+        paper. <a
+        href="https://rrchnm.org/argument-white-paper/">https://rrchnm.org/argument-white-paper/</a>.
+        </div>
+        <div id="ref-BaillotEtAl2021DHCCManifesto" class="csl-entry"
+        role="listitem">
+        Baillot, Anne, James Baker, Madiha Zahrah Choksi, Alex Gil, Ana
+        Lam, Alicia Peaker, Walter Scholger, Torsten Roeder, und Jo
+        Lindsay Walton. 2021. <span>„Digital <span>Humanities</span> and
+        the <span>Climate Crisis</span>: <span>A
+        Manifesto</span>“</span>. 2021. <a
+        href="https://dhc-barnard.github.io/envdh/">https://dhc-barnard.github.io/envdh/</a>.
+        </div>
+        <div id="ref-BarbotEtAl2019ToolsMentioned" class="csl-entry"
+        role="listitem">
+        Barbot, Laure, Frank Fischer, Yoann Moranville, und Ivan
+        Pozdniakov. 2019. <span>„Tools Mentioned in the Proceedings of
+        the Annual <span>ADHO</span> Conferences (2015–2019)“</span>. 6.
+        Dezember 2019. <a
+        href="https://lehkost.github.io/tools-dh-proceedings/index.html">https://lehkost.github.io/tools-dh-proceedings/index.html</a>.
+        </div>
+        <div id="ref-BarbotEtAl2019WhichDHTools" class="csl-entry"
+        role="listitem">
+        ———. 2019. <span>„Which <span>DH Tools Are Actually Used</span>
+        in <span>Research</span>?“</span> weltliteratur.net: A Black
+        Market for the Digital Humanities. 6. Dezember 2019. <a
+        href="https://weltliteratur.net/dh-tools-used-in-research/">https://weltliteratur.net/dh-tools-used-in-research/</a>.
+        </div>
+        <div id="ref-Berry+2017" class="csl-entry" role="listitem">
+        Berry, David M, und Anders Fagerjord. 2017. <em>Digital
+        Humanities: Knowledge and Critique in a Digital Age</em>.
+        Cambridge; Malden: Polity.
+        </div>
+        <div id="ref-Borgman2015BigData" class="csl-entry"
+        role="listitem">
+        Borgman, Christine L. 2015. <em>Big <span>Data</span>,
+        <span>Little Data</span>, <span>No Data</span>:
+        <span>Scholarship</span> in the <span>Networked
+        World</span></em>. MIT Press.
+        </div>
+        <div id="ref-Brecht1967SchlechteZeiten" class="csl-entry"
+        role="listitem">
+        Brecht, Bertolt. 1967. <span>„Schlechte
+        <span>Zeiten</span>“</span>. In <em>Gesammelte
+        <span>Gedichte</span></em>, 3:963. Frankfurt am Main: Suhrkamp.
+        </div>
+        <div id="ref-CPCAbout" class="csl-entry" role="listitem">
+        Centre for Postdigital Cultures. 2018. <span>„About Us“</span>.
+        Centre for Postdigital Cultures. 2018. <a
+        href="https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/">https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/</a>.
+        </div>
+        <div id="ref-Comeau2023ProjectEndings" class="csl-entry"
+        role="listitem">
+        Comeau, Emily. 2023. <span>„The <span>Project Endings
+        Interviews</span>: <span>A Summary</span> of
+        <span>Methodological Foundations</span>“</span>. <em>Digital
+        Humanities Quarterly</em> 17 (1). <a
+        href="http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html">http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html</a>.
+        </div>
+        <div id="ref-Dombrowski2021DirectoryParadox" class="csl-entry"
+        role="listitem">
+        Dombrowski, Quinn. 2021. <span>„The <span>Directory
+        Paradox</span>“</span>. In <em>People, <span>Practice</span>,
+        <span>Power</span>: <span>Digital Humanities</span> Outside the
+        <span>Center</span></em>, herausgegeben von Anne B. McGrail,
+        Angel David Nieves, und Siobhan Senier. Debates in the
+        <span>Digital Humanities</span>. Minneapolis: University of
+        Minnesota Press. <a
+        href="https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c##ch06">https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c##ch06</a>.
+        </div>
+        <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
+        role="listitem">
+        Drucker, Johanna. 2021. <em>The <span>Digital Humanities
+        Coursebook</span>: <span>An Introduction</span> to <span>Digital
+        Methods</span> for <span>Research</span> and
+        <span>Scholarship</span></em>. 1. Aufl. Abingdon: Routledge. <a
+        href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
+        </div>
+        <div id="ref-DunbarHester2014LowPower" class="csl-entry"
+        role="listitem">
+        Dunbar-Hester, Christina. 2014. <em>Low Power to the People:
+        Pirates, Protest, and Politics in <span>FM</span> Radio
+        Activism</em>. Cambridge: MIT Press. <a
+        href="https://worldcat.org/title/895772974">https://worldcat.org/title/895772974</a>.
+        </div>
+        <div id="ref-Fitzpatrick2016GenerousThinking" class="csl-entry"
+        role="listitem">
+        Fitzpatrick, Kathleen. 2016. <span>„Generous
+        <span>Thinking</span>: <span>The University</span> and the
+        <span>Public Good</span>“</span>. kfitz. 2. Oktober 2016. <a
+        href="https://kfitz.info/generous-thinking-the-university-and-the-public-good/">https://kfitz.info/generous-thinking-the-university-and-the-public-good/</a>.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, und Élika Ortega. 2016. <span>„Global
+        <span>Outlooks</span> in <span>Digital Humanities</span>:
+        <span>Multilingual Practices</span> and <span>Minimal
+        Computing</span>“</span>. In <em>Doing Digital Humanities:
+        Practice, Training, Research</em>, herausgegeben von Constance
+        Crompton, Richard J Lane, und Ray Siemens, 22–34. Abingdon:
+        Routledge.
+        </div>
+        <div id="ref-Gitelman2013Introduction" class="csl-entry"
+        role="listitem">
+        Gitelman, Lisa, Hrsg. 2013. <span>„Introduction“</span>. In
+        <em>"<span>Raw Data</span>" <span>Is</span> an
+        <span>Oxymoron</span></em>, 1–14. Cambridge: MIT Press.
+        </div>
+        <div id="ref-Graham2023FindMyselfCharge" class="csl-entry"
+        role="listitem">
+        Graham, Shawn (@electricarchaeo@scholar.social). 2023. <span>„So
+        <span>I</span> Find Myself in Charge of Designing and Building
+        What Amounts to a Bar, for Dispensing Cider at Our Cider Mill.
+        <span>Don</span>’t Want a Kegerator…“</span>. Toot. Mastodon.
+        23. Februar 2023. <a
+        href="https://scholar.social/@electricarchaeo/109911055398835663">https://scholar.social/@electricarchaeo/109911055398835663</a>.
+        </div>
+        <div id="ref-Heinzeletal2020Einleitung" class="csl-entry"
+        role="listitem">
+        Heinzel, Viktoria, Tobias Seidl, und Richard Stang. 2020.
+        <span>„Einleitung“</span>. In <em>Lernwelt Makerspace:
+        Perspektiven im öffentlichen und wissenschaftlichen
+        Kontext</em>, herausgegeben von Viktoria Heinzel, Tobias Seidl,
+        und Richard Stang. Berlin: De Gruyter Saur. <a
+        href="https://doi.org/10.1515/9783110665994">https://doi.org/10.1515/9783110665994</a>.
+        </div>
+        <div id="ref-Laessig2021DigitalHistory" class="csl-entry"
+        role="listitem">
+        Lässig, Simone. 2021. <span>„Digital History: Challenges and
+        Opportunities for the Profession“</span>. <em>Geschichte und
+        Gesellschaft</em> 47 (1): 5–34. <a
+        href="https://doi.org/gkhrjp">https://doi.org/gkhrjp</a>.
+        </div>
+        <div id="ref-Levy2017DigitalZombies" class="csl-entry"
+        role="listitem">
+        Levy, Juliette. 2017. <span>„<span>‚<span>Digital
+        Zombies</span>‘</span> — <span>A Learner-Centered Game</span>:
+        <span>Social Knowledge Creation</span> at the
+        <span>Intersection</span> of <span>Digital Humanities</span> and
+        <span>Digital Pedagogy</span>“</span>. In <em>Social Knowledge
+        Creation in the <span>Humanities</span></em>, herausgegeben von
+        Alyssa Arbuckle, Aaron Mauro, und Daniel Powell. Toronto: Iter
+        Press. <a
+        href="https://ntmrs-skc.itercommunity.org/tracing-movement-ideas/digital-zombies-learner-centered-game-social-knowledge-creation-intersection-digital-humanities-digital-pedagogy-juliette-levy/">https://ntmrs-skc.itercommunity.org/tracing-movement-ideas/digital-zombies-learner-centered-game-social-knowledge-creation-intersection-digital-humanities-digital-pedagogy-juliette-levy/</a>.
+        </div>
+        <div id="ref-Marino2020CriticalCodeStudies" class="csl-entry"
+        role="listitem">
+        Marino, Mark C. 2020. <em>Critical <span>Code
+        Studies</span></em>. Herausgegeben von Noah Wardrip-Fruin, Wendy
+        Hui Kyong Chun, Winnie Soon, und Jichen Zhu. Cambridge: MIT
+        Press.
+        </div>
+        <div id="ref-Mullaney2021Intro" class="csl-entry"
+        role="listitem">
+        Mullaney, Thomas S. 2021. <span>„Your <span>Computer Is</span>
+        on <span>Fire</span>“</span>. In <em>Your <span>Computer
+        Is</span> on <span>Fire</span></em>, herausgegeben von Thomas S
+        Mullaney, Benjamin Peters, Mar Hicks, und Kavita Philip, 3–9.
+        Cambridge: MIT Press.
+        </div>
+        <div id="ref-Rankin2018PeoplesHistory" class="csl-entry"
+        role="listitem">
+        Rankin, Joy Lisi. 2018. <em>A <span>People</span>’s
+        <span>History</span> of <span>Computing</span> in the
+        <span>United States</span></em>. Harvard: Harvard University
+        Press.
+        </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, und Alex Gil. 2022. <span>„Introduction:
+        <span>The Questions</span> of <span>Minimal
+        Computing</span>“</span>. Herausgegeben von Alex Gil und Roopika
+        Risam. <em>Digital Humanities Quarterly</em> 16 (Juni). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
+        </div>
+        <div id="ref-Sayers2017Introduction" class="csl-entry"
+        role="listitem">
+        Sayers, Jentery. 2017. <span>„Introduction: <span>‚<span>I
+        Don</span>’t <span>Know All</span> the
+        <span>Circuitry</span>‘</span>“</span>. In <em>Making
+        <span>Things</span> and <span>Drawing Boundaries</span></em>,
+        herausgegeben von Jentery Sayers, 1–18. Experiments in the
+        <span>Digital Humanities</span>. University of Minnesota Press.
+        <a
+        href="https://doi.org/10.5749/j.ctt1pwt6wq.3">https://doi.org/10.5749/j.ctt1pwt6wq.3</a>.
+        </div>
+        <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
+        Siles, Ignacio. 2023. <em>Living with <span>Algorithms</span>:
+        <span>Agency</span> and <span>User Culture</span> in <span>Costa
+        Rica</span></em>. Boston: MIT Press.
+        </div>
+        <div id="ref-Spath2019Makerspaces" class="csl-entry"
+        role="listitem">
+        Späth, Katharina, Tobias Seidl, und Viktoria Heinzel. 2019.
+        <span>„Verbreitung und Ausgestaltung von Makerspaces an
+        Universitäten in Deutschland“</span>. <em>o-bib. Das offene
+        Bibliotheksjournal</em> 6 (3): 40–55. <a
+        href="https://doi.org/10.5282/o-bib/2019h3s40-55">https://doi.org/10.5282/o-bib/2019h3s40-55</a>.
+        </div>
+        <div id="ref-Stachowiak1973AllgemeineModelltheorie"
+        class="csl-entry" role="listitem">
+        Stachowiak, Herbert. 1973. <em>Allgemeine Modelltheorie</em>.
+        Wien: Springer.
+        </div>
+        <div id="ref-Tenen2016BluntInstrumentalism" class="csl-entry"
+        role="listitem">
+        Tenen, Dennis. 2016. <span>„Blunt <span>Instrumentalism</span>:
+        <span>On Tools</span> and <span>Methods</span>“</span>. In
+        <em>Debates in the <span>Digital Humanities</span> 2016</em>,
+        herausgegeben von Matthew K. Gold und Lauren F. Klein, 83–91.
+        Debates in the <span>Digital Humanities</span> 2. Minneapolis:
+        University of Minnesota Press. <a
+        href="https://doi.org/10.5749/j.ctt1cn6thb.12">https://doi.org/10.5749/j.ctt1cn6thb.12</a>.
+        </div>
+        <div id="ref-Weingart2021AlsoRemindDH" class="csl-entry"
+        role="listitem">
+        Weingart, Scott B. (@scott_bot). 2021. <span>„I Also Remind
+        <span>DH</span> Is an Imposter Syndrome House of Mirrors.
+        <span>You</span> Look Around and See Experts in
+        <span>GIS</span>, <span>TEI</span>, Dataviz, Etc.; It’s Hard to
+        Remember That People Tend to Be Good at *One* of Those Things
+        When the Collective Appears to Be Good at *All* of Them.
+        <span>We</span> All Suck at Most of <span>DH</span>.“</span>
+        Tweet. Twitter. 10. März 2021. <a
+        href="https://web.archive.org/web/20210310151622/https://twitter.com/scott_bot/status/1369666674102767618">https://web.archive.org/web/20210310151622/https://twitter.com/scott_bot/status/1369666674102767618</a>.
+        </div>
+        <div id="ref-Winner+1980" class="csl-entry" role="listitem">
+        Winner, Langdon. 1980. <span>„Do Artifacts Have
+        Politics?“</span> <em>Daedalus</em>, 121–36.
+        </div>
+        <div id="ref-Wythoff2022MinimalComputing" class="csl-entry"
+        role="listitem">
+        Wythoff, Grant. 2022. <span>„Ensuring <span>Minimal Computing
+        Serves Maximal Connection</span>“</span>. Herausgegeben von Alex
+        Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> 16
+        (Juni). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html">http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html</a>.
+        </div>
+        </div>
+        </section></section>
+      </div>
+    </div>
+
+    <script src="../../assets/revealjs/dist/reveal.js"></script>
+
+    <!-- reveal.js plugins -->
+    <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
+    <script src="../../assets/revealjs/plugin/search/search.js"></script>
+    <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        // center: true,
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1200,
+                        height: 1000,
+
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+
+
+
+        // reveal.js plugins
+        plugins: [
+                RevealNotes,
+        RevealSearch,
+        RevealZoom
+        ]
+      });
+    </script>
+    <!-- support for mermaid.js -->
+    <!-- <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script> -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+        <footer>
+        <div class="c_frame">
+                    <span class="c_left">2024-09-30</span>
+                            <span class="c_left">|</span>
+            <span class="c_left">Till Grallert</span>
+                        <span class="c_center">
+          <a href="https://tillgrallert.github.io/slides/dh/2024-bochum/">https://tillgrallert.github.io/slides/dh/2024-bochum/</a>
+          <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        </div>
+    </footer>
+    <script>
+            function setCurrentDate() {
+                let date = new Date().toLocaleDateString();
+                let collection = document.getElementsByClassName("current-date");
+                for (element of collection) {
+                    if (element.nodeName == "META" && !element.hasAttribute("content")) {
+                        element.setAttribute("content", date);
+                    } else {
+                        element.innerText = date;
+                    }
+                }
+            }
+        </script>
+  </body>
+  </html>
