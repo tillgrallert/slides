@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2024-09-30">
+              <meta name="dcterms.date" content="2026-02-04">
                   <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
-        <title>Do it yourself (but not alone) and KISS!</title>
+        <title>Datenkultur in Zeiten abnehmender Geschichtsmündigkeit</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -52,1390 +52,664 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/none.css" id="theme">
-                    <style type="text/css">
-                    /* slidy.css
-
-                       Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
-                       W3C liability, trademark, document use and software licensing
-                       rules apply, see:
-
-                       http://www.w3.org/Consortium/Legal/copyright-documents
-                       http://www.w3.org/Consortium/Legal/copyright-software
-                    */
-
-                    @font-face {
-                        font-family: AmiriWeb;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
-                    }
-
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: italic;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: regular;
-                        font-weight: bold;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: PTSans;
-                        font-style: italic;
-                        font-weight: bold;
-                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: HeptaSlab;
-                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
-                    }
-                    @font-face {
-                        font-family: linowrite;
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
-                    }
-
-
-                    /* render Arabic as rtl */
-                    [lang = "ar"],
-                    [lang = "ota"],
-                    [lang = "fa"],
-                    [lang = "he"],
-                    [lang *= "-Arab-AR"] {
-                        direction: rtl;
-                        text-align: right !important;
-                        font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em)
-                        accumulate for nested elements and must thus be avoided.
-                        At the moment almost everything is tailored to 18px */
-                        /*    font-size: 18px;*/
-                    }
-                    /* display latin scripts in a smaller font */
-                    [lang = "en"],
-                    [lang = "fr"],
-                    [lang = "de"],
-                    [lang = "it"],
-                    [lang *= "ar-Latn-"],
-                    [lang *= "ota-Latn-"] {
-                        direction: ltr;
-                        text-align: left !important;
-                        /*    font-size: 14px;*/
-                    }
-                    /* counter default settings in reveal.css */
-                    .reveal .slides {
-                        text-align: left;
-                    }
-
-                    html,
-                    body,
-                    .reveal-viewport {
-                        margin: 0 0 0 0;
-                        padding: 0 0 0 0;
-                        width: 100%;
-                        height: 100%;
-                        /*color: white;*/
-                        color: black !important;
-                        /*color: #4d4d4d;*/
-                        /*background-color: black;*/
-                        background-color: white !important;
-                        overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-                      font-size: 12px;*/
-                      line-height: 1.2;
-                      word-wrap: break-word;
-                    }
-                    body,
-                    .reveal-viewport {
-                        position: static;
-                    }
-                    /******************
-                      header and footer to be displayed on all slides
-                    *******************/
-
-                    header,
-                    footer,
-                    div.c_header,
-                    div.c_footer  {
-                      z-index: 30;
-                      display: block;
-                      position: fixed;
-                      height: 3.8em;
-                      width: 100%;
-                    }
-                    footer.reveal {
-                        height: 3em;
-                    }
-                    header,
-                    div.c_header {
-                        top: 0;
-                    }
-                    footer,
-                    footer * {
-                        bottom: 0;
-                        background-color: #8a0f14;
-                        color: white !important;
-                    }
-
-                    footer {
-                        font-size: 0.7em;
-                    }
-
-                    footer span {
-                        /*text-transform:  capitalize; */
-                        /*this doesn't seem to have an effect*/
-                        display: inline-block;
-                        padding-left: 0.5em;
-                        padding-right: 0.5em;
-                    }
-                    div.c_footer {
-                        top: auto;
-                        bottom: 1.2em;
-                        height: 1.2em;
-                        font-size: 60%;
-                    }
-                    div.c_frame {
-                    /*padding: 1em;*/
-                    margin-top: 1em;
-                    margin-left: 3em;
-                    margin-right: 3em;
-                    }
-
-                    /* basic styling for all slides */
-                    div.slide,
-                    section.slide {
-                        z-index: 20;
-                        display: block;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-right: auto;
-                        margin-left: auto;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        border-width: 0;
-                        clear: both;
-                        left: 0;
-                        right: 0;
-                        /*line-height: 120%;*/
-                        background-color: rgba(255, 255, 255, 0.93);
-                        /*background-color: transparent;*/
-                        /* width should be in em dashes*/
-                        max-width: 50em;
-                        height: 40em;
-                    }
-                    #title-slide {
-                        background-color: rgba(255, 255, 255, 0.93);
-                    }
-                    div.slide {
-                        top: 10% ;
-                    }
-                    /* revealjs generates inline CSS that needs to be overridden  */
-                    section.slide {
-                        top: 0 !important;
-                    }
-                    /* while on screen slides should be black on white, it should be the opposite on projectors */
-                    @media projector {
-                        body {
-                            background-color: black;
-                            color: white;
+        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/white.css" id="theme">
+                    <!-- global settings for revealjs -->
+                    <style>
+                    /* load fonts */
+                        @font-face {
+                            font-family: AmiriWeb;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
                         }
-                        pre {
-                            background-color: white;
-                            color: black;
+
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
                         }
-                    }
-                    /******************
-                    set fonts and sizes
-                    *******************/
-                    body,
-                    .reveal-viewport {
-                        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-                    /*font-family: "American Typewriter";*/
-                    /*font-family: "Gentium Plus";*/
-                    }
-                    body {
-                        font-weight: 300 !important;
-                        /*font-size is over-ridden by automatically generated inline CSS on body*/
-                        font-size: 24px !important;
-                    }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th,
-                    .keyphrase {
-                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
-                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
-                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-                        font-weight: 400;
-                        color: #113868;
-                    }
-                    p,
-                    ol,
-                    ul,
-                    span {
-                    }
-                    /**
-                    highlights: <em> is for transcribed terms, <strong> for emphasis;
-                    **/
-                    em {
-                        /*font-family: "Gentium Plus";
-                      /*font-family: Georgia;*/
-                      font-style: italic;
-                      font-weight: 200;
-                    }
-                    strong {
-                        font-style: italic;
-                        font-weight: 200;
-                        border-bottom: 2px dotted #F96827;
-                    }
-                    table {
-                        font-size: 0.8em;
-                    }
-                    .small-font {
-                        font-size: 70%;
-                    }
-                    /******************
-                    set colours
-                    *******************/
-
-                    /***************
-                    standard classes, navigation
-                    ***************/
-                    div.toolbar {
-                        position: fixed;
-                        z-index: 40;
-                        top: auto;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        height: 1.2em;
-                        text-align: right;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                        font-size: 60%;
-                        color: red;
-                        background-color: rgb(240, 240, 240);
-                        border-top: solid 1px rgb(180, 180, 180);
-                    }
-                    div.toolbar span.copyright {
-                        /*display: inline-block;
-                      text-align: center;*/
-                      color: black;
-                      margin-left: 0.5em;
-                    }
-                    /* revealjs navigation */
-                    aside.controls {
-                        bottom: 7em !important;
-                    }
-                    aside.controls * {
-                        z-index: 40;
-                    }
-                    div.initial_prompt {
-                        position: absolute;
-                        z-index: 1000;
-                        bottom: 1.2em;
-                        width: 100%;
-                        background-color: rgb(200, 200, 200);
-                        opacity: 0.35;
-                        background-color: rgba(200, 200, 200, 0.35);
-                        cursor: pointer;
-                    }
-                    div.initial_prompt p.help {
-                        text-align: center;
-                    }
-                    div.initial_prompt p.close {
-                        text-align: right;
-                        font-style: italic;
-                    }
-                    div.slidy_toc {
-                        position: absolute;
-                        z-index: 300;
-                        width: 60%;
-                        max-width: 30em;
-                        height: 30em;
-                        overflow: auto;
-                        top: auto;
-                        right: auto;
-                        left: 4em;
-                        bottom: 4em;
-                        padding: 1em;
-                        background: rgb(240, 240, 240);
-                        border-style: solid;
-                        border-width: 2px;
-                        font-size: 60%;
-                    }
-                    div.slidy_toc .toc-heading {
-                        text-align: center;
-                        width: 100%;
-                        margin: 0;
-                        margin-bottom: 1em;
-                        border-bottom-style: solid;
-                        border-bottom-color: rgb(180, 180, 180);
-                        border-bottom-width: 1px;
-                    }
-                    /* basic styling for all slides */
-                    div.background {
-                        display: none;
-                    }
-                    div.handout {
-                        margin-left: 20px;
-                        margin-right: 20px;
-                    }
-                    div.slide.titlepage {
-                        text-align: center;
-                    }
-                    div.slide.titlepage h1 {
-                        padding-top: 10%;
-                        margin-right: 0;
-                    }
-                    /* h1 needs to override the standard CSS */
-                    div.slide h1 {
-                        padding-left: 0;
-                        padding-right: 0;
-                        padding-top: 4pt;
-                        padding-bottom: 4pt;
-                        margin-top: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        margin-bottom: 0.5em;
-                        display: block;
-                        /*font-size: 160%;*/
-                        line-height: 1.2em;
-                        background: transparent;
-                    }
-                    /*****************
-                    heads
-                    ******************/
-                    /* title and dividing slides */
-                    /* put h1 in the center of the slide */
-                    div.titleslide h1,
-                    #title-slide h1 {
-                        margin-top: 2em;
-                    /*margin-bottom: auto;*/
-                    font-size: 2em;
-                    }
-
-                    h1,
-                    h2,
-                    h3,
-                    h4 {
-                        text-align: center;
-                    }
-                    div.reveal h1, h1 {
-                        padding-bottom: 0.3em;
-                        font-size: 1.75em;
-                        line-height: 1.2;
-                        border-bottom: 1px solid #eee;
-                        margin-top: 4em;
-                    }
-                    div.reveal h2, h2 {
-                        padding-bottom: 0.3em;
-                        font-size: 1.5em;
-                        line-height: 1.225;
-                        border-bottom: 1px solid #eee;
-                    }
-                    div.reveal h3, h3 {
-                        font-size: 1.25em;
-                        line-height: 1.43;
-                    }
-                    div.reveal h4, h4 {
-                        font-size: 1em;
-                    }
-                    /******************
-                    levels of slides
-                    ******************/
-                    .title-slide,
-                    .level1 {
-                        padding-top: 100px;
-                        padding-bottom: 100px;
-                    }
-                    /******************
-                    links
-                    ******************/
-                    a {
-                        text-decoration: none
-                    }
-                    a img {
-                        border-width: 0;
-                        border-style: none
-                    }
-                    /*a:visited { color: navy }
-                    a:link { color: navy }
-                    a:hover { color: red; text-decoration: underline }
-                    a:active { color: red; text-decoration: underline }*/
-                    a,
-                    a:link {
-                        color: #F46A00 /*!important*/;
-                        /*text-decoration: none; */
-                    }
-                    a:visited {
-                        color: #a84900;
-                        /*text-decoration: none; */
-                    }
-                    a:hover,
-                    a:active {
-                        color: #8DB300;
-                        /*text-decoration: none; */
-                    }
-                    .toolbar a:link {
-                        color: blue
-                    }
-                    .toolbar a:visited {
-                        color: blue
-                    }
-                    .toolbar a:active {
-                        color: red
-                    }
-                    .toolbar a:hover {
-                        color: red
-                    }
-                    @media screen and (max-device-width : 1024px) {
-                        div.slide {
-                            font-size: 100%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: italic;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
                         }
-                    }
-                    @media screen and (max-device-width : 800px) {
-                        div.slide {
-                            font-size: 200%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: regular;
+                            font-weight: bold;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
                         }
-                        div.slidy_toc {
-                            top: 1em;
-                            left: 1em;
-                            right: auto;
-                            width: 80%;
-                            font-size: 180%;
+                        @font-face {
+                            font-family: PTSans;
+                            font-style: italic;
+                            font-weight: bold;
+                            src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
                         }
-                    }
-                    div.toc-heading {
-                        width: 100%;
-                        display: inline-block;
-                        height: auto;
-                        border-bottom: solid 1px rgb(180, 180, 180);
-                        margin-bottom: 1em;
-                        text-align: center;
-                    }
-                    /****************
-                    title slide
-                    *****************/
-
-                    /*span.author ~ span.author::before {
-                      content: ', ';
-                    }*/
-
-                    /****************
-                    images and figures
-                    *****************/
-                    div.slide img {
-                        /* image-rendering: optimize-quality; */
-                        background-color: white; /*rgba(0,0,0,0.04);*/
-                        border-radius: 5px;
-                        display: block;
-                        max-height: 600px;
-                        max-width: 95%;
-                        /* center images */
-                        margin-left: auto;
-                        margin-right: auto;
-                        /*box-shadow: 2px 2px 5px #000;*/
-                        /*border: gray solid 1px;*/
-                    }
-                    div.figure {
-                        width: 100%;
-                        padding: 0;
-                        /*height: inherit;*/
-                    }
-                    figure {
-                        margin-block-start: 0;
-                        margin-block-end: 0;
-                        /*margin-inline-start: 40px;
-                        margin-inline-end: 40px;*/
-                        margin-inline-start: 0;
-                        margin-inline-end: 0;
-                    }
-                    div.figure p.caption,
-                    figcaption {
-                        position: relative;
-                        float: right;
-                        text-align: right;
-                        margin-top: 0.2em;
-                        margin-bottom: 0.5em;
-                        /*top:2em;*/
-                        /*max-width:15%;
-                        min-width: 180px;*/
-                        font-size: 0.6em;
-                        font-weight: lighter;
-                    }
-                    div.figure img {
-                        float: right;
-                        /*max-height: 80%;*/
-                        /*max-height: 600px;*/
-                        /*max-height: inherit;*/
-                        /*max-width:80%;*/
-                        /*max-width: 95%;*/
-                    }
-                    header img,
-                    footer img {
-                        display: block;
-                    }
-                    /* inline images */
-                    /*p img,
-                    li img {
-                        display: inline-block;
-                        height: 1em;
-                    }*/
-                    img.c_logo {
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                    /*    max-width: 6em !important;*/
-                        max-height: 4em !important;
-                    }
-                    img.c_logo.c_left {
-                        margin-left: 1em;
-                    }
-                    img.c_logo.c_right {
-                        margin-right: 1em;
-                    }
-                    /*img {
-                      max-height: 700px;
-                      max-width: 100%;
-                    }*/
-                    /* external content, including local html pages */
-                    iframe {
-                        display: block;
-                        width: 90%;
-                        /* the height setting seems to squeeze iframes */
-                        height: 600px;
-                        /* center the iframe */
-                        margin-left: auto;
-                        margin-right: auto;
-                        scrolling: auto;
-                        scroll-behavior: auto;
-                        /*border:none;*/
-                    }
-                    /*.size-80 {
-                      display: block;
-                      width: 80%;
-                      height: 80%;
-                    }*/
-                    /*****************
-                    columns
-                    ******************/
-                    div.columns,
-                    div.columns-2,
-                    div.columns-3 {
-                        /* newer? versions of reveal use display: flex */
-                        display: block;
-                        /*flex: none;*/
-                        clear: both;
-                    }
-                    div.columns-3 {
-                        clear: both;
-                    }
-                    div.column {
-                    /*    display: inline-block;*/
-                        flex: none;
-                        display: block;
-                        float: left;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                    }
-                    .columns-3 > .column {
-                        width: 31%;
-                    }
-                    .columns-3 > .narrow {
-                        width: 23%;
-                        position: relative;
-                        float: left;
-                    }
-
-                    .columns-3 > .wide {
-                        width: 50%;
-                        position: relative;
-                        float: left;
-                    }
-                    .columns-2 > .column,
-                    .columns > .column,
-                    .c_width-50  {
-                        width: 48%;
-                    }
-                    .c_width-60,
-                    .column-60,
-                    .columns .wide {
-                        width: 64%;
-                        position: relative;
-                        float: left;
-                    }
-                    .c_width-50 {
-                        position: relative;
-                        float: left;
-                    }
-                    .c_width-30,
-                    .column-30,
-                    .columns .narrow {
-                        width: 31%;
-                        position: relative;
-                        float: left;
-                    }
-                    .c_left {
-                        display: block;
-                        float: left;
-                    }
-                    .c_right {
-                        display: block;
-                        float: right;
-                    }
-                    .c_center {
-                        display: block;
-                        /*clear: both;*/
-                        margin: 0 auto;
-                    }
-                    .c_left-align {
-                        text-align: left;
-                    }
-
-                    .c_right-align {
-                        text-align: right;
-                    }
-
-                    span.c_left,
-                    span.c_right,
-                    span.c_center {
-                        display: inline-block;
-                    }
-
-                    /*****************
-                    blackbox
-                    ******************/
-
-                    .blackbox  * {
-                        font-size: inherit;
-                        font-family: inherit;
-                    }
-                    .blackbox > div,
-                    .blackbox > section {
-                        width: 32%;
-                        position: relative;
-                        /*float: left;*/
-                        min-height: 5em;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                    }
-                    .blackbox > .input,
-                    .blackbox > .output {
-                        width: 25%;
-                        background-color: rgba(245, 245, 245, 1);
-                    }
-                    .blackbox > .input {
-                        float: left;
-                    }
-                    .blackbox > .output {
-                        float: right;
-                    }
-                    .blackbox textarea {
-                        min-height: inherit;
-                        background-color: inherit;
-                    }
-                    .blackbox > .computing,
-                    .blackbox > .content {
-                        min-height: 5em;
-                        /*padding: 1em;*/
-                        margin: 0 auto;
-                        border-style: solid;
-                        border-width: 1px;
-                        border-color: black;
-                    }
-                    .blackbox > .computing {
-                        background-color: black;
-                        color: white;
-                    }
-                    .blackbox > .content {
-
-                    }
-
-                    button {
-                        display: block;
-                        cursor: pointer;
-                    }
-                    .blackbox button {
-                        min-width: 150px;
-                        height: 50px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        top: 1em;
-                    }
-                    .button-36 {
-                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-                        border-radius: 8px;
-                        border-style: none;
-                        box-sizing: border-box;
-                        color: #FFFFFF;
-                        cursor: pointer;
-                        flex-shrink: 0;
-                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-                        font-size: 16px;
-                        font-weight: 500;
-                        height: 4rem;
-                        padding: 0 1.6rem;
-                        text-align: center;
-                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-                        transition: all .5s;
-                        user-select: none;
-                        -webkit-user-select: none;
-                        touch-action: manipulation;
-                    }
-
-                    .button-36:hover {
-                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-                        transition-duration: .1s;
-                    }
-                    .button-49,
-                    .button-49:after {
-                      line-height: 50px;
-                      font-size: 20px;
-                      font-family: 'Bebas Neue', sans-serif;
-                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-                      border: 0;
-                      color: #fff;
-                      letter-spacing: 3px;
-                      box-shadow: 6px 0px 0px #00E6F6;
-                      outline: transparent;
-                      position: relative;
-                      user-select: none;
-                      -webkit-user-select: none;
-                      touch-action: manipulation;
-                    }
-
-                    .button-49:after {
-                      --slice-0: inset(50% 50% 50% 50%);
-                      --slice-1: inset(80% -6px 0 0);
-                      --slice-2: inset(50% -6px 30% 0);
-                      --slice-3: inset(10% -6px 85% 0);
-                      --slice-4: inset(40% -6px 43% 0);
-                      --slice-5: inset(80% -6px 5% 0);
-
-                      content: 'ALTERNATE TEXT';
-                      display: block;
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      bottom: 0;
-                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-                      clip-path: var(--slice-0);
-                    }
-
-                    .button-49:hover:after {
-                      animation: 1s glitch;
-                      animation-timing-function: steps(2, end);
-                    }
-
-                    @keyframes glitch {
-                      0% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-20px, -10px);
-                      }
-                      10% {
-                        clip-path: var(--slice-3);
-                        transform: translate(10px, 10px);
-                      }
-                      20% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 10px);
-                      }
-                      30% {
-                        clip-path: var(--slice-3);
-                        transform: translate(0px, 5px);
-                      }
-                      40% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-5px, 0px);
-                      }
-                      50% {
-                        clip-path: var(--slice-3);
-                        transform: translate(5px, 0px);
-                      }
-                      60% {
-                        clip-path: var(--slice-4);
-                        transform: translate(5px, 10px);
-                      }
-                      70% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-10px, 10px);
-                      }
-                      80% {
-                        clip-path: var(--slice-5);
-                        transform: translate(20px, -10px);
-                      }
-                      90% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 0px);
-                      }
-                      100% {
-                        clip-path: var(--slice-1);
-                        transform: translate(0);
-                      }
-                    }
-
-                    .hidden {
-                            /*display: none;*/
-                            visibility: hidden !important;
-                            width: 0 !important;
-                            height: 0 !important;
-                            padding: 0 !important;
-                            margin: 0 !important;
-                            animation: 1s fadeOut;
+                        @font-face {
+                            font-family: HeptaSlab;
+                            src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
                         }
-                    @keyframes fadeOut {
-                      0% {
-                        opacity: 1;
-                      }
-                      100% {
-                        visibility: hidden;
-                        opacity: 0;
-                      }
-                    }
-
-                    /*****************
-                    writing direction
-                    ******************/
-                    .c_rtl {
-                        display: inline-block;
-                        direction: rtl;
-                        text-align: right;
-                        font-family: AmiriWeb;
-                    }
-                    .c_ltr {
-                        direction: ltr;
-                        text-align: left;
-                    }
-                    /*****************
-                    code
-                    ******************/
-                    div.sourceCode {
-                        margin: 10px 5px;
-                    }
-                    /*font*/
-                    pre,
-                    code {
-                        font-size: 0.8em;
-                        line-height: 0.9;
-                    }
-                    pre {
-                        display: block;
-                        font-family: monospace;
-                        white-space: pre-wrap;
-                        padding-left: 5px;
-                        padding-right: 5px;
-                        margin: 0;
-                        background-color: rgba(0, 0, 0, 0.04);
-                        border-radius: 5px;
-                        /*box-shadow: 2px 2px 5px #000;*/
-                        border: #95ABD0 solid 1px;
-                    }
-                    pre.mermaid {
-                        border: none;
-                        background-color: white;
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                    pre > code.sourceCode {
-                        white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
-                    }
-                    h1 > code {
-                        background: transparent;
-                        border: 0;
-                        font-size: inherit;
-                    }
-                    /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
-                    code {
-                        white-space: pre-wrap;
-                        /* color: #00428C; */
-                        color: #9C20EE;
-                        /*font-size:0.9em;*/
-                    }
-                    pre code {
-                        color: #000000;
-                    }
-                    li pre {
-                        margin-left: 0;
-                    }
-                    blockquote {
-                        padding-left: 1em;
-                        padding-left: 1em;
-                        margin-bottom: 1em;
-                        text-align: right;
-                        /*font-style: italic;*/
-                        clear: both;
-                        margin-block-start: 0em;
-                        margin-block-end: 0em;
-                        margin-inline-start: 0px;
-                        margin-inline-end: 0px;
-                    }
-                    blockquote > p:before {
-                        content: "> "
-                    }
-                    cite {
-                        display: block;
-                        margin-left: 10%;
-                        font-size: 0.8em;
-                        font-style: normal;
-                        text-align: right;
-                    /*    the float attribute destroys the multi-column layout*/
-                    /*    float: right;*/
-                        padding-bottom: 1em;
-                    }
-                    p.copyright {
-                        font-size: smaller
-                    }
-                    .center {
-                        text-align: center
-                    }
-                    .footnote {
-                        font-size: smaller;
-                        margin-left: 2em;
-                    }
-                    /**********
-                    lists
-                    ***********/
-                    ul,
-                    ol {
-                        display: block;
-                        clear: both;
-                        font-style: normal;
-                        margin-top: 0.1em;
-                        margin-bottom: 0.5em;
-                        /*margin-left: 1.5em;*/
-                        list-style-position: inside;
-                        padding-left: 1em;
-                        /* all lists should be centered */
-                        /*text-align: left;*/
-                        /*margin-left: auto;
-                      margin-right: auto;*/
-                    }
-                    /* padding, line-height etc. for all list items */
-                    ul li,
-                    ol li {
-                        margin-top: 0.2em;
-                        margin-bottom: 0.2em;
-                        padding: 0 0 0 0px;
-                        line-height: 120%;
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    li li {
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    li li li {
-                        font-size: inherit;
-                        font-style: normal;
-                    }
-                    /* unordered lists */
-                    ul {
-                        list-style-type: circle;
-                    }
-                    ul ul {
-                        list-style-type: circle;
-                    }
-                    ul ul ul {
-                        list-style-type: circle;
-                    }
-                    ul ul ul ul {
-                        list-style-type: circle;
-                    }
-                    ul li {
-                        list-style: circle;
-                        /*margin: 0.1em 0em 0.6em 0;
-                      padding: 0 0 0 0;
-                      line-height: 140%;*/
-                    }
-                    li ul li {
-                    /*font-size: 85%; */
-                    font-style: normal;
-                    list-style-type: circle;
-                        /* background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    li li ul li {
-                    /*font-size: 85%; */
-                    font-style: normal;
-                    list-style-type: circle;
-                        /*background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    li li li ul li {
-                        font-style: normal;
-                        list-style-type: circle;
-                        /*background: transparent;
-                      padding: 0 0 0 0;*/
-                    }
-                    /*ul {
-                      margin: 0.5em 1.5em 0.5em 1.5em;
-                      padding: 0;
-                    }*/
-                    /* ordered lists */
-                    ol {
-                        margin: 0.5em 1.5em 0.5em 1.5em;
-                        padding: 0;
-                    }
-                    ol li {
-                        list-style-type: decimal;
-                    }
-                    li ol li {
-                        list-style-type: decimal;
-                    }
-                    li li ol li {
-                        list-style-type: decimal;
-                    }
-
-                    /***********
-                    indentation of nested lists
-                    ***********/
-
-                    ul ul,
-                    ul ol,
-                    ol ol,
-                    ol ul {
-                        padding-inline-start: 2em;
-                    }
-
-                    /*this is to accomodated the snipped highlight js*/
-                    pre ul li {
-                        margin-top: 0;
-                        font-size: 0.7em;
-                        padding: 0;
-                    }
-                    div dt {
-                        margin-left: 0;
-                        margin-top: 1em;
-                        margin-bottom: 0.5em;
-                        font-weight: bold;
-                    }
-                    div dd {
-                        margin-left: 2em;
-                        margin-bottom: 0.5em;
-                    }
-                    p,
-                    pre,
-                    /*ul,*/
-                    /*ol,*/
-                    blockquote,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6,
-                    dl,
-                    table {
-                        margin-left: 0.5em;
-                        margin-right: 0.5em;
-                        margin-top: 0.5em;
-                        margin-bottom: 0.5em;
-                    }
-                    p.subhead {
-                        font-weight: bold;
-                        margin-top: 2em;
-                    }
-                    .smaller {
-                        font-size: smaller
-                    }
-                    .bigger,
-                    .keyphrase {
-                        font-size: 130%
-                    }
-                    /*******************************
-                    tables
-                    *******************************/
-                    table {
-                        display: table;
-                        /* the table should be centred on the page*/
-                        margin-left: auto;
-                        margin-right: auto;
-                        /*font-size: 0.8em;*/
-                        border-collapse: collapse;
-                    }
-                    th {
-                        border-bottom-width: 2px;
-                        border-bottom-style: double;
-                        border-bottom-color: black;
-                    }
-                    td,
-                    th {
-                        padding: 0.2em
-                    }
-                    td {
-                        border-bottom-width: 1px;
-                        /*border-top-width: 1px;*/
-                        border-bottom-style: solid;
-                        /*border-top-style: solid;*/
-                        border-color: white;
-                    }
-                    /*
-                    highlight mouse-over on tables
-                    */
-                    tr:hover td {
-                        /*background-color: red; */
-                        /*border-top-color: #F46A00;
-                        border-bottom-color: #F46A00;*/
-                        border-color: #F46A00;
-                        border-bottom-width: 1px;
-                        border-bottom-style: solid;
-                    }
-                    td:hover, td:hover * {
-                        background-color: #F46A00;
-                        color: black;
-                    }
-                    .focus {
-                        border-color: red;
-                        border-width: 2px;
-                        border-style: solid;
-                    }
-                    table > caption {
-                        /*position: relative;
-                        float: right;*/
-                        text-align: center;
-                        margin-top: 0.2em;
-                        margin-bottom: 0.5em;
-                        /*top:2em;*/
-                        /*max-width:15%;
-                        min-width: 180px;*/
-                        font-size: 0.6em;
-                        font-weight: lighter;
-                    }
-
-                    /*
-                     setting class="outline on ol or ul makes it behave as an
-                     ouline list where blocklevel content in li elements is
-                     hidden by default and can be expanded or collapsed with
-                     mouse click. Set class="expand" on li to override default
-                    */
-                    ol.outline li:hover {
-                        cursor: pointer
-                    }
-                    ol.outline li.nofold:hover {
-                        cursor: default
-                    }
-                    ul.outline li:hover {
-                        cursor: pointer
-                    }
-                    ul.outline li.nofold:hover {
-                        cursor: default
-                    }
-                    ol.outline {
-                        list-style: decimal;
-                    }
-                    ol.outline ol {
-                        list-style-type: lower-alpha
-                    }
-                    ol.outline li.nofold {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.unfolded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.folded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.unfolded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
-                    }
-                    ol.outline li.folded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.nofold {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.unfolded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.folded {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.unfolded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
-                    }
-                    ul.outline li.folded:hover {
-                        padding: 0 0 0 20px;
-                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
-                    }
-                    /* for slides with class "title" in table of contents */
-                    a.titleslide {
-                        font-weight: bold;
-                        font-style: italic
-                    }
-                    /* references, footnotes, bibliography */
-                    div.references {
-                        font-size: 80%
-                    }
-                    div.references p {
-                        margin: 5px 0px;
-                    }
-                    /******************
-                    alerts
-                    *******************/
-
-
-                    div.alert {
-                        clear: both;
-                        display: block;
-                        font-size: 70%;
-                        border-width: 1px;
-                        border-style: solid;
-                    /*    border-color: red;*/
-                        background-color: white;
-                        margin-left: 2em;
-                        border-left-width: 1em;
-                        width: 60%;
-                        float: right;
-                    }
-
-                    div.alert.red {
-                        border-color: red;
-                        color: black;
-                    }
-                    .green {
-                        color: green;
-                    }
-                    .red {
-                        color: red;
-                    }
-                    /*
-                     hide images for work around for save as bug
-                     where browsers fail to save images used by CSS
-                    */
-                    img.hidden {
-                        display: none;
-                        visibility: hidden
-                    }
-                    div.initial_prompt {
-                        display: none;
-                        visibility: hidden
-                    }
-                    div.slide {
-                        visibility: visible;
-                        position: inherit;
-                    }
-                    div.handout {
-                        border-top-style: solid;
-                        border-top-width: thin;
-                        border-top-color: black;
-                    }
-                    @media screen {
-                        .hidden {
-                            display: none;
-                            visibility: visible
+                        @font-face {
+                            font-family: linowrite;
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
                         }
-                        div.slide.hidden {
+                        /*********************************************
+                         * GLOBAL STYLES
+                         *********************************************/
+                        :root {
+                          /*--r-background-color: #fff;*/
+                          --r-main-font: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                          --r-main-font-size: 24px;
+                          /*--r-main-color: #222;*/
+                          --r-block-margin: 20px;
+                          --r-heading-margin: 0 0 20px 0;
+                          --r-heading-font: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                          --r-heading-color: #113868;
+                          --r-heading-line-height: 1.2;
+                          --r-heading-letter-spacing: normal;
+                          --r-heading-text-transform: titlecase;
+                          --r-heading-text-shadow: none;
+                          --r-heading-font-weight: 400;
+                          --r-heading1-text-shadow: none;
+                          --r-heading1-size: 1.75em;
+                          --r-heading2-size: 1.5em;
+                          --r-heading3-size: 1.3em;
+                          --r-heading4-size: 1em;
+                          --r-code-font: monospace;
+                          --r-link-color: #2a76dd;
+                          --r-link-color-dark: rgb(30.7720647773, 99.5566801619, 192.7779352227);
+                          --r-link-color-hover: rgb(73.95, 138.55, 226.1);
+                          --r-selection-background-color: rgb(95.25, 152.25, 229.5);
+                          --r-selection-color: #fff;
+                          --r-overlay-element-bg-color: 0, 0, 0;
+                          --r-overlay-element-fg-color: 240, 240, 240;
+                        }
+
+                        .reveal-viewport {
+                          background: #fff;
+                          background-color: var(--r-background-color);
+                        }
+
+                        .reveal {
+                          font-family: var(--r-main-font);
+                          font-size: var(--r-main-font-size);
+                          font-weight: normal;
+                          color: var(--r-main-color);
+                        }
+
+                        .reveal ::selection {
+                          color: var(--r-selection-color);
+                          background: var(--r-selection-background-color);
+                          text-shadow: none;
+                        }
+
+                        .reveal ::-moz-selection {
+                          color: var(--r-selection-color);
+                          background: var(--r-selection-background-color);
+                          text-shadow: none;
+                        }
+
+                        .reveal .slides section,
+                        .reveal .slides section > section {
+                          line-height: 1.3;
+                          font-weight: inherit;
+                        }
+                        /* general settings */
+                        html {
+                            font-family: var(--r-main-font);
+                        }
+                        html,
+                        body,
+                        html.print-pdf body,
+                        .reveal-viewport {
+                            /*margin: 0 0 0 0 !important;
+                            padding: 0 0 0 0;
+                            width: 100%;
+                            height: 100%;*/
+                        }
+                        html,
+                        body,
+                        .reveal-viewport {
+                            overflow: hidden;
+                        }
+                        /******************
+                        basic styling for all slides
+                        *******************/
+                        div.slide,
+                        section.slide {
+                            z-index: 20;
                             display: block;
-                            visibility: visible
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-right: auto;
+                            margin-left: auto;
+                            border-width: 0;
+                            clear: both;
+                            left: 0;
+                            right: 0;
+                            /* width should be in em dashes*/
+                            max-width: 50em;
+                            /*height: 40em;*/
                         }
-                        div.handout.hidden {
+                        /*********************************************
+                         * HEADERS
+                         *********************************************/
+                        .reveal h1,
+                        .reveal h2,
+                        .reveal h3,
+                        .reveal h4,
+                        .reveal h5,
+                        .reveal h6 {
+                          margin: var(--r-heading-margin);
+                          color: var(--r-heading-color);
+                          font-family: var(--r-heading-font);
+                          font-weight: var(--r-heading-font-weight);
+                          line-height: var(--r-heading-line-height);
+                          letter-spacing: var(--r-heading-letter-spacing);
+                          text-transform: var(--r-heading-text-transform);
+                          text-shadow: var(--r-heading-text-shadow);
+                          word-wrap: break-word;
+                        }
+
+                        .reveal h1 {
+                          font-size: var(--r-heading1-size);
+                        }
+
+                        .reveal h2 {
+                          font-size: var(--r-heading2-size);
+                        }
+
+                        .reveal h3 {
+                          font-size: var(--r-heading3-size);
+                        }
+
+                        .reveal h4 {
+                          font-size: var(--r-heading4-size);
+                        }
+
+                        .reveal h1 {
+                          text-shadow: var(--r-heading1-text-shadow);
+                        }
+                        /*********************************************
+                         * LINKS
+                         *********************************************/
+                        .reveal a {
+                          color: var(--r-link-color);
+                          text-decoration: none;
+                          transition: color 0.15s ease;
+                        }
+
+                        .reveal a:hover {
+                          color: var(--r-link-color-hover);
+                          text-shadow: none;
+                          border: none;
+                        }
+
+                        .reveal .roll span:after {
+                          color: #fff;
+                          background: var(--r-link-color-dark);
+                        }
+                        /*****************
+                        columns
+                        ******************/
+                        div.columns,
+                        div.columns-2,
+                        div.columns-3 {
+                            /* newer? versions of reveal use display: flex */
                             display: block;
-                            visibility: visible
+                            /*flex: none;*/
+                            clear: both;
                         }
-                        div.background {
-                            display: none;
-                            visibility: hidden
+                        div.columns-3 {
+                            clear: both;
                         }
-                        body.single_slide div.initial_prompt {
+                        div.column {
+                        /*    display: inline-block;*/
+                            flex: none;
                             display: block;
-                            visibility: visible
+                            float: left;
+                            padding-left: 10px;
+                            padding-right: 10px;
                         }
-                        body.single_slide div.background {
+                        .columns-3 > .column {
+                            width: 31%;
+                        }
+                        .columns-3 > .narrow {
+                            width: 23%;
+                            position: relative;
+                            float: left;
+                        }
+
+                        .columns-3 > .wide {
+                            width: 50%;
+                            position: relative;
+                            float: left;
+                        }
+                        .columns-2 > .column,
+                        .columns > .column,
+                        .c_width-50  {
+                            width: 48%;
+                        }
+                        .c_width-60,
+                        .column-60,
+                        .columns .wide {
+                            width: 64%;
+                            position: relative;
+                            float: left;
+                        }
+                        .c_width-50 {
+                            position: relative;
+                            float: left;
+                        }
+                        .c_width-30,
+                        .column-30,
+                        .columns .narrow {
+                            width: 31%;
+                            position: relative;
+                            float: left;
+                        }
+                        .c_left {
                             display: block;
-                            visibility: visible
+                            float: left;
                         }
-                        body.single_slide div.background.hidden {
-                            display: none;
-                            visibility: hidden
-                        }
-                        body.single_slide .invisible {
-                            visibility: hidden
-                        }
-                        body.single_slide .hidden {
-                            display: none;
-                            visibility: hidden
-                        }
-                        body.single_slide div.slide {
-                            position: absolute
-                        }
-                        body.single_slide div.handout {
-                            display: none;
-                            visibility: hidden
-                        }
-                    }
-                    @media print {
-                        .hidden {
+                        .c_right {
                             display: block;
-                            visibility: visible
+                            float: right;
                         }
-                        div.slide pre {
-                            font-size: 60%;
-                            padding-left: 0.5em;
+                        .c_center {
+                            display: block;
+                            /*clear: both;*/
+                            margin: 0 auto;
                         }
-                        div.toolbar {
-                            display: none;
-                            visibility: hidden;
+                        .c_left-align {
+                            text-align: left;
                         }
-                        div.slidy_toc {
-                            display: none;
-                            visibility: hidden;
+
+                        .c_right-align {
+                            text-align: right;
                         }
-                        div.background {
-                            display: none;
-                            visibility: hidden;
+
+                        span.c_left,
+                        span.c_right,
+                        span.c_center {
+                            display: inline-block;
                         }
-                        div.slide {
-                            page-break-before: always
+                        /*********************************************
+                         * PRINT BACKGROUND
+                         *********************************************/
+                        @media print {
+                          .backgrounds {
+                            background-color: var(--r-background-color);
+                          }
                         }
-                        /* :first-child isn't reliable for print media */
-                        div.slide.first-slide {
-                            page-break-before: avoid
-                        }
-                    }
                     </style>
+        <style>
+            /******************
+            set fonts and sizes
+            *******************/
+            .keyphrase {
+                /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                font-weight: 400;
+                color: #113868;
+            }
+            p,
+            ol,
+            ul,
+            span {
+            }
+            /**
+            highlights: <em> is for transcribed terms, <strong> for emphasis;
+            **/
+            em {
+                /*font-family: "Gentium Plus";
+              /*font-family: Georgia;*/
+              font-style: italic;
+              font-weight: 200;
+            }
+            strong {
+                font-style: italic;
+                font-weight: 200;
+                border-bottom: 2px dotted #F96827;
+            }
+            table {
+                font-size: 0.8em;
+            }
+            .small-font {
+                font-size: 70%;
+            }
+            /*****************
+            heads
+            ******************/
+            /* title and dividing slides */
+            /* put h1 in the center of the slide */
+            div.titleslide h1,
+            div.titleslide h1.print-pdf,
+            #title-slide h1 {
+                margin-top: 2em;
+            /*margin-bottom: auto;*/
+            font-size: 2em;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                text-align: center;
+            }
+            div.reveal h1, h1 {
+                padding-bottom: 0.3em;
+                /*font-size: 1.75em;*/
+                line-height: 1.2;
+                border-bottom: 1px solid #eee;
+                margin-top: 4em;
+            }
+            div.reveal h2, h2 {
+                padding-bottom: 0.3em;
+                /*font-size: 1.5em;*/
+                line-height: 1.225;
+                border-bottom: 1px solid #eee;
+            }
+            div.reveal h3, h3 {
+                /*font-size: 1.25em;*/
+                line-height: 1.43;
+            }
+            div.reveal h4, h4 {
+                /*font-size: 1em;*/
+            }
+        </style>
+        <style>
+            /**********
+            lists
+            ***********/
+        ul,
+        ol {
+            display: block;
+            clear: both;
+            font-style: normal;
+            margin-top: 0.1em;
+            margin-bottom: 0.5em;
+            /*margin-left: 1.5em;*/
+            list-style-position: inside;
+            padding-left: 1em;
+            /* all lists should be centered */
+            /*text-align: left;*/
+                /*margin-left: auto;
+              margin-right: auto;*/
+          }
+          /* padding, line-height etc. for all list items */
+          ul li,
+          ol li {
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            padding: 0 0 0 0px;
+            line-height: 120%;
+            font-size: inherit;
+            font-style: normal;
+        }
+        li li {
+            font-size: inherit;
+            font-style: normal;
+        }
+        li li li {
+            font-size: inherit;
+            font-style: normal;
+        }
+        /* unordered lists */
+        ul {
+            list-style-type: circle;
+        }
+        ul ul {
+            list-style-type: circle;
+        }
+        ul ul ul {
+            list-style-type: circle;
+        }
+        ul ul ul ul {
+            list-style-type: circle;
+        }
+        ul li {
+            list-style: circle;
+                /*margin: 0.1em 0em 0.6em 0;
+              padding: 0 0 0 0;
+              line-height: 140%;*/
+          }
+          li ul li {
+            /*font-size: 85%; */
+            font-style: normal;
+            list-style-type: circle;
+                /* background: transparent;
+              padding: 0 0 0 0;*/
+          }
+          li li ul li {
+            /*font-size: 85%; */
+            font-style: normal;
+            list-style-type: circle;
+                /*background: transparent;
+              padding: 0 0 0 0;*/
+          }
+          li li li ul li {
+            font-style: normal;
+            list-style-type: circle;
+                /*background: transparent;
+              padding: 0 0 0 0;*/
+          }
+            /*ul {
+              margin: 0.5em 1.5em 0.5em 1.5em;
+              padding: 0;
+            }*/
+            /* ordered lists */
+            ol {
+                margin: 0.5em 1.5em 0.5em 1.5em;
+                padding: 0;
+            }
+            ol li {
+                list-style-type: decimal;
+            }
+            li ol li {
+                list-style-type: decimal;
+            }
+            li li ol li {
+                list-style-type: decimal;
+            }
+
+            /***********
+            indentation of nested lists
+            ***********/
+
+            ul ul,
+            ul ol,
+            ol ol,
+            ol ul {
+                padding-inline-start: 1em;
+            }
+
+            /*this is to accomodated the snipped highlight js*/
+            pre ul li {
+                margin-top: 0;
+                font-size: 0.7em;
+                padding: 0;
+            }
+            div dt {
+                margin-left: 0;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+                font-weight: bold;
+            }
+            div dd {
+                margin-left: 2em;
+                margin-bottom: 0.5em;
+            }
+        </style>
+        <style>
+            /****************
+            images and figures
+            *****************/
+            div.slide img {
+                /* image-rendering: optimize-quality; */
+                background-color: white; /*rgba(0,0,0,0.04);*/
+                border-radius: 5px;
+                display: block;
+                max-height: 600px;
+                max-width: 95%;
+                /* center images */
+                margin-left: auto;
+                margin-right: auto;
+                /*box-shadow: 2px 2px 5px #000;*/
+                /*border: gray solid 1px;*/
+            }
+            div.figure {
+                width: 100%;
+                padding: 0;
+                /*height: inherit;*/
+            }
+            figure {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                /*margin-inline-start: 40px;
+                margin-inline-end: 40px;*/
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+            }
+            div.figure p.caption,
+            figcaption {
+                position: relative;
+                float: right;
+                text-align: right;
+                margin-top: 0.2em;
+                margin-bottom: 0.5em;
+                /*top:2em;*/
+                /*max-width:15%;
+                min-width: 180px;*/
+                font-size: 0.6em;
+                font-weight: lighter;
+            }
+            div.figure img {
+                float: right;
+                /*max-height: 80%;*/
+                /*max-height: 600px;*/
+                /*max-height: inherit;*/
+                /*max-width:80%;*/
+                /*max-width: 95%;*/
+            }
+            header img,
+            footer img {
+                display: block;
+            }
+            /* inline images */
+            /*p img,
+            li img {
+                display: inline-block;
+                height: 1em;
+            }*/
+            /* logos */
+            img.c_logo {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            /*    max-width: 6em !important;*/
+                max-height: 4em !important;
+            }
+            img.c_logo.c_left {
+                margin-left: 1em;
+            }
+            img.c_logo.c_right {
+                margin-right: 1em;
+            }
+            img.c_logo {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            /*    max-width: 6em !important;*/
+                max-height: 4em !important;
+            }
+            img.c_logo.c_left {
+                margin-left: 1em;
+            }
+            img.c_logo.c_right {
+                margin-right: 1em;
+            }
+            /*img {
+              max-height: 700px;
+              max-width: 100%;
+            }*/
+            /* external content, including local html pages */
+            iframe {
+                display: block;
+                width: 90%;
+                /* the height setting seems to squeeze iframes */
+                height: 600px;
+                /* center the iframe */
+                margin-left: auto;
+                margin-right: auto;
+                scrolling: auto;
+                scroll-behavior: auto;
+                /*border:none;*/
+            }
+            /*.size-80 {
+              display: block;
+              width: 80%;
+              height: 80%;
+            }*/
+        </style>
+        <style>
+            blockquote {
+                border-image-width: 0;
+                padding-left: 1em !important;
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+                margin-bottom: 1em;
+                text-align: right;
+                /*font-style: italic;*/
+                clear: both;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                border-width: 0px;
+                border: none;
+                /*background-clip: none;*/
+            }
+            blockquote > p:before {
+                content: "> "
+            }
+            cite {
+                display: block;
+                margin-left: 10%;
+                font-size: 0.8em;
+                font-style: normal;
+                text-align: right;
+            /*    the float attribute destroys the multi-column layout*/
+            /*    float: right;*/
+                padding-bottom: 1em;
+            }
+            p.copyright {
+                font-size: smaller
+            }
+            .center {
+                text-align: center
+            }
+            .footnote {
+                font-size: smaller;
+                margin-left: 2em;
+            }
+        </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
       <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-              <a href="https://tillgrallert.github.io/slides/dh/2024-bochum/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-bochum/"></a>
-        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2026-stuttgart/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/fileadmin/files/Logos/4Memory/Logo_NFDI4memory_RGB.png"></a>
           </header>
     <div class="reveal">
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">Do it yourself (but not alone) and
-KISS!</h1>
+          <h1 class="title">Datenkultur in Zeiten abnehmender
+Geschichtsmündigkeit</h1>
                     <div class="columns">
           <div class="column c_left c_left-align">
                       <p class="author">
@@ -1447,14 +721,14 @@ NFDI4Memory</p>
                                           </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>RUB, Digital Humanities Day #6</span>
+                        <span>DH Kolloquium, Stuttgart</span>
           </p>
-                                <p class="date">2024-09-30</p>
-                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2024-bochum/">https://tillgrallert.github.io/slides/dh/2024-bochum/</a></p>
+                                <p class="date">2026-02-04</p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/">https://tillgrallert.github.io/slides/dh/2026-stuttgart/</a></p>
                   </div>
       </div>
         </section>
-
+                
         <section>
         <section id="ein-neues-epistem"
         class="title-slide slide level1">
@@ -1623,8 +897,9 @@ NFDI4Memory</p>
         <h2>Die falsche Vertrautheit</h2>
         <figure id="fig:google-docs">
         <img data-src="../../assets/dh/google-docs.png"
-        alt="Google docs" />
-        <figcaption>Figure 1: Google docs</figcaption>
+        alt="Figure 1: Google docs" />
+        <figcaption aria-hidden="true">Figure 1: Google
+        docs</figcaption>
         </figure>
         <aside class="notes">
         <ul>
@@ -1662,18 +937,19 @@ NFDI4Memory</p>
         <figure id="fig:google-network">
         <img
         data-src="https://cloud.google.com/static/images/locations/edgepoint-map-popup_2x.jpg"
-        alt="Googles globale Netzwerkinfrastruktur. Quelle: https://cloud.google.com/about/locations/" />
-        <figcaption>Figure 2: Googles globale Netzwerkinfrastruktur.
-        Quelle: <a href="https://cloud.google.com/about/locations/"
+        alt="Figure 2: Googles globale Netzwerkinfrastruktur. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption aria-hidden="true">Figure 2: Googles globale
+        Netzwerkinfrastruktur. Quelle: <a
+        href="https://cloud.google.com/about/locations/"
         class="uri">https://cloud.google.com/about/locations/</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:google-cdn">
         <img
         data-src="https://cloud.google.com/static/images/locations/media-cdn-map-popup_2x.jpg"
-        alt="Die Datenzentren in Googles globalem Content Delivery Network. Quelle: https://cloud.google.com/about/locations/" />
-        <figcaption>Figure 3: Die Datenzentren in Googles globalem
-        Content Delivery Network. Quelle: <a
+        alt="Figure 3: Die Datenzentren in Googles globalem Content Delivery Network. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption aria-hidden="true">Figure 3: Die Datenzentren in
+        Googles globalem Content Delivery Network. Quelle: <a
         href="https://cloud.google.com/about/locations/"
         class="uri">https://cloud.google.com/about/locations/</a></figcaption>
         </figure>
@@ -1777,32 +1053,32 @@ NFDI4Memory</p>
         <div class="narrow">
         <figure id="fig:mirat-ar">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-ar.png"
-        alt="Original in arabischer Schrift" />
-        <figcaption>Figure 4: Original in arabischer
+        alt="Figure 4: Original in arabischer Schrift" />
+        <figcaption aria-hidden="true">Figure 4: Original in arabischer
         Schrift</figcaption>
         </figure>
         <figure id="fig:mirat-ijmes">
         <img
         data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-ijmes.png"
-        alt="In international gebräuchlicher Umschrift" />
-        <figcaption>Figure 5: In international gebräuchlicher
-        Umschrift</figcaption>
+        alt="Figure 5: In international gebräuchlicher Umschrift" />
+        <figcaption aria-hidden="true">Figure 5: In international
+        gebräuchlicher Umschrift</figcaption>
         </figure>
         </div>
         <div class="column">
         <figure id="fig:mirat-dmg">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="In Umschrift der Deutschen Morgenländischen Gesellschaft" />
-        <figcaption>Figure 6: In Umschrift der Deutschen
-        Morgenländischen Gesellschaft</figcaption>
+        alt="Figure 6: In Umschrift der Deutschen Morgenländischen Gesellschaft" />
+        <figcaption aria-hidden="true">Figure 6: In Umschrift der
+        Deutschen Morgenländischen Gesellschaft</figcaption>
         </figure>
         </div>
         <div class="column">
         <figure id="fig:mirat-dmg-flat">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
-        alt="In DMG Umschrift ohne diakritische Zeichen" />
-        <figcaption>Figure 7: In DMG Umschrift ohne diakritische
-        Zeichen</figcaption>
+        alt="Figure 7: In DMG Umschrift ohne diakritische Zeichen" />
+        <figcaption aria-hidden="true">Figure 7: In DMG Umschrift ohne
+        diakritische Zeichen</figcaption>
         </figure>
         </div>
         </div>
@@ -1857,9 +1133,9 @@ NFDI4Memory</p>
         <figure id="fig:wordcloud-dhq">
         <img
         data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png"
-        alt="“Werkzeuge” in Digital Humanities Quarterly" />
-        <figcaption>Figure 8: “Werkzeuge” in Digital Humanities
-        Quarterly</figcaption>
+        alt="Figure 8: “Werkzeuge” in Digital Humanities Quarterly" />
+        <figcaption aria-hidden="true">Figure 8: “Werkzeuge” in Digital
+        Humanities Quarterly</figcaption>
         </figure>
         <!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
         </div><div class="column">
@@ -1881,7 +1157,7 @@ NFDI4Memory</p>
         </div>
         <aside class="notes">
         <ul>
-        <li>David Berry “epoch of computationability”</li>
+        <li>David Berry “epoch of computationality”</li>
         </ul>
         </aside>
         </section>
@@ -2181,9 +1457,9 @@ NFDI4Memory</p>
         <figure id="fig:wordcloud-dh-conferences">
         <img
         data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png"
-        alt="“Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
-        <figcaption>Figure 9: “Werkzeuge” in Abstracts für DH
-        Konferenzen, 2014–22</figcaption>
+        alt="Figure 9: “Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
+        <figcaption aria-hidden="true">Figure 9: “Werkzeuge” in
+        Abstracts für DH Konferenzen, 2014–22</figcaption>
         </figure>
         </div><div class="wide">
         <blockquote>
@@ -2220,8 +1496,8 @@ NFDI4Memory</p>
         Methoden am Campus Mitte</h2>
         <figure id="fig:website-iz">
         <img data-src="../../assets/dh/website_iz-digitalität.png"
-        alt="Mitglieder des IZ Digitalität und digitale Methoden" />
-        <figcaption>Figure 10: Mitglieder des <a
+        alt="Figure 10: Mitglieder des IZ Digitalität und digitale Methoden" />
+        <figcaption aria-hidden="true">Figure 10: Mitglieder des <a
         href="https://izd2m.hu-berlin.de/">IZ Digitalität und digitale
         Methoden</a></figcaption>
         </figure>
@@ -2423,8 +1699,8 @@ NFDI4Memory</p>
         <div class="narrow">
         <figure id="fig:mincomp-website">
         <img data-src="../../assets/dh/website_mincomp.png"
-        alt="Webseite der GO::DH working group zu minimal computing" />
-        <figcaption>Figure 11: Webseite der <a
+        alt="Figure 11: Webseite der GO::DH working group zu minimal computing" />
+        <figcaption aria-hidden="true">Figure 11: Webseite der <a
         href="https://go-dh.github.io/mincomp">GO::DH working group zu
         minimal computing</a></figcaption>
         </figure>
@@ -2530,8 +1806,8 @@ NFDI4Memory</p>
         </ul>
         <figure id="fig:bulthaupt">
         <img data-src="../../assets/dh/bulthaupt.png"
-        alt="Webseite für Luxus-Küchen" />
-        <figcaption>Figure 12: <a
+        alt="Figure 12: Webseite für Luxus-Küchen" />
+        <figcaption aria-hidden="true">Figure 12: <a
         href="https://bulthaup.com/en/b3/">Webseite</a> für
         Luxus-Küchen</figcaption>
         </figure>
@@ -2550,8 +1826,9 @@ NFDI4Memory</p>
         <figure id="fig:bauhaus">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
-        alt="Frankfurter Küche, Quelle: WikiCommons, CCO" />
-        <figcaption>Figure 13: Frankfurter Küche, Quelle: <a
+        alt="Figure 13: Frankfurter Küche, Quelle: WikiCommons, CCO" />
+        <figcaption aria-hidden="true">Figure 13: Frankfurter Küche,
+        Quelle: <a
         href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
         CCO</a></figcaption>
         </figure>
@@ -2630,8 +1907,8 @@ NFDI4Memory</p>
         <figure id="fig:endings-principles">
         <img
         data-src="../../assets/dh/website_project-endings-principles.png"
-        alt="“Endings Principles for Digital Longevity”" />
-        <figcaption>Figure 14: “<a
+        alt="Figure 14: “Endings Principles for Digital Longevity”" />
+        <figcaption aria-hidden="true">Figure 14: “<a
         href="https://endings.uvic.ca/principles.html">Endings
         Principles for Digital Longevity</a>”</figcaption>
         </figure>
@@ -2682,8 +1959,8 @@ NFDI4Memory</p>
         <div class="column">
         <figure id="fig:website-dhcc">
         <img data-src="../../assets/dh/website_dhcc.png"
-        alt="Webseite des DHCC Toolkit" />
-        <figcaption>Figure 15: Webseite des <a
+        alt="Figure 15: Webseite des DHCC Toolkit" />
+        <figcaption aria-hidden="true">Figure 15: Webseite des <a
         href="https://sas-dhrh.github.io/dhcc-toolkit/">DHCC
         Toolkit</a></figcaption>
         </figure>
@@ -2756,8 +2033,9 @@ NFDI4Memory</p>
         <figure id="fig:websites">
         <img
         data-src="../../assets/dh/tool-registry/registries_websites.png"
-        alt="Einige Beispiele" />
-        <figcaption>Figure 16: Einige Beispiele</figcaption>
+        alt="Figure 16: Einige Beispiele" />
+        <figcaption aria-hidden="true">Figure 16: Einige
+        Beispiele</figcaption>
         </figure>
         </div>
         </div>
@@ -2788,9 +2066,9 @@ NFDI4Memory</p>
         <figure id="fig:wordcloud-dh-conferences-2">
         <img
         data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png"
-        alt="“Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
-        <figcaption>Figure 17: “Werkzeuge” in Abstracts für DH
-        Konferenzen, 2014–22</figcaption>
+        alt="Figure 17: “Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
+        <figcaption aria-hidden="true">Figure 17: “Werkzeuge” in
+        Abstracts für DH Konferenzen, 2014–22</figcaption>
         </figure>
         </div><div class="column">
         <ul>
@@ -2853,15 +2131,16 @@ NFDI4Memory</p>
         </div><div class="column">
         <figure id="fig:tapor-about">
         <img data-src="../../assets/dh/tool-registry/tapor_about.png"
-        alt="TAPoR’s about page" />
-        <figcaption>Figure 18: TAPoR’s about page</figcaption>
+        alt="Figure 18: TAPoR’s about page" />
+        <figcaption aria-hidden="true">Figure 18: TAPoR’s about
+        page</figcaption>
         </figure>
         <figure id="fig:tapor-contribute">
         <img
         data-src="../../assets/dh/tool-registry/tapor_contribute.png"
-        alt="TAPoR asking you to send the late Stéfan Sinclair an email" />
-        <figcaption>Figure 19: TAPoR asking you to send the late Stéfan
-        Sinclair an email</figcaption>
+        alt="Figure 19: TAPoR asking you to send the late Stéfan Sinclair an email" />
+        <figcaption aria-hidden="true">Figure 19: TAPoR asking you to
+        send the late Stéfan Sinclair an email</figcaption>
         </figure>
         </div>
         </div>
@@ -2971,9 +2250,9 @@ NFDI4Memory</p>
         <div class="narrow">
         <figure id="fig:search-google">
         <img data-src="../../assets/dh/tool-registry/search_google.png"
-        alt="Erste Seite der Google Suche nach “Tool Registry digital humanities”" />
-        <figcaption>Figure 20: Erste Seite der Google Suche nach “Tool
-        Registry digital humanities”</figcaption>
+        alt="Figure 20: Erste Seite der Google Suche nach “Tool Registry digital humanities”" />
+        <figcaption aria-hidden="true">Figure 20: Erste Seite der Google
+        Suche nach “Tool Registry digital humanities”</figcaption>
         </figure>
         </div><div class="wide">
         <p><span class="keyphrase">Sustainable und FAI</span> …</p>
@@ -3061,7 +2340,7 @@ NFDI4Memory</p>
         </ul>
         </div>
         </div>
-        <!-- - Die minimale Lösung
+        <!-- - Die minimale Lösung 
             - ist unter den Rahmenbedingungen zeitgenössischen Wissenschaft im Kontext von Polykrisen, **die einzig machbare**.
             - schont natürliche und menschliche Ressourcen.
             - trägt dazu bei, dass Forschung im Einklang mit guter Wissenschaftlicher Praxis steht.
@@ -3228,7 +2507,7 @@ NFDI4Memory</p>
         Lässig, Simone. 2021. <span>„Digital History: Challenges and
         Opportunities for the Profession“</span>. <em>Geschichte und
         Gesellschaft</em> 47 (1): 5–34. <a
-        href="https://doi.org/gkhrjp">https://doi.org/gkhrjp</a>.
+        href="https://doi.org/10/gkhrjp">https://doi.org/10/gkhrjp</a>.
         </div>
         <div id="ref-Levy2017DigitalZombies" class="csl-entry"
         role="listitem">
@@ -3346,18 +2625,18 @@ NFDI4Memory</p>
     <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
     <script src="../../assets/revealjs/plugin/search/search.js"></script>
     <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: true,
+        controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
         controlsLayout: 'bottom-right',
@@ -3396,11 +2675,10 @@ NFDI4Memory</p>
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
-        disableLayout: false,
+        disableLayout: true, //false,
 
         // Vertical centering of slides
-        // center: true,
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -3448,7 +2726,7 @@ NFDI4Memory</p>
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -3492,20 +2770,20 @@ NFDI4Memory</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-
+        
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-
+        
         // Bounds for smallest/largest possible scale to apply to content
-
-
-
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -3522,11 +2800,11 @@ NFDI4Memory</p>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2024-09-30</span>
+                    <span class="c_left">2026-02-04</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">
-          <a href="https://tillgrallert.github.io/slides/dh/2024-bochum/">https://tillgrallert.github.io/slides/dh/2024-bochum/</a>
+          <a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/">https://tillgrallert.github.io/slides/dh/2026-stuttgart/</a>
           <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
         </span>
                 <!-- this should probably moved to the title slide only -->
