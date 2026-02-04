@@ -20,28 +20,51 @@ nocite: |
     @Comeau2023ProjectEndings
 ---
 
-# Ein neues Epistem 
-## *Digital* als ein historischer Begriff 
+# Ein neues Epistem <br/> Drei Thesen
+## 1. Wir leben im Zeitalter der Digitalität und Computationalität
 
 ::: columns
 :::: wide
 
 <!-- **Datafication** emphasises the epistemic shift from a world where data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies. -->
 
-**Datafizierung** unterstreicht den fundamentalen  epistemischen und konzeptionellen Wandel von einer Welt, in der Daten ein eng definierter Teil der Ergebnisse von Forschungsprozessen waren, hin zu einem neuen Status Quo, in dem alle  Forschungsprozesse immer bereits durch Informations- und Kommunikationstechnologien (ICT) computationell mediiert sind. 
+**Datafizierung** markiert den fundamentalen  epistemischen und konzeptionellen Wandel von einer Welt, in der Daten ein eng definierter Teil der Ergebnisse von Forschungsprozessen waren, hin zu einem neuen Status Quo, in dem alle  Forschungsprozesse immer bereits durch Informations- und Kommunikationstechnologien (ICT) computationell mediiert sind. 
 
 ::::
 :::: narrow
 
-[wir leben in *datafizierten* Gesellschaften]{.keyphrase}
+[Gesellschaft und Wissenschaft sind bereits *datafiziert*]{.keyphrase}
 
 ::::
 :::
 
+<!-- 
+>I would like to explore here a tentative path for a third wave of the digital humanities, concentrated around the underlying computationality of the forms held within a computational medium. That is, I propose to look at the digital component of the digital humanities in the light of its medium specificity, as a way of thinking about how medial changes produce epistemic changes.
+
+<cite>@Berry2011ComputationalTurn, 4</cite> -->
+
+>Computationality might then be understood as an ontotheology, creating a new ontological ‘epoch’ as a new historical constellation of intelligibility. <!-- The digital humanists could therefore orient themselves to questions raised when computationality is itself problematized in this way-->
+
+<cite>@Berry2011ComputationalTurn, 16; @Berry2011Philosophy, 27</cite>
+
+
+::: notes
+
+
+- "epoch of computationality" orginates with @Berry2011ComputationalTurn
+    - ontotheology rekuriert auf Heidegger und Kant
+- Unsere Interaktion mit der Welt ist immer schon durch ICTs vermittelt
+- Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
+- Digital history also addresses the age of abundance, as postulated by Roy Rosenzweig, and epitomised by the recent advances in generative AI and LLMs, which will create an infinite amount of absolutely plausible and convincing yet utterly false sources 
+
+:::
+
+## 2. "analog" war (vor) gestern
+
 ::: columns
 :::: narrow
 
-["*digital*" hat seine Bedeutung verloren]{.keyphrase}
+[Die Unterscheidung zwischen *analog* und *digital* hat ihren analytischen Wert verloren]{.keyphrase}
 
 ::::
 :::: wide
@@ -52,6 +75,8 @@ nocite: |
 
 ::::
 :::
+
+## 3. Algorithmen und Daten sind Akteure
 
 ::: columns
 :::: narrow
@@ -74,10 +99,6 @@ nocite: |
 
 ::: notes
 
-- das ist die Ausgangsprämisse unserer Arbeit für NFDI4Memory
-
-- Digital history, then, accepts that the human cultural record is being *datafied* and we need computational methods in order to make historical arguments [cf. @DigitalHistoryArgument2017, 2; @Laessig2021DigitalHistory, 6]
-- Digital history also addresses the age of abundance, as postulated by Roy Rosenzweig, and epitomised by the recent advances in generative AI and LLMs, which will create an infinite amount of absolutely plausible and convincing yet utterly false sources 
 - Daraus folgt aber auch, dass **digital** history oder **digital** humanities hilfreiche Begriffe einer Übergangsphase sind. Sie sind Label mit einem hohen symbolischen und ökonomischen Kapital. 
 
 
@@ -135,13 +156,13 @@ nocite: |
     - Abbildung: model for something
     - Reduktion: abstracts aspects of interest
     - Zweck: models have a purpose for something
-- If we subscribe to social constructivism then all models are historically situated
 - Wenn wir dem Konstruktivismus folgen, dann sind alle Modelle historisch situiert. Sie haben einen konkreten Ort und eine spezifische Zeitlichkeit
     - Daten und Modelle sind in historischen Prozessen der Wissensproduktion, des Wissenschaffens verortet
 - drucker: capta
 
 :::
 
+# Was tun? <br/>Geschichtswissenschaft im Zeitalter der Berechenbarkeit
 ## Die falsche Vertrautheit
 
 
@@ -213,6 +234,7 @@ nocite: |
 
 ::: notes
 
+- Digitalität ist nicht voraussetzungslos:
 - very unequal access to the means of digital production
 - sustainable development goals (SDG) of the UN
 - electricity
@@ -283,8 +305,27 @@ nocite: |
 :::
 
 
+## History in the age of abundance?
 
-## Die Humanities in der Epoche der Berechenbarkeit
+[Wie können unter diesen Bedingungen intersubjektiv überprüfbare Aussagen über vergangene Ereignisse gemacht werden?]{.keyphrase}
+
+::: columns
+:::: narrow
+
+Forensik und Critical Code Studies?
+
+::::
+:::: wide
+
+>historians need to be thinking simultaneously about how to research, write, and teach in a world of unheard-of historical abundance and how to avoid a future of record scarcity.
+
+<cite>@Rosenzweig2003ScarcityAbundance, 738</cite>
+
+
+::::
+:::
+
+## Die Notwendigkeit einer Datenkultur
 
 [Für einen aufgeklärten Umgang mit *Datafizierung* brauchen wir einen fundamentalen **Kulturwandel**]{.keyphrase}
 
@@ -315,11 +356,11 @@ Es herrscht in der Breite ein Mangel an
 
 ::: notes
 
-- David Berry "epoch of computationality" 
+- David Berry "epoch of computationality", @Berry2011ComputationalTurn
 
 :::
 
-## Von *digital consumers* zu *digital citizens*, oder warum wir eine Datenkultur brauchen
+## Von *digital consumers* zu *digital citizens*
 
 <!-- requires some work -->
 
@@ -501,20 +542,6 @@ DFG-Projekt "Future e-Research Support in the Humanities II" an der UB der Humbo
 
 :::
 
-## Interdisziplinäres Zentrum für Digitalität und digitale Methoden am Campus Mitte
-
-![Mitglieder des [IZ Digitalität und digitale Methoden](https://izd2m.hu-berlin.de/)](../../assets/dh/website_iz-digitalität.png){#fig:website-iz}
-
-![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://izd2m.hu-berlin.de/){.c_logo .c_qr .c_right}
-
-::: notes
-
-- neue Initiative, seit 2024
-- soll die vielen Menschen, die bereits zu Themen der Digitalität arbeiten zusammenbringen
-- ihnen Raum für Austausch bieten
-- ihre Arbeit sichtbar machen nach außen und nach innen
-
-:::
 
 ## Generous thinking: zuhören und lernen
 
@@ -626,6 +653,23 @@ DFG-Projekt "Future e-Research Support in the Humanities II" an der UB der Humbo
 
 :::
 
+## Interdisziplinäres Zentrum für Digitalität und digitale Methoden am Campus Mitte
+
+![Mitglieder des [IZ Digitalität und digitale Methoden](https://izd2m.hu-berlin.de/)](../../assets/dh/website_iz-digitalität.png){#fig:website-iz}
+
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://izd2m.hu-berlin.de/){.c_logo .c_qr .c_right}
+
+::: notes
+
+- neue Initiative, seit 2024
+- soll die vielen Menschen, die bereits zu Themen der Digitalität arbeiten zusammenbringen
+- ihnen Raum für Austausch bieten
+- ihre Arbeit sichtbar machen nach außen und nach innen
+
+:::
+
+
+
 # KISS <br/>keep it simple, stupid
 ## minimal computing
 ### Was **wir brauchen** müssen **wir** schaffen mit dem was **wir zuhanden haben**
@@ -658,6 +702,9 @@ DFG-Projekt "Future e-Research Support in the Humanities II" an der UB der Humbo
 
 - minimal computing ist ein Ergebnis von GO::DH und Ereignissen und Bedingungen der Digitalität in Cuba
 - Alex Gil's ideas resonated with me, upon meeting in Beirut in April 2015
+- Die heideggersche Formulierung des Zuhandenseins wird auch bei Berrys Computationalität aufgegriffen
+
+>In sum, computer scientists attempt to transform the present-at-hand into the ready-to-hand through the application of computation. [@Berry2011Philosophy, 129]
 
 :::
 
