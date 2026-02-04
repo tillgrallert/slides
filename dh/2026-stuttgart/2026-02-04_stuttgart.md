@@ -59,7 +59,7 @@ nocite: |
 
 :::
 
-## 2. "analog" war (vor) gestern
+## 2. "analog" war (vor)gestern
 
 ::: columns
 :::: narrow
@@ -253,13 +253,35 @@ nocite: |
         + lower speed
         + higher latency
         + higher cost per unit of traffic
+- weitere Beobachtung:
+    - digitale Artefakte und Infrastrukturen sind nicht beständig!
+    - Tweets sind nicht mehr verfügbar
+    - Map widgets stop working
 
 - At my former home institution, a well-funded foreign research institute, for instance, we shared a single connection of 24Mbps. Simply loading the landing page for a single volume of al-Muqtabas at the Endangered Archives Programme will require three seconds of load time even under perfect conditions. With 20 colleagues and another 20 library users equally trying to access online services and resources, load time quickly multiplies tenfold and more. Browsing through a large number of scanned images behind such a bottleneck is a daunting task. Uploading multiple gigabytes of high-resolution scans to a cloud computing service for machine-learning based OCR, for instance, is practically impossible and we rather ship hard drives and wait for months for the results.
 
 :::
 
 
-## Vom Suchen und Finden
+<!-- ## Vom Suchen und Finden -->
+## Was nicht erfasst werden kann, kann nicht gefunden werden
+
+::: columns
+:::: column
+
+>Indigenous peoples have the right to revitalize, use, develop and transmit to future generations their histories, languages, oral traditions, philosophies, writing systems and literatures, and to designate and retain their own names for communities, places and persons.
+
+<cite>[@UNDRIP2007, §13]<cite>
+
+::::
+:::: column
+
+>'Linguistic imperialism' is shorthand for a multitude of activities, ideologies and structural relationships. Linguistic imperialism takes place within an overarching structure of asymmetrical North/South relations, where language interlocks with other dimensions, cultural (particularly in education, science and the media), economic and political.
+
+<cite>@Phillipson1997RealitiesAndMyths, 239</cite>
+
+::::
+:::
 
 ::: columns-3
 :::: narrow
@@ -325,6 +347,19 @@ Forensik und Critical Code Studies?
 ::::
 :::
 
+::: columns
+:::: wide
+
+>With generative AI we have essentially provided a tool for conducting denial of service attacks on the infrastructure of the scientific publishing process (broadly construed). And we have done this  at the time when we are seeing well-funded campaigns seeking to undermine free and independent scientific research.
+
+<cite>@Rosenzweig2003ScarcityAbundance, 738</cite>
+
+
+::::
+:::: narrow
+::::
+:::
+
 ## Die Notwendigkeit einer Datenkultur
 
 [Für einen aufgeklärten Umgang mit *Datafizierung* brauchen wir einen fundamentalen **Kulturwandel**]{.keyphrase}
@@ -360,11 +395,11 @@ Es herrscht in der Breite ein Mangel an
 
 :::
 
-## Von *digital consumers* zu *digital citizens*
+## Datenkultur
 
 <!-- requires some work -->
 
-<!-- [*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase} -->
+[*digital natives* sind nicht automatisch *digital citizens*]{.keyphrase}
 
 ::: columns
 :::: column
@@ -1102,8 +1137,26 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 
 :::
 
-# Conclusion
-## Summary
+# Abschluss
+## Zusammenfassung
+
+::: columns-3
+:::: column
+
+1. Wir leben im Zeitalter der Digitalität und Computationalität
+
+::::
+:::: column
+
+2. "analog" war (vor)gestern
+
+::::
+:::: column
+
+3. Algorithmen und Daten sind Akteure
+
+::::
+:::
 
 ::: columns-3
 :::: column
