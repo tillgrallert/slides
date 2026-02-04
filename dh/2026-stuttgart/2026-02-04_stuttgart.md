@@ -1143,31 +1143,19 @@ Wir müssen die Frage "was brauchen *wir*" mit "was haben *wir*" beantworten kö
 ::: columns-3
 :::: column
 
+### Drei Thesen
+
 1. Wir leben im Zeitalter der Digitalität und Computationalität
-
-::::
-:::: column
-
 2. "analog" war (vor)gestern
-
-::::
-:::: column
-
 3. Algorithmen und Daten sind Akteure
 
 ::::
-:::
-
-::: columns-3
 :::: column
 
 ### DIY
 
 - Wir müssen uns selbst ermächtigen und Blackboxes öffnen!
 - Wer, wenn nicht wir, baut die Dinge, die wir benötigen?
-
-::::
-:::: column
 
 ### but not alone
 
