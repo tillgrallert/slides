@@ -334,7 +334,7 @@ nocite: |
 ::: columns
 :::: narrow
 
-Forensik und Critical Code Studies?
+[Forensik und Critical Code Studies?]{.keyphrase}
 
 ::::
 :::: wide
@@ -348,15 +348,18 @@ Forensik und Critical Code Studies?
 :::
 
 ::: columns
+:::: narrow
+
+[Flooding the zone]{.keyphrase}
+
+::::
 :::: wide
 
 >With generative AI we have essentially provided a tool for conducting denial of service attacks on the infrastructure of the scientific publishing process (broadly construed). And we have done this  at the time when we are seeing well-funded campaigns seeking to undermine free and independent scientific research.
 
-<cite>@Rosenzweig2003ScarcityAbundance, 738</cite>
+<cite>@Hahn2026AIkillingscientific</cite>
 
 
-::::
-:::: narrow
 ::::
 :::
 
