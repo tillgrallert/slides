@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html  lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
-          <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2023-11-24">
-                  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
-        <title>International perspectives</title>
+          <meta name="author" content="Till Grallert (HU Berlin, NFDI4Memory), Torsten Hiltmann (HU Berlin, NFDI4Memory), Andrew Flinn (University College London), Min-Woo Lee (Andong National University), Ian Marino (Federal University of Juiz de Fora), Ian Milligan (U Waterloo), and Julianne Nyhan (TU Darmstadt)">
+              <meta name="dcterms.date" content="2025-07-17">
+                <title>The global state state of digital history</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="../../assets/revealjs/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -21,8 +20,11 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
@@ -32,6 +34,7 @@
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
+        margin-bottom: 0em;
       }
       .hanging-indent div.csl-entry {
         margin-left:2em;
@@ -48,7 +51,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="../../assets/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -112,8 +115,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -135,20 +138,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -159,8 +167,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -216,8 +224,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -225,14 +233,21 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
-                    div.slide {
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -261,17 +276,11 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th {
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -299,6 +308,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -589,12 +601,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -605,7 +621,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -627,6 +643,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -676,35 +693,38 @@
                         position: relative;
                         float: left;
                     }
-                    .columns .small-font {
-                        font-size: 70%;
-                    }
                     .c_left {
                         display: block;
                         float: left;
+                        text-align: left;
                     }
                     .c_right {
                         display: block;
                         float: right;
+                        text-align: right;
                     }
                     .c_center {
                         display: block;
                         /*clear: both;*/
                         margin: 0 auto;
+                        text-align: center;
+                    /*    width: 100%;*/
                     }
                     .c_left-align {
                         text-align: left;
+                        display: inline-block;
                     }
 
                     .c_right-align {
                         text-align: right;
+                        display: inline-block;
                     }
 
-                    span.c_left,
+                    /*span.c_left,
                     span.c_right,
                     span.c_center {
                         display: inline-block;
-                    }
+                    }*/
 
                     /*****************
                     blackbox
@@ -1143,7 +1163,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1282,13 +1303,28 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
                     }
                     .green {
                         color: green;
@@ -1390,397 +1426,199 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
-        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/fileadmin/files/Logos/4Memory/Logo_NFDI4memory_RGB.png"></a>
+          </header>
     <div class="reveal">
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">International perspectives</h1>
-                    <h2 class="subtitle">ADHO SIG Multilingual DH</h2>
+          <h1 class="title">The global state state of digital
+history</h1>
+                    <h2 class="subtitle">Establishing data culture(s) in
+uncertain times</h2>
                     <div class="columns">
           <div class="column c_left c_left-align">
                       <p class="author">
-                          Till Grallert            </p>
-                                                <p class="institute">Humboldt-Universität
-zu Berlin</p>
-                            <p class="institute">Methods Innovation Lab
-(NFDI 4Memory)</p>
-                                          </div>
+                          Till Grallert (HU Berlin,
+NFDI4Memory)<sup></sup>, Torsten Hiltmann (HU Berlin,
+NFDI4Memory)<sup></sup>, Andrew Flinn (University College
+London)<sup></sup>, Min-Woo Lee (Andong National University)<sup></sup>,
+Ian Marino (Federal University of Juiz de Fora)<sup></sup>, Ian Milligan
+(U Waterloo)<sup></sup>, and Julianne Nyhan (TU
+Darmstadt)<sup></sup>            </p>
+                                      </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>Fostering Multilingual Practices and
-Research</span>
+                        <span>DH2025</span>
           </p>
-                                <p class="date">2023-11-24</p>
+                                <p class="date">2025-07-17</p>
                             </div>
       </div>
         </section>
-                
-        <section id="multilinguality-as-the-human-condition"
-        class="slide level2">
-        <h2>multilinguality as the human condition</h2>
-        <blockquote>
-        <p>Indigenous peoples have the right to revitalize, use, develop
-        and transmit to future generations their histories, languages,
-        oral traditions, philosophies, writing systems and literatures,
-        and to designate and retain their own names for communities,
-        places and persons.</p>
-        </blockquote>
-        <p><cite><span class="citation" data-cites="UNDRIP2007">(United
-        Nations <span>“UNDRIP”</span> 2007, sec. 13)</span><cite></p>
-        <aside class="notes">
-        <p>The human condition, historically, is one of multilinguality.
-        People speak different languages, dialects, sociolects etc. in
-        different contexts: at home, at work, at social gatherings, for
-        worship etc.. Sometimes we share a language with people across
-        geographic distances, just as in this meeting, and sometimes, we
-        do not understand our direct neighbours.</p>
-        </aside>
-        </section>
         <section>
-        <section id="main-challenges" class="title-slide slide level1">
-        <h1>Main Challenges</h1>
+        <section id="history-in-the-era-of-polycrisis"
+        class="title-slide slide level1">
+        <h1>History in the era of polycrisis</h1>
 
         </section>
-        <section
-        id="monolingualism-of-the-infrastructures-of-the-digital"
+        <section id="history-in-the-epoch-of-computationality"
         class="slide level2">
-        <h2>monolingualism of the infrastructures of the digital</h2>
-        <blockquote>
-        <p>HTML elements all have names that only use ASCII
-        alphanumerics</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="HTMLLivingStandard2023">(Web Hypertext Application
-        Technology Working Group <span>“HTML: Living Standard”</span>
-        2023, sec. 13.1.2)</span></cite></p>
+        <h2>History in the <em>epoch of computationality</em></h2>
         <div class="columns">
-        <div class="column">
-        <figure id="fig:zakham-ar-failure">
-        <img data-src="../../assets/dh/arabic_failure-browser.png"
-        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
-        <figcaption>Figure 1: Rendered HTML with the built-in default
-        CSS for <span class="citation"
-        data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
-        (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
-        test file is available <a
-        href="https://doi.org/10.5281/zenodo.7781543">online</a></figcaption>
-        </figure>
-        </div><div class="column">
-        <figure id="fig:html">
-        <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 1 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 2: HTML-Code for fig. 1 in Visual Code
-        Studio. By default, non-ASCII characters are visually
-        highlighted</figcaption>
-        </figure>
+        <div class="wide">
+        <p><strong>Datafication</strong> emphasises the epistemic shift
+        from a world where data were a closely defined part of the
+        output of research processes towards the new status quo in which
+        all research processes are always already computationally
+        mediated through information and communication technologies.</p>
+        </div><div class="narrow">
+        <p><span class="keyphrase">we live in <em>datafied</em>
+        societies</span></p>
         </div>
         </div>
-        </section>
-        <section
-        id="linguistic-imperialism-of-the-episteme-of-the-digital"
-        class="slide level2">
-        <h2>Linguistic imperialism of the episteme of the digital</h2>
-        <blockquote>
-        <p>‘Linguistic imperialism’ is shorthand for a multitude of
-        activities, ideologies, and structural relationships. Linguistic
-        imperialism takes place within an overarching structure of
-        asymmetrical North/ South relations, where language interlocks
-        with other dimensions, cultural (particularly in education,
-        science, and the media), economic and political</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Phillipson1997RealitiesAndMyths">(Phillipson
-        <span>“Realities and Myths of Linguistic Imperialism”</span>
-        1997, 239)</span></cite></p>
-        <blockquote>
-        <p>The basis for the codes, languages, methodologies, and
-        technical instruments of the digital humanities is English; the
-        written and spoken language of all the main conferences, the
-        most prestigious journals, the institutions that control the
-        discipline, the organizations and international consortia, and
-        the central authorities of knowledge is, with few exceptions,
-        some dialect of British or American English.</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Fiormonte+2021+TaxationagainstOverrepresentation">(Fiormonte
-        <span>“Taxation Against Overrepresentation?”</span> 2021,
-        334–35)</span></cite></p>
-        <aside class="notes">
-        <ul>
-        <li>UNDRIP: United Nations Declaration on the Rights of
-        Indigenous Peoples.</li>
-        <li>this ties back to the map I showed you at the very
-        beginning</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="absences-and-exclusions" class="slide level2">
-        <h2>Absences and exclusions</h2>
         <div class="columns">
-        <div class="column">
-        <figure id="fig:dh-centres">
-        <img data-src="../../assets/dh/map_dhcenters.png"
-        alt="Global distribution of DH centres. Source: DH centerNet" />
-        <figcaption>Figure 3: Global distribution of DH centres. Source:
-        <a href="http://dhcenternet.org/centers">DH
-        centerNet</a></figcaption>
-        </figure>
-        </div><div class="column">
-        <!-- <iframe src="https://hcommons.social/@dh_potsdam/110696533309515172/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe> -->
-        <figure id="fig:map-dh2023">
-        <img data-src="../../assets/maps/map_dh2023.jpeg"
-        alt="Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
-        <figcaption>Figure 4: Global distribution of attendees at DH2023
-        in Graz. Source: <a
-        href="https://digitalcourage.social/@dh_potsdam@hcommons.social/110696533594288097"><span
-        class="citation" data-cites="Potsdam2023GeographyDH2023">Digital
-        Humanities Uni Potsdam and @dh_potsdam@hcommons.social
-        (<span>“The Geography of #DH2023 Participants ...”</span>
-        2023)</span></a></figcaption>
-        </figure>
+        <div class="narrow">
+        <p><span class="keyphrase"><em>algorithms</em> as part of the
+        social fabric</span></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>Today, algorithms are such an intrinsic and fundamental part
+        of how daily life is experienced that some scholars even argue
+        that we live in “algorithmic cultures” […]. This evocative
+        notion points to the increasing difficulty of separating
+        algorithms from the activities that make up culture. It also
+        evinces the complex ways in which human agency and algorithmic
+        actions are intertwined […]</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Siles2023Living">Siles (<em>Living with
+        <span>Algorithms</span></em> 2023)</span>, 1</cite></p>
         </div>
         </div>
         <aside class="notes">
         <ul>
-        <li>these distributions illustrate the gaps shown before</li>
-        <li>access to infrastructures of the digital is limited in the
-        Arabic world</li>
-        <li>support for Arabic is limited in the digital</li>
-        <li>I should also show a map of migrations showing the massive
-        exodus from the Arabic speaking regions of the world
-        <ul>
-        <li>significant brain drain contributes to these absences</li>
-        </ul></li>
+        <li>“epoch of computationality” orginates with Berry</li>
+        <li>Digital history, then, accepts that the human cultural
+        record is being <em>datafied</em> and we need computational
+        methods in order to make historical arguments <span
+        class="citation"
+        data-cites="DigitalHistoryArgument2017 Laessig2021DigitalHistory">(cf.
+        Arguing with Digital History working group <span>‘Digital
+        <span>History</span> and <span>Argument</span>’</span> 2017, 2;
+        Lässig <span>‘Digital History’</span> 2021, 6)</span></li>
+        <li>Digital history also addresses the age of abundance, as
+        postulated by Roy Rosenzweig, and epitomised by the recent
+        advances in generative AI and LLMs, which will create an
+        infinite amount of absolutely plausible and convincing yet
+        utterly false sources</li>
         </ul>
         </aside>
+        </section>
+        <section id="history-in-the-age-of-generative-ai"
+        class="slide level2">
+        <h2>History in the age of generative AI</h2>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">forensics and critical code studies
+        as the new source criticism?</span></p>
+        </div><div class="column">
+        <p>any narrative about events past, present or future can be
+        supported with an infinite number of absolutely plausible and
+        consistent synthetic sources across all media</p>
+        </div>
+        </div>
+        </section>
+        <section id="history-as-an-academic-discipline"
+        class="slide level2">
+        <h2>History as an academic discipline</h2>
+        <div class="columns">
+        <div class="column">
+        <p>History has an important societal function, yet the disciplin
+        is in decline around the globe and across all metrics.</p>
+        </div><div class="column">
+        <p><span class="keyphrase">The world hasn’t always been like
+        this. Change is possible!</span></p>
+        </div>
+        </div>
         </section></section>
         <section>
-        <section id="best-practices" class="title-slide slide level1">
-        <h1>Best practices</h1>
+        <section id="establishing-data-cultures"
+        class="title-slide slide level1">
+        <h1>establishing data culture(s)</h1>
 
         </section>
-        <section id="minimal-computing" class="slide level2">
-        <h2>Minimal computing</h2>
-        <blockquote>
-        <p>minimal computing connotes digital humanities work undertaken
-        in the context of some set of constraints. This could include
-        lack of access to hardware or software, network capacity,
-        technical education, or even a reliable power grid</p>
-        </blockquote>
-        <p><cite><span class="citation"
-        data-cites="RisamGil2022Introduction">(Risam and Gil
-        <span>“Introduction: The Questions of Minimal Computing”</span>
-        2022, sec. 3)</span></cite></p>
-        <blockquote>
-        <p>this implies learning how to produce, disseminate, and
-        preserve digital scholarship ourselves, <strong>without the help
-        we can’t get</strong>, even as we fight to build the
-        infrastructures we need at the intersection of, with, and beyond
-        institutional libraries and schools.</p>
-        </blockquote>
-        <p><cite><span class="citation" data-cites="Gil+2016">(Gil and
-        Ortega <span>“Global Outlooks in Digital Humanities”</span>
-        2016, 29)</span></cite></p>
-        <aside class="notes">
-        <ul>
-        <li>minimal computing is a result of GO::DH and events and
-        conditions in Cuba</li>
-        <li>Alex Gil’s ideas resonated with me, upon meeting in Beirut
-        in April 2015</li>
-        </ul>
-        </aside>
-        </section>
-        <section id="minimal-computing-1" class="slide level2">
-        <h2><em>minimal</em> computing?</h2>
-        <!-- add images -->
-        <div class="columns">
-        <div class="column">
-        <h3 id="from-a-position-of-privilege">from a position of
-        privilege</h3>
-        <ul>
-        <li>minimalism as an end in itself
-        <ul>
-        <li>destroying resources already at hand</li>
-        <li>fashion</li>
-        <li>purist principles</li>
-        </ul></li>
-        </ul>
-        <figure id="fig:bulthaupt">
-        <img data-src="../../assets/dh/bulthaupt.png"
-        alt="Screenshot of a website selling luxury kitchens" />
-        <figcaption>Figure 5: Screenshot of a <a
-        href="https://bulthaup.com/en/b3/">website</a> selling luxury
-        kitchens</figcaption>
-        </figure>
-        </div><div class="column">
-        <h3 id="from-a-position-of-exclusion">from a position of
-        exclusion</h3>
-        <ul>
-        <li>minimalism as a means to an end
-        <ul>
-        <li>balance our needs against the resources at hand</li>
-        <li>acknowledge the inevitable impact of our actions</li>
-        <li>minimal computing as <em>meaningful</em> computing</li>
-        </ul></li>
-        </ul>
-        <figure id="fig:bauhaus">
-        <img
-        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
-        alt="Frankfurter Kitchen, Source: WikiCommons, CCO" />
-        <figcaption>Figure 6: Frankfurter Kitchen, Source: <a
-        href="../../assets/dh/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
-        CCO</a></figcaption>
-        </figure>
-        </div>
-        </div>
-        <aside class="notes">
+        <section id="establishing-data-cultures-1" class="slide level2">
+        <h2>establishing data culture(s)</h2>
+        <p>we strongly believe that we need to build a new and resilient
+        <em>data culture</em> across all disciplinary (and social)
+        domains. Such a <em>data culture</em> would help us to address
+        the new episteme</p>
         <ol type="1">
-        <li>minimalism as an end
-        <ul>
-        <li>resource-intensive</li>
-        <li>example: Mary Condo</li>
-        <li>example: purist computing infrastructures
-        <ul>
-        <li>you got to run your own server and never use evil
-        platforms</li>
-        </ul></li>
-        </ul></li>
-        <li>minimalism as a means to an end
-        <ul>
-        <li>meaningful connectivity</li>
-        <li>original Bauhaus / modernist design:
-        <ul>
-        <li>form follows function to
-        <ul>
-        <li>decrease the cost of industrial production</li>
-        <li>increase the material benefits of the expended
-        resources</li>
-        </ul></li>
-        </ul></li>
-        </ul></li>
+        <li>through a theoretically-grounded understanding of the
+        fundamental epistemological and hermeneutical affordances of the
+        post-digital moment;</li>
+        <li>through developing the necessary quotidian practices, skill
+        sets, and disciplinary protocols;</li>
+        <li>and through negotiating new understandings of history as a
+        discipline of societal and cultural relevance.</li>
         </ol>
-        </aside>
         </section>
-        <section id="minimal-computing-2" class="slide level2">
-        <h2>minimal <em>computing</em>?</h2>
-        <div class="columns">
-        <div class="column">
-        <ul>
-        <li>use what we already know</li>
-        <li>use what we can afford long-term</li>
-        <li>do not impose unnecessary costs on our users</li>
-        <li>do not waste resources to the detriment of our planet</li>
-        </ul>
-        </div><div class="column">
-        <ul>
-        <li>learn techniques new to us</li>
-        <li>develop skills</li>
-        <li>grow communities: let us come together across languages and
-        scripts at DH2024</li>
-        </ul>
-        </div>
-        </div>
-        <aside class="notes">
-        <ul>
-        <li>first column
-        <ul>
-        <li>proven technologies and established standards</li>
-        <li>not the latest framework
-        <ul>
-        <li>think of what we do as space travel: Voyager I and II are
-        still functioning with rudimentary computing powers</li>
-        </ul></li>
-        <li>flat technology stacks</li>
-        <li>nothing shiny</li>
-        </ul></li>
-        </ul>
-        </aside>
-        </section></section>
-        <section>
-        <section id="thank-you" class="title-slide slide level1">
-        <h1>thank you!</h1>
-
-        </section>
-        <section id="bibliography" class="slide level2 unnumbered">
-        <h2 class="unnumbered">bibliography</h2>
+        <section id="references" class="slide level2 unnumbered">
+        <h2 class="unnumbered">references</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
-        role="list">
-        <div id="ref-Potsdam2023GeographyDH2023" class="csl-entry"
+        data-entry-spacing="0" role="list">
+        <div id="ref-DigitalHistoryArgument2017" class="csl-entry"
         role="listitem">
-        Digital Humanities Uni Potsdam, and @dh_potsdam@hcommons.social.
-        2023. <span>“The Geography of #DH2023 Participants ...”</span>
-        Mastodon post. <em>Mastodon</em>. <a
-        href="https://hcommons.social/@dh_potsdam/110696533594288097">https://hcommons.social/@dh_potsdam/110696533594288097</a>.
+        Arguing with Digital History working group. 2017. <span>‘Digital
+        <span>History</span> and <span>Argument</span>’</span>. White
+        paper. <a
+        href="https://rrchnm.org/argument-white-paper/">https://rrchnm.org/argument-white-paper/</a>.
         </div>
-        <div id="ref-Fiormonte+2021+TaxationagainstOverrepresentation"
-        class="csl-entry" role="listitem">
-        Fiormonte, Domenico. 2021. <span>“Taxation Against
-        Overrepresentation? The Consequences of Monolingualism for
-        Digital Humanities.”</span> In <em>Alternative Historiographies
-        of the Digital Humanities</em>, edited by Dorothy Kim and
-        Adeline Koh, 333–76. Earth: punctum books. <a
-        href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
-        </div>
-        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
-        Gil, Alex, and Élika Ortega. 2016. <span>“Global Outlooks in
-        Digital Humanities: Multilingual Practices and Minimal
-        Computing.”</span> In <em>Doing Digital Humanities: Practice,
-        Training, Research</em>, edited by Constance Crompton, Richard J
-        Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
-        </div>
-        <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+        <div id="ref-Laessig2021DigitalHistory" class="csl-entry"
         role="listitem">
-        Phillipson, Robert. 1997. <span>“Realities and Myths of
-        Linguistic Imperialism.”</span> <em>Journal of Multilingual and
-        Multicultural Development</em> 18 (3): 238–48. <a
-        href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        Lässig, Simone. 2021. <span>‘Digital History: Challenges and
+        Opportunities for the Profession’</span>. <em>Geschichte und
+        Gesellschaft</em> 47 (1): 5–34. <a
+        href="https://doi.org/gkhrjp">https://doi.org/gkhrjp</a>.
         </div>
-        <div id="ref-RisamGil2022Introduction" class="csl-entry"
-        role="listitem">
-        Risam, Roopika, and Alex Gil. 2022. <span>“Introduction: The
-        Questions of Minimal Computing.”</span> Edited by Alex Gil and
-        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
-        "Minimal Computing"). <a
-        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
-        </div>
-        <div id="ref-UNDRIP2007" class="csl-entry" role="listitem">
-        United Nations. 2007. <span>“United Nations Declaration on the
-        Rights of Indigenous Peoples.”</span> A/RES/61/295. United
-        Nations. <a
-        href="https://undocs.org/A/RES/61/295">https://undocs.org/A/RES/61/295</a>.
-        </div>
-        <div id="ref-HTMLLivingStandard2023" class="csl-entry"
-        role="listitem">
-        Web Hypertext Application Technology Working Group. 2023.
-        <span>“HTML: Living Standard.”</span> March 24, 2023. <a
-        href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
-        </div>
-        <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
-        class="csl-entry" role="listitem">
-        Zakham, Yūsuf. 1907. <span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span>
-        [America and Arab Scholars]. <em>al-Muqtabas</em> 2 (1),
-        February 14, 1907. <a
-        href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
+        <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
+        Siles, Ignacio. 2023. <em>Living with <span>Algorithms</span>:
+        <span>Agency</span> and <span>User Culture</span> in <span>Costa
+        Rica</span></em>. Boston: MIT Press.
         </div>
         </div>
         </section></section>
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="../../assets/revealjs/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
+    <script src="../../assets/revealjs/plugin/search/search.js"></script>
+    <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
     
     <script>
 
@@ -1957,9 +1795,9 @@ Research</span>
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2023-11-24</span>
+                    <span class="c_left">2025-07-17</span>
                             <span class="c_left">|</span>
-            <span class="c_left">Till Grallert</span>
+            <span class="c_left">NFDI4Memory</span>
                         <!-- this should probably moved to the title slide only -->
         <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
         </div>

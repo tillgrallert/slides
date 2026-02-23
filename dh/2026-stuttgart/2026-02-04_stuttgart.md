@@ -810,7 +810,7 @@ DFG-Projekt "Future e-Research Support in the Humanities II" an der UB der Humbo
     - Anerkennung der unausweichlichen Folgen unserer Handlungen
     - minimal computing als *meaningful* computing
 
-![Frankfurter Küche, Quelle: [WikiCommons, CCO](https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
+![Frankfurter Küche, Quelle: [WikiCommons, CCO](../../assets/dh/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg){#fig:bauhaus}
 
 ::::
 :::

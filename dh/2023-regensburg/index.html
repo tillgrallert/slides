@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -21,14 +21,18 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
       /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
       pre > code.sourceCode { white-space: pre; position: relative; }
       pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -96,6 +100,7 @@
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
+        margin-bottom: 0em;
       }
       .hanging-indent div.csl-entry {
         margin-left:2em;
@@ -112,7 +117,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -199,20 +204,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -280,8 +290,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -289,14 +299,21 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
-                    div.slide {
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -325,17 +342,11 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th {
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -363,6 +374,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -653,12 +667,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -669,7 +687,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -691,6 +709,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -736,7 +755,7 @@
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 33%;
+                        width: 31%;
                         position: relative;
                         float: left;
                     }
@@ -1204,7 +1223,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1343,13 +1363,28 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
                     }
                     .green {
                         color: green;
@@ -1451,13 +1486,30 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+                  <a href="https://tillgrallert.github.io/slides/dh/2023-regensburg/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tillgrallert.github.io/slides/dh/2023-regensburg/"></a>
+            </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1500,9 +1552,9 @@ Makerspace</p>
         <figure id="fig:network-authors">
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
-        alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
-        <figcaption>Figure 1: Undirected network of authors in
-        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        alt="Figure 1: Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption aria-hidden="true">Figure 1: Undirected network of
+        authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
         betweenness centrality; size of nodes: number of periodicals;
         width of edges: number of articles.</figcaption>
@@ -1538,22 +1590,22 @@ Makerspace</p>
         <figure id="fig:network-periodicals">
         <img
         data-src="https://tillgrallert.github.io/slides/assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
-        alt="Directed network of periodical titles mentioned in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr; weighted by issues. Colour and size of nodes: in-degree." />
-        <figcaption>Figure 2: Directed network of periodical titles
-        mentioned in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
-        al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em>;
-        weighted by issues. Colour and size of nodes:
-        in-degree.</figcaption>
+        alt="Figure 2: Directed network of periodical titles mentioned in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr; weighted by issues. Colour and size of nodes: in-degree." />
+        <figcaption aria-hidden="true">Figure 2: Directed network of
+        periodical titles mentioned in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>,
+        <em>al-Muqtabas</em>, and <em>al-Zuhūr</em>; weighted by issues.
+        Colour and size of nodes: in-degree.</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:map-referenced">
         <img
         data-src="../../assets/OpenArabicPE/maps/map-data-set-referenced-periodicals-med-na_mapped.png"
-        alt="Map of publication places for the periodical titles mentioend in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas" />
-        <figcaption>Figure 3: Map of publication places for the
-        periodical titles mentioend in <em>al-Ḥaqāʾiq</em>,
-        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and
-        <em>al-Muqtabas</em></figcaption>
+        alt="Figure 3: Map of publication places for the periodical titles mentioend in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas" />
+        <figcaption aria-hidden="true">Figure 3: Map of publication
+        places for the periodical titles mentioend in
+        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        al-ʿArab</em>, and <em>al-Muqtabas</em></figcaption>
         </figure>
         </div>
         </div>
@@ -1698,10 +1750,10 @@ Makerspace</p>
         <figure id="fig:power-baghdad">
         <img
         data-src="/Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/images/tweet_%20627223846244847616.png"
-        alt="Protestor in Baghdad, 31. July 2015, holding sign “darling, you are as beautiful as an additional hour of electricity”. Source: Twitter" />
-        <figcaption>Figure 4: Protestor in Baghdad, 31. July 2015,
-        holding sign “darling, you are as beautiful as an additional
-        hour of electricity”. Source: <a
+        alt="Figure 4: Protestor in Baghdad, 31. July 2015, holding sign “darling, you are as beautiful as an additional hour of electricity”. Source: Twitter" />
+        <figcaption aria-hidden="true">Figure 4: Protestor in Baghdad,
+        31. July 2015, holding sign “darling, you are as beautiful as an
+        additional hour of electricity”. Source: <a
         href="https://twitter.com/aya_mansour_11_/status/627223846244847616">Twitter</a></figcaption>
         </figure>
         </div>
@@ -1784,18 +1836,18 @@ Makerspace</p>
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
         height="300"
-        alt="In-browser search for “مك” on the Wikidata item page for Mecca (Q5806)" />
-        <figcaption>Figure 5: In-browser search for “مك” on the Wikidata
-        item page for Mecca (<a
+        alt="Figure 5: In-browser search for “مك” on the Wikidata item page for Mecca (Q5806)" />
+        <figcaption aria-hidden="true">Figure 5: In-browser search for
+        “مك” on the Wikidata item page for Mecca (<a
         href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
         </figure>
         </div><div class="column">
         <!-- ![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in Latinised transcription;  green = German metadata](/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/translatio_interface-languages_annotated.png){#fig:translatio-interface} -->
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/arabic_failure-browser.png"
-        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
-        <figcaption>Figure 6: Rendered HTML with the built-in default
-        CSS for <span class="citation"
+        alt="Figure 6: Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
+        <figcaption aria-hidden="true">Figure 6: Rendered HTML with the
+        built-in default CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
         test file is available <a
@@ -1803,10 +1855,10 @@ Makerspace</p>
         </figure>
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 6 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 7: HTML-Code for fig. 6 in Visual Code
-        Studio. By default, non-ASCII characters are visually
-        highlighted</figcaption>
+        alt="Figure 7: HTML-Code for fig. 6 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption aria-hidden="true">Figure 7: HTML-Code for fig. 6 in
+        Visual Code Studio. By default, non-ASCII characters are
+        visually highlighted</figcaption>
         </figure>
         </div>
         </div>
@@ -1852,16 +1904,16 @@ Makerspace</p>
         <figure id="fig:holding-map">
         <img
         data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png"
-        alt="Periodicals and their holding institutions" />
-        <figcaption>Figure 8: Periodicals and their holding
-        institutions</figcaption>
+        alt="Figure 8: Periodicals and their holding institutions" />
+        <figcaption aria-hidden="true">Figure 8: Periodicals and their
+        holding institutions</figcaption>
         </figure>
         </div><div class="column">
         <div id="tbl:jaraid-holdings">
         <table>
         <caption>Table 1: Periodical holdings and digitization</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th style="text-align: left;">periodicals</th>
         <th style="text-align: right;">–1918</th>
         <th style="text-align: right;"></th>
@@ -1870,21 +1922,21 @@ Makerspace</p>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">published</td>
         <td style="text-align: right;">2054</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">3550</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">known holdings</td>
         <td style="text-align: right;">540</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">775</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">26.29</td>
@@ -1892,21 +1944,21 @@ Makerspace</p>
         <td style="text-align: right;"><span
         class="red">21.83</span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">digitized</td>
         <td style="text-align: right;">156</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">233</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">7.59</td>
@@ -1914,28 +1966,28 @@ Makerspace</p>
         <td style="text-align: right;"><span
         class="red">6.56</span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">multiple digitisations</td>
         <td style="text-align: right;">51</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">66</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">2.48</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">1.86</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of digitised</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">32.69</td>
@@ -1974,7 +2026,7 @@ Makerspace</p>
         <col style="width: 60%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th></th>
         <th>Arabic periodicals (1798–1918)</th>
         <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian
@@ -1982,32 +2034,32 @@ Makerspace</p>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>community</td>
         <td>c. 420 million Arabic speakers</td>
         <td>c. 6.2 million inhabitants</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>periodicals</td>
         <td>2054 newspapers and journals</td>
         <td>125 newspapers</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>digitized</td>
         <td>156 periodicals</td>
         <td>125 newspapers with more than 1.5 million pages</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>type</td>
         <td>mostly facsimiles</td>
         <td>facsimiles and full text</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>access</td>
         <td>paywalls, geo-fencing</td>
         <td>open access</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>interface</td>
         <td>mostly foreign languages only</td>
         <td>local and foreign languages</td>
@@ -2026,8 +2078,8 @@ Makerspace</p>
         <figure id="fig:muqtabas-6-2-shamela">
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
-        alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 9: <span class="citation"
+        alt="Figure 9: al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
+        <figcaption aria-hidden="true">Figure 9: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
@@ -2037,9 +2089,9 @@ Makerspace</p>
         <figure id="fig:muqtabas-6-2-133-eap">
         <img
         data-src="../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg"
-        alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
-        <figcaption>Figure 10: Facsimile of the same section of <span
-        class="citation"
+        alt="Figure 10: Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
+        <figcaption aria-hidden="true">Figure 10: Facsimile of the same
+        section of <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
         href="https://eap.bl.uk/">EAP</a></figcaption>
@@ -2107,7 +2159,7 @@ Makerspace</p>
         <col style="width: 22%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Font Type</th>
         <th style="text-align: right;">Sakhr (%)</th>
         <th style="text-align: right;">ABBYY (%)</th>
@@ -2116,7 +2168,7 @@ Makerspace</p>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>Traditional Arabic</td>
         <td style="text-align: right;">48.54</td>
         <td style="text-align: right;">67.66</td>
@@ -2124,28 +2176,28 @@ Makerspace</p>
         class="green"><strong>51.88</strong></span></td>
         <td style="text-align: right;">47.04</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Tahoma</td>
         <td style="text-align: right;">10.52</td>
         <td style="text-align: right;">69.91</td>
         <td style="text-align: right;">26.38</td>
         <td style="text-align: right;">38.37</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Simplified Arabic</td>
         <td style="text-align: right;">52.97</td>
         <td style="text-align: right;">67.69</td>
         <td style="text-align: right;">44.94</td>
         <td style="text-align: right;">46.75</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>M Unicode Sara</td>
         <td style="text-align: right;">36.03</td>
         <td style="text-align: right;">59.40</td>
         <td style="text-align: right;">25.92</td>
         <td style="text-align: right;">33.72</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Diwani letter</td>
         <td style="text-align: right;"><span
         class="red"><strong>18.13</strong></span></td>
@@ -2156,21 +2208,21 @@ Makerspace</p>
         <td style="text-align: right;"><span
         class="red"><strong>23.32</strong></span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>DecoType Thuluth</td>
         <td style="text-align: right;">36.12</td>
         <td style="text-align: right;">37.71</td>
         <td style="text-align: right;">24.26</td>
         <td style="text-align: right;">32.48</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Deco’Type Naskh</td>
         <td style="text-align: right;">48.88</td>
         <td style="text-align: right;">50.22</td>
         <td style="text-align: right;">41.63</td>
         <td style="text-align: right;">40.92</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Arabic transparent</td>
         <td style="text-align: right;">51.56</td>
         <td style="text-align: right;"><span
@@ -2179,14 +2231,14 @@ Makerspace</p>
         <td style="text-align: right;"><span
         class="green"><strong>48.61</strong></span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Andalus</td>
         <td style="text-align: right;">28.07</td>
         <td style="text-align: right;">37.53</td>
         <td style="text-align: right;">21.68</td>
         <td style="text-align: right;">25.34</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>AdvertisingBold</td>
         <td style="text-align: right;"><span
         class="green"><strong>57.35</strong></span></td>
@@ -2202,9 +2254,9 @@ Makerspace</p>
         <figure id="fig:gpa-ocr">
         <img
         data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
-        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 11: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
-        p.1 on <a
+        alt="Figure 11: al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
+        <figcaption aria-hidden="true">Figure 11: <em>al-Bashīr</em> 9
+        Jan. 1880 (#487), p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
         </figure>
@@ -2258,7 +2310,7 @@ Makerspace</p>
         <col style="width: 22%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>ID</th>
         <th>ground truth</th>
         <th style="text-align: right;">words</th>
@@ -2269,7 +2321,7 @@ Makerspace</p>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>15946</td>
         <td><em>al-Ustādh</em></td>
         <td style="text-align: right;">192829</td>
@@ -2279,7 +2331,7 @@ Makerspace</p>
         <td style="text-align: right;"><span
         class="green"><strong>2.09</strong></span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>13864</td>
         <td><em>al-Muqtabas</em></td>
         <td style="text-align: right;">11116</td>
@@ -2308,8 +2360,8 @@ Makerspace</p>
         <p>No Arabic script</p>
         <figure id="fig:zdb-ar">
         <img data-src="../../assets/jaraid/zdb_janna-ar.png"
-        alt="Search in ZDB for “الجنة”" />
-        <figcaption>Figure 12: Search in <a
+        alt="Figure 12: Search in ZDB for “الجنة”" />
+        <figcaption aria-hidden="true">Figure 12: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=الجنة">ZDB</a> for
         “الجنة”</figcaption>
         </figure>
@@ -2318,8 +2370,8 @@ Makerspace</p>
         <p>Which Latinized transcription was used?</p>
         <figure id="fig:zdb-dmg">
         <img data-src="../../assets/jaraid/zdb_janna-ar-Latn.png"
-        alt="Search in ZDB for “al-Ǧanna”" />
-        <figcaption>Figure 13: Search in <a
+        alt="Figure 13: Search in ZDB for “al-Ǧanna”" />
+        <figcaption aria-hidden="true">Figure 13: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=al-Ǧanna">ZDB</a> for
         “al-Ǧanna”</figcaption>
         </figure>
@@ -2329,8 +2381,8 @@ Makerspace</p>
         algorithm?</p>
         <figure id="fig:zdb-functional">
         <img data-src="../../assets/jaraid/zdb_janna-ar-Latn-no-al.png"
-        alt="Search in ZDB for “Ganna”" />
-        <figcaption>Figure 14: Search in <a
+        alt="Figure 14: Search in ZDB for “Ganna”" />
+        <figcaption aria-hidden="true">Figure 14: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Ganna">ZDB</a> for
         “Ganna”</figcaption>
         </figure>
@@ -2354,8 +2406,8 @@ Makerspace</p>
         <figure id="fig:translatio-interface">
         <img
         data-src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png"
-        alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 15: Interface of the <a
+        alt="Figure 15: Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
+        <figcaption aria-hidden="true">Figure 15: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -2372,17 +2424,18 @@ Makerspace</p>
         <div class="column">
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
-        alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 16: <em>al-Muqtabas</em> 6 on <a
+        alt="Figure 16: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 16: <em>al-Muqtabas</em> 6
+        on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
-        alt="The page from fig. 16 with a US-IP" />
-        <figcaption>Figure 17: The page from fig. 16 with a
-        US-IP</figcaption>
+        alt="Figure 17: The page from fig. 16 with a US-IP" />
+        <figcaption aria-hidden="true">Figure 17: The page from fig. 16
+        with a US-IP</figcaption>
         </figure>
         </div>
         </div>
@@ -2516,8 +2569,8 @@ Makerspace</p>
         </ul>
         <figure id="fig:bulthaupt">
         <img data-src="../../assets/dh/bulthaupt.png"
-        alt="Screenshot of a website selling luxury kitchens" />
-        <figcaption>Figure 18: Screenshot of a <a
+        alt="Figure 18: Screenshot of a website selling luxury kitchens" />
+        <figcaption aria-hidden="true">Figure 18: Screenshot of a <a
         href="https://bulthaup.com/en/b3/">website</a> selling luxury
         kitchens</figcaption>
         </figure>
@@ -2535,9 +2588,10 @@ Makerspace</p>
         <figure id="fig:bauhaus">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg/450px-SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg?uselang=de"
-        alt="Frankfurter Kitchen, Source: WikiCommons, CCO" />
-        <figcaption>Figure 19: Frankfurter Kitchen, Source: <a
-        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        alt="Figure 19: Frankfurter Kitchen, Source: WikiCommons, CCO" />
+        <figcaption aria-hidden="true">Figure 19: Frankfurter Kitchen,
+        Source: <a
+        href="../../assets/dh/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
         CCO</a></figcaption>
         </figure>
         </div>
@@ -2622,9 +2676,10 @@ Makerspace</p>
         <ul>
         <li>unite <strong>existing</strong> gray transcriptions with
         digital facsimiles</li>
-        <li>learn from free and open-source software development
-        <!-- - model everything to make components citable
-        - harvest, generate, validate and share open metadata --></li>
+        <li>learn from free and open-source software development &lt;!–
+        - model everything to make components citable</li>
+        <li>harvest, generate, validate and share open metadata
+        –&gt;</li>
         </ul>
         <h3 id="minimal-computing-principles">minimal computing
         principles</h3>
@@ -2709,11 +2764,11 @@ Makerspace</p>
         </div><div class="column">
         <p>EPub (HTML) for <em>al-Zuhūr</em> 2(4) from shamela.ws</p>
         <div class="sourceCode" id="cb1"><pre
-        class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">dir</span><span class="ot">=</span><span class="st">&quot;rtl&quot;</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;book-container&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;hr/&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;a</span> <span class="er">id</span><span class="ot">=</span><span class="st">&#39;C232&#39;</span><span class="kw">&gt;&lt;/a&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>صحافة سورية ولبنان<span class="kw">&lt;/span&gt;&lt;br</span> <span class="kw">/&gt;&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;red&quot;</span><span class="kw">&gt;</span>3 - <span class="kw">&lt;/span&gt;</span>المجلات<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+        class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> dir</span><span class="op">=</span><span class="st">&quot;rtl&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;book-container&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">hr</span><span class="dt">/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> id</span><span class="op">=</span><span class="st">&#39;C232&#39;</span><span class="dt">&gt;&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;title&quot;</span><span class="dt">&gt;</span>صحافة سورية ولبنان<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;red&quot;</span><span class="dt">&gt;</span>3 - <span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>المجلات<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
         <p>OCR output from Transkribus for <em>al-Ḥasnāʾ</em> (PAGE
         XML)</p>
         <div class="sourceCode" id="cb2"><pre
@@ -2822,9 +2877,10 @@ Makerspace</p>
         </ul>
         <figure id="fig:zuhur-vscode">
         <img data-src="../../assets/OpenArabicPE/vscode_zuhur.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
-        <figcaption>Figure 20: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        alt="Figure 20: The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption aria-hidden="true">Figure 20: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://code.visualstudio.com/">Visual Studio
         Code</a></figcaption>
         </figure>
         <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../../assets/OpenArabicPE/sublime_zuhur.png) -->
@@ -2849,10 +2905,11 @@ Makerspace</p>
         <figure id="fig:zuhur-oxygen">
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 21: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
-        mode. Styling relies on CSS.</figcaption>
+        alt="Figure 21: The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 21: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
+        Styling relies on CSS.</figcaption>
         </figure>
         </div>
         </div>
@@ -2888,9 +2945,9 @@ Makerspace</p>
         </div><div class="column">
         <figure id="fig:zuhur-zenodo">
         <img data-src="../../assets/OpenArabicPE/zenodo_zuhur.png"
-        alt="Archived release of al-Zuhūr on Zenono" />
-        <figcaption>Figure 22: Archived release of <em>al-Zuhūr</em> on
-        <a
+        alt="Figure 22: Archived release of al-Zuhūr on Zenono" />
+        <figcaption aria-hidden="true">Figure 22: Archived release of
+        <em>al-Zuhūr</em> on <a
         href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
         </figure>
         </div>
@@ -2933,16 +2990,16 @@ Makerspace</p>
         <figure id="fig:zuhur-zotero">
         <img
         data-src="../../assets/OpenArabicPE/zotero-group_openarabicpe-mobile-details_small.png"
-        alt="Zotero group “OpenArabicPE”: details in mobile view" />
-        <figcaption>Figure 23: Zotero group “<a
+        alt="Figure 23: Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption aria-hidden="true">Figure 23: Zotero group “<a
         href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
         details in mobile view</figcaption>
         </figure>
         <figure id="fig:zuhur-webview">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_2-i_4_small.png"
-        alt="Webview of al-Zuhūr 2(4)" />
-        <figcaption>Figure 24: <a
+        alt="Figure 24: Webview of al-Zuhūr 2(4)" />
+        <figcaption aria-hidden="true">Figure 24: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
         of <em>al-Zuhūr</em> 2(4)</a></figcaption>
         </figure>
@@ -2993,7 +3050,7 @@ Makerspace</p>
         <col style="width: 3%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Title</th>
         <th>Place</th>
         <th>Proprietor</th>
@@ -3005,7 +3062,7 @@ Makerspace</p>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
         <td>Damascus</td>
@@ -3017,7 +3074,7 @@ Makerspace</p>
         <td style="text-align: right;">389</td>
         <td style="text-align: right;">298090</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
         <td>Beirut</td>
@@ -3029,7 +3086,7 @@ Makerspace</p>
         <td style="text-align: right;">201</td>
         <td style="text-align: right;">NA</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
         <td>Cairo</td>
@@ -3040,7 +3097,7 @@ Makerspace</p>
         <td style="text-align: right;">4300</td>
         <td style="text-align: right;">6144593</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
         <td>Cairo, Damascus</td>
@@ -3052,7 +3109,7 @@ Makerspace</p>
         <td style="text-align: right;">2964</td>
         <td style="text-align: right;">1981081</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
         <td>Cairo</td>
@@ -3064,7 +3121,7 @@ Makerspace</p>
         <td style="text-align: right;">435</td>
         <td style="text-align: right;">221447</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
         <td>Cairo</td>
@@ -3076,7 +3133,7 @@ Makerspace</p>
         <td style="text-align: right;">436</td>
         <td style="text-align: right;">292333</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat
         al-ʿArab</a></td>
@@ -3089,7 +3146,7 @@ Makerspace</p>
         <td style="text-align: right;">939</td>
         <td style="text-align: right;">373832</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><strong>total</strong></td>
         <td></td>
         <td></td>
@@ -3129,17 +3186,17 @@ Makerspace</p>
         <figure id="fig:muq-eap">
         <img
         data-src="../../assets/OpenArabicPE/eap_muqtabas-v_5-i_7-p_463.jpg"
-        alt="facsimile of the original from EAP" />
-        <figcaption>Figure 25: facsimile of the original from
-        EAP</figcaption>
+        alt="Figure 25: facsimile of the original from EAP" />
+        <figcaption aria-hidden="true">Figure 25: facsimile of the
+        original from EAP</figcaption>
         </figure>
         </div>
         <div class="column">
         <figure id="fig:muq-shamela">
         <img
         data-src="../../assets/OpenArabicPE/shamela_muqtabas-i_54-p_30-31.png"
-        alt="digital text on shamela.ws" />
-        <figcaption>Figure 26: digital text on
+        alt="Figure 26: digital text on shamela.ws" />
+        <figcaption aria-hidden="true">Figure 26: digital text on
         <em>shamela.ws</em></figcaption>
         </figure>
         </div>
@@ -3147,8 +3204,8 @@ Makerspace</p>
         <figure id="fig:muq-fakesimile">
         <img
         data-src="../../assets/OpenArabicPE/sakhrit_muqtabas-v_5-i_7-p_605.jpg"
-        alt="“fakesimile” from arshīf al-majallāt […] al-ʿarabiyya" />
-        <figcaption>Figure 27: “fakesimile” from <a
+        alt="Figure 27: “fakesimile” from arshīf al-majallāt […] al-ʿarabiyya" />
+        <figcaption aria-hidden="true">Figure 27: “fakesimile” from <a
         href="https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG"><em>arshīf
         al-majallāt […] al-ʿarabiyya</em></a></figcaption>
         </figure>
@@ -3174,9 +3231,13 @@ Makerspace</p>
         <li>XSLT1 in web browsers: will fall victim to JSON and security
         features
         <ul>
-        <li>over the last 5 years support has markedly decreased
-        <!-- - Full-text search across issues and periodicals without a backend
-          + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) --></li>
+        <li>over the last 5 years support has markedly decreased &lt;!–
+        - Full-text search across issues and periodicals without a
+        backend</li>
+        <li><a
+        href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
+        programmable search engines</a>: requires internet connection
+        (and Google account!) –&gt;</li>
         </ul></li>
         </ul>
         </div><div class="column">
@@ -3247,13 +3308,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         <section id="refs" class="slide level2 unnumbered">
         <h2 class="unnumbered">References</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
-        role="list">
+        data-entry-spacing="0" role="list">
         <div id="ref-Alghamdi.Teahan+2017+ExperimentalEvaluationArabic"
         class="csl-entry" role="listitem">
         Alghamdi, Mansoor, and William Teahan. 2017. <span>“Experimental
         Evaluation of Arabic OCR Systems.”</span> <em>PSU Research
         Review</em> 1 (3): 229–41. <a
-        href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
+        href="https://doi.org/10/gh4457">https://doi.org/10/gh4457</a>.
         </div>
         <div id="ref-oclc_4770057679-i_61-div_21.d1e2838"
         class="csl-entry" role="listitem">
@@ -3281,7 +3342,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Phillipson, Robert. 1997. <span>“Realities and Myths of
         Linguistic Imperialism.”</span> <em>Journal of Multilingual and
         Multicultural Development</em> 18 (3): 238–48. <a
-        href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
         </div>
         <div id="ref-RisamGil2022Introduction" class="csl-entry"
         role="listitem">
@@ -3293,8 +3354,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         </div>
         <div id="ref-Winkler20230307OCR" class="csl-entry"
         role="listitem">
-        Winkler, Alexander (@awinkler@openbiblio.social). 2023. Mastodon
-        post. <em>Mastodon</em>. <a
+        Winkler, Alexander. 2023. Mastodon post. <em>Mastodon</em>. <a
         href="https://openbiblio.social/@awinkler/109981107178749600">https://openbiblio.social/@awinkler/109981107178749600</a>.
         </div>
         <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
@@ -3309,12 +3369,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
     
     <script>
 
