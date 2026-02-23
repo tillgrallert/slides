@@ -242,7 +242,7 @@ nocite: |
 ::: columns-3
 :::: narrow
 
-![Original in arabischer Schrift](../../assets/jaraid/zdb_mirat-ar-Latn-ar.png){#fig:mirat-ar}
+![Original in arabischer Schrift](../../assets/jaraid/zdb_mirat-ar.png){#fig:mirat-ar}
 
 ![In international gebräuchlicher Umschrift](../../assets/jaraid/zdb_mirat-ar-Latn-x-ijmes.png){#fig:mirat-ijmes}
 

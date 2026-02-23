@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -52,7 +52,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -139,20 +139,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -238,10 +243,12 @@
                     #title-slide {
                         background-color: rgba(255, 255, 255, 0.93);
                     }
-                    div.slide {
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -270,16 +277,9 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
                     th,
                     .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
@@ -1421,15 +1421,30 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-              <a href="https://tillgrallert.github.io/slides/dh/2024-marburg/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2024-marburg/"></a>
-        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
-          </header>
+        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+                  <a href="https://tillgrallert.github.io/slides/dh/2024-marburg/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tillgrallert.github.io/slides/dh/2024-marburg/"></a>
+            </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1472,9 +1487,9 @@ and Beyond</span>
         <figure id="fig:network-authors-1">
         <img
         data-src="../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png"
-        alt="Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
-        <figcaption>Figure 1: Undirected network of authors in
-        <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
+        alt="Figure 1: Undirected network of authors in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, and al-Muqtabas. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles." />
+        <figcaption aria-hidden="true">Figure 1: Undirected network of
+        authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
         al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes:
         betweenness centrality; size of nodes: number of periodicals;
         width of edges: number of articles.</figcaption>
@@ -1483,11 +1498,11 @@ and Beyond</span>
         <figure id="fig:network-mentioned-periodicals-1">
         <img
         data-src="../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
-        alt="Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
-        <figcaption>Figure 2: Directed network of periodicals referenced
-        in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat
-        al-ʿArab</em>, <em>al-Muqtabas</em>, and
-        <em>al-Zuhūr</em></figcaption>
+        alt="Figure 2: Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 2: Directed network of
+        periodicals referenced in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>,
+        <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
         </figure>
         </div>
         </div>
@@ -1537,10 +1552,11 @@ and Beyond</span>
         <figure id="fig:history-arab-press">
         <img
         data-src="../../assets/jaraid/map-periodicals_World_1855-1929_temp-dist-status-y_5.gif"
-        alt="Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the number of new titles per period." />
-        <figcaption>Figure 3: Periodicals by places of publication. Size
-        of circles corresponds to the number of periodicals. Colour
-        indicates the number of new titles per period.</figcaption>
+        alt="Figure 3: Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the number of new titles per period." />
+        <figcaption aria-hidden="true">Figure 3: Periodicals by places
+        of publication. Size of circles corresponds to the number of
+        periodicals. Colour indicates the number of new titles per
+        period.</figcaption>
         </figure>
         </div>
         </div>
@@ -1566,8 +1582,8 @@ and Beyond</span>
         href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
         4.0</a>
         <!--  - on the article level for the entire corpus plus 2 additional magazines
-              - on the issue level for 7 additional newspapers
-              - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
+          - on the issue level for 7 additional newspapers
+          - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
         </ul></li>
         <li>Infrastructure:
         <ul>
@@ -1587,16 +1603,16 @@ and Beyond</span>
         <figure id="fig:webview-zuhur">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_zuhur-v_1-i_1.png"
-        alt="Webview of al-Zuhur 1(1)" />
-        <figcaption>Figure 4: <a
+        alt="Figure 4: Webview of al-Zuhur 1(1)" />
+        <figcaption aria-hidden="true">Figure 4: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview
         of <em>al-Zuhur</em> 1(1)</a></figcaption>
         </figure>
         <figure id="fig:webview-muqtabas">
         <img
         data-src="../../assets/OpenArabicPE/boilerplate_muqtabas-v_3-i_2.png"
-        alt="Webview of al-Muqtabas 3(2)" />
-        <figcaption>Figure 5: <a
+        alt="Figure 5: Webview of al-Muqtabas 3(2)" />
+        <figcaption aria-hidden="true">Figure 5: <a
         href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview
         of <em>al-Muqtabas</em> 3(2)</a></figcaption>
         </figure>
@@ -1617,14 +1633,15 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:sykes-picot">
         <img
-        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg/1055px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
-        alt="Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: “Sykes Picot Agreement Map Signed 8 May 1916” (“English” 1916)" />
-        <figcaption>Figure 6: Map showing the colonial spheres of
-        interest agreed upon by France and UK. Signed by Sir Mark Sykes
-        and Fr[ançois] Georges-Picot, 8 May 1916. Source: <span
-        class="citation" data-cites="SykesPicot1916Map"><span>“Sykes
-        <span>Picot Agreement Map</span> Signed 8 <span>May</span>
-        1916”</span> (<span>“English”</span> 1916)</span></figcaption>
+        data-src="../../assets/dh/1280px-MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
+        alt="Figure 6: Map showing the colonial spheres of interest agreed upon by France and UK. Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916. Source: “Sykes Picot Agreement Map Signed 8 May 1916” (“English” 1916)" />
+        <figcaption aria-hidden="true">Figure 6: Map showing the
+        colonial spheres of interest agreed upon by France and UK.
+        Signed by Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May
+        1916. Source: <span class="citation"
+        data-cites="SykesPicot1916Map"><span>“Sykes <span>Picot
+        Agreement Map</span> Signed 8 <span>May</span> 1916”</span>
+        (<span>“English”</span> 1916)</span></figcaption>
         </figure>
         </div><div class="column">
         <div class="columns">
@@ -1794,8 +1811,8 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:oib-explosion">
         <img data-src="../../assets/dh/2020-08-04-oib-damage.jpg"
-        alt="Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020. Source: OIB" />
-        <figcaption>Figure 7: Meeting room at the <a
+        alt="Figure 7: Meeting room at the Orient-Institut Beirut damaged by the Beirut Port explosion on 4 August 2020. Source: OIB" />
+        <figcaption aria-hidden="true">Figure 7: Meeting room at the <a
         href="https://orient-institut.org/">Orient-Institut Beirut</a>
         damaged by the Beirut Port explosion on 4 August 2020. Source:
         OIB</figcaption>
@@ -1804,10 +1821,10 @@ and Beyond</span>
         <figure id="fig:archives-dam">
         <img
         data-src="https://static.srpcdigital.com/2023-07/256558.jpeg"
-        alt="The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: “«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب دمشق” (2023)" />
-        <figcaption>Figure 8: The National Archives of Syria in Damascus
-        the day after their conflagration on 16. July 2023. Source:
-        <span class="citation"
+        alt="Figure 8: The National Archives of Syria in Damascus the day after their conflagration on 16. July 2023. Source: “«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب دمشق” (2023)" />
+        <figcaption aria-hidden="true">Figure 8: The National Archives
+        of Syria in Damascus the day after their conflagration on 16.
+        July 2023. Source: <span class="citation"
         data-cites="aSbHrmAdFAwrkAmAHryqkbyr"><span>“«أصبح رمادًا
         وركاما»... حريق كبير يدمر سوقًا في قلب دمشق”</span>
         (2023)</span></figcaption>
@@ -1832,18 +1849,18 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:dh-centres">
         <img data-src="../../assets/dh/map_dhcenters.png"
-        alt="Global distribution of DH centres. Source: DH centerNet" />
-        <figcaption>Figure 9: Global distribution of DH centres. Source:
-        <a href="http://dhcenternet.org/centers">DH
+        alt="Figure 9: Global distribution of DH centres. Source: DH centerNet" />
+        <figcaption aria-hidden="true">Figure 9: Global distribution of
+        DH centres. Source: <a href="http://dhcenternet.org/centers">DH
         centerNet</a></figcaption>
         </figure>
         </div><div class="column">
         <!-- <iframe src="https://hcommons.social/@dh_potsdam/110696533309515172/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe> -->
         <figure id="fig:map-dh2023">
         <img data-src="../../assets/maps/map_dh2023.jpeg"
-        alt="Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
-        <figcaption>Figure 10: Global distribution of attendees at
-        DH2023 in Graz. Source: <a
+        alt="Figure 10: Global distribution of attendees at DH2023 in Graz. Source: Digital Humanities Uni Potsdam and @dh_potsdam@hcommons.social (“The Geography of #DH2023 Participants ...” 2023)" />
+        <figcaption aria-hidden="true">Figure 10: Global distribution of
+        attendees at DH2023 in Graz. Source: <a
         href="https://digitalcourage.social/@dh_potsdam@hcommons.social/110696533594288097"><span
         class="citation" data-cites="Potsdam2023GeographyDH2023">Digital
         Humanities Uni Potsdam and @dh_potsdam@hcommons.social
@@ -1900,9 +1917,10 @@ and Beyond</span>
         <figure id="fig:arabic-script">
         <img
         data-src="../../assets/maps/map_arabic-script-nemeth-fig_1-1-small.png"
-        alt="Approximate distribution of Arabic script use along current national boundaries (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
-        <figcaption>Figure 11: Approximate distribution of Arabic script
-        use along current national boundaries <span class="citation"
+        alt="Figure 11: Approximate distribution of Arabic script use along current national boundaries (Nemeth Arabic Type-Making in the Machine Age 2017, fig 1.1)" />
+        <figcaption aria-hidden="true">Figure 11: Approximate
+        distribution of Arabic script use along current national
+        boundaries <span class="citation"
         data-cites="Nemeth+2017">(Nemeth <em>Arabic Type-Making in the
         Machine Age</em> 2017, fig 1.1)</span></figcaption>
         </figure>
@@ -1933,19 +1951,20 @@ and Beyond</span>
         </div><div class="column">
         <figure id="fig:zakham-ar">
         <img data-src="../../assets/dh/arabic-ligatures.png"
-        alt="Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
-        <figcaption>Figure 12: Beginning of <span class="citation"
+        alt="Figure 12: Beginning of Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). Some ligatures are highlighted." />
+        <figcaption aria-hidden="true">Figure 12: Beginning of <span
+        class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. Some
         ligatures are highlighted.</figcaption>
         </figure>
         <figure id="fig:zakham-ar-rasm">
         <img data-src="../../assets/dh/arabic_rasm.png"
-        alt="Pseudo-rasm of the text in fig. 12. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
-        <figcaption>Figure 13: Pseudo-rasm of the text in fig. 12.
-        Automatically generated with <span class="citation"
-        data-cites="Pohl2022Rasmifize">Pohl (<span>“Rasmifize”</span>
-        [2020] 2022)</span>.</figcaption>
+        alt="Figure 13: Pseudo-rasm of the text in fig. 12. Automatically generated with Pohl (“Rasmifize” [2020] 2022)." />
+        <figcaption aria-hidden="true">Figure 13: Pseudo-rasm of the
+        text in fig. 12. Automatically generated with <span
+        class="citation" data-cites="Pohl2022Rasmifize">Pohl
+        (<span>“Rasmifize”</span> [2020] 2022)</span>.</figcaption>
         </figure>
         </div>
         </div>
@@ -2050,11 +2069,11 @@ and Beyond</span>
         <h2>Technical affordances</h2>
         <figure id="fig:ar-linotype">
         <img data-src="../../assets/dh/arabic-linotype_nemeth-p_46.png"
-        alt="Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
-        <figcaption>Figure 14: Arabic Linotype, 1910s. Source: <span
-        class="citation" data-cites="Nemeth+2017">(Nemeth <em>Arabic
-        Type-Making in the Machine Age</em> 2017, fig.
-        2.7)</span></figcaption>
+        alt="Figure 14: Arabic Linotype, 1910s. Source: (Nemeth Arabic Type-Making in the Machine Age 2017, fig. 2.7)" />
+        <figcaption aria-hidden="true">Figure 14: Arabic Linotype,
+        1910s. Source: <span class="citation"
+        data-cites="Nemeth+2017">(Nemeth <em>Arabic Type-Making in the
+        Machine Age</em> 2017, fig. 2.7)</span></figcaption>
         </figure>
         <aside class="notes">
         <ul>
@@ -2076,18 +2095,19 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:unicode-1">
         <img data-src="../../assets/dh/unicode_1-0-0.png"
-        alt="Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 15: Supported scripts in Unicode v1.0.0.
-        Source: <a href="https://www.worldswritingsystems.org"
+        alt="Figure 15: Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 15: Supported scripts in
+        Unicode v1.0.0. Source: <a
+        href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:unicode-15-missing">
         <img
         data-src="../../assets/dh/unicode_15-0-0-missing-scripts.png"
-        alt="Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
-        <figcaption>Figure 16: Currently unsupported scripts. Source: <a
-        href="https://www.worldswritingsystems.org"
+        alt="Figure 16: Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 16: Currently unsupported
+        scripts. Source: <a href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
         </div>
@@ -2138,21 +2158,22 @@ and Beyond</span>
         <figure id="fig:arabic-mecca-1">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
-        alt="32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
-        <figcaption>Figure 17: 32 variants of encoding “Meccan” (<span
-        lang="ar">مكية</span>) <span class="citation"
-        data-cites="Milo2014VisuallyMisleading">(Milo <span>“Visually
-        <span>Misleading Characters</span> in the <span>Arabic
-        URL</span>”</span> 2014, 4)</span></figcaption>
+        alt="Figure 17: 32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
+        <figcaption aria-hidden="true">Figure 17: 32 variants of
+        encoding “Meccan” (<span lang="ar">مكية</span>) <span
+        class="citation" data-cites="Milo2014VisuallyMisleading">(Milo
+        <span>“Visually <span>Misleading Characters</span> in the
+        <span>Arabic URL</span>”</span> 2014, 4)</span></figcaption>
         </figure>
         </div><div class="narrow">
         <figure id="fig:arabic-mecca-2">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
         height="300"
-        alt="In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
-        <figcaption>Figure 18: In-browser search for “<span
-        lang="ar">مك</span>” in the Wikidata entry for “Mecca” (<a
+        alt="Figure 18: In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
+        <figcaption aria-hidden="true">Figure 18: In-browser search for
+        “<span lang="ar">مك</span>” in the Wikidata entry for “Mecca”
+        (<a
         href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
         </figure>
         </div>
@@ -2183,8 +2204,8 @@ and Beyond</span>
         <figure id="fig:spence-arabic-fail">
         <img
         data-src="../../assets/dh/spence-2023-p_19_arabic-failure.png"
-        alt="Isasi et al. (“A Model for Multilingual and Multicultural Digital Scholarship Methods Publishing” 2023), 19" />
-        <figcaption>Figure 19: <span class="citation"
+        alt="Figure 19: Isasi et al. (“A Model for Multilingual and Multicultural Digital Scholarship Methods Publishing” 2023), 19" />
+        <figcaption aria-hidden="true">Figure 19: <span class="citation"
         data-cites="IsasiEtAl2023ModelMultilingual">Isasi et al.
         (<span>“A <span>Model</span> for <span>Multilingual</span> and
         <span>Multicultural Digital Scholarship Methods
@@ -2231,9 +2252,9 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/arabic_failure-browser.png"
-        alt="Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
-        <figcaption>Figure 20: Rendered HTML with the built-in default
-        CSS for <span class="citation"
+        alt="Figure 20: Rendered HTML with the built-in default CSS for Zakham (“Amīrkā wa-ʿulamāʾ al-ʿArab” 1907). The test file is available online" />
+        <figcaption aria-hidden="true">Figure 20: Rendered HTML with the
+        built-in default CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>“Amīrkā wa-ʿulamāʾ al-ʿArab”</span> 1907)</span>. The
         test file is available <a
@@ -2242,10 +2263,10 @@ and Beyond</span>
         </div><div class="column">
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="HTML-Code for fig. 20 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption>Figure 21: HTML-Code for fig. 20 in Visual Code
-        Studio. By default, non-ASCII characters are visually
-        highlighted</figcaption>
+        alt="Figure 21: HTML-Code for fig. 20 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption aria-hidden="true">Figure 21: HTML-Code for fig. 20
+        in Visual Code Studio. By default, non-ASCII characters are
+        visually highlighted</figcaption>
         </figure>
         </div>
         </div>
@@ -2281,9 +2302,9 @@ and Beyond</span>
         <figure id="fig:bidi-xml">
         <img
         data-src="../../assets/OpenArabicPE/xml_zuhur-v_2-i_4_annotated.png"
-        alt="Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
-        <figcaption>Figure 22: Bi-directional TEI/XML at the beginning
-        of <span class="citation"
+        alt="Figure 22: Bi-directional TEI/XML at the beginning of Dammūs (“Ṣiḥāfat Sūriyya wa-Lubnān” 1911). Arrows indicate the reading direction. Numbers indicate reading order." />
+        <figcaption aria-hidden="true">Figure 22: Bi-directional TEI/XML
+        at the beginning of <span class="citation"
         data-cites="oclc_1034545644-i_15-div_1.d2e634">Dammūs
         (<span>“Ṣiḥāfat Sūriyya wa-Lubnān”</span> 1911)</span>. Arrows
         indicate the reading direction. Numbers indicate reading
@@ -2293,10 +2314,10 @@ and Beyond</span>
         <figure id="fig:zuhur-oxygen">
         <img
         data-src="../../assets/OpenArabicPE/oxygen_zuhur-author_small.png"
-        alt="The TEI/XML from fig. 22 in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 23: The TEI/XML from fig. 22 in <a
-        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
-        Styling relies on CSS.</figcaption>
+        alt="Figure 23: The TEI/XML from fig. 22 in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 23: The TEI/XML from
+        fig. 22 in <a href="https://www.oxygenxml.com/">oXygen</a>’s
+        author mode. Styling relies on CSS.</figcaption>
         </figure>
         </div>
         </div>
@@ -2370,9 +2391,10 @@ and Beyond</span>
         <figure id="fig:mirat-1">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 24: Front page of <em>Mirʾāt al-Sharq</em>
-        #192, 22 Nov. 1922, Jerusalem. Source: <a
+        alt="Figure 24: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 24: Front page of
+        <em>Mirʾāt al-Sharq</em> #192, 22 Nov. 1922, Jerusalem. Source:
+        <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
         </figure>
         </div>
@@ -2426,9 +2448,10 @@ and Beyond</span>
         <figure id="fig:mirat-2">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 25: Front page of <em>Mirʾāt al-Sharq</em>
-        #192, 22 Nov. 1922, Jerusalem. Source: <a
+        alt="Figure 25: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 25: Front page of
+        <em>Mirʾāt al-Sharq</em> #192, 22 Nov. 1922, Jerusalem. Source:
+        <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
         </figure>
         </div>
@@ -2442,8 +2465,8 @@ and Beyond</span>
         </ul>
         <figure id="fig:zdb-hamza">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
-        alt="Search in ZDB for “mir’at sarq”" />
-        <figcaption>Figure 26: Search in <a
+        alt="Figure 26: Search in ZDB for “mir’at sarq”" />
+        <figcaption aria-hidden="true">Figure 26: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=mir&#39;at%20sarq">ZDB</a>
         for “mir’at sarq”</figcaption>
         </figure>
@@ -2458,8 +2481,8 @@ and Beyond</span>
         </ul>
         <figure id="fig:zdb-dmg">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="Search in ZDB for “Mirʾāt aš-Šarq”" />
-        <figcaption>Figure 27: Search in <a
+        alt="Figure 27: Search in ZDB for “Mirʾāt aš-Šarq”" />
+        <figcaption aria-hidden="true">Figure 27: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Mirʾāt%20aš-Šarq">ZDB</a>
         for “Mirʾāt aš-Šarq”</figcaption>
         </figure>
@@ -2510,16 +2533,16 @@ and Beyond</span>
         <figure id="fig:holding-map">
         <img
         data-src="../../assets/jaraid/map-data-set-periodical-holdings-med-na_mapped.png"
-        alt="Periodicals and their holding institutions" />
-        <figcaption>Figure 28: Periodicals and their holding
-        institutions</figcaption>
+        alt="Figure 28: Periodicals and their holding institutions" />
+        <figcaption aria-hidden="true">Figure 28: Periodicals and their
+        holding institutions</figcaption>
         </figure>
         </div><div class="column">
         <div id="tbl:jaraid-holdings">
         <table>
         <caption>Table 1: Periodical holdings and digitization</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th style="text-align: left;">periodicals</th>
         <th style="text-align: right;">–1918</th>
         <th style="text-align: right;"></th>
@@ -2528,21 +2551,21 @@ and Beyond</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">published</td>
         <td style="text-align: right;">2054</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">3550</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">known holdings</td>
         <td style="text-align: right;">540</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">775</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">26.29</td>
@@ -2550,21 +2573,21 @@ and Beyond</span>
         <td style="text-align: right;"><span
         class="red">21.83</span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">digitized</td>
         <td style="text-align: right;">156</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">233</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">7.59</td>
@@ -2572,28 +2595,28 @@ and Beyond</span>
         <td style="text-align: right;"><span
         class="red">6.56</span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">multiple digitisations</td>
         <td style="text-align: right;">51</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">66</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">2.48</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">1.86</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of digitised</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">32.69</td>
@@ -2632,7 +2655,7 @@ and Beyond</span>
         <col style="width: 60%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th></th>
         <th>Arabic periodicals (1798–1918)</th>
         <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian
@@ -2640,33 +2663,33 @@ and Beyond</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>community</td>
         <td>c. <strong>420 mio.</strong> Arabic speakers</td>
         <td>c. <strong>6.2 mio.</strong> inhabitants</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>periodicals</td>
         <td>2054 newspapers and journals</td>
         <td>125 newspapers</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>digitized</td>
         <td><span class="red">156</span> periodicals</td>
         <td><span class="green">125</span> newspapers with more than 1.5
         million pages</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>type</td>
         <td>mostly facsimiles</td>
         <td>facsimiles and full text</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>access</td>
         <td>paywalls, geo-fencing</td>
         <td>open access</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>interface</td>
         <td>mostly foreign languages only</td>
         <td>local and foreign languages</td>
@@ -2679,15 +2702,17 @@ and Beyond</span>
         <figure id="fig:map-arabic-dialects">
         <img
         data-src="../../assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp"
-        alt="Map of Arabic dialects. Source: reddit" />
-        <figcaption>Figure 29: Map of Arabic dialects. Source: <a
+        alt="Figure 29: Map of Arabic dialects. Source: reddit" />
+        <figcaption aria-hidden="true">Figure 29: Map of Arabic
+        dialects. Source: <a
         href="https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130">reddit</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:map-hesse">
         <img data-src="../../assets/maps/map_hesse-europe.png"
-        alt="Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
-        <figcaption>Figure 30: Map of Hesse in Europe. Source: <a
+        alt="Figure 30: Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
+        <figcaption aria-hidden="true">Figure 30: Map of Hesse in
+        Europe. Source: <a
         href="https://www.iz.sk/sk/projekty/regiony-eu/DE7"
         class="uri">https://www.iz.sk/sk/projekty/regiony-eu/DE7</a></figcaption>
         </figure>
@@ -2707,8 +2732,8 @@ and Beyond</span>
         <figure id="fig:translatio-interface">
         <img
         data-src="../../assets/OpenArabicPE/translatio_interface-languages_annotated.png"
-        alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 31: Interface of the <a
+        alt="Figure 31: Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
+        <figcaption aria-hidden="true">Figure 31: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -2723,8 +2748,9 @@ and Beyond</span>
         <div class="column">
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-1.png"
-        alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 32: <em>al-Muqtabas</em> 6 on <a
+        alt="Figure 32: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 32: <em>al-Muqtabas</em> 6
+        on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
@@ -2733,9 +2759,9 @@ and Beyond</span>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../../assets/OpenArabicPE/hathi_muqtabas-2.png"
-        alt="The page from fig. 32 with a US-IP" />
-        <figcaption>Figure 33: The page from fig. 32 with a
-        US-IP</figcaption>
+        alt="Figure 33: The page from fig. 32 with a US-IP" />
+        <figcaption aria-hidden="true">Figure 33: The page from fig. 32
+        with a US-IP</figcaption>
         </figure>
         </div>
         </div>
@@ -2754,8 +2780,8 @@ and Beyond</span>
         <figure id="fig:muqtabas-6-2-shamela-2">
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
-        alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 34: <span class="citation"
+        alt="Figure 34: al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
+        <figcaption aria-hidden="true">Figure 34: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
@@ -2765,9 +2791,9 @@ and Beyond</span>
         <figure id="fig:muqtabas-6-2-133-eap-2">
         <img
         data-src="../../assets/OpenArabicPE/eap119-1-4-5-muqtabas-133_annotated.jpg"
-        alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
-        <figcaption>Figure 35: Facsimile of the same section of <span
-        class="citation"
+        alt="Figure 35: Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
+        <figcaption aria-hidden="true">Figure 35: Facsimile of the same
+        section of <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
         href="https://eap.bl.uk/">EAP</a></figcaption>
@@ -2835,7 +2861,7 @@ and Beyond</span>
         <col style="width: 22%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Font Type</th>
         <th style="text-align: right;">Sakhr (%)</th>
         <th style="text-align: right;">ABBYY (%)</th>
@@ -2844,7 +2870,7 @@ and Beyond</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>Traditional Arabic</td>
         <td style="text-align: right;">48.54</td>
         <td style="text-align: right;">67.66</td>
@@ -2852,28 +2878,28 @@ and Beyond</span>
         class="green"><strong>51.88</strong></span></td>
         <td style="text-align: right;">47.04</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Tahoma</td>
         <td style="text-align: right;">10.52</td>
         <td style="text-align: right;">69.91</td>
         <td style="text-align: right;">26.38</td>
         <td style="text-align: right;">38.37</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Simplified Arabic</td>
         <td style="text-align: right;">52.97</td>
         <td style="text-align: right;">67.69</td>
         <td style="text-align: right;">44.94</td>
         <td style="text-align: right;">46.75</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>M Unicode Sara</td>
         <td style="text-align: right;">36.03</td>
         <td style="text-align: right;">59.40</td>
         <td style="text-align: right;">25.92</td>
         <td style="text-align: right;">33.72</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Diwani letter</td>
         <td style="text-align: right;"><span
         class="red"><strong>18.13</strong></span></td>
@@ -2884,21 +2910,21 @@ and Beyond</span>
         <td style="text-align: right;"><span
         class="red"><strong>23.32</strong></span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>DecoType Thuluth</td>
         <td style="text-align: right;">36.12</td>
         <td style="text-align: right;">37.71</td>
         <td style="text-align: right;">24.26</td>
         <td style="text-align: right;">32.48</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Deco’Type Naskh</td>
         <td style="text-align: right;">48.88</td>
         <td style="text-align: right;">50.22</td>
         <td style="text-align: right;">41.63</td>
         <td style="text-align: right;">40.92</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Arabic transparent</td>
         <td style="text-align: right;">51.56</td>
         <td style="text-align: right;"><span
@@ -2907,14 +2933,14 @@ and Beyond</span>
         <td style="text-align: right;"><span
         class="green"><strong>48.61</strong></span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Andalus</td>
         <td style="text-align: right;">28.07</td>
         <td style="text-align: right;">37.53</td>
         <td style="text-align: right;">21.68</td>
         <td style="text-align: right;">25.34</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>AdvertisingBold</td>
         <td style="text-align: right;"><span
         class="green"><strong>57.35</strong></span></td>
@@ -2930,9 +2956,9 @@ and Beyond</span>
         <figure id="fig:gpa-ocr">
         <img
         data-src="../../assets/OpenArabicPE/gpa_bashir-i_487-p_1_ocr.png"
-        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 36: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
-        p.1 on <a
+        alt="Figure 36: al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
+        <figcaption aria-hidden="true">Figure 36: <em>al-Bashīr</em> 9
+        Jan. 1880 (#487), p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
         </figure>
@@ -2979,34 +3005,34 @@ and Beyond</span>
         <caption>Table 4: Evaluation of my our Transkribus
         models</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th>training set</th>
         <th style="text-align: right;"><em>al-Ustādh</em></th>
         <th style="text-align: right;"><em>al-Muqtabas</em></th>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>words</td>
         <td style="text-align: right;">192829</td>
         <td style="text-align: right;">11116</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>lines</td>
         <td style="text-align: right;">18732</td>
         <td style="text-align: right;">1013</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>epochs</td>
         <td style="text-align: right;">200</td>
         <td style="text-align: right;">200</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>CER train</td>
         <td style="text-align: right;">2.01</td>
         <td style="text-align: right;">0.07</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>CER validation</td>
         <td style="text-align: right;"><span
         class="green"><strong>2.09</strong></span></td>
@@ -3020,9 +3046,10 @@ and Beyond</span>
         <figure id="fig:transkribus-web-app">
         <img
         data-src="../../assets/OpenArabicPE/transkribus_hasna-v_1-i_1.png"
-        alt="Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
-        <figcaption>Figure 37: Transkribus web-app showing results of
-        our model for <em>al-Ḥasnāʾ</em> 1(1)</figcaption>
+        alt="Figure 37: Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
+        <figcaption aria-hidden="true">Figure 37: Transkribus web-app
+        showing results of our model for <em>al-Ḥasnāʾ</em>
+        1(1)</figcaption>
         </figure>
         </div>
         </div>
@@ -3150,7 +3177,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Alghamdi, Mansoor, and William Teahan. 2017. <span>“Experimental
         Evaluation of <span>Arabic OCR</span> Systems.”</span> <em>PSU
         Research Review</em> 1 (3, 3): 229–41. <a
-        href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
+        href="https://doi.org/10/gh4457">https://doi.org/10/gh4457</a>.
         </div>
         <div id="ref-oclc_4770057679-i_61-div_21.d1e2838"
         class="csl-entry" role="listitem">
@@ -3228,7 +3255,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Phillipson, Robert. 1997. <span>“Realities and Myths of
         Linguistic Imperialism.”</span> <em>Journal of Multilingual and
         Multicultural Development</em> 18 (3): 238–48. <a
-        href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
         </div>
         <div id="ref-Pohl2022Rasmifize" class="csl-entry"
         role="listitem">
@@ -3288,12 +3315,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
     
     <script>
 
