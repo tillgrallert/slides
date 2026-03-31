@@ -811,8 +811,7 @@ Buckwalter transliteration
 :::
 
 <!-- # Digitisation bias -->
-## Digitisation bias
-### Collection biases perpetuated
+## Collection bias
 
 ::: columns
 :::: column

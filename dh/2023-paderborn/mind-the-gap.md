@@ -42,6 +42,8 @@ license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ::: columns-3
 :::: column
+<!-- Baghdad, 2015 -->
+<!-- ![Protester holding a sign reading "Darling, you are as beautiful as an additional hour of electricity" in Baghdad, July 2015. Source: [Twitter](https://twitter.com/aya_mansour_11_/status/627223846244847616)](../../assets/dh/twitter_CLRYwKiUsAAILP8.jpeg) -->
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
 
