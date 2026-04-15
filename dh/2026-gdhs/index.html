@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
           <meta name="author" content="Till Grallert">
-              <meta name="dcterms.date" content="2026-03-31">
+              <meta name="dcterms.date" content="2026-04-15">
                   <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
         <title>Curating shared knowledge about artifacts on Wikidata</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -161,6 +161,30 @@
                             font-style: normal;
                             font-weight: 400;
                             src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
+                        }
+                        /* render Arabic as rtl */
+                        [lang = "ar"],
+                        [lang = "ota"],
+                        [lang = "fa"],
+                        [lang = "he"],
+                        [lang *= "-Arab-AR"] {
+                            direction: rtl;
+                            text-align: right;
+                            font-family: AmiriWeb, Helvetica, Arial, sans-serif;
+                            /*keep in mind that relative sizes (%, em)
+                            accumulate for nested elements and must thus be avoided.
+                            At the moment almost everything is tailored to 18px */
+                        /*    font-size: 18px;*/
+                        }
+                        /* display latin scripts in a smaller font */
+                        [lang = "en"],
+                        [lang = "fr"],
+                        [lang = "de"],
+                        [lang = "it"],
+                        [lang *= "ar-Latn-"],
+                        [lang *= "ota-Latn-"] {
+                            direction: ltr;
+                            text-align: left;
                         }
                         /*********************************************
                          * GLOBAL STYLES
@@ -841,7 +865,7 @@ Lab</p>
                     <p class="event">
                         <span>Global Digital Humanitis Symposium</span>
           </p>
-                                <p class="date">2026-03-31</p>
+                                <p class="date">2026-04-15</p>
                               <p class="url"><a href="http://tillgrallert.eu/slides/dh/2026-gdhs/">http://tillgrallert.eu/slides/dh/2026-gdhs/</a></p>
                   </div>
       </div>
@@ -1393,10 +1417,11 @@ Lab</p>
         Machine Age</em> 2017, fig 1.1)</span></figcaption>
         </figure>
         </section>
-        <section
-        id="epistemic-violence-of-the-means-of-knowledge-production"
-        class="slide level2">
-        <h2>epistemic violence of the means of knowledge production</h2>
+        <section id="linguistic-imperialism" class="slide level2">
+        <h2>Linguistic imperialism</h2>
+        <h3
+        id="epistemic-violence-of-the-means-of-knowledge-production">epistemic
+        violence of the means of knowledge production</h3>
         <div class="columns">
         <div class="column">
         <figure id="fig:ar-linotype">
@@ -1414,9 +1439,9 @@ Lab</p>
         <figure id="fig:arabic-mecca-1">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
-        alt="Figure 17: 32 variants of encoding “Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
+        alt="Figure 17: 32 variants of encoding Meccan” (مكية) (Milo “Visually Misleading Characters in the Arabic URL” 2014, 4)" />
         <figcaption aria-hidden="true">Figure 17: 32 variants of
-        encoding “Meccan” (<span lang="ar">مكية</span>) <span
+        encoding Meccan” (<span lang="ar">مكية</span>) <span
         class="citation" data-cites="Milo2014VisuallyMisleading">(Milo
         <span>“Visually <span>Misleading Characters</span> in the
         <span>Arabic URL</span>”</span> 2014, 4)</span></figcaption>
@@ -1453,6 +1478,10 @@ Lab</p>
         </ul></li>
         </ul></li>
         </ul></li>
+        <li>linguistic imperialism: <span class="citation"
+        data-cites="Phillipson1997RealitiesAndMyths">Phillipson
+        (<span>“Realities and Myths of Linguistic Imperialism”</span>
+        1997)</span></li>
         </ul>
         </aside>
         </section>
@@ -1621,7 +1650,6 @@ Lab</p>
         <p><cite><span class="citation"
         data-cites="RisamGil2022Introduction">(Risam and Gil
         <span>“Introduction”</span> 2022, sec. 3)</span></cite></p>
-        </div><div class="column">
         <blockquote>
         <p>this implies learning how to produce, disseminate, and
         preserve digital scholarship ourselves, without the help we
@@ -1632,23 +1660,12 @@ Lab</p>
         <p><cite><span class="citation" data-cites="Gil+2016">(Gil and
         Ortega <span>“Global <span>Outlooks</span> in <span>Digital
         Humanities</span>”</span> 2016, 29)</span></cite></p>
-        </div>
-        </div>
-        <div class="columns">
-        <div class="column">
-        <figure id="fig:bulthaupt">
-        <img data-src="../../assets/dh/bulthaupt.png"
-        alt="Figure 23: Screenshot of a website selling luxury kitchens" />
-        <figcaption aria-hidden="true">Figure 23: Screenshot of a <a
-        href="https://bulthaup.com/en/b3/">website</a> selling luxury
-        kitchens</figcaption>
-        </figure>
         </div><div class="column">
         <figure id="fig:bauhaus">
         <img
         data-src="../../assets/dh/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
-        alt="Figure 24: Frankfurter Kitchen, Source: WikiCommons, CCO" />
-        <figcaption aria-hidden="true">Figure 24: Frankfurter Kitchen,
+        alt="Figure 23: Frankfurter Kitchen, Source: WikiCommons, CCO" />
+        <figcaption aria-hidden="true">Figure 23: Frankfurter Kitchen,
         Source: <a
         href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
         CCO</a></figcaption>
@@ -1678,7 +1695,7 @@ Lab</p>
         sourcing</li>
         </ul>
         </div><div class="column">
-        <h3 id="what-do-we-have-at-hand">What do we have at hand</h3>
+        <h3 id="what-do-we-have-at-hand">What do we have at hand?</h3>
         <ul>
         <li>community of volunteers</li>
         <li>high level of domain knowledge</li>
@@ -1710,8 +1727,8 @@ Lab</p>
         <figure id="fig:Q25212027-ko">
         <img
         data-src="../../assets/jaraid/wikidata_Q25212027-lang_ko.png"
-        alt="Figure 25: Wikidata user interface in Korean for Mirʾāt al-Sharq" />
-        <figcaption aria-hidden="true">Figure 25: Wikidata user
+        alt="Figure 24: Wikidata user interface in Korean for Mirʾāt al-Sharq" />
+        <figcaption aria-hidden="true">Figure 24: Wikidata user
         interface in Korean for <em><a
         href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
         al-Sharq</a></em></figcaption>
@@ -1845,15 +1862,13 @@ Lab</p>
         href="https://openrefine.org">OpenRefine</a></p>
         <h3 id="upload">upload</h3>
         <p>Create new <a href="https://wikidata.org/">Wikidata</a> items
-        and statements with QuickStatements
-        <!-- 5. Link items and enrich with local data  --></p>
+        and statements with QuickStatements</p>
         </div>
         </div>
-        <!-- ![Veḳāʾiʿ-i Miṣriye on [Wikidata](https://www.wikidata.org/wiki/Q4703322)](../../assets/jaraid/wikidata_Q4703322.png){#fig:wikidata-Q4703322} -->
         <figure id="fig:wd-data-model">
         <img data-src="../../assets/jaraid/data-model_jaraid.svg"
-        alt="Figure 26: Schematic data model for Arabic periodicals on Wikidata, using Mirʾāt al-Sharq as an example" />
-        <figcaption aria-hidden="true">Figure 26: Schematic data model
+        alt="Figure 25: Schematic data model for Arabic periodicals on Wikidata, using Mirʾāt al-Sharq as an example" />
+        <figcaption aria-hidden="true">Figure 25: Schematic data model
         for Arabic periodicals on Wikidata, using <em>Mirʾāt
         al-Sharq</em> as an example</figcaption>
         </figure>
@@ -1926,8 +1941,8 @@ Lab</p>
         <figure id="fig:wd-map-2024">
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-arabic-2024-03-18_markercluster.png"
-        alt="Figure 27: Map of all Arabic periodicals published before 1930 (items created before 18 March 2024, SPARQL)" />
-        <figcaption aria-hidden="true">Figure 27: Map of all Arabic
+        alt="Figure 26: Map of all Arabic periodicals published before 1930 (items created before 18 March 2024, SPARQL)" />
+        <figcaption aria-hidden="true">Figure 26: Map of all Arabic
         periodicals published before 1930 (items created before 18 March
         2024, <a
         href="https://query-chest.toolforge.org/redirect/LAwIgT9wqucyaW0mCQ0Ms2uKGUmygM6mwcSIuKKKyc0">SPARQL</a>)</figcaption>
@@ -1937,8 +1952,8 @@ Lab</p>
         <figure id="fig:wd-map">
         <img
         data-src="../../assets/jaraid/periodicals-lang_ar-basic-disp_map.png"
-        alt="Figure 28: Map of all Arabic periodicals published before 1930 (SPARQL)" />
-        <figcaption aria-hidden="true">Figure 28: Map of all Arabic
+        alt="Figure 27: Map of all Arabic periodicals published before 1930 (SPARQL)" />
+        <figcaption aria-hidden="true">Figure 27: Map of all Arabic
         periodicals published before 1930 (<a
         href="https://query-chest.toolforge.org/redirect/KkTnCUlWc4MI6WKwSm6CeY4GM8EGOyScEsi4Sw0oOq4">SPARQL</a>)</figcaption>
         </figure>
@@ -1953,8 +1968,8 @@ Lab</p>
         <figure id="fig:wd-bubble-2024">
         <img
         data-src="../../assets/jaraid/wikidata-bubble_periodicals-languages-2024-03-18_annotated.png"
-        alt="Figure 29: Bubble chart of publication languages (items created before 18 March 2024). Note the surprising prominence of Swedish (SPARQL)" />
-        <figcaption aria-hidden="true">Figure 29: Bubble chart of
+        alt="Figure 28: Bubble chart of publication languages (items created before 18 March 2024). Note the surprising prominence of Swedish (SPARQL)" />
+        <figcaption aria-hidden="true">Figure 28: Bubble chart of
         publication languages (items created before 18 March 2024). Note
         the surprising prominence of Swedish (<a
         href="https://query-chest.toolforge.org/redirect/dMk3vPTaZkuiqe804Wqeqkmi8SooO260qSCmAG08MI7">SPARQL</a>)</figcaption>
@@ -1964,8 +1979,8 @@ Lab</p>
         <figure id="fig:wd-bubble">
         <img
         data-src="../../assets/jaraid/wikidata-bubble_periodicals-languages-2026-04-15_annotated.png"
-        alt="Figure 30: Bubble chart of publication languages (as of today, SPARQL)" />
-        <figcaption aria-hidden="true">Figure 30: Bubble chart of
+        alt="Figure 29: Bubble chart of publication languages (as of today, SPARQL)" />
+        <figcaption aria-hidden="true">Figure 29: Bubble chart of
         publication languages (as of today, <a
         href="https://w.wiki/ArRb">SPARQL</a>)</figcaption>
         </figure>
@@ -2013,6 +2028,52 @@ Lab</p>
         </ul>
         </div>
         </div>
+        </section>
+        <section id="community" class="slide level2">
+        <h2>Community</h2>
+        <p>Daily edits from bots and human contributors</p>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:wd_Q124972416">
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/wikidata_Q124972416.png"
+        alt="Figure 30: Wikidata item for al-Majalla, Buenos Aires, 1915–" />
+        <figcaption aria-hidden="true">Figure 30: Wikidata item for <a
+        href="http://www.wikidata.org/entity/Q124972416"><em>al-Majalla</em></a>,
+        Buenos Aires, 1915–</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:wd_Q124972416-edits">
+        <img
+        data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/wikidata_Q124972416.png"
+        alt="Figure 31: Edit history for al-Majalla" />
+        <figcaption aria-hidden="true">Figure 31: Edit history for <a
+        href="http://www.wikidata.org/entity/Q124972416"><em>al-Majalla</em></a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>I created the item on 18 March 2024 and automatically added
+        information over the course of the next month. One month later,
+        the user “<a
+        href="http://www.wikidata.org/entity/User:Sempta">Sempta</a>”
+        amended information on Spanish-language titles, location of
+        headquarters, and even added a facsimile of the front page.
+        Based on the facsimile, I was then able to add subtitles and
+        publication interval.</li>
+        <li>Some human users contribute latinised transcriptions of
+        Arabic names, such as “Mahmud Ali” for <span lang="ar">محمود
+        علي</span></li>
+        <li>users merge duplicates (predominantly for persons)
+        <ul>
+        <li>stumps of items, which had insufficient information for
+        automated reconciliation</li>
+        <li>items with different spellings in string values that evaded
+        automated detection</li>
+        </ul></li>
+        </ul>
+        </aside>
         </section></section>
         <section>
         <section id="thank-you" class="title-slide slide level1">
@@ -2269,7 +2330,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-        
+
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2313,20 +2374,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-        
+
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-        
+
         // Bounds for smallest/largest possible scale to apply to content
-        
-        
-        
+
+
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -2343,7 +2404,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
     </script>
         <footer>
         <div class="c_frame">
-                    <span class="c_left">2026-03-31</span>
+                    <span class="c_left">2026-04-15</span>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert</span>
                         <span class="c_center">
