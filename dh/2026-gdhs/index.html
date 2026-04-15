@@ -403,6 +403,56 @@
                         span.c_center {
                             display: inline-block;
                         }
+                        /*****************
+                        code
+                        ******************/
+                        div.sourceCode {
+                            margin: 10px 5px;
+                        }
+                        /*font*/
+                        pre,
+                        code {
+                            font-size: 0.8em;
+                            line-height: 0.9;
+                        }
+                        pre {
+                            /* override  default reveal styling */
+                            display: block;
+                            font-family: monospace;
+                            width: 100% !important;
+                            text-align: left;
+                            font-size: 0.7em !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                            margin: 0;
+                            overscroll-behavior-block: none;
+                            /* add styling */
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            white-space: pre-wrap;
+                        }
+                        pre > code.sourceCode {
+                            white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
+                            max-height: inherit !important;
+                        }
+                        h1 > code {
+                            background: transparent;
+                            border: 0;
+                            font-size: inherit;
+                        }
+                        /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
+                        code {
+                            white-space: pre-wrap;
+                            /* color: #00428C; */
+                            color: #9C20EE;
+                            /*font-size:0.9em;*/
+                        }
+                        pre code {
+                            color: #000000;
+                        }
+                        li pre {
+                            margin-left: 0;
+                        }
                         /*********************************************
                          * PRINT BACKGROUND
                          *********************************************/
@@ -847,6 +897,14 @@ Lab</p>
         </div>
         <aside class="notes">
         <ul>
+        <li>starting in the mid-19th century</li>
+        <li>important centres
+        <ul>
+        <li>Cairo</li>
+        <li>Beirut</li>
+        <li>New York</li>
+        <li>Sao Paolo</li>
+        </ul></li>
         <li>striking similarity in layouts of newspapers
         <ul>
         <li>despite temporal and geographic distance</li>
@@ -1105,87 +1163,41 @@ Lab</p>
         </div><div class="column">
         <div id="tbl:jaraid-holdings">
         <table>
-        <caption>Table 1: Periodical holdings and digitization</caption>
+        <caption>Table 1: Arabic periodicals until 1929: holdings and
+        digitization</caption>
         <thead>
         <tr>
         <th style="text-align: left;">periodicals</th>
-        <th style="text-align: right;">–1918</th>
         <th style="text-align: right;"></th>
-        <th style="text-align: right;">–1929</th>
-        <th style="text-align: right;"></th>
+        <th style="text-align: right;">% of total</th>
+        <th style="text-align: right;">% of digitised</th>
         </tr>
         </thead>
         <tbody>
         <tr>
         <td style="text-align: left;">published</td>
-        <td style="text-align: right;">2054</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;">3550</td>
+        <td style="text-align: right;"></td>
         <td style="text-align: right;"></td>
         </tr>
         <tr>
         <td style="text-align: left;">known holdings</td>
-        <td style="text-align: right;">540</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;">775</td>
-        <td style="text-align: right;"></td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">% of total</td>
-        <td style="text-align: right;"></td>
-        <td style="text-align: right;">26.29</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;"><span
         class="red">21.83</span></td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">————————</td>
-        <td style="text-align: right;">——–</td>
-        <td style="text-align: right;">——-</td>
-        <td style="text-align: right;">——–</td>
-        <td style="text-align: right;">—————</td>
+        <td style="text-align: right;"></td>
         </tr>
         <tr>
         <td style="text-align: left;">digitized</td>
-        <td style="text-align: right;">156</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;">233</td>
-        <td style="text-align: right;"></td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">% of total</td>
-        <td style="text-align: right;"></td>
-        <td style="text-align: right;">7.59</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;"><span
         class="red">6.56</span></td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">————————</td>
-        <td style="text-align: right;">——–</td>
-        <td style="text-align: right;">——-</td>
-        <td style="text-align: right;">——–</td>
-        <td style="text-align: right;">—————</td>
+        <td style="text-align: right;"></td>
         </tr>
         <tr>
         <td style="text-align: left;">multiple digitisations</td>
-        <td style="text-align: right;">51</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;">66</td>
-        <td style="text-align: right;"></td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">% of total</td>
-        <td style="text-align: right;"></td>
-        <td style="text-align: right;">2.48</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;">1.86</td>
-        </tr>
-        <tr>
-        <td style="text-align: left;">% of digitised</td>
-        <td style="text-align: right;"></td>
-        <td style="text-align: right;">32.69</td>
-        <td style="text-align: right;"></td>
         <td style="text-align: right;"><span
         class="red">28.33</span></td>
         </tr>
@@ -1598,6 +1610,82 @@ Lab</p>
         </section>
         <section id="minimal-computing" class="slide level2">
         <h2>Minimal computing</h2>
+        <div class="columns">
+        <div class="column">
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(Risam and Gil
+        <span>“Introduction”</span> 2022, sec. 3)</span></cite></p>
+        </div><div class="column">
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, without the help we
+        can’t get, even as we fight to build the infrastructures we need
+        at the intersection of, with, and beyond institutional libraries
+        and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Gil+2016">(Gil and
+        Ortega <span>“Global <span>Outlooks</span> in <span>Digital
+        Humanities</span>”</span> 2016, 29)</span></cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:bulthaupt">
+        <img data-src="../../assets/dh/bulthaupt.png"
+        alt="Figure 23: Screenshot of a website selling luxury kitchens" />
+        <figcaption aria-hidden="true">Figure 23: Screenshot of a <a
+        href="https://bulthaup.com/en/b3/">website</a> selling luxury
+        kitchens</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:bauhaus">
+        <img
+        data-src="../../assets/dh/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
+        alt="Figure 24: Frankfurter Kitchen, Source: WikiCommons, CCO" />
+        <figcaption aria-hidden="true">Figure 24: Frankfurter Kitchen,
+        Source: <a
+        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        CCO</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing is a result of GO::DH and events and
+        conditions in Cuba</li>
+        <li>Alex Gil’s ideas resonated with me, upon meeting in Beirut
+        in April 2015</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="minimal-computing-1" class="slide level2">
+        <h2>Minimal Computing</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="what-do-we-need">What do we need?</h3>
+        <ul>
+        <li>knowledge shall be FAIR: findable, accessible,
+        interoperable, and reusable</li>
+        <li>support for multilingual data and interfaces</li>
+        <li>longterm sustainability of the tech stack</li>
+        <li>user management, documentation, support for crowd
+        sourcing</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="what-do-we-have-at-hand">What do we have at hand</h3>
+        <ul>
+        <li>community of volunteers</li>
+        <li>high level of domain knowledge</li>
+        </ul>
+        <p>(no funds, no institutional stakeholders)</p>
+        </div>
+        </div>
         </section>
         <section id="wikidata" class="slide level2">
         <h2>Wikidata</h2>
@@ -1622,14 +1710,33 @@ Lab</p>
         <figure id="fig:Q25212027-ko">
         <img
         data-src="../../assets/jaraid/wikidata_Q25212027-lang_ko.png"
-        alt="Figure 23: Wikidata user interface in Korean for Mirʾāt al-Sharq" />
-        <figcaption aria-hidden="true">Figure 23: Wikidata user
+        alt="Figure 25: Wikidata user interface in Korean for Mirʾāt al-Sharq" />
+        <figcaption aria-hidden="true">Figure 25: Wikidata user
         interface in Korean for <em><a
         href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
         al-Sharq</a></em></figcaption>
         </figure>
         </div>
         </div>
+        <aside class="notes">
+        <p><span class="citation"
+        data-cites="BernersLee2009LinkedData">(Berners-Lee <span>“Linked
+        <span>Data</span> - <span>Design Issues</span>”</span>
+        2009)</span></p>
+        <ol type="1">
+        <li>Available on the web (whatever format) but with an open
+        licence, to be Open Data</li>
+        <li>Available as machine-readable structured data (e.g. excel
+        instead of image scan of a table)</li>
+        <li>as (2) plus non-proprietary format (e.g. CSV instead of
+        excel)</li>
+        <li>All the above plus, Use open standards from W3C (RDF and
+        SPARQL) to identify things, so that people can point at your
+        stuff</li>
+        <li>All the above, plus: Link your data to other people’s data
+        to provide context</li>
+        </ol>
+        </aside>
         </section></section>
         <section>
         <section id="workflow-for-publishing-metadata-on-wikidata"
@@ -1659,16 +1766,8 @@ Lab</p>
         <ul>
         <li>Integration of holding information from library catalogues
         such as ZDB, AUB, BnF, HathiTrust</li>
-        <li>Conversions from MARC, MODS, and HTML to TEI/XML
-        <!-- - Publish everything as Linked Open Data on [Wikidata](https://w.wiki/9UDd) --></li>
+        <li>Conversions from MARC, MODS, and HTML to TEI/XML</li>
         </ul></li>
-        </ul>
-        <h3 id="problems">Problems</h3>
-        <ul>
-        <li>Sustainability of dataset and code</li>
-        <li>Findability</li>
-        <li>Usability of static, monolingual website</li>
-        <li>Interoperability</li>
         </ul>
         </div><div class="column">
         <div class="sourceCode" id="cb1"><pre
@@ -1708,30 +1807,37 @@ Lab</p>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">publisher</span><span class="ot"> source=</span><span class="st">&quot;wd:Q124855340&quot;</span>&gt;</span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">orgName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;مطبعة مرآة الشرق&lt;/<span class="kw">orgName</span>&gt;</span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>         &lt;/<span class="kw">publisher</span>&gt;</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">date</span><span class="ot"> type=</span><span class="st">&quot;onset&quot;</span><span class="ot"> when=</span><span class="st">&quot;1919-09-17&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;und-Latn&quot;</span>&gt;1919&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">date</span><span class="ot"> type=</span><span class="st">&quot;onset&quot;</span><span class="ot"> when=</span><span class="st">&quot;1919-09-17&quot;</span>&gt;1919&lt;/<span class="kw">date</span>&gt;</span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">date</span><span class="ot"> resp=</span><span class="st">&quot;#hEAP119&quot;</span><span class="ot"> type=</span><span class="st">&quot;terminus&quot;</span><span class="ot"> when=</span><span class="st">&quot;1938&quot;</span>&gt;1938&lt;/<span class="kw">date</span>&gt;</span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">imprint</span>&gt;</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">monogr</span>&gt;</span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">biblStruct</span>&gt;</span></code></pre></div>
         </div>
         </div>
+        <aside class="notes">
+        <ul>
+        <li>Sustainability of dataset and code</li>
+        <li>Findability</li>
+        <li>Usability of static, monolingual website</li>
+        <li>Interoperability</li>
+        </ul>
+        </aside>
         </section>
         <section id="import-data-to-wikidata" class="slide level2">
         <h2>Import data to Wikidata</h2>
         <div class="columns">
         <div class="column">
         <h3 id="model">model</h3>
-        <ol type="1">
-        <li>Create a data model of Wikidata entities and property
-        statements</li>
-        <li>Map the original data model (<a
-        href="https://tei-c.org/">TEI/XML</a>) to the new data model
+        <p>Create a data model of Wikidata entities and property
+        statements</p>
+        <h3 id="map">map</h3>
+        <p>Map the original data model (<a
+        href="https://tei-c.org/">TEI/XML</a>) to the new data model</p>
         <ul>
         <li>to custom XML for import into <a
         href="https://openrefine.org">OpenRefine</a></li>
         <li>to QuickStatements for direct import to Wikidata</li>
-        </ul></li>
-        </ol>
+        </ul>
         </div><div class="column">
         <h3 id="reconcile">reconcile</h3>
         <p>Reconcile entities with existing <a
@@ -1746,13 +1852,20 @@ Lab</p>
         <!-- ![Veḳāʾiʿ-i Miṣriye on [Wikidata](https://www.wikidata.org/wiki/Q4703322)](../../assets/jaraid/wikidata_Q4703322.png){#fig:wikidata-Q4703322} -->
         <figure id="fig:wd-data-model">
         <img data-src="../../assets/jaraid/data-model_jaraid.svg"
-        alt="Figure 24: Schematic data model for Arabic periodicals on Wikidata, using Mirʾāt al-Sharq as an example" />
-        <figcaption aria-hidden="true">Figure 24: Schematic data model
+        alt="Figure 26: Schematic data model for Arabic periodicals on Wikidata, using Mirʾāt al-Sharq as an example" />
+        <figcaption aria-hidden="true">Figure 26: Schematic data model
         for Arabic periodicals on Wikidata, using <em>Mirʾāt
         al-Sharq</em> as an example</figcaption>
         </figure>
         <aside class="notes">
         <ul>
+        <li>modelling:
+        <ul>
+        <li>basic Wikidata data model of entities and properties</li>
+        <li>models are more of a social convention then a strict model
+        in the technical sence</li>
+        <li></li>
+        </ul></li>
         <li>reconciliation:
         <ul>
         <li>suffers from the same problems as any other discovery
@@ -1768,12 +1881,14 @@ Lab</p>
         eventually</span></p>
         <div class="columns">
         <div class="column">
+        <h3 id="why">Why</h3>
         <ul>
         <li>Everyone can edit Wikidata</li>
         <li>WikiMedia will fold</li>
         <li>One might need to cite a specific version</li>
         </ul>
         </div><div class="column">
+        <h3 id="how">How</h3>
         <ul>
         <li><a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>
         and RESTful APIs to the rescue
@@ -1811,8 +1926,8 @@ Lab</p>
         <figure id="fig:wd-map-2024">
         <img
         data-src="../../assets/jaraid/wikidata-map_periodicals-arabic-2024-03-18_markercluster.png"
-        alt="Figure 25: Map of all Arabic periodicals published before 1930 (items created before 18 March 2024, SPARQL)" />
-        <figcaption aria-hidden="true">Figure 25: Map of all Arabic
+        alt="Figure 27: Map of all Arabic periodicals published before 1930 (items created before 18 March 2024, SPARQL)" />
+        <figcaption aria-hidden="true">Figure 27: Map of all Arabic
         periodicals published before 1930 (items created before 18 March
         2024, <a
         href="https://query-chest.toolforge.org/redirect/LAwIgT9wqucyaW0mCQ0Ms2uKGUmygM6mwcSIuKKKyc0">SPARQL</a>)</figcaption>
@@ -1822,8 +1937,8 @@ Lab</p>
         <figure id="fig:wd-map">
         <img
         data-src="../../assets/jaraid/periodicals-lang_ar-basic-disp_map.png"
-        alt="Figure 26: Map of all Arabic periodicals published before 1930 (SPARQL)" />
-        <figcaption aria-hidden="true">Figure 26: Map of all Arabic
+        alt="Figure 28: Map of all Arabic periodicals published before 1930 (SPARQL)" />
+        <figcaption aria-hidden="true">Figure 28: Map of all Arabic
         periodicals published before 1930 (<a
         href="https://query-chest.toolforge.org/redirect/KkTnCUlWc4MI6WKwSm6CeY4GM8EGOyScEsi4Sw0oOq4">SPARQL</a>)</figcaption>
         </figure>
@@ -1837,9 +1952,9 @@ Lab</p>
         <h3 id="before-1">before</h3>
         <figure id="fig:wd-bubble-2024">
         <img
-        data-src="../../assets/jaraid/wikidata-bubble_periodicals-languages-2024-03-18.png"
-        alt="Figure 27: Bubble chart of publication languages (items created before 18 March 2024). Note the surprising prominence of Swedish (SPARQL)" />
-        <figcaption aria-hidden="true">Figure 27: Bubble chart of
+        data-src="../../assets/jaraid/wikidata-bubble_periodicals-languages-2024-03-18_annotated.png"
+        alt="Figure 29: Bubble chart of publication languages (items created before 18 March 2024). Note the surprising prominence of Swedish (SPARQL)" />
+        <figcaption aria-hidden="true">Figure 29: Bubble chart of
         publication languages (items created before 18 March 2024). Note
         the surprising prominence of Swedish (<a
         href="https://query-chest.toolforge.org/redirect/dMk3vPTaZkuiqe804Wqeqkmi8SooO260qSCmAG08MI7">SPARQL</a>)</figcaption>
@@ -1847,10 +1962,11 @@ Lab</p>
         </div><div class="column">
         <h3 id="after-1">after</h3>
         <figure id="fig:wd-bubble">
-        <img data-src="../../assets/jaraid/languages-disp_bubble.png"
-        alt="Figure 28: Bubble chart of publication languages (SPARQL)" />
-        <figcaption aria-hidden="true">Figure 28: Bubble chart of
-        publication languages (<a
+        <img
+        data-src="../../assets/jaraid/wikidata-bubble_periodicals-languages-2026-04-15_annotated.png"
+        alt="Figure 30: Bubble chart of publication languages (as of today, SPARQL)" />
+        <figcaption aria-hidden="true">Figure 30: Bubble chart of
+        publication languages (as of today, <a
         href="https://w.wiki/ArRb">SPARQL</a>)</figcaption>
         </figure>
         </div>
@@ -1858,36 +1974,15 @@ Lab</p>
         </section>
         <section id="complex-queries" class="slide level2">
         <h2>Complex queries</h2>
-        <!-- ::: columns-3
-        :::: column
-
-        ![[Map of all periodicals, March 2024][rq:map-periodicals-all-2024-03-16-cluster]](../../assets/jaraid/wikidata-map_periodicals-all-2024-03-16_markercluster.png){#fig:map-periodicals-all-2024-03-cluster}
-
-        ![[Map of all periodicals, Aug. 2024, after we added our data][rq:map-periodicals-all-2024-08-21-cluster]](../../assets/jaraid/wikidata-map_periodicals-all-2024-08-21_markercluster.png){#fig:map-periodicals-all-2024-08-cluster}
-
-        ::::
-        :::: column
-
-        - Pros
-            - Multilingual interface and dataset
-            - Allows complex queries ([SPARQL][sparql], APIs)
-        - Cons
-            - Complex queries require knowledge of [SPARQL][sparql] (click on the links to the left and right)
-
-        ::::
-        :::: column
-
-        ![[Map of newspapers published in Palestine until 1930][rq:press-palestine]](../../assets/jaraid/wikidata-map_periodicals-palestine-1930_cropped.png){#fig:map-palestine-1930}
-
-        ::::
-        ::: -->
         <p>SPARQL is powerful BUT has a steep learning curve</p>
+        <h3 id="examples">Examples</h3>
         <div class="columns">
         <div class="column">
+        <p>Palestinian periodicals before the Nakba of 1948: digitised
+        titles</p>
         <iframe src="https://query-chest.toolforge.org/redirect/aDYfGc5U3MCeOaWIg0OcKoYK2MMweuiOo8KGA26yOib" title="Palestinian periodicals before the Nakba: digitised titles">
         </iframe>
         </div><div class="column">
-        <h3 id="sample-queries">Sample queries</h3>
         <ul>
         <li><a
         href="https://query-chest.toolforge.org/redirect/5NZuEN6OBMmiWm0IoYYU6caa2q6AKeqUKEKe0uqy4Ml">All
@@ -1897,15 +1992,78 @@ Lab</p>
         href="https://query-chest.toolforge.org/redirect/KkTnCUlWc4MI6WKwSm6CeY4GM8EGOyScEsi4Sw0oOq4">Map
         of all Arabic periodicals</a></li>
         <li><a
-        href="https://query-chest.toolforge.org/redirect/JwwYdMXGLosUGeSKCucwckW0gMmEqAY2Uosa2MiMYev">Arabic
-        periodicals, ranked by number of digitised collections</a></li>
-        <li><a
         href="https://query-chest.toolforge.org/redirect/WvUD5eWjtQqKOEC02cQKmCQguM2okyIaAW46giAaGuX">Map
         of Arabic periodicals with kown holdings. Periodicals are mapped
         to the location of the holding institution</a></li>
         <li><a
         href="https://query-chest.toolforge.org/redirect/5jePPWeZe42UCWwCmYyIc2mmcW242euOIeaEUiS0O0j">Bubble
         graph of collections of Arabic periodicals</a></li>
+        <li><a
+        href="https://query-chest.toolforge.org/redirect/vWy7oAd56GAWYscO0wyQkQ2M4UQmG4m4AMk8MiAcSEw">Images
+        of periodical editors found on WikiCommons</a></li>
+        <li>Guiding future digitisation:
+        <ul>
+        <li><a
+        href="https://query-chest.toolforge.org/redirect/r9Gn5nKhkWUYgyYwOU08qAk64wWOQO4ycuCcsSi6Syc">List
+        of Arabic periodicals with a single known holding</a></li>
+        <li><a
+        href="https://query-chest.toolforge.org/redirect/JwwYdMXGLosUGeSKCucwckW0gMmEqAY2Uosa2MiMYev">Arabic
+        periodicals, ranked by number of digitised collections</a></li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="thank-you" class="title-slide slide level1">
+        <h1>Thank you</h1>
+
+        </section>
+        <section id="thank-you-1" class="slide level2">
+        <h2>Thank you!</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Contributors to <a
+        href="https://openarabicpe.github.io/">OpenArabicPE</a>: Jasper
+        Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans
+        Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver
+        Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi
+        Tanna-Händel, and Layla Youssef</li>
+        <li>Contributors to <a
+        href="https://projectjaraid.github.io/">Project Jarāʾid</a>:
+        Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid,
+        Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa,
+        Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan,
+        Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek,
+        Philip Sadgrove, Ola Seif, and Rogier Visser</li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>Slides: <a
+        href="http://tillgrallert.eu/slides/dh/2026-gdhs/index.html">tillgrallert.eu/slides/dh/2026-gdhs/</a></li>
+        <li>Paper: <a
+        href="https://doi.org/10.46298/transformations.14749">10.46298/transformations.14749</a></li>
+        <li>Mastodon: <a
+        href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
+        <li>Email: <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript>,
+        <script
+        type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        <li>ADHO SIG multilingual DH: <a
+        href="https://multilingualdh.org/">multilingualdh.org</a></li>
+        <li>DHd AG multilingual DH: <a
+        href="http://ag.multilingualdh.de">ag.multilingualdh.de</a></li>
         </ul>
         </div>
         </div>
@@ -1925,6 +2083,12 @@ Lab</p>
         <!-- dimensions -->
         <div id="refs" class="references csl-bib-body hanging-indent"
         data-entry-spacing="0" role="list">
+        <div id="ref-BernersLee2009LinkedData" class="csl-entry"
+        role="listitem">
+        Berners-Lee, Tim. 2009. <span>“Linked <span>Data</span> -
+        <span>Design Issues</span>.”</span> June 18, 2009. <a
+        href="https://www.w3.org/DesignIssues/LinkedData#fivestar">https://www.w3.org/DesignIssues/LinkedData#fivestar</a>.
+        </div>
         <div id="ref-EstrinBashir2024requiemGazasiconic"
         class="csl-entry" role="listitem">
         Estrin, Daniel, and Abu Bakr Bashir. 2024. <em>A Requiem for
@@ -1942,6 +2106,14 @@ Lab</p>
         Humanities</span></em>, edited by Dorothy Kim and Adeline Koh,
         333–76. Earth: punctum books. <a
         href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, and Élika Ortega. 2016. <span>“Global
+        <span>Outlooks</span> in <span>Digital Humanities</span>:
+        <span>Multilingual Practices</span> and <span>Minimal
+        Computing</span>.”</span> In <em>Doing Digital Humanities:
+        Practice, Training, Research</em>, edited by Constance Crompton,
+        Richard J Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
         </div>
         <div id="ref-Grallert2024jaraidData" class="csl-entry"
         role="listitem">
@@ -1970,6 +2142,14 @@ Lab</p>
         Multicultural Development</em> 18 (3): 238–48. <a
         href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
         </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, and Alex Gil. 2022. <span>“Introduction:
+        <span>The Questions</span> of <span>Minimal
+        Computing</span>.”</span> Edited by Alex Gil and Roopika Risam.
+        <em>Digital Humanities Quarterly</em> 16 (June). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
+        </div>
         <div id="ref-aSbHrmAdFAwrkAmAHryqkbyr" class="csl-entry"
         role="listitem">
         <span>“«أصبح رمادًا وركاما»... حريق كبير يدمر سوقًا في قلب
@@ -1987,7 +2167,7 @@ Lab</p>
     <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -2037,10 +2217,11 @@ Lab</p>
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
-        disableLayout: true, //false,
+        disableLayout: true,
 
         // Vertical centering of slides
-        center: true,
+        // center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
