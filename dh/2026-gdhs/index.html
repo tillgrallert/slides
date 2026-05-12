@@ -253,7 +253,6 @@
                         }
                         html,
                         body,
-                        html.print-pdf body,
                         .reveal-viewport {
                             /*margin: 0 0 0 0 !important;
                             padding: 0 0 0 0;
@@ -476,14 +475,6 @@
                         }
                         li pre {
                             margin-left: 0;
-                        }
-                        /*********************************************
-                         * PRINT BACKGROUND
-                         *********************************************/
-                        @media print {
-                          .backgrounds {
-                            background-color: var(--r-background-color);
-                          }
                         }
                     </style>
         <style>
@@ -835,6 +826,36 @@
                 margin-left: 2em;
             }
         </style>
+        <style>
+            /*************************
+             print
+             *************************/
+            html.print-pdf body,
+            .reveal-viewport {
+                /*margin: 0 0 0 0 !important;
+                padding: 0 0 0 0;
+                width: 100%;
+                height: 100%;*/
+            }
+
+            @media print {
+                @page :left {
+                    margin: 15mm 20mm 15mm 10mm;
+                }
+                @page :right {
+                    margin: 15mm 10mm 15mm 20mm;
+                }
+                .backgrounds {
+                    background-color: var(--r-background-color);
+                }
+                * {
+                    background: transparent !important;
+                    color: black !important;
+                    filter: none !important;
+                    -ms-filter: none !important;
+                }
+            }
+        </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
@@ -870,7 +891,7 @@ Lab</p>
                   </div>
       </div>
         </section>
-
+                
         <section>
         <section id="background" class="title-slide slide level1">
         <h1>Background</h1>
@@ -1434,8 +1455,8 @@ Lab</p>
         </figure>
         </div><div class="column">
         <p>Arabic can be “reliably” shared with Unicode since 1991 … if
-        protocolls, software, fonts etc. support it across the entire
-        technology stack.</p>
+        protocolls, software, fonts etc. supports it across the entire
+        stack.</p>
         <figure id="fig:arabic-mecca-1">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
@@ -1908,7 +1929,7 @@ Lab</p>
         <li><a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>
         and RESTful APIs to the rescue
         <ul>
-        <li>save a local copy of the graph</li>
+        <li>save a copy local copy of the graph</li>
         </ul></li>
         <li><code>bash</code> script as a wrapper</li>
         <li>deploy via <a href="https://github.com/">GitHub</a>, <a
@@ -2228,7 +2249,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
     <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
     <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
     <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -2330,7 +2351,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -2374,20 +2395,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-
+        
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-
+        
         // Bounds for smallest/largest possible scale to apply to content
-
-
-
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
