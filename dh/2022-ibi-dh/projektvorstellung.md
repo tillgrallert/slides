@@ -154,7 +154,7 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-ibi-dh](https://tillgrall
 - zweithäufigste Schrift <!-- nach lateinischer Schrift -->
     + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
 + Schriftrichtung von rechts nach links
-+ Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen):  [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
++ Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen):  [ج جـ ـجـ ـج]{lang="ar"}
 + Grapheme bestehen aus Basisformen (Archigraphem, *rasm*) und diakritischen Zeichen (*iʿjām*)
 * Vokalisierung (*tashkīl*) **kann** hinzugefügt werden und hat Einfluss auf Bedeutung
 
@@ -190,11 +190,11 @@ Folien: [https://tillgrallert.github.io/slides/dh/2022-ibi-dh](https://tillgrall
 
 :::
 :::{.c_width-50 .c_right}
-:::{.c_rtl}
+:::{lang="ar"}
 
-### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
+### [أميركا وعلماء العرب]{lang="ar"}
 
-[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{lang="ar"}
 
 <cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
 

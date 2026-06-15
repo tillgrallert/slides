@@ -324,7 +324,7 @@ Note how the anonymous articles cluster on the left.
 + Written from **right** to left (RTL)
 + Letters (*graphemes*)
     * mostly connected in direction of writing
-    * letterform depends on position within the string (*allographs*): [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
+    * letterform depends on position within the string (*allographs*): [ج جـ ـجـ ـج]{lang="ar"}
     * combination of basic letterforms (*archigraphemes*, Arab. *rasm*) and diacritic marks (*iʿjām*)
 - diacritics 
     + reduce semantic ambiguity

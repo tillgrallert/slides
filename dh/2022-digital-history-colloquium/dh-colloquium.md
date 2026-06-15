@@ -472,7 +472,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ### Schrift
 
 + Schriftrichtung von rechts nach links
-+ Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen):  [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
++ Buchstaben (Grapheme) werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form (Allographen):  [ج جـ ـجـ ـج]{lang="ar"}
 + Grapheme bestehen aus Basisformen (Archigraphem, *rasm*) und diakritischen Zeichen (*iʿjām*)
     * Gebrauch unterliegt historischem Wandel und regionalen Präferenzen
 * Vokalisierung (*tashkīl*) **kann** hinzugefügt werden und hat Einfluss auf Bedeutung
@@ -483,18 +483,18 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 ::: columns
 :::: column
 
-### [أميركا وعلماء العرب]{.c_rtl lang="ar"}
+### [أميركا وعلماء العرب]{lang="ar"}
 
-[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{lang="ar"}
 
 <cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
 
 ::::
 :::: column
 
-### [امىرکا وعلماء العرٮ]{.c_rtl lang="ar"}
+### [امىرکا وعلماء العرٮ]{lang="ar"}
 
-[کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{.c_rtl lang="ar"}
+[کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں]{lang="ar"}
 
 *rasm*
 
@@ -508,8 +508,8 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 + Zeichenkodierung lange Zeit nicht unterstützt
     * <!-- Konsequenz aus dem Buchdruck, Schreibmaschinen etc.:  -->Latinisierte Umschriften
-        - Arabisch: [تصوير الافكار]{.c_rtl} -> *taṣwīr al-afkār* (IJMES)
-        - Osmanisch: [تصوير افكار]{.c_rtl} -> *teṣvīr-i efkār* (IJMES)
+        - Arabisch: [تصوير الافكار]{lang="ar"} -> *taṣwīr al-afkār* (IJMES)
+        - Osmanisch: [تصوير افكار]{lang="ar"} -> *teṣvīr-i efkār* (IJMES)
     * "gelehrte" Umschrift vs Praxis des Arabisi
 + <!-- Notwendige --> Allographen (Verbindungsformen) werden der Rendering Engine überlassen
     * Microsoft Office for Mac: 2015
@@ -525,7 +525,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 
 ### أميركا وعلماء العرب
 
-[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{.c_rtl lang="ar"}
+[كانت أميركا مجهولة عند ابنآء القرن الخامس عشر بدليل ان المؤرخين في ذلك العهد لم يذكروا عنها سوى اخبار اكتشافها في أواخر ذلك القرن]{lang="ar"}
 
 <cite>[@oclc_4770057679-i_13-div_8.d1e1249]</cite>
 

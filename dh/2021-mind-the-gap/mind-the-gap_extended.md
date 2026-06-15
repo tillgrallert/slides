@@ -197,7 +197,7 @@ Schriften und Sprachen des Globalen Nordens sind der Hegemon der Interfaces
 - zweithäufigste Schrift <!-- nach lateinischer Schrift -->
 + aktuell für 14 Sprachen verwendet, u.a. Arabisch, Persisch, Urdu, Pashtu.
 + Schriftrichtung von rechts nach links
-+ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{.c_rtl}
++ Buchstaben werden mehrheitlich in Schreibrichtung verbunden und ändern dabei ihre Form:  [ج جـ ـجـ ـج]{lang="ar"}
 + Präferenz für Ligaturen
 
 :::

@@ -437,7 +437,7 @@ The human condition, historically, is one of multilinguality. People speak diffe
 + Written from **right** to left (RTL)
 + Letters (*graphemes*)
     * mostly connected in direction of writing
-    * letterform depends of position within the string (*allographs*): [ج جـ ـجـ ـج]{.c_rtl lang="ar"}
+    * letterform depends of position within the string (*allographs*): [ج جـ ـجـ ـج]{lang="ar"}
     * combination of basic letterforms (*archigraphemes*, Arab. *rasm*) and diacritic marks (*iʿjām*)
 - diacritics 
     + reduce semantic ambiguity
