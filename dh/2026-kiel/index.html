@@ -31,6 +31,71 @@
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
       /* CSS for citations */
       div.csl-bib-body { }
       div.csl-entry {
@@ -832,7 +897,7 @@
         <!-- HU Berlin header -->
     <header>
       <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-              <a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2026-stuttgart/"></a>
+              <a href="https://tillgrallert.github.io/slides/dh/2026-kiel/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=3&color=113868&data=https://tillgrallert.github.io/slides/dh/2026-kiel/"></a>
         <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/fileadmin/files/Logos/4Memory/Logo_NFDI4memory_RGB.png"></a>
           </header>
     <div class="reveal">
@@ -850,21 +915,1504 @@ Datenkultur in den Geiteswissenschaften</h2>
                                       </div>
         <div class="column c_right c_right-align">
                     <p class="event">
-                        <span>DH Kolloquium, Stuttgart</span>
+                        <span>‘Produktive Ambivalenz: Digitale Methoden
+und Meistererzählungen’, Kiel und Flensburg</span>
           </p>
                                 <p class="date">2026-07-07</p>
-                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/">https://tillgrallert.github.io/slides/dh/2026-stuttgart/</a></p>
+                              <p class="url"><a href="https://tillgrallert.github.io/slides/dh/2026-kiel/">https://tillgrallert.github.io/slides/dh/2026-kiel/</a></p>
                   </div>
       </div>
         </section>
-                
-        <section class="slide level6">
+
+        <section class="slide level2">
 
         <p><sup>1</sup> Humboldt-Universität zu Berlin, Institut für
         Geschichtswissenschaften<br />
         <sup>2</sup> Methods Innovation Lab, NFDI4Memory</p>
+        </section>
+        <section>
+        <section id="vorbemerkungen" class="title-slide slide level1">
+        <h1>Vorbemerkungen</h1>
+
+        </section>
+        <section id="wer-bin-ich-und-warum-stehe-ich-vor-ihnen"
+        class="slide level2">
+        <h2>Wer bin ich und warum stehe ich vor Ihnen</h2>
+        <ul>
+        <li>Sozial- und Medienhistoriker des mehrheitlich
+        arabischsprachigen östlichen Mittelmeerraumes ab dem späten 18.
+        Jahrhundert.</li>
+        <li>Studium der Islamwissenschaft, Judaistik, VWL und
+        Geschichte</li>
+        <li>Co-Convenor von AGs zu Multilingual DH</li>
+        <li>Leitung der Task Area <em>Data Culture</em> und des
+        <em>Methods Innovation Lab</em> von [NFDI4Memory] and der [HU
+        Berlin].</li>
+        </ul>
+        <aside class="notes">
+        <ul>
+        <li>das wird im Folgenden noch wichtig</li>
+        <li>Was bin ich
+        <ul>
+        <li>Ich bin Historiker</li>
+        </ul></li>
+        <li>was mache ich
+        <ul>
+        <li>praktische Kritik der Digitalität</li>
+        </ul></li>
+        <li>Was bin ich nicht:
+        <ul>
+        <li>Technikphilosophie</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="these" class="title-slide slide level1">
+        <h1>These</h1>
+
+        </section>
+        <section
+        id="wir-leben-in-einem-neuen-epistem-dem-zeitalter-der-digitalität-und-computationalität"
+        class="slide level2">
+        <h2>Wir leben in einem neuen Epistem – dem Zeitalter der
+        Digitalität und Computationalität</h2>
+        <div class="columns">
+        <div class="wide">
+        <!-- **Datafication** emphasises the epistemic shift from a world where data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies. -->
+        <p><strong>Datafizierung</strong> markiert den fundamentalen
+        epistemischen und konzeptionellen Wandel von einer Welt, in der
+        Daten ein eng definierter Teil der Ergebnisse von
+        Forschungsprozessen waren, hin zu einem neuen Status Quo, in dem
+        alle Forschungsprozesse immer bereits durch Informations- und
+        Kommunikationstechnologien (ICT) computationell mediiert
+        sind.</p>
+        </div><div class="narrow">
+        <p><span class="keyphrase">Gesellschaft und Wissenschaft sind
+        bereits <em>datafiziert</em></span></p>
+        </div>
+        </div>
+        <!--
+        >I would like to explore here a tentative path for a third wave of the digital humanities, concentrated around the underlying computationality of the forms held within a computational medium. That is, I propose to look at the digital component of the digital humanities in the light of its medium specificity, as a way of thinking about how medial changes produce epistemic changes.
+
+        <cite>@Berry2011ComputationalTurn, 4</cite> -->
+        <blockquote>
+        <p>Computationality might then be understood as an ontotheology,
+        creating a new ontological ‘epoch’ as a new historical
+        constellation of intelligibility.
+        <!-- The digital humanists could therefore orient themselves to questions raised when computationality is itself problematized in this way--></p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Berry2011ComputationalTurn">D. Berry
+        (<span>„Computational <span>Turn</span>“</span> 2011)</span>,
+        16; <span class="citation" data-cites="Berry2011Philosophy">D.
+        Berry (<em>The <span>Philosophy</span> of
+        <span>Software</span></em> 2011)</span>, 27</cite></p>
+        <aside class="notes">
+        <ul>
+        <li>Wir leben in einem neuem Epistem, dem Zeitalter der
+        Digitalität und Computationalität. - Alles ist bereits durch die
+        Infrastrukturen der Digitalität vermittelt (mediiert).
+        <ul>
+        <li>Infrastrukturen als Assemblagen von Norman, Praktiken,
+        Materialität</li>
+        </ul></li>
+        <li>Jedem Epistem und jeder Vermittlung wohnt (epistemische)
+        Gewalt inne (was sind die Grenzen des Sagbaren, was ist das
+        nicht Sagbare? etc.).</li>
+        <li>Wir machen dabei Rückgriffe auf
+        <ul>
+        <li>Poststrukturalismus
+        <ul>
+        <li>Foucault</li>
+        <li>Said</li>
+        <li>Spivak</li>
+        </ul></li>
+        <li>Theorie der Digitalität
+        <ul>
+        <li>Stadler</li>
+        <li>Dobson</li>
+        <li>Berry</li>
+        </ul></li>
+        </ul></li>
+        <li>“epoch of computationality” orginates with <span
+        class="citation" data-cites="Berry2011ComputationalTurn">D.
+        Berry (<span>„Computational <span>Turn</span>“</span>
+        2011)</span>
+        <ul>
+        <li>ontotheology rekuriert auf Heidegger und Kant</li>
+        </ul></li>
+        <li>Unsere Interaktion mit der Welt ist immer schon durch ICTs
+        vermittelt</li>
+        <li>Digital history, then, accepts that the human cultural
+        record is being <em>datafied</em> and we need computational
+        methods in order to make historical arguments <span
+        class="citation"
+        data-cites="DigitalHistoryArgument2017 Laessig2021DigitalHistory">(cf.
+        Arguing with Digital History working group <span>„Digital
+        <span>History</span> and <span>Argument</span>“</span> 2017, 2;
+        Lässig <span>„Digital History“</span> 2021, 6)</span></li>
+        <li>Digital history also addresses the age of abundance, as
+        postulated by Roy Rosenzweig, and epitomised by the recent
+        advances in generative AI and LLMs, which will create an
+        infinite amount of absolutely plausible and convincing yet
+        utterly false sources</li>
+        <li>“The concept of digitality focuses on something fundamental.
+        It marks, first of all, a humanities-based perspective on the
+        totality of the far-reaching and deep-rooted developments that
+        may also be summarised as computerisation. Therein lies the
+        commonality of the various notions of digitality: Namely, the
+        totality and peculiarity of the conditions and consequences of
+        electronic digital computing in all its forms. [Digitality and
+        Critique by Distelmeyer 2022]</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="epistem" class="slide level2">
+        <h2>Epistem</h2>
+        <aside class="notes">
+        <p>Es geht um die Möglichkeiten des Wissens.</p>
+        <ul>
+        <li>Foucault:
+        <ul>
+        <li>Epistem als das historische a priori, welches das Wissen und
+        dessen Diskurse begründet. Es repräsentiert dadurch die
+        Bedingung der Möglichkeit von Wissen innerhalb einer bestimmten
+        Epoche.</li>
+        <li><blockquote>
+        <p>Die fundamentalen Codes einer Kultur, die ihre Sprache, ihre
+        Wahrnehmungsschemata, ihren Austausch, ihre Techniken, ihre
+        Werte, die Hierarchien ihrer Praktiken beherrschen, fixieren
+        gleich zu Anfang für jeden Menschen die empirischen Ordnungen,
+        mit denen er zu tun haben und in denen er sich wiederfinden
+        wird. <span class="citation"
+        data-cites="Foucault1974OrdnungDinge">(Foucault <em>Ordnung der
+        Dinge</em> [1966] 1974, 22)</span></p>
+        </blockquote>
+        <ul>
+        <li>damit ist das a priori, das epistem immer auch das
+        Meistererzählungen</li>
+        <li>die herrschenden Ideen sind immer die Ideen der
+        Herrschenden</li>
+        </ul></li>
+        <li>Damit zugleich immer auch das nicht sagbare, der Andere, die
+        epistemische Gewalt</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="dimensionen-der-der-digitalität"
+        class="title-slide slide level1">
+        <h1>Dimensionen der der Digitalität</h1>
+
+        </section>
+        <section id="analog-war-vorgestern" class="slide level2">
+        <h2>“analog” war (vor)gestern</h2>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase">Die Unterscheidung zwischen
+        <em>analog</em> und <em>digital</em> hat ihren analytischen Wert
+        verloren</span></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>We think of the ‘digital’ as a previous historic movement
+        when computation as digitality was understood in opposition to
+        the analogue, rather than complementary […]</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Berry+2017">D. M.
+        Berry und Fagerjord (<em>Digital Humanities</em> 2017)</span>,
+        2</cite></p>
+        </div>
+        </div>
+        </section>
+        <section id="algorithmen-und-daten-sind-akteure"
+        class="slide level2">
+        <h2>Algorithmen und Daten sind Akteure</h2>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase"><em>Algorithmen</em> sind Teil des
+        sozialen Gewebes</span></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>Today, algorithms are such an intrinsic and fundamental part
+        of how daily life is experienced that some scholars even argue
+        that we live in “algorithmic cultures” […]. This evocative
+        notion points to the increasing difficulty of separating
+        algorithms from the activities that make up culture. It also
+        evinces the complex ways in which human agency and algorithmic
+        actions are intertwined […]</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Siles2023Living">Siles (<em>Living with
+        <span>Algorithms</span></em> 2023)</span>, 1</cite></p>
+        <blockquote>
+        <p>It is our position that the “digital” cannot be understood as
+        a separate domain of culture. If we actually examine the digital
+        […] we see that today digital information processing is present
+        in every aspect of our lives.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="CPCAbout">(Centre
+        for Postdigital Cultures <span>„About Us“</span>
+        2018)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Daraus folgt aber auch, dass <strong>digital</strong>
+        history oder <strong>digital</strong> humanities hilfreiche
+        Begriffe einer Übergangsphase sind. Sie sind Label mit einem
+        hohen symbolischen und ökonomischen Kapital.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="infrastrukturen-und-pfadabhängigkeiten"
+        class="slide level2">
+        <h2>Infrastrukturen und Pfadabhängigkeiten</h2>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Timezones_UTC%2B14.png/330px-Timezones_UTC%2B14.png"
+        alt="Timezones. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Timezones. Public domain, <a
+        href="https://commons.wikimedia.org/wiki/File:Timezones_UTC%2B14.png">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/250px-STS120LaunchHiRes-edit1.jpg"
+        alt="Space Shuttle. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Space Shuttle. Public domain, <a
+        href="https://commons.wikimedia.org/wiki/File:STS120LaunchHiRes-edit1.jpg">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>Eine Folie, die die Bedeutung von Pfadabhängigkeiten für
+        Infrastrukturen darstellt:</p>
+        <ul>
+        <li>Infrastrukturen sind Assemblagen von materiellen Objekten,
+        Normen, sozialen Praktiken, und Individuen</li>
+        <li>Am Anfang ist alles im Fluß</li>
+        <li>Infrastrukturen werden erfolgreich und verschwinden aus der
+        Wahrnehmung, wenn sie “universell” und selbstverständlich
+        werden.</li>
+        <li>Miteinander nicht kompatible Systeme können keine gemeinsame
+        Infrastruktur bilden</li>
+        <li>Beispiele
+        <ul>
+        <li>Eisenbahn <span class="citation"
+        data-cites="Schivelbusch1977GeschichteEisenbahnreise">(Schivelbusch
+        <em>Geschichte der Eisenbahnreise</em> 1977)</span>
+        <ul>
+        <li>Spurweite: warum sind die Booster des Spaceshuttles so
+        breit, wie römische Wagen?
+        <ul>
+        <li>The United States and most of the world use a standard
+        railway gauge of 4 feet, 8.5 inches.</li>
+        <li>his measurement stems from 19th-century English tramways,
+        which mirrored the ancient ruts found on Roman roads.</li>
+        <li>George Stephenson formally established this 4-foot, 8.5-inch
+        width for the Liverpool and Manchester Railway in 1830.</li>
+        <li>Transporting the Space Shuttle’s Solid Rocket Boosters from
+        Utah to Florida required using the national rail network.</li>
+        <li>Mountain tunnels built for 19th-century trains limited the
+        maximum diameter of these modern rocket components.</li>
+        </ul></li>
+        <li>vereinheitlichte Zeit und Kalender: lokale Zeiten und
+        Kalender lassen sich nur mir zusätzlichem Aufwand erhalten</li>
+        </ul></li>
+        </ul></li>
+        <li><span class="citation"
+        data-cites="Larkin2013PoliticsPoetics">Larkin (<span>„The
+        <span>Politics</span> and <span>Poetics</span> of
+        <span>Infrastructure</span>“</span> 2013)</span>
+        <ul>
+        <li><blockquote>
+        <p>Infrastructures are built networks that facilitate the flow
+        of goods, people, or ideas and allow for their exchange over
+        space. As physical forms they shape the nature of a network, the
+        speed and direction of its movement, its temporalities, and its
+        vulnerability to breakdown. They comprise the architecture for
+        circulation, literally providing the undergirding of modern
+        societies, and they generate the ambient environment of everyday
+        life. (328)</p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>What distinguishes infrastructures from technologies is that
+        they are objects that create the grounds on which other objects
+        operate, and when they do so they operate as systems. (329)</p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>Infrastructure in this sense is a kind of mentality and way
+        of living in the world (331)</p>
+        </blockquote></li>
+        </ul></li>
+        <li><span class="citation"
+        data-cites="Star1999EthnographyInfrastructure">Star (<span>„The
+        <span>Ethnography</span> of <span>Infrastructure</span>“</span>
+        1999)</span>;
+        <ul>
+        <li>Definition / Phänomenologie von Infrastrukturen (basierend
+        auf Star und Ruhleder 1996) über verschiedene Dimensionen
+        (380-).
+        <ol type="1">
+        <li><strong>embeddedness</strong></li>
+        <li><strong>transparency</strong></li>
+        <li><strong>reach or scope</strong></li>
+        <li><strong>learned as part of membership</strong></li>
+        <li><strong>links with conventions of practice</strong></li>
+        <li><strong>embodiment of standards</strong></li>
+        <li><strong>built on an installed base</strong></li>
+        <li><strong>becomes visible upon breakdown</strong></li>
+        <li><strong>is fixed in modular increments, not all at once or
+        globally</strong></li>
+        </ol></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="datum-captum-raw-meta" class="slide level2">
+        <h2>Datum? captum? raw? meta?</h2>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase">Jegliche digitale Informationen sind
+        Daten</span> …</p>
+        </div><div class="wide">
+        <blockquote>
+        <p>Data are forms of information, a larger concept that is even
+        more difficult to define. Epistemological and ontological
+        problems abound, resulting in many books devoted to explicating
+        information and knowledge</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Borgman2015BigData">Borgman (<em>Big
+        <span>Data</span>, <span>Little Data</span>, <span>No
+        Data</span></em> 2015)</span>, 18</cite></p>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>[Datafication/modeling] is the work of abstracting discrete
+        values from a phenomenon or artifact. These values may be
+        expressed in numbers or texts and are necessarily a reduction of
+        complex materials into a form for computation.
+        <!--With data we can automate processes --></p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Drucker2021DHCoursebook">Drucker (<em><span>DH
+        Coursebook</span></em> 2021)</span>, 3</cite></p>
+        <blockquote>
+        <p>Data need to be imagined <em>as</em> data to exist and
+        function as such, and the imagination of data entails an
+        interpretive base.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Gitelman2013Introduction">Gitelman
+        (<span>„Introduction“</span> 2013)</span>, 3</cite></p>
+        </div><div class="narrow">
+        <p>… und <span class="keyphrase">alle Daten sind
+        modelliert</span></p>
+        <!-- - Mapping
+        - Reduction
+        - Purpose -->
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Data literacy as part of data culture</li>
+        <li>data are always a concrete embodyment and a
+        socio-technological stack: serialisation</li>
+        <li>Models have three characteristics <span class="citation"
+        data-cites="Stachowiak1973AllgemeineModelltheorie">(Stachowiak
+        <em>Allgemeine Modelltheorie</em> 1973)</span>
+        <ul>
+        <li>Abbildung: model for something</li>
+        <li>Reduktion: abstracts aspects of interest</li>
+        <li>Zweck: models have a purpose for something</li>
+        </ul></li>
+        <li>Wenn wir dem Konstruktivismus folgen, dann sind alle Modelle
+        historisch situiert. Sie haben einen konkreten Ort und eine
+        spezifische Zeitlichkeit
+        <ul>
+        <li>Daten und Modelle sind in historischen Prozessen der
+        Wissensproduktion, des Wissenschaffens verortet</li>
+        </ul></li>
+        <li>drucker: capta</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="epistemische-gewalt-der-digitalität"
+        class="title-slide slide level1">
+        <h1>Epistemische Gewalt der Digitalität</h1>
+
+        </section>
+        <section id="dimensionen" class="slide level2">
+        <h2>Dimensionen</h2>
+        <aside class="notes">
+        <p>Constructing the other, the one being spoken about but not
+        talked to. The other, that is unspeakable</p>
+        </aside>
+        </section></section>
+        <section>
+        <section
+        id="multilingualität-in-den-infrastrukturen-unserer-vernetzten-wissensökologien"
+        class="title-slide slide level1">
+        <h1>Multilingualität in den Infrastrukturen unserer vernetzten
+        Wissensökologien</h1>
+
+        </section>
+        <section id="kurzfassung" class="slide level2">
+        <h2>Kurzfassung</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:ag-sticker25">
+        <img data-src="assets/img/ag-sticker25.jpg"
+        alt="Figure 1: AG Sticker 2025" />
+        <figcaption aria-hidden="true">Figure 1: AG Sticker
+        2025</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:ag-sticker26">
+        <img data-src="assets/img/ag-sticker26.jpg"
+        alt="Figure 2: AG Sticker 2026" />
+        <figcaption aria-hidden="true">Figure 2: AG Sticker
+        2026</figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="linguistic-imperialism" class="slide level2">
+        <h2>Linguistic imperialism</h2>
+        <blockquote>
+        <p>‘Linguistic imperialism’ is shorthand for a multitude of
+        activities, ideologies, and structural relationships. Linguistic
+        imperialism takes place within an overarching structure of
+        asymmetrical North/ South relations, where language interlocks
+        with other dimensions, cultural (particularly in education,
+        science, and the media), economic and political</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Phillipson1997RealitiesAndMyths">Phillipson
+        (<span>„Realities and Myths of Linguistic Imperialism“</span>
+        1997)</span>, 239</cite></p>
+        <blockquote>
+        <p>The basis for the codes, languages, methodologies, and
+        technical instruments of the digital humanities is English; the
+        written and spoken language of all the main conferences, the
+        most prestigious journals, the institutions that control the
+        discipline, the organizations and international consortia, and
+        the central authorities of knowledge is, with few exceptions,
+        some dialect of British or American English.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Fiormonte2021Taxation">Fiormonte (<span>„Taxation
+        Against <span>Overrepresentation</span>?“</span> 2021)</span>,
+        334-335</cite></p>
+        </section>
+        <section id="sprache-und-computer" class="slide level2">
+        <h2>Sprache und Computer</h2>
+        <!-- ::: columns
+        :::: narrow
+
+        [Jegliche digitale Informationen sind Daten]{.keyphrase} ...
+
+        ::::
+        :::: wide
+
+        >Data are forms of information, a larger concept that is even more difficult to define. Epistemological and ontological problems abound, resulting in many books devoted to explicating information and knowledge
+
+        <cite>@Borgman2015BigData, 18</cite>
+
+        ::::
+        ::: -->
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="keyphrase">Daten sind immer
+        modelliert</span></p>
+        <p>Modelle haben drei Aspekte <span class="citation"
+        data-cites="Stachowiak1973AllgemeineModelltheorie">(Stachowiak
+        <em>Allgemeine Modelltheorie</em> 1973)</span> - Abbildung -
+        Reduktion - Zweck</p>
+        </div><div class="wide">
+        <blockquote>
+        <p>[Datafication/modeling] is the work of abstracting discrete
+        values from a phenomenon or artifact. These values may be
+        expressed in numbers or texts and are necessarily a reduction of
+        complex materials into a form for computation.
+        <!--With data we can automate processes --></p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Drucker2021DHCoursebook">Drucker (<em><span>DH
+        Coursebook</span></em> 2021)</span>, 3</cite></p>
+        <blockquote>
+        <p>Data need to be imagined <em>as</em> data to exist and
+        function as such, and the imagination of data entails an
+        interpretive base.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Gitelman2013Introduction">Gitelman
+        (<span>„Introduction“</span> 2013)</span>, 3</cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>Damit Computer Schriftsprache erfassen können, sind viele
+        Dinge notwendig, die in direkter Tradition früherer technischer
+        Entwicklungen stehen und in die bestehenden gesellschaftichen
+        Machtverhälttnisse eingebunden sind.</p>
+        <ul>
+        <li>cosimas anekdote zu japanischer Tastaturbelegung und Windows
+        10: 4 Wochen Kampf mit der IT</li>
+        <li></li>
+        </ul>
+        <p>Wir brauchen mindestens</p>
+        <ol type="1">
+        <li>Zeichensystem</li>
+        <li>Zeichenkodierung
+        <ul>
+        <li>Regelwerk zur Übersetzung von menschenlesbaren Symbole in
+        maschinenlesbare, eindeutige Identifikatoren.</li>
+        <li>Wie bei Modellierungen gilt: sie sind ein Akt der
+        Interpretation.</li>
+        <li>Es muss entschieden werden welche Aspekte des Zeichensystems
+        modelliert und kodiert werden: visuelle Form (Font) oder
+        konzeptuelle Einheit (i.e. Buchstaben)</li>
+        </ul></li>
+        <li>Eingabesystem
+        <ul>
+        <li>übersetzt Symbole in konzeptuelle Einheiten auf Basis eines
+        Standards zur Zeichenkodierung</li>
+        <li>eine mensch-maschine Schnittstelle
+        <ul>
+        <li>Lochkarten: die Kodierung übernimmt der Mensch vor der
+        Eingabe</li>
+        <li>Tastaturen: die Kodierung ist in einen Stack aus Hardware,
+        Software, Standards eingeschrieben</li>
+        </ul></li>
+        </ul></li>
+        <li>Ausgabesystem
+        <ul>
+        <li>benötigt metainformation zum Schriftsystem: Richtung und
+        Positionierung der Zeichenzueinander</li>
+        <li>Fonts/Schrifttypen, die den Standard der Zeichenkodierung
+        und das Schriftsystem unterstützen</li>
+        <li>Glyphen für alle verwendeten Zeichen</li>
+        <li>Eine Infrastruktur zur Anzeige der Glyphen auf einer
+        zweidimensionalen Oberfläche
+        <ul>
+        <li>Druck</li>
+        <li>Bildschirm</li>
+        </ul></li>
+        </ul></li>
+        </ol>
+        </aside>
+        </section>
+        <section id="infrastrukturen-und-pfadabhängigkeiten-1"
+        class="slide level2">
+        <h2>Infrastrukturen und Pfadabhängigkeiten</h2>
+        <div class="columns">
+        <div class="column">
+        <figure>
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Timezones_UTC%2B14.png/330px-Timezones_UTC%2B14.png"
+        alt="Timezones. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Timezones. Public domain, <a
+        href="https://commons.wikimedia.org/wiki/File:Timezones_UTC%2B14.png">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure>
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/250px-STS120LaunchHiRes-edit1.jpg"
+        alt="Space Shuttle. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Space Shuttle. Public domain, <a
+        href="https://commons.wikimedia.org/wiki/File:STS120LaunchHiRes-edit1.jpg">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>Eine Folie, die die Bedeutung von Pfadabhängigkeiten für
+        Infrastrukturen darstellt:</p>
+        <ul>
+        <li>Am Anfang ist alles im Fluß</li>
+        <li>Infrastrukturen werden erfolgreich und verschwinden aus der
+        Wahrnehmung, wenn sie “universell” und selbstverständlich
+        werden.</li>
+        <li>Miteinander nicht kompatible Systeme können keine gemeinsame
+        Infrastruktur bilden</li>
+        <li>Beispiele
+        <ul>
+        <li>Eisenbahn <span class="citation"
+        data-cites="Schivelbusch1977GeschichteEisenbahnreise">(Schivelbusch
+        <em>Geschichte der Eisenbahnreise</em> 1977)</span>
+        <ul>
+        <li>Spurweite: warum sind die Booster des Spaceshuttles so
+        breit, wie römische Wagen?
+        <ul>
+        <li>The United States and most of the world use a standard
+        railway gauge of 4 feet, 8.5 inches.</li>
+        <li>his measurement stems from 19th-century English tramways,
+        which mirrored the ancient ruts found on Roman roads.</li>
+        <li>George Stephenson formally established this 4-foot, 8.5-inch
+        width for the Liverpool and Manchester Railway in 1830.</li>
+        <li>Transporting the Space Shuttle’s Solid Rocket Boosters from
+        Utah to Florida required using the national rail network.</li>
+        <li>Mountain tunnels built for 19th-century trains limited the
+        maximum diameter of these modern rocket components.</li>
+        </ul></li>
+        <li>vereinheitlichte Zeit und Kalender: lokale Zeiten und
+        Kalender lassen sich nur mir zusätzlichem Aufwand erhalten</li>
+        </ul></li>
+        </ul></li>
+        <li><span class="citation"
+        data-cites="Larkin2013PoliticsPoetics">Larkin (<span>„The
+        <span>Politics</span> and <span>Poetics</span> of
+        <span>Infrastructure</span>“</span> 2013)</span>
+        <ul>
+        <li><blockquote>
+        <p>Infrastructures are built networks that facilitate the flow
+        of goods, people, or ideas and allow for their exchange over
+        space. As physical forms they shape the nature of a network, the
+        speed and direction of its movement, its temporalities, and its
+        vulnerability to breakdown. They comprise the architecture for
+        circulation, literally providing the undergirding of modern
+        societies, and they generate the ambient environment of everyday
+        life. (328)</p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>What distinguishes infrastructures from technologies is that
+        they are objects that create the grounds on which other objects
+        operate, and when they do so they operate as systems. (329)</p>
+        </blockquote></li>
+        <li><blockquote>
+        <p>Infrastructure in this sense is a kind of mentality and way
+        of living in the world (331)</p>
+        </blockquote></li>
+        </ul></li>
+        <li><span class="citation"
+        data-cites="Star1999EthnographyInfrastructure">Star (<span>„The
+        <span>Ethnography</span> of <span>Infrastructure</span>“</span>
+        1999)</span>;
+        <ul>
+        <li>Definition / Phänomenologie von Infrastrukturen (basierend
+        auf Star und Ruhleder 1996) über verschiedene Dimensionen
+        (380-).
+        <ol type="1">
+        <li><strong>embeddedness</strong></li>
+        <li><strong>transparency</strong></li>
+        <li><strong>reach or scope</strong></li>
+        <li><strong>learned as part of membership</strong></li>
+        <li><strong>links with conventions of practice</strong></li>
+        <li><strong>embodiment of standards</strong></li>
+        <li><strong>built on an installed base</strong></li>
+        <li><strong>becomes visible upon breakdown</strong></li>
+        <li><strong>is fixed in modular increments, not all at once or
+        globally</strong></li>
+        </ol></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="druck-mit-beweglichen-lettern-als-paradigma"
+        class="slide level2">
+        <h2>Druck mit beweglichen Lettern als Paradigma</h2>
+        <figure>
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Upperandlowercase.jpg/330px-Upperandlowercase.jpg"
+        alt="Setzkasten. John, CC BY-SA 3.0, via Wikimedia Commons" />
+        <figcaption aria-hidden="true">Setzkasten. John, CC BY-SA 3.0,
+        via <a
+        href="https://commons.wikimedia.org/wiki/File:Upperandlowercase.jpg">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        <!-- ::: columns
+        :::: column
+
+        ### Ostasien, 10. Jhd.
+
+        ::::
+        :::: column
+
+        ### Mitteleuropa, 15. Jhd.
+
+
+        ::::
+        :::
+         -->
+        <aside class="notes">
+        <ul>
+        <li>wurde in Ostasien / China erfunden!</li>
+        <li>Druck ist Teil eines Publikationswesens und des Kapitalismus
+        und unterliegt eigenen Affordancen</li>
+        <li>Benötigte Ressourcen (übersetzen sich in Kosten)
+        <ul>
+        <li>Werkzeug
+        <ul>
+        <li>Maschinen</li>
+        <li>Satzschriften / Zeichensätze (en. “typeface”) mit Lettern
+        (en. “sort”) für alle druckbaren Zeichen
+        <ul>
+        <li>Innerhalb der Zeichensätze gibt es Schriftschnitte (en.
+        “fonts”) für
+        <ul>
+        <li>Stärke</li>
+        <li>Laufweite</li>
+        <li>Lage</li>
+        </ul></li>
+        <li>Muss für mindestens eine ganze Seite reichen</li>
+        </ul></li>
+        </ul></li>
+        <li>Verbrauchsmaterial
+        <ul>
+        <li>Papier</li>
+        <li>Farbe</li>
+        </ul></li>
+        <li>Personal</li>
+        </ul></li>
+        <li>Anreize
+        <ul>
+        <li>je einfacher das Schriftsystem (wenige Formen, keine
+        Ligaturen, nur eine Dimension von Zeichen innerhalb des Wortes),
+        desto einfacher ist es zu mechanisieren
+        <ul>
+        <li>das ist der Grund, warum Gutenberg sooo viel erfolgreicher
+        war, als die chinesischen Erfinder_innen 400 Jahre vorher</li>
+        </ul></li>
+        <li>je einfacher, desto kostengünstiger lässt sich Text
+        verfielfältigen
+        <ul>
+        <li>mit dem gleichen Aufwand, lassen sich mit einfacherer
+        Schriftsystemen mehr Menschen erreichen</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="beispiel-schreibmaschine-und-linotype"
+        class="slide level2">
+        <h2>Beispiel Schreibmaschine und Linotype</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:ar-linotype">
+        <img data-src="assets/img/arabic-linotype_nemeth-p_46.png"
+        alt="Figure 3: Arabische Linotype-Maschine, 1910er. Quelle: Nemeth (Arabic Type-Making in the Machine Age 2017), fig. 2.7" />
+        <figcaption aria-hidden="true">Figure 3: Arabische
+        Linotype-Maschine, 1910er. Quelle: <span class="citation"
+        data-cites="Nemeth+2017">Nemeth (<em>Arabic Type-Making in the
+        Machine Age</em> 2017)</span>, fig. 2.7</figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:zh-typewriter">
+        <img data-src="assets/img/chinese-typewriter_mullaney-p_269.png"
+        alt="Figure 4: Chinesische Schreibmaschine. Quelle: Mullaney (The Chinese Typewriter 2017), fig. 6.7" />
+        <figcaption aria-hidden="true">Figure 4: Chinesische
+        Schreibmaschine. Quelle: <span class="citation"
+        data-cites="Mullaney2017ChineseTypewriter">Mullaney (<em>The
+        <span>Chinese</span> Typewriter</em> 2017)</span>,
+        fig. 6.7</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>we talked about the situatedness of knowledge production and
+        path dependencies</li>
+        <li>Arabic script is much for challenging for mechanical
+        reproduction than Latin script</li>
+        <li>keyboard with 180 keys</li>
+        <li>two magazines were required for a single Arabic fount</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="lösung-komplexitätsreduktion-durch-schriftreform"
+        class="slide level2">
+        <h2>“Lösung”: Komplexitätsreduktion durch Schriftreform</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:ataturk">
+        <img
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ataturk-September_20%2C_1928.jpg/500px-Ataturk-September_20%2C_1928.jpg"
+        alt="Figure 5: Mustafa Kemal Atatürk stellt Menschen des neue türkische Alphabet vor. Kayseri, 20. Sep. 1928. Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 5: Mustafa Kemal Atatürk
+        stellt Menschen des neue türkische Alphabet vor. Kayseri, 20.
+        Sep. 1928. <a
+        href="https://commons.wikimedia.org/wiki/File:Ataturk-September_20,_1928.jpg">Wikimedia
+        Commons</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <!-- Ostasien -->
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Es gibt einen großen Anreiz zur Komplexitätsreduktion</li>
+        <li>Beispiele
+        <ul>
+        <li>Globale Bestrebungen zur Schriftreform im ausgehenden 19.
+        Jhd</li>
+        <li>Anreize: Volksbildung und effiziente Mechanisierung</li>
+        <li>Schriften, die “erfolgreich” reformiert wurden
+        <ul>
+        <li>Japanisch</li>
+        <li>Türkisch</li>
+        <li>Chinesisch: hier wurde zumindest die Schriftrichtung
+        geändert</li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="lösung-komplexitätsreduktion-durch-transliteration"
+        class="slide level2">
+        <h2>“Lösung”: Komplexitätsreduktion durch Transliteration</h2>
+        <p>Transliteration into Latin script served the need of colonial
+        administrations and academics with the technological affordances
+        of the time.</p>
+        <div class="columns-3">
+        <div class="column">
+        <h3 id="مرآة-الشرق"><span lang="ar">مرآة الشرق</span></h3>
+        <p>The Arabic title of a newspaper published by <span
+        lang="ar">بولس شحادة</span> in Jerusalem, 1919–38</p>
+        <h3 id="meraat-al-sherk">Meraat al-Sherk</h3>
+        <p>The official transcription provided by the paper’s
+        masthead</p>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat-1">
+        <img
+        data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
+        alt="Figure 6: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 6: Front page of <em><a
+        href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
+        al-Sharq</a></em> #192, 22 Nov. 1922, Jerusalem. Source: <a
+        href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <h3 id="mirʾāt-al-sharq">Mirʾāt al-Sharq</h3>
+        <p>Following the system of the <em>International Journal of
+        Middle East Studies</em> (IJMES)</p>
+        <h3 id="mirʾāt-aš-šarq">Mirʾāt aš-Šarq</h3>
+        <p>Following the system of the <em>Deutsche Morgenländische
+        Gesellschaft</em> (DMG)</p>
+        <h3 id="mrmp-alcrq">mrMp Alcrq</h3>
+        <p>Buckwalter transliteration</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><em>Mirʾāt al-Sharq</em> published by Būlus Shaḥāda in
+        Jerusalem between 1919 and 1938</li>
+        <li>transliteration
+        <ul>
+        <li>Depend on input and output <strong>languages</strong></li>
+        <li>Subject to traditions and taste</li>
+        <li>Error prone</li>
+        <li>if 1:1 grapheme replacement is intended, it becomes
+        unreadable for casual readers</li>
+        <li>back transliteration doesn’t work</li>
+        </ul></li>
+        <li>Transliteration ist in der Wissenschaft in dem Moment
+        notwendig geworden, als mechanisierte Schriften die Grundlage
+        für Prüfung und Verbreitung wurden. In einer Monographie, ließ
+        sich der teure Druck mit litographierten Textteilen vielleicht
+        noch rechfertigen</li>
+        <li>In der Wissenschaft wurde der Lückentext praktiziert, bei
+        dem die originalschriftlichen Anteile frei gelassen und dann mit
+        Hand gefüllt wurden</li>
+        <li>Das gilt auch für die diakritischen Zeichen, die auf der
+        Schreibmaschine fehlen</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="lösung-komplexitätsreduktion-durch-transliteration-1"
+        class="slide level2">
+        <h2>“Lösung”: Komplexitätsreduktion durch Transliteration</h2>
+        <div class="columns">
+        <div class="column">
+        <p>中国经济 (chinesische Wirtschaft)</p>
+        </div><div class="column">
+        <ul>
+        <li>“Zhong guo jing ji” (Hanyu Pinyin in Einzelsilben)</li>
+        <li>“Zhongguo jing ji” (Hanyu Pinyin, mehrsilbige Namen
+        zusammengeschrieben)</li>
+        <li>“Zhongguo jingji” (Hanyu Pinyin mit Wortbildung)</li>
+        <li>“Zhongguo-jingji” (Hanyu Pinyin mit Wortbildung, Wörter mit
+        Bindestrichen durchgekoppelt)</li>
+        <li>“Chung-kuo ching-chi” (Wade-Giles-Umschrift)</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Cosimas Rant! im deutshcen Bibliotheks wesen wird auf
+        Transliteration bestanden als Hauptindexierungsfeld</li>
+        </ul>
+        </aside>
+        <!-- ## Teure Lösungen: Bildvervielfältigung und semi-manuelle Ergänzungen
+
+        ::: notes
+
+        - Lange Zeit hat sich Litographie als Drucktechnik für nicht-lateinische Schriftsysteme erhalten
+        - In der Wissenschaft wurde der Lückentext praktiziert, bei dem die originalschriftlichen Anteile frei gelassen und dann mit Hand gefüllt wurden
+        - Das gilt auch für die diakritischen Zeichen, die auf der Schreibmaschine fehlen
+
+        ::: -->
+        </section></section>
+        <section>
+        <section id="zeichkodierung" class="title-slide slide level1">
+        <h1>Zeichkodierung</h1>
+
+        </section>
+        <section id="überblick" class="slide level2">
+        <h2>Überblick</h2>
+        <div class="columns">
+        <div class="column">
+        <h3
+        id="s-american-standard-code-for-information-interchange-ascii">1960s:
+        American Standard Code for Information Interchange (ASCII)</h3>
+        <ul>
+        <li>95 druckbaren Zeichen [(die restlichen 33 sind
+        Steuerzeichen)]: die Ziffern 0-9, die 26 Buchstaben des
+        englischen Alphabets in Groß- und Kleinschreibung und 33
+        Satzzeichen und Symbolen.</li>
+        <li>wurde 1967 zu einem ISO Standard (ISO 646).</li>
+        <li>ASCII ist eigentlich nur für das Englische geeignet – schon
+        Deutsch oder Französisch können nicht direkt abgebildet
+        werden</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="s-unicode">1980s: Unicode</h3>
+        <ul>
+        <li>Industriekonsortium: Adobe, Airbnb, Amazon, Apple, Yat,
+        Google, ETCO, Meta, Microsoft, Netflix, SAP und Salesforce</li>
+        <li>Millionen von Zeichen</li>
+        <li>Prinzipien:
+        <ul>
+        <li>abstrakte Zeichen und nicht ihre graphische Form
+        (characters, not glyphs)</li>
+        <li>keine Duplikate innerhalb einer Schrift (unification)</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Unicode
+        <ul>
+        <li>1991 als Standard veröffentlicht</li>
+        <li>Die Schriftgrammatik des Lateinischen wird beibehalten</li>
+        <li>in der realität können gleiche Formen, verschiedene
+        Codepoints haben</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode" class="slide level2">
+        <h2>Unicode</h2>
+        <p><span class="c_left-align keyphrase">Unicode ist fantastisch
+        …</span></p>
+        <p><span class="c_center">… aber viele zeitgenössische und
+        historische Zeichensysteme werden auch in der neuesten Version
+        nicht unterstützt</span></p>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:poster-wws">
+        <img data-src="assets/img/twws-poster-22-960.jpg"
+        alt="Figure 7: Poster “The World’s Writing Systems”. Stand der Erfassung in Unicode 14. Schwarz: lebende Schrift in Unicode; Türkis: historische Schrift in Unicode; Lila und Rot: nicht in Unicode. Quelle" />
+        <figcaption aria-hidden="true">Figure 7: Poster “The World’s
+        Writing Systems”. Stand der Erfassung in Unicode 14. Schwarz:
+        lebende Schrift in Unicode; Türkis: historische Schrift in
+        Unicode; Lila und Rot: nicht in Unicode. <a
+        href="https://www.worldswritingsystems.org/poster.php">Quelle</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:unicode-1">
+        <img data-src="assets/img/unicode_1-0-0.png"
+        alt="Figure 8: Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 8: Supported scripts in
+        Unicode v1.0.0. Source: <a
+        href="https://www.worldswritingsystems.org"
+        class="uri">https://www.worldswritingsystems.org</a></figcaption>
+        </figure>
+        <figure id="fig:unicode-15-missing">
+        <img data-src="assets/img/unicode_15-0-0-missing-scripts.png"
+        alt="Figure 9: Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 9: Currently unsupported
+        scripts. Source: <a href="https://www.worldswritingsystems.org"
+        class="uri">https://www.worldswritingsystems.org</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>unicode can be traced back to the 1980s</li>
+        <li>Unicode has become the dominant encoding standard in the
+        2000s</li>
+        <li>almost universal support across operating systems has been
+        driven by people’s fondness of emojis</li>
+        <li>Arabic has been part of Unicode since v 1.0.0</li>
+        <li>linguisting imperialism
+        <ul>
+        <li>consortium: Adobe, Airbnb, Amazon, Apple, Yat, Google, ETCO,
+        Meta, Microsoft, Netflix, SAP and Salesforce</li>
+        <li>character encoding is part of the history of a global
+        hegemonic technology stack bound up in historically contingent
+        cultural traditions of the Global North.</li>
+        <li>Mechanically and, later, electronically recording
+        information in scripts other than Latin—particularly complex
+        scripts with a much larger number of graphemes and different
+        writing directions— was never considered sufficiently important
+        or profitable to be supported out-of-the-box.</li>
+        <li>Character encoding enforces Latin script grammar
+        <ul>
+        <li>unicode insufficiently distinguishes between languages and
+        scripts</li>
+        </ul></li>
+        <li>The standard is written in English</li>
+        <li>Current v 15:
+        <ul>
+        <li>we know at least 300 writing systems</li>
+        <li>127 are currently not encoded</li>
+        </ul></li>
+        </ul></li>
+        <li>potentiell Poster nutzen für den Überblick</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-ist-fantastisch" class="slide level2">
+        <h2>Unicode ist fantastisch …</h2>
+        <p><span class="c_right">… aber Standards sind nur nur so gut,
+        wie ihre Implementierung</span></p>
+        <h3 id="kodierungsalbträume">Kodierungsalbträume</h3>
+        <!-- change this slide to show rendering issues ([@fig:arabic-fail-covid]) AND encoding issues -->
+        <div class="columns">
+        <div class="wide">
+        <figure id="fig:arabic-mecca-1">
+        <img
+        data-src="assets/img/arabic-script_unicode-example-makkiyya-milo_4.png"
+        alt="Figure 10: 32 variants of encoding “Meccan” (مكية) (Milo „Visually Misleading Characters in the Arabic URL“ 2014, 4)" />
+        <figcaption aria-hidden="true">Figure 10: 32 variants of
+        encoding “Meccan” (<span lang="ar">مكية</span>) <span
+        class="citation" data-cites="Milo2014VisuallyMisleading">(Milo
+        <span>„Visually <span>Misleading Characters</span> in the
+        <span>Arabic URL</span>“</span> 2014, 4)</span></figcaption>
+        </figure>
+        </div><div class="narrow">
+        <figure id="fig:arabic-mecca-2">
+        <img
+        data-src="assets/img/arabic-script_unicode-example-wikidata_narrow.png"
+        height="300"
+        alt="Figure 11: In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
+        <figcaption aria-hidden="true">Figure 11: In-browser search for
+        “<span lang="ar">مك</span>” in the Wikidata entry for “Mecca”
+        (<a
+        href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>unicode insufficiently distinguishes between languages and
+        scripts
+        <ul>
+        <li>violating two of its principles
+        <ul>
+        <li>characters not glyphs</li>
+        <li>unification: no duplicates within a script</li>
+        </ul></li>
+        </ul></li>
+        <li>yet, rendering depends on software support
+        <!-- + see [@fig:arabic-fail-covid] --></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-ist-fantastisch-1" class="slide level2">
+        <h2>Unicode ist fantastisch …</h2>
+        <p><span class="c_right">… aber Standards sind nur nur so gut,
+        wie ihre Implementierung</span></p>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>As Ramsey Nasser notes in the overview of his programming
+        language <span class="c_rtl red" lang="ar">ب ل ق</span>
+        [pre-existing digital techonologies] are almost exclusively
+        based on the ASCII character set</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="IsasiEtAl2023ModelMultilingual">Isasi u. a.
+        (<span>„A <span>Model</span> for <span>Multilingual</span> and
+        <span>Multicultural Digital Scholarship Methods
+        Publishing</span>“</span> 2023)</span>, 19</cite></p>
+        </div><div class="narrow">
+        <p><span class="c_rtl red" lang="ar">ب ل ق</span> hätte <span
+        class="c_rtl green" lang="ar">قلب</span> sein müssen.</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>yet, rendering depends on software support</li>
+        <li>example from a £130 book from a major publisher
+        <!-- + see [@fig:arabic-fail-covid] --></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="unicode-ist-fantastisch-2" class="slide level2">
+        <h2>Unicode ist fantastisch …</h2>
+        <!-- [... but standards depend on implementation and software support]{.c_right} -->
+        <p><span class="c_right">… haben wir schon Industriekonsortien
+        erwähnt?</span></p>
+        <blockquote>
+        <p>HTML elements all have names that only use ASCII
+        alphanumerics</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="HTMLLivingStandard2023">Web Hypertext Application
+        Technology Working Group (<span>„<span>HTML</span>“</span>
+        2023)</span>, §13.1.2</cite></p>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:zakham-ar-failure">
+        <img data-src="assets/img/html5-lang_ar-chrome-2.png"
+        alt="Figure 12: Rendered HTML with the built-in default CSS for Zakham („Amīrkā wa-ʿulamāʾ al-ʿArab“ 1907). The test file is available online" />
+        <figcaption aria-hidden="true">Figure 12: Rendered HTML with the
+        built-in default CSS for <span class="citation"
+        data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
+        (<span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span> 1907)</span>. The
+        test file is available <a
+        href="https://doi.org/10.5281/zenodo.7781543">online</a></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:html">
+        <img data-src="assets/img/html_vscode.png"
+        alt="Figure 13: HTML-Code for fig. 12 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption aria-hidden="true">Figure 13: HTML-Code for fig. 12
+        in Visual Code Studio. By default, non-ASCII characters are
+        visually highlighted</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Arabic has been part of Unicode since its inception</li>
+        <li>yet, software support is a different question, as we have
+        seen</li>
+        <li>HTML5 is a <em>living standard</em> maintained by yet
+        another consortium Web Hypertext Application Technology Working
+        Group (WHATWG)
+        <ul>
+        <li>members are leading browser vendors such as Apple, Google,
+        Microsoft and Mozilla</li>
+        <li>all but Mozilla are also members of the Unicode
+        consortium</li>
+        </ul></li>
+        <li><code>@lang</code> attribute not used by standard CSS
+        <ul>
+        <li>everyone has to add
+        <code>*[lang="ar"] {direction:rtl;}</code></li>
+        </ul></li>
+        <li>URIs nutzen URL escaping für nicht lateinische Zeichen</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section
+        id="was-sind-die-konsequenzen-für-sprachgemeinschaften-und-forschung"
+        class="title-slide slide level1">
+        <h1>Was sind die Konsequenzen für Sprachgemeinschaften und
+        Forschung?</h1>
+
+        </section>
+        <section id="unsichtbarkeit" class="slide level2">
+        <h2>Unsichtbarkeit</h2>
+        <p>Wie finde ich eigentlich die arabische Zeitung <span
+        lang="ar">مرآة الشرق</span> in deutschen Bibliotheken?</p>
+        <div class="columns-3">
+        <div class="narrow">
+        <figure id="fig:mirat-ar">
+        <img data-src="assets/img/zdb_mirat-ar.png"
+        alt="Figure 14: Original in arabischer Schrift" />
+        <figcaption aria-hidden="true">Figure 14: Original in arabischer
+        Schrift</figcaption>
+        </figure>
+        <figure id="fig:mirat-ijmes">
+        <img data-src="assets/img/zdb_mirat-ar-Latn-x-ijmes.png"
+        alt="Figure 15: In international gebräuchlicher Umschrift" />
+        <figcaption aria-hidden="true">Figure 15: In international
+        gebräuchlicher Umschrift</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat-dmg">
+        <img data-src="assets/img/zdb_mirat-ar-Latn-x-dmg.png"
+        alt="Figure 16: In Umschrift der Deutschen Morgenländischen Gesellschaft" />
+        <figcaption aria-hidden="true">Figure 16: In Umschrift der
+        Deutschen Morgenländischen Gesellschaft</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure id="fig:mirat-dmg-flat">
+        <img data-src="assets/img/zdb_mirat-ar-Latn-hamza.png"
+        alt="Figure 17: In DMG Umschrift ohne diakritische Zeichen" />
+        <figcaption aria-hidden="true">Figure 17: In DMG Umschrift ohne
+        diakritische Zeichen</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><strong>Cosima</strong>!!!
+        <ul>
+        <li>Discovery-Systeme</li>
+        <li>Bibliothekssysteme</li>
+        <li>Marktdiskriminierung</li>
+        <li>Verlage zahlen wahrscheinlich auch für Ranking</li>
+        </ul></li>
+        <li>was nicht erfasst werden kann, kann nicht gesucht werden,
+        kann nicht gefunden werden</li>
+        <li>Recherchesysteme unterstützen von Haus aus oft nur Sprachen
+        in lateinischer Schrift</li>
+        <li>Kommerzielle Lösungen mit hermetischen Feature
+        Request-Workflows</li>
+        <li>Fehlende Auffindbarkeit je nach Index, Erschließung,
+        Schreibweise</li>
+        <li>Bestände werden unwillentlich dem wissenschaftlichen Zugriff
+        vorenthalten</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="work-arounds-hacks" class="slide level2">
+        <h2>Work-arounds, hacks</h2>
+        <p>Menschen versuchen das wünschbare Ergebnis mit den
+        vorhandenen Werkzeugen zu approximieren</p>
+        <div class="columns">
+        <div class="column">
+        <p>ägyptische Präferenz für das Weglassen der beiden Punkte
+        unter dem finalen <em>yāʾ</em> (U+064A: <span
+        lang="ar">ي</span>) am Ende eines Wortes</p>
+        </div><div class="column">
+        <p>Unicode bietet zwei Möglichkeiten:</p>
+        <ul>
+        <li>das Arabische <em>alif maqṣūra</em> (U+0649: <span
+        lang="ar">ى</span>)</li>
+        <li>das Persische <em>ye</em> (U+06CC: <span
+        lang="ar">ی</span>)</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <p><strong>Till</strong></p>
+        <ul>
+        <li>Probleme:
+        <ul>
+        <li>keine geeignete Eingabeschnittstelle</li>
+        <li>kulturelle Präferenzen</li>
+        <li>Zensur</li>
+        </ul></li>
+        <li>Beispiel der kulturellen Präferenz in Ägypten
+        <ul>
+        <li>für Computer ist es nicht der gleiche String</li>
+        <li>für Suchalgorithmen ist es nicht das Gleiche
+        <ul>
+        <li>Schlecht: wenn etwas Katalogen gesucht wird.
+        <ul>
+        <li>Beispiel geraubte palästinensische Bestände in der
+        israelischen Nationalbibliothek</li>
+        </ul></li>
+        <li>gut: Zensur kann umgangen werden</li>
+        </ul></li>
+        </ul></li>
+        <li>Ostasien
+        <ul>
+        <li>Homonyme und Homophone</li>
+        <li>es bedarf der korrekten Zeichen! No hack, no
+        workaround!</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="linguistic-imperialism-und-monolingualer-habitus"
+        class="slide level2">
+        <h2>linguistic imperialism und monolingualer habitus</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="css">CSS</h3>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode css"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>body {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span><span class="ch">:</span> <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">black</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+        <h3 id="r">R</h3>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;/path/to/folder/&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;oape_stats.rda&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>المجلات <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;4770057679&quot;</span>, <span class="st">&quot;644997575&quot;</span>, <span class="st">&quot;472450345&quot;</span>, <span class="st">&quot;792756327&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>المشار.اليها <span class="ot">&lt;-</span> المشار.اليها <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(source.id.oclc <span class="sc">%in%</span> المجلات)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">write.table</span>(المشار.اليها, <span class="at">file =</span> <span class="st">&quot;csv/oape_stats.csv&quot;</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">quote =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;,&quot;</span>)</span></code></pre></div>
+        </div><div class="column">
+        <p>Technische Sprachen folgen dem monolinguale Habitus des
+        Englischen:</p>
+        <ul>
+        <li>Englische Semantik</li>
+        <li>Englische Grammatik</li>
+        <li>Lateinisches Alphabet (ASCII)</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Die monolingualen Infrastrukturen erfordern, dass alle ein
+        grundsätzliches Verständnis der englischen Sprache erwerben</li>
+        <li>Beispiele
+        <ul>
+        <li>Programmiersprachen
+        <ul>
+        <li>Englische Grammatik</li>
+        <li>Englische Semantik</li>
+        <li>Lateinisches Alphabet</li>
+        </ul></li>
+        <li>Die sitemap des iranischen Nationalarchives
+        <ul>
+        <li>So finden sich die Sammmlungen unter <a
+        href="https://nlai.ir/collection"
+        class="uri">https://nlai.ir/collection</a></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="linguistic-imperialism-und-monolingualer-habitus-1"
+        class="slide level2">
+        <h2>linguistic imperialism und monolingualer habitus</h2>
+        <div id="tbl:ner-llm">
+        <table>
+        <caption>Table 1: f1-score für NER mit LLMs (Zeit in
+        Stunden)</caption>
+        <colgroup>
+        <col style="width: 9%" />
+        <col style="width: 24%" />
+        <col style="width: 19%" />
+        <col style="width: 25%" />
+        <col style="width: 20%" />
+        </colgroup>
+        <thead>
+        <tr>
+        <th>Sprache</th>
+        <th>0-shot</th>
+        <th>0-shot, thinking</th>
+        <th>32-shot</th>
+        <th>32-shot, thinking</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>deu</td>
+        <td><span class="red">0.1584</span> (0.4)</td>
+        <td>0.7894 (7:26)</td>
+        <td><span class="red">0.1584</span> (0:39)</td>
+        <td>0.8273 (7:14)</td>
+        </tr>
+        <tr>
+        <td>eng</td>
+        <td>0.6485 (0.46)</td>
+        <td>0.8197 (7:09)</td>
+        <td>0.7905 (0:59)</td>
+        <td>0.8307 (8:22)</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>resourcedness gap reinpacken, inklusive Literatur</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="abschluss" class="title-slide slide level1">
+        <h1>Abschluss</h1>
+
+        </section>
+        <section id="grundsätzlich" class="slide level2">
+        <h2>Grundsätzlich</h2>
+        <ul>
+        <li>Ohne konkrete Maßnahmen für die politische Anerkennung von
+        gesellschaftlicher und wissenschaftlicher Mehrsprachigkeit,</li>
+        <li>ohne die alltägliche Anstrengung konkrete Praktiken zu
+        ändern,<br />
+        </li>
+        <li>und ohne das politische Bekenntnis für eine auskömmliche,
+        infrastrukturelle Förderung,</li>
+        </ul>
+        <p><span class="keyphrase c_right">können AGs nur
+        Symptombekämpfung betreiben.</span></p>
+        </section>
+        <section id="danke" class="slide level2">
+        <h2>Danke!</h2>
+        <p>Dank an</p>
+        <ul>
+        <li>Die Co-Convenors der [AG Multilingual DH] in der [DHd]:
+        Jana-Katharina Mende, Jonas Müller-Laackmann und Cosima
+        Wagner</li>
+        <li>Die Mitglieder der AG Digitalität im [Interdisziplinären
+        Zentrum Digitalität und Digitale Methoden am Campus Mitte
+        (IZ2D)] der [HU Berlin]: Torsten Hiltmann, Eliza Mandieva,
+        Roland Meyer, Shintaro Miyazaki, Caroline Odebrecht, Lars Erik
+        Zeige</li>
+        </ul>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
         data-entry-spacing="0" role="list">
+        <div id="ref-DigitalHistoryArgument2017" class="csl-entry"
+        role="listitem">
+        Arguing with Digital History working group. 2017. <span>„Digital
+        <span>History</span> and <span>Argument</span>“</span>. White
+        paper. <a
+        href="https://rrchnm.org/argument-white-paper/">https://rrchnm.org/argument-white-paper/</a>.
+        </div>
+        <div id="ref-Berry2011ComputationalTurn" class="csl-entry"
+        role="listitem">
+        Berry, Dave. 2011. <span>„The <span>Computational Turn</span>:
+        <span>Thinking About</span> the <span>Digital
+        Humanities</span>“</span>. <em>Culture Machine</em> 12: 1–22. <a
+        href="http://sro.sussex.ac.uk/id/eprint/49813">http://sro.sussex.ac.uk/id/eprint/49813</a>.
+        </div>
+        <div id="ref-Berry2011Philosophy" class="csl-entry"
+        role="listitem">
+        ———. 2011. <em>The <span>Philosophy</span> of
+        <span>Software</span>: <span>Code</span> and
+        <span>Mediation</span> in the <span>Digital Age</span></em>.
+        Palgrave Macmillan UK. <a
+        href="https://doi.org/10.1057/9780230306479">https://doi.org/10.1057/9780230306479</a>.
+        </div>
+        <div id="ref-Berry+2017" class="csl-entry" role="listitem">
+        Berry, David M, und Anders Fagerjord. 2017. <em>Digital
+        Humanities: Knowledge and Critique in a Digital Age</em>.
+        Cambridge; Malden: Polity.
+        </div>
+        <div id="ref-Borgman2015BigData" class="csl-entry"
+        role="listitem">
+        Borgman, Christine L. 2015. <em>Big <span>Data</span>,
+        <span>Little Data</span>, <span>No Data</span>:
+        <span>Scholarship</span> in the <span>Networked
+        World</span></em>. MIT Press.
+        </div>
+        <div id="ref-CPCAbout" class="csl-entry" role="listitem">
+        Centre for Postdigital Cultures. 2018. <span>„About Us“</span>.
+        Centre for Postdigital Cultures. 2018. <a
+        href="https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/">https://www.coventry.ac.uk/research/areas-of-research/postdigital-cultures/about-us/</a>.
+        </div>
         <div id="ref-Comeau2023ProjectEndings" class="csl-entry"
         role="listitem">
         Comeau, Emily. 2023. <span>„The <span>Project Endings
@@ -873,8 +2421,130 @@ Datenkultur in den Geiteswissenschaften</h2>
         Humanities Quarterly</em> 17 (1). <a
         href="http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html">http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html</a>.
         </div>
+        <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
+        role="listitem">
+        Drucker, Johanna. 2021. <em>The <span>Digital Humanities
+        Coursebook</span>: <span>An Introduction</span> to <span>Digital
+        Methods</span> for <span>Research</span> and
+        <span>Scholarship</span></em>. 1. Aufl. Abingdon: Routledge. <a
+        href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
         </div>
-        </section>
+        <div id="ref-Fiormonte2021Taxation" class="csl-entry"
+        role="listitem">
+        Fiormonte, Domenico. 2021. <span>„Taxation Against
+        <span>Overrepresentation</span>? <span>The Consequences</span>
+        of <span>Monolingualism</span> for <span>Digital
+        Humanities</span>“</span>. In <em>Alternative
+        <span>Historiographies</span> of the <span>Digital
+        Humanities</span></em>, herausgegeben von Dorothy Kim und
+        Adeline Koh, 333–76. Earth: punctum books. <a
+        href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+        </div>
+        <div id="ref-Foucault1974OrdnungDinge" class="csl-entry"
+        role="listitem">
+        Foucault, Michel. (1966) 1974. <em>Die Ordnung der Dinge: eine
+        Archäologie der Humanwissenschaften</em> [Les mots et les
+        choses]. Übersetzt von Ulrich Köppen. Frankfurt am Main:
+        Suhrkamp.
+        </div>
+        <div id="ref-Gitelman2013Introduction" class="csl-entry"
+        role="listitem">
+        Gitelman, Lisa, Hrsg. 2013. <span>„Introduction“</span>. In
+        <em>"<span>Raw Data</span>" <span>Is</span> an
+        <span>Oxymoron</span></em>, 1–14. Cambridge: MIT Press.
+        </div>
+        <div id="ref-IsasiEtAl2023ModelMultilingual" class="csl-entry"
+        role="listitem">
+        Isasi, Jennifer, Riva Quiroga, Nabeel Siddiqui, Joana Vieira
+        Paulino, und Alex Wermer-Colan. 2023. <span>„A
+        <span>Model</span> for <span>Multilingual</span> and
+        <span>Multicultural Digital Scholarship Methods
+        Publishing</span>: <span>The Case</span> of <span>Programming
+        Historian</span>“</span>. In <em>Multilingual <span>Digital
+        Humanities</span></em>, herausgegeben von Lorella Viola und Paul
+        Spence, 17–30. London: Routledge. <a
+        href="https://doi.org/10.4324/9781003393696-3">https://doi.org/10.4324/9781003393696-3</a>.
+        </div>
+        <div id="ref-Larkin2013PoliticsPoetics" class="csl-entry"
+        role="listitem">
+        Larkin, Brian. 2013. <span>„The <span>Politics</span> and
+        <span>Poetics</span> of <span>Infrastructure</span>“</span>.
+        <em>Annual Review of Anthropology</em> 42 (1): 327–43. <a
+        href="https://doi.org/10.1146/annurev-anthro-092412-155522">https://doi.org/10.1146/annurev-anthro-092412-155522</a>.
+        </div>
+        <div id="ref-Laessig2021DigitalHistory" class="csl-entry"
+        role="listitem">
+        Lässig, Simone. 2021. <span>„Digital History: Challenges and
+        Opportunities for the Profession“</span>. <em>Geschichte und
+        Gesellschaft</em> 47 (1): 5–34. <a
+        href="https://doi.org/10/gkhrjp">https://doi.org/10/gkhrjp</a>.
+        </div>
+        <div id="ref-Milo2014VisuallyMisleading" class="csl-entry"
+        role="listitem">
+        Milo, Thomas. 2014. <span>„Visually <span>Misleading
+        Characters</span> in the <span>Arabic URL</span>“</span>. Deco
+        Type.
+        </div>
+        <div id="ref-Mullaney2017ChineseTypewriter" class="csl-entry"
+        role="listitem">
+        Mullaney, Thomas S. 2017. <em>The <span>Chinese</span>
+        Typewriter: <span>A</span> History</em>. Studies of the
+        <span>Weatherhead East Asian Institute</span>, <span>Columbia
+        University</span>. Cambridge: The MIT Press. <a
+        href="https://d-nb.info/1185079467/04">https://d-nb.info/1185079467/04</a>.
+        </div>
+        <div id="ref-Nemeth+2017" class="csl-entry" role="listitem">
+        Nemeth, Titus. 2017. <em>Arabic Type-Making in the Machine Age:
+        The Influence of Technology on the Form of <span>Arabic</span>
+        Type, 1908-1993</em>. Leiden: Brill. <a
+        href="https://doi.org/10.1163/9789004349308">https://doi.org/10.1163/9789004349308</a>.
+        </div>
+        <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+        role="listitem">
+        Phillipson, Robert. 1997. <span>„Realities and Myths of
+        Linguistic Imperialism“</span>. <em>Journal of Multilingual and
+        Multicultural Development</em> 18 (3): 238–48. <a
+        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
+        </div>
+        <div id="ref-Schivelbusch1977GeschichteEisenbahnreise"
+        class="csl-entry" role="listitem">
+        Schivelbusch, Wolfgang. 1977. <em>Geschichte der Eisenbahnreise:
+        Zur Industrialisierung von Raum und Zeit im 19.
+        Jahrhundert</em>. München: Hanser.
+        </div>
+        <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
+        Siles, Ignacio. 2023. <em>Living with <span>Algorithms</span>:
+        <span>Agency</span> and <span>User Culture</span> in <span>Costa
+        Rica</span></em>. Boston: MIT Press.
+        </div>
+        <div id="ref-Stachowiak1973AllgemeineModelltheorie"
+        class="csl-entry" role="listitem">
+        Stachowiak, Herbert. 1973. <em>Allgemeine Modelltheorie</em>.
+        Wien: Springer.
+        </div>
+        <div id="ref-Star1999EthnographyInfrastructure"
+        class="csl-entry" role="listitem">
+        Star, Susan Leigh. 1999. <span>„The <span>Ethnography</span> of
+        <span>Infrastructure</span>“</span>. <em>American Behavioral
+        Scientist</em> 43 (3): 377–91. <a
+        href="https://doi.org/10.1177/00027649921955326">https://doi.org/10.1177/00027649921955326</a>.
+        </div>
+        <div id="ref-HTMLLivingStandard2023" class="csl-entry"
+        role="listitem">
+        Web Hypertext Application Technology Working Group. 2023.
+        <span>„<span>HTML</span>: <span>Living Standard</span>“</span>.
+        24. März 2023. <a
+        href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
+        </div>
+        <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
+        class="csl-entry" role="listitem">
+        Zakham, Yūsuf. 1907. <span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span>
+        [America and Arab Scholars]. <em>al-Muqtabas</em> 2 (1), 14.
+        Februar 1907. <a
+        href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
+        </div>
+        </div>
+        </section></section>
       </div>
     </div>
 
@@ -884,7 +2554,7 @@ Datenkultur in den Geiteswissenschaften</h2>
     <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
     <script src="../../assets/revealjs/plugin/search/search.js"></script>
     <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
-    
+
     <script>
 
       // Full list of configuration options available at:
@@ -986,7 +2656,7 @@ Datenkultur in den Geiteswissenschaften</h2>
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-        
+
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -1030,20 +2700,20 @@ Datenkultur in den Geiteswissenschaften</h2>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-                                              
+
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-        
+
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-        
+
         // Bounds for smallest/largest possible scale to apply to content
-        
-        
-        
+
+
+
         // reveal.js plugins
         plugins: [
                 RevealNotes,
@@ -1064,7 +2734,7 @@ Datenkultur in den Geiteswissenschaften</h2>
                             <span class="c_left">|</span>
             <span class="c_left">Till Grallert<sup></sup></span>
                         <span class="c_center">
-          <a href="https://tillgrallert.github.io/slides/dh/2026-stuttgart/">https://tillgrallert.github.io/slides/dh/2026-stuttgart/</a>
+          <a href="https://tillgrallert.github.io/slides/dh/2026-kiel/">https://tillgrallert.github.io/slides/dh/2026-kiel/</a>
           <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
         </span>
                 <!-- this should probably moved to the title slide only -->
