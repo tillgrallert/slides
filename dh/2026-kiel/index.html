@@ -866,6 +866,50 @@
                 font-size: smaller;
                 margin-left: 2em;
             }
+            span.c_comment {
+                display: block;
+                float: right;
+                background: yellow;
+            }
+            .post-it {
+                display: block;
+                /*float:right;*/
+                transform:rotate(10deg);
+                width:10em;
+                /*height:240px;*/
+                /*position:relative;*/
+                background:#ffa;
+                color:#130d6b;
+                /*overflow:hidden;*/
+                margin:30px;
+                padding:20px;
+                border-radius:0 0 0 30px/45px;
+                box-shadow:
+                    inset 0 -40px 40px rgba(0,0,0,0.2),
+                    inset 0 25px 10px rgba(0,0,0,0.2),
+                    0 5px 6px 5px rgba(0,0,0,0.2);
+                font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", cursive;
+                line-height:1.7em;
+                font-size:0.5em;
+                font-weight: 300;
+                /*-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);*/
+            }
+
+            /*.post-it:before {
+                content:"";
+                display:block;
+                position:absolute;
+                width:20px;
+                height:25px;
+                background:#ffa;
+                box-shadow:
+                3px -2px 10px rgba(0,0,0,0.2),
+                inset 15px -15px 15px rgba(0,0,0,0.3);
+                left:0;
+                bottom:0;
+                z-index:2;
+                transform:skewX(25deg);
+            }*/
         </style>
         <style>
             /*************************
@@ -944,31 +988,92 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <section id="wer-bin-ich-und-warum-stehe-ich-vor-ihnen"
         class="slide level2">
         <h2>Wer bin ich und warum stehe ich vor Ihnen</h2>
-        <ul>
-        <li>Sozial- und Medienhistoriker des mehrheitlich
-        arabischsprachigen östlichen Mittelmeerraumes ab dem späten 18.
-        Jahrhundert.</li>
-        <li>Studium der Islamwissenschaft, Judaistik, VWL und
-        Geschichte</li>
-        <li>Co-Convenor von AGs zu Multilingual DH</li>
-        <li>Leitung der Task Area <em>Data Culture</em> und des
-        <em>Methods Innovation Lab</em> von [NFDI4Memory] and der [HU
-        Berlin].</li>
-        </ul>
+        <figure id="fig:marja">
+        <img data-src="../../assets/phd/Panorama-Marja-707-708.jpg"
+        alt="Figure 1: Straßenbahnen auf dem Marja-Platz in Damaskus, 1920er (DAMAS – Merdjé - Palais de Justice DAMAS – Merdjé - Palais 1928; DAMAS – Place Merdjé 1928)" />
+        <figcaption aria-hidden="true">Figure 1: Straßenbahnen auf dem
+        Marja-Platz in Damaskus, 1920er <span class="citation"
+        data-cites="DamasPlaceMerdjé+1928 DamasMerdjé+1928">(<em><span>DAMAS</span>
+        – <span>Merdjé</span> - <span>Palais</span> de
+        <span>Justice</span></em> <em><span>DAMAS</span> –
+        <span>Merdjé</span> - <span>Palais</span></em> 1928;
+        <em><span>DAMAS</span> – <span>Place Merdjé</span></em>
+        1928)</span></figcaption>
+        </figure>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:network-mentioned-periodicals-1">
+        <img
+        data-src="../../assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png"
+        alt="Figure 2: Directed network of periodicals referenced in al-Ḥaqāʾiq, al-Ḥasnāʾ, Lughat al-ʿArab, al-Muqtabas, and al-Zuhūr" />
+        <figcaption aria-hidden="true">Figure 2: Directed network of
+        periodicals referenced in <em>al-Ḥaqāʾiq</em>,
+        <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>,
+        <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></figcaption>
+        </figure>
+        <!-- potentially replace with a more recent plot or an awesome map of correspondence -->
+        </div><div class="column">
+        <p>Some image of NFDI4Memory</p>
+        </div>
+        </div>
+        <!-- Bilder von Strassenbahnen, Zeitungen, Protesten, NFDI4Memory -->
         <aside class="notes">
         <ul>
         <li>das wird im Folgenden noch wichtig</li>
         <li>Was bin ich
         <ul>
         <li>Ich bin Historiker</li>
+        <li>Sozial- und Medienhistoriker des mehrheitlich
+        arabischsprachigen östlichen Mittelmeerraumes ab dem späten 18.
+        Jahrhundert.</li>
+        <li>Studium der Islamwissenschaft, Judaistik, VWL und
+        Geschichte</li>
         </ul></li>
         <li>was mache ich
         <ul>
         <li>praktische Kritik der Digitalität</li>
+        <li>Leitung der Task Area <em>Data Culture</em> und des
+        <em>Methods Innovation Lab</em> von [NFDI4Memory] and der [HU
+        Berlin].</li>
+        <li>Co-Convenor von AGs zu Multilingual DH</li>
         </ul></li>
         <li>Was bin ich nicht:
         <ul>
         <li>Technikphilosophie</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="worüber-werde-ich-sprechen" class="slide level2">
+        <h2>Worüber werde ich sprechen?</h2>
+        <div class="columns">
+        <div class="column">
+        <ol type="1">
+        <li>Thema: Affordancen der Digitalität und epistemische Gewalt
+        von Infrastrukturen</li>
+        <li>Fallstudie: Geschriebene Sprache als Mensch-Maschine
+        Schnittstelle</li>
+        <li>Frage: Wie kann eine Datenkultur in den
+        Geisteswissenschaften aussehen</li>
+        </ol>
+        </div><div class="column">
+
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Beispiel/ Case Study: epistemische Gewalt in der Sprach- und
+        Textverarbeitung als Grundlage
+        <ul>
+        <li>Es bieten sich auch andere Beispiele an, aber meine
+        Kompetenz fokussiert nun genau auf jenes
+        <ul>
+        <li>LLMs sind der elephant in the room</li>
+        <li>synthetic text extrusion machines preconfiguring the
+        discursive field</li>
+        <li>in the tradition of fencing the commons and cultural
+        appropriation</li>
+        </ul></li>
         </ul></li>
         </ul>
         </aside>
@@ -991,20 +1096,17 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <!--
         >I would like to explore here a tentative path for a third wave of the digital humanities, concentrated around the underlying computationality of the forms held within a computational medium. That is, I propose to look at the digital component of the digital humanities in the light of its medium specificity, as a way of thinking about how medial changes produce epistemic changes.
 
-        <cite>@Berry2011ComputationalTurn, 4</cite> -->
+        <cite>[Berry2011ComputationalTurn, 4]</cite> -->
         <blockquote>
         <p>Computationality might then be understood as an ontotheology,
         creating a new ontological ‘epoch’ as a new historical
         constellation of intelligibility.
         <!-- The digital humanists could therefore orient themselves to questions raised when computationality is itself problematized in this way--></p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Berry2011ComputationalTurn">Berry
-        (<span>„Computational <span>Turn</span>“</span> 2011)</span>,
-        16; <span class="citation"
+        <p><cite>[Berry2011ComputationalTurn, 16; <span class="citation"
         data-cites="Berry2011Philosophy">Berry (<em>The
         <span>Philosophy</span> of <span>Software</span></em>
-        2011)</span>, 27</cite></p>
+        2011)</span>, 27]</cite></p>
         <blockquote>
         <p>Die Digitalität […] ist das, was entsteht, wenn der Prozess
         der Digitalisierung eine gewisse Tiefe und eine gewisse Breite
@@ -1016,9 +1118,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         der natürlich immer auch mit spezifischen Einschränkungen
         verbunden ist.</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Stalder2021WasIst">Stalder (<span>„Was ist
-        Digitalität?“</span> [2019] 2021)</span>, 4</cite></p>
+        <p><cite>[Stalder2021WasIst, 4]</cite></p>
         </div>
         </div>
         <!-- **Datafication** emphasises the epistemic shift from a world where data were a closely defined part of the output of research processes towards the new status quo in which all research processes are always already computationally mediated through information and communication technologies. -->
@@ -1100,18 +1200,13 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         mit denen er zu tun haben und in denen er sich wiederfinden
         wird.</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Foucault1974OrdnungDinge">Foucault (<em>Ordnung der
-        Dinge</em> [1966] 1974)</span>, 22</cite></p>
+        <p><cite>[Foucault1974OrdnungDinge, 22]</cite></p>
         </div><div class="column">
         <blockquote>
         <p>Die herrschenden Ideen einer Zeit waren stets nur die Ideen
         der herrschenden Klasse.</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="MarxEngels1958ManifestKommunistischen">Marx und
-        Engels (<em>Manifest der Kommunistischen Partei</em> [1848]
-        1958)</span></cite></p>
+        <p><cite>[MarxEngels1958ManifestKommunistischen]</cite></p>
         </div>
         </div>
         <aside class="notes">
@@ -1160,6 +1255,11 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         1958)</span></p>
         </blockquote></li>
         </ul></li>
+        <li>Epistemische Gewalt ist dann das Sprechen über den Anderen
+        <ul>
+        <li>Said: Orientalism</li>
+        <li>Spivak:</li>
+        </ul></li>
         </ul>
         </aside>
         </section></section>
@@ -1182,10 +1282,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         problems abound, resulting in many books devoted to explicating
         information and knowledge</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Borgman2015BigData">Borgman (<em>Big
-        <span>Data</span>, <span>Little Data</span>, <span>No
-        Data</span></em> 2015)</span>, 18</cite></p>
+        <p><cite>[Borgman2015BigData, 18]</cite></p>
         </div>
         </div>
         <div class="columns">
@@ -1197,17 +1294,13 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         complex materials into a form for computation.
         <!--With data we can automate processes --></p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Drucker2021DHCoursebook">Drucker (<em><span>DH
-        Coursebook</span></em> 2021)</span>, 3</cite></p>
+        <p><cite>[Drucker2021DHCoursebook, 3]</cite></p>
         <blockquote>
         <p>Data need to be imagined <em>as</em> data to exist and
         function as such, and the imagination of data entails an
         interpretive base.</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Gitelman2013Introduction">Gitelman
-        (<span>„Introduction“</span> 2013)</span>, 3</cite></p>
+        <p><cite>[Gitelman2013Introduction, 3]</cite></p>
         </div><div class="narrow">
         <p>… und <span class="keyphrase">alle Daten sind
         modelliert</span></p>
@@ -1250,7 +1343,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
 
         >We think of the 'digital' as a previous historic movement when computation as digitality was understood in opposition to the analogue, rather than complementary [...]
 
-        <cite>@Berry+2017, 2</cite>
+        <cite>[Berry+2017, 2]</cite>
 
         ::::
         ::: -->
@@ -1272,9 +1365,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         evinces the complex ways in which human agency and algorithmic
         actions are intertwined […]</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Siles2023Living">Siles (<em>Living with
-        <span>Algorithms</span></em> 2023)</span>, 1</cite></p>
+        <p><cite>[Siles2023Living, 1]</cite></p>
         <blockquote>
         <p>It is our position that the “digital” cannot be understood as
         a separate domain of culture. If we actually examine the digital
@@ -1305,25 +1396,21 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <p>Infrastructure in this sense is a kind of mentality and way
         of living in the world</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Larkin2013PoliticsPoetics">Larkin (<span>„The
-        <span>Politics</span> and <span>Poetics</span> of
-        <span>Infrastructure</span>“</span> 2013)</span>, 329,
-        331</cite></p>
+        <p><cite>[Larkin2013PoliticsPoetics, 329, 331]</cite></p>
         <div class="columns">
         <div class="column">
         <figure id="fig:google-docs">
         <img data-src="../../assets/dh/google-docs.png"
-        alt="Figure 1: Google docs" />
-        <figcaption aria-hidden="true">Figure 1: Google
+        alt="Figure 3: Google docs" />
+        <figcaption aria-hidden="true">Figure 3: Google
         docs</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:google-network">
         <img
         data-src="https://cloud.google.com/static/images/locations/edgepoint-map-popup_2x.jpg"
-        alt="Figure 2: Googles globale Netzwerkinfrastruktur. Quelle: https://cloud.google.com/about/locations/" />
-        <figcaption aria-hidden="true">Figure 2: Googles globale
+        alt="Figure 4: Googles globale Netzwerkinfrastruktur. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption aria-hidden="true">Figure 4: Googles globale
         Netzwerkinfrastruktur. Quelle: <a
         href="https://cloud.google.com/about/locations/"
         class="uri">https://cloud.google.com/about/locations/</a></figcaption>
@@ -1331,8 +1418,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:google-cdn">
         <img
         data-src="https://cloud.google.com/static/images/locations/media-cdn-map-popup_2x.jpg"
-        alt="Figure 3: Die Datenzentren in Googles globalem Content Delivery Network. Quelle: https://cloud.google.com/about/locations/" />
-        <figcaption aria-hidden="true">Figure 3: Die Datenzentren in
+        alt="Figure 5: Die Datenzentren in Googles globalem Content Delivery Network. Quelle: https://cloud.google.com/about/locations/" />
+        <figcaption aria-hidden="true">Figure 5: Die Datenzentren in
         Googles globalem Content Delivery Network. Quelle: <a
         href="https://cloud.google.com/about/locations/"
         class="uri">https://cloud.google.com/about/locations/</a></figcaption>
@@ -1415,31 +1502,58 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </ul>
         </aside>
         </section>
+        <section id="googles-donnerschlag-von-letzter-woche"
+        class="slide level2">
+        <h2>Googles Donnerschlag von letzter Woche</h2>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:power-consumption">
+        <img
+        data-src="../../assets/dh/Onoing-BigTech-Power-Consumption-Latest-AMAZON-ESTIMATE.png.webp"
+        alt="Figure 6: Quelle: Joshi („Google’s Exponential Path to Climate-Wrecking Digital Bloat“ 2026)" />
+        <figcaption aria-hidden="true">Figure 6: Quelle: <span
+        class="citation" data-cites="Joshi2026GooglesExponential">Joshi
+        (<span>„Google’s Exponential Path to Climate-Wrecking Digital
+        Bloat“</span> 2026)</span></figcaption>
+        </figure>
+        </div><div class="column">
+        <figure id="fig:google-country">
+        <img data-src="../../assets/dh/google-vs-countries.png.webp"
+        alt="Figure 7: Quelle: Joshi („Google’s Exponential Path to Climate-Wrecking Digital Bloat“ 2026)" />
+        <figcaption aria-hidden="true">Figure 7: Quelle: <span
+        class="citation" data-cites="Joshi2026GooglesExponential">Joshi
+        (<span>„Google’s Exponential Path to Climate-Wrecking Digital
+        Bloat“</span> 2026)</span></figcaption>
+        </figure>
+        </div>
+        </div>
+        <p><span class="post-it c_right">Nur so zum Spaß: kontrastieren
+        Sie die Inhalte von <span class="citation"
+        data-cites="Google2026EnvironmentalReport">Google
+        (<span>„Environmental <span>Report</span> 2026“</span>
+        2026)</span> mit deren <a
+        href="https://sustainability.google/google-2026-environmental-report/">Präsentation</a></span></p>
+        <aside class="notes">
+        <p>Google hat Anfang Juli seinen Environmental Report für 2026
+        vorgestellt</p>
+        </aside>
+        </section>
         <section id="du-bist-so-schön-wie-eine-weitere-stunde-strom"
         class="slide level2">
         <h2>“Du bist so schön wie eine weitere Stunde Strom!”</h2>
         <div class="columns-3">
         <div class="column">
-        <blockquote class="twitter-tweet" data-partner="tweetdeck">
-        <p lang="ar" dir="rtl">
-        "حبيبتي، انت جميلة، كساعة اضافية من الكهرباء"<br><br>هذا غزل أحد
-        المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة!
-        <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a>
-        </p>
-        — aya mansour (@aya_mansour_11_)
-        <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July
-        31, 2015</a>
-        </blockquote>
-        <blockquote class="twitter-tweet" data-partner="tweetdeck">
-        <p lang="ar" dir="rtl">
-        مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق
-        في فلسطين - غزة
-        <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a>
-        </p>
-        — Jawdat Alsaleh (@JawdatAlsaleh)
-        <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June
-        27, 2017</a>
-        </blockquote>
+        <figure>
+        <img data-src="../../assets/dh/twitter_CLRYwKiUsAAILP8.jpeg"
+        alt="Demonstrant mit einem Schild “حبيبتي انت جميلة، كساعة اضافية من الكهرباء in Bagdad, Juli 2015. Quelle: Twitter" />
+        <figcaption aria-hidden="true">Demonstrant mit einem Schild
+        “<span lang="ar">حبيبتي انت جميلة، كساعة اضافية من
+        الكهرباء</span> in Bagdad, Juli 2015. Quelle: <a
+        href="https://twitter.com/aya_mansour_11_/status/627223846244847616">Twitter</a></figcaption>
+        </figure>
+        <!-- <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">&quot;حبيبتي، انت جميلة، كساعة اضافية من الكهرباء&quot;<br><br>هذا غزل أحد المتظاهرين في ساحة التحرير اليوم.<br>رائعة حقيقة! <a href="http://t.co/KI8sAkY719">pic.twitter.com/KI8sAkY719</a></p>&mdash; aya mansour (\@aya_mansour_11_) <a href="https://twitter.com/aya_mansour_11_/status/627223846244847616?ref_src=twsrc%5Etfw">July 31, 2015</a></blockquote>
+
+        <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ar" dir="rtl">مريم .. أنتِ جميلة كساعة إضافية من الكهرباء ..<br><br>كتبها عاشق في فلسطين - غزة <a href="https://t.co/W3QvpmaE3O">pic.twitter.com/W3QvpmaE3O</a></p>&mdash; Jawdat Alsaleh (\@JawdatAlsaleh) <a href="https://twitter.com/JawdatAlsaleh/status/879683252184903681?ref_src=twsrc%5Etfw">June 27, 2017</a></blockquote> -->
         </div>
         <div class="column">
         <iframe src="https://data.worldbank.org/share/widget?indicators=EG.ELC.ACCS.ZS&amp;view=map" width="500" height="500" frameBorder="0" scrolling="no">
@@ -1503,25 +1617,21 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </aside>
         </section></section>
         <section>
-        <section id="epistemische-gewalt-der-digitalität"
+        <section
+        id="epistemische-gewalt-in-den-infrastrukturen-unserer-vernetzten-wissensökologien"
         class="title-slide slide level1">
-        <h1>Epistemische Gewalt der Digitalität</h1>
+        <h1>Epistemische Gewalt in den Infrastrukturen unserer
+        vernetzten Wissensökologien</h1>
 
         </section>
-        <section id="dimensionen" class="slide level2">
-        <h2>Dimensionen</h2>
+        <section id="dimensionen-epistemischer-gewalt"
+        class="slide level2">
+        <h2>Dimensionen epistemischer Gewalt</h2>
+        <!-- do we need this slide? -->
         <aside class="notes">
         <p>Constructing the other, the one being spoken about but not
         talked to. The other, that is unspeakable</p>
         </aside>
-        </section></section>
-        <section>
-        <section
-        id="multilingualität-in-den-infrastrukturen-unserer-vernetzten-wissensökologien"
-        class="title-slide slide level1">
-        <h1>Multilingualität in den Infrastrukturen unserer vernetzten
-        Wissensökologien</h1>
-
         </section>
         <section id="linguistic-imperialism" class="slide level2">
         <h2>Linguistic imperialism</h2>
@@ -1533,10 +1643,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         with other dimensions, cultural (particularly in education,
         science, and the media), economic and political</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Phillipson1997RealitiesAndMyths">Phillipson
-        (<span>„Realities and Myths of Linguistic Imperialism“</span>
-        1997)</span>, 239</cite></p>
+        <p><cite>[Phillipson1997RealitiesAndMyths, 239]</cite></p>
         <blockquote>
         <p>The basis for the codes, languages, methodologies, and
         technical instruments of the digital humanities is English; the
@@ -1546,10 +1653,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         the central authorities of knowledge is, with few exceptions,
         some dialect of British or American English.</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="Fiormonte2021Taxation">Fiormonte (<span>„Taxation
-        Against <span>Overrepresentation</span>?“</span> 2021)</span>,
-        334-335</cite></p>
+        <p><cite>[Fiormonte2021Taxation, 334-335]</cite></p>
         </section>
         <section id="sprache-schrift" class="slide level2">
         <h2>Sprache ≠ Schrift</h2>
@@ -1585,18 +1689,18 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </table>
         <div class="columns">
         <div class="column">
-        <figure id="fig:current">
-        <img data-src="../../assets/dh/AA_R62.160_1880-07-30.jpg"
-        alt="Figure 4: AA R26160, an Auswärtiges Amt, Bujukdere, 30 Juli 1880" />
-        <figcaption aria-hidden="true">Figure 4: AA R26160, an
-        Auswärtiges Amt, Bujukdere, 30 Juli 1880</figcaption>
-        </figure>
-        </div><div class="column">
         <blockquote>
         <p>Dem Auswärtigen Amte beehre ich mich in Erwiderung des hohen
         Erlasses vom 5. Mai d.J (I4456/12650), den Antrag das Kaiser-
         lichen Konsuls in Aleppo auf Bewilligung</p>
         </blockquote>
+        </div><div class="column">
+        <figure id="fig:current">
+        <img data-src="../../assets/dh/AA_R62.160_1880-07-30.jpg"
+        alt="Figure 8: AA R26160, an Auswärtiges Amt, Bujukdere, 30 Juli 1880" />
+        <figcaption aria-hidden="true">Figure 8: AA R26160, an
+        Auswärtiges Amt, Bujukdere, 30 Juli 1880</figcaption>
+        </figure>
         </div>
         </div>
         <aside class="notes">
@@ -1638,19 +1742,19 @@ und Meistererzählungen’, Kiel und Flensburg</span>
 
         >Data are forms of information, a larger concept that is even more difficult to define. Epistemological and ontological problems abound, resulting in many books devoted to explicating information and knowledge
 
-        <cite>@Borgman2015BigData, 18</cite>
+        <cite>[Borgman2015BigData, 18]</cite>
 
         ::::
         ::: -->
-        <p>… <span class="keyphrase c_left">alle Daten sind
+        <p><span class="keyphrase c_left">… alle Daten sind
         modelliert</span></p>
         <div class="columns">
         <div class="column">
         <figure id="fig:rosetta">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Rosetta_Stone.jpg/500px-The_Rosetta_Stone.jpg"
-        alt="Figure 5: Stein von Rosetta. Public domain, Wikimedia Commons" />
-        <figcaption aria-hidden="true">Figure 5: Stein von Rosetta.
+        alt="Figure 9: Stein von Rosetta. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 9: Stein von Rosetta.
         Public domain, <a
         href="https://commons.wikimedia.org/wiki/File:The_Rosetta_Stone.jpg">Wikimedia
         Commons</a></figcaption>
@@ -1659,8 +1763,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:punch-card">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Claire_Schultz_IBM_punch_card_98.06_recto.tif/lossy-page1-960px-Claire_Schultz_IBM_punch_card_98.06_recto.tif.jpg"
-        alt="Figure 6: IMB 101 Punch Card, recto, ca.1960. Science History Institute, CC BY-SA 3.0, Wikimedia Commons" />
-        <figcaption aria-hidden="true">Figure 6: IMB 101 Punch Card,
+        alt="Figure 10: IMB 101 Punch Card, recto, ca.1960. Science History Institute, CC BY-SA 3.0, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 10: IMB 101 Punch Card,
         recto, ca.1960. Science History Institute, CC BY-SA 3.0, <a
         href="https://commons.wikimedia.org/wiki/File:Claire_Schultz_IBM_punch_card_98.06_recto.tif">Wikimedia
         Commons</a></figcaption>
@@ -1736,8 +1840,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:timezones">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Timezones_UTC%2B14.png/330px-Timezones_UTC%2B14.png"
-        alt="Figure 7: Timezones. Public domain, Wikimedia Commons" />
-        <figcaption aria-hidden="true">Figure 7: Timezones. Public
+        alt="Figure 11: Timezones. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 11: Timezones. Public
         domain, <a
         href="https://commons.wikimedia.org/wiki/File:Timezones_UTC%2B14.png">Wikimedia
         Commons</a></figcaption>
@@ -1746,8 +1850,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:shuttle">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/250px-STS120LaunchHiRes-edit1.jpg"
-        alt="Figure 8: Space Shuttle. Public domain, Wikimedia Commons" />
-        <figcaption aria-hidden="true">Figure 8: Space Shuttle. Public
+        alt="Figure 12: Space Shuttle. Public domain, Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 12: Space Shuttle. Public
         domain, <a
         href="https://commons.wikimedia.org/wiki/File:STS120LaunchHiRes-edit1.jpg">Wikimedia
         Commons</a></figcaption>
@@ -1919,8 +2023,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <div class="column">
         <figure id="fig:ar-linotype">
         <img data-src="../../assets/dh/arabic-linotype_nemeth-p_46.png"
-        alt="Figure 9: Arabische Linotype-Maschine, 1910er. Quelle: Nemeth (Arabic Type-Making in the Machine Age 2017), fig. 2.7" />
-        <figcaption aria-hidden="true">Figure 9: Arabische
+        alt="Figure 13: Arabische Linotype-Maschine, 1910er. Quelle: Nemeth (Arabic Type-Making in the Machine Age 2017), fig. 2.7" />
+        <figcaption aria-hidden="true">Figure 13: Arabische
         Linotype-Maschine, 1910er. Quelle: <span class="citation"
         data-cites="Nemeth+2017">Nemeth (<em>Arabic Type-Making in the
         Machine Age</em> 2017)</span>, fig. 2.7</figcaption>
@@ -1929,11 +2033,11 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:zh-typewriter">
         <img
         data-src="../../assets/dh/chinese-typewriter_mullaney-p_269.png"
-        alt="Figure 10: Chinesische Schreibmaschine. Quelle: Mullaney (The Chinese Typewriter 2017), fig. 6.7" />
-        <figcaption aria-hidden="true">Figure 10: Chinesische
+        alt="Figure 14: Chinesische Schreibmaschine. Quelle: Thomas S. Mullaney (The Chinese Typewriter 2017), fig. 6.7" />
+        <figcaption aria-hidden="true">Figure 14: Chinesische
         Schreibmaschine. Quelle: <span class="citation"
-        data-cites="Mullaney2017ChineseTypewriter">Mullaney (<em>The
-        <span>Chinese</span> Typewriter</em> 2017)</span>,
+        data-cites="Mullaney2017ChineseTypewriter">Thomas S. Mullaney
+        (<em>The <span>Chinese</span> Typewriter</em> 2017)</span>,
         fig. 6.7</figcaption>
         </figure>
         </div>
@@ -1957,8 +2061,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:ataturk">
         <img
         data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ataturk-September_20%2C_1928.jpg/500px-Ataturk-September_20%2C_1928.jpg"
-        alt="Figure 11: Mustafa Kemal Atatürk stellt Menschen des neue türkische Alphabet vor. Kayseri, 20. Sep. 1928. Wikimedia Commons" />
-        <figcaption aria-hidden="true">Figure 11: Mustafa Kemal Atatürk
+        alt="Figure 15: Mustafa Kemal Atatürk stellt Menschen des neue türkische Alphabet vor. Kayseri, 20. Sep. 1928. Wikimedia Commons" />
+        <figcaption aria-hidden="true">Figure 15: Mustafa Kemal Atatürk
         stellt Menschen des neue türkische Alphabet vor. Kayseri, 20.
         Sep. 1928. <a
         href="https://commons.wikimedia.org/wiki/File:Ataturk-September_20,_1928.jpg">Wikimedia
@@ -2006,8 +2110,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:mirat-1">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Figure 12: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption aria-hidden="true">Figure 12: Front page of <em><a
+        alt="Figure 16: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 16: Front page of <em><a
         href="https://www.wikidata.org/wiki/Q25212027">Mirʾāt
         al-Sharq</a></em> #192, 22 Nov. 1922, Jerusalem. Source: <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
@@ -2060,8 +2164,9 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         ::: -->
         </section></section>
         <section>
-        <section id="zeichenkodierung" class="title-slide slide level1">
-        <h1>Zeichenkodierung</h1>
+        <section id="die-epistemische-gewalt-der-zeichenkodierung"
+        class="title-slide slide level1">
+        <h1>Die epistemische Gewalt der Zeichenkodierung</h1>
 
         </section>
         <section id="überblick" class="slide level2">
@@ -2119,8 +2224,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <div class="column">
         <figure id="fig:poster-wws">
         <img data-src="../../assets/dh/twws-poster-22-960.jpg"
-        alt="Figure 13: Poster “The World’s Writing Systems”. Stand der Erfassung in Unicode 14. Schwarz: lebende Schrift in Unicode; Türkis: historische Schrift in Unicode; Lila und Rot: nicht in Unicode. Quelle" />
-        <figcaption aria-hidden="true">Figure 13: Poster “The World’s
+        alt="Figure 17: Poster “The World’s Writing Systems”. Stand der Erfassung in Unicode 14. Schwarz: lebende Schrift in Unicode; Türkis: historische Schrift in Unicode; Lila und Rot: nicht in Unicode. Quelle" />
+        <figcaption aria-hidden="true">Figure 17: Poster “The World’s
         Writing Systems”. Stand der Erfassung in Unicode 14. Schwarz:
         lebende Schrift in Unicode; Türkis: historische Schrift in
         Unicode; Lila und Rot: nicht in Unicode. <a
@@ -2129,8 +2234,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </div><div class="column">
         <figure id="fig:unicode-1">
         <img data-src="../../assets/dh/unicode_1-0-0.png"
-        alt="Figure 14: Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
-        <figcaption aria-hidden="true">Figure 14: Supported scripts in
+        alt="Figure 18: Supported scripts in Unicode v1.0.0. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 18: Supported scripts in
         Unicode v1.0.0. Source: <a
         href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
@@ -2138,8 +2243,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:unicode-15-missing">
         <img
         data-src="../../assets/dh/unicode_15-0-0-missing-scripts.png"
-        alt="Figure 15: Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
-        <figcaption aria-hidden="true">Figure 15: Currently unsupported
+        alt="Figure 19: Currently unsupported scripts. Source: https://www.worldswritingsystems.org" />
+        <figcaption aria-hidden="true">Figure 19: Currently unsupported
         scripts. Source: <a href="https://www.worldswritingsystems.org"
         class="uri">https://www.worldswritingsystems.org</a></figcaption>
         </figure>
@@ -2192,8 +2297,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <figure id="fig:arabic-mecca-1">
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-makkiyya-milo_4.png"
-        alt="Figure 16: 32 variants of encoding “Meccan” (مكية) (Milo „Visually Misleading Characters in the Arabic URL“ 2014, 4)" />
-        <figcaption aria-hidden="true">Figure 16: 32 variants of
+        alt="Figure 20: 32 variants of encoding “Meccan” (مكية) (Milo „Visually Misleading Characters in the Arabic URL“ 2014, 4)" />
+        <figcaption aria-hidden="true">Figure 20: 32 variants of
         encoding “Meccan” (<span lang="ar">مكية</span>) <span
         class="citation" data-cites="Milo2014VisuallyMisleading">(Milo
         <span>„Visually <span>Misleading Characters</span> in the
@@ -2204,8 +2309,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <img
         data-src="../../assets/dh/arabic-script_unicode-example-wikidata_narrow.png"
         height="300"
-        alt="Figure 17: In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
-        <figcaption aria-hidden="true">Figure 17: In-browser search for
+        alt="Figure 21: In-browser search for “مك” in the Wikidata entry for “Mecca” (Q5806)" />
+        <figcaption aria-hidden="true">Figure 21: In-browser search for
         “<span lang="ar">مك</span>” in the Wikidata entry for “Mecca”
         (<a
         href="https://www.wikidata.org/wiki/Q5806">Q5806</a>)</figcaption>
@@ -2240,11 +2345,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         pre-existing digital techonologies] are almost exclusively based
         on the ASCII character set</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="IsasiEtAl2023ModelMultilingual">Isasi u. a.
-        (<span>„A <span>Model</span> for <span>Multilingual</span> and
-        <span>Multicultural Digital Scholarship Methods
-        Publishing</span>“</span> 2023)</span>, 19</cite></p>
+        <p><cite>[IsasiEtAl2023ModelMultilingual, 19]</cite></p>
         </div><div class="narrow">
         <p><span class="c_rtl red" lang="ar">ب ل ق</span> hätte <span
         class="c_rtl green" lang="ar">قلب</span> sein müssen.</p>
@@ -2267,16 +2368,13 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <p>HTML elements all have names that only use ASCII
         alphanumerics</p>
         </blockquote>
-        <p><cite><span class="citation"
-        data-cites="HTMLLivingStandard2023">Web Hypertext Application
-        Technology Working Group (<span>„<span>HTML</span>“</span>
-        2023)</span>, §13.1.2</cite></p>
+        <p><cite>[HTMLLivingStandard2023, §13.1.2]</cite></p>
         <div class="columns">
         <div class="column">
         <figure id="fig:zakham-ar-failure">
         <img data-src="../../assets/dh/html5-lang_ar-chrome-2.png"
-        alt="Figure 18: Rendered HTML with the built-in default CSS for Zakham („Amīrkā wa-ʿulamāʾ al-ʿArab“ 1907). The test file is available online" />
-        <figcaption aria-hidden="true">Figure 18: Rendered HTML with the
+        alt="Figure 22: Rendered HTML with the built-in default CSS for Zakham („Amīrkā wa-ʿulamāʾ al-ʿArab“ 1907). The test file is available online" />
+        <figcaption aria-hidden="true">Figure 22: Rendered HTML with the
         built-in default CSS for <span class="citation"
         data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
         (<span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span> 1907)</span>. The
@@ -2286,8 +2384,8 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </div><div class="column">
         <figure id="fig:html">
         <img data-src="../../assets/dh/html_vscode.png"
-        alt="Figure 19: HTML-Code for fig. 18 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
-        <figcaption aria-hidden="true">Figure 19: HTML-Code for fig. 18
+        alt="Figure 23: HTML-Code for fig. 22 in Visual Code Studio. By default, non-ASCII characters are visually highlighted" />
+        <figcaption aria-hidden="true">Figure 23: HTML-Code for fig. 22
         in Visual Code Studio. By default, non-ASCII characters are
         visually highlighted</figcaption>
         </figure>
@@ -2332,31 +2430,31 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <div class="narrow">
         <figure id="fig:mirat-ar">
         <img data-src="../../assets/jaraid/zdb_mirat-ar.png"
-        alt="Figure 20: Original in arabischer Schrift" />
-        <figcaption aria-hidden="true">Figure 20: Original in arabischer
+        alt="Figure 24: Original in arabischer Schrift" />
+        <figcaption aria-hidden="true">Figure 24: Original in arabischer
         Schrift</figcaption>
         </figure>
         <figure id="fig:mirat-ijmes">
         <img
         data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-ijmes.png"
-        alt="Figure 21: In international gebräuchlicher Umschrift" />
-        <figcaption aria-hidden="true">Figure 21: In international
+        alt="Figure 25: In international gebräuchlicher Umschrift" />
+        <figcaption aria-hidden="true">Figure 25: In international
         gebräuchlicher Umschrift</figcaption>
         </figure>
         </div>
         <div class="column">
         <figure id="fig:mirat-dmg">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="Figure 22: In Umschrift der Deutschen Morgenländischen Gesellschaft" />
-        <figcaption aria-hidden="true">Figure 22: In Umschrift der
+        alt="Figure 26: In Umschrift der Deutschen Morgenländischen Gesellschaft" />
+        <figcaption aria-hidden="true">Figure 26: In Umschrift der
         Deutschen Morgenländischen Gesellschaft</figcaption>
         </figure>
         </div>
         <div class="column">
         <figure id="fig:mirat-dmg-flat">
         <img data-src="../../assets/jaraid/zdb_mirat-ar-Latn-hamza.png"
-        alt="Figure 23: In DMG Umschrift ohne diakritische Zeichen" />
-        <figcaption aria-hidden="true">Figure 23: In DMG Umschrift ohne
+        alt="Figure 27: In DMG Umschrift ohne diakritische Zeichen" />
+        <figcaption aria-hidden="true">Figure 27: In DMG Umschrift ohne
         diakritische Zeichen</figcaption>
         </figure>
         </div>
@@ -2533,23 +2631,480 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         </aside>
         </section></section>
         <section>
+        <section id="was-tun" class="title-slide slide level1">
+        <h1>Was tun?</h1>
+
+        </section>
+        <section id="die-notwendigkeit-einer-datenkultur"
+        class="slide level2">
+        <h2>Die Notwendigkeit einer Datenkultur</h2>
+        <p><span class="keyphrase">Für einen aufgeklärten Umgang mit
+        <em>Digitalität</em> brauchen wir einen fundamentalen
+        <strong>Kulturwandel</strong></span></p>
+        <div class="columns">
+        <div class="column">
+        <p><span class="keyphrase">Kennen Sie die?</span></p>
+        <figure id="fig:wordcloud-dhq">
+        <img
+        data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dhq-w_100.png"
+        alt="Figure 28: “Werkzeuge” in Digital Humanities Quarterly" />
+        <figcaption aria-hidden="true">Figure 28: “Werkzeuge” in Digital
+        Humanities Quarterly</figcaption>
+        </figure>
+        <!-- !["Werkzeuge" in Abstracts für DH Konferenzen, 2014--22](../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png){#fig:wordcloud-dh-conferences} -->
+        </div><div class="column">
+        <p>Es herrscht in der Breite ein Mangel an</p>
+        <ul>
+        <li><strong>Diskurs</strong>: Austausch über unser
+        (disziplinäres) Selbstverständnis</li>
+        <li><strong>Theorie</strong>: Verständnis des epistemischen
+        Wandels und der ontologischen Dimensionen der
+        <em>Datafizierung</em></li>
+        <li><strong>Praktiken</strong>: Beherrschung der notwendigen
+        Methoden und Werkzeuge</li>
+        <li>positivem <strong>Wissen</strong>: Überblick über die
+        Möglichkeiten in einem sich rapide wandelnden Umfeld</li>
+        </ul>
+        <!-- - Es gibt ein starkes Ressentiment gegenüber allem "digitalen"
+        - *"Digital" Humanities* als Indikator -->
+        </div>
+        </div>
+        </section>
+        <section id="datenkultur" class="slide level2">
+        <h2>Datenkultur</h2>
+        <!-- requires some work -->
+        <p><span class="keyphrase"><em>digital natives</em> sind nicht
+        automatisch <em>digital citizens</em></span></p>
+        <div class="columns">
+        <div class="column">
+        <h3 id="im-weiteren-sinn">im weiteren Sinn</h3>
+        <p>eine <strong>Fachkultur</strong>, bei der (Forschungs-)daten
+        und datengetriebener Methoden ein integraler Bestandteil sind,
+        die Arbeit mit und an Daten also nicht mehr als ein netter
+        Appendix zum “eigentlichen” Forschungsprozess verstanden
+        wird.</p>
+        </div><div class="column">
+        <h3 id="im-engeren-sinn">im engeren Sinn</h3>
+        <p><strong>alltägliche Praktiken</strong> und
+        Verantwortlichkeiten (auch rechtlich und ethisch) im Umgang mit
+        Forschungsdaten, bei deren Erzeugung, Bereitstellung und Nutzung
+        mit Hilfe von computationellen Methoden und Werkzeugen.</p>
+        </div>
+        </div>
+        <div class="columns">
+        <h3 id="braucht">braucht</h3>
+        <div class="column">
+        <p>Verständnis der theoretischen und epistemologischen
+        Grundlagen und Implikationen der Datafizierung und Diskussion
+        über deren Folgen</p>
+        </div>
+        <div class="column">
+        <p>Orientierung, Guidelines und Unterstützung</p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li><em>digital citizenry</em> ist von <span class="citation"
+        data-cites="Rankin2018PeoplesHistory">(Rankin <em>A
+        <span>People</span>’s <span>History</span> of
+        <span>Computing</span></em> 2018, 11)</span> geprägt
+        <ul>
+        <li><blockquote>
+        <p>Kurtz, the director of the Computation Center, used the
+        language of “citizenship” to describe the relationship between a
+        user and the user’s computing network. A good computing citizen
+        respected the college’s ongoing computer memory limitations.
+        <span class="citation"
+        data-cites="Rankin2018PeoplesHistory">(Rankin <em>A
+        <span>People</span>’s <span>History</span> of
+        <span>Computing</span></em> 2018, 43–44)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Ziel ist <em>digital</em> or <em>computing citizens</em>,
+        die über ihre Teilnahme und -habe an einer Gemeinschaft
+        definiert sind.
+        <ul>
+        <li>Unterschied zu Produzenten und <em>Makers</em></li>
+        <li><strong>ABER</strong> Digital natives sind nicht automatisch
+        digital citizens
+        <ul>
+        <li><blockquote>
+        <p>despite what the term “digital natives” invokes, it does not
+        mean that those who are digital natives (born after 1980)
+        understand digital technology. In fact, digital natives may not
+        remember life before the internet, but that does not mean they
+        understand the complex systems that supports it or the nuances
+        of communication and knowledge creation in the digital age <span
+        class="citation" data-cites="Levy2017DigitalZombies">(Levy
+        <span>„<span>‚<span>Digital Zombies</span>‘</span> — <span>A
+        Learner-Centered Game</span>“</span> 2017, Abschn.
+        16)</span>.</p>
+        </blockquote></li>
+        </ul></li>
+        </ul></li>
+        <li>kann <strong>nur kollaborativ</strong> adäquat bewältigt
+        werden.</li>
+        <li>ich fokussiere heute eher auf die Datenkultur im engeren
+        Sinn, und schlage alltägliche Praktiken vor, die uns erlauben
+        auch eine Datenkultur im weiteren Sinn zu etablieren.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="drei-prinzipien" class="slide level2">
+        <h2>Drei Prinzipien</h2>
+        <h3 id="diy">DIY,</h3>
+        <h3 id="but-not-alone">but not alone,</h3>
+        <h3 id="and-kiss">and KISS</h3>
+        </section>
+        <section id="do-it-yourself" class="slide level2">
+        <h2>Do it yourself</h2>
+        <div class="columns">
+        <div class="narrow">
+        <blockquote>
+        <p>Do artefacts have politics?</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Winner+1980">(Winner
+        <span>„Do Artifacts Have Politics?“</span>
+        1980)</span></cite></p>
+        <blockquote>
+        <p>Do politics have artefacts?</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
+        <span>Power</span> to the <span>People</span></em>
+        2014)</span></cite></p>
+        </div><div class="wide">
+        <blockquote>
+        <p>To use […] tools well, we must, in some real sense,
+        understand them better than the tool makers. […] The best kind
+        of tools are therefore the ones that we make ourselves.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Tenen2016BluntInstrumentalism">(Tenen <span>„Blunt
+        <span>Instrumentalism</span>“</span> 2016, 85)</span></cite></p>
+        <blockquote>
+        <p>Without access to the code, whether because it is proprietary
+        or generated on the fly, as in the case of some machine-learning
+        algorithms, analysts can only comment on the apparent operations
+        of the code based on its effects. The operations of the code are
+        left in the hands of those who can access it, usually those who
+        have made or maintain it, and those who can read it.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Marino2020CriticalCodeStudies">(Marino <em>Critical
+        <span>Code Studies</span></em> 2020, 4)</span></cite></p>
+        </div>
+        </div>
+        <!-- ::: columns
+        :::: column
+
+        ### Making
+
+        - Experimentieren, Tüfteln, Ausprobieren, Werkeln
+        - Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
+
+        ::::
+        :::: column
+
+        ### Maker turn
+
+        Kreativität von Design, Herstellung und Erfahrung von (digitalen) Objekten als From von Wissenschaft
+
+        ::::
+        ::: -->
+        <aside class="notes">
+        <ul>
+        <li>Grundsatz: Werkzeuge und Methoden sind mit
+        Machtverhältnissen verwoben
+        <ul>
+        <li><blockquote>
+        <p>The Cloud <em>is</em> a factory. Your AI <em>is</em> a human.
+        Sexism <em>is</em> a feature, not a bug. <span class="citation"
+        data-cites="Mullaney2021Intro">(Thomas S. Mullaney <span>„Your
+        <span>Computer Is</span> on <span>Fire</span>“</span> 2021, 7,
+        Hervorhebung im Original)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Geschichte
+        <ul>
+        <li>1970er Kalifornien: kooperative Werkstätten</li>
+        <li>Recht auf Reparatur</li>
+        <li>DIY: do it yourself culture</li>
+        <li>“Maker Movement Manifesto” von Hatch (2013)
+        <ul>
+        <li>make, share, give, learn, tool up, play, participate,
+        support, change</li>
+        </ul></li>
+        </ul></li>
+        <li>bezieht sich auf <span class="citation"
+        data-cites="Wythoff2022MinimalComputing">(Wythoff
+        <span>„Ensuring <span>Minimal Computing Serves Maximal
+        Connection</span>“</span> 2022)</span>, der die beiden Fragen
+        verknüpft hat
+        <ul>
+        <li>Do artefacts have politics? <span class="citation"
+        data-cites="Winner+1980">(Winner <span>„Do Artifacts Have
+        Politics?“</span> 1980)</span></li>
+        <li>Do politics have artefacts? <span class="citation"
+        data-cites="DunbarHester2014LowPower">(Dunbar-Hester <em>Low
+        <span>Power</span> to the <span>People</span></em>
+        2014)</span></li>
+        </ul></li>
+        <li>Kritik an Maker culture als omnipotenter maskuliner Raum:
+        <ul>
+        <li><blockquote>
+        <p>knowledge of circuitry is often conflated with (superheroic)
+        command over people, situations, and things. In present-day
+        “maker” cultures, consider the ubiquity of remarks such as
+        “getting under the hood” or “knowing the nuts and bolts,” which
+        tend to fuse logic with mastery, control with masculinity,
+        engineering with rationality, and programming with revealing.
+        <span class="citation"
+        data-cites="Sayers2017Introduction">(Sayers
+        <span>„Introduction“</span> 2017, 3)</span></p>
+        </blockquote></li>
+        </ul></li>
+        <li>Scheitern als wichtiges Moment</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="do-it-yourself-but-not-alone" class="slide level2">
+        <h2>Do it yourself, but not alone!</h2>
+        <div class="columns">
+        <div class="narrow">
+        <figure id="fig:wordcloud-dh-conferences">
+        <img
+        data-src="../../assets/dh/wordcloud-rel-100-repel_tools-dh-conferences_abstracts-2014-2022-w_100.png"
+        alt="Figure 29: “Werkzeuge” in Abstracts für DH Konferenzen, 2014–22" />
+        <figcaption aria-hidden="true">Figure 29: “Werkzeuge” in
+        Abstracts für DH Konferenzen, 2014–22</figcaption>
+        </figure>
+        </div><div class="wide">
+        <blockquote>
+        <p>I also remind DH is an imposter syndrome house of mirrors.
+        You look around and see experts in GIS, TEI, dataviz, etc.; it’s
+        hard to remember that people tend to be good at <em>one</em> of
+        those things when the collective appears to be good at
+        <em>all</em> of them. <strong>We all suck at most of
+        DH</strong>.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Weingart2021AlsoRemindDH">(Weingart
+        <span>„Tweet“</span> 2021)</span></cite></p>
+        <blockquote>
+        <p>Unfortunately, I’m not particularly handy. On every new
+        project, the tools require blood.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Graham2023FindMyselfCharge">(Graham
+        <span>„Toot“</span> 2023)</span></cite></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>daraus folgt, dass es neue Rollen und neue Anforderungen
+        gibt</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="generous-thinking-zuhören-und-lernen"
+        class="slide level2">
+        <h2>Generous thinking: zuhören und lernen</h2>
+        <div class="columns">
+        <div class="wide">
+        <blockquote>
+        <p>Generous Thinking [begins] by proposing that rooting the
+        humanities in generosity, and in particular in the practices of
+        thinking <em>with</em> rather than reflexively <em>against</em>
+        both the people and the materials with which we work, might
+        invite more productive relationships and conversations not just
+        among scholars but between scholars and the surrounding
+        community.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Fitzpatrick2016GenerousThinking">(Fitzpatrick
+        <span>„Generous <span>Thinking</span>“</span>
+        2016)</span></cite></p>
+        </div><div class="narrow">
+        <p><img data-src="../../assets/dh/cover_Fitzpatrick2019.png"
+        id="fig:book-fitzpatrick2019" /></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>frage:
+        <ul>
+        <li>Wie kann Kollaboration zum Nutzen aller gestaltet
+        werden?</li>
+        </ul></li>
+        <li>sie entwirft eine Kritik der neoliberalen Universität, in
+        der, vor allem in den Humanities, eine destruktive Kritik geübt
+        wird</li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="trading-zones-contact-languages-and-project-management"
+        class="slide level2">
+        <h2>trading zones, contact languages, and project
+        management</h2>
+        <blockquote>
+        <p>to coordinate and develop […] ‘contact languages’ [..] is the
+        necessary underpinning of a stable, respectful and hybrid form
+        of interdisciplinary collaboration. Done correctly they can
+        create something new: Galison’s ‘full-fledged creoles’
+        supporting ‘activities as complex as poetry and metalinguistic
+        reflection’. They can create new disciplinary spaces and
+        practices in their own right.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="AhnertEtAl2023CollaborativeHistoricalResearch">(Ahnert
+        u. a. <em>Collaborative <span>Historical Research</span> in the
+        <span>Age</span> of <span>Big Data</span></em>
+        2023)</span></cite></p>
+        <div class="columns">
+        <div class="column">
+        <p><img data-src="../../assets/dh/cover_Kemman2021.jpeg"
+        id="fig:book-kemman2021" /></p>
+        </div><div class="column">
+        <p><img data-src="../../assets/dh/cover_Cremer2024.png"
+        id="fig:book-cremer2024" /></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>Max Kemman und andere auf der Basis von Peter Galison</li>
+        <li>contact zones müssen in “trading zones” verwandelt werden
+        <ul>
+        <li>Aber allein der Aufenthalt in einer Kontaktzone erfordert
+        ein Mindestmaß an Toleranz</li>
+        </ul></li>
+        <li>Zonen der lokalen Verständigung, in den sich erst ein
+        <ul>
+        <li>Pidgin und dann
+        <ul>
+        <li>Pidgnization als die Periode, in der Labels, wie Digital
+        History, sinnvoll sein können</li>
+        </ul></li>
+        <li>Kreolisch entwickeln kann</li>
+        </ul></li>
+        <li>Peter Galison: &gt;employed the metaphor of a ‘trading zone’
+        to explain how engineers and physicists from a number of
+        different sub-fields went about collaborating with each other to
+        develop particle detectors and radar.</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="leistungen-anerkennen" class="slide level2">
+        <h2>Leistungen anerkennen</h2>
+        <div class="columns">
+        <div class="column">
+        <p><img data-src="../../assets/dh/website_CRediT.png"
+        id="fig:credit" /></p>
+        </div><div class="column">
+        <p><span class="keyphrase">Anteile an jeglichem Output
+        transparent klassifizieren</span></p>
+        <ul>
+        <li>Seit 2012: <a href="https://credit.niso.org">Contributor
+        Role Taxonomy (CRediT)</a>
+        <ul>
+        <li>ANSI/NISO Standard (seit 2022)</li>
+        <li>14 Rollen im gesamten Forschungsprozess</li>
+        <li>einige Zeitschriften erlauben weitere Unterscheidung als
+        <em>lead</em> ,<em>equal</em> oder <em>supporting</em></li>
+        </ul></li>
+        <li>Die <a
+        href="http://id.loc.gov/vocabulary/relators">relators</a>
+        Taxonomie der LoC</li>
+        <li>Und natürlich gibt es Zeitschriften zum Thema, z.B. <a
+        href="https://www.tandfonline.com/journals/gacr20">Accountability
+        in Research</a></li>
+        </ul>
+        <p><span class="keyphrase">Unsere Stakeholder und ihre
+        Bedürfnisse kennen</span></p>
+        <ul>
+        <li>z.B. über die Entwicklung von Personae</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>CRediT
+        <ul>
+        <li>Rollen
+        <ol type="1">
+        <li>Conceptualization<br />
+        </li>
+        <li>Data curation<br />
+        </li>
+        <li>Formal analysis<br />
+        </li>
+        <li>Funding acquisition<br />
+        </li>
+        <li>Investigation<br />
+        </li>
+        <li>Methodology<br />
+        </li>
+        <li>Project administration<br />
+        </li>
+        <li>Resources<br />
+        </li>
+        <li>Software<br />
+        </li>
+        <li>Supervision<br />
+        </li>
+        <li>Validation<br />
+        </li>
+        <li>Visualization<br />
+        </li>
+        <li>Writing – original draft<br />
+        </li>
+        <li>Writing – review &amp; editing</li>
+        </ol></li>
+        <li>Außerhalb der Geisteswissenschaften weithin umgesetzt</li>
+        <li><blockquote>
+        <p>CRediT grew from a practical realization that bibliographic
+        conventions for describing and listing authors on scholarly
+        outputs are increasingly outdated and fail to represent the
+        range of contributions that researchers make to published
+        output. Furthermore, there is growing interest among
+        researchers, funding agencies, academic institutions, editors,
+        and publishers in increasing both the transparency and
+        accessibility of research contributions.</p>
+        </blockquote></li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section
+        id="interdisziplinäres-zentrum-für-digitalität-und-digitale-methoden-am-campus-mitte"
+        class="slide level2">
+        <h2>Interdisziplinäres Zentrum für Digitalität und digitale
+        Methoden am Campus Mitte</h2>
+        <figure id="fig:website-iz">
+        <img data-src="../../assets/dh/website_iz-digitalität.png"
+        alt="Figure 30: Mitglieder des IZ Digitalität und digitale Methoden" />
+        <figcaption aria-hidden="true">Figure 30: Mitglieder des <a
+        href="https://izd2m.hu-berlin.de/">IZ Digitalität und digitale
+        Methoden</a></figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://izd2m.hu-berlin.de/"
+        class="c_logo c_qr c_right" /></p>
+        <aside class="notes">
+        <ul>
+        <li>neue Initiative, seit 2024</li>
+        <li>soll die vielen Menschen, die bereits zu Themen der
+        Digitalität arbeiten zusammenbringen</li>
+        <li>ihnen Raum für Austausch bieten</li>
+        <li>ihre Arbeit sichtbar machen nach außen und nach innen</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
         <section id="abschluss" class="title-slide slide level1">
         <h1>Abschluss</h1>
 
-        </section>
-        <section id="grundsätzlich" class="slide level2">
-        <h2>Grundsätzlich</h2>
-        <ul>
-        <li>Ohne konkrete Maßnahmen für die politische Anerkennung von
-        gesellschaftlicher und wissenschaftlicher Mehrsprachigkeit,</li>
-        <li>ohne die alltägliche Anstrengung konkrete Praktiken zu
-        ändern,<br />
-        </li>
-        <li>und ohne das politische Bekenntnis für eine auskömmliche,
-        infrastrukturelle Förderung,</li>
-        </ul>
-        <p><span class="keyphrase c_right">können AGs nur
-        Symptombekämpfung betreiben.</span></p>
         </section>
         <section id="danke" class="slide level2">
         <h2>Danke!</h2>
@@ -2569,6 +3124,16 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <h2 class="unnumbered">Literatur</h2>
         <div id="refs" class="references csl-bib-body hanging-indent"
         data-entry-spacing="0" role="list">
+        <div id="ref-AhnertEtAl2023CollaborativeHistoricalResearch"
+        class="csl-entry" role="listitem">
+        Ahnert, Ruth, Emma Griffin, Mia Ridge, und Giorgia Tolfo. 2023.
+        <em>Collaborative <span>Historical Research</span> in the
+        <span>Age</span> of <span>Big Data</span>: <span>Lessons</span>
+        from an <span>Interdisciplinary Project</span></em>. Cambridge
+        <span>Elements</span>: <span>Historical Theory</span> and
+        <span>Practice</span>. Cambridge: Cambridge University Press. <a
+        href="https://doi.org/10.1017/9781009175548">https://doi.org/10.1017/9781009175548</a>.
+        </div>
         <div id="ref-DigitalHistoryArgument2017" class="csl-entry"
         role="listitem">
         Arguing with Digital History working group. 2017. <span>„Digital
@@ -2591,13 +3156,6 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Palgrave Macmillan UK. <a
         href="https://doi.org/10.1057/9780230306479">https://doi.org/10.1057/9780230306479</a>.
         </div>
-        <div id="ref-Borgman2015BigData" class="csl-entry"
-        role="listitem">
-        Borgman, Christine L. 2015. <em>Big <span>Data</span>,
-        <span>Little Data</span>, <span>No Data</span>:
-        <span>Scholarship</span> in the <span>Networked
-        World</span></em>. MIT Press.
-        </div>
         <div id="ref-CPCAbout" class="csl-entry" role="listitem">
         Centre for Postdigital Cultures. 2018. <span>„About Us“</span>.
         Centre for Postdigital Cultures. 2018. <a
@@ -2611,24 +3169,32 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Humanities Quarterly</em> 17 (1). <a
         href="http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html">http://digitalhumanities.org/dhq/vol/17/1/000661/000661.html</a>.
         </div>
-        <div id="ref-Drucker2021DHCoursebook" class="csl-entry"
+        <div id="ref-DamasMerdjé+1928" class="csl-entry"
         role="listitem">
-        Drucker, Johanna. 2021. <em>The <span>Digital Humanities
-        Coursebook</span>: <span>An Introduction</span> to <span>Digital
-        Methods</span> for <span>Research</span> and
-        <span>Scholarship</span></em>. 1. Aufl. Abingdon: Routledge. <a
-        href="https://doi.org/10.4324/9781003106531">https://doi.org/10.4324/9781003106531</a>.
+        <em><span>DAMAS</span> – <span>Merdjé</span> -
+        <span>Palais</span> de <span>Justice</span></em>. 1928. Édition
+        <span>J</span>. <span>Deychamps</span>. Bézier. <a
+        href="https://www.delcampe.net/en_GB/collectables/item/197212430.html">https://www.delcampe.net/en_GB/collectables/item/197212430.html</a>.
         </div>
-        <div id="ref-Fiormonte2021Taxation" class="csl-entry"
+        <div id="ref-DamasPlaceMerdjé+1928" class="csl-entry"
         role="listitem">
-        Fiormonte, Domenico. 2021. <span>„Taxation Against
-        <span>Overrepresentation</span>? <span>The Consequences</span>
-        of <span>Monolingualism</span> for <span>Digital
-        Humanities</span>“</span>. In <em>Alternative
-        <span>Historiographies</span> of the <span>Digital
-        Humanities</span></em>, herausgegeben von Dorothy Kim und
-        Adeline Koh, 333–76. Earth: punctum books. <a
-        href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+        <em><span>DAMAS</span> – <span>Place Merdjé</span></em>. 1928.
+        Édition <span>J</span>. <span>Deychamps</span>. Bézier. <a
+        href="https://www.delcampe.net/en_GB/collectables/item/167285334.html">https://www.delcampe.net/en_GB/collectables/item/167285334.html</a>.
+        </div>
+        <div id="ref-DunbarHester2014LowPower" class="csl-entry"
+        role="listitem">
+        Dunbar-Hester, Christina. 2014. <em>Low Power to the People:
+        Pirates, Protest, and Politics in <span>FM</span> Radio
+        Activism</em>. Cambridge: MIT Press. <a
+        href="https://worldcat.org/title/895772974">https://worldcat.org/title/895772974</a>.
+        </div>
+        <div id="ref-Fitzpatrick2016GenerousThinking" class="csl-entry"
+        role="listitem">
+        Fitzpatrick, Kathleen. 2016. <span>„Generous
+        <span>Thinking</span>: <span>The University</span> and the
+        <span>Public Good</span>“</span>. kfitz. 2. Oktober 2016. <a
+        href="https://kfitz.info/generous-thinking-the-university-and-the-public-good/">https://kfitz.info/generous-thinking-the-university-and-the-public-good/</a>.
         </div>
         <div id="ref-Foucault1974OrdnungDinge" class="csl-entry"
         role="listitem">
@@ -2637,23 +3203,26 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         choses]. Übersetzt von Ulrich Köppen. Frankfurt am Main:
         Suhrkamp.
         </div>
-        <div id="ref-Gitelman2013Introduction" class="csl-entry"
+        <div id="ref-Google2026EnvironmentalReport" class="csl-entry"
         role="listitem">
-        Gitelman, Lisa, Hrsg. 2013. <span>„Introduction“</span>. In
-        <em>"<span>Raw Data</span>" <span>Is</span> an
-        <span>Oxymoron</span></em>, 1–14. Cambridge: MIT Press.
+        Google. 2026. <span>„Environmental <span>Report</span>
+        2026“</span>. <a
+        href="https://web.archive.org/web/20260701092319/https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf">https://web.archive.org/web/20260701092319/https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf</a>.
         </div>
-        <div id="ref-IsasiEtAl2023ModelMultilingual" class="csl-entry"
+        <div id="ref-Graham2023FindMyselfCharge" class="csl-entry"
         role="listitem">
-        Isasi, Jennifer, Riva Quiroga, Nabeel Siddiqui, Joana Vieira
-        Paulino, und Alex Wermer-Colan. 2023. <span>„A
-        <span>Model</span> for <span>Multilingual</span> and
-        <span>Multicultural Digital Scholarship Methods
-        Publishing</span>: <span>The Case</span> of <span>Programming
-        Historian</span>“</span>. In <em>Multilingual <span>Digital
-        Humanities</span></em>, herausgegeben von Lorella Viola und Paul
-        Spence, 17–30. London: Routledge. <a
-        href="https://doi.org/10.4324/9781003393696-3">https://doi.org/10.4324/9781003393696-3</a>.
+        Graham, Shawn (@electricarchaeo@scholar.social). 2023. <span>„So
+        <span>I</span> Find Myself in Charge of Designing and Building
+        What Amounts to a Bar, for Dispensing Cider at Our Cider Mill.
+        <span>Don</span>’t Want a Kegerator…“</span>. Toot. Mastodon.
+        23. Februar 2023. <a
+        href="https://scholar.social/@electricarchaeo/109911055398835663">https://scholar.social/@electricarchaeo/109911055398835663</a>.
+        </div>
+        <div id="ref-Joshi2026GooglesExponential" class="csl-entry"
+        role="listitem">
+        Joshi, Ketan. 2026. <span>„Google’s Exponential Path to
+        Climate-Wrecking Digital Bloat“</span>. 1. Juli 2026. <a
+        href="https://ketanjoshi.co/2026/07/01/googles-exponential-path-to-climate-wrecking-digital-bloat/">https://ketanjoshi.co/2026/07/01/googles-exponential-path-to-climate-wrecking-digital-bloat/</a>.
         </div>
         <div id="ref-Larkin2013PoliticsPoetics" class="csl-entry"
         role="listitem">
@@ -2668,6 +3237,25 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Opportunities for the Profession“</span>. <em>Geschichte und
         Gesellschaft</em> 47 (1): 5–34. <a
         href="https://doi.org/10/gkhrjp">https://doi.org/10/gkhrjp</a>.
+        </div>
+        <div id="ref-Levy2017DigitalZombies" class="csl-entry"
+        role="listitem">
+        Levy, Juliette. 2017. <span>„<span>‚<span>Digital
+        Zombies</span>‘</span> — <span>A Learner-Centered Game</span>:
+        <span>Social Knowledge Creation</span> at the
+        <span>Intersection</span> of <span>Digital Humanities</span> and
+        <span>Digital Pedagogy</span>“</span>. In <em>Social Knowledge
+        Creation in the <span>Humanities</span></em>, herausgegeben von
+        Alyssa Arbuckle, Aaron Mauro, und Daniel Powell. Toronto: Iter
+        Press. <a
+        href="https://ntmrs-skc.itercommunity.org/tracing-movement-ideas/digital-zombies-learner-centered-game-social-knowledge-creation-intersection-digital-humanities-digital-pedagogy-juliette-levy/">https://ntmrs-skc.itercommunity.org/tracing-movement-ideas/digital-zombies-learner-centered-game-social-knowledge-creation-intersection-digital-humanities-digital-pedagogy-juliette-levy/</a>.
+        </div>
+        <div id="ref-Marino2020CriticalCodeStudies" class="csl-entry"
+        role="listitem">
+        Marino, Mark C. 2020. <em>Critical <span>Code
+        Studies</span></em>. Herausgegeben von Noah Wardrip-Fruin, Wendy
+        Hui Kyong Chun, Winnie Soon, und Jichen Zhu. Cambridge: MIT
+        Press.
         </div>
         <div id="ref-MarxEngels1958ManifestKommunistischen"
         class="csl-entry" role="listitem">
@@ -2687,6 +3275,14 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Characters</span> in the <span>Arabic URL</span>“</span>. Deco
         Type.
         </div>
+        <div id="ref-Mullaney2021Intro" class="csl-entry"
+        role="listitem">
+        Mullaney, Thomas S. 2021. <span>„Your <span>Computer Is</span>
+        on <span>Fire</span>“</span>. In <em>Your <span>Computer
+        Is</span> on <span>Fire</span></em>, herausgegeben von Thomas S
+        Mullaney, Benjamin Peters, Mar Hicks, und Kavita Philip, 3–9.
+        Cambridge: MIT Press.
+        </div>
         <div id="ref-Mullaney2017ChineseTypewriter" class="csl-entry"
         role="listitem">
         Mullaney, Thomas S. 2017. <em>The <span>Chinese</span>
@@ -2701,12 +3297,23 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Type, 1908-1993</em>. Leiden: Brill. <a
         href="https://doi.org/10.1163/9789004349308">https://doi.org/10.1163/9789004349308</a>.
         </div>
-        <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+        <div id="ref-Rankin2018PeoplesHistory" class="csl-entry"
         role="listitem">
-        Phillipson, Robert. 1997. <span>„Realities and Myths of
-        Linguistic Imperialism“</span>. <em>Journal of Multilingual and
-        Multicultural Development</em> 18 (3): 238–48. <a
-        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
+        Rankin, Joy Lisi. 2018. <em>A <span>People</span>’s
+        <span>History</span> of <span>Computing</span> in the
+        <span>United States</span></em>. Harvard: Harvard University
+        Press.
+        </div>
+        <div id="ref-Sayers2017Introduction" class="csl-entry"
+        role="listitem">
+        Sayers, Jentery. 2017. <span>„Introduction: <span>‚<span>I
+        Don</span>’t <span>Know All</span> the
+        <span>Circuitry</span>‘</span>“</span>. In <em>Making
+        <span>Things</span> and <span>Drawing Boundaries</span></em>,
+        herausgegeben von Jentery Sayers, 1–18. Experiments in the
+        <span>Digital Humanities</span>. University of Minnesota Press.
+        <a
+        href="https://doi.org/10.5749/j.ctt1pwt6wq.3">https://doi.org/10.5749/j.ctt1pwt6wq.3</a>.
         </div>
         <div id="ref-Schivelbusch1977GeschichteEisenbahnreise"
         class="csl-entry" role="listitem">
@@ -2714,24 +3321,10 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Zur Industrialisierung von Raum und Zeit im 19.
         Jahrhundert</em>. München: Hanser.
         </div>
-        <div id="ref-Siles2023Living" class="csl-entry" role="listitem">
-        Siles, Ignacio. 2023. <em>Living with <span>Algorithms</span>:
-        <span>Agency</span> and <span>User Culture</span> in <span>Costa
-        Rica</span></em>. Boston: MIT Press.
-        </div>
         <div id="ref-Stachowiak1973AllgemeineModelltheorie"
         class="csl-entry" role="listitem">
         Stachowiak, Herbert. 1973. <em>Allgemeine Modelltheorie</em>.
         Wien: Springer.
-        </div>
-        <div id="ref-Stalder2021WasIst" class="csl-entry"
-        role="listitem">
-        Stalder, Felix. (2019) 2021. <span>„Was ist Digitalität?“</span>
-        In <em>Was ist Digitalität? Philosophische und pädagogische
-        Perspektiven</em>, herausgegeben von Uta Hauck-Thum und Jörg
-        Noller, 3–7. Digitalitätsforschung / Digitality Research.
-        Berlin, Heidelberg: Springer. <a
-        href="https://doi.org/10.1007/978-3-662-62989-5_1">https://doi.org/10.1007/978-3-662-62989-5_1</a>.
         </div>
         <div id="ref-Star1999EthnographyInfrastructure"
         class="csl-entry" role="listitem">
@@ -2740,12 +3333,39 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         Scientist</em> 43 (3): 377–91. <a
         href="https://doi.org/10.1177/00027649921955326">https://doi.org/10.1177/00027649921955326</a>.
         </div>
-        <div id="ref-HTMLLivingStandard2023" class="csl-entry"
+        <div id="ref-Tenen2016BluntInstrumentalism" class="csl-entry"
         role="listitem">
-        Web Hypertext Application Technology Working Group. 2023.
-        <span>„<span>HTML</span>: <span>Living Standard</span>“</span>.
-        24. März 2023. <a
-        href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
+        Tenen, Dennis. 2016. <span>„Blunt <span>Instrumentalism</span>:
+        <span>On Tools</span> and <span>Methods</span>“</span>. In
+        <em>Debates in the <span>Digital Humanities</span> 2016</em>,
+        herausgegeben von Matthew K. Gold und Lauren F. Klein, 83–91.
+        Debates in the <span>Digital Humanities</span> 2. Minneapolis:
+        University of Minnesota Press. <a
+        href="https://doi.org/10.5749/j.ctt1cn6thb.12">https://doi.org/10.5749/j.ctt1cn6thb.12</a>.
+        </div>
+        <div id="ref-Weingart2021AlsoRemindDH" class="csl-entry"
+        role="listitem">
+        Weingart, Scott B. (@scott_bot). 2021. <span>„I Also Remind
+        <span>DH</span> Is an Imposter Syndrome House of Mirrors.
+        <span>You</span> Look Around and See Experts in
+        <span>GIS</span>, <span>TEI</span>, Dataviz, Etc.; It’s Hard to
+        Remember That People Tend to Be Good at *One* of Those Things
+        When the Collective Appears to Be Good at *All* of Them.
+        <span>We</span> All Suck at Most of <span>DH</span>.“</span>
+        Tweet. Twitter. 10. März 2021. <a
+        href="https://web.archive.org/web/20210310151622/https://twitter.com/scott_bot/status/1369666674102767618">https://web.archive.org/web/20210310151622/https://twitter.com/scott_bot/status/1369666674102767618</a>.
+        </div>
+        <div id="ref-Winner+1980" class="csl-entry" role="listitem">
+        Winner, Langdon. 1980. <span>„Do Artifacts Have
+        Politics?“</span> <em>Daedalus</em>, 121–36.
+        </div>
+        <div id="ref-Wythoff2022MinimalComputing" class="csl-entry"
+        role="listitem">
+        Wythoff, Grant. 2022. <span>„Ensuring <span>Minimal Computing
+        Serves Maximal Connection</span>“</span>. Herausgegeben von Alex
+        Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> 16
+        (Juni). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html">http://digitalhumanities.org/dhq/vol/16/2/000596/000596.html</a>.
         </div>
         <div id="ref-oclc_4770057679-i_13-div_8.d1e1249"
         class="csl-entry" role="listitem">
