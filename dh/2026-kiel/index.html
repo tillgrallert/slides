@@ -2623,6 +2623,13 @@ und Meistererzählungen’, Kiel und Flensburg</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>المشار.اليها <span class="ot">&lt;-</span> المشار.اليها <span class="sc">%&gt;%</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(source.id.oclc <span class="sc">%in%</span> المجلات)</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">write.table</span>(المشار.اليها, <span class="at">file =</span> <span class="st">&quot;csv/oape_stats.csv&quot;</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">quote =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;,&quot;</span>)</span></code></pre></div>
+        <h3 id="python-und-json">Python und JSON</h3>
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>testJson <span class="op">=</span> {<span class="st">&#39;title&#39;</span>: <span class="st">&#39;مرآة الشرق&#39;</span>}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json.dumps(testJson))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>{<span class="st">&quot;title&quot;</span>: <span class="st">&quot;</span><span class="ch">\u0645\u0631\u0622\u0629</span><span class="st"> </span><span class="ch">\u0627\u0644\u0634\u0631\u0642</span><span class="st">&quot;</span>}</span></code></pre></div>
         </div><div class="column">
         <p>Technische Sprachen folgen dem monolinguale Habitus des
         Englischen:</p>
@@ -2651,6 +2658,13 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         href="https://nlai.ir/collection"
         class="uri">https://nlai.ir/collection</a></li>
         </ul></li>
+        </ul></li>
+        <li>JSON
+        <ul>
+        <li>es liegt an der Standardeinstellung
+        <code>ensure_ascii=True</code></li>
+        <li>dazu Spezifikationen von JSON und Mastodon Thread als
+        Quelle</li>
         </ul></li>
         </ul>
         </aside>
@@ -2699,6 +2713,15 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <aside class="notes">
         <ul>
         <li>resourcedness gap reinpacken, inklusive Literatur</li>
+        <li>Daten aus unseren Tests von LLM für NER auf einem Corpus von
+        deutsch-sprachigen Baedeker Reiseführeren für Berlin.
+        <ul>
+        <li>deutschsprachige Prompts performen signifikant schlechter
+        als englischsprachige</li>
+        <li>Verbesserung mit “thinking” ist durch die Übersetzung des
+        Prompts ins Englische durch das LLM im ersten Schritt des
+        “thinking” bedingt</li>
+        </ul></li>
         </ul>
         </aside>
         </section></section>
@@ -3883,10 +3906,11 @@ und Meistererzählungen’, Kiel und Flensburg</span>
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
-        disableLayout: true, //false,
+        disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        // center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
