@@ -1106,7 +1106,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <p><span class="keyphrase">Gesellschaft und Wissenschaft sind
         bereits <em>datafiziert</em></span></p>
         </div><div class="wide">
-        <!--
+        <!-- 
         >I would like to explore here a tentative path for a third wave of the digital humanities, concentrated around the underlying computationality of the forms held within a computational medium. That is, I propose to look at the digital component of the digital humanities in the light of its medium specificity, as a way of thinking about how medial changes produce epistemic changes.
 
         <cite>[@Berry2011ComputationalTurn, 4]</cite> -->
@@ -1805,7 +1805,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         ::::
         :::: wide
 
-        >Data are forms of information, a larger concept that is even more difficult to define. Epistemological and ontological problems abound, resulting in many books devoted to explicating information and knowledge
+        >Data are forms of information, a larger concept that is even more difficult to define. Epistemological and ontological problems abound, resulting in many books devoted to explicating information and knowledge 
 
         <cite>[@Borgman2015BigData, 18]</cite>
 
@@ -2011,7 +2011,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <h2>Druck mit beweglichen Lettern als Paradigma</h2>
         <figure>
         <img
-        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Upperandlowercase.jpg/330px-Upperandlowercase.jpg"
+        data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Upperandlowercase.jpg/960px-Upperandlowercase.jpg"
         alt="Setzkasten. John, CC BY-SA 3.0, via Wikimedia Commons" />
         <figcaption aria-hidden="true">Setzkasten. John, CC BY-SA 3.0,
         via <a
@@ -2674,40 +2674,82 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         <section id="linguistic-imperialism-und-monolingualer-habitus-1"
         class="slide level2">
         <h2>linguistic imperialism und monolingualer habitus</h2>
+        <!-- | Sprache |        0-shot        | 0-shot, thinking |        32-shot        | 32-shot, thinking |
+        |---------|----------------------|------------------|-----------------------|-------------------|
+        | deu     | [0.1584]{.red} (0.4) | 0.7894 (7:26)    | [0.1584]{.red} (0:39) | 0.8273 (7:14)     |
+        | eng     | 0.6485 (0.46)        | 0.8197 (7:09)    | 0.7905 (0:59)         | 0.8307 (8:22)     | -->
         <div id="tbl:ner-llm">
         <table>
         <caption>Table 1: f1-score für NER mit LLMs (Zeit in
         Stunden)</caption>
-        <colgroup>
-        <col style="width: 9%" />
-        <col style="width: 24%" />
-        <col style="width: 19%" />
-        <col style="width: 25%" />
-        <col style="width: 20%" />
-        </colgroup>
         <thead>
         <tr>
         <th>Sprache</th>
-        <th>0-shot</th>
-        <th>0-shot, thinking</th>
-        <th>32-shot</th>
-        <th>32-shot, thinking</th>
+        <th style="text-align: right;">Shots</th>
+        <th style="text-align: left;">Thinking</th>
+        <th style="text-align: right;">f1</th>
+        <th style="text-align: right;">Time</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-        <td>deu</td>
-        <td><span class="red">0.1584</span> (0.4)</td>
-        <td>0.7894 (7:26)</td>
-        <td><span class="red">0.1584</span> (0:39)</td>
-        <td>0.8273 (7:14)</td>
+        <td>de</td>
+        <td style="text-align: right;">0</td>
+        <td style="text-align: left;">F</td>
+        <td style="text-align: right;"><span
+        class="red">0.1584</span></td>
+        <td style="text-align: right;">0.4</td>
         </tr>
         <tr>
-        <td>eng</td>
-        <td>0.6485 (0.46)</td>
-        <td>0.8197 (7:09)</td>
-        <td>0.7905 (0:59)</td>
-        <td>0.8307 (8:22)</td>
+        <td>en</td>
+        <td style="text-align: right;">0</td>
+        <td style="text-align: left;">F</td>
+        <td style="text-align: right;">0.6485</td>
+        <td style="text-align: right;">0.46</td>
+        </tr>
+        <tr>
+        <td>de</td>
+        <td style="text-align: right;">0</td>
+        <td style="text-align: left;">T</td>
+        <td style="text-align: right;">0.7894</td>
+        <td style="text-align: right;">7:26</td>
+        </tr>
+        <tr>
+        <td>en</td>
+        <td style="text-align: right;">0</td>
+        <td style="text-align: left;">T</td>
+        <td style="text-align: right;">0.8197</td>
+        <td style="text-align: right;">7:09</td>
+        </tr>
+        <tr>
+        <td>de</td>
+        <td style="text-align: right;">32</td>
+        <td style="text-align: left;">F</td>
+        <td style="text-align: right;"><span
+        class="red">0.1584</span></td>
+        <td style="text-align: right;">0:39</td>
+        </tr>
+        <tr>
+        <td>en</td>
+        <td style="text-align: right;">32</td>
+        <td style="text-align: left;">F</td>
+        <td style="text-align: right;">0.7905</td>
+        <td style="text-align: right;">0:59</td>
+        </tr>
+        <tr>
+        <td>de</td>
+        <td style="text-align: right;">32</td>
+        <td style="text-align: left;">T</td>
+        <td style="text-align: right;"><span
+        class="green">0.8273</span></td>
+        <td style="text-align: right;">7:14</td>
+        </tr>
+        <tr>
+        <td>en</td>
+        <td style="text-align: right;">32</td>
+        <td style="text-align: left;">T</td>
+        <td style="text-align: right;">0.8307</td>
+        <td style="text-align: right;">8:22</td>
         </tr>
         </tbody>
         </table>
@@ -2897,7 +2939,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
 
         ### Making
 
-        - Experimentieren, Tüfteln, Ausprobieren, Werkeln
+        - Experimentieren, Tüfteln, Ausprobieren, Werkeln 
         - Selbstermächtigung mit dem Ziel der (Wieder)Aneignung der Produktionsmittel
 
         ::::
@@ -3860,7 +3902,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
     <script src="../../assets/revealjs/plugin/notes/notes.js"></script>
     <script src="../../assets/revealjs/plugin/search/search.js"></script>
     <script src="../../assets/revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -3962,7 +4004,7 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
                 autoSlide: 0,
-
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -4006,20 +4048,20 @@ und Meistererzählungen’, Kiel und Flensburg</span>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
                 width: 1200,
                         height: 1000,
-
+        
         // Factor of the display size that should remain empty around the content
                 margin: 0,
-
+        
         // Bounds for smallest/largest possible scale to apply to content
-
-
-
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
